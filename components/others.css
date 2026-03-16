@@ -527,7 +527,7 @@
 }
 
 .swatch:hover {
-  border-color: var(--color-highlight-secondary);
+  background: var(--color-highlight-primary);
 }
 
 /* Selected state */
