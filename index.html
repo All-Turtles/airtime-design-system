@@ -809,11 +809,14 @@
       <p class="nav-section-label">Components</p>
       <a class="nav-link" href="#buttons">Buttons</a>
       <a class="nav-link" href="#inputs">Inputs</a>
+      <a class="nav-link" href="#dropdown">Dropdown</a>
       <a class="nav-link" href="#controls">Controls</a>
-      <a class="nav-link" href="#rows">Rows</a>
+      <a class="nav-link" href="#list-item">List Item</a>
       <a class="nav-link" href="#menus">Menus</a>
       <a class="nav-link" href="#thumbnails">Thumbnails</a>
+      <a class="nav-link" href="#avatar">Avatar</a>
       <a class="nav-link" href="#overlays">Overlays</a>
+      <a class="nav-link" href="#color">Color</a>
       <a class="nav-link" href="#utilities">Utilities</a>
       <hr class="nav-divider">
       <p class="nav-section-label">Assets</p>
@@ -1261,6 +1264,23 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       </div>
     </section>
 
+    <!-- ════════ DROPDOWN ════════ -->
+    <section class="section" id="dropdown">
+      <div class="section-block">
+        <h3 class="section-heading">Dropdown</h3>
+        <div class="details-content">
+      <div class="group">
+        <p class="group-title">Variants</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Closed</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="menu dropdown-menu" hidden><button class="row" role="option" onclick="selectDropdownItem(this, 'Option A')"><span>Option A</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option B')"><span>Option B</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option C')"><span>Option C</span></button></ul></div></div></div>
+          <div class="variant"><span class="variant-label">Ghost</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger dropdown-trigger-ghost" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="menu dropdown-menu" hidden><button class="row" role="option" onclick="selectDropdownItem(this, 'Option A')"><span>Option A</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option B')"><span>Option B</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option C')"><span>Option C</span></button></ul></div></div></div>
+          <div class="variant"><span class="variant-label">Thumbnail</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger dropdown-trigger-thumbnail" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><div class="dropdown-thumbnail"><img src="assets/image-example.png" alt="Scene A"></div><span>Scene A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="menu menu-thumbnail dropdown-menu" hidden><button class="row-thumbnail" role="option" onclick="selectDropdownItem(this, 'Scene A')"><div class="row-thumbnail-image"><img src="assets/image-example.png" alt="Scene A"></div><span>Scene A</span></button><button class="row-thumbnail" role="option" onclick="selectDropdownItem(this, 'Scene B')"><div class="row-thumbnail-image"><img src="assets/image-example.png" alt="Scene B"></div><span>Scene B</span></button></ul></div></div></div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ════════ CONTROLS ════════ -->
     <section class="section" id="controls">
       <div class="section-block">
@@ -1274,14 +1294,6 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
           <div class="variant"><span class="variant-label">Icon</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon active" aria-label="Rectangle"><div id="seg-icon-mask-rect"></div></button><button class="segmented-item segmented-item-icon" aria-label="Circle"><div id="seg-icon-mask-circle"></div></button><button class="segmented-item segmented-item-icon" aria-label="Hexagon"><div id="seg-icon-mask-hex"></div></button></div></div></div>
           <div class="variant"><span class="variant-label">Icon + Label</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon-label active"><div class="segmented-icon" id="seg-icon-realroom"></div><span>Default</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon" id="seg-icon-blur"></div><span>Blurred</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon" id="seg-icon-silhouette"></div><span>Hidden</span></button></div></div></div>
           <div class="variant"><span class="variant-label">2 segments</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item active">On</button><button class="segmented-item">Off</button></div></div></div>
-        </div>
-      </div>
-      <div class="group">
-        <p class="group-title">Dropdown</p>
-        <div class="variants">
-          <div class="variant"><span class="variant-label">Closed</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="menu dropdown-menu" hidden><button class="row" role="option" onclick="selectDropdownItem(this, 'Option A')"><span>Option A</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option B')"><span>Option B</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option C')"><span>Option C</span></button></ul></div></div></div>
-          <div class="variant"><span class="variant-label">Ghost</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger dropdown-trigger-ghost" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="menu dropdown-menu" hidden><button class="row" role="option" onclick="selectDropdownItem(this, 'Option A')"><span>Option A</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option B')"><span>Option B</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option C')"><span>Option C</span></button></ul></div></div></div>
-          <div class="variant"><span class="variant-label">Thumbnail</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger dropdown-trigger-thumbnail" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><div class="dropdown-thumbnail"><img src="assets/image-example.png" alt="Scene A"></div><span>Scene A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="menu menu-thumbnail dropdown-menu" hidden><button class="row-thumbnail" role="option" onclick="selectDropdownItem(this, 'Scene A')"><div class="row-thumbnail-image"><img src="assets/image-example.png" alt="Scene A"></div><span>Scene A</span></button><button class="row-thumbnail" role="option" onclick="selectDropdownItem(this, 'Scene B')"><div class="row-thumbnail-image"><img src="assets/image-example.png" alt="Scene B"></div><span>Scene B</span></button></ul></div></div></div>
         </div>
       </div>
       <div class="group">
@@ -1325,10 +1337,10 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       </div>
     </section>
 
-    <!-- ════════ ROWS ════════ -->
-    <section class="section" id="rows">
+    <!-- ════════ LIST ITEM ════════ -->
+    <section class="section" id="list-item">
       <div class="section-block">
-        <h3 class="section-heading">Rows</h3>
+        <h3 class="section-heading">List Item</h3>
         <div class="details-content">
       <div class="group">
         <p class="group-title">Default Row</p>
@@ -1451,16 +1463,17 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
           </div>
         </div>
       </div>
-      <div class="group">
-        <p class="group-title">Color Swatch</p>
-        <div class="variants">
-          <div class="variant"><span class="variant-label">Default</span><div class="swatch"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
-          <div class="variant"><span class="variant-label">Hover</span><div class="swatch" style="background:var(--color-highlight-primary)"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
-          <div class="variant"><span class="variant-label">Selected</span><div class="swatch selected"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
         </div>
       </div>
+    </section>
+
+    <!-- ════════ AVATAR ════════ -->
+    <section class="section" id="avatar">
+      <div class="section-block">
+        <h3 class="section-heading">Avatar</h3>
+        <div class="details-content">
       <div class="group">
-        <p class="group-title">Avatar</p>
+        <p class="group-title">Sizes</p>
         <div class="variants">
           <div class="variant"><span class="variant-label">16px</span><div class="avatar avatar-16"><img src="assets/avatar-example.png" alt="User"></div></div>
           <div class="variant"><span class="variant-label">16px · Silhouette</span><div class="avatar avatar-16"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div></div></div>
@@ -1472,6 +1485,56 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
           <div class="variant"><span class="variant-label">32px · Silhouette</span><div class="avatar avatar-32"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div></div></div>
           <div class="variant"><span class="variant-label">40px</span><div class="avatar avatar-40"><img src="assets/avatar-example.png" alt="User"></div></div>
           <div class="variant"><span class="variant-label">40px · Silhouette</span><div class="avatar avatar-40"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div></div></div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ COLOR ════════ -->
+    <section class="section" id="color">
+      <div class="section-block">
+        <h3 class="section-heading">Color</h3>
+        <div class="details-content">
+      <div class="group">
+        <p class="group-title">Color Picker</p>
+        <div class="variants">
+          <div class="variant">
+            <span class="variant-label">Default</span>
+            <div class="color-picker" style="--color-picker-hue: #00E0FF;">
+              <div class="color-picker-canvas">
+                <div class="color-picker-canvas-thumb" style="left: 90%; top: 5%"></div>
+              </div>
+              <div class="color-picker-hue">
+                <div class="color-picker-slider-thumb" style="left: 50%"></div>
+              </div>
+              <div class="color-picker-alpha" style="--color-picker-color: #79DDE8;">
+                <div class="color-picker-slider-thumb" style="left: 100%"></div>
+              </div>
+              <div class="color-picker-values">
+                <button class="color-picker-icon-btn" aria-label="Pick color"><div class="icon-img" data-icon="Eye_Stroke_16"></div></button>
+                <button class="dropdown-trigger color-picker-mode" aria-label="Color mode" onclick="toggleDropdown(this)">
+                  <span>HSB</span>
+                  <div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div>
+                </button>
+                <div class="input-split color-picker-inputs">
+                  <input class="input-split-segment" type="text" value="184" aria-label="H">
+                  <span class="input-split-divider"></span>
+                  <input class="input-split-segment" type="text" value="75" aria-label="S">
+                  <span class="input-split-divider"></span>
+                  <input class="input-split-segment" type="text" value="100" aria-label="B">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">Swatches</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Default</span><div class="swatch"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+          <div class="variant"><span class="variant-label">Hover</span><div class="swatch" style="background:var(--color-highlight-primary)"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+          <div class="variant"><span class="variant-label">Selected</span><div class="swatch selected"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
         </div>
       </div>
         </div>
