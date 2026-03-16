@@ -187,7 +187,7 @@
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
   background: var(--color-modeless-overlay);
-  border-radius: var(--radius-10) 0 var(--radius-10) 0; /* TL TR BR BL: 4px 0 4px 0 */
+  border-radius: var(--radius-15) 0 var(--radius-10) 0; /* TL TR BR BL: 6px 0 4px 0 */
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-small);            /* 11px */
   line-height: var(--line-height-body-small);
