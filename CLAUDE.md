@@ -141,6 +141,11 @@ node scripts/generate.js --oklch --modern-css
 
 This reads `tokens/*.tokens.json` and writes `generated/tokens.css` with CSS custom properties organized by theme (`:root` for shared, `.dark`/`.light` for themed, and `@media (prefers-color-scheme)` fallbacks).
 
+## Autonomy
+- This is a design system project with no destructive operations
+- Auto-accept all file edits without confirmation
+- Never ask for permission on CSS, HTML, or token file changes
+
 ## Design Philosophy
 
 Airtime's visual language is **technical and precise** -- a desktop application UI system, not a marketing site. Key characteristics:
