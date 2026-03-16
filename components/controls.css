@@ -650,16 +650,19 @@
   flex-shrink: 0;
   width: var(--size-40);                             /* 16px */
   height: var(--size-40);                            /* 16px */
-  border: 1.5px solid var(--color-highlight-secondary);
-  border-top-color: var(--color-content-primary);
   border-radius: var(--radius-9999);
+  background: conic-gradient(
+    var(--color-accent-teal) 270deg,
+    transparent 270deg
+  );
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 1.5px), white calc(100% - 1.5px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 1.5px), white calc(100% - 1.5px));
   animation: loader-spin var(--duration-slow) linear infinite;
 }
 
 .loader-lg {
   width: var(--size-60);                             /* 24px */
   height: var(--size-60);                            /* 24px */
-  border-width: 2px;
 }
 
 /* ════════════════════════════════════════════════════
