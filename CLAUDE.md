@@ -87,6 +87,211 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 | **Avatar** | 5 | `components/avatar.css` | `.avatar`, `.avatar-16`, `.avatar-20`, `.avatar-32`, `.avatar-40`, `.avatar-silhouette` |
 | **Thumbnails** | 8 | `components/thumbnail.css` | `.thumbnail`, `.thumbnail-media`, `.thumbnail-name`, `.thumbnail-badge`, `.thumbnail-action`, `.thumbnail-action-label` |
 
+## Component Manifest
+
+All components, variants, HTML examples, and known workarounds are machine-readable in `components-manifest.json`. Read this file first before reading individual CSS files — it contains everything needed for code generation in one place.
+
+```bash
+# Quick lookup
+cat components-manifest.json | jq '.components.button.examples'
+```
+
+## HTML Snippets
+
+Copy-paste ready examples for the most common patterns. For full variant lists see `components-manifest.json`.
+
+### Button
+
+```html
+<!-- Primary CTA -->
+<button class="btn btn-primary">Label</button>
+
+<!-- Secondary (glass) -->
+<button class="btn btn-secondary">Label</button>
+
+<!-- Destructive -->
+<button class="btn btn-destructive">Delete</button>
+
+<!-- Modeless — use on teal/light backgrounds -->
+<button class="btn btn-modeless">Label</button>
+
+<!-- Outline modifier (works with any variant) -->
+<button class="btn btn-primary btn-outline">Label</button>
+
+<!-- Ghost modifier (no fill, no border) -->
+<button class="btn btn-primary btn-ghost">Label</button>
+
+<!-- Icon only (28×28px) -->
+<button class="btn btn-primary btn-icon-only" aria-label="Add">
+  <img src="icons/Plus_Stroke_16.svg" alt="" />
+</button>
+
+<!-- Icon only ghost — workaround (no dedicated class) -->
+<button class="btn btn-secondary btn-outline btn-icon-only" aria-label="Add"
+        style="border-color: transparent">
+  <img src="icons/Plus_Stroke_16.svg" alt="" />
+</button>
+
+<!-- With left icon -->
+<button class="btn btn-primary">
+  <img src="icons/Plus_Stroke_16.svg" alt="" />
+  Add
+</button>
+
+<!-- Disabled -->
+<button class="btn btn-primary" disabled>Label</button>
+```
+
+### Input
+
+```html
+<!-- Default (28px) -->
+<input class="input" type="text" placeholder="Placeholder" />
+
+<!-- Large (32px, bold 16px) -->
+<input class="input input-lg" type="text" placeholder="Placeholder" />
+
+<!-- Ghost (no fill, border appears on hover/focus) -->
+<input class="input input-ghost" type="text" placeholder="Inline edit" />
+
+<!-- Error state -->
+<input class="input input-error" type="text" value="Invalid value" />
+
+<!-- With left icon + clear button -->
+<div class="input-wrapper">
+  <img class="input-icon-left" src="icons/Search_Stroke_16.svg" alt="" />
+  <input class="input-bare" type="text" placeholder="Search..." />
+  <button class="input-icon-right" aria-label="Clear">
+    <img src="icons/Xmark_Stroke_16.svg" alt="" />
+  </button>
+</div>
+
+<!-- Split input (e.g. XYWH) -->
+<div class="input-split">
+  <input class="input-split-segment" type="text" value="100" aria-label="X" />
+  <span class="input-split-divider"></span>
+  <input class="input-split-segment" type="text" value="100" aria-label="Y" />
+  <span class="input-split-divider"></span>
+  <div class="input-split-label">px</div>
+</div>
+```
+
+### Dropdown
+
+```html
+<!-- Default (JS needed to toggle aria-expanded + hidden) -->
+<div class="dropdown">
+  <button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
+    <span>Option A</span>
+    <img class="dropdown-chevron" src="icons/ChevronDownSmall_Stroke_16.svg" alt="" />
+  </button>
+  <ul class="menu dropdown-menu" hidden>
+    <button class="row" role="option">Option A</button>
+    <button class="row" role="option">Option B</button>
+  </ul>
+</div>
+```
+
+### Menu
+
+```html
+<ul class="menu" role="menu">
+  <button class="row" role="menuitem">
+    <img class="row-icon-left" src="icons/Checkmark_Stroke_16.svg" alt="" />
+    <span>Option</span>
+  </button>
+  <div class="menu-divider"></div>
+  <button class="row row-destructive" role="menuitem">
+    <img class="row-icon-left" src="icons/Trash_Fill_16.svg" alt="" />
+    <span>Delete</span>
+  </button>
+</ul>
+```
+
+### Segmented Control
+
+```html
+<div class="segmented" role="group">
+  <button class="segmented-item active">Title</button>
+  <button class="segmented-item">Title</button>
+  <button class="segmented-item">Title</button>
+</div>
+```
+
+### Badge
+
+```html
+<span class="badge">3</span>
+<span class="badge">99+</span>
+```
+
+### Avatar
+
+```html
+<!-- Photo -->
+<div class="avatar avatar-40"><img src="photo.jpg" alt="Name" /></div>
+
+<!-- Silhouette fallback -->
+<div class="avatar avatar-32">
+  <div class="avatar-silhouette">
+    <img src="icons/Silhouette_Fill_24.svg" alt="" />
+  </div>
+</div>
+```
+
+### Checkbox / Radio
+
+```html
+<label class="checkbox">
+  <input type="checkbox" />
+  <span class="checkbox-box"></span>
+  <span class="checkbox-label">Label</span>
+</label>
+
+<label class="radio">
+  <input type="radio" name="group" />
+  <span class="radio-box"></span>
+  <span class="radio-label">Option</span>
+</label>
+```
+
+### Slider / Progress / Loader
+
+```html
+<!-- Slider — update --slider-value on input -->
+<input class="slider" type="range" min="0" max="100" value="75"
+       style="--slider-value:75%"
+       oninput="this.style.setProperty('--slider-value',this.value+'%')" />
+
+<!-- Progress bar -->
+<progress class="progress" value="75" max="100"></progress>
+
+<!-- Loader -->
+<span class="loader" aria-label="Loading"></span>
+<span class="loader loader-lg" aria-label="Loading"></span>
+```
+
+### Divider
+
+```html
+<hr class="divider" />
+<div class="divider-vertical"></div>
+```
+
+## Known Workarounds
+
+Constraints not obvious from class names alone:
+
+| Issue | Workaround |
+|-------|-----------|
+| `btn-icon-only` ghost (no fill, no border) | `btn btn-secondary btn-outline btn-icon-only` + `style="border-color:transparent"` — no dedicated class |
+| Dropdown menu clipped by ancestor | Never put `overflow:hidden` on any ancestor of `.dropdown` — the `dropdown-menu` is `position:absolute` and will be clipped |
+| Color picker mode dropdown clipped | Same as above — `.color-picker` must not have `overflow:hidden` |
+| Modeless button context | `.btn-modeless` is transparent with dark border — always place it on a teal or light background, not on dark backgrounds |
+| `input-split` segment width too narrow | `.input-split` gap must be `var(--space-10)` (4px), not `var(--space-20)` (8px) — check `input.css` if segments look cramped |
+| Slider track fill | Requires `--slider-value` CSS custom property (e.g. `style="--slider-value:75%"`) — not automatic |
+| `btn:disabled` opacity | Uses `--opacity-32` (0.32) — not `--opacity-48`. If disabled buttons look too faint, check `opacity.tokens.json` includes `opacity-32` |
+
 ## Skills
 
 | Skill | Direction | Description |

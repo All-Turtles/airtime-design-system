@@ -295,7 +295,7 @@ button.input-icon-right:hover {
 .input-split {
   display: flex;
   align-items: center;
-  gap: var(--space-20);                            /* 8px */
+  gap: var(--space-10);                            /* 4px */
   height: var(--input-height-default);             /* 28px */
   padding: 0 var(--space-20);                      /* 0 8px */
   border: var(--border-width-thin) solid var(--color-highlight-primary);

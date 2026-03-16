@@ -23,15 +23,20 @@
  *     <div class="color-picker-canvas">
  *       <div class="color-picker-canvas-thumb" style="left: 90%; top: 5%"></div>
  *     </div>
+ *     <div class="color-picker-alpha" style="--color-picker-color: #79DDE8;">
+ *       <div class="color-picker-slider-thumb" style="left: calc(100% - 8px)"></div>
+ *     </div>
  *     <div class="color-picker-hue">
  *       <div class="color-picker-slider-thumb" style="left: 50%"></div>
  *     </div>
- *     <div class="color-picker-alpha" style="--color-picker-color: #79DDE8;">
- *       <div class="color-picker-slider-thumb" style="left: 100%"></div>
- *     </div>
  *     <div class="color-picker-values">
  *       <button class="color-picker-icon-btn" aria-label="Pick color">
- *         <img src="../icons/Eyedropper_Stroke_20.svg" alt="" />
+ *         <!-- SF Symbol: eyedropper (U+100399) — inline SVG from SFSymbolsFallback.otf -->
+ *         <svg width="14" height="14" viewBox="0 0 2087 2074" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+ *           <g transform="translate(-230, 1735) scale(1, -1)">
+ *             <path d="M1560 867 1416 723C1380 688 1335 677 1300 714C1263 754 1271 790 1311 831L1452 977L1366 1062L558 254C249 -55 398 -7 230 -244L320 -339C549 -172 518 -336 832 -23L1643 783ZM1798 686 1826 717C1875 768 1878 828 1825 880L1795 909C1948 1046 2118 1065 2223 1172C2372 1322 2324 1532 2219 1637C2115 1743 1907 1788 1754 1641C1646 1537 1628 1366 1491 1213L1462 1243C1411 1295 1350 1293 1299 1244L1269 1216C1207 1157 1219 1105 1271 1052L1634 689C1687 636 1740 625 1798 686Z"/>
+ *           </g>
+ *         </svg>
  *       </button>
  *       <button class="dropdown-trigger color-picker-mode" aria-label="Color mode">
  *         <span>HSB</span>
@@ -41,6 +46,10 @@
  *         <input class="input-split-segment" type="text" value="184" aria-label="H" />
  *         <span class="input-split-divider"></span>
  *         <input class="input-split-segment" type="text" value="75" aria-label="S" />
+ *         <span class="input-split-divider"></span>
+ *         <input class="input-split-segment" type="text" value="86" aria-label="B" />
+ *         <span class="input-split-divider"></span>
+ *         <div class="input-split-label">100%</div>
  *       </div>
  *     </div>
  *   </div>
@@ -78,7 +87,6 @@
   border-radius: var(--radius-30);                   /* 12px */
   box-shadow: 0 8px 16px 0 var(--color-shadow-medium);
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 /* Saturation/Brightness canvas */
@@ -103,8 +111,8 @@
   border-radius: var(--radius-9999);
   box-shadow: 0 1px 2px 0 var(--color-shadow-small);
   transform: translate(-50%, -50%);
-  pointer-events: none;
   box-sizing: content-box;
+  cursor: grab;
 }
 
 /* Shared slider styles (hue + alpha) */
@@ -127,7 +135,6 @@
   border-radius: var(--radius-9999);
   box-shadow: 0 1px 2px 0 var(--color-shadow-small);
   transform: translateX(-50%);
-  pointer-events: none;
   box-sizing: border-box;
   cursor: grab;
 }
@@ -206,6 +213,7 @@
 /* Mode selector (e.g. HSB / RGB / Hex) */
 .color-picker-mode {
   flex-shrink: 0;
+  width: auto;                                       /* override .dropdown-trigger width: 100% */
   height: var(--size-70);                            /* 28px */
 }
 
