@@ -74,6 +74,7 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 | **Menus** | 9 | `components/menus.css` | `.menu`, `.menu-thumbnail`, `.menu-account`, `.menu-scrollable` |
 | **Education** | 7 | `components/education.css` | `.coach-mark`, `.tooltip` |
 | **Others** | 26 | `components/others.css` | `.badge`, `.divider`, `.scrollbar`, `.color-picker`, `.swatches` |
+| **Thumbnails** | 8 | `components/thumbnail.css` | `.thumbnail`, `.thumbnail-slide`, `.thumbnail-media`, `.thumbnail-name`, `.thumbnail-badge`, `.thumbnail-action` |
 
 ## Skills
 

@@ -1,0 +1,201 @@
+/**
+ * Airtime Design System v3 - Thumbnail
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-9398
+ *
+ * Requires: generated/tokens.css
+ *
+ * Variants:  .thumbnail                  Base container (Look or Reaction / Catalog / BG or Media)
+ *            .thumbnail-slide            Slide variant (smaller gap, no name by default)
+ *
+ * States:    .thumbnail.selected         2px white border
+ *            .thumbnail:hover            Highlight background
+ *
+ * Parts:     .thumbnail-media            16:9 image container
+ *            .thumbnail-name             Label below image
+ *            .thumbnail-badge            Overlay chip (slide number, timestamp)
+ *            .thumbnail-badge-tl         Top-left position
+ *            .thumbnail-badge-bl         Bottom-left position
+ *            .thumbnail-action           Icon button overlay (pin, more)
+ *            .thumbnail-action-tl        Top-left position
+ *            .thumbnail-action-tr        Top-right position
+ *
+ * ── HTML example ──────────────────────────────────────
+ *
+ *   <!-- Look or Reaction — default -->
+ *   <div class="thumbnail">
+ *     <div class="thumbnail-media">
+ *       <img src="..." alt="Look name" />
+ *     </div>
+ *     <span class="thumbnail-name">Name</span>
+ *   </div>
+ *
+ *   <!-- Look or Reaction — hover (shows action buttons) -->
+ *   <div class="thumbnail">
+ *     <div class="thumbnail-media">
+ *       <img src="..." alt="" />
+ *       <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin">
+ *         <img src="icons/Pin_Fill_16.svg" alt="" />
+ *       </button>
+ *       <button class="thumbnail-action thumbnail-action-tr" aria-label="More">
+ *         <img src="icons/More_Fill_16.svg" alt="" />
+ *       </button>
+ *     </div>
+ *     <span class="thumbnail-name">Name</span>
+ *   </div>
+ *
+ *   <!-- Slide — with slide number -->
+ *   <div class="thumbnail thumbnail-slide">
+ *     <div class="thumbnail-media">
+ *       <img src="..." alt="" />
+ *       <span class="thumbnail-badge thumbnail-badge-tl">1</span>
+ *     </div>
+ *   </div>
+ *
+ *   <!-- Slide — selected -->
+ *   <div class="thumbnail thumbnail-slide selected">
+ *     <div class="thumbnail-media">
+ *       <img src="..." alt="" />
+ *       <span class="thumbnail-badge thumbnail-badge-tl">2</span>
+ *       <button class="thumbnail-action thumbnail-action-tr" aria-label="More">
+ *         <img src="icons/More_Fill_16.svg" alt="" />
+ *       </button>
+ *     </div>
+ *   </div>
+ */
+
+/* ════════════════════════════════════════════════════
+   THUMBNAIL — BASE
+   ════════════════════════════════════════════════════ */
+
+.thumbnail {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-10);                              /* 4px */
+  width: 140px;
+  padding: var(--space-10);                          /* 4px */
+  border: 2px solid transparent;
+  border-radius: var(--radius-25);                   /* 10px */
+  box-sizing: border-box;
+  cursor: pointer;
+  transition:
+    background var(--duration-fast) var(--easing-default),
+    border-color var(--duration-fast) var(--easing-default);
+}
+
+.thumbnail:hover {
+  background: var(--color-highlight-primary);
+}
+
+.thumbnail.selected {
+  border-color: var(--color-content-primary);
+}
+
+/* ─── Slide variant (tighter gap, no name label) ─── */
+.thumbnail-slide {
+  gap: var(--space-05);                              /* 2px */
+}
+
+/* ─── Media area (16:9 image container) ─── */
+.thumbnail-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-15);                   /* 6px */
+  overflow: hidden;
+  background: var(--color-background-tertiary);
+  flex-shrink: 0;
+}
+
+.thumbnail-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* ─── Name label ─── */
+.thumbnail-name {
+  display: block;
+  width: 100%;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-small);            /* 11px */
+  line-height: var(--line-height-body-small);        /* 16px */
+  font-weight: var(--font-weight-regular);
+  color: var(--color-content-tertiary);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ─── Overlay badge (slide number, timestamp) ─── */
+.thumbnail-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-10) var(--space-15);          /* 4px 6px */
+  border-radius: var(--radius-10);                   /* 4px */
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  background: var(--color-modeless-overlay);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-small);            /* 11px */
+  line-height: var(--line-height-body-small);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-modeless-white);
+  white-space: nowrap;
+}
+
+.thumbnail-badge-tl {
+  top: var(--space-10);                              /* 4px */
+  left: var(--space-10);
+}
+
+.thumbnail-badge-bl {
+  bottom: var(--space-10);
+  left: var(--space-10);
+}
+
+/* ─── Action overlay buttons (pin, more, etc.) ─── */
+.thumbnail-action {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-60);                             /* 24px */
+  height: var(--size-60);
+  padding: var(--space-10);                          /* 4px */
+  border: none;
+  border-radius: var(--radius-15);                   /* 6px */
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  background: var(--color-modeless-overlay);
+  cursor: pointer;
+  color: var(--color-modeless-white);
+  transition: opacity var(--duration-fast) var(--easing-default);
+}
+
+.thumbnail-action:hover {
+  opacity: 0.8;
+}
+
+.thumbnail-action img,
+.thumbnail-action svg {
+  display: block;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);
+  flex-shrink: 0;
+}
+
+.thumbnail-action-tl {
+  top: var(--space-10);
+  left: var(--space-10);
+}
+
+.thumbnail-action-tr {
+  top: var(--space-10);
+  right: var(--space-10);
+}
