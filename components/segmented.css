@@ -97,43 +97,6 @@
   width: var(--size-40);                             /* 16px */
   height: var(--size-40);
   flex-shrink: 0;
-  filter: brightness(0.69);                          /* content-tertiary dark: ~#B0B1B2 */
-  transition: filter var(--duration-fast) var(--easing-default);
-}
-
-/* Active: content-primary */
-.segmented-item.active img,
-.segmented-item.active svg,
-.segmented-item[aria-selected="true"] img,
-.segmented-item[aria-selected="true"] svg {
-  filter: brightness(1);                             /* #FFFFFF in dark */
-}
-
-/* Light theme */
-.light .segmented-item img,
-.light .segmented-item svg {
-  filter: brightness(0.39);                          /* content-tertiary light: ~#646666 */
-}
-
-.light .segmented-item.active img,
-.light .segmented-item.active svg,
-.light .segmented-item[aria-selected="true"] img,
-.light .segmented-item[aria-selected="true"] svg {
-  filter: brightness(0);                             /* content-primary light: ~#000E14 */
-}
-
-@media (prefers-color-scheme: light) {
-  :root:not(.dark) .segmented-item img,
-  :root:not(.dark) .segmented-item svg {
-    filter: brightness(0.39);
-  }
-
-  :root:not(.dark) .segmented-item.active img,
-  :root:not(.dark) .segmented-item.active svg,
-  :root:not(.dark) .segmented-item[aria-selected="true"] img,
-  :root:not(.dark) .segmented-item[aria-selected="true"] svg {
-    filter: brightness(0);
-  }
 }
 
 /* Selected */

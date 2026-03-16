@@ -1238,7 +1238,7 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
           <div class="variant"><span class="variant-label">Title</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item active">Title</button><button class="segmented-item">Title</button><button class="segmented-item">Title</button></div></div></div>
           <div class="variant"><span class="variant-label">Label</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-label active">Label</button><button class="segmented-item segmented-item-label">Label</button><button class="segmented-item segmented-item-label">Label</button></div></div></div>
           <div class="variant"><span class="variant-label">Icon</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon active" aria-label="Square"><img src="icons/MaskSquare_Stroke_24.svg" alt="" /></button><button class="segmented-item segmented-item-icon" aria-label="Circle"><img src="icons/MaskCircle_Stroke_24.svg" alt="" /></button><button class="segmented-item segmented-item-icon" aria-label="Hexagon"><img src="icons/MaskHexagon_Stroke_24.svg" alt="" /></button></div></div></div>
-          <div class="variant"><span class="variant-label">Icon + Label</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon-label active"><div class="segmented-icon"><img src="icons/Presenter_Fill_24.svg" alt="" /></div><span>Default</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon"><img src="icons/Blur_Fill_20.svg" alt="" /></div><span>Blurred</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon"><img src="icons/Silhouette_Fill_20.svg" alt="" /></div><span>Hidden</span></button></div></div></div>
+          <div class="variant"><span class="variant-label">Icon + Label</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon-label active"><div class="segmented-icon" id="seg-icon-realroom"></div><span>Default</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon" id="seg-icon-blur"></div><span>Blurred</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon" id="seg-icon-silhouette"></div><span>Hidden</span></button></div></div></div>
           <div class="variant"><span class="variant-label">2 segments</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item active">On</button><button class="segmented-item">Off</button></div></div></div>
         </div>
       </div>
@@ -1876,6 +1876,17 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       buildIconGrid();
       initScrollbarDemos();
     }
+
+    // Segmented control icon+label — inject via AppIcons for currentColor support
+    var segIcons = [
+      { id: 'seg-icon-realroom',   key: 'Realroom_Fill_20' },
+      { id: 'seg-icon-blur',       key: 'Blur_Fill_20' },
+      { id: 'seg-icon-silhouette', key: 'Silhouette_Fill_20' },
+    ];
+    segIcons.forEach(function(item) {
+      var el = document.getElementById(item.id);
+      if (el && AppIcons[item.key]) el.appendChild(AppIcons[item.key]());
+    });
   </script>
 </body>
 </html>
