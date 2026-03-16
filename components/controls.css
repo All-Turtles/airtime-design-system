@@ -186,7 +186,7 @@
 
 /* Hover (unselected) */
 .segmented-item:hover:not(.active):not([aria-selected="true"]):not(:disabled) {
-  color: var(--color-content-secondary);
+  background: var(--color-highlight-primary);
 }
 
 /* Disabled */
