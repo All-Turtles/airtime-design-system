@@ -1260,6 +1260,14 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         </div>
       </div>
       <div class="group">
+        <p class="group-title">Dropdown</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Closed</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="dropdown-menu" hidden><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option A')">Option A</li><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option B')">Option B</li><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option C')">Option C</li></ul></div></div></div>
+          <div class="variant"><span class="variant-label">No fill</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger dropdown-trigger-no-fill" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="dropdown-menu" hidden><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option A')">Option A</li><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option B')">Option B</li><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option C')">Option C</li></ul></div></div></div>
+          <div class="variant"><span class="variant-label">Thumbnail</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger dropdown-trigger-thumbnail" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><div class="dropdown-thumbnail"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='40'%3E%3Crect width='71' height='40' fill='%23556'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23aaa' font-size='10'%3EScene A%3C/text%3E%3C/svg%3E" alt="Scene A"></div><span>Scene A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="dropdown-menu" hidden><li class="dropdown-item dropdown-item-thumbnail" onclick="selectDropdownItem(this, 'Scene A')"><div class="dropdown-thumbnail"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='40'%3E%3Crect width='71' height='40' fill='%23556'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23aaa' font-size='10'%3EScene A%3C/text%3E%3C/svg%3E" alt="Scene A"></div>Scene A</li><li class="dropdown-item dropdown-item-thumbnail" onclick="selectDropdownItem(this, 'Scene B')"><div class="dropdown-thumbnail"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='40'%3E%3Crect width='71' height='40' fill='%23446655'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23aaa' font-size='10'%3EScene B%3C/text%3E%3C/svg%3E" alt="Scene B"></div>Scene B</li></ul></div></div></div>
+        </div>
+      </div>
+      <div class="group">
         <p class="group-title">Checkbox</p>
         <div class="variants">
           <div class="variant"><span class="variant-label">Unchecked</span><label class="checkbox"><input type="checkbox"><span class="checkbox-box"></span><span class="checkbox-label">Label</span></label></div>
@@ -1294,12 +1302,6 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         <div class="variants">
           <div class="variant"><span class="variant-label">Default (16px)</span><span class="loader" aria-label="Loading"></span></div>
           <div class="variant"><span class="variant-label">Large (24px)</span><span class="loader loader-lg" aria-label="Loading"></span></div>
-        </div>
-      </div>
-      <div class="group">
-        <p class="group-title">Dropdown</p>
-        <div class="variants">
-          <div class="variant"><span class="variant-label">Closed</span><div class="dropdown"><button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="dropdown-menu" hidden><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option A')">Option A</li><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option B')">Option B</li><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option C')">Option C</li></ul></div></div>
         </div>
       </div>
         </div>

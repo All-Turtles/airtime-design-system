@@ -40,11 +40,14 @@
  *   .loader-lg             24×24px spinner
  *
  * ── Dropdown ──────────────────────────────────────────
- *   .dropdown              Wrapper <div>
- *   .dropdown-trigger      Visible button (click to open)
- *   .dropdown-icon-left    Optional leading icon
- *   .dropdown-menu         <ul> popup list
- *   .dropdown-item         <li> inside menu
+ *   .dropdown                    Wrapper <div>
+ *   .dropdown-trigger            Visible button (click to open) — glass fill
+ *   .dropdown-trigger-no-fill    No background/border; bg appears on hover
+ *   .dropdown-trigger-thumbnail  Tall trigger with image on left
+ *   .dropdown-thumbnail          Image container inside thumbnail trigger
+ *   .dropdown-icon-left          Optional leading icon
+ *   .dropdown-menu               <ul> popup list
+ *   .dropdown-item               <li> inside menu
  *
  * ── HTML examples ─────────────────────────────────────
  *
@@ -114,7 +117,7 @@
  *   <!-- Loader -->
  *   <span class="loader" aria-label="Loading"></span>
  *
- *   <!-- Dropdown -->
+ *   <!-- Dropdown — Default (glass fill) -->
  *   <div class="dropdown">
  *     <button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
  *       <span>Option</span>
@@ -123,6 +126,33 @@
  *     <ul class="dropdown-menu" role="listbox">
  *       <li class="dropdown-item" role="option">Option A</li>
  *       <li class="dropdown-item" role="option">Option B</li>
+ *     </ul>
+ *   </div>
+ *
+ *   <!-- Dropdown — No fill -->
+ *   <div class="dropdown">
+ *     <button class="dropdown-trigger dropdown-trigger-no-fill" aria-haspopup="listbox" aria-expanded="false">
+ *       <span>Option</span>
+ *       <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
+ *     </button>
+ *     <ul class="dropdown-menu" role="listbox">
+ *       <li class="dropdown-item" role="option">Option A</li>
+ *       <li class="dropdown-item" role="option">Option B</li>
+ *     </ul>
+ *   </div>
+ *
+ *   <!-- Dropdown — Thumbnail -->
+ *   <div class="dropdown">
+ *     <button class="dropdown-trigger dropdown-trigger-thumbnail" aria-haspopup="listbox" aria-expanded="false">
+ *       <div class="dropdown-thumbnail">
+ *         <img src="..." alt="Scene A" />
+ *       </div>
+ *       <span>Scene A</span>
+ *       <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
+ *     </button>
+ *     <ul class="dropdown-menu" role="listbox">
+ *       <li class="dropdown-item" role="option">Scene A</li>
+ *       <li class="dropdown-item" role="option">Scene B</li>
  *     </ul>
  *   </div>
  */
@@ -644,11 +674,12 @@
 /* ─── Trigger button ─── */
 
 .dropdown-trigger {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: var(--space-10);                              /* 4px */
+  width: 100%;
   height: var(--size-70);                            /* 28px */
-  padding: var(--space-15) var(--space-15);          /* 6px all */
+  padding: var(--space-15) var(--space-15) var(--space-15) var(--space-20); /* 6px 6px 6px 8px */
   border: var(--border-width-thin) solid var(--color-highlight-primary);
   border-radius: var(--radius-15);                   /* 6px */
   background: var(--color-highlight-primary);
@@ -680,6 +711,47 @@
 .dropdown-trigger:disabled {
   opacity: 0.3;
   cursor: not-allowed;
+}
+
+/* ─── No-fill variant ─── */
+/* No background or border; background appears on hover/open */
+.dropdown-trigger-no-fill {
+  background: transparent;
+  border-color: transparent;
+}
+
+.dropdown-trigger-no-fill:hover:not(:disabled) {
+  background: var(--color-highlight-primary);
+  border-color: transparent;
+}
+
+.dropdown-trigger-no-fill[aria-expanded="true"] {
+  background: var(--color-highlight-primary);
+  border-color: transparent;
+}
+
+/* ─── Thumbnail variant ─── */
+/* Taller trigger with a 71×40px image on the left */
+.dropdown-trigger-thumbnail {
+  height: auto;
+  padding: var(--space-10) var(--space-15) var(--space-10) var(--space-10); /* 4px 6px 4px 4px */
+}
+
+.dropdown-thumbnail {
+  position: relative;
+  flex-shrink: 0;
+  width: 71px;
+  height: 40px;
+  border-radius: var(--radius-10);                   /* 4px */
+  overflow: hidden;
+  background: var(--color-background-tertiary);
+}
+
+.dropdown-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Optional leading icon */
@@ -780,5 +852,15 @@
   display: block;
   width: var(--size-40);                             /* 16px */
   height: var(--size-40);
+  flex-shrink: 0;
+}
+
+/* Thumbnail variant dropdown items */
+.dropdown-item-thumbnail {
+  padding: var(--space-10);
+  gap: var(--space-20);
+}
+
+.dropdown-item-thumbnail .dropdown-thumbnail {
   flex-shrink: 0;
 }
