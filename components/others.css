@@ -508,30 +508,34 @@
 
 /* ─── Individual swatch ─── */
 
-/* Outer wrapper — 28×28px total (4px padding + 20px inner × 2) */
+/* Outer wrapper — exactly 28×28px
+   border-box breakdown: 2px border + 2px padding + 20px inner (each side)
+   border is transparent by default; becomes visible on hover/selected */
 .swatch {
-  display: inline-flex;                              /* shrink to content; prevents stretch in flex rows */
-  flex-direction: column;
-  align-items: flex-start;
-  padding: var(--space-10);                          /* 4px */
-  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: var(--space-05);                          /* 2px */
+  border: var(--border-width-medium) solid transparent; /* 2px, inside box */
   border-radius: var(--radius-20);                   /* 8px */
   box-sizing: border-box;
   cursor: pointer;
-  box-shadow: 0 0 0 2px transparent;
-  transition: box-shadow var(--duration-fast) var(--easing-default);
+  flex-shrink: 0;
+  transition: border-color var(--duration-fast) var(--easing-default);
 }
 
 .swatch:hover {
-  box-shadow: 0 0 0 2px var(--color-highlight-secondary);
+  border-color: var(--color-highlight-secondary);
 }
 
 /* Selected state */
 .swatch.selected {
-  box-shadow: 0 0 0 2px var(--color-content-primary);
+  border-color: var(--color-content-primary);
 }
 
-/* Inner color square — 20×20px; inset border matches Figma "inside" stroke */
+/* Inner color square — 20×20px; inset box-shadow = Figma "inside" border */
 .swatch-inner {
   width: 20px;
   height: 20px;
