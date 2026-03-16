@@ -6,7 +6,7 @@
  *
  * Variants:  .thumbnail                  Base container (Look or Reaction / Catalog / BG or Media)
  *
- * States:    .thumbnail.selected         2px white border
+ * States:    .thumbnail.selected         2px inset border on media area
  *            .thumbnail:hover            Highlight background
  *
  * Parts:     .thumbnail-media            16:9 image container
@@ -54,21 +54,18 @@
   gap: var(--space-10);                              /* 4px */
   width: 140px;
   padding: var(--space-10);                          /* 4px */
-  border: 2px solid transparent;
   border-radius: var(--radius-25);                   /* 10px */
   box-sizing: border-box;
   cursor: pointer;
-  transition:
-    background var(--duration-fast) var(--easing-default),
-    border-color var(--duration-fast) var(--easing-default);
+  transition: background var(--duration-fast) var(--easing-default);
 }
 
 .thumbnail:hover {
   background: var(--color-highlight-primary);
 }
 
-.thumbnail.selected {
-  border-color: var(--color-content-primary);
+.thumbnail.selected .thumbnail-media {
+  box-shadow: inset 0 0 0 2px var(--color-content-primary);
 }
 
 /* ─── Media area (16:9 image container) ─── */

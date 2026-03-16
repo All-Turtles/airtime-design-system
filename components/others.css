@@ -597,7 +597,7 @@
   border-radius: var(--radius-9999);
   overflow: hidden;
   flex-shrink: 0;
-  background: var(--color-background-tertiary);
+  background: #8A9097;
 }
 
 /* Size variants */
