@@ -28,6 +28,7 @@ Generate new interfaces from scratch using Airtime's visual language. Use `/fron
 | `--color-modeless-white` | `#FFFFFF` | `#FFFFFF` | Text on dark/colored backgrounds |
 | `--color-modeless-black` | `#000000` | `#000000` | Text on light backgrounds |
 | `--color-modeless-overlay` | `#00000080` | `#00000080` | Modal backdrop |
+| `--color-modeless-silhouette` | `#8A9097` | `#8A9097` | Avatar silhouette background |
 | `--font-size-heading-large` | 16px / 24px / 700 | -- | Large headings |
 | `--font-size-heading-medium` | 14px / 20px / 600 | -- | Medium headings |
 | `--font-size-heading-small` | 12px / 16px / 600 | -- | Small headings |
@@ -68,15 +69,15 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 | Category | Variants | File | Key Classes |
 |----------|----------|------|-------------|
 | **Buttons** | 7 | `components/button.css` | `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-destructive`, `.btn-modeless`, `.btn-outline`, `.btn-ghost`, `.btn-icon-only` |
-| **Inputs** | 13 | `components/input.css` | `.input`, `.input-lg`, `.input-error`, `.input-ghost`, `.input-wrapper`, `.input-bare`, `.input-split` |
+| **Inputs** | 13 | `components/input.css` | `.input`, `.input-lg`, `.input-error`, `.input-no-fill`, `.input-wrapper`, `.input-bare`, `.input-split` |
 | **Segmented** | 4 | `components/segmented.css` | `.segmented`, `.segmented-item`, `.segmented-item-label`, `.segmented-item-icon`, `.segmented-item-icon-label` |
 | **Checkbox** | 2 | `components/checkbox.css` | `.checkbox`, `.checkbox-box`, `.checkbox-label` |
 | **Radio** | 2 | `components/radio.css` | `.radio`, `.radio-box`, `.radio-label` |
 | **Slider** | 3 | `components/slider.css` | `.slider`, `.slider-threshold`, `.slider-threshold-track`, `.slider-threshold-handle` |
 | **Progress** | 2 | `components/progress.css` | `.progress` |
 | **Loader** | 2 | `components/loader.css` | `.loader`, `.loader-lg` |
-| **Dropdown** | 3 | `components/dropdown.css` | `.dropdown`, `.dropdown-trigger`, `.dropdown-trigger-ghost`, `.dropdown-trigger-thumbnail`, `.dropdown-menu` |
-| **List Item** | 12 | `components/list-item.css` | `.row`, `.row-destructive`, `.row-thumbnail`, `.row-thumbnail-image`, `.row-account` |
+| **Dropdown** | 3 | `components/dropdown.css` | `.dropdown`, `.dropdown-trigger`, `.dropdown-trigger-no-fill`, `.dropdown-trigger-thumbnail`, `.dropdown-menu` |
+| **Rows** | 12 | `components/rows.css` | `.row`, `.row-destructive`, `.row-thumbnail`, `.row-thumbnail-image`, `.row-account` |
 | **Menus** | 9 | `components/menus.css` | `.menu`, `.menu-thumbnail`, `.menu-account`, `.menu-scrollable` |
 | **Overlays** | 7 | `components/overlays.css` | `.tooltip`, `.coach-mark`, `.coach-mark-btn`, `.coach-mark-footer`, `.coach-mark-step` |
 | **Badge** | 1 | `components/badge.css` | `.badge` |
@@ -151,8 +152,8 @@ Copy-paste ready examples for the most common patterns. For full variant lists s
 <!-- Large (32px, bold 16px) -->
 <input class="input input-lg" type="text" placeholder="Placeholder" />
 
-<!-- Ghost (no fill, border appears on hover/focus) -->
-<input class="input input-ghost" type="text" placeholder="Inline edit" />
+<!-- No fill (transparent bg; border appears on hover/focus) -->
+<input class="input input-no-fill" type="text" placeholder="Inline edit" />
 
 <!-- Error state -->
 <input class="input input-error" type="text" value="Invalid value" />
@@ -317,7 +318,7 @@ airtime-design-system/
     .design-rules.json       # Anti-pattern rules for AI generation
   components/
     button.css               # 6 variants (primary, secondary, destructive, modeless, outline, icon-only)
-    input.css                # 13 variants (default, large, error, ghost, wrapper, split)
+    input.css                # 13 variants (default, large, error, no-fill, wrapper, split)
     segmented.css            # Segmented control (title, label, icon, icon+label)
     checkbox.css             # Checkbox with label
     radio.css                # Radio button with label
@@ -325,7 +326,7 @@ airtime-design-system/
     progress.css             # Progress bar (<progress> element)
     loader.css               # Spinning loading indicator (16px + 24px)
     dropdown.css             # Dropdown trigger + menu positioning
-    list-item.css            # Interactive list rows (default, thumbnail, account) — CSS class prefix: .row
+    rows.css                 # Interactive list rows (default, thumbnail, account) — CSS class prefix: .row
     menus.css                # 9 variants (default, thumbnail, account, scrollable, positional)
     overlays.css             # Tooltip + Coach mark (both with 8 arrow positions)
     badge.css                # Teal pill badge (numeric / text)
@@ -336,7 +337,7 @@ airtime-design-system/
     avatar.css               # Circular user photo or silhouette (5 sizes)
     thumbnail.css            # 16:9 media thumbnail with badges and action buttons
   tokens/
-    colors.tokens.json       # 27 color tokens (dark/light/shared)
+    colors.tokens.json       # 28 color tokens (dark/light/shared)
     typography.tokens.json   # 7 composite styles, 4 weights, SF Pro font stack
     sizing.tokens.json       # 17 size tokens + 10 space tokens
     radii.tokens.json        # 17 radius tokens (0-40px + 9999px pill)
@@ -347,8 +348,10 @@ airtime-design-system/
     z-index.tokens.json      # 6 stacking layers (0-500)
   assets/
     logo.svg                 # Airtime wordmark (currentColor)
+  components-manifest.json   # Machine-readable index of all components (classes, parts, HTML examples)
   scripts/
-    generate-tokens.js       # Token compiler (wraps toolkit generate.js)
+    generate.js              # Token compiler — reads tokens/*.tokens.json, writes generated/tokens.css
+    generate-manifest.js     # Manifest validator — cross-references CSS classes with manifest
 ```
 
 ## Token Pipeline
@@ -369,6 +372,17 @@ node scripts/generate.js --oklch --modern-css
 ```
 
 This reads `tokens/*.tokens.json` and writes `generated/tokens.css` with CSS custom properties organized by theme (`:root` for shared, `.dark`/`.light` for themed, and `@media (prefers-color-scheme)` fallbacks).
+
+## Component Manifest
+
+`components-manifest.json` is a machine-readable index of every component — class names, parts, HTML examples, Figma links, and known workarounds. Read this file first before reading individual CSS files when generating component code.
+
+```bash
+node scripts/generate-manifest.js          # Validate manifest vs CSS (dry run)
+node scripts/generate-manifest.js --fix    # Save snapshot + update cssClasses in manifest
+```
+
+Saves a timestamped snapshot to `generated/manifest-snapshots/` before writing. Exits non-zero if any class in the manifest is missing from the CSS. Run before merging any PR that changes component CSS.
 
 ## Autonomy
 - This is a design system project with no destructive operations

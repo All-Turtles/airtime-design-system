@@ -1,0 +1,6 @@
+/**
+ * Airtime Design System v3 - Education (barrel)
+ * Compatibility shim — imports the per-component file.
+ * New code should import overlays.css directly.
+ */
+@import url('overlays.css');

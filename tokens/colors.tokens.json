@@ -196,6 +196,11 @@
       "destructive": {
         "$value": "#FF6D4C",
         "$type": "color"
+      },
+      "silhouette": {
+        "$value": "#8A9097",
+        "$type": "color",
+        "$description": "Avatar silhouette background — neutral grey used for person placeholder, theme-independent"
       }
     }
   }

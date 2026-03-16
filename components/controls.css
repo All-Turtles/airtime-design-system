@@ -1,0 +1,12 @@
+/**
+ * Airtime Design System v3 - Controls (barrel)
+ * Compatibility shim — imports the per-component files.
+ * New code should import each file directly.
+ */
+@import url('segmented.css');
+@import url('checkbox.css');
+@import url('radio.css');
+@import url('slider.css');
+@import url('progress.css');
+@import url('loader.css');
+@import url('dropdown.css');

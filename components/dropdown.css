@@ -6,7 +6,7 @@
  *
  * Parts:  .dropdown                    Wrapper <div>
  *         .dropdown-trigger            Visible button (click to open) — glass fill
- *         .dropdown-trigger-ghost    No background/border; bg appears on hover
+ *         .dropdown-trigger-no-fill    No background/border; bg appears on hover
  *         .dropdown-trigger-thumbnail  Tall trigger with image on left
  *         .dropdown-thumbnail          Image container inside thumbnail trigger
  *         .dropdown-icon-left          Optional leading icon
@@ -28,7 +28,7 @@
  *
  *   <!-- No fill -->
  *   <div class="dropdown">
- *     <button class="dropdown-trigger dropdown-trigger-ghost" aria-haspopup="listbox" aria-expanded="false">
+ *     <button class="dropdown-trigger dropdown-trigger-no-fill" aria-haspopup="listbox" aria-expanded="false">
  *       <span>Option</span>
  *       <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
  *     </button>
@@ -105,17 +105,17 @@
 }
 
 /* ─── No-fill variant ─── */
-.dropdown-trigger-ghost {
+.dropdown-trigger-no-fill {
   background: transparent;
   border-color: transparent;
 }
 
-.dropdown-trigger-ghost:hover:not(:disabled) {
+.dropdown-trigger-no-fill:hover:not(:disabled) {
   background: var(--color-highlight-primary);
   border-color: transparent;
 }
 
-.dropdown-trigger-ghost[aria-expanded="true"] {
+.dropdown-trigger-no-fill[aria-expanded="true"] {
   background: var(--color-highlight-primary);
   border-color: transparent;
 }

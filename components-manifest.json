@@ -7,8 +7,17 @@
       "file": "components/button.css",
       "figma": "node-id=1-2299",
       "base": ".btn",
-      "variants": ["btn-primary", "btn-secondary", "btn-destructive", "btn-modeless"],
-      "modifiers": ["btn-outline", "btn-ghost", "btn-icon-only"],
+      "variants": [
+        "btn-primary",
+        "btn-secondary",
+        "btn-destructive",
+        "btn-modeless"
+      ],
+      "modifiers": [
+        "btn-outline",
+        "btn-ghost",
+        "btn-icon-only"
+      ],
       "notes": [
         "btn-icon-only is a square 28×28px modifier combined with a variant class (e.g. btn btn-primary btn-icon-only)",
         "Ghost with icon-only has no dedicated CSS — use btn-outline + style borderColor:transparent",
@@ -29,14 +38,31 @@
         "icon-only-ghost": "<button class=\"btn btn-secondary btn-outline btn-icon-only\" aria-label=\"Add\" style=\"border-color:transparent\"><img src=\"icons/Plus_Stroke_16.svg\" alt=\"\" /></button>",
         "with-icon-left": "<button class=\"btn btn-primary\"><img src=\"icons/Plus_Stroke_16.svg\" alt=\"\" />Add</button>",
         "disabled": "<button class=\"btn btn-primary\" disabled>Label</button>"
-      }
+      },
+      "cssClasses": [
+        "btn",
+        "btn-destructive",
+        "btn-ghost",
+        "btn-icon-only",
+        "btn-modeless",
+        "btn-outline",
+        "btn-primary",
+        "btn-secondary"
+      ]
     },
     "input": {
       "file": "components/input.css",
       "figma": "node-id=18-9302",
       "base": ".input",
-      "variants": ["input-lg", "input-ghost", "input-error"],
-      "patterns": ["input-wrapper", "input-split"],
+      "variants": [
+        "input-lg",
+        "input-no-fill",
+        "input-error"
+      ],
+      "patterns": [
+        "input-wrapper",
+        "input-split"
+      ],
       "parts": {
         "input-wrapper": "Visual container for input with icon slots",
         "input-bare": "Naked <input> inside .input-wrapper",
@@ -50,21 +76,39 @@
       "examples": {
         "default": "<input class=\"input\" type=\"text\" placeholder=\"Placeholder\" />",
         "large": "<input class=\"input input-lg\" type=\"text\" placeholder=\"Placeholder\" />",
-        "ghost": "<input class=\"input input-ghost\" type=\"text\" placeholder=\"Inline edit\" />",
+        "ghost": "<input class=\"input input-no-fill\" type=\"text\" placeholder=\"Inline edit\" />",
         "error": "<input class=\"input input-error\" type=\"text\" value=\"Invalid value\" />",
         "disabled": "<input class=\"input\" type=\"text\" placeholder=\"Disabled\" disabled />",
         "with-icons": "<div class=\"input-wrapper\">\n  <img class=\"input-icon-left\" src=\"icons/Search_Stroke_16.svg\" alt=\"\" />\n  <input class=\"input-bare\" type=\"text\" placeholder=\"Search...\" />\n  <button class=\"input-icon-right\" aria-label=\"Clear\"><img src=\"icons/Xmark_Stroke_16.svg\" alt=\"\" /></button>\n</div>",
         "split": "<div class=\"input-split\">\n  <input class=\"input-split-segment\" type=\"text\" value=\"100\" aria-label=\"X\" />\n  <span class=\"input-split-divider\"></span>\n  <input class=\"input-split-segment\" type=\"text\" value=\"100\" aria-label=\"Y\" />\n  <span class=\"input-split-divider\"></span>\n  <div class=\"input-split-label\">100%</div>\n</div>"
-      }
+      },
+      "cssClasses": [
+        "input",
+        "input-bare",
+        "input-error",
+        "input-icon-left",
+        "input-icon-right",
+        "input-lg",
+        "input-no-fill",
+        "input-split",
+        "input-split-divider",
+        "input-split-label",
+        "input-split-segment",
+        "input-wrapper",
+        "input-wrapper-lg"
+      ]
     },
     "dropdown": {
       "file": "components/dropdown.css",
       "figma": "node-id=1-1624",
-      "requires": ["components/menus.css", "components/list-item.css"],
+      "requires": [
+        "components/menus.css",
+        "components/rows.css"
+      ],
       "base": ".dropdown",
       "parts": {
         "dropdown-trigger": "Visible button — glass fill",
-        "dropdown-trigger-ghost": "No background/border; bg appears on hover",
+        "dropdown-trigger-no-fill": "No background/border; bg appears on hover",
         "dropdown-trigger-thumbnail": "Tall trigger with image on left",
         "dropdown-thumbnail": "Image container inside thumbnail trigger",
         "dropdown-chevron": "Chevron icon inside trigger",
@@ -77,31 +121,65 @@
       ],
       "examples": {
         "default": "<div class=\"dropdown\">\n  <button class=\"dropdown-trigger\" aria-haspopup=\"listbox\" aria-expanded=\"false\">\n    <span>Option A</span>\n    <img class=\"dropdown-chevron\" src=\"icons/ChevronDownSmall_Stroke_16.svg\" alt=\"\" />\n  </button>\n  <ul class=\"menu dropdown-menu\" hidden>\n    <button class=\"row\" role=\"option\">Option A</button>\n    <button class=\"row\" role=\"option\">Option B</button>\n  </ul>\n</div>",
-        "ghost": "<div class=\"dropdown\">\n  <button class=\"dropdown-trigger dropdown-trigger-ghost\" aria-haspopup=\"listbox\" aria-expanded=\"false\">\n    <span>Option A</span>\n    <img class=\"dropdown-chevron\" src=\"icons/ChevronDownSmall_Stroke_16.svg\" alt=\"\" />\n  </button>\n  <ul class=\"menu dropdown-menu\" hidden>...</ul>\n</div>"
-      }
+        "ghost": "<div class=\"dropdown\">\n  <button class=\"dropdown-trigger dropdown-trigger-no-fill\" aria-haspopup=\"listbox\" aria-expanded=\"false\">\n    <span>Option A</span>\n    <img class=\"dropdown-chevron\" src=\"icons/ChevronDownSmall_Stroke_16.svg\" alt=\"\" />\n  </button>\n  <ul class=\"menu dropdown-menu\" hidden>...</ul>\n</div>"
+      },
+      "cssClasses": [
+        "dropdown",
+        "dropdown-chevron",
+        "dropdown-icon-left",
+        "dropdown-menu",
+        "dropdown-thumbnail",
+        "dropdown-trigger",
+        "dropdown-trigger-no-fill",
+        "dropdown-trigger-thumbnail"
+      ]
     },
     "menu": {
       "file": "components/menus.css",
       "figma": "node-id=8-2445",
-      "requires": ["components/list-item.css"],
+      "requires": [
+        "components/rows.css"
+      ],
       "base": ".menu",
-      "variants": ["menu-thumbnail", "menu-account", "menu-scrollable"],
+      "variants": [
+        "menu-thumbnail",
+        "menu-account",
+        "menu-scrollable"
+      ],
       "parts": {
         "menu-divider": "1px separator between groups of items"
       },
       "notes": [
-        ".menu provides the floating surface; rows inside it are from list-item.css",
+        ".menu provides the floating surface; rows inside it are from rows.css",
         ".menu-scrollable adds max-height + overflow-y:auto for long lists"
       ],
       "examples": {
         "default": "<ul class=\"menu\" role=\"menu\">\n  <button class=\"row\" role=\"menuitem\"><img class=\"row-icon-left\" src=\"icons/Checkmark_Stroke_16.svg\" alt=\"\" /><span>Option 1</span></button>\n  <button class=\"row\" role=\"menuitem\"><span>Option 2</span></button>\n  <div class=\"menu-divider\"></div>\n  <button class=\"row row-destructive\" role=\"menuitem\"><img class=\"row-icon-left\" src=\"icons/Trash_Fill_16.svg\" alt=\"\" /><span>Delete</span></button>\n</ul>"
-      }
+      },
+      "cssClasses": [
+        "menu",
+        "menu-above-left",
+        "menu-above-right",
+        "menu-account",
+        "menu-below-left",
+        "menu-below-right",
+        "menu-divider",
+        "menu-scrollable",
+        "menu-thumbnail",
+        "row",
+        "row-account",
+        "row-thumbnail"
+      ]
     },
-    "list-item": {
-      "file": "components/list-item.css",
+    "rows": {
+      "file": "components/rows.css",
       "figma": "node-id=18-9101",
       "base": ".row",
-      "variants": ["row-destructive", "row-thumbnail", "row-account"],
+      "variants": [
+        "row-destructive",
+        "row-thumbnail",
+        "row-account"
+      ],
       "parts": {
         "row-icon-left": "16px left icon",
         "row-icon-right": "16px right icon (e.g. chevron)",
@@ -116,7 +194,21 @@
         "with-icon-left": "<div class=\"row\" role=\"option\"><img class=\"row-icon-left\" src=\"icons/Checkmark_Stroke_16.svg\" alt=\"\" /><span>Label</span></div>",
         "with-chevron": "<button class=\"row\"><span>Settings</span><img class=\"row-icon-right\" src=\"icons/ChevronForwardSmall_Stroke_16.svg\" alt=\"\" /></button>",
         "destructive": "<button class=\"row row-destructive\"><img class=\"row-icon-left\" src=\"icons/Trash_Fill_16.svg\" alt=\"\" /><span>Delete</span></button>"
-      }
+      },
+      "cssClasses": [
+        "row",
+        "row-account",
+        "row-account-avatar",
+        "row-account-email",
+        "row-account-info",
+        "row-account-name",
+        "row-destructive",
+        "row-icon-left",
+        "row-icon-right",
+        "row-label",
+        "row-thumbnail",
+        "row-thumbnail-image"
+      ]
     },
     "segmented": {
       "file": "components/segmented.css",
@@ -134,7 +226,16 @@
       "examples": {
         "title": "<div class=\"segmented\" role=\"group\">\n  <button class=\"segmented-item active\">Title</button>\n  <button class=\"segmented-item\">Title</button>\n  <button class=\"segmented-item\">Title</button>\n</div>",
         "icon-label": "<div class=\"segmented\" role=\"group\">\n  <button class=\"segmented-item segmented-item-icon-label active\">\n    <img class=\"segmented-icon\" src=\"icons/RealRoom_Fill_16.svg\" alt=\"\" />\n    <span>Real Room</span>\n  </button>\n  <button class=\"segmented-item segmented-item-icon-label\">\n    <img class=\"segmented-icon\" src=\"icons/Blur_Fill_16.svg\" alt=\"\" />\n    <span>Blurred</span>\n  </button>\n</div>"
-      }
+      },
+      "cssClasses": [
+        "active",
+        "segmented",
+        "segmented-icon",
+        "segmented-item",
+        "segmented-item-icon",
+        "segmented-item-icon-label",
+        "segmented-item-label"
+      ]
     },
     "checkbox": {
       "file": "components/checkbox.css",
@@ -145,7 +246,12 @@
       },
       "examples": {
         "default": "<label class=\"checkbox\">\n  <input type=\"checkbox\" />\n  <span class=\"checkbox-box\"></span>\n  <span class=\"checkbox-label\">Label</span>\n</label>"
-      }
+      },
+      "cssClasses": [
+        "checkbox",
+        "checkbox-box",
+        "checkbox-label"
+      ]
     },
     "radio": {
       "file": "components/radio.css",
@@ -156,69 +262,120 @@
       },
       "examples": {
         "default": "<label class=\"radio\">\n  <input type=\"radio\" name=\"group\" />\n  <span class=\"radio-box\"></span>\n  <span class=\"radio-label\">Option</span>\n</label>"
-      }
+      },
+      "cssClasses": [
+        "radio",
+        "radio-box",
+        "radio-label"
+      ]
     },
     "slider": {
       "file": "components/slider.css",
       "base": ".slider",
-      "variants": ["slider-threshold"],
+      "variants": [
+        "slider-threshold"
+      ],
       "notes": [
         "Use CSS custom property --slider-value (e.g. '75%') for the track fill",
         "Update --slider-value via JS on input event"
       ],
       "examples": {
         "default": "<input class=\"slider\" type=\"range\" min=\"0\" max=\"100\" value=\"75\" style=\"--slider-value:75%\" oninput=\"this.style.setProperty('--slider-value',this.value+'%')\" />"
-      }
+      },
+      "cssClasses": [
+        "slider",
+        "slider-color",
+        "slider-threshold",
+        "slider-threshold-handle",
+        "slider-threshold-track"
+      ]
     },
     "progress": {
       "file": "components/progress.css",
       "base": ".progress",
       "examples": {
         "default": "<progress class=\"progress\" value=\"75\" max=\"100\"></progress>"
-      }
+      },
+      "cssClasses": [
+        "progress"
+      ]
     },
     "loader": {
       "file": "components/loader.css",
       "base": ".loader",
-      "variants": ["loader-lg"],
-      "notes": ["Default: 16px spin. loader-lg: 24px spin."],
+      "variants": [
+        "loader-lg"
+      ],
+      "notes": [
+        "Default: 16px spin. loader-lg: 24px spin."
+      ],
       "examples": {
         "default": "<span class=\"loader\" aria-label=\"Loading\"></span>",
         "large": "<span class=\"loader loader-lg\" aria-label=\"Loading\"></span>"
-      }
+      },
+      "cssClasses": [
+        "loader",
+        "loader-lg"
+      ]
     },
     "badge": {
       "file": "components/badge.css",
       "figma": "node-id=1-2251",
       "base": ".badge",
-      "notes": ["Teal pill. For numbers or short text (e.g. '3', '99+')."],
+      "notes": [
+        "Teal pill. For numbers or short text (e.g. '3', '99+')."
+      ],
       "examples": {
         "default": "<span class=\"badge\">3</span>",
         "overflow": "<span class=\"badge\">99+</span>"
-      }
+      },
+      "cssClasses": [
+        "badge"
+      ]
     },
     "divider": {
       "file": "components/divider.css",
       "base": ".divider",
-      "variants": ["divider-vertical"],
+      "variants": [
+        "divider-vertical"
+      ],
       "examples": {
         "horizontal": "<hr class=\"divider\" />",
         "vertical": "<div class=\"divider-vertical\"></div>"
-      }
+      },
+      "cssClasses": [
+        "divider",
+        "divider-vertical"
+      ]
     },
     "avatar": {
       "file": "components/avatar.css",
       "figma": "node-id=1-2255",
       "base": ".avatar",
-      "sizes": ["avatar-16", "avatar-20", "avatar-32", "avatar-40"],
+      "sizes": [
+        "avatar-16",
+        "avatar-20",
+        "avatar-32",
+        "avatar-40"
+      ],
       "parts": {
         "avatar-silhouette": "Person icon overlay (no-photo fallback)"
       },
-      "notes": ["Default (no size class) = 24px"],
+      "notes": [
+        "Default (no size class) = 24px"
+      ],
       "examples": {
         "photo": "<div class=\"avatar avatar-40\"><img src=\"photo.jpg\" alt=\"Name\" /></div>",
         "silhouette": "<div class=\"avatar avatar-32\"><div class=\"avatar-silhouette\"><img src=\"icons/Silhouette_Fill_24.svg\" alt=\"\" /></div></div>"
-      }
+      },
+      "cssClasses": [
+        "avatar",
+        "avatar-16",
+        "avatar-20",
+        "avatar-32",
+        "avatar-40",
+        "avatar-silhouette"
+      ]
     },
     "thumbnail": {
       "file": "components/thumbnail.css",
@@ -241,7 +398,20 @@
       "examples": {
         "default": "<div class=\"thumbnail\">\n  <div class=\"thumbnail-media\"><img src=\"scene.jpg\" alt=\"Scene name\" /></div>\n  <span class=\"thumbnail-name\">Scene Name</span>\n</div>",
         "with-action": "<div class=\"thumbnail\">\n  <div class=\"thumbnail-media\">\n    <img src=\"scene.jpg\" alt=\"\" />\n    <button class=\"thumbnail-action thumbnail-action-tr\" aria-label=\"Pin\"><img src=\"icons/Pin_Fill_16.svg\" alt=\"\" /></button>\n  </div>\n  <span class=\"thumbnail-name\">Scene Name</span>\n</div>"
-      }
+      },
+      "cssClasses": [
+        "selected",
+        "thumbnail",
+        "thumbnail-action",
+        "thumbnail-action-label",
+        "thumbnail-action-tl",
+        "thumbnail-action-tr",
+        "thumbnail-badge",
+        "thumbnail-badge-bl",
+        "thumbnail-badge-tl",
+        "thumbnail-media",
+        "thumbnail-name"
+      ]
     },
     "overlay": {
       "file": "components/overlays.css",
@@ -249,7 +419,9 @@
       "components": {
         "tooltip": {
           "base": ".tooltip",
-          "notes": ["Arrow direction via data-arrow attribute: left, right, top-left, top-center, top-right, bottom-left, bottom-center, bottom-right"],
+          "notes": [
+            "Arrow direction via data-arrow attribute: left, right, top-left, top-center, top-right, bottom-left, bottom-center, bottom-right"
+          ],
           "example": "<div class=\"tooltip\" data-arrow=\"bottom-center\">Tooltip text</div>"
         },
         "coach-mark": {
@@ -261,15 +433,31 @@
             "coach-mark-step": "'1 / 3' counter",
             "coach-mark-next": "Next button wrapper (right-aligned)"
           },
-          "notes": ["Arrow direction via data-arrow (same values as tooltip)", "320px wide teal floating panel"],
+          "notes": [
+            "Arrow direction via data-arrow (same values as tooltip)",
+            "320px wide teal floating panel"
+          ],
           "example": "<div class=\"coach-mark\" data-arrow=\"bottom-center\">\n  <p class=\"coach-mark-text\">Tip text here</p>\n  <div class=\"coach-mark-footer\">\n    <button class=\"coach-mark-btn\">Back</button>\n    <span class=\"coach-mark-step\">1 / 3</span>\n    <div class=\"coach-mark-next\"><button class=\"coach-mark-btn\">Next</button></div>\n  </div>\n</div>"
         }
-      }
+      },
+      "cssClasses": [
+        "coach-mark",
+        "coach-mark-btn",
+        "coach-mark-footer",
+        "coach-mark-next",
+        "coach-mark-step",
+        "coach-mark-text",
+        "tooltip"
+      ]
     },
     "color-picker": {
       "file": "components/color-picker.css",
       "figma": "node-id=1-2251",
-      "requires": ["components/slider.css", "components/input.css", "components/dropdown.css"],
+      "requires": [
+        "components/slider.css",
+        "components/input.css",
+        "components/dropdown.css"
+      ],
       "base": ".color-picker",
       "parts": {
         "color-picker-canvas": "Saturation/brightness gradient field (set --color-picker-hue CSS var)",
@@ -287,6 +475,18 @@
         "Do NOT put overflow:hidden on .color-picker — it clips the mode dropdown menu",
         "Slider order in HTML: alpha first, hue second",
         "Split input gap should be 4px (var(--space-10)) not 8px"
+      ],
+      "cssClasses": [
+        "color-picker",
+        "color-picker-alpha",
+        "color-picker-canvas",
+        "color-picker-canvas-thumb",
+        "color-picker-hue",
+        "color-picker-icon-btn",
+        "color-picker-inputs",
+        "color-picker-mode",
+        "color-picker-slider-thumb",
+        "color-picker-values"
       ]
     },
     "swatches": {
@@ -306,12 +506,27 @@
       },
       "examples": {
         "default": "<div class=\"swatches\">\n  <div class=\"swatches-header\">\n    <span class=\"swatches-label\">Colors</span>\n  </div>\n  <div class=\"swatches-grid\">\n    <div class=\"swatch selected\"><div class=\"swatch-inner\" style=\"background:#05DEFD\"></div></div>\n    <div class=\"swatch\"><div class=\"swatch-inner\" style=\"background:#00B09F\"></div></div>\n  </div>\n</div>"
-      }
+      },
+      "cssClasses": [
+        "selected",
+        "slider",
+        "swatch",
+        "swatch-inner",
+        "swatches",
+        "swatches-actions",
+        "swatches-grid",
+        "swatches-header",
+        "swatches-label",
+        "swatches-opacity"
+      ]
     },
     "scrollbar": {
       "file": "components/scrollbar.css",
       "base": ".scrollbar",
-      "variants": ["scrollbar-strong", "scrollbar-vertical"],
+      "variants": [
+        "scrollbar-strong",
+        "scrollbar-vertical"
+      ],
       "notes": [
         "Apply to the scrollable container element",
         "scrollbar-vertical for vertical-only scroll containers"
@@ -319,7 +534,15 @@
       "examples": {
         "horizontal": "<div class=\"scrollbar\" style=\"overflow-x:auto\">...</div>",
         "vertical": "<div class=\"scrollbar scrollbar-vertical\" style=\"overflow-y:auto;max-height:300px\">...</div>"
-      }
+      },
+      "cssClasses": [
+        "scrollbar",
+        "scrollbar-strong",
+        "scrollbar-strong-thumb",
+        "scrollbar-thumb",
+        "scrollbar-vertical"
+      ]
     }
-  }
+  },
+  "_generated": "2026-03-16"
 }

@@ -7,7 +7,7 @@
  * ── Direct <input> usage ──────────────────────────────────────────
  *   .input          Default size (28px), fill style, body/medium font
  *   .input-lg       Large size (32px), heading/large font (bold 16px)
- *   .input-ghost  Transparent background; border appears on hover/focus
+ *   .input-no-fill  Transparent background; border appears on hover/focus
  *   .input-error    Error state — destructive red border
  *
  * ── Wrapper pattern (input + icons) ──────────────────────────────
@@ -33,7 +33,7 @@
  *   <input class="input input-error" type="text" value="Invalid value" />
  *
  *   <!-- No fill -->
- *   <input class="input input-ghost" type="text" placeholder="Inline" />
+ *   <input class="input input-no-fill" type="text" placeholder="Inline" />
  *
  *   <!-- With left + right icons -->
  *   <div class="input-wrapper">
@@ -144,21 +144,21 @@
 /* Use on coloured / glass backgrounds where no visual container is wanted.
    Border is invisible until hover/focus to prevent layout shift. */
 
-.input-ghost {
+.input-no-fill {
   background: transparent;
   border-color: transparent;
   padding: var(--space-10);                        /* 4px all sides */
 }
 
-.input-ghost:hover:not(:disabled):not(.input-error) {
+.input-no-fill:hover:not(:disabled):not(.input-error) {
   border-color: var(--color-highlight-primary);
 }
 
-.input-ghost:focus:not(.input-error) {
+.input-no-fill:focus:not(.input-error) {
   border-color: var(--color-modeless-teal);
 }
 
-.input-ghost.input-error {
+.input-no-fill.input-error {
   border-color: var(--color-accent-destructive);
 }
 

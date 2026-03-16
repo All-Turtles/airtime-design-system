@@ -1,0 +1,11 @@
+/**
+ * Airtime Design System v3 - Others (barrel)
+ * Compatibility shim — imports the per-component files.
+ * New code should import each file directly.
+ */
+@import url('badge.css');
+@import url('divider.css');
+@import url('scrollbar.css');
+@import url('color-picker.css');
+@import url('swatches.css');
+@import url('avatar.css');
