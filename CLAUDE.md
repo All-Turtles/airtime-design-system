@@ -67,7 +67,7 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 
 | Category | Variants | File | Key Classes |
 |----------|----------|------|-------------|
-| **Buttons** | 6 | `components/button.css` | `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-destructive`, `.btn-modeless`, `.btn-outline`, `.btn-icon-only` |
+| **Buttons** | 7 | `components/button.css` | `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-destructive`, `.btn-modeless`, `.btn-outline`, `.btn-ghost`, `.btn-icon-only` |
 | **Inputs** | 13 | `components/input.css` | `.input`, `.input-lg`, `.input-error`, `.input-no-fill`, `.input-wrapper`, `.input-bare`, `.input-split` |
 | **Segmented** | 4 | `components/segmented.css` | `.segmented`, `.segmented-item`, `.segmented-item-label`, `.segmented-item-icon`, `.segmented-item-icon-label` |
 | **Checkbox** | 2 | `components/checkbox.css` | `.checkbox`, `.checkbox-box`, `.checkbox-label` |

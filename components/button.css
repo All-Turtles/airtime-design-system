@@ -148,6 +148,38 @@
   background: rgb(from var(--color-accent-destructive) r g b / var(--opacity-8));
 }
 
+/* ─── Ghost modifier ───────────────────────── */
+/* No fill, no border — text color only. Hover shows glass background. */
+/* Works with .btn-primary, .btn-secondary, .btn-destructive             */
+.btn-primary.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--color-accent-teal);
+}
+
+.btn-secondary.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.btn-destructive.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.btn-primary.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]),
+.btn-secondary.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]),
+.btn-destructive.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--color-highlight-primary);
+  border-color: transparent;
+  backdrop-filter: blur(var(--blur-small));
+  -webkit-backdrop-filter: blur(var(--blur-small));
+}
+
 /* ─── Modeless ─────────────────────────────── */
 /* Transparent + dark border — for use on teal or light backgrounds */
 .btn-modeless {
