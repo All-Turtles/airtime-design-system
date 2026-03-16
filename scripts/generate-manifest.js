@@ -92,7 +92,7 @@ function manifestClasses(entry) {
   for (const m of entry.modifiers || []) add(m);
   for (const p of entry.patterns || []) add(p);
   for (const key of Object.keys(entry.parts || {})) add(key);
-  for (const key of Object.keys(entry.cssClasses || {})) add(key);
+  for (const cls of (Array.isArray(entry.cssClasses) ? entry.cssClasses : Object.keys(entry.cssClasses || {}))) add(cls);
   return classes;
 }
 
