@@ -199,14 +199,6 @@
   object-fit: cover;
 }
 
-/* Dark overlay on thumbnail image */
-.row-thumbnail-image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-}
 
 /* ════════════════════════════════════════════════════
    ACCOUNT ROW
