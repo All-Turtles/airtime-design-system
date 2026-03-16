@@ -601,6 +601,12 @@
   background: var(--color-background-tertiary);
 }
 
+/* Size variants */
+.avatar-lg {
+  width: 40px;
+  height: 40px;
+}
+
 .avatar img {
   display: block;
   width: 100%;
