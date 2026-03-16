@@ -1237,7 +1237,7 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         <div class="variants">
           <div class="variant"><span class="variant-label">Title</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item active">Title</button><button class="segmented-item">Title</button><button class="segmented-item">Title</button></div></div></div>
           <div class="variant"><span class="variant-label">Label</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-label active">Label</button><button class="segmented-item segmented-item-label">Label</button><button class="segmented-item segmented-item-label">Label</button></div></div></div>
-          <div class="variant"><span class="variant-label">Icon</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon active" aria-label="Square"><img src="icons/MaskSquare_Stroke_24.svg" alt="" /></button><button class="segmented-item segmented-item-icon" aria-label="Circle"><img src="icons/MaskCircle_Stroke_24.svg" alt="" /></button><button class="segmented-item segmented-item-icon" aria-label="Hexagon"><img src="icons/MaskHexagon_Stroke_24.svg" alt="" /></button></div></div></div>
+          <div class="variant"><span class="variant-label">Icon</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon active" aria-label="Rectangle"><div id="seg-icon-mask-rect"></div></button><button class="segmented-item segmented-item-icon" aria-label="Circle"><div id="seg-icon-mask-circle"></div></button><button class="segmented-item segmented-item-icon" aria-label="Hexagon"><div id="seg-icon-mask-hex"></div></button></div></div></div>
           <div class="variant"><span class="variant-label">Icon + Label</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon-label active"><div class="segmented-icon" id="seg-icon-realroom"></div><span>Default</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon" id="seg-icon-blur"></div><span>Blurred</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon" id="seg-icon-silhouette"></div><span>Hidden</span></button></div></div></div>
           <div class="variant"><span class="variant-label">2 segments</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item active">On</button><button class="segmented-item">Off</button></div></div></div>
         </div>
@@ -1761,9 +1761,8 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
 
       if (typeof AppIcons === 'undefined') return;
 
-      /* Filter the active list by query */
-      var source = getActiveBaseNames();
-      var results = source.filter(function(baseName) {
+      /* Search across all icons regardless of featured/all toggle */
+      var results = allBaseNames.filter(function(baseName) {
         return baseName.toLowerCase().indexOf(q) !== -1;
       });
 
@@ -1877,11 +1876,14 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       initScrollbarDemos();
     }
 
-    // Segmented control icon+label — inject via AppIcons for currentColor support
+    // Segmented control icons — inject via AppIcons for currentColor support
     var segIcons = [
-      { id: 'seg-icon-realroom',   key: 'Realroom_Fill_20' },
-      { id: 'seg-icon-blur',       key: 'Blur_Fill_20' },
-      { id: 'seg-icon-silhouette', key: 'Silhouette_Fill_20' },
+      { id: 'seg-icon-mask-rect',   key: 'MaskRectangle_Stroke_24' },
+      { id: 'seg-icon-mask-circle', key: 'MaskCircle_Stroke_24' },
+      { id: 'seg-icon-mask-hex',    key: 'MaskHexagon_Stroke_24' },
+      { id: 'seg-icon-realroom',    key: 'Realroom_Fill_20' },
+      { id: 'seg-icon-blur',        key: 'Blur_Fill_20' },
+      { id: 'seg-icon-silhouette',  key: 'Silhouette_Fill_20' },
     ];
     segIcons.forEach(function(item) {
       var el = document.getElementById(item.id);
