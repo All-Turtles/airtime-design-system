@@ -1193,6 +1193,32 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         </div>
       </div>
       <div class="group">
+        <p class="group-title">Overlay</p>
+        <div class="variants">
+          <div class="variant">
+            <span class="variant-label">Icon only</span>
+            <div class="variant-preview" style="position:relative;width:80px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">With label</span>
+            <div class="variant-preview" style="position:relative;width:120px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action thumbnail-action-label" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div>Pin</button>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">Disabled</span>
+            <div class="variant-preview" style="position:relative;width:80px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin" disabled><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group">
         <p class="group-title">States</p>
         <div class="variants">
           <div class="variant"><span class="variant-label">Disabled</span><div class="variant-preview"><button class="btn btn-primary" disabled>Button</button><button class="btn btn-secondary" disabled>Button</button></div></div>
