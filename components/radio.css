@@ -1,0 +1,108 @@
+/**
+ * Airtime Design System v3 - Radio
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-1624
+ *
+ * Requires: generated/tokens.css
+ *
+ * Parts:  .radio              Wrapper <label>
+ *         .radio-box          Visual 16×16px circle
+ *         .radio-label        Optional label text
+ *
+ * States: checked, disabled
+ *
+ * ── HTML example ──────────────────────────────────────
+ *
+ *   <label class="radio">
+ *     <input type="radio" name="group" />
+ *     <span class="radio-box"></span>
+ *     <span class="radio-label">Label</span>
+ *   </label>
+ */
+
+/* ════════════════════════════════════════════════════
+   RADIO
+   ════════════════════════════════════════════════════ */
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-10);                              /* 4px */
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide native radio */
+.radio input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Visual circle */
+.radio-box {
+  position: relative;
+  flex-shrink: 0;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);                            /* 16px */
+  border: var(--border-width-thin) solid var(--color-highlight-primary);
+  border-radius: var(--radius-9999);                 /* full circle */
+  background: var(--color-highlight-primary);
+  box-sizing: border-box;
+  transition:
+    background var(--duration-fast) var(--easing-default),
+    border-color var(--duration-fast) var(--easing-default);
+}
+
+/* Inner dot (hidden by default) */
+.radio-box::after {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent-teal);
+}
+
+/* Hover */
+.radio:hover .radio-box,
+.radio input[type="radio"]:focus-visible + .radio-box {
+  border-color: var(--color-highlight-secondary);
+}
+
+/* Checked */
+.radio input[type="radio"]:checked + .radio-box {
+  background: transparent;
+  border-color: var(--color-highlight-primary);
+}
+
+.radio input[type="radio"]:checked + .radio-box::after {
+  display: block;
+}
+
+/* Disabled */
+.radio input[type="radio"]:disabled ~ .radio-box,
+.radio input[type="radio"]:disabled ~ .radio-label {
+  opacity: 0.3;
+}
+
+.radio:has(input:disabled) {
+  cursor: not-allowed;
+}
+
+.radio-label {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-medium);           /* 12px */
+  line-height: var(--line-height-body-medium);       /* 16px */
+  font-weight: var(--font-weight-regular);
+  color: var(--color-content-primary);
+}

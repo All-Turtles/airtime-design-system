@@ -1,0 +1,41 @@
+/**
+ * Airtime Design System v3 - Divider
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-2251
+ *
+ * Requires: generated/tokens.css
+ *
+ * Variants:  .divider          Horizontal 1px separator (4px margin top+bottom)
+ *            .divider-vertical Vertical 1px separator (4px margin left+right)
+ *
+ * ── HTML examples ─────────────────────────────────────
+ *
+ *   <!-- Horizontal -->
+ *   <hr class="divider" />
+ *
+ *   <!-- Vertical (inside a flex row) -->
+ *   <div class="divider-vertical"></div>
+ */
+
+/* ════════════════════════════════════════════════════
+   DIVIDER
+   ════════════════════════════════════════════════════ */
+
+.divider {
+  display: block;
+  width: 100%;
+  height: var(--border-width-thin);                  /* 1px */
+  background: var(--color-highlight-primary);
+  border: none;
+  margin: var(--space-10) 0;                         /* 4px top + bottom */
+  flex-shrink: 0;
+}
+
+.divider-vertical {
+  display: block;
+  width: var(--border-width-thin);                   /* 1px */
+  height: 100%;
+  background: var(--color-highlight-primary);
+  margin: 0 var(--space-10);                         /* 4px left + right */
+  flex-shrink: 0;
+  align-self: stretch;
+}

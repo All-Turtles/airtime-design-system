@@ -1,0 +1,173 @@
+/**
+ * Airtime Design System v3 - Slider
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-1624
+ *
+ * Requires: generated/tokens.css
+ *
+ * Variants:  .slider                    <input type="range"> single handle
+ *            .slider-threshold          Two-handle range (div-based)
+ *            .slider-threshold.slider-color  Rainbow hue gradient track
+ *
+ * Parts:     .slider-threshold-track    The track bar
+ *            .slider-threshold-handle   Draggable handle (position via JS style.left)
+ *
+ * ── HTML examples ─────────────────────────────────────
+ *
+ *   <!-- Single handle -->
+ *   <input class="slider" type="range" min="0" max="100" value="25" />
+ *
+ *   <!-- Threshold (dual handle) -->
+ *   <div class="slider-threshold">
+ *     <div class="slider-threshold-track"></div>
+ *     <div class="slider-threshold-handle" style="left: 20%"></div>
+ *     <div class="slider-threshold-handle" style="left: 70%"></div>
+ *   </div>
+ */
+
+/* ════════════════════════════════════════════════════
+   SLIDER — Single handle (<input type="range">)
+   ════════════════════════════════════════════════════ */
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 16px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Track */
+.slider::-webkit-slider-runnable-track {
+  height: var(--border-width-medium);               /* 2px */
+  border-radius: var(--radius-9999);
+  background: linear-gradient(
+    to right,
+    var(--color-content-primary) 0%,
+    var(--color-content-primary) var(--slider-value, 25%),
+    var(--color-highlight-primary) var(--slider-value, 25%),
+    var(--color-highlight-primary) 100%
+  );
+}
+
+.slider::-moz-range-track {
+  height: var(--border-width-medium);
+  border-radius: var(--radius-9999);
+  background: var(--color-highlight-primary);
+}
+
+.slider::-moz-range-progress {
+  height: var(--border-width-medium);
+  border-radius: var(--radius-9999);
+  background: var(--color-content-primary);
+}
+
+/* Thumb */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);                            /* 16px */
+  border-radius: var(--radius-9999);
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-content-tertiary);
+  box-shadow: var(--shadow-small);
+  margin-top: -7px;                                  /* center on 2px track */
+  cursor: grab;
+  transition: box-shadow var(--duration-fast) var(--easing-default);
+  box-sizing: border-box;
+}
+
+.slider::-moz-range-thumb {
+  width: var(--size-40);
+  height: var(--size-40);
+  border-radius: var(--radius-9999);
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-content-tertiary);
+  box-shadow: var(--shadow-small);
+  cursor: grab;
+  box-sizing: border-box;
+}
+
+.slider::-webkit-slider-thumb:hover,
+.slider:focus::-webkit-slider-thumb {
+  box-shadow: var(--shadow-medium);
+}
+
+.slider:active::-webkit-slider-thumb {
+  cursor: grabbing;
+}
+
+.slider:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ════════════════════════════════════════════════════
+   SLIDER — Threshold / dual handle (div-based)
+   ════════════════════════════════════════════════════ */
+
+.slider-threshold {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slider-threshold-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(--border-width-medium);               /* 2px */
+  border-radius: var(--radius-9999);
+  background: var(--color-highlight-primary);
+  overflow: hidden;
+}
+
+/* Color gradient track variant */
+.slider-threshold.slider-color .slider-threshold-track {
+  background: linear-gradient(
+    to right,
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(240, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
+}
+
+.slider-threshold-handle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);                            /* 16px */
+  border-radius: var(--radius-9999);
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-content-tertiary);
+  box-shadow: var(--shadow-small);
+  box-sizing: border-box;
+  cursor: grab;
+  transition: box-shadow var(--duration-fast) var(--easing-default);
+  z-index: 1;
+}
+
+.slider-threshold-handle:hover,
+.slider-threshold-handle:focus-visible {
+  box-shadow: var(--shadow-medium);
+  outline: none;
+}
+
+.slider-threshold-handle:active {
+  cursor: grabbing;
+}

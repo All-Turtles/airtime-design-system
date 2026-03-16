@@ -1,0 +1,108 @@
+/**
+ * Airtime Design System v3 - Checkbox
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-1624
+ *
+ * Requires: generated/tokens.css
+ *
+ * Parts:  .checkbox              Wrapper <label>
+ *         .checkbox-box          Visual 16×16px box
+ *         .checkbox-label        Optional label text
+ *
+ * States: checked, disabled
+ *
+ * ── HTML example ──────────────────────────────────────
+ *
+ *   <label class="checkbox">
+ *     <input type="checkbox" />
+ *     <span class="checkbox-box"></span>
+ *     <span class="checkbox-label">Label</span>
+ *   </label>
+ */
+
+/* ════════════════════════════════════════════════════
+   CHECKBOX
+   ════════════════════════════════════════════════════ */
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-10);                              /* 4px */
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide native checkbox */
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Visual box */
+.checkbox-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);                            /* 16px */
+  border: var(--border-width-thin) solid var(--color-highlight-primary);
+  border-radius: var(--radius-10);                   /* 4px */
+  background: var(--color-highlight-primary);
+  box-sizing: border-box;
+  transition:
+    background var(--duration-fast) var(--easing-default),
+    border-color var(--duration-fast) var(--easing-default);
+}
+
+/* Checkmark icon (hidden by default) */
+.checkbox-box::after {
+  content: '';
+  display: none;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);                            /* 16px */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.7774 3.08403C13.0071 3.2372 13.0692 3.54764 12.9161 3.7774L6.91605 12.7774C6.82604 12.9124 6.67611 12.9954 6.5139 12.9999C6.3517 13.0044 6.19739 12.9299 6.10003 12.8001L3.10003 8.80005C2.93434 8.57914 2.97912 8.26574 3.20003 8.10005C3.42094 7.93437 3.73434 7.97914 3.90003 8.20005L6.47601 11.6347L12.084 3.2227C12.2372 2.99294 12.5476 2.93085 12.7774 3.08403Z' fill='%23000000'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Hover */
+.checkbox:hover .checkbox-box,
+.checkbox input[type="checkbox"]:focus-visible + .checkbox-box {
+  border-color: var(--color-highlight-secondary);
+}
+
+/* Checked */
+.checkbox input[type="checkbox"]:checked + .checkbox-box {
+  background: var(--color-modeless-teal);
+  border-color: var(--color-modeless-teal);
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-box::after {
+  display: block;
+}
+
+/* Disabled */
+.checkbox input[type="checkbox"]:disabled ~ .checkbox-box,
+.checkbox input[type="checkbox"]:disabled ~ .checkbox-label {
+  opacity: 0.3;
+}
+
+.checkbox:has(input:disabled) {
+  cursor: not-allowed;
+}
+
+.checkbox-label {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-medium);           /* 12px */
+  line-height: var(--line-height-body-medium);       /* 16px */
+  font-weight: var(--font-weight-regular);
+  color: var(--color-content-primary);
+}

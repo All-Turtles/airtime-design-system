@@ -1,0 +1,326 @@
+/**
+ * Airtime Design System v3 - Color Picker & Swatches
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-2251
+ *
+ * Requires: generated/tokens.css, components/slider.css, components/input.css, components/dropdown.css
+ *
+ * ── Color Picker ──────────────────────────────────────
+ *   .color-picker              Floating panel (280px)
+ *   .color-picker-canvas       Saturation/brightness gradient field
+ *   .color-picker-canvas-thumb Circle cursor on canvas
+ *   .color-picker-hue          Rainbow hue strip slider
+ *   .color-picker-alpha        Checkerboard + alpha gradient slider
+ *   .color-picker-slider-thumb Circle thumb on hue/alpha sliders
+ *   .color-picker-values       Bottom row (eyedropper, mode, inputs)
+ *   .color-picker-icon-btn     Eyedropper / action icon button (28×28)
+ *
+ * ── Swatches ──────────────────────────────────────────
+ *   .swatches              Panel container (280px)
+ *   .swatches-header       Label + action buttons row
+ *   .swatches-label        Section heading (body/medium, tertiary)
+ *   .swatches-grid         Flex-wrap color swatch row
+ *   .swatch                Outer wrapper (4px pad, radius-20)
+ *   .swatch-inner          24×24px colored square (radius-10 + border overlay)
+ *   .swatch.selected       Active selection (2px white outline)
+ *   .swatches-opacity      Opacity label + slider row
+ *
+ * ── HTML examples ─────────────────────────────────────
+ *
+ *   <!-- Color picker (JS needed for interactivity) -->
+ *   <div class="color-picker" style="--color-picker-hue: #00E0FF;">
+ *     <div class="color-picker-canvas">
+ *       <div class="color-picker-canvas-thumb" style="left: 90%; top: 5%"></div>
+ *     </div>
+ *     <div class="color-picker-hue">
+ *       <div class="color-picker-slider-thumb" style="left: 50%"></div>
+ *     </div>
+ *     <div class="color-picker-alpha" style="--color-picker-color: #79DDE8;">
+ *       <div class="color-picker-slider-thumb" style="left: 100%"></div>
+ *     </div>
+ *     <div class="color-picker-values">
+ *       <button class="color-picker-icon-btn" aria-label="Pick color">
+ *         <img src="../icons/Eyedropper_Stroke_20.svg" alt="" />
+ *       </button>
+ *       <button class="dropdown-trigger color-picker-mode" aria-label="Color mode">
+ *         <span>HSB</span>
+ *         <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
+ *       </button>
+ *       <div class="input-split color-picker-inputs">
+ *         <input class="input-split-segment" type="text" value="184" aria-label="H" />
+ *         <span class="input-split-divider"></span>
+ *         <input class="input-split-segment" type="text" value="75" aria-label="S" />
+ *       </div>
+ *     </div>
+ *   </div>
+ *
+ *   <!-- Swatches panel -->
+ *   <div class="swatches">
+ *     <div class="swatches-header">
+ *       <span class="swatches-label">Custom Colors</span>
+ *       <div class="swatches-actions">
+ *         <button class="color-picker-icon-btn" aria-label="Add color">
+ *           <img src="../icons/Plus_Stroke_20.svg" alt="" />
+ *         </button>
+ *       </div>
+ *     </div>
+ *     <div class="swatches-grid">
+ *       <div class="swatch selected"><div class="swatch-inner" style="background: #05DEFD;"></div></div>
+ *       <div class="swatch"><div class="swatch-inner" style="background: #00B09F;"></div></div>
+ *     </div>
+ *   </div>
+ */
+
+/* ════════════════════════════════════════════════════
+   COLOR PICKER
+   ════════════════════════════════════════════════════ */
+
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-20);                              /* 8px */
+  align-items: flex-start;
+  padding: var(--space-20);                          /* 8px */
+  width: 280px;
+  background: var(--color-background-secondary);
+  border: var(--border-width-thin) solid var(--color-highlight-primary);
+  border-radius: var(--radius-30);                   /* 12px */
+  box-shadow: 0 8px 16px 0 var(--color-shadow-medium);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Saturation/Brightness canvas */
+.color-picker-canvas {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  border-radius: var(--radius-10);                   /* 4px */
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
+    linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0));
+  background-color: var(--color-picker-hue, #00E0FF);
+  cursor: crosshair;
+  flex-shrink: 0;
+}
+
+.color-picker-canvas-thumb {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid var(--color-modeless-white);
+  border-radius: var(--radius-9999);
+  box-shadow: 0 1px 2px 0 var(--color-shadow-small);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  box-sizing: content-box;
+}
+
+/* Shared slider styles (hue + alpha) */
+.color-picker-hue,
+.color-picker-alpha {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  border-radius: var(--radius-9999);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.color-picker-slider-thumb {
+  position: absolute;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 4px solid var(--color-modeless-white);
+  border-radius: var(--radius-9999);
+  box-shadow: 0 1px 2px 0 var(--color-shadow-small);
+  transform: translateX(-50%);
+  pointer-events: none;
+  box-sizing: border-box;
+  cursor: grab;
+}
+
+/* Hue slider (rainbow spectrum) */
+.color-picker-hue {
+  background: linear-gradient(
+    to right,
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(240, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
+}
+
+/* Alpha slider (transparency checkerboard + fade) */
+.color-picker-alpha {
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(from var(--color-picker-color, #79DDE8) r g b / 0),
+      var(--color-picker-color, #79DDE8)
+    ),
+    repeating-conic-gradient(
+      #808080 0% 25%,
+      #ffffff 0% 50%
+    );
+  background-size: auto, 8px 8px;
+  background-position: 0 0, 0 0;
+}
+
+/* Values row */
+.color-picker-values {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-20);                              /* 8px */
+  width: 100%;
+}
+
+/* Eyedropper / action icon button (28×28px) */
+.color-picker-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--size-70);                             /* 28px */
+  height: var(--size-70);                            /* 28px */
+  padding: var(--space-10);                          /* 4px */
+  background: var(--color-highlight-primary);
+  border: var(--border-width-thin) solid var(--color-highlight-primary);
+  border-radius: var(--radius-15);                   /* 6px */
+  backdrop-filter: blur(var(--blur-small));
+  -webkit-backdrop-filter: blur(var(--blur-small));
+  cursor: pointer;
+  box-sizing: border-box;
+  color: inherit;
+  transition: background var(--duration-fast) var(--easing-default);
+}
+
+.color-picker-icon-btn:hover {
+  background: var(--color-highlight-secondary);
+  border-color: var(--color-highlight-secondary);
+}
+
+.color-picker-icon-btn img,
+.color-picker-icon-btn svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* Mode selector (e.g. HSB / RGB / Hex) */
+.color-picker-mode {
+  flex-shrink: 0;
+  height: var(--size-70);                            /* 28px */
+}
+
+/* Numeric inputs — grows to fill remaining space */
+.color-picker-inputs {
+  flex: 1;
+}
+
+/* ════════════════════════════════════════════════════
+   SWATCHES
+   ════════════════════════════════════════════════════ */
+
+.swatches {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);                              /* 4px */
+  align-items: flex-start;
+  padding: var(--space-20);                          /* 8px */
+  width: 280px;
+  background: var(--color-background-secondary);
+  border: var(--border-width-thin) solid var(--color-highlight-primary);
+  border-radius: var(--radius-30);                   /* 12px */
+  box-shadow: 0 8px 16px 0 var(--color-shadow-medium);
+  box-sizing: border-box;
+}
+
+.swatches-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-20);                              /* 8px */
+  width: 100%;
+}
+
+.swatches-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-20);                              /* 8px */
+  flex-shrink: 0;
+}
+
+.swatches-label {
+  flex: 1;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-medium);           /* 12px */
+  line-height: var(--line-height-body-medium);       /* 16px */
+  font-weight: var(--font-weight-regular);
+  color: var(--color-content-tertiary);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.swatches-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* Individual swatch — 28×28px outer wrapper */
+.swatch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: var(--space-05);                          /* 2px */
+  border: var(--border-width-medium) solid transparent;
+  border-radius: var(--radius-20);                   /* 8px */
+  box-sizing: border-box;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color var(--duration-fast) var(--easing-default);
+}
+
+.swatch:hover {
+  background: var(--color-highlight-primary);
+}
+
+.swatch.selected {
+  border-color: var(--color-content-primary);
+}
+
+/* Inner color square — 20×20px */
+.swatch-inner {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-10);                   /* 4px */
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 var(--border-width-thin) var(--color-highlight-primary);
+}
+
+/* Opacity row */
+.swatches-opacity {
+  display: flex;
+  align-items: center;
+  gap: var(--space-20);                              /* 8px */
+  width: 100%;
+  padding: var(--space-15) 0;                        /* 6px top+bottom */
+  box-sizing: border-box;
+}
+
+.swatches-opacity .swatches-label {
+  width: 128px;
+  flex: none;
+}
+
+.swatches-opacity .slider {
+  flex: 1;
+}

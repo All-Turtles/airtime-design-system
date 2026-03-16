@@ -63,18 +63,27 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 
 ## Component Inventory
 
-94 total variants across 7 categories:
+94 total variants across 14 files:
 
 | Category | Variants | File | Key Classes |
 |----------|----------|------|-------------|
 | **Buttons** | 6 | `components/button.css` | `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-destructive`, `.btn-modeless`, `.btn-outline`, `.btn-icon-only` |
 | **Inputs** | 13 | `components/input.css` | `.input`, `.input-lg`, `.input-error`, `.input-no-fill`, `.input-wrapper`, `.input-bare`, `.input-split` |
-| **Controls** | 21 | `components/controls.css` | `.segmented`, `.checkbox`, `.radio`, `.slider`, `.progress`, `.loader`, `.dropdown` |
+| **Segmented** | 4 | `components/segmented.css` | `.segmented`, `.segmented-item`, `.segmented-item-label`, `.segmented-item-icon`, `.segmented-item-icon-label` |
+| **Checkbox** | 2 | `components/checkbox.css` | `.checkbox`, `.checkbox-box`, `.checkbox-label` |
+| **Radio** | 2 | `components/radio.css` | `.radio`, `.radio-box`, `.radio-label` |
+| **Slider** | 3 | `components/slider.css` | `.slider`, `.slider-threshold`, `.slider-threshold-track`, `.slider-threshold-handle` |
+| **Progress** | 3 | `components/progress.css` | `.progress`, `.loader`, `.loader-lg` |
+| **Dropdown** | 3 | `components/dropdown.css` | `.dropdown`, `.dropdown-trigger`, `.dropdown-trigger-no-fill`, `.dropdown-trigger-thumbnail`, `.dropdown-menu` |
 | **Rows** | 12 | `components/rows.css` | `.row`, `.row-destructive`, `.row-thumbnail`, `.row-account` |
 | **Menus** | 9 | `components/menus.css` | `.menu`, `.menu-thumbnail`, `.menu-account`, `.menu-scrollable` |
-| **Education** | 7 | `components/education.css` | `.coach-mark`, `.tooltip` |
-| **Others** | 26 | `components/others.css` | `.badge`, `.divider`, `.scrollbar`, `.color-picker`, `.swatches` |
-| **Thumbnails** | 8 | `components/thumbnail.css` | `.thumbnail`, `.thumbnail-slide`, `.thumbnail-media`, `.thumbnail-name`, `.thumbnail-badge`, `.thumbnail-action` |
+| **Overlays** | 7 | `components/overlays.css` | `.tooltip`, `.coach-mark`, `.coach-mark-btn`, `.coach-mark-footer`, `.coach-mark-step` |
+| **Badge** | 1 | `components/badge.css` | `.badge` |
+| **Divider** | 2 | `components/divider.css` | `.divider`, `.divider-vertical` |
+| **Scrollbar** | 4 | `components/scrollbar.css` | `.scrollbar`, `.scrollbar-thumb`, `.scrollbar-strong`, `.scrollbar-vertical` |
+| **Color Picker** | 8 | `components/color-picker.css` | `.color-picker`, `.color-picker-canvas`, `.color-picker-hue`, `.color-picker-alpha`, `.swatches`, `.swatch`, `.swatch-inner` |
+| **Avatar** | 5 | `components/avatar.css` | `.avatar`, `.avatar-16`, `.avatar-20`, `.avatar-32`, `.avatar-40`, `.avatar-silhouette` |
+| **Thumbnails** | 8 | `components/thumbnail.css` | `.thumbnail`, `.thumbnail-media`, `.thumbnail-name`, `.thumbnail-badge`, `.thumbnail-action` |
 
 ## Skills
 
@@ -102,11 +111,21 @@ airtime-design-system/
   components/
     button.css               # 6 variants (primary, secondary, destructive, modeless, outline, icon-only)
     input.css                # 13 variants (default, large, error, no-fill, wrapper, split)
-    controls.css             # 21 variants (segmented, checkbox, radio, slider, progress, loader, dropdown)
+    segmented.css            # Segmented control (title, label, icon, icon+label)
+    checkbox.css             # Checkbox with label
+    radio.css                # Radio button with label
+    slider.css               # Single-handle and dual-handle (threshold) sliders
+    progress.css             # Progress bar + loader spinner
+    dropdown.css             # Dropdown trigger + menu positioning
     rows.css                 # 12 variants (default, destructive, thumbnail, account)
     menus.css                # 9 variants (default, thumbnail, account, scrollable, positional)
-    education.css            # 7 variants (coach-mark with 8 arrow positions, tooltip)
-    others.css               # 26 variants (badge, divider, scrollbar, color-picker, swatches)
+    overlays.css             # Tooltip + Coach mark (both with 8 arrow positions)
+    badge.css                # Teal pill badge (numeric / text)
+    divider.css              # Horizontal and vertical dividers
+    scrollbar.css            # Weak and strong scrollbar variants (H + V)
+    color-picker.css         # Color picker panel + swatches panel
+    avatar.css               # Circular user photo or silhouette (5 sizes)
+    thumbnail.css            # 16:9 media thumbnail with badges and action buttons
   tokens/
     colors.tokens.json       # 27 color tokens (dark/light/shared)
     typography.tokens.json   # 7 composite styles, 4 weights, SF Pro font stack
