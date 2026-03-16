@@ -64,8 +64,14 @@
   background: var(--color-highlight-primary);
 }
 
-.thumbnail.selected .thumbnail-media {
-  box-shadow: inset 0 0 0 2px var(--color-content-primary);
+.thumbnail.selected .thumbnail-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  border: 2px solid var(--color-content-primary);
+  border-radius: inherit;
+  pointer-events: none;
 }
 
 /* ─── Media area (16:9 image container) ─── */
