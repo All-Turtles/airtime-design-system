@@ -1213,8 +1213,8 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       <div class="group">
         <p class="group-title">Wrapper (icon + clear)</p>
         <div class="variants">
-          <div class="variant"><span class="variant-label">Search</span><div class="input-wrapper"><div class="input-icon-left icon-img" data-icon="Search_Fill_16"></div><input class="input-bare" type="text" placeholder="Search..."></div></div>
-          <div class="variant"><span class="variant-label">Left + Right icon</span><div class="input-wrapper"><div class="input-icon-left icon-img" data-icon="Search_Fill_16"></div><input class="input-bare" type="text" value="Query"><button class="input-icon-right" aria-label="Clear"><div class="icon-img" data-icon="Plus_Stroke_16" style="transform:rotate(45deg)"></div></button></div></div>
+          <div class="variant"><span class="variant-label">Search</span><div class="input-wrapper" onclick="if(event.target===this||event.target.closest('.input-icon-left'))this.querySelector('.input-bare').focus()"><div class="input-icon-left icon-img" data-icon="Search_Fill_16"></div><input class="input-bare" type="text" placeholder="Search..."></div></div>
+          <div class="variant"><span class="variant-label">Left + Right icon</span><div class="input-wrapper" onclick="if(event.target===this||event.target.closest('.input-icon-left'))this.querySelector('.input-bare').focus()"><div class="input-icon-left icon-img" data-icon="Search_Fill_16"></div><input class="input-bare" type="text" value="Query"><button class="input-icon-right" aria-label="Clear" onclick="var i=this.closest('.input-wrapper').querySelector('.input-bare');i.value='';i.focus()"><div class="icon-img" data-icon="Plus_Stroke_16" style="transform:rotate(45deg)"></div></button></div></div>
         </div>
       </div>
       <div class="group">
