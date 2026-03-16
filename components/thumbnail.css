@@ -12,9 +12,12 @@
  *
  * Parts:     .thumbnail-media            16:9 image container
  *            .thumbnail-name             Label below image
- *            .thumbnail-badge            Overlay chip (slide number, timestamp)
- *            .thumbnail-badge-tl         Top-left position
- *            .thumbnail-badge-bl         Bottom-left position
+ *            .thumbnail-badge            Overlay chip (timestamp, general)
+ *            .thumbnail-badge-tl         Top-left position (inset 4px)
+ *            .thumbnail-badge-bl         Bottom-left position (inset 4px)
+ *            .thumbnail-slide-num        Slide number badge — top-left corner, tab shape
+ *            .thumbnail-presenter        Presenter silhouette container (Slide only)
+ *            .thumbnail-presenter-silo   Inner silo crop (21.88% side margins)
  *            .thumbnail-action           Icon button overlay (pin, more)
  *            .thumbnail-action-tl        Top-left position
  *            .thumbnail-action-tr        Top-right position
@@ -43,11 +46,16 @@
  *     <span class="thumbnail-name">Name</span>
  *   </div>
  *
- *   <!-- Slide — with slide number -->
+ *   <!-- Slide — default -->
  *   <div class="thumbnail thumbnail-slide">
  *     <div class="thumbnail-media">
  *       <img src="..." alt="" />
- *       <span class="thumbnail-badge thumbnail-badge-tl">1</span>
+ *       <div class="thumbnail-presenter">
+ *         <div class="thumbnail-presenter-silo">
+ *           <img src="icons/presenter-silhouette.svg" alt="" />
+ *         </div>
+ *       </div>
+ *       <span class="thumbnail-slide-num">1</span>
  *     </div>
  *   </div>
  *
@@ -55,7 +63,12 @@
  *   <div class="thumbnail thumbnail-slide selected">
  *     <div class="thumbnail-media">
  *       <img src="..." alt="" />
- *       <span class="thumbnail-badge thumbnail-badge-tl">2</span>
+ *       <div class="thumbnail-presenter">
+ *         <div class="thumbnail-presenter-silo">
+ *           <img src="icons/presenter-silhouette.svg" alt="" />
+ *         </div>
+ *       </div>
+ *       <span class="thumbnail-slide-num">1</span>
  *       <button class="thumbnail-action thumbnail-action-tr" aria-label="More">
  *         <img src="icons/More_Fill_16.svg" alt="" />
  *       </button>
@@ -91,9 +104,9 @@
   border-color: var(--color-content-primary);
 }
 
-/* ─── Slide variant (tighter gap, no name label) ─── */
+/* ─── Slide variant (no gap, no name label) ─── */
 .thumbnail-slide {
-  gap: var(--space-05);                              /* 2px */
+  gap: 0;
 }
 
 /* ─── Media area (16:9 image container) ─── */
@@ -157,6 +170,59 @@
 .thumbnail-badge-bl {
   bottom: var(--space-10);
   left: var(--space-10);
+}
+
+/* ─── Slide number — top-left corner tab (Slide variant only) ─── */
+/* Figma: rounded-tl-[4px] rounded-br-[4px] — matches the image corner */
+.thumbnail-slide-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);                            /* 16px */
+  padding: 2px var(--space-10);                      /* 2px 4px */
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  background: var(--color-modeless-overlay);
+  border-radius: var(--radius-10) 0 var(--radius-10) 0; /* TL TR BR BL: 4px 0 4px 0 */
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-small);            /* 11px */
+  line-height: var(--line-height-body-small);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-modeless-white);
+}
+
+/* ─── Presenter silhouette (Slide variant only) ─── */
+/* Centered, bottom-anchored; fills from ~14% top to image bottom */
+.thumbnail-presenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 13.8%;
+  bottom: 0;
+  aspect-ratio: 160 / 90;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.thumbnail-presenter-silo {
+  position: absolute;
+  top: 0;
+  left: 21.88%;
+  right: 21.88%;
+  bottom: 0;
+}
+
+.thumbnail-presenter-silo img,
+.thumbnail-presenter-silo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
 }
 
 /* ─── Action overlay buttons (pin, more, etc.) ─── */
