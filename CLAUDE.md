@@ -85,7 +85,7 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 | **Color Picker** | 5 | `components/color-picker.css` | `.color-picker`, `.color-picker-canvas`, `.color-picker-hue`, `.color-picker-alpha`, `.color-picker-icon-btn` |
 | **Swatches** | 3 | `components/swatches.css` | `.swatches`, `.swatches-grid`, `.swatch`, `.swatch-inner`, `.swatch.selected` |
 | **Avatar** | 5 | `components/avatar.css` | `.avatar`, `.avatar-16`, `.avatar-20`, `.avatar-32`, `.avatar-40`, `.avatar-silhouette` |
-| **Thumbnails** | 8 | `components/thumbnail.css` | `.thumbnail`, `.thumbnail-media`, `.thumbnail-name`, `.thumbnail-badge`, `.thumbnail-action` |
+| **Thumbnails** | 8 | `components/thumbnail.css` | `.thumbnail`, `.thumbnail-media`, `.thumbnail-name`, `.thumbnail-badge`, `.thumbnail-action`, `.thumbnail-action-label` |
 
 ## Skills
 

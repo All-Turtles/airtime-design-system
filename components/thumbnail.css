@@ -134,24 +134,50 @@
 /* ─── Action overlay buttons (pin, more, etc.) ─── */
 .thumbnail-action {
   position: absolute;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: var(--size-60);                             /* 24px */
-  height: var(--size-60);
+  gap: var(--space-10);                              /* 4px — for label variant */
+  min-width: var(--size-60);                         /* 24px min, expands with label */
+  height: var(--size-60);                            /* 24px */
   padding: var(--space-10);                          /* 4px */
   border: none;
   border-radius: var(--radius-15);                   /* 6px */
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
   background: var(--color-modeless-overlay);
+  box-shadow: 0 1px 2px 0 var(--color-shadow-small);
   cursor: pointer;
   color: var(--color-modeless-white);
-  transition: opacity var(--duration-fast) var(--easing-default);
+  white-space: nowrap;
+  transition: background var(--duration-fast) var(--easing-default);
 }
 
-.thumbnail-action:hover {
-  opacity: 0.8;
+/* Hover: white 24% highlight on top of overlay */
+.thumbnail-action:hover:not(:disabled):not([aria-disabled="true"]) {
+  background:
+    linear-gradient(
+      rgb(from var(--color-modeless-white) r g b / var(--opacity-24)),
+      rgb(from var(--color-modeless-white) r g b / var(--opacity-24))
+    ),
+    var(--color-modeless-overlay);
+}
+
+/* Disabled */
+.thumbnail-action:disabled,
+.thumbnail-action[aria-disabled="true"] {
+  opacity: var(--opacity-30);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Label variant — icon + text, auto width with horizontal padding */
+.thumbnail-action-label {
+  padding: var(--space-10) var(--space-15);          /* 4px 6px */
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-button-default);        /* 12px */
+  line-height: var(--line-height-button-default);    /* 16px */
+  font-weight: var(--font-weight-button-default);    /* 500 */
 }
 
 .thumbnail-action img,

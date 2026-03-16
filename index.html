@@ -1378,8 +1378,8 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
             <div class="thumbnail" style="background:var(--color-highlight-primary)">
               <div class="thumbnail-media">
                 <img src="assets/image-example.png" alt="">
-                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin" style="display:none"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
-                <button class="thumbnail-action thumbnail-action-tr" aria-label="More" style="display:none"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tr" aria-label="More"><div class="icon-img" data-icon="More_Fill_16"></div></button>
                 <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
               </div>
               <span class="thumbnail-name" style="display:none">Name</span>
@@ -1395,6 +1395,32 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
                 <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
               </div>
               <span class="thumbnail-name" style="display:none">Name</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">Overlay button</p>
+        <div class="variants">
+          <div class="variant">
+            <span class="variant-label">Default</span>
+            <div style="position:relative;width:80px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">Label</span>
+            <div style="position:relative;width:120px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action thumbnail-action-label" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div>Pin</button>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">Disabled</span>
+            <div style="position:relative;width:80px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin" disabled><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
             </div>
           </div>
         </div>
