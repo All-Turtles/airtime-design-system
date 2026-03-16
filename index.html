@@ -801,9 +801,9 @@
       <a class="nav-link" href="#controls">Controls</a>
       <a class="nav-link" href="#rows">Rows</a>
       <a class="nav-link" href="#menus">Menus</a>
+      <a class="nav-link" href="#thumbnails">Thumbnails</a>
       <a class="nav-link" href="#education">Education</a>
       <a class="nav-link" href="#others">Others</a>
-      <a class="nav-link" href="#thumbnails">Thumbnails</a>
       <hr class="nav-divider">
       <p class="nav-section-label">Assets</p>
       <a class="nav-link" href="#icons">Icons</a>
@@ -1308,7 +1308,7 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       <div class="group">
         <p class="group-title">Account Row</p>
         <div style="width:260px;display:flex;flex-direction:column;gap:4px">
-          <div class="row-account"><img class="row-account-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23556677'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='14' font-family='sans-serif'%3ETR%3C/text%3E%3C/svg%3E" alt="Tyler Reynolds"><div class="row-account-info"><span class="row-account-name">Tyler Reynolds</span><span class="row-account-email">tyler@all-turtles.com</span></div><div class="row-icon-right icon-img" data-icon="ChevronForward_Stroke_16"></div></div>
+          <div class="row-account"><div class="avatar row-account-avatar"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23556677'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='14' font-family='sans-serif'%3ETR%3C/text%3E%3C/svg%3E" alt="Tyler Reynolds"></div><div class="row-account-info"><span class="row-account-name">Tyler Reynolds</span><span class="row-account-email">tyler@all-turtles.com</span></div><div class="row-icon-right icon-img" data-icon="ChevronForward_Stroke_16"></div></div>
         </div>
       </div>
         </div>
@@ -1322,7 +1322,90 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         <div class="details-content">
       <div class="variants" style="align-items:flex-start">
         <div class="variant"><span class="variant-label">Default menu</span><ul class="menu" role="menu"><li class="row" role="menuitem"><div class="row-icon-left icon-img" data-icon="Checkmark_Stroke_16"></div><span>Option 1</span></li><li class="row" role="menuitem"><div class="row-icon-left icon-img" data-icon="Checkmark_Stroke_16"></div><span>Option 2</span></li><li class="menu-divider" role="separator"></li><li class="row row-destructive" role="menuitem"><div class="row-icon-left icon-img" data-icon="Trash_Fill_16"></div><span>Delete</span></li></ul></div>
-        <div class="variant"><span class="variant-label">Account menu</span><div class="menu menu-account" role="dialog" aria-label="Account menu"><div class="row-account"><img class="row-account-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23556677'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='14' font-family='sans-serif'%3ETR%3C/text%3E%3C/svg%3E" alt="Tyler Reynolds"><div class="row-account-info"><span class="row-account-name">Tyler Reynolds</span><span class="row-account-email">tyler@all-turtles.com</span></div></div><div class="menu-divider"></div><button class="row"><span>Manage Business</span><div class="row-icon-right icon-img" data-icon="ChevronForwardSmall_Stroke_16"></div></button><button class="row"><span>Account settings</span></button><div class="menu-divider"></div><button class="row row-destructive"><span>Sign out</span></button></div></div>
+        <div class="variant"><span class="variant-label">Account menu</span><div class="menu menu-account" role="dialog" aria-label="Account menu"><div class="row-account"><div class="avatar row-account-avatar"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23556677'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='14' font-family='sans-serif'%3ETR%3C/text%3E%3C/svg%3E" alt="Tyler Reynolds"></div><div class="row-account-info"><span class="row-account-name">Tyler Reynolds</span><span class="row-account-email">tyler@all-turtles.com</span></div></div><div class="menu-divider"></div><button class="row"><span>Manage Business</span><div class="row-icon-right icon-img" data-icon="ChevronForwardSmall_Stroke_16"></div></button><button class="row"><span>Account settings</span></button><div class="menu-divider"></div><button class="row row-destructive"><span>Sign out</span></button></div></div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ THUMBNAILS ════════ -->
+    <section class="section" id="thumbnails">
+      <div class="section-block">
+        <h3 class="section-heading">Thumbnails</h3>
+        <div class="details-content">
+      <div class="group">
+        <p class="group-title">Thumbnail</p>
+        <div style="display:flex;flex-wrap:wrap;gap:var(--space-30);margin-bottom:var(--space-20)">
+          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('left-btn',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Left Button</span></label>
+          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('right-btn',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Right Button</span></label>
+          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('duration',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Duration</span></label>
+          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('slide-num',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Slide Number</span></label>
+          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('name',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Name</span></label>
+        </div>
+        <div class="variants" id="thumbnail-demo">
+          <div class="variant">
+            <span class="variant-label">Default</span>
+            <div class="thumbnail">
+              <div class="thumbnail-media">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3C/svg%3E" alt="">
+                <div class="thumbnail-presenter"><div class="thumbnail-presenter-silo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 90'%3E%3Ccircle cx='28' cy='20' r='13' fill='rgba(0,0,0,0.45)'/%3E%3Cellipse cx='28' cy='72' rx='22' ry='28' fill='rgba(0,0,0,0.45)'/%3E%3C/svg%3E" alt=""></div></div>
+                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin" style="display:none"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tr" aria-label="More" style="display:none"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
+                <span class="thumbnail-slide-num" style="display:none">1</span>
+              </div>
+              <span class="thumbnail-name" style="display:none">Name</span>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">Hover</span>
+            <div class="thumbnail" style="background:var(--color-highlight-primary)">
+              <div class="thumbnail-media">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3C/svg%3E" alt="">
+                <div class="thumbnail-presenter"><div class="thumbnail-presenter-silo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 90'%3E%3Ccircle cx='28' cy='20' r='13' fill='rgba(0,0,0,0.45)'/%3E%3Cellipse cx='28' cy='72' rx='22' ry='28' fill='rgba(0,0,0,0.45)'/%3E%3C/svg%3E" alt=""></div></div>
+                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin" style="display:none"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tr" aria-label="More" style="display:none"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
+                <span class="thumbnail-slide-num" style="display:none">1</span>
+              </div>
+              <span class="thumbnail-name" style="display:none">Name</span>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">Selected</span>
+            <div class="thumbnail selected">
+              <div class="thumbnail-media">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3C/svg%3E" alt="">
+                <div class="thumbnail-presenter"><div class="thumbnail-presenter-silo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 90'%3E%3Ccircle cx='28' cy='20' r='13' fill='rgba(0,0,0,0.45)'/%3E%3Cellipse cx='28' cy='72' rx='22' ry='28' fill='rgba(0,0,0,0.45)'/%3E%3C/svg%3E" alt=""></div></div>
+                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin" style="display:none"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tr" aria-label="More" style="display:none"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
+                <span class="thumbnail-slide-num" style="display:none">1</span>
+              </div>
+              <span class="thumbnail-name" style="display:none">Name</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">Color Swatch</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Small · Default</span><div class="swatch swatch-sm"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+          <div class="variant"><span class="variant-label">Small · Hover</span><div class="swatch swatch-sm" style="box-shadow:0 0 0 2px var(--color-highlight-secondary)"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+          <div class="variant"><span class="variant-label">Small · Selected</span><div class="swatch swatch-sm selected"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+          <div class="variant"><span class="variant-label">Medium · Default</span><div class="swatch"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+          <div class="variant"><span class="variant-label">Medium · Hover</span><div class="swatch" style="box-shadow:0 0 0 2px var(--color-highlight-secondary)"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+          <div class="variant"><span class="variant-label">Medium · Selected</span><div class="swatch selected"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">Avatar</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Photo</span><div class="avatar"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23778899'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='9' font-family='sans-serif'%3ETR%3C/text%3E%3C/svg%3E" alt="Tyler Reynolds"></div></div>
+          <div class="variant"><span class="variant-label">Photo · Hover</span><div class="avatar"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23778899'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='9' font-family='sans-serif'%3ETR%3C/text%3E%3C/svg%3E" alt=""><div class="avatar-edit" style="background:rgba(0,0,0,0.5)">Edit</div></div></div>
+          <div class="variant"><span class="variant-label">Silhouette</span><div class="avatar"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div></div></div>
+          <div class="variant"><span class="variant-label">Silhouette · Hover</span><div class="avatar"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div><div class="avatar-edit" style="background:rgba(0,0,0,0.5)">Edit</div></div></div>
+        </div>
       </div>
         </div>
       </div>
@@ -1378,69 +1461,6 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         <div class="variants" style="align-items:flex-end;gap:32px">
           <div class="variant"><span class="variant-label">Weak (H)</span><div style="width:180px"><div class="scrollbar"><div class="scrollbar-thumb" style="width:40%;margin-left:20%"></div></div></div></div>
           <div class="variant"><span class="variant-label">Strong (H)</span><div style="width:180px"><div class="scrollbar scrollbar-strong"><div class="scrollbar-thumb scrollbar-strong-thumb" style="width:40%"></div></div></div></div>
-        </div>
-      </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ════════ THUMBNAILS ════════ -->
-    <section class="section" id="thumbnails">
-      <div class="section-block">
-        <h3 class="section-heading">Thumbnails</h3>
-        <div class="details-content">
-      <div class="group">
-        <p class="group-title">Thumbnail</p>
-        <div style="display:flex;flex-wrap:wrap;gap:var(--space-20);margin-bottom:var(--space-20)">
-          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('left-btn',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Left Button</span></label>
-          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('right-btn',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Right Button</span></label>
-          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('duration',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Duration</span></label>
-          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('slide-num',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Slide Number</span></label>
-          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('name',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Name</span></label>
-        </div>
-        <div class="variants" id="thumbnail-demo">
-          <div class="variant">
-            <span class="variant-label">Default</span>
-            <div class="thumbnail">
-              <div class="thumbnail-media">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3C/svg%3E" alt="">
-                <div class="thumbnail-presenter"><div class="thumbnail-presenter-silo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 90'%3E%3Ccircle cx='28' cy='20' r='13' fill='rgba(0,0,0,0.45)'/%3E%3Cellipse cx='28' cy='72' rx='22' ry='28' fill='rgba(0,0,0,0.45)'/%3E%3C/svg%3E" alt=""></div></div>
-                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin" style="display:none"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
-                <button class="thumbnail-action thumbnail-action-tr" aria-label="More" style="display:none"><div class="icon-img" data-icon="More_Fill_16"></div></button>
-                <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
-                <span class="thumbnail-slide-num" style="display:none">1</span>
-              </div>
-              <span class="thumbnail-name" style="display:none">Name</span>
-            </div>
-          </div>
-          <div class="variant">
-            <span class="variant-label">Hover</span>
-            <div class="thumbnail" style="background:var(--color-highlight-primary)">
-              <div class="thumbnail-media">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3C/svg%3E" alt="">
-                <div class="thumbnail-presenter"><div class="thumbnail-presenter-silo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 90'%3E%3Ccircle cx='28' cy='20' r='13' fill='rgba(0,0,0,0.45)'/%3E%3Cellipse cx='28' cy='72' rx='22' ry='28' fill='rgba(0,0,0,0.45)'/%3E%3C/svg%3E" alt=""></div></div>
-                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin" style="display:none"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
-                <button class="thumbnail-action thumbnail-action-tr" aria-label="More" style="display:none"><div class="icon-img" data-icon="More_Fill_16"></div></button>
-                <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
-                <span class="thumbnail-slide-num" style="display:none">1</span>
-              </div>
-              <span class="thumbnail-name" style="display:none">Name</span>
-            </div>
-          </div>
-          <div class="variant">
-            <span class="variant-label">Selected</span>
-            <div class="thumbnail selected">
-              <div class="thumbnail-media">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3C/svg%3E" alt="">
-                <div class="thumbnail-presenter"><div class="thumbnail-presenter-silo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 90'%3E%3Ccircle cx='28' cy='20' r='13' fill='rgba(0,0,0,0.45)'/%3E%3Cellipse cx='28' cy='72' rx='22' ry='28' fill='rgba(0,0,0,0.45)'/%3E%3C/svg%3E" alt=""></div></div>
-                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin" style="display:none"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
-                <button class="thumbnail-action thumbnail-action-tr" aria-label="More" style="display:none"><div class="icon-img" data-icon="More_Fill_16"></div></button>
-                <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
-                <span class="thumbnail-slide-num" style="display:none">1</span>
-              </div>
-              <span class="thumbnail-name" style="display:none">Name</span>
-            </div>
-          </div>
         </div>
       </div>
         </div>

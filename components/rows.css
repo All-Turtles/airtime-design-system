@@ -242,14 +242,10 @@
   pointer-events: none;
 }
 
-/* 40×40 avatar */
+/* 40×40 size override — use with .avatar component */
 .row-account-avatar {
-  display: block;
-  flex-shrink: 0;
   width: 40px;
   height: 40px;
-  border-radius: var(--radius-9999);
-  object-fit: cover;
 }
 
 /* Name + email column */

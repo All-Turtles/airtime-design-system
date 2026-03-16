@@ -532,6 +532,17 @@
   box-shadow: 0 0 0 2px var(--color-content-primary);
 }
 
+/* Small size variant */
+.swatch-sm {
+  padding: var(--space-05);                          /* 2px */
+  border-radius: var(--radius-15);                   /* 6px */
+}
+
+.swatch-sm .swatch-inner {
+  width: 20px;
+  height: 20px;
+}
+
 /* Inner color square */
 .swatch-inner {
   position: relative;
@@ -570,4 +581,82 @@
 
 .swatches-opacity .slider {
   flex: 1;
+}
+
+/* ════════════════════════════════════════════════════
+   AVATAR
+   ════════════════════════════════════════════════════ */
+
+/* * Avatar — circular user photo or silhouette
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-2255
+ *
+ * Parts:   .avatar              24×24 circle wrapper
+ *          .avatar-silhouette   Person figure overlay (no-photo variant)
+ *          .avatar-edit         Hover "Edit" label overlay
+ *
+ * HTML:
+ *   <!-- Photo -->
+ *   <div class="avatar"><img src="photo.jpg" alt="Name"></div>
+ *
+ *   <!-- Silhouette -->
+ *   <div class="avatar">
+ *     <div class="avatar-silhouette"><svg>...</svg></div>
+ *   </div>
+ *
+ *   <!-- Hover -->
+ *   <div class="avatar">
+ *     <img src="photo.jpg" alt="">
+ *     <div class="avatar-edit">Edit</div>
+ *   </div>
+ */
+
+.avatar {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-9999);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--color-background-tertiary);
+}
+
+.avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Person figure — positioned per Figma: top 16.66%, l/r 14.06%, extends 29.85% below */
+.avatar-silhouette {
+  position: absolute;
+  top: 16.66%;
+  left: 14.06%;
+  right: 14.06%;
+  bottom: -29.85%;
+  pointer-events: none;
+}
+
+.avatar-silhouette img,
+.avatar-silhouette svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+}
+
+/* Hover "Edit" overlay */
+.avatar-edit {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-small);            /* 11px */
+  line-height: var(--line-height-body-small);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-modeless-white);
 }
