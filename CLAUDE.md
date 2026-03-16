@@ -73,15 +73,17 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 | **Checkbox** | 2 | `components/checkbox.css` | `.checkbox`, `.checkbox-box`, `.checkbox-label` |
 | **Radio** | 2 | `components/radio.css` | `.radio`, `.radio-box`, `.radio-label` |
 | **Slider** | 3 | `components/slider.css` | `.slider`, `.slider-threshold`, `.slider-threshold-track`, `.slider-threshold-handle` |
-| **Progress** | 3 | `components/progress.css` | `.progress`, `.loader`, `.loader-lg` |
+| **Progress** | 2 | `components/progress.css` | `.progress` |
+| **Loader** | 2 | `components/loader.css` | `.loader`, `.loader-lg` |
 | **Dropdown** | 3 | `components/dropdown.css` | `.dropdown`, `.dropdown-trigger`, `.dropdown-trigger-no-fill`, `.dropdown-trigger-thumbnail`, `.dropdown-menu` |
-| **Rows** | 12 | `components/rows.css` | `.row`, `.row-destructive`, `.row-thumbnail`, `.row-account` |
+| **List Item** | 12 | `components/list-item.css` | `.row`, `.row-destructive`, `.row-thumbnail`, `.row-thumbnail-image`, `.row-account` |
 | **Menus** | 9 | `components/menus.css` | `.menu`, `.menu-thumbnail`, `.menu-account`, `.menu-scrollable` |
 | **Overlays** | 7 | `components/overlays.css` | `.tooltip`, `.coach-mark`, `.coach-mark-btn`, `.coach-mark-footer`, `.coach-mark-step` |
 | **Badge** | 1 | `components/badge.css` | `.badge` |
 | **Divider** | 2 | `components/divider.css` | `.divider`, `.divider-vertical` |
 | **Scrollbar** | 4 | `components/scrollbar.css` | `.scrollbar`, `.scrollbar-thumb`, `.scrollbar-strong`, `.scrollbar-vertical` |
-| **Color Picker** | 8 | `components/color-picker.css` | `.color-picker`, `.color-picker-canvas`, `.color-picker-hue`, `.color-picker-alpha`, `.swatches`, `.swatch`, `.swatch-inner` |
+| **Color Picker** | 5 | `components/color-picker.css` | `.color-picker`, `.color-picker-canvas`, `.color-picker-hue`, `.color-picker-alpha`, `.color-picker-icon-btn` |
+| **Swatches** | 3 | `components/swatches.css` | `.swatches`, `.swatches-grid`, `.swatch`, `.swatch-inner`, `.swatch.selected` |
 | **Avatar** | 5 | `components/avatar.css` | `.avatar`, `.avatar-16`, `.avatar-20`, `.avatar-32`, `.avatar-40`, `.avatar-silhouette` |
 | **Thumbnails** | 8 | `components/thumbnail.css` | `.thumbnail`, `.thumbnail-media`, `.thumbnail-name`, `.thumbnail-badge`, `.thumbnail-action` |
 
@@ -115,15 +117,17 @@ airtime-design-system/
     checkbox.css             # Checkbox with label
     radio.css                # Radio button with label
     slider.css               # Single-handle and dual-handle (threshold) sliders
-    progress.css             # Progress bar + loader spinner
+    progress.css             # Progress bar (<progress> element)
+    loader.css               # Spinning loading indicator (16px + 24px)
     dropdown.css             # Dropdown trigger + menu positioning
-    rows.css                 # 12 variants (default, destructive, thumbnail, account)
+    list-item.css            # Interactive list rows (default, thumbnail, account) — CSS class prefix: .row
     menus.css                # 9 variants (default, thumbnail, account, scrollable, positional)
     overlays.css             # Tooltip + Coach mark (both with 8 arrow positions)
     badge.css                # Teal pill badge (numeric / text)
     divider.css              # Horizontal and vertical dividers
     scrollbar.css            # Weak and strong scrollbar variants (H + V)
-    color-picker.css         # Color picker panel + swatches panel
+    color-picker.css         # Color picker panel (canvas, hue, alpha sliders)
+    swatches.css             # Standalone color swatches panel (.swatch, .swatches)
     avatar.css               # Circular user photo or silhouette (5 sizes)
     thumbnail.css            # 16:9 media thumbnail with badges and action buttons
   tokens/

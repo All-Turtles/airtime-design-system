@@ -14,17 +14,9 @@
  *   .color-picker-values       Bottom row (eyedropper, mode, inputs)
  *   .color-picker-icon-btn     Eyedropper / action icon button (28×28)
  *
- * ── Swatches ──────────────────────────────────────────
- *   .swatches              Panel container (280px)
- *   .swatches-header       Label + action buttons row
- *   .swatches-label        Section heading (body/medium, tertiary)
- *   .swatches-grid         Flex-wrap color swatch row
- *   .swatch                Outer wrapper (4px pad, radius-20)
- *   .swatch-inner          24×24px colored square (radius-10 + border overlay)
- *   .swatch.selected       Active selection (2px white outline)
- *   .swatches-opacity      Opacity label + slider row
+ * See also: swatches.css for the standalone swatches panel (.swatch, .swatches)
  *
- * ── HTML examples ─────────────────────────────────────
+ * ── HTML example ──────────────────────────────────────
  *
  *   <!-- Color picker (JS needed for interactivity) -->
  *   <div class="color-picker" style="--color-picker-hue: #00E0FF;">
@@ -222,105 +214,3 @@
   flex: 1;
 }
 
-/* ════════════════════════════════════════════════════
-   SWATCHES
-   ════════════════════════════════════════════════════ */
-
-.swatches {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-10);                              /* 4px */
-  align-items: flex-start;
-  padding: var(--space-20);                          /* 8px */
-  width: 280px;
-  background: var(--color-background-secondary);
-  border: var(--border-width-thin) solid var(--color-highlight-primary);
-  border-radius: var(--radius-30);                   /* 12px */
-  box-shadow: 0 8px 16px 0 var(--color-shadow-medium);
-  box-sizing: border-box;
-}
-
-.swatches-header {
-  display: flex;
-  align-items: center;
-  gap: var(--space-20);                              /* 8px */
-  width: 100%;
-}
-
-.swatches-actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-20);                              /* 8px */
-  flex-shrink: 0;
-}
-
-.swatches-label {
-  flex: 1;
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-body-medium);           /* 12px */
-  line-height: var(--line-height-body-medium);       /* 16px */
-  font-weight: var(--font-weight-regular);
-  color: var(--color-content-tertiary);
-  white-space: nowrap;
-  margin: 0;
-}
-
-.swatches-grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-/* Individual swatch — 28×28px outer wrapper */
-.swatch {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  padding: var(--space-05);                          /* 2px */
-  border: var(--border-width-medium) solid transparent;
-  border-radius: var(--radius-20);                   /* 8px */
-  box-sizing: border-box;
-  cursor: pointer;
-  flex-shrink: 0;
-  transition: border-color var(--duration-fast) var(--easing-default);
-}
-
-.swatch:hover {
-  background: var(--color-highlight-primary);
-}
-
-.swatch.selected {
-  border-color: var(--color-content-primary);
-}
-
-/* Inner color square — 20×20px */
-.swatch-inner {
-  width: 20px;
-  height: 20px;
-  border-radius: var(--radius-10);                   /* 4px */
-  flex-shrink: 0;
-  box-shadow: inset 0 0 0 var(--border-width-thin) var(--color-highlight-primary);
-}
-
-/* Opacity row */
-.swatches-opacity {
-  display: flex;
-  align-items: center;
-  gap: var(--space-20);                              /* 8px */
-  width: 100%;
-  padding: var(--space-15) 0;                        /* 6px top+bottom */
-  box-sizing: border-box;
-}
-
-.swatches-opacity .swatches-label {
-  width: 128px;
-  flex: none;
-}
-
-.swatches-opacity .slider {
-  flex: 1;
-}

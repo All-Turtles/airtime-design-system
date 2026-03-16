@@ -1,23 +1,16 @@
 /**
- * Airtime Design System v3 - Progress & Loader
+ * Airtime Design System v3 - Progress
  * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-1624
  *
  * Requires: generated/tokens.css
  *
  * Variants:  .progress       <progress> bar (teal fill, 6px tall)
- *            .loader         16×16px spinning indicator
- *            .loader-lg      24×24px spinning indicator
  *
- * ── HTML examples ─────────────────────────────────────
+ * See also: loader.css for spinning loading indicator
  *
- *   <!-- Progress bar -->
+ * ── HTML example ──────────────────────────────────────
+ *
  *   <progress class="progress" value="25" max="100"></progress>
- *
- *   <!-- Loader (default 16px) -->
- *   <span class="loader" aria-label="Loading"></span>
- *
- *   <!-- Loader (large 24px) -->
- *   <span class="loader loader-lg" aria-label="Loading"></span>
  */
 
 /* ════════════════════════════════════════════════════
@@ -52,31 +45,3 @@
   border-radius: var(--radius-9999);
 }
 
-/* ════════════════════════════════════════════════════
-   LOADER
-   ════════════════════════════════════════════════════ */
-
-@keyframes loader-spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-.loader {
-  display: inline-block;
-  flex-shrink: 0;
-  width: var(--size-40);                             /* 16px */
-  height: var(--size-40);                            /* 16px */
-  border-radius: var(--radius-9999);
-  background: conic-gradient(
-    var(--color-accent-teal) 270deg,
-    transparent 270deg
-  );
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 1.5px), white calc(100% - 1.5px));
-  mask: radial-gradient(farthest-side, transparent calc(100% - 1.5px), white calc(100% - 1.5px));
-  animation: loader-spin var(--duration-slow) linear infinite;
-}
-
-.loader-lg {
-  width: var(--size-60);                             /* 24px */
-  height: var(--size-60);                            /* 24px */
-}
