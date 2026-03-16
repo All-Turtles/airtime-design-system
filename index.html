@@ -1390,12 +1390,21 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         <h3 class="section-heading">Thumbnails</h3>
         <div class="details-content">
       <div class="group">
-        <p class="group-title">Look or Reaction</p>
-        <div class="variants">
+        <p class="group-title">Thumbnail</p>
+        <div style="display:flex;gap:var(--space-20);margin-bottom:var(--space-20)">
+          <label class="checkbox"><input type="checkbox" checked onchange="toggleThumbnailFeature('buttons',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Buttons</span></label>
+          <label class="checkbox"><input type="checkbox" checked onchange="toggleThumbnailFeature('duration',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Duration</span></label>
+        </div>
+        <div class="variants" id="thumbnail-demo">
           <div class="variant">
             <span class="variant-label">Default</span>
             <div class="thumbnail">
-              <div class="thumbnail-media"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ccc' font-size='11' font-family='sans-serif'%3ELook%3C/text%3E%3C/svg%3E" alt="Look"></div>
+              <div class="thumbnail-media">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3C/svg%3E" alt="">
+                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tr" aria-label="More"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <span class="thumbnail-badge thumbnail-badge-bl">01:23</span>
+              </div>
               <span class="thumbnail-name">Name</span>
             </div>
           </div>
@@ -1403,9 +1412,10 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
             <span class="variant-label">Hover</span>
             <div class="thumbnail" style="background:var(--color-highlight-primary)">
               <div class="thumbnail-media">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ccc' font-size='11' font-family='sans-serif'%3ELook%3C/text%3E%3C/svg%3E" alt="Look">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3C/svg%3E" alt="">
                 <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
                 <button class="thumbnail-action thumbnail-action-tr" aria-label="More"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <span class="thumbnail-badge thumbnail-badge-bl">01:23</span>
               </div>
               <span class="thumbnail-name">Name</span>
             </div>
@@ -1413,7 +1423,12 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
           <div class="variant">
             <span class="variant-label">Selected</span>
             <div class="thumbnail selected">
-              <div class="thumbnail-media"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ccc' font-size='11' font-family='sans-serif'%3ELook%3C/text%3E%3C/svg%3E" alt="Look"></div>
+              <div class="thumbnail-media">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23556677'/%3E%3C/svg%3E" alt="">
+                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tr" aria-label="More"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <span class="thumbnail-badge thumbnail-badge-bl">01:23</span>
+              </div>
               <span class="thumbnail-name">Name</span>
             </div>
           </div>
@@ -1451,63 +1466,6 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
                 <div class="thumbnail-presenter"><div class="thumbnail-presenter-silo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 90'%3E%3Ccircle cx='28' cy='20' r='13' fill='rgba(0,0,0,0.45)'/%3E%3Cellipse cx='28' cy='72' rx='22' ry='28' fill='rgba(0,0,0,0.45)'/%3E%3C/svg%3E" alt=""></div></div>
                 <span class="thumbnail-slide-num">1</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="group">
-        <p class="group-title">BG or Media</p>
-        <div class="variants">
-          <div class="variant">
-            <span class="variant-label">Default</span>
-            <div class="thumbnail">
-              <div class="thumbnail-media">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23885544'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ccc' font-size='11' font-family='sans-serif'%3EBackground%3C/text%3E%3C/svg%3E" alt="Background">
-                <span class="thumbnail-badge thumbnail-badge-bl">01:23</span>
-              </div>
-              <span class="thumbnail-name">Name</span>
-            </div>
-          </div>
-          <div class="variant">
-            <span class="variant-label">Selected</span>
-            <div class="thumbnail selected">
-              <div class="thumbnail-media">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23885544'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ccc' font-size='11' font-family='sans-serif'%3EBackground%3C/text%3E%3C/svg%3E" alt="Background">
-                <span class="thumbnail-badge thumbnail-badge-bl">01:23</span>
-              </div>
-              <span class="thumbnail-name">Name</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="group">
-        <p class="group-title">Catalog</p>
-        <div class="variants">
-          <div class="variant">
-            <span class="variant-label">Default</span>
-            <div class="thumbnail">
-              <div class="thumbnail-media"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23668844'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ccc' font-size='11' font-family='sans-serif'%3ECatalog%3C/text%3E%3C/svg%3E" alt="Catalog"></div>
-              <span class="thumbnail-name">Name</span>
-            </div>
-          </div>
-          <div class="variant">
-            <span class="variant-label">Hover (add)</span>
-            <div class="thumbnail" style="background:var(--color-highlight-primary)">
-              <div class="thumbnail-media">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23668844'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ccc' font-size='11' font-family='sans-serif'%3ECatalog%3C/text%3E%3C/svg%3E" alt="Catalog">
-                <button class="thumbnail-action thumbnail-action-tr" aria-label="Add"><div class="icon-img" data-icon="Plus_Stroke_16"></div></button>
-              </div>
-              <span class="thumbnail-name">Name</span>
-            </div>
-          </div>
-          <div class="variant">
-            <span class="variant-label">Selected</span>
-            <div class="thumbnail selected">
-              <div class="thumbnail-media">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90'%3E%3Crect width='160' height='90' fill='%23668844'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ccc' font-size='11' font-family='sans-serif'%3ECatalog%3C/text%3E%3C/svg%3E" alt="Catalog">
-                <button class="thumbnail-action thumbnail-action-tr" aria-label="Selected" style="background:var(--color-modeless-black)"><div class="icon-img" data-icon="Checkmark_Stroke_16"></div></button>
-              </div>
-              <span class="thumbnail-name">Name</span>
             </div>
           </div>
         </div>
@@ -1635,6 +1593,14 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         });
       }
     });
+
+    /* ── Thumbnail demo feature toggles ── */
+    function toggleThumbnailFeature(feature, visible) {
+      var selector = feature === 'buttons' ? '.thumbnail-action' : '.thumbnail-badge-bl';
+      document.querySelectorAll('#thumbnail-demo ' + selector).forEach(function(el) {
+        el.style.display = visible ? '' : 'none';
+      });
+    }
 
     /* ── Segmented control ── */
     document.querySelectorAll('.segmented').forEach(function(group) {
