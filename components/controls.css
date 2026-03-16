@@ -46,8 +46,8 @@
  *   .dropdown-trigger-thumbnail  Tall trigger with image on left
  *   .dropdown-thumbnail          Image container inside thumbnail trigger
  *   .dropdown-icon-left          Optional leading icon
- *   .dropdown-menu               <ul> popup list
- *   .dropdown-item               <li> inside menu
+ *   .dropdown-menu               Positioning wrapper — use with .menu from menus.css
+ *                                Items: use .row / .row-thumbnail from rows.css
  *
  * ── HTML examples ─────────────────────────────────────
  *
@@ -123,9 +123,9 @@
  *       <span>Option</span>
  *       <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
  *     </button>
- *     <ul class="dropdown-menu" role="listbox">
- *       <li class="dropdown-item" role="option">Option A</li>
- *       <li class="dropdown-item" role="option">Option B</li>
+ *     <ul class="menu dropdown-menu" role="listbox">
+ *       <button class="row" role="option">Option A</button>
+ *       <button class="row" role="option">Option B</button>
  *     </ul>
  *   </div>
  *
@@ -135,9 +135,9 @@
  *       <span>Option</span>
  *       <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
  *     </button>
- *     <ul class="dropdown-menu" role="listbox">
- *       <li class="dropdown-item" role="option">Option A</li>
- *       <li class="dropdown-item" role="option">Option B</li>
+ *     <ul class="menu dropdown-menu" role="listbox">
+ *       <button class="row" role="option">Option A</button>
+ *       <button class="row" role="option">Option B</button>
  *     </ul>
  *   </div>
  *
@@ -150,9 +150,15 @@
  *       <span>Scene A</span>
  *       <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
  *     </button>
- *     <ul class="dropdown-menu" role="listbox">
- *       <li class="dropdown-item" role="option">Scene A</li>
- *       <li class="dropdown-item" role="option">Scene B</li>
+ *     <ul class="menu menu-thumbnail dropdown-menu" role="listbox">
+ *       <button class="row-thumbnail" role="option">
+ *         <div class="row-thumbnail-image"><img src="..." alt="Scene A" /></div>
+ *         <span>Scene A</span>
+ *       </button>
+ *       <button class="row-thumbnail" role="option">
+ *         <div class="row-thumbnail-image"><img src="..." alt="Scene B" /></div>
+ *         <span>Scene B</span>
+ *       </button>
  *     </ul>
  *   </div>
  */
@@ -796,75 +802,18 @@
 }
 
 /* ─── Popup menu ─── */
+/* Use .menu (from menus.css) for the panel surface; .dropdown-menu adds positioning */
 
 .dropdown-menu {
   position: absolute;
   top: calc(100% + var(--space-10));                 /* 4px gap below trigger */
   left: 0;
   min-width: 100%;
-  margin: 0;
-  padding: var(--space-10) 0;                        /* 4px top/bottom */
-  list-style: none;
-  background: var(--color-background-secondary);
-  border: var(--border-width-thin) solid var(--color-highlight-primary);
-  border-radius: var(--radius-15);                   /* 6px */
-  box-shadow: var(--shadow-medium);
   z-index: var(--z-dropdown);
-  box-sizing: border-box;
-  overflow: hidden;
 }
 
 /* Hidden by default — toggle via JS: aria-expanded="true" */
 .dropdown-menu[hidden],
 .dropdown-trigger[aria-expanded="false"] + .dropdown-menu {
   display: none;
-}
-
-/* ─── Menu item ─── */
-
-.dropdown-item {
-  display: flex;
-  align-items: center;
-  gap: var(--space-10);                              /* 4px */
-  padding: var(--space-10) var(--space-20);          /* 4px 8px */
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-body-medium);           /* 12px */
-  line-height: var(--line-height-body-medium);       /* 16px */
-  font-weight: var(--font-weight-regular);
-  color: var(--color-content-primary);
-  cursor: pointer;
-  transition: background var(--duration-fast) var(--easing-default);
-}
-
-.dropdown-item:hover {
-  background: var(--color-highlight-primary);
-}
-
-.dropdown-item[aria-selected="true"],
-.dropdown-item.active {
-  color: var(--color-accent-teal);
-}
-
-.dropdown-item[aria-disabled="true"],
-.dropdown-item:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-}
-
-.dropdown-item img,
-.dropdown-item svg {
-  display: block;
-  width: var(--size-40);                             /* 16px */
-  height: var(--size-40);
-  flex-shrink: 0;
-}
-
-/* Thumbnail variant dropdown items */
-.dropdown-item-thumbnail {
-  padding: var(--space-10);
-  gap: var(--space-20);
-}
-
-.dropdown-item-thumbnail .dropdown-thumbnail {
-  flex-shrink: 0;
 }
