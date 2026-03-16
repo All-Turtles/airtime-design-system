@@ -68,14 +68,14 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 | Category | Variants | File | Key Classes |
 |----------|----------|------|-------------|
 | **Buttons** | 7 | `components/button.css` | `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-destructive`, `.btn-modeless`, `.btn-outline`, `.btn-ghost`, `.btn-icon-only` |
-| **Inputs** | 13 | `components/input.css` | `.input`, `.input-lg`, `.input-error`, `.input-no-fill`, `.input-wrapper`, `.input-bare`, `.input-split` |
+| **Inputs** | 13 | `components/input.css` | `.input`, `.input-lg`, `.input-error`, `.input-ghost`, `.input-wrapper`, `.input-bare`, `.input-split` |
 | **Segmented** | 4 | `components/segmented.css` | `.segmented`, `.segmented-item`, `.segmented-item-label`, `.segmented-item-icon`, `.segmented-item-icon-label` |
 | **Checkbox** | 2 | `components/checkbox.css` | `.checkbox`, `.checkbox-box`, `.checkbox-label` |
 | **Radio** | 2 | `components/radio.css` | `.radio`, `.radio-box`, `.radio-label` |
 | **Slider** | 3 | `components/slider.css` | `.slider`, `.slider-threshold`, `.slider-threshold-track`, `.slider-threshold-handle` |
 | **Progress** | 2 | `components/progress.css` | `.progress` |
 | **Loader** | 2 | `components/loader.css` | `.loader`, `.loader-lg` |
-| **Dropdown** | 3 | `components/dropdown.css` | `.dropdown`, `.dropdown-trigger`, `.dropdown-trigger-no-fill`, `.dropdown-trigger-thumbnail`, `.dropdown-menu` |
+| **Dropdown** | 3 | `components/dropdown.css` | `.dropdown`, `.dropdown-trigger`, `.dropdown-trigger-ghost`, `.dropdown-trigger-thumbnail`, `.dropdown-menu` |
 | **List Item** | 12 | `components/list-item.css` | `.row`, `.row-destructive`, `.row-thumbnail`, `.row-thumbnail-image`, `.row-account` |
 | **Menus** | 9 | `components/menus.css` | `.menu`, `.menu-thumbnail`, `.menu-account`, `.menu-scrollable` |
 | **Overlays** | 7 | `components/overlays.css` | `.tooltip`, `.coach-mark`, `.coach-mark-btn`, `.coach-mark-footer`, `.coach-mark-step` |
@@ -112,7 +112,7 @@ airtime-design-system/
     .design-rules.json       # Anti-pattern rules for AI generation
   components/
     button.css               # 6 variants (primary, secondary, destructive, modeless, outline, icon-only)
-    input.css                # 13 variants (default, large, error, no-fill, wrapper, split)
+    input.css                # 13 variants (default, large, error, ghost, wrapper, split)
     segmented.css            # Segmented control (title, label, icon, icon+label)
     checkbox.css             # Checkbox with label
     radio.css                # Radio button with label
