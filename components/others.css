@@ -508,9 +508,9 @@
 
 /* ─── Individual swatch ─── */
 
-/* Outer wrapper — provides hover target + selection ring */
+/* Outer wrapper — 28×28px total (4px padding + 20px inner × 2) */
 .swatch {
-  display: flex;
+  display: inline-flex;                              /* shrink to content; prevents stretch in flex rows */
   flex-direction: column;
   align-items: flex-start;
   padding: var(--space-10);                          /* 4px */
@@ -518,7 +518,6 @@
   border-radius: var(--radius-20);                   /* 8px */
   box-sizing: border-box;
   cursor: pointer;
-  /* Use box-shadow so the ring doesn't add to layout width (keeps swatch 32px) */
   box-shadow: 0 0 0 2px transparent;
   transition: box-shadow var(--duration-fast) var(--easing-default);
 }
@@ -532,35 +531,13 @@
   box-shadow: 0 0 0 2px var(--color-content-primary);
 }
 
-/* Small size variant */
-.swatch-sm {
-  padding: var(--space-05);                          /* 2px */
-  border-radius: var(--radius-15);                   /* 6px */
-}
-
-.swatch-sm .swatch-inner {
+/* Inner color square — 20×20px; inset border matches Figma "inside" stroke */
+.swatch-inner {
   width: 20px;
   height: 20px;
-}
-
-/* Inner color square */
-.swatch-inner {
-  position: relative;
-  width: 24px;
-  height: 24px;
   border-radius: var(--radius-10);                   /* 4px */
-  overflow: hidden;
   flex-shrink: 0;
-}
-
-/* highlight-primary overlay (thin inner border to separate from bg) */
-.swatch-inner::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: var(--border-width-thin) solid var(--color-highlight-primary);
-  border-radius: var(--radius-10);
-  pointer-events: none;
+  box-shadow: inset 0 0 0 var(--border-width-thin) var(--color-highlight-primary);
 }
 
 /* ─── Opacity row ─── */
