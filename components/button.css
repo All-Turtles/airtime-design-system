@@ -40,7 +40,7 @@
 
 .btn:disabled,
 .btn[aria-disabled="true"] {
-  opacity: var(--opacity-48);
+  opacity: var(--opacity-32);
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -78,8 +78,8 @@
 .btn-primary:hover:not(:disabled):not([aria-disabled="true"]) {
   background:
     linear-gradient(
-      rgba(255, 255, 255, var(--opacity-24)),
-      rgba(255, 255, 255, var(--opacity-24))
+      rgb(from var(--color-modeless-white) r g b / var(--opacity-24)),
+      rgb(from var(--color-modeless-white) r g b / var(--opacity-24))
     ),
     var(--color-modeless-teal);
 }
@@ -92,7 +92,7 @@
 }
 
 .btn-primary.btn-outline:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: rgba(121, 221, 232, var(--opacity-8));
+  background: rgb(from var(--color-modeless-teal) r g b / var(--opacity-8));
 }
 
 /* ─── Secondary ────────────────────────────── */
@@ -145,7 +145,39 @@
 }
 
 .btn-destructive.btn-outline:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: rgba(255, 109, 76, var(--opacity-8));
+  background: rgb(from var(--color-accent-destructive) r g b / var(--opacity-8));
+}
+
+/* ─── Ghost modifier ───────────────────────── */
+/* No fill, no border — text color only. Hover shows glass background. */
+/* Works with .btn-primary, .btn-secondary, .btn-destructive             */
+.btn-primary.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--color-accent-teal);
+}
+
+.btn-secondary.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.btn-destructive.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.btn-primary.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]),
+.btn-secondary.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]),
+.btn-destructive.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--color-highlight-primary);
+  border-color: transparent;
+  backdrop-filter: blur(var(--blur-small));
+  -webkit-backdrop-filter: blur(var(--blur-small));
 }
 
 /* ─── Modeless ─────────────────────────────── */

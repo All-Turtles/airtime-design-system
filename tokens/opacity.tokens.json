@@ -7,6 +7,7 @@
     "opacity-8": { "$value": 0.08, "$type": "number" },
     "opacity-16": { "$value": 0.16, "$type": "number" },
     "opacity-24": { "$value": 0.24, "$type": "number" },
+    "opacity-32": { "$value": 0.32, "$type": "number" },
     "opacity-48": { "$value": 0.48, "$type": "number" },
     "opacity-50": { "$value": 0.5, "$type": "number" },
     "opacity-72": { "$value": 0.72, "$type": "number" },

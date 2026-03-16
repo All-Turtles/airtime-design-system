@@ -1,0 +1,145 @@
+/**
+ * Airtime Design System v3 - Swatches
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-2251
+ *
+ * Requires: generated/tokens.css, components/slider.css
+ * Note: .color-picker-icon-btn (eyedropper/add buttons) is defined in color-picker.css
+ *
+ * Parts:  .swatches              Panel container (280px)
+ *         .swatches-header       Label + action buttons row
+ *         .swatches-label        Section heading (body/medium, tertiary)
+ *         .swatches-grid         Flex-wrap color swatch row
+ *         .swatch                Outer wrapper (28×28px, 4px padding)
+ *         .swatch-inner          20×20px colored square (inset border overlay)
+ *         .swatch.selected       Active selection (2px white outline)
+ *         .swatches-opacity      Opacity label + slider row
+ *
+ * ── HTML example ──────────────────────────────────────
+ *
+ *   <div class="swatches">
+ *     <div class="swatches-header">
+ *       <span class="swatches-label">Custom Colors</span>
+ *       <div class="swatches-actions">
+ *         <button class="color-picker-icon-btn" aria-label="Add color">
+ *           <img src="../icons/Plus_Stroke_20.svg" alt="" />
+ *         </button>
+ *       </div>
+ *     </div>
+ *     <div class="swatches-grid">
+ *       <div class="swatch selected"><div class="swatch-inner" style="background: #05DEFD;"></div></div>
+ *       <div class="swatch"><div class="swatch-inner" style="background: #00B09F;"></div></div>
+ *     </div>
+ *     <hr class="divider" />
+ *     <p class="swatches-label">Default</p>
+ *     <div class="swatches-grid">
+ *       <div class="swatch"><div class="swatch-inner" style="background: #fff;"></div></div>
+ *     </div>
+ *     <div class="swatches-opacity">
+ *       <span class="swatches-label">Opacity</span>
+ *       <input class="slider" type="range" min="0" max="100" value="100" />
+ *     </div>
+ *   </div>
+ */
+
+/* ════════════════════════════════════════════════════
+   SWATCHES
+   ════════════════════════════════════════════════════ */
+
+.swatches {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);                              /* 4px */
+  align-items: flex-start;
+  padding: var(--space-20);                          /* 8px */
+  width: 280px;
+  background: var(--color-background-secondary);
+  border: var(--border-width-thin) solid var(--color-highlight-primary);
+  border-radius: var(--radius-30);                   /* 12px */
+  box-shadow: 0 8px 16px 0 var(--color-shadow-medium);
+  box-sizing: border-box;
+}
+
+.swatches-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-20);                              /* 8px */
+  width: 100%;
+}
+
+.swatches-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-20);                              /* 8px */
+  flex-shrink: 0;
+}
+
+.swatches-label {
+  flex: 1;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-medium);           /* 12px */
+  line-height: var(--line-height-body-medium);       /* 16px */
+  font-weight: var(--font-weight-regular);
+  color: var(--color-content-tertiary);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.swatches-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* Individual swatch — 28×28px outer wrapper */
+.swatch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: var(--space-05);                          /* 2px */
+  border: var(--border-width-medium) solid transparent;
+  border-radius: var(--radius-20);                   /* 8px */
+  box-sizing: border-box;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color var(--duration-fast) var(--easing-default);
+}
+
+.swatch:hover {
+  background: var(--color-highlight-primary);
+}
+
+.swatch.selected {
+  border-color: var(--color-content-primary);
+}
+
+/* Inner color square — 20×20px */
+.swatch-inner {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-10);                   /* 4px */
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 var(--border-width-thin) var(--color-highlight-primary);
+}
+
+/* Opacity row */
+.swatches-opacity {
+  display: flex;
+  align-items: center;
+  gap: var(--space-20);                              /* 8px */
+  width: 100%;
+  padding: var(--space-15) 0;                        /* 6px top+bottom */
+  box-sizing: border-box;
+}
+
+.swatches-opacity .swatches-label {
+  width: 128px;
+  flex: none;
+}
+
+.swatches-opacity .slider {
+  flex: 1;
+}

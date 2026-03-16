@@ -1,0 +1,47 @@
+/**
+ * Airtime Design System v3 - Progress
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-1624
+ *
+ * Requires: generated/tokens.css
+ *
+ * Variants:  .progress       <progress> bar (teal fill, 6px tall)
+ *
+ * See also: loader.css for spinning loading indicator
+ *
+ * ── HTML example ──────────────────────────────────────
+ *
+ *   <progress class="progress" value="25" max="100"></progress>
+ */
+
+/* ════════════════════════════════════════════════════
+   PROGRESS BAR
+   ════════════════════════════════════════════════════ */
+
+.progress {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 6px;
+  border: none;
+  border-radius: var(--radius-9999);
+  background: var(--color-highlight-primary);
+  overflow: hidden;
+}
+
+.progress::-webkit-progress-bar {
+  background: var(--color-highlight-primary);
+  border-radius: var(--radius-9999);
+}
+
+.progress::-webkit-progress-value {
+  background: var(--color-modeless-teal);
+  border-radius: var(--radius-9999);
+  transition: width var(--duration-normal) var(--easing-default);
+}
+
+.progress::-moz-progress-bar {
+  background: var(--color-modeless-teal);
+  border-radius: var(--radius-9999);
+}
+

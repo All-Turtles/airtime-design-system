@@ -14,11 +14,23 @@
   <!-- Components -->
   <link rel="stylesheet" href="components/button.css">
   <link rel="stylesheet" href="components/input.css">
-  <link rel="stylesheet" href="components/controls.css">
+  <link rel="stylesheet" href="components/segmented.css">
+  <link rel="stylesheet" href="components/checkbox.css">
+  <link rel="stylesheet" href="components/radio.css">
+  <link rel="stylesheet" href="components/slider.css">
+  <link rel="stylesheet" href="components/progress.css">
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="components/dropdown.css">
   <link rel="stylesheet" href="components/rows.css">
   <link rel="stylesheet" href="components/menus.css">
-  <link rel="stylesheet" href="components/education.css">
-  <link rel="stylesheet" href="components/others.css">
+  <link rel="stylesheet" href="components/overlays.css">
+  <link rel="stylesheet" href="components/badge.css">
+  <link rel="stylesheet" href="components/divider.css">
+  <link rel="stylesheet" href="components/scrollbar.css">
+  <link rel="stylesheet" href="components/color-picker.css">
+  <link rel="stylesheet" href="components/swatches.css">
+  <link rel="stylesheet" href="components/avatar.css">
+  <link rel="stylesheet" href="components/thumbnail.css">
 
   <style>
     /* ── Reset ── */
@@ -68,8 +80,8 @@
       font-weight: var(--font-weight-semibold);
       color: var(--color-content-tertiary);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin: 8px 8px 2px;
+      letter-spacing: 0.1em;
+      margin: 14px 8px 4px;
     }
 
     .nav-divider {
@@ -186,14 +198,14 @@
     /* ── Main content ── */
     .main {
       margin-left: 200px;
-      padding: 82px 40px 60px;
-      max-width: 1200px;
+      padding: 88px 48px 80px;
+      max-width: 1100px;
       width: 100%;
     }
 
     /* ── Section ── */
     .section {
-      margin-bottom: 64px;
+      margin-bottom: 72px;
       scroll-margin-top: 70px;
     }
 
@@ -342,23 +354,25 @@
     }
 
     .details-content {
-      padding: 16px;
+      padding: 28px;
     }
 
-    /* ── Section heading (non-collapsible token sections) ── */
+    /* ── Section heading ── */
     .section-heading {
-      font-size: var(--font-size-heading-medium);
-      font-weight: var(--font-weight-semibold);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
       color: var(--color-content-primary);
-      padding: 12px 16px;
-      padding-bottom: 8px;
+      padding: 20px 28px 18px;
+      border-bottom: 1px solid var(--color-highlight-primary);
+      border-radius: var(--radius-20) var(--radius-20) 0 0;
     }
 
     .section-block {
       margin-bottom: 24px;
       border: 1px solid var(--color-highlight-primary);
-      border-radius: var(--radius-15);
-      overflow: hidden;
+      border-radius: var(--radius-20);
       background: var(--color-background-secondary);
     }
 
@@ -566,28 +580,44 @@
     /* ── Component gallery ── */
     .group {
       margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--color-highlight-primary);
+    }
+
+    .group:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    /* Demo helper — statically renders :focus appearance */
+    .input-demo-focus {
+      border-color: var(--color-modeless-teal);
     }
 
     .group-title {
       font-size: 11px;
       font-weight: var(--font-weight-semibold);
-      color: var(--color-content-secondary);
+      color: var(--color-content-tertiary);
       margin: 0 0 16px;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
     }
 
     .variants {
       display: flex;
       flex-wrap: wrap;
-      gap: 24px;
+      gap: 20px;
       align-items: flex-start;
+      background: var(--color-background-primary);
+      border-radius: var(--radius-15);
+      padding: 20px;
     }
 
     .variant {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
     }
 
     .variant-label {
@@ -607,12 +637,18 @@
 
     .canvas {
       padding: 16px;
-      border-radius: var(--radius-20);
+      border-radius: var(--radius-15);
       border: 1px solid var(--color-highlight-primary);
       background: var(--color-background-secondary);
     }
 
     .canvas-teal { background: var(--color-modeless-teal); }
+
+    /* Within a .variants canvas, nested .canvas uses tertiary bg (except teal) */
+    .variants .canvas:not(.canvas-teal) {
+      background: var(--color-background-tertiary);
+      border-color: var(--color-highlight-primary);
+    }
 
     /* ── Icon helpers ── */
     .icon-img {
@@ -635,40 +671,11 @@
       flex-wrap: wrap;
     }
 
-    .icon-toolbar .icon-search {
-      flex: 1;
-      min-width: 180px;
-      margin-bottom: 0;
-    }
-
     .icon-toolbar-controls {
       display: flex;
       gap: var(--space-10);
       align-items: center;
     }
-
-    .segmented-sm .segmented-item {
-      height: 20px;
-      padding: 1px var(--space-15);
-      font-size: var(--font-size-body-small);
-      line-height: var(--line-height-body-small);
-    }
-
-    .icon-search {
-      width: 100%;
-      padding: 10px 16px;
-      font-family: var(--font-family-primary);
-      font-size: var(--font-size-body-small);
-      background: var(--color-background-secondary);
-      color: var(--color-content-primary);
-      border: 1px solid var(--color-highlight-primary);
-      border-radius: var(--radius-20);
-      outline: none;
-      margin-bottom: 16px;
-    }
-
-    .icon-search:focus { border-color: var(--color-accent-teal); }
-    .icon-search::placeholder { color: var(--color-content-tertiary); }
 
     .icon-grid {
       display: grid;
@@ -826,11 +833,15 @@
       <p class="nav-section-label">Components</p>
       <a class="nav-link" href="#buttons">Buttons</a>
       <a class="nav-link" href="#inputs">Inputs</a>
+      <a class="nav-link" href="#dropdown">Dropdown</a>
       <a class="nav-link" href="#controls">Controls</a>
       <a class="nav-link" href="#rows">Rows</a>
       <a class="nav-link" href="#menus">Menus</a>
-      <a class="nav-link" href="#education">Education</a>
-      <a class="nav-link" href="#others">Others</a>
+      <a class="nav-link" href="#thumbnails">Thumbnails</a>
+      <a class="nav-link" href="#avatar">Avatar</a>
+      <a class="nav-link" href="#overlays">Overlays</a>
+      <a class="nav-link" href="#color">Color</a>
+      <a class="nav-link" href="#utilities">Utilities</a>
       <hr class="nav-divider">
       <p class="nav-section-label">Assets</p>
       <a class="nav-link" href="#icons">Icons</a>
@@ -1181,7 +1192,7 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
           <div class="variant"><span class="variant-label">Primary</span><div class="variant-preview"><button class="btn btn-primary">Button</button></div></div>
           <div class="variant"><span class="variant-label">Secondary</span><div class="variant-preview"><button class="btn btn-secondary">Button</button></div></div>
           <div class="variant"><span class="variant-label">Destructive</span><div class="variant-preview"><button class="btn btn-destructive">Delete</button></div></div>
-          <div class="variant canvas canvas-teal"><span class="variant-label">Modeless</span><div class="variant-preview"><button class="btn btn-modeless">Button</button></div></div>
+          <div class="variant"><span class="variant-label">Modeless</span><div class="variant-preview" style="background:var(--color-modeless-teal);border-radius:var(--radius-15);padding:10px 14px;"><button class="btn btn-modeless">Button</button></div></div>
         </div>
       </div>
       <div class="group">
@@ -1193,11 +1204,49 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         </div>
       </div>
       <div class="group">
+        <p class="group-title">Ghost modifier</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Primary Ghost</span><div class="variant-preview"><button class="btn btn-primary btn-ghost">Button</button></div></div>
+          <div class="variant"><span class="variant-label">Secondary Ghost</span><div class="variant-preview"><button class="btn btn-secondary btn-ghost">Button</button></div></div>
+          <div class="variant"><span class="variant-label">Destructive Ghost</span><div class="variant-preview"><button class="btn btn-destructive btn-ghost">Delete</button></div></div>
+        </div>
+      </div>
+      <div class="group">
         <p class="group-title">Icon only</p>
         <div class="variants">
-          <div class="variant"><span class="variant-label">Primary icon</span><div class="variant-preview"><button class="btn btn-primary btn-icon-only" aria-label="Add"><div class="icon-img" data-icon="Plus_Stroke_16"></div></button></div></div>
-          <div class="variant"><span class="variant-label">Secondary icon</span><div class="variant-preview"><button class="btn btn-secondary btn-icon-only" aria-label="More"><div class="icon-img" data-icon="More_Fill_16"></div></button></div></div>
-          <div class="variant"><span class="variant-label">With label</span><div class="variant-preview"><button class="btn btn-primary"><div class="icon-img" data-icon="Plus_Stroke_16"></div> Add</button><button class="btn btn-secondary">Download <div class="icon-img" data-icon="Download_Stroke_16"></div></button></div></div>
+          <div class="variant"><span class="variant-label">Primary</span><div class="variant-preview"><button class="btn btn-primary btn-icon-only" aria-label="Add"><div class="icon-img" data-icon="Plus_Stroke_16"></div></button></div></div>
+          <div class="variant"><span class="variant-label">Secondary</span><div class="variant-preview"><button class="btn btn-secondary btn-icon-only" aria-label="More"><div class="icon-img" data-icon="More_Fill_16"></div></button></div></div>
+          <div class="variant"><span class="variant-label">Destructive</span><div class="variant-preview"><button class="btn btn-destructive btn-icon-only" aria-label="Delete"><div class="icon-img" data-icon="Trash_Fill_16"></div></button></div></div>
+          <div class="variant"><span class="variant-label">Outline</span><div class="variant-preview"><button class="btn btn-secondary btn-outline btn-icon-only" aria-label="Add"><div class="icon-img" data-icon="Plus_Stroke_16"></div></button></div></div>
+          <div class="variant"><span class="variant-label">Ghost Primary</span><div class="variant-preview"><button class="btn btn-primary btn-outline btn-icon-only" aria-label="Add" style="border-color:transparent"><div class="icon-img" data-icon="Plus_Stroke_16"></div></button></div></div>
+          <div class="variant"><span class="variant-label">Ghost Secondary</span><div class="variant-preview"><button class="btn btn-secondary btn-outline btn-icon-only" aria-label="More" style="border-color:transparent"><div class="icon-img" data-icon="More_Fill_16"></div></button></div></div>
+          <div class="variant"><span class="variant-label">Ghost Destructive</span><div class="variant-preview"><button class="btn btn-destructive btn-outline btn-icon-only" aria-label="Delete" style="border-color:transparent"><div class="icon-img" data-icon="Trash_Fill_16"></div></button></div></div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">With icon</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Icon left</span><div class="variant-preview"><button class="btn btn-primary"><div class="icon-img" data-icon="Plus_Stroke_16"></div>Add</button></div></div>
+          <div class="variant"><span class="variant-label">Icon right</span><div class="variant-preview"><button class="btn btn-secondary">Download<div class="icon-img" data-icon="Download_Stroke_16"></div></button></div></div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">Overlay</p>
+        <div class="variants">
+          <div class="variant">
+            <span class="variant-label">Icon only</span>
+            <div class="variant-preview" style="position:relative;width:80px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">With label</span>
+            <div class="variant-preview" style="position:relative;width:120px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action thumbnail-action-label" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div>Pin</button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="group">
@@ -1216,28 +1265,57 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         <h3 class="section-heading">Inputs</h3>
         <div class="details-content">
       <div class="group">
-        <p class="group-title">Direct input</p>
+        <p class="group-title">Sizes</p>
         <div class="variants">
-          <div class="variant"><span class="variant-label">Default</span><input class="input" type="text" placeholder="Placeholder"></div>
-          <div class="variant"><span class="variant-label">Default (filled)</span><input class="input" type="text" value="Some value"></div>
-          <div class="variant"><span class="variant-label">Large</span><input class="input input-lg" type="text" placeholder="Placeholder"></div>
-          <div class="variant"><span class="variant-label">No fill</span><input class="input input-no-fill" type="text" placeholder="Inline edit"></div>
-          <div class="variant"><span class="variant-label">Error</span><input class="input input-error" type="text" value="Invalid value"></div>
-          <div class="variant"><span class="variant-label">Disabled</span><input class="input" type="text" placeholder="Disabled" disabled></div>
+          <div class="variant"><span class="variant-label">Default (28px)</span><input class="input" type="text" placeholder="Placeholder" style="width:200px"></div>
+          <div class="variant"><span class="variant-label">Large (32px)</span><input class="input input-lg" type="text" placeholder="Placeholder" style="width:200px"></div>
         </div>
       </div>
       <div class="group">
-        <p class="group-title">Wrapper (icon + clear)</p>
+        <p class="group-title">Styles</p>
         <div class="variants">
-          <div class="variant"><span class="variant-label">Search</span><div class="input-wrapper"><div class="input-icon-left icon-img" data-icon="Search_Fill_16"></div><input class="input-bare" type="text" placeholder="Search..."></div></div>
-          <div class="variant"><span class="variant-label">Left + Right icon</span><div class="input-wrapper"><div class="input-icon-left icon-img" data-icon="Search_Fill_16"></div><input class="input-bare" type="text" value="Query"><button class="input-icon-right" aria-label="Clear"><div class="icon-img" data-icon="Plus_Stroke_16" style="transform:rotate(45deg)"></div></button></div></div>
+          <div class="variant"><span class="variant-label">Fill</span><input class="input" type="text" placeholder="Placeholder" style="width:200px"></div>
+          <div class="variant"><span class="variant-label">Ghost</span><input class="input input-no-fill" type="text" placeholder="Inline edit" style="width:200px"></div>
         </div>
       </div>
       <div class="group">
-        <p class="group-title">Split input</p>
+        <p class="group-title">States</p>
         <div class="variants">
-          <div class="variant"><span class="variant-label">XYWH</span><div class="input-split"><input class="input-split-segment" type="text" value="100" aria-label="X"><span class="input-split-divider"></span><input class="input-split-segment" type="text" value="200" aria-label="Y"><span class="input-split-divider"></span><input class="input-split-segment" type="text" value="320" aria-label="W"><span class="input-split-divider"></span><input class="input-split-segment" type="text" value="240" aria-label="H"></div></div>
-          <div class="variant"><span class="variant-label">Opacity</span><div class="input-split" style="width:80px"><input class="input-split-segment" type="text" value="75" aria-label="Opacity"><div class="input-split-label">%</div></div></div>
+          <div class="variant"><span class="variant-label">Default</span><input class="input" type="text" placeholder="Placeholder" style="width:160px"></div>
+          <div class="variant"><span class="variant-label">Filled</span><input class="input" type="text" value="Some value" style="width:160px"></div>
+          <div class="variant"><span class="variant-label">Focused</span><input class="input input-demo-focus" type="text" value="Editing..." style="width:160px"></div>
+          <div class="variant"><span class="variant-label">Error</span><input class="input input-error" type="text" value="Invalid value" style="width:160px"></div>
+          <div class="variant"><span class="variant-label">Disabled</span><input class="input" type="text" placeholder="Placeholder" disabled style="width:160px"></div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">With icons</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Search</span><div class="input-wrapper" onclick="if(event.target===this||event.target.closest('.input-icon-left'))this.querySelector('.input-bare').focus()"><div class="input-icon-left icon-img" data-icon="Search_Fill_16"></div><input class="input-bare" type="text" placeholder="Search..."></div></div>
+          <div class="variant"><span class="variant-label">Left + Right icon</span><div class="input-wrapper" onclick="if(event.target===this||event.target.closest('.input-icon-left'))this.querySelector('.input-bare').focus()"><div class="input-icon-left icon-img" data-icon="Search_Fill_16"></div><input class="input-bare" type="text" value="Query"><button class="input-icon-right" aria-label="Clear" onclick="var i=this.closest('.input-wrapper').querySelector('.input-bare');i.value='';i.focus()"><div class="icon-img" data-icon="Plus_Stroke_16" style="transform:rotate(45deg)"></div></button></div></div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">Split</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">XYWH</span><div class="input-split" style="width:200px"><input class="input-split-segment" type="text" value="100" aria-label="X"><span class="input-split-divider"></span><input class="input-split-segment" type="text" value="200" aria-label="Y"><span class="input-split-divider"></span><input class="input-split-segment" type="text" value="320" aria-label="W"><span class="input-split-divider"></span><input class="input-split-segment" type="text" value="240" aria-label="H"></div></div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ DROPDOWN ════════ -->
+    <section class="section" id="dropdown">
+      <div class="section-block">
+        <h3 class="section-heading">Dropdown</h3>
+        <div class="details-content">
+      <div class="group">
+        <p class="group-title">Variants</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Closed</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="menu dropdown-menu" hidden><button class="row" role="option" onclick="selectDropdownItem(this, 'Option A')"><span>Option A</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option B')"><span>Option B</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option C')"><span>Option C</span></button></ul></div></div></div>
+          <div class="variant"><span class="variant-label">Ghost</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger dropdown-trigger-no-fill" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="menu dropdown-menu" hidden><button class="row" role="option" onclick="selectDropdownItem(this, 'Option A')"><span>Option A</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option B')"><span>Option B</span></button><button class="row" role="option" onclick="selectDropdownItem(this, 'Option C')"><span>Option C</span></button></ul></div></div></div>
+          <div class="variant"><span class="variant-label">Thumbnail</span><div style="width:200px"><div class="dropdown"><button class="dropdown-trigger dropdown-trigger-thumbnail" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><div class="dropdown-thumbnail"><img src="assets/image-example.png" alt="Scene A"></div><span>Scene A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="menu menu-thumbnail dropdown-menu" hidden><button class="row-thumbnail" role="option" onclick="selectDropdownItem(this, 'Scene A')"><div class="row-thumbnail-image"><img src="assets/image-example.png" alt="Scene A"></div><span>Scene A</span></button><button class="row-thumbnail" role="option" onclick="selectDropdownItem(this, 'Scene B')"><div class="row-thumbnail-image"><img src="assets/image-example.png" alt="Scene B"></div><span>Scene B</span></button></ul></div></div></div>
         </div>
       </div>
         </div>
@@ -1252,8 +1330,11 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       <div class="group">
         <p class="group-title">Segmented Control</p>
         <div class="variants">
-          <div class="variant"><span class="variant-label">3 segments</span><div class="segmented" role="group"><button class="segmented-item active">Label</button><button class="segmented-item">Label</button><button class="segmented-item">Label</button></div></div>
-          <div class="variant"><span class="variant-label">2 segments</span><div class="segmented" role="group"><button class="segmented-item active">On</button><button class="segmented-item">Off</button></div></div>
+          <div class="variant"><span class="variant-label">Title</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item active">Title</button><button class="segmented-item">Title</button><button class="segmented-item">Title</button></div></div></div>
+          <div class="variant"><span class="variant-label">Label</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-label active">Label</button><button class="segmented-item segmented-item-label">Label</button><button class="segmented-item segmented-item-label">Label</button></div></div></div>
+          <div class="variant"><span class="variant-label">Icon</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon active" aria-label="Rectangle"><div id="seg-icon-mask-rect"></div></button><button class="segmented-item segmented-item-icon" aria-label="Circle"><div id="seg-icon-mask-circle"></div></button><button class="segmented-item segmented-item-icon" aria-label="Hexagon"><div id="seg-icon-mask-hex"></div></button></div></div></div>
+          <div class="variant"><span class="variant-label">Icon + Label</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item segmented-item-icon-label active"><div class="segmented-icon" id="seg-icon-realroom"></div><span>Default</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon" id="seg-icon-blur"></div><span>Blurred</span></button><button class="segmented-item segmented-item-icon-label"><div class="segmented-icon" id="seg-icon-silhouette"></div><span>Hidden</span></button></div></div></div>
+          <div class="variant"><span class="variant-label">2 segments</span><div style="width:286px"><div class="segmented" role="group"><button class="segmented-item active">On</button><button class="segmented-item">Off</button></div></div></div>
         </div>
       </div>
       <div class="group">
@@ -1293,20 +1374,14 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
           <div class="variant"><span class="variant-label">Large (24px)</span><span class="loader loader-lg" aria-label="Loading"></span></div>
         </div>
       </div>
-      <div class="group">
-        <p class="group-title">Dropdown</p>
-        <div class="variants">
-          <div class="variant"><span class="variant-label">Closed</span><div class="dropdown"><button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false" onclick="toggleDropdown(this)"><span>Option A</span><div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div></button><ul class="dropdown-menu" hidden><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option A')">Option A</li><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option B')">Option B</li><li class="dropdown-item" onclick="selectDropdownItem(this, 'Option C')">Option C</li></ul></div></div>
-        </div>
-      </div>
         </div>
       </div>
     </section>
 
-    <!-- ════════ ROWS ════════ -->
+    <!-- ════════ LIST ITEM ════════ -->
     <section class="section" id="rows">
       <div class="section-block">
-        <h3 class="section-heading">Rows</h3>
+        <h3 class="section-heading">List Item</h3>
         <div class="details-content">
       <div class="group">
         <p class="group-title">Default Row</p>
@@ -1324,14 +1399,14 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       <div class="group">
         <p class="group-title">Thumbnail Row</p>
         <div style="width:260px;display:flex;flex-direction:column;gap:4px">
-          <div class="row-thumbnail" role="option"><div class="row-thumbnail-image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='40'%3E%3Crect width='71' height='40' fill='%23556'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23aaa' font-size='10'%3EScene A%3C/text%3E%3C/svg%3E" alt="Scene A"></div><span>Scene A</span><div class="row-icon-right icon-img" data-icon="Checkmark_Stroke_16"></div></div>
-          <div class="row-thumbnail" role="option"><div class="row-thumbnail-image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='40'%3E%3Crect width='71' height='40' fill='%23446655'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23aaa' font-size='10'%3EScene B%3C/text%3E%3C/svg%3E" alt="Scene B"></div><span>Scene B</span></div>
+          <div class="row-thumbnail" role="option"><div class="row-thumbnail-image"><img src="assets/image-example.png" alt="Scene A"></div><span>Scene A</span><div class="row-icon-right icon-img" data-icon="Checkmark_Stroke_16"></div></div>
+          <div class="row-thumbnail" role="option"><div class="row-thumbnail-image"><img src="assets/image-example.png" alt="Scene B"></div><span>Scene B</span></div>
         </div>
       </div>
       <div class="group">
         <p class="group-title">Account Row</p>
         <div style="width:260px;display:flex;flex-direction:column;gap:4px">
-          <div class="row-account"><img class="row-account-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23556677'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='14' font-family='sans-serif'%3ETR%3C/text%3E%3C/svg%3E" alt="Tyler Reynolds"><div class="row-account-info"><span class="row-account-name">Tyler Reynolds</span><span class="row-account-email">tyler@all-turtles.com</span></div><div class="row-icon-right icon-img" data-icon="ChevronForward_Stroke_16"></div></div>
+          <div class="row-account"><div class="avatar avatar-40 row-account-avatar"><img src="assets/avatar-example.png" alt="Tyler Reynolds"></div><div class="row-account-info"><span class="row-account-name">Tyler Reynolds</span><span class="row-account-email">tyler@all-turtles.com</span></div><div class="row-icon-right icon-img" data-icon="ChevronForward_Stroke_16"></div></div>
         </div>
       </div>
         </div>
@@ -1345,23 +1420,195 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
         <div class="details-content">
       <div class="variants" style="align-items:flex-start">
         <div class="variant"><span class="variant-label">Default menu</span><ul class="menu" role="menu"><li class="row" role="menuitem"><div class="row-icon-left icon-img" data-icon="Checkmark_Stroke_16"></div><span>Option 1</span></li><li class="row" role="menuitem"><div class="row-icon-left icon-img" data-icon="Checkmark_Stroke_16"></div><span>Option 2</span></li><li class="menu-divider" role="separator"></li><li class="row row-destructive" role="menuitem"><div class="row-icon-left icon-img" data-icon="Trash_Fill_16"></div><span>Delete</span></li></ul></div>
-        <div class="variant"><span class="variant-label">Account menu</span><div class="menu menu-account" role="dialog" aria-label="Account menu"><div class="row-account"><img class="row-account-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23556677'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='14' font-family='sans-serif'%3ETR%3C/text%3E%3C/svg%3E" alt="Tyler Reynolds"><div class="row-account-info"><span class="row-account-name">Tyler Reynolds</span><span class="row-account-email">tyler@all-turtles.com</span></div></div><div class="menu-divider"></div><button class="row"><span>Manage Business</span><div class="row-icon-right icon-img" data-icon="ChevronForwardSmall_Stroke_16"></div></button><button class="row"><span>Account settings</span></button><div class="menu-divider"></div><button class="row row-destructive"><span>Sign out</span></button></div></div>
+        <div class="variant"><span class="variant-label">Account menu</span><div class="menu menu-account" role="dialog" aria-label="Account menu"><div class="row-account"><div class="avatar avatar-40 row-account-avatar"><img src="assets/avatar-example.png" alt="Tyler Reynolds"></div><div class="row-account-info"><span class="row-account-name">Tyler Reynolds</span><span class="row-account-email">tyler@all-turtles.com</span></div></div><div class="menu-divider"></div><button class="row"><span>Manage Business</span><div class="row-icon-right icon-img" data-icon="ChevronForwardSmall_Stroke_16"></div></button><button class="row"><span>Account settings</span></button><div class="menu-divider"></div><button class="row row-destructive"><span>Sign out</span></button></div></div>
       </div>
         </div>
       </div>
     </section>
 
-    <!-- ════════ EDUCATION ════════ -->
-    <section class="section" id="education">
+    <!-- ════════ THUMBNAILS ════════ -->
+    <section class="section" id="thumbnails">
       <div class="section-block">
-        <h3 class="section-heading">Education</h3>
+        <h3 class="section-heading">Thumbnails</h3>
+        <div class="details-content">
+      <div class="group">
+        <p class="group-title">Thumbnail</p>
+        <div style="display:flex;flex-wrap:wrap;gap:var(--space-30);margin-bottom:var(--space-20)">
+          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('left-btn',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Left Button</span></label>
+          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('right-btn',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Right Button</span></label>
+          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('duration',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Duration</span></label>
+          <label class="checkbox"><input type="checkbox" onchange="toggleThumbnailFeature('name',this.checked)"><span class="checkbox-box"></span><span class="checkbox-label">Name</span></label>
+        </div>
+        <div class="variants" id="thumbnail-demo">
+          <div class="variant">
+            <span class="variant-label">Default</span>
+            <div class="thumbnail">
+              <div class="thumbnail-media">
+                <img src="assets/image-example.png" alt="">
+                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin" style="display:none"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tr" aria-label="More" style="display:none"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
+              </div>
+              <span class="thumbnail-name" style="display:none">Name</span>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">Hover</span>
+            <div class="thumbnail" style="background:var(--color-highlight-primary)">
+              <div class="thumbnail-media">
+                <img src="assets/image-example.png" alt="">
+                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tr" aria-label="More"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
+              </div>
+              <span class="thumbnail-name" style="display:none">Name</span>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">Selected</span>
+            <div class="thumbnail selected">
+              <div class="thumbnail-media">
+                <img src="assets/image-example.png" alt="">
+                <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin" style="display:none"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+                <button class="thumbnail-action thumbnail-action-tr" aria-label="More" style="display:none"><div class="icon-img" data-icon="More_Fill_16"></div></button>
+                <span class="thumbnail-badge thumbnail-badge-bl" style="display:none">01:23</span>
+              </div>
+              <span class="thumbnail-name" style="display:none">Name</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">Overlay button</p>
+        <div class="variants">
+          <div class="variant">
+            <span class="variant-label">Default</span>
+            <div style="position:relative;width:80px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">Label</span>
+            <div style="position:relative;width:120px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action thumbnail-action-label" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin"><div class="icon-img" data-icon="Pin_Fill_16"></div>Pin</button>
+            </div>
+          </div>
+          <div class="variant">
+            <span class="variant-label">Disabled</span>
+            <div style="position:relative;width:80px;height:45px;border-radius:var(--radius-15);overflow:hidden;background:var(--color-background-tertiary)">
+              <img src="assets/image-example.png" alt="" style="width:100%;height:100%;object-fit:cover">
+              <button class="thumbnail-action" style="top:50%;left:50%;transform:translate(-50%,-50%)" aria-label="Pin" disabled><div class="icon-img" data-icon="Pin_Fill_16"></div></button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ AVATAR ════════ -->
+    <section class="section" id="avatar">
+      <div class="section-block">
+        <h3 class="section-heading">Avatar</h3>
+        <div class="details-content">
+      <div class="group">
+        <p class="group-title">Sizes</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">16px</span><div class="avatar avatar-16"><img src="assets/avatar-example.png" alt="User"></div></div>
+          <div class="variant"><span class="variant-label">16px · Silhouette</span><div class="avatar avatar-16"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div></div></div>
+          <div class="variant"><span class="variant-label">20px</span><div class="avatar avatar-20"><img src="assets/avatar-example.png" alt="User"></div></div>
+          <div class="variant"><span class="variant-label">20px · Silhouette</span><div class="avatar avatar-20"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div></div></div>
+          <div class="variant"><span class="variant-label">24px</span><div class="avatar"><img src="assets/avatar-example.png" alt="User"></div></div>
+          <div class="variant"><span class="variant-label">24px · Silhouette</span><div class="avatar"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div></div></div>
+          <div class="variant"><span class="variant-label">32px</span><div class="avatar avatar-32"><img src="assets/avatar-example.png" alt="User"></div></div>
+          <div class="variant"><span class="variant-label">32px · Silhouette</span><div class="avatar avatar-32"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div></div></div>
+          <div class="variant"><span class="variant-label">40px</span><div class="avatar avatar-40"><img src="assets/avatar-example.png" alt="User"></div></div>
+          <div class="variant"><span class="variant-label">40px · Silhouette</span><div class="avatar avatar-40"><div class="avatar-silhouette"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 27" aria-hidden="true"><circle cx="8.5" cy="6" r="4.5" fill="rgba(255,255,255,0.4)"/><ellipse cx="8.5" cy="22" rx="8" ry="9" fill="rgba(255,255,255,0.4)"/></svg></div></div></div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ COLOR ════════ -->
+    <section class="section" id="color">
+      <div class="section-block">
+        <h3 class="section-heading">Color</h3>
+        <div class="details-content">
+      <div class="group">
+        <p class="group-title">Color Picker</p>
+        <div class="variants">
+          <div class="variant">
+            <span class="variant-label">Default</span>
+            <div class="color-picker" id="demo-color-picker" style="--color-picker-hue: #00E0FF;">
+              <div class="color-picker-canvas" id="cp-canvas">
+                <div class="color-picker-canvas-thumb" id="cp-canvas-thumb" style="left: clamp(4px, 75%, calc(100% - 4px)); top: clamp(4px, 14%, calc(100% - 4px))"></div>
+              </div>
+              <div class="color-picker-alpha" id="cp-alpha" style="--color-picker-color: #79DDE8;">
+                <div class="color-picker-slider-thumb" id="cp-alpha-thumb" style="left: calc(100% - 8px)"></div>
+              </div>
+              <div class="color-picker-hue" id="cp-hue">
+                <div class="color-picker-slider-thumb" id="cp-hue-thumb" style="left: calc(8px + 0.51111 * (100% - 16px))"></div>
+              </div>
+              <div class="color-picker-values">
+                <button class="color-picker-icon-btn" id="cp-eyedropper" aria-label="Pick color">
+                  <!-- SF Symbol: eyedropper (U+100399) extracted from SFSymbolsFallback.otf -->
+                  <svg width="14" height="14" viewBox="0 0 2087 2074" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <g transform="translate(-230, 1735) scale(1, -1)">
+                      <path d="M1560 867 1416 723C1380 688 1335 677 1300 714C1263 754 1271 790 1311 831L1452 977L1366 1062L558 254C249 -55 398 -7 230 -244L320 -339C549 -172 518 -336 832 -23L1643 783ZM1798 686 1826 717C1875 768 1878 828 1825 880L1795 909C1948 1046 2118 1065 2223 1172C2372 1322 2324 1532 2219 1637C2115 1743 1907 1788 1754 1641C1646 1537 1628 1366 1491 1213L1462 1243C1411 1295 1350 1293 1299 1244L1269 1216C1207 1157 1219 1105 1271 1052L1634 689C1687 636 1740 625 1798 686Z"/>
+                    </g>
+                  </svg>
+                </button>
+                <div class="dropdown" style="width: auto; flex-shrink: 0; position: relative;">
+                  <button class="dropdown-trigger color-picker-mode" id="cp-mode-btn" aria-haspopup="listbox" aria-expanded="false">
+                    <span>HSB</span>
+                    <div class="dropdown-chevron icon-img" data-icon="ChevronDownSmall_Stroke_16"></div>
+                  </button>
+                  <ul class="menu dropdown-menu" id="cp-mode-menu" role="listbox" hidden style="min-width: 0;">
+                    <button class="row" role="option" data-mode="HSB" style="position:relative;padding-right:28px"><span>HSB</span><span class="cp-mode-check" style="position:absolute;right:6px;top:50%;transform:translateY(-50%);width:16px;height:16px;display:flex;align-items:center;justify-content:center"></span></button>
+                    <button class="row" role="option" data-mode="RGB" style="position:relative;padding-right:28px"><span>RGB</span><span class="cp-mode-check" style="position:absolute;right:6px;top:50%;transform:translateY(-50%);width:16px;height:16px;display:flex;align-items:center;justify-content:center"></span></button>
+                    <button class="row" role="option" data-mode="CSS" style="position:relative;padding-right:28px"><span>CSS</span><span class="cp-mode-check" style="position:absolute;right:6px;top:50%;transform:translateY(-50%);width:16px;height:16px;display:flex;align-items:center;justify-content:center"></span></button>
+                  </ul>
+                </div>
+                <div class="input-split color-picker-inputs">
+                  <input class="input-split-segment" id="cp-in-a" type="text" value="184" aria-label="H">
+                  <span class="input-split-divider" id="cp-div-b"></span>
+                  <input class="input-split-segment" id="cp-in-b" type="text" value="75" aria-label="S">
+                  <span class="input-split-divider" id="cp-div-c"></span>
+                  <input class="input-split-segment" id="cp-in-c" type="text" value="86" aria-label="B">
+                  <span class="input-split-divider" id="cp-div-d"></span>
+                  <div class="input-split-label" id="cp-label-d" style="width: 30px; text-align: right;">100%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title">Swatches</p>
+        <div class="variants">
+          <div class="variant"><span class="variant-label">Default</span><div class="swatch"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+          <div class="variant"><span class="variant-label">Hover</span><div class="swatch" style="background:var(--color-highlight-primary)"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+          <div class="variant"><span class="variant-label">Selected</span><div class="swatch selected"><div class="swatch-inner" style="background:#1600BB"></div></div></div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ OVERLAYS ════════ -->
+    <section class="section" id="overlays">
+      <div class="section-block">
+        <h3 class="section-heading">Overlays</h3>
         <div class="details-content">
       <div class="group">
         <p class="group-title">Coach Mark</p>
         <div style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
           <div class="variant"><span class="variant-label">center-left</span><div style="padding:0 0 0 20px"><div class="coach-mark" data-arrow="center-left"><p class="coach-mark-text">Create a new presentation</p><div class="coach-mark-footer"><button class="coach-mark-btn">Prev</button><span class="coach-mark-step">1 / 3</span><div class="coach-mark-next"><button class="coach-mark-btn">Next</button></div></div></div></div></div>
-          <div class="variant"><span class="variant-label">top-center</span><div style="padding-top:20px"><div class="coach-mark" data-arrow="top-center"><p class="coach-mark-text">Select a template</p><div class="coach-mark-footer"><span class="coach-mark-step">2 / 3</span><div class="coach-mark-next"><button class="coach-mark-btn">Next</button></div></div></div></div></div>
-          <div class="variant"><span class="variant-label">No arrow</span><div class="coach-mark"><p class="coach-mark-text">Coach mark without arrow</p><div class="coach-mark-footer"><span class="coach-mark-step">3 / 3</span><div class="coach-mark-next"><button class="coach-mark-btn">Done</button></div></div></div></div>
+          <div class="variant"><span class="variant-label">top-center</span><div style="padding-top:20px"><div class="coach-mark" data-arrow="top-center"><p class="coach-mark-text">Select a template</p><div class="coach-mark-footer"><button class="coach-mark-btn">Prev</button><span class="coach-mark-step">2 / 3</span><div class="coach-mark-next"><button class="coach-mark-btn">Next</button></div></div></div></div></div>
+          <div class="variant"><span class="variant-label">No arrow</span><div class="coach-mark"><p class="coach-mark-text">Coach mark without arrow</p><div class="coach-mark-footer"><button class="coach-mark-btn">Prev</button><span class="coach-mark-step">3 / 3</span><div class="coach-mark-next"><button class="coach-mark-btn">Done</button></div></div></div></div>
         </div>
       </div>
       <div class="group">
@@ -1377,10 +1624,10 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       </div>
     </section>
 
-    <!-- ════════ OTHERS ════════ -->
-    <section class="section" id="others">
+    <!-- ════════ UTILITIES ════════ -->
+    <section class="section" id="utilities">
       <div class="section-block">
-        <h3 class="section-heading">Others</h3>
+        <h3 class="section-heading">Utilities</h3>
         <div class="details-content">
       <div class="group">
         <p class="group-title">Badge</p>
@@ -1415,15 +1662,18 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       <p class="subsection-label" style="margin-bottom:16px">221 unique icons &middot; 742 variants &middot; Fill + Stroke styles &middot; 16px / 24px sizes</p>
 
       <div class="icon-toolbar">
-        <input class="icon-search" type="text" placeholder="Search icons..." id="icon-search-input" oninput="filterIcons(this.value)">
+        <div class="input-wrapper" style="flex:1;min-width:180px">
+          <div class="input-icon-left icon-img" data-icon="Search_Fill_16"></div>
+          <input class="input-bare" type="text" placeholder="Search icons..." id="icon-search-input" oninput="filterIcons(this.value)">
+        </div>
         <div class="icon-toolbar-controls">
-          <div class="segmented segmented-sm" id="icon-style-toggle" role="group" aria-label="Icon style">
-            <button class="segmented-item active" onclick="setIconStyle(this, 'Stroke')">Stroke</button>
-            <button class="segmented-item" onclick="setIconStyle(this, 'Fill')">Fill</button>
+          <div class="segmented" id="icon-style-toggle" role="group" aria-label="Icon style">
+            <button class="segmented-item segmented-item-label active" onclick="setIconStyle(this, 'Stroke')">Stroke</button>
+            <button class="segmented-item segmented-item-label" onclick="setIconStyle(this, 'Fill')">Fill</button>
           </div>
-          <div class="segmented segmented-sm" id="icon-size-toggle" role="group" aria-label="Icon size">
-            <button class="segmented-item active" onclick="setIconSize(this, '16')">16</button>
-            <button class="segmented-item" onclick="setIconSize(this, '24')">24</button>
+          <div class="segmented" id="icon-size-toggle" role="group" aria-label="Icon size">
+            <button class="segmented-item segmented-item-label active" onclick="setIconSize(this, '16')">16</button>
+            <button class="segmented-item segmented-item-label" onclick="setIconSize(this, '24')">24</button>
           </div>
         </div>
       </div>
@@ -1502,8 +1752,6 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       var isOpen = !menu.hidden;
       menu.hidden = isOpen;
       btn.setAttribute('aria-expanded', String(!isOpen));
-      var chevron = btn.querySelector('.dropdown-chevron');
-      if (chevron) renderIcon(chevron, isOpen ? 'ChevronDownSmall_Stroke_16' : 'ChevronUpSmall_Stroke_16');
     }
 
     function selectDropdownItem(item, label) {
@@ -1512,8 +1760,6 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       trigger.querySelector('span').textContent = label;
       menu.hidden = true;
       trigger.setAttribute('aria-expanded', 'false');
-      var chevron = trigger.querySelector('.dropdown-chevron');
-      if (chevron) renderIcon(chevron, 'ChevronDownSmall_Stroke_16');
     }
 
     document.addEventListener('click', function(e) {
@@ -1523,12 +1769,26 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
             m.hidden = true;
             var trigger = m.previousElementSibling;
             trigger.setAttribute('aria-expanded', 'false');
-            var chevron = trigger.querySelector('.dropdown-chevron');
-            if (chevron) renderIcon(chevron, 'ChevronDownSmall_Stroke_16');
           }
         });
       }
     });
+
+    /* ── Thumbnail demo feature toggles ── */
+    function toggleThumbnailFeature(feature, visible) {
+      var selectorMap = {
+        'left-btn':  '.thumbnail-action-tl',
+        'right-btn': '.thumbnail-action-tr',
+        'duration':  '.thumbnail-badge-bl',
+        'slide-num': '.thumbnail-slide-num',
+        'name':      '.thumbnail-name'
+      };
+      var selector = selectorMap[feature];
+      if (!selector) return;
+      document.querySelectorAll('#thumbnail-demo ' + selector).forEach(function(el) {
+        el.style.display = visible ? '' : 'none';
+      });
+    }
 
     /* ── Segmented control ── */
     document.querySelectorAll('.segmented').forEach(function(group) {
@@ -1681,9 +1941,8 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
 
       if (typeof AppIcons === 'undefined') return;
 
-      /* Filter the active list by query */
-      var source = getActiveBaseNames();
-      var results = source.filter(function(baseName) {
+      /* Search across all icons regardless of featured/all toggle */
+      var results = allBaseNames.filter(function(baseName) {
         return baseName.toLowerCase().indexOf(q) !== -1;
       });
 
@@ -1796,6 +2055,245 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
       buildIconGrid();
       initScrollbarDemos();
     }
+
+    // Segmented control icons — inject via AppIcons for currentColor support
+    var segIcons = [
+      { id: 'seg-icon-mask-rect',   key: 'MaskRectangle_Stroke_24' },
+      { id: 'seg-icon-mask-circle', key: 'MaskCircle_Stroke_24' },
+      { id: 'seg-icon-mask-hex',    key: 'MaskHexagon_Stroke_24' },
+      { id: 'seg-icon-realroom',    key: 'Realroom_Fill_20' },
+      { id: 'seg-icon-blur',        key: 'Blur_Fill_20' },
+      { id: 'seg-icon-silhouette',  key: 'Silhouette_Fill_20' },
+    ];
+    segIcons.forEach(function(item) {
+      var el = document.getElementById(item.id);
+      if (el && AppIcons[item.key]) el.appendChild(AppIcons[item.key]());
+    });
+
+    /* ── Color Picker ── */
+    (function () {
+      var picker      = document.getElementById('demo-color-picker');
+      if (!picker) return;
+      var canvas      = document.getElementById('cp-canvas');
+      var canvasThumb = document.getElementById('cp-canvas-thumb');
+      var alphaTrack  = document.getElementById('cp-alpha');
+      var alphaThumb  = document.getElementById('cp-alpha-thumb');
+      var hueTrack    = document.getElementById('cp-hue');
+      var hueThumb    = document.getElementById('cp-hue-thumb');
+      var eyedropperBtn = document.getElementById('cp-eyedropper');
+      var modeBtn     = document.getElementById('cp-mode-btn');
+      var modeMenu    = document.getElementById('cp-mode-menu');
+      var inputA      = document.getElementById('cp-in-a');
+      var inputB      = document.getElementById('cp-in-b');
+      var inputC      = document.getElementById('cp-in-c');
+      var divB        = document.getElementById('cp-div-b');
+      var divC        = document.getElementById('cp-div-c');
+      var divD        = document.getElementById('cp-div-d');
+      var labelD      = document.getElementById('cp-label-d');
+
+      /* State: h 0-360, s 0-100, b 0-100, a 0-100 */
+      var state = { h: 184, s: 75, b: 86, a: 100 };
+      var mode  = 'HSB';
+
+      /* ── Color math ── */
+      function hsbToRgb(h, s, b) {
+        s /= 100; b /= 100;
+        var f = function (n) {
+          var k = (n + h / 60) % 6;
+          return b - b * s * Math.max(0, Math.min(k, 4 - k, 1));
+        };
+        return [Math.round(f(5) * 255), Math.round(f(3) * 255), Math.round(f(1) * 255)];
+      }
+
+      function rgbToHsb(r, g, b) {
+        r /= 255; g /= 255; b /= 255;
+        var max = Math.max(r, g, b), min = Math.min(r, g, b), d = max - min;
+        var bv = Math.round(max * 100);
+        var sv = max === 0 ? 0 : Math.round(d / max * 100);
+        var hv = 0;
+        if (d !== 0) {
+          if (max === r)      hv = ((g - b) / d + 6) % 6;
+          else if (max === g) hv = (b - r) / d + 2;
+          else                hv = (r - g) / d + 4;
+          hv = Math.round(hv * 60);
+        }
+        return [hv, sv, bv];
+      }
+
+      function hex2(n) { return ('0' + Math.max(0, Math.min(255, Math.round(n))).toString(16)).slice(-2); }
+
+      function hueColor(h)  { var c = hsbToRgb(h, 100, 100); return '#' + hex2(c[0]) + hex2(c[1]) + hex2(c[2]); }
+      function rgbHex(h, s, b) { var c = hsbToRgb(h, s, b); return '#' + hex2(c[0]) + hex2(c[1]) + hex2(c[2]); }
+      function toCss(h, s, b, a) {
+        var hex = rgbHex(h, s, b);
+        if (a < 100) hex += hex2(a / 100 * 255);
+        return hex.toUpperCase();
+      }
+
+      /* ── Thumb positioning: pct 0-100 → CSS left that clamps within 16px thumb ── */
+      function sliderPos(pct) {
+        return 'calc(8px + ' + (pct / 100).toFixed(5) + ' * (100% - 16px))';
+      }
+
+      /* ── Render visuals ── */
+      function render() {
+        picker.style.setProperty('--color-picker-hue', hueColor(state.h));
+        alphaTrack.style.setProperty('--color-picker-color', rgbHex(state.h, state.s, state.b));
+        /* clamp(4px) = inner circle radius: inner stays at edge, 4px white border overflows */
+        canvasThumb.style.left = 'clamp(4px, ' + state.s + '%, calc(100% - 4px))';
+        canvasThumb.style.top  = 'clamp(4px, ' + (100 - state.b) + '%, calc(100% - 4px))';
+        hueThumb.style.left    = sliderPos(state.h / 360 * 100);
+        alphaThumb.style.left  = sliderPos(state.a);
+      }
+
+      /* ── Update split inputs ── */
+      function updateInputs() {
+        var show3 = mode !== 'CSS';
+        inputB.style.display = divB.style.display = divC.style.display = inputC.style.display = show3 ? '' : 'none';
+        divD.style.display   = labelD.style.display = show3 ? '' : 'none';
+
+        if (mode === 'HSB') {
+          inputA.value = Math.round(state.h); inputA.setAttribute('aria-label', 'H');
+          inputB.value = Math.round(state.s); inputB.setAttribute('aria-label', 'S');
+          inputC.value = Math.round(state.b); inputC.setAttribute('aria-label', 'B');
+          labelD.textContent = Math.round(state.a) + '%';
+        } else if (mode === 'RGB') {
+          var rgb = hsbToRgb(state.h, state.s, state.b);
+          inputA.value = rgb[0]; inputA.setAttribute('aria-label', 'R');
+          inputB.value = rgb[1]; inputB.setAttribute('aria-label', 'G');
+          inputC.value = rgb[2]; inputC.setAttribute('aria-label', 'B');
+          labelD.textContent = Math.round(state.a) + '%';
+        } else {
+          inputA.value = toCss(state.h, state.s, state.b, state.a);
+          inputA.setAttribute('aria-label', 'Hex');
+        }
+      }
+
+      function update() { render(); updateInputs(); }
+
+      function updateModeCheck() {
+        modeMenu.querySelectorAll('[data-mode]').forEach(function (item) {
+          var slot = item.querySelector('.cp-mode-check');
+          slot.innerHTML = '';
+          if (item.dataset.mode === mode && AppIcons && AppIcons['Checkmark_Stroke_16']) {
+            slot.appendChild(AppIcons['Checkmark_Stroke_16']());
+          }
+        });
+      }
+
+      /* ── Drag helper ── */
+      function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+      function makeDragger(el, onMove) {
+        el.addEventListener('mousedown', function (e) {
+          e.preventDefault();
+          onMove(e);
+          function move(e) { e.preventDefault(); onMove(e); }
+          function stop() {
+            window.removeEventListener('mousemove', move);
+            window.removeEventListener('mouseup', stop);
+          }
+          window.addEventListener('mousemove', move);
+          window.addEventListener('mouseup', stop);
+        });
+      }
+
+      /* ── Canvas: saturation (x) × brightness (y) ── */
+      makeDragger(canvas, function (e) {
+        var r = canvas.getBoundingClientRect();
+        state.s = clamp((e.clientX - r.left) / r.width  * 100, 0, 100);
+        state.b = clamp(100 - (e.clientY - r.top)  / r.height * 100, 0, 100);
+        update();
+      });
+
+      /* ── Hue slider ── */
+      makeDragger(hueTrack, function (e) {
+        var r = hueTrack.getBoundingClientRect();
+        state.h = clamp((e.clientX - r.left) / r.width * 360, 0, 360);
+        update();
+      });
+
+      /* ── Alpha slider ── */
+      makeDragger(alphaTrack, function (e) {
+        var r = alphaTrack.getBoundingClientRect();
+        state.a = clamp((e.clientX - r.left) / r.width * 100, 0, 100);
+        update();
+      });
+
+      /* ── Input → state (on Enter / blur) ── */
+      function onInputCommit() {
+        var clampTo = function (v, lo, hi) { return clamp(parseFloat(v), lo, hi); };
+        if (mode === 'HSB') {
+          if (inputA.value !== '') state.h = clampTo(inputA.value, 0, 360);
+          if (inputB.value !== '') state.s = clampTo(inputB.value, 0, 100);
+          if (inputC.value !== '') state.b = clampTo(inputC.value, 0, 100);
+        } else if (mode === 'RGB') {
+          var r = clampTo(inputA.value, 0, 255);
+          var g = clampTo(inputB.value, 0, 255);
+          var b = clampTo(inputC.value, 0, 255);
+          if (!isNaN(r) && !isNaN(g) && !isNaN(b)) {
+            var hsb = rgbToHsb(r, g, b);
+            state.h = hsb[0]; state.s = hsb[1]; state.b = hsb[2];
+          }
+        } else {
+          var val = inputA.value.trim().replace(/^#/, '');
+          if (val.length >= 6) {
+            var ri = parseInt(val.slice(0,2), 16), gi = parseInt(val.slice(2,4), 16), bi = parseInt(val.slice(4,6), 16);
+            if (!isNaN(ri + gi + bi)) {
+              var h2 = rgbToHsb(ri, gi, bi);
+              state.h = h2[0]; state.s = h2[1]; state.b = h2[2];
+              if (val.length === 8) state.a = Math.round(parseInt(val.slice(6,8), 16) / 255 * 100);
+            }
+          }
+        }
+        update();
+      }
+
+      [inputA, inputB, inputC].forEach(function (inp) {
+        inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') { onInputCommit(); this.blur(); } });
+        inp.addEventListener('blur', onInputCommit);
+      });
+
+      /* ── Mode dropdown ── */
+      modeBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var isOpen = !modeMenu.hidden;
+        modeMenu.hidden = isOpen;
+        modeBtn.setAttribute('aria-expanded', String(!isOpen));
+      });
+      document.addEventListener('click', function () { modeMenu.hidden = true; modeBtn.setAttribute('aria-expanded', 'false'); });
+      modeMenu.querySelectorAll('[data-mode]').forEach(function (item) {
+        item.addEventListener('click', function (e) {
+          e.stopPropagation();
+          mode = this.dataset.mode;
+          modeBtn.querySelector('span').textContent = mode;
+          modeMenu.hidden = true;
+          modeBtn.setAttribute('aria-expanded', 'false');
+          updateInputs();
+          updateModeCheck();
+        });
+      });
+
+      /* ── EyeDropper API ── */
+      if ('EyeDropper' in window) {
+        eyedropperBtn.addEventListener('click', function () {
+          new EyeDropper().open().then(function (result) {
+            var val = result.sRGBHex.replace('#', '');
+            var hsb = rgbToHsb(parseInt(val.slice(0,2),16), parseInt(val.slice(2,4),16), parseInt(val.slice(4,6),16));
+            state.h = hsb[0]; state.s = hsb[1]; state.b = hsb[2];
+            state.a = 100; /* always full opacity like Figma */
+            update();
+          }).catch(function () {});
+        });
+      } else {
+        eyedropperBtn.setAttribute('title', 'EyeDropper API not supported in this browser');
+        eyedropperBtn.style.opacity = '0.4';
+      }
+
+      /* ── Init ── */
+      update();
+      updateModeCheck();
+    }());
   </script>
 </body>
 </html>

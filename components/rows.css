@@ -1,21 +1,24 @@
 /**
- * Airtime Design System v3 - Rows
+ * Airtime Design System v3 - List Item
  * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=18-9101
  *
  * Requires: generated/tokens.css
  *
- * ── Default Row ───────────────────────────────────────
+ * These are interactive list rows used inside menus, dropdowns, and option lists.
+ * Not to be confused with CSS layout rows (flexbox/grid rows).
+ *
+ * ── Default List Item ─────────────────────────────────
  *   .row                Base list row (28px height)
  *   .row-icon-left      Left icon slot (16px)
  *   .row-icon-right     Right icon slot (16px, e.g. chevron)
  *   .row.row-destructive   Destructive text color
  *   .row:disabled / [aria-disabled="true"]   Disabled state
  *
- * ── Thumbnail Row ─────────────────────────────────────
+ * ── Thumbnail List Item ───────────────────────────────
  *   .row-thumbnail      48px row with media thumbnail (71×40px)
  *   .row-thumbnail-image  The thumbnail image container
  *
- * ── Account Row ───────────────────────────────────────
+ * ── Account List Item ─────────────────────────────────
  *   .row-account        48px row with avatar + name/email
  *   .row-account-avatar   40px avatar image
  *   .row-account-info   Name + email column
@@ -63,7 +66,7 @@
  */
 
 /* ════════════════════════════════════════════════════
-   DEFAULT ROW
+   DEFAULT LIST ITEM
    ════════════════════════════════════════════════════ */
 
 .row {
@@ -136,7 +139,7 @@
 }
 
 /* ════════════════════════════════════════════════════
-   THUMBNAIL ROW
+   THUMBNAIL LIST ITEM
    ════════════════════════════════════════════════════ */
 
 .row-thumbnail {
@@ -199,17 +202,8 @@
   object-fit: cover;
 }
 
-/* Dark overlay on thumbnail image */
-.row-thumbnail-image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-}
-
 /* ════════════════════════════════════════════════════
-   ACCOUNT ROW
+   ACCOUNT LIST ITEM
    ════════════════════════════════════════════════════ */
 
 .row-account {
@@ -242,15 +236,7 @@
   pointer-events: none;
 }
 
-/* 40×40 avatar */
-.row-account-avatar {
-  display: block;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-9999);
-  object-fit: cover;
-}
+.row-account-avatar {}
 
 /* Name + email column */
 .row-account-info {

@@ -1,0 +1,111 @@
+/**
+ * Airtime Design System v3 - Scrollbar
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-2251
+ *
+ * Requires: generated/tokens.css
+ *
+ * Variants:  .scrollbar              Horizontal track wrapper (weak — on dark surfaces)
+ *            .scrollbar-strong       Strong variant (on overlay surfaces)
+ *            .scrollbar-vertical     Vertical track wrapper
+ *
+ * Parts:     .scrollbar-thumb        Glass thumb
+ *            .scrollbar-strong-thumb Solid thumb for strong variant
+ *
+ * ── HTML examples ─────────────────────────────────────
+ *
+ *   <!-- Weak (on dark bg) -->
+ *   <div class="scrollbar">
+ *     <div class="scrollbar-thumb" style="width: 40%; margin-left: 20%"></div>
+ *   </div>
+ *
+ *   <!-- Strong (on overlay surfaces) -->
+ *   <div class="scrollbar scrollbar-strong">
+ *     <div class="scrollbar-thumb scrollbar-strong-thumb" style="width: 40%"></div>
+ *   </div>
+ *
+ *   <!-- Vertical -->
+ *   <div class="scrollbar scrollbar-vertical">
+ *     <div class="scrollbar-thumb" style="height: 40%; margin-top: 20%"></div>
+ *   </div>
+ */
+
+/* ════════════════════════════════════════════════════
+   SCROLLBAR — Weak variant (on dark/glass surfaces)
+   ════════════════════════════════════════════════════ */
+
+.scrollbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8px;
+  padding: 2px var(--space-15);                      /* 2px 6px */
+  box-sizing: border-box;
+}
+
+.scrollbar-thumb {
+  height: 4px;
+  min-width: 20px;
+  background: var(--color-highlight-primary);
+  backdrop-filter: blur(var(--blur-medium));         /* 16px */
+  -webkit-backdrop-filter: blur(var(--blur-medium));
+  border-radius: var(--radius-9999);
+  flex-shrink: 0;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: background var(--duration-fast) var(--easing-default);
+}
+
+.scrollbar-thumb:hover {
+  background: var(--color-highlight-secondary);
+}
+
+.scrollbar-thumb:active {
+  cursor: grabbing;
+}
+
+/* ════════════════════════════════════════════════════
+   SCROLLBAR — Strong variant (on overlay surfaces)
+   ════════════════════════════════════════════════════ */
+
+.scrollbar-strong {
+  opacity: 0.8;
+  padding: 2px var(--space-60);                      /* 2px 24px */
+  background: var(--color-modeless-black-24);
+  border-radius: var(--radius-9999);
+}
+
+.scrollbar-strong-thumb {
+  height: 4px;
+  background: var(--color-content-tertiary);
+  border-radius: 40px;
+  cursor: grab;
+}
+
+.scrollbar-strong-thumb:active {
+  cursor: grabbing;
+}
+
+/* ════════════════════════════════════════════════════
+   SCROLLBAR — Vertical
+   ════════════════════════════════════════════════════ */
+
+.scrollbar-vertical {
+  flex-direction: column;
+  width: 8px;
+  height: 100%;
+  padding: var(--space-15) 2px;                      /* 6px 2px */
+  align-items: center;
+}
+
+.scrollbar-vertical .scrollbar-thumb {
+  width: 4px;
+  height: auto;
+  min-height: 20px;
+  min-width: unset;
+}
+
+.scrollbar-vertical.scrollbar-strong {
+  padding: var(--space-60) 2px;                      /* 24px 2px */
+}

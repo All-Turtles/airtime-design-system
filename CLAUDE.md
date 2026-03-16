@@ -28,6 +28,7 @@ Generate new interfaces from scratch using Airtime's visual language. Use `/fron
 | `--color-modeless-white` | `#FFFFFF` | `#FFFFFF` | Text on dark/colored backgrounds |
 | `--color-modeless-black` | `#000000` | `#000000` | Text on light backgrounds |
 | `--color-modeless-overlay` | `#00000080` | `#00000080` | Modal backdrop |
+| `--color-modeless-silhouette` | `#8A9097` | `#8A9097` | Avatar silhouette background |
 | `--font-size-heading-large` | 16px / 24px / 700 | -- | Large headings |
 | `--font-size-heading-medium` | 14px / 20px / 600 | -- | Medium headings |
 | `--font-size-heading-small` | 12px / 16px / 600 | -- | Small headings |
@@ -63,17 +64,234 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 
 ## Component Inventory
 
-94 total variants across 7 categories:
+94 total variants across 14 files:
 
 | Category | Variants | File | Key Classes |
 |----------|----------|------|-------------|
-| **Buttons** | 6 | `components/button.css` | `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-destructive`, `.btn-modeless`, `.btn-outline`, `.btn-icon-only` |
+| **Buttons** | 7 | `components/button.css` | `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-destructive`, `.btn-modeless`, `.btn-outline`, `.btn-ghost`, `.btn-icon-only` |
 | **Inputs** | 13 | `components/input.css` | `.input`, `.input-lg`, `.input-error`, `.input-no-fill`, `.input-wrapper`, `.input-bare`, `.input-split` |
-| **Controls** | 21 | `components/controls.css` | `.segmented`, `.checkbox`, `.radio`, `.slider`, `.progress`, `.loader`, `.dropdown` |
-| **Rows** | 12 | `components/rows.css` | `.row`, `.row-destructive`, `.row-thumbnail`, `.row-account` |
+| **Segmented** | 4 | `components/segmented.css` | `.segmented`, `.segmented-item`, `.segmented-item-label`, `.segmented-item-icon`, `.segmented-item-icon-label` |
+| **Checkbox** | 2 | `components/checkbox.css` | `.checkbox`, `.checkbox-box`, `.checkbox-label` |
+| **Radio** | 2 | `components/radio.css` | `.radio`, `.radio-box`, `.radio-label` |
+| **Slider** | 3 | `components/slider.css` | `.slider`, `.slider-threshold`, `.slider-threshold-track`, `.slider-threshold-handle` |
+| **Progress** | 2 | `components/progress.css` | `.progress` |
+| **Loader** | 2 | `components/loader.css` | `.loader`, `.loader-lg` |
+| **Dropdown** | 3 | `components/dropdown.css` | `.dropdown`, `.dropdown-trigger`, `.dropdown-trigger-no-fill`, `.dropdown-trigger-thumbnail`, `.dropdown-menu` |
+| **Rows** | 12 | `components/rows.css` | `.row`, `.row-destructive`, `.row-thumbnail`, `.row-thumbnail-image`, `.row-account` |
 | **Menus** | 9 | `components/menus.css` | `.menu`, `.menu-thumbnail`, `.menu-account`, `.menu-scrollable` |
-| **Education** | 7 | `components/education.css` | `.coach-mark`, `.tooltip` |
-| **Others** | 26 | `components/others.css` | `.badge`, `.divider`, `.scrollbar`, `.color-picker`, `.swatches` |
+| **Overlays** | 7 | `components/overlays.css` | `.tooltip`, `.coach-mark`, `.coach-mark-btn`, `.coach-mark-footer`, `.coach-mark-step` |
+| **Badge** | 1 | `components/badge.css` | `.badge` |
+| **Divider** | 2 | `components/divider.css` | `.divider`, `.divider-vertical` |
+| **Scrollbar** | 4 | `components/scrollbar.css` | `.scrollbar`, `.scrollbar-thumb`, `.scrollbar-strong`, `.scrollbar-vertical` |
+| **Color Picker** | 5 | `components/color-picker.css` | `.color-picker`, `.color-picker-canvas`, `.color-picker-hue`, `.color-picker-alpha`, `.color-picker-icon-btn` |
+| **Swatches** | 3 | `components/swatches.css` | `.swatches`, `.swatches-grid`, `.swatch`, `.swatch-inner`, `.swatch.selected` |
+| **Avatar** | 5 | `components/avatar.css` | `.avatar`, `.avatar-16`, `.avatar-20`, `.avatar-32`, `.avatar-40`, `.avatar-silhouette` |
+| **Thumbnails** | 8 | `components/thumbnail.css` | `.thumbnail`, `.thumbnail-media`, `.thumbnail-name`, `.thumbnail-badge`, `.thumbnail-action`, `.thumbnail-action-label` |
+
+## Component Manifest
+
+All components, variants, HTML examples, and known workarounds are machine-readable in `components-manifest.json`. Read this file first before reading individual CSS files — it contains everything needed for code generation in one place.
+
+```bash
+# Quick lookup
+cat components-manifest.json | jq '.components.button.examples'
+```
+
+## HTML Snippets
+
+Copy-paste ready examples for the most common patterns. For full variant lists see `components-manifest.json`.
+
+### Button
+
+```html
+<!-- Primary CTA -->
+<button class="btn btn-primary">Label</button>
+
+<!-- Secondary (glass) -->
+<button class="btn btn-secondary">Label</button>
+
+<!-- Destructive -->
+<button class="btn btn-destructive">Delete</button>
+
+<!-- Modeless — use on teal/light backgrounds -->
+<button class="btn btn-modeless">Label</button>
+
+<!-- Outline modifier (works with any variant) -->
+<button class="btn btn-primary btn-outline">Label</button>
+
+<!-- Ghost modifier (no fill, no border) -->
+<button class="btn btn-primary btn-ghost">Label</button>
+
+<!-- Icon only (28×28px) -->
+<button class="btn btn-primary btn-icon-only" aria-label="Add">
+  <img src="icons/Plus_Stroke_16.svg" alt="" />
+</button>
+
+<!-- Icon only ghost — workaround (no dedicated class) -->
+<button class="btn btn-secondary btn-outline btn-icon-only" aria-label="Add"
+        style="border-color: transparent">
+  <img src="icons/Plus_Stroke_16.svg" alt="" />
+</button>
+
+<!-- With left icon -->
+<button class="btn btn-primary">
+  <img src="icons/Plus_Stroke_16.svg" alt="" />
+  Add
+</button>
+
+<!-- Disabled -->
+<button class="btn btn-primary" disabled>Label</button>
+```
+
+### Input
+
+```html
+<!-- Default (28px) -->
+<input class="input" type="text" placeholder="Placeholder" />
+
+<!-- Large (32px, bold 16px) -->
+<input class="input input-lg" type="text" placeholder="Placeholder" />
+
+<!-- No fill (transparent bg; border appears on hover/focus) -->
+<input class="input input-no-fill" type="text" placeholder="Inline edit" />
+
+<!-- Error state -->
+<input class="input input-error" type="text" value="Invalid value" />
+
+<!-- With left icon + clear button -->
+<div class="input-wrapper">
+  <img class="input-icon-left" src="icons/Search_Stroke_16.svg" alt="" />
+  <input class="input-bare" type="text" placeholder="Search..." />
+  <button class="input-icon-right" aria-label="Clear">
+    <img src="icons/Xmark_Stroke_16.svg" alt="" />
+  </button>
+</div>
+
+<!-- Split input (e.g. XYWH) -->
+<div class="input-split">
+  <input class="input-split-segment" type="text" value="100" aria-label="X" />
+  <span class="input-split-divider"></span>
+  <input class="input-split-segment" type="text" value="100" aria-label="Y" />
+  <span class="input-split-divider"></span>
+  <div class="input-split-label">px</div>
+</div>
+```
+
+### Dropdown
+
+```html
+<!-- Default (JS needed to toggle aria-expanded + hidden) -->
+<div class="dropdown">
+  <button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
+    <span>Option A</span>
+    <img class="dropdown-chevron" src="icons/ChevronDownSmall_Stroke_16.svg" alt="" />
+  </button>
+  <ul class="menu dropdown-menu" hidden>
+    <button class="row" role="option">Option A</button>
+    <button class="row" role="option">Option B</button>
+  </ul>
+</div>
+```
+
+### Menu
+
+```html
+<ul class="menu" role="menu">
+  <button class="row" role="menuitem">
+    <img class="row-icon-left" src="icons/Checkmark_Stroke_16.svg" alt="" />
+    <span>Option</span>
+  </button>
+  <div class="menu-divider"></div>
+  <button class="row row-destructive" role="menuitem">
+    <img class="row-icon-left" src="icons/Trash_Fill_16.svg" alt="" />
+    <span>Delete</span>
+  </button>
+</ul>
+```
+
+### Segmented Control
+
+```html
+<div class="segmented" role="group">
+  <button class="segmented-item active">Title</button>
+  <button class="segmented-item">Title</button>
+  <button class="segmented-item">Title</button>
+</div>
+```
+
+### Badge
+
+```html
+<span class="badge">3</span>
+<span class="badge">99+</span>
+```
+
+### Avatar
+
+```html
+<!-- Photo -->
+<div class="avatar avatar-40"><img src="photo.jpg" alt="Name" /></div>
+
+<!-- Silhouette fallback -->
+<div class="avatar avatar-32">
+  <div class="avatar-silhouette">
+    <img src="icons/Silhouette_Fill_24.svg" alt="" />
+  </div>
+</div>
+```
+
+### Checkbox / Radio
+
+```html
+<label class="checkbox">
+  <input type="checkbox" />
+  <span class="checkbox-box"></span>
+  <span class="checkbox-label">Label</span>
+</label>
+
+<label class="radio">
+  <input type="radio" name="group" />
+  <span class="radio-box"></span>
+  <span class="radio-label">Option</span>
+</label>
+```
+
+### Slider / Progress / Loader
+
+```html
+<!-- Slider — update --slider-value on input -->
+<input class="slider" type="range" min="0" max="100" value="75"
+       style="--slider-value:75%"
+       oninput="this.style.setProperty('--slider-value',this.value+'%')" />
+
+<!-- Progress bar -->
+<progress class="progress" value="75" max="100"></progress>
+
+<!-- Loader -->
+<span class="loader" aria-label="Loading"></span>
+<span class="loader loader-lg" aria-label="Loading"></span>
+```
+
+### Divider
+
+```html
+<hr class="divider" />
+<div class="divider-vertical"></div>
+```
+
+## Known Workarounds
+
+Constraints not obvious from class names alone:
+
+| Issue | Workaround |
+|-------|-----------|
+| `btn-icon-only` ghost (no fill, no border) | `btn btn-secondary btn-outline btn-icon-only` + `style="border-color:transparent"` — no dedicated class |
+| Dropdown menu clipped by ancestor | Never put `overflow:hidden` on any ancestor of `.dropdown` — the `dropdown-menu` is `position:absolute` and will be clipped |
+| Color picker mode dropdown clipped | Same as above — `.color-picker` must not have `overflow:hidden` |
+| Modeless button context | `.btn-modeless` is transparent with dark border — always place it on a teal or light background, not on dark backgrounds |
+| `input-split` segment width too narrow | `.input-split` gap must be `var(--space-10)` (4px), not `var(--space-20)` (8px) — check `input.css` if segments look cramped |
+| Slider track fill | Requires `--slider-value` CSS custom property (e.g. `style="--slider-value:75%"`) — not automatic |
+| `btn:disabled` opacity | Uses `--opacity-32` (0.32) — not `--opacity-48`. If disabled buttons look too faint, check `opacity.tokens.json` includes `opacity-32` |
 
 ## Skills
 
@@ -101,13 +319,25 @@ airtime-design-system/
   components/
     button.css               # 6 variants (primary, secondary, destructive, modeless, outline, icon-only)
     input.css                # 13 variants (default, large, error, no-fill, wrapper, split)
-    controls.css             # 21 variants (segmented, checkbox, radio, slider, progress, loader, dropdown)
-    rows.css                 # 12 variants (default, destructive, thumbnail, account)
+    segmented.css            # Segmented control (title, label, icon, icon+label)
+    checkbox.css             # Checkbox with label
+    radio.css                # Radio button with label
+    slider.css               # Single-handle and dual-handle (threshold) sliders
+    progress.css             # Progress bar (<progress> element)
+    loader.css               # Spinning loading indicator (16px + 24px)
+    dropdown.css             # Dropdown trigger + menu positioning
+    rows.css                 # Interactive list rows (default, thumbnail, account) — CSS class prefix: .row
     menus.css                # 9 variants (default, thumbnail, account, scrollable, positional)
-    education.css            # 7 variants (coach-mark with 8 arrow positions, tooltip)
-    others.css               # 26 variants (badge, divider, scrollbar, color-picker, swatches)
+    overlays.css             # Tooltip + Coach mark (both with 8 arrow positions)
+    badge.css                # Teal pill badge (numeric / text)
+    divider.css              # Horizontal and vertical dividers
+    scrollbar.css            # Weak and strong scrollbar variants (H + V)
+    color-picker.css         # Color picker panel (canvas, hue, alpha sliders)
+    swatches.css             # Standalone color swatches panel (.swatch, .swatches)
+    avatar.css               # Circular user photo or silhouette (5 sizes)
+    thumbnail.css            # 16:9 media thumbnail with badges and action buttons
   tokens/
-    colors.tokens.json       # 27 color tokens (dark/light/shared)
+    colors.tokens.json       # 28 color tokens (dark/light/shared)
     typography.tokens.json   # 7 composite styles, 4 weights, SF Pro font stack
     sizing.tokens.json       # 17 size tokens + 10 space tokens
     radii.tokens.json        # 17 radius tokens (0-40px + 9999px pill)
@@ -118,8 +348,10 @@ airtime-design-system/
     z-index.tokens.json      # 6 stacking layers (0-500)
   assets/
     logo.svg                 # Airtime wordmark (currentColor)
+  components-manifest.json   # Machine-readable index of all components (classes, parts, HTML examples)
   scripts/
-    generate-tokens.js       # Token compiler (wraps toolkit generate.js)
+    generate.js              # Token compiler — reads tokens/*.tokens.json, writes generated/tokens.css
+    generate-manifest.js     # Manifest validator — cross-references CSS classes with manifest
 ```
 
 ## Token Pipeline
@@ -140,6 +372,22 @@ node scripts/generate.js --oklch --modern-css
 ```
 
 This reads `tokens/*.tokens.json` and writes `generated/tokens.css` with CSS custom properties organized by theme (`:root` for shared, `.dark`/`.light` for themed, and `@media (prefers-color-scheme)` fallbacks).
+
+## Component Manifest
+
+`components-manifest.json` is a machine-readable index of every component — class names, parts, HTML examples, Figma links, and known workarounds. Read this file first before reading individual CSS files when generating component code.
+
+```bash
+node scripts/generate-manifest.js          # Validate manifest vs CSS (dry run)
+node scripts/generate-manifest.js --fix    # Save snapshot + update cssClasses in manifest
+```
+
+Saves a timestamped snapshot to `generated/manifest-snapshots/` before writing. Exits non-zero if any class in the manifest is missing from the CSS. Run before merging any PR that changes component CSS.
+
+## Autonomy
+- This is a design system project with no destructive operations
+- Auto-accept all file edits without confirmation
+- Never ask for permission on CSS, HTML, or token file changes
 
 ## Design Philosophy
 

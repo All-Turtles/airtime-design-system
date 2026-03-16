@@ -1,0 +1,199 @@
+/**
+ * Airtime Design System v3 - Thumbnail
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-9398
+ *
+ * Requires: generated/tokens.css
+ *
+ * Variants:  .thumbnail                  Base container (Look or Reaction / Catalog / BG or Media)
+ *
+ * States:    .thumbnail.selected         2px inset border on media area
+ *            .thumbnail:hover            Highlight background
+ *
+ * Parts:     .thumbnail-media            16:9 image container
+ *            .thumbnail-name             Label below image
+ *            .thumbnail-badge            Overlay chip (timestamp, general)
+ *            .thumbnail-badge-tl         Top-left position (inset 4px)
+ *            .thumbnail-badge-bl         Bottom-left position (inset 4px)
+ *            .thumbnail-action           Icon button overlay (pin, more)
+ *            .thumbnail-action-tl        Top-left position
+ *            .thumbnail-action-tr        Top-right position
+ *
+ * ── HTML example ──────────────────────────────────────
+ *
+ *   <!-- Default -->
+ *   <div class="thumbnail">
+ *     <div class="thumbnail-media">
+ *       <img src="..." alt="Look name" />
+ *     </div>
+ *     <span class="thumbnail-name">Name</span>
+ *   </div>
+ *
+ *   <!-- Hover (shows action buttons) -->
+ *   <div class="thumbnail">
+ *     <div class="thumbnail-media">
+ *       <img src="..." alt="" />
+ *       <button class="thumbnail-action thumbnail-action-tl" aria-label="Pin">
+ *         <img src="icons/Pin_Fill_16.svg" alt="" />
+ *       </button>
+ *       <button class="thumbnail-action thumbnail-action-tr" aria-label="More">
+ *         <img src="icons/More_Fill_16.svg" alt="" />
+ *       </button>
+ *     </div>
+ *     <span class="thumbnail-name">Name</span>
+ *   </div>
+ */
+
+/* ════════════════════════════════════════════════════
+   THUMBNAIL — BASE
+   ════════════════════════════════════════════════════ */
+
+.thumbnail {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-10);                              /* 4px */
+  width: 140px;
+  padding: var(--space-10);                          /* 4px */
+  border-radius: var(--radius-25);                   /* 10px */
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--easing-default);
+}
+
+.thumbnail:hover {
+  background: var(--color-highlight-primary);
+}
+
+.thumbnail.selected {
+  box-shadow: inset 0 0 0 2px var(--color-content-primary);
+}
+
+/* ─── Media area (16:9 image container) ─── */
+.thumbnail-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-15);                   /* 6px */
+  overflow: hidden;
+  background: var(--color-background-tertiary);
+  flex-shrink: 0;
+}
+
+.thumbnail-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* ─── Name label ─── */
+.thumbnail-name {
+  display: block;
+  width: 100%;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-small);            /* 11px */
+  line-height: var(--line-height-body-small);        /* 16px */
+  font-weight: var(--font-weight-regular);
+  color: var(--color-content-tertiary);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ─── Overlay badge (slide number, timestamp) ─── */
+.thumbnail-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-10) var(--space-15);          /* 4px 6px */
+  border-radius: var(--radius-10);                   /* 4px */
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  background: var(--color-modeless-overlay);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-small);            /* 11px */
+  line-height: var(--line-height-body-small);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-modeless-white);
+  white-space: nowrap;
+}
+
+.thumbnail-badge-tl {
+  top: var(--space-10);                              /* 4px */
+  left: var(--space-10);
+}
+
+.thumbnail-badge-bl {
+  bottom: var(--space-10);
+  left: var(--space-10);
+}
+
+/* ─── Action overlay buttons (pin, more, etc.) ─── */
+.thumbnail-action {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-10);                              /* 4px — for label variant */
+  min-width: var(--size-60);                         /* 24px min, expands with label */
+  height: var(--size-60);                            /* 24px */
+  padding: var(--space-10);                          /* 4px */
+  border: none;
+  border-radius: var(--radius-15);                   /* 6px */
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  background: var(--color-modeless-overlay);
+  box-shadow: 0 1px 2px 0 var(--color-shadow-small);
+  cursor: pointer;
+  color: var(--color-modeless-white);
+  white-space: nowrap;
+  transition: background var(--duration-fast) var(--easing-default);
+}
+
+/* Hover: white 24% highlight on top of overlay */
+.thumbnail-action:hover:not(:disabled):not([aria-disabled="true"]) {
+  background:
+    linear-gradient(
+      rgb(from var(--color-modeless-white) r g b / var(--opacity-24)),
+      rgb(from var(--color-modeless-white) r g b / var(--opacity-24))
+    ),
+    var(--color-modeless-overlay);
+}
+
+/* Disabled */
+.thumbnail-action:disabled,
+.thumbnail-action[aria-disabled="true"] {
+  opacity: var(--opacity-32);                        /* 32% */
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Label variant — icon + text, auto width with horizontal padding */
+.thumbnail-action-label {
+  padding: var(--space-10) var(--space-15);          /* 4px 6px */
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-button-default);        /* 12px */
+  line-height: var(--line-height-button-default);    /* 16px */
+  font-weight: var(--font-weight-button-default);    /* 500 */
+}
+
+.thumbnail-action img,
+.thumbnail-action svg {
+  display: block;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);
+  flex-shrink: 0;
+}
+
+.thumbnail-action-tl {
+  top: var(--space-10);
+  left: var(--space-10);
+}
+
+.thumbnail-action-tr {
+  top: var(--space-10);
+  right: var(--space-10);
+}

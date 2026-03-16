@@ -1,0 +1,198 @@
+/**
+ * Airtime Design System v3 - Dropdown
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-1624
+ *
+ * Requires: generated/tokens.css, components/menus.css, components/rows.css
+ *
+ * Parts:  .dropdown                    Wrapper <div>
+ *         .dropdown-trigger            Visible button (click to open) — glass fill
+ *         .dropdown-trigger-no-fill    No background/border; bg appears on hover
+ *         .dropdown-trigger-thumbnail  Tall trigger with image on left
+ *         .dropdown-thumbnail          Image container inside thumbnail trigger
+ *         .dropdown-icon-left          Optional leading icon
+ *         .dropdown-menu               Positioning wrapper — use with .menu from menus.css
+ *
+ * ── HTML examples ─────────────────────────────────────
+ *
+ *   <!-- Default (glass fill) -->
+ *   <div class="dropdown">
+ *     <button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
+ *       <span>Option</span>
+ *       <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
+ *     </button>
+ *     <ul class="menu dropdown-menu" role="listbox">
+ *       <button class="row" role="option">Option A</button>
+ *       <button class="row" role="option">Option B</button>
+ *     </ul>
+ *   </div>
+ *
+ *   <!-- No fill -->
+ *   <div class="dropdown">
+ *     <button class="dropdown-trigger dropdown-trigger-no-fill" aria-haspopup="listbox" aria-expanded="false">
+ *       <span>Option</span>
+ *       <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
+ *     </button>
+ *   </div>
+ *
+ *   <!-- Thumbnail -->
+ *   <div class="dropdown">
+ *     <button class="dropdown-trigger dropdown-trigger-thumbnail" aria-haspopup="listbox" aria-expanded="false">
+ *       <div class="dropdown-thumbnail">
+ *         <img src="..." alt="Scene A" />
+ *       </div>
+ *       <span>Scene A</span>
+ *       <img class="dropdown-chevron" src="../icons/ChevronDownSmall_Stroke_16.svg" alt="" />
+ *     </button>
+ *     <ul class="menu menu-thumbnail dropdown-menu" role="listbox">
+ *       <button class="row-thumbnail" role="option">
+ *         <div class="row-thumbnail-image"><img src="..." alt="Scene A" /></div>
+ *         <span>Scene A</span>
+ *       </button>
+ *     </ul>
+ *   </div>
+ */
+
+/* ════════════════════════════════════════════════════
+   DROPDOWN
+   ════════════════════════════════════════════════════ */
+
+.dropdown {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* ─── Trigger button ─── */
+
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--space-10);                              /* 4px */
+  width: 100%;
+  height: var(--size-70);                            /* 28px */
+  padding: var(--space-15) var(--space-15) var(--space-15) var(--space-20); /* 6px 6px 6px 8px */
+  border: var(--border-width-thin) solid var(--color-highlight-primary);
+  border-radius: var(--radius-15);                   /* 6px */
+  background: var(--color-highlight-primary);
+  cursor: pointer;
+  box-sizing: border-box;
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-button-default);        /* 12px */
+  line-height: var(--line-height-button-default);    /* 16px */
+  font-weight: var(--font-weight-medium);            /* 500 */
+  color: var(--color-content-primary);
+  white-space: nowrap;
+
+  transition:
+    background var(--duration-fast) var(--easing-default),
+    border-color var(--duration-fast) var(--easing-default);
+}
+
+.dropdown-trigger:hover:not(:disabled) {
+  background: var(--color-highlight-secondary);
+  border-color: var(--color-highlight-secondary);
+}
+
+.dropdown-trigger[aria-expanded="true"] {
+  background: var(--color-highlight-secondary);
+  border-color: var(--color-highlight-secondary);
+}
+
+.dropdown-trigger:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ─── No-fill variant ─── */
+.dropdown-trigger-no-fill {
+  background: transparent;
+  border-color: transparent;
+}
+
+.dropdown-trigger-no-fill:hover:not(:disabled) {
+  background: var(--color-highlight-primary);
+  border-color: transparent;
+}
+
+.dropdown-trigger-no-fill[aria-expanded="true"] {
+  background: var(--color-highlight-primary);
+  border-color: transparent;
+}
+
+/* ─── Thumbnail variant ─── */
+.dropdown-trigger-thumbnail {
+  height: auto;
+  padding: var(--space-10) var(--space-15) var(--space-10) var(--space-10); /* 4px 6px 4px 4px */
+}
+
+.dropdown-thumbnail {
+  position: relative;
+  flex-shrink: 0;
+  width: 71px;
+  height: 40px;
+  border-radius: var(--radius-10);                   /* 4px */
+  overflow: hidden;
+  background: var(--color-background-tertiary);
+}
+
+.dropdown-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Optional leading icon */
+.dropdown-icon-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);                            /* 16px */
+}
+
+.dropdown-icon-left img,
+.dropdown-icon-left svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Label text (flexible) */
+.dropdown-trigger > span {
+  flex: 1;
+  text-align: left;
+}
+
+/* Chevron icon (right side) */
+.dropdown-chevron {
+  display: block;
+  flex-shrink: 0;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);                            /* 16px */
+  opacity: var(--opacity-50);
+  transition: transform var(--duration-fast) var(--easing-default);
+}
+
+.dropdown-trigger[aria-expanded="true"] .dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+/* ─── Popup menu ─── */
+/* Use .menu (from menus.css) for the panel surface; .dropdown-menu adds positioning */
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + var(--space-10));                 /* 4px gap below trigger */
+  left: 0;
+  min-width: 100%;
+  z-index: var(--z-dropdown);
+}
+
+/* Hidden by default — toggle via JS: aria-expanded="true" */
+.dropdown-menu[hidden],
+.dropdown-trigger[aria-expanded="false"] + .dropdown-menu {
+  display: none;
+}

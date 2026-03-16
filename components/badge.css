@@ -1,0 +1,36 @@
+/**
+ * Airtime Design System v3 - Badge
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-2251
+ *
+ * Requires: generated/tokens.css
+ *
+ * Variants:  .badge    Teal pill label (number / short text)
+ *
+ * ── HTML examples ─────────────────────────────────────
+ *
+ *   <span class="badge">3</span>
+ *   <span class="badge">99+</span>
+ */
+
+/* ════════════════════════════════════════════════════
+   BADGE
+   ════════════════════════════════════════════════════ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--size-40);                         /* 16px */
+  padding: 0 var(--space-10);                        /* 0 4px */
+  background: var(--color-modeless-teal);
+  border-radius: var(--radius-9999);
+  overflow: hidden;
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-small);            /* 11px */
+  line-height: var(--line-height-body-small);        /* 16px */
+  font-weight: var(--font-weight-bold);              /* 700 */
+  color: var(--color-modeless-black);
+  text-align: center;
+  white-space: nowrap;
+}

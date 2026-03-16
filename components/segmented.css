@@ -1,0 +1,174 @@
+/**
+ * Airtime Design System v3 - Segmented Control
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-1624
+ *
+ * Requires: generated/tokens.css
+ *
+ * Variants:  .segmented                  Container
+ *            .segmented-item             Individual segment (button)
+ *            .segmented-item.active      Selected state
+ *
+ * Parts:     .segmented-item-label       Smaller label text (12px medium, 4px padding)
+ *            .segmented-item-icon        Icon-only (28px wide, 20px icon)
+ *            .segmented-item-icon-label  Icon + label stacked vertically (20px icon + 11px text)
+ *
+ * ── HTML examples ─────────────────────────────────────
+ *
+ *   <!-- Title (default) -->
+ *   <div class="segmented" role="group">
+ *     <button class="segmented-item active">Title</button>
+ *     <button class="segmented-item">Title</button>
+ *     <button class="segmented-item">Title</button>
+ *   </div>
+ *
+ *   <!-- Label -->
+ *   <div class="segmented" role="group">
+ *     <button class="segmented-item segmented-item-label active">Label</button>
+ *     <button class="segmented-item segmented-item-label">Label</button>
+ *   </div>
+ *
+ *   <!-- Icon -->
+ *   <div class="segmented" role="group">
+ *     <button class="segmented-item segmented-item-icon active" aria-label="Square">
+ *       <img src="../icons/Square_Stroke_20.svg" alt="" />
+ *     </button>
+ *     <button class="segmented-item segmented-item-icon" aria-label="Circle">
+ *       <img src="../icons/Circle_Stroke_20.svg" alt="" />
+ *     </button>
+ *   </div>
+ *
+ *   <!-- Icon + Label -->
+ *   <div class="segmented" role="group">
+ *     <button class="segmented-item segmented-item-icon-label active">
+ *       <div class="segmented-icon"><img src="../icons/Presenter_Fill_20.svg" alt="" /></div>
+ *       <span>Default</span>
+ *     </button>
+ *     <button class="segmented-item segmented-item-icon-label">
+ *       <div class="segmented-icon"><img src="../icons/Blur_Fill_20.svg" alt="" /></div>
+ *       <span>Blurred</span>
+ *     </button>
+ *   </div>
+ */
+
+/* ════════════════════════════════════════════════════
+   SEGMENTED CONTROL
+   ════════════════════════════════════════════════════ */
+
+.segmented {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
+  width: 100%;
+  background: var(--color-background-primary);
+  border-radius: var(--radius-15);                   /* 6px */
+  box-sizing: border-box;
+}
+
+.segmented-item {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-10);                              /* 4px */
+  height: 24px;
+  padding: 2px var(--space-10);                      /* 2px 4px */
+  border: var(--border-width-thin) solid transparent;
+  border-radius: var(--radius-10);                   /* 4px */
+  background: transparent;
+  cursor: pointer;
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-heading-medium);        /* 14px */
+  line-height: var(--line-height-heading-medium);    /* 20px */
+  font-weight: var(--font-weight-semibold);          /* 600 */
+  color: var(--color-content-tertiary);
+  white-space: nowrap;
+
+  transition:
+    background var(--duration-fast) var(--easing-default),
+    border-color var(--duration-fast) var(--easing-default),
+    color var(--duration-fast) var(--easing-default);
+}
+
+.segmented-item img,
+.segmented-item svg {
+  display: block;
+  width: var(--size-40);                             /* 16px */
+  height: var(--size-40);
+  flex-shrink: 0;
+}
+
+/* Selected */
+.segmented-item.active,
+.segmented-item[aria-selected="true"] {
+  background: var(--color-background-secondary);
+  border-color: var(--color-highlight-primary);
+  color: var(--color-content-primary);
+}
+
+/* Hover (unselected) */
+.segmented-item:hover:not(.active):not([aria-selected="true"]):not(:disabled) {
+  background: var(--color-highlight-primary);
+}
+
+/* Disabled */
+.segmented-item:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ── Label variant ──────────────────────────────── */
+/* Smaller button-style text (12px/500), equal 4px padding all sides */
+.segmented-item-label {
+  padding: var(--space-10);                          /* 4px all sides */
+  font-size: var(--font-size-button-default);        /* 12px */
+  line-height: var(--line-height-button-default);    /* 16px */
+  font-weight: var(--font-weight-button-default);    /* 500 */
+}
+
+/* ── Icon variant ───────────────────────────────── */
+/* 20px icon centered, fills available space (flex: 1 from base) */
+.segmented-item-icon {
+  padding: var(--space-05) var(--space-10);          /* 2px 4px */
+}
+
+.segmented-item-icon img,
+.segmented-item-icon svg {
+  width: var(--size-50);                             /* 20px */
+  height: var(--size-50);
+}
+
+/* ── Icon + Label variant ───────────────────────── */
+/* Vertical stack: 20px icon above 11px label (body-small), 52px tall */
+.segmented-item-icon-label {
+  flex-direction: column;
+  gap: var(--space-10);                              /* 4px */
+  height: 52px;                                      /* icon 20 + gap 4 + label 16 + padding 6+6 */
+  padding: var(--space-15) var(--space-05);          /* 6px 2px */
+  font-size: var(--font-size-body-small);            /* 11px */
+  line-height: var(--line-height-body-small);        /* 16px */
+  font-weight: var(--font-weight-body-small);        /* 400 */
+}
+
+/* Icon container — fixed 20×20px */
+.segmented-item-icon-label .segmented-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--size-50);                             /* 20px */
+  height: var(--size-50);                            /* 20px */
+}
+
+.segmented-item-icon-label .segmented-icon img,
+.segmented-item-icon-label .segmented-icon svg {
+  width: var(--size-50);                             /* 20px */
+  height: var(--size-50);
+}
+
+/* Label text */
+.segmented-item-icon-label span {
+  display: block;
+  white-space: nowrap;
+}

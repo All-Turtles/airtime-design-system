@@ -1,0 +1,75 @@
+/**
+ * Airtime Design System v3 - Avatar
+ * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-2255
+ *
+ * Requires: generated/tokens.css
+ *
+ * Variants:  .avatar              24×24px circle (default)
+ *            .avatar-16           16×16px
+ *            .avatar-20           20×20px
+ *            .avatar-32           32×32px
+ *            .avatar-40           40×40px
+ *
+ * Parts:     .avatar-silhouette   Person figure overlay (no-photo variant)
+ *
+ * ── HTML examples ─────────────────────────────────────
+ *
+ *   <!-- Photo -->
+ *   <div class="avatar avatar-40">
+ *     <img src="photo.jpg" alt="Name" />
+ *   </div>
+ *
+ *   <!-- Silhouette (no photo) -->
+ *   <div class="avatar avatar-32">
+ *     <div class="avatar-silhouette">
+ *       <img src="../icons/Silhouette_Fill_24.svg" alt="" />
+ *     </div>
+ *   </div>
+ */
+
+/* ════════════════════════════════════════════════════
+   AVATAR
+   ════════════════════════════════════════════════════ */
+
+.avatar {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-9999);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--color-modeless-silhouette);
+}
+
+/* Size variants */
+.avatar-16 { width: 16px; height: 16px; }
+.avatar-20 { width: 20px; height: 20px; }
+.avatar-32 { width: 32px; height: 32px; }
+.avatar-40 { width: 40px; height: 40px; }
+
+.avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Person figure — positioned per Figma: top 16.66%, l/r 14.06%, extends 29.85% below */
+.avatar-silhouette {
+  position: absolute;
+  top: 16.66%;
+  left: 14.06%;
+  right: 14.06%;
+  bottom: -29.85%;
+  pointer-events: none;
+}
+
+.avatar-silhouette img,
+.avatar-silhouette svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+}
