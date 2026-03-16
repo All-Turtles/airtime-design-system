@@ -166,7 +166,7 @@
 /* Disabled */
 .thumbnail-action:disabled,
 .thumbnail-action[aria-disabled="true"] {
-  opacity: var(--opacity-30);
+  opacity: 0.3;
   cursor: not-allowed;
   pointer-events: none;
 }
