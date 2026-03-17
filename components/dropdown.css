@@ -161,7 +161,7 @@
 }
 
 /* Label text (flexible) */
-.dropdown-trigger > span {
+.dropdown-trigger span:not(.dropdown-chevron) {
   flex: 1;
   text-align: left;
 }
