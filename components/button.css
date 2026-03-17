@@ -19,9 +19,10 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-10);
-  padding: var(--space-15) var(--space-20);
+  padding: calc(var(--space-15) - var(--border-width-thin)) var(--space-20);
   border-radius: var(--radius-15);
   border: var(--border-width-thin) solid transparent;
+  box-sizing: border-box;
   cursor: pointer;
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-button-default);
@@ -62,9 +63,10 @@
 
 /* ─── Icon-only (square, 28×28px) ─── */
 .btn-icon-only {
-  padding: var(--space-15);
+  padding: calc(var(--space-15) - var(--border-width-thin));
   width: var(--size-70);
   height: var(--size-70);
+  box-sizing: border-box;
 }
 
 /* ─── Primary ─────────────────────────────── */

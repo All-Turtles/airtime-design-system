@@ -72,8 +72,9 @@
   justify-content: center;
   gap: var(--space-10);                              /* 4px */
   height: 24px;
-  padding: 2px var(--space-10);                      /* 2px 4px */
+  padding: var(--border-width-thin) var(--space-10); /* 1px 4px */
   border: var(--border-width-thin) solid transparent;
+  box-sizing: border-box;
   border-radius: var(--radius-10);                   /* 4px */
   background: transparent;
   cursor: pointer;
