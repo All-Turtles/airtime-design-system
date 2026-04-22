@@ -4,10 +4,11 @@
  *
  * Requires: generated/tokens.css
  *
- * Variants:  .btn-primary      Teal fill, black text (default CTA)
- *            .btn-secondary    Glass fill, white text (secondary action)
- *            .btn-destructive  Glass fill, destructive red text (danger action)
- *            .btn-modeless     Transparent + dark border (use on teal/light backgrounds)
+ * Variants:  .btn-primary              Teal fill, black text (default CTA)
+ *            .btn-secondary            Glass fill, white text (secondary action)
+ *            .btn-destructive          Glass fill, destructive red text (danger action)
+ *            .btn-modeless             Transparent + dark border (use on teal/light backgrounds)
+ *            .btn-modeless-destructive Destructive red fill, white text (high-emphasis danger action)
  *
  * Modifiers: .btn-outline      Removes fill, keeps border (works with each variant)
  *            .btn-icon-only    Square icon-only button (28×28px)
@@ -120,6 +121,23 @@
 .btn-secondary.btn-outline:hover:not(:disabled):not([aria-disabled="true"]) {
   background: var(--color-highlight-primary);
   border-color: var(--color-highlight-secondary);
+}
+
+/* ─── Modeless Destructive ─────────────────── */
+/* modeless-destructive fill, modeless-white text/icon (theme-independent) */
+.btn-modeless-destructive {
+  background: var(--color-modeless-destructive);
+  color: var(--color-modeless-white);
+  border-color: transparent;
+}
+
+.btn-modeless-destructive:hover:not(:disabled):not([aria-disabled="true"]) {
+  background:
+    linear-gradient(
+      rgb(from var(--color-modeless-white) r g b / var(--opacity-24)),
+      rgb(from var(--color-modeless-white) r g b / var(--opacity-24))
+    ),
+    var(--color-modeless-destructive);
 }
 
 /* ─── Destructive ──────────────────────────── */

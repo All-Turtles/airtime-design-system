@@ -194,7 +194,7 @@
         "$type": "color"
       },
       "destructive": {
-        "$value": "#FF6D4C",
+        "$value": "#D6402F",
         "$type": "color"
       },
       "silhouette": {

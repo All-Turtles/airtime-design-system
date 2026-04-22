@@ -1,6 +1,6 @@
 /* tokens.css — Generated from v2/tokens/*.json */
 /* Do not edit manually. Run: node scripts/generate.js */
-/* Generated: 2026-03-16 */
+/* Generated: 2026-04-22 */
 
 :root {
   /* colors */
@@ -10,7 +10,7 @@
   --color-modeless-black-24: #0000003D;
   --color-modeless-overlay: #00000080;
   --color-modeless-teal: #79DDE8;
-  --color-modeless-destructive: #FF6D4C;
+  --color-modeless-destructive: #D6402F;
   --color-modeless-silhouette: #8A9097;
 
   /* sizing */

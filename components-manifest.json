@@ -11,7 +11,8 @@
         "btn-primary",
         "btn-secondary",
         "btn-destructive",
-        "btn-modeless"
+        "btn-modeless",
+        "btn-modeless-destructive"
       ],
       "modifiers": [
         "btn-outline",
@@ -29,12 +30,14 @@
         "secondary": "<button class=\"btn btn-secondary\">Label</button>",
         "destructive": "<button class=\"btn btn-destructive\">Delete</button>",
         "modeless": "<button class=\"btn btn-modeless\">Label</button>",
+        "modeless-destructive": "<button class=\"btn btn-modeless-destructive\">Delete</button>",
         "primary-outline": "<button class=\"btn btn-primary btn-outline\">Label</button>",
         "secondary-outline": "<button class=\"btn btn-secondary btn-outline\">Label</button>",
         "primary-ghost": "<button class=\"btn btn-primary btn-ghost\">Label</button>",
         "icon-only-primary": "<button class=\"btn btn-primary btn-icon-only\" aria-label=\"Add\"><img src=\"icons/Plus_Stroke_16.svg\" alt=\"\" /></button>",
         "icon-only-secondary": "<button class=\"btn btn-secondary btn-icon-only\" aria-label=\"More\"><img src=\"icons/More_Fill_16.svg\" alt=\"\" /></button>",
         "icon-only-destructive": "<button class=\"btn btn-destructive btn-icon-only\" aria-label=\"Delete\"><img src=\"icons/Trash_Fill_16.svg\" alt=\"\" /></button>",
+        "icon-only-modeless-destructive": "<button class=\"btn btn-modeless-destructive btn-icon-only\" aria-label=\"Delete\"><img src=\"icons/Trash_Fill_16.svg\" alt=\"\" /></button>",
         "icon-only-ghost": "<button class=\"btn btn-secondary btn-outline btn-icon-only\" aria-label=\"Add\" style=\"border-color:transparent\"><img src=\"icons/Plus_Stroke_16.svg\" alt=\"\" /></button>",
         "with-icon-left": "<button class=\"btn btn-primary\"><img src=\"icons/Plus_Stroke_16.svg\" alt=\"\" />Add</button>",
         "disabled": "<button class=\"btn btn-primary\" disabled>Label</button>"
@@ -45,6 +48,7 @@
         "btn-ghost",
         "btn-icon-only",
         "btn-modeless",
+        "btn-modeless-destructive",
         "btn-outline",
         "btn-primary",
         "btn-secondary"
