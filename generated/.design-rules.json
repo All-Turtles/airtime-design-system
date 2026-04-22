@@ -323,9 +323,9 @@
         "btn-icon-only",
         "btn-primary",
         "btn-secondary",
-        "btn-destructive-primary",
-        "btn-destructive-secondary",
-        "btn-modeless"
+        "btn-destructive",
+        "btn-modeless",
+        "btn-modeless-destructive"
       ],
       "file": "components/button.css"
     },
@@ -506,9 +506,9 @@
         "css",
         "btn-primary",
         "btn-secondary",
-        "btn-destructive-primary",
-        "btn-destructive-secondary",
+        "btn-destructive",
         "btn-modeless",
+        "btn-modeless-destructive",
         "btn-outline",
         "btn-icon-only",
         "btn"
@@ -518,9 +518,9 @@
         "btn-icon-only",
         "btn-primary",
         "btn-secondary",
-        "btn-destructive-primary",
-        "btn-destructive-secondary",
-        "btn-modeless"
+        "btn-destructive",
+        "btn-modeless",
+        "btn-modeless-destructive"
       ],
       "variantCount": 7,
       "tokenRefs": [

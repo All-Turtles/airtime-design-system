@@ -4,11 +4,11 @@
  *
  * Requires: generated/tokens.css
  *
- * Variants:  .btn-primary               Teal fill, black text (default CTA)
- *            .btn-secondary             Glass fill, white text (secondary action)
- *            .btn-destructive-primary   Destructive red fill, white text (primary danger action)
- *            .btn-destructive-secondary Glass fill, destructive red text (secondary danger action)
- *            .btn-modeless              Transparent + dark border (use on teal/light backgrounds)
+ * Variants:  .btn-primary              Teal fill, black text (default CTA)
+ *            .btn-secondary            Glass fill, white text (secondary action)
+ *            .btn-destructive          Glass fill, destructive red text (danger action)
+ *            .btn-modeless             Transparent + dark border (use on teal/light backgrounds)
+ *            .btn-modeless-destructive Destructive red fill, white text (high-emphasis danger action)
  *
  * Modifiers: .btn-outline      Removes fill, keeps border (works with each variant)
  *            .btn-icon-only    Square icon-only button (28×28px)
@@ -123,15 +123,15 @@
   border-color: var(--color-highlight-secondary);
 }
 
-/* ─── Destructive Primary ──────────────────── */
-/* modeless-destructive fill, modeless-white text/icon */
-.btn-destructive-primary {
+/* ─── Modeless Destructive ─────────────────── */
+/* modeless-destructive fill, modeless-white text/icon (theme-independent) */
+.btn-modeless-destructive {
   background: var(--color-modeless-destructive);
   color: var(--color-modeless-white);
   border-color: transparent;
 }
 
-.btn-destructive-primary:hover:not(:disabled):not([aria-disabled="true"]) {
+.btn-modeless-destructive:hover:not(:disabled):not([aria-disabled="true"]) {
   background:
     linear-gradient(
       rgb(from var(--color-modeless-white) r g b / var(--opacity-24)),
@@ -140,9 +140,9 @@
     var(--color-modeless-destructive);
 }
 
-/* ─── Destructive Secondary ────────────────── */
+/* ─── Destructive ──────────────────────────── */
 /* Glass fill, destructive red text */
-.btn-destructive-secondary {
+.btn-destructive {
   background: var(--color-highlight-primary);
   color: var(--color-accent-destructive);
   border-color: var(--color-highlight-primary);
@@ -150,25 +150,25 @@
   -webkit-backdrop-filter: blur(var(--blur-small));
 }
 
-.btn-destructive-secondary:hover:not(:disabled):not([aria-disabled="true"]) {
+.btn-destructive:hover:not(:disabled):not([aria-disabled="true"]) {
   background: var(--color-highlight-secondary);
   border-color: var(--color-highlight-secondary);
 }
 
-/* Destructive Secondary — outline/ghost */
-.btn-destructive-secondary.btn-outline {
+/* Destructive — outline/ghost */
+.btn-destructive.btn-outline {
   background: transparent;
   color: var(--color-accent-destructive);
   border-color: var(--color-accent-destructive);
 }
 
-.btn-destructive-secondary.btn-outline:hover:not(:disabled):not([aria-disabled="true"]) {
+.btn-destructive.btn-outline:hover:not(:disabled):not([aria-disabled="true"]) {
   background: rgb(from var(--color-accent-destructive) r g b / var(--opacity-8));
 }
 
 /* ─── Ghost modifier ───────────────────────── */
 /* No fill, no border — text color only. Hover shows glass background. */
-/* Works with .btn-primary, .btn-secondary, .btn-destructive-secondary  */
+/* Works with .btn-primary, .btn-secondary, .btn-destructive             */
 .btn-primary.btn-ghost {
   background: transparent;
   border-color: transparent;
@@ -182,7 +182,7 @@
   -webkit-backdrop-filter: none;
 }
 
-.btn-destructive-secondary.btn-ghost {
+.btn-destructive.btn-ghost {
   background: transparent;
   border-color: transparent;
   backdrop-filter: none;
@@ -191,7 +191,7 @@
 
 .btn-primary.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]),
 .btn-secondary.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]),
-.btn-destructive-secondary.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]) {
+.btn-destructive.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]) {
   background: var(--color-highlight-primary);
   border-color: transparent;
   backdrop-filter: blur(var(--blur-small));

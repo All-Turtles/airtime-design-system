@@ -68,7 +68,7 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 
 | Category | Variants | File | Key Classes |
 |----------|----------|------|-------------|
-| **Buttons** | 8 | `components/button.css` | `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-destructive-primary`, `.btn-destructive-secondary`, `.btn-modeless`, `.btn-outline`, `.btn-ghost`, `.btn-icon-only` |
+| **Buttons** | 8 | `components/button.css` | `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-destructive`, `.btn-modeless`, `.btn-modeless-destructive`, `.btn-outline`, `.btn-ghost`, `.btn-icon-only` |
 | **Inputs** | 13 | `components/input.css` | `.input`, `.input-lg`, `.input-error`, `.input-no-fill`, `.input-wrapper`, `.input-bare`, `.input-split` |
 | **Segmented** | 4 | `components/segmented.css` | `.segmented`, `.segmented-item`, `.segmented-item-label`, `.segmented-item-icon`, `.segmented-item-icon-label` |
 | **Checkbox** | 2 | `components/checkbox.css` | `.checkbox`, `.checkbox-box`, `.checkbox-label` |
@@ -110,14 +110,14 @@ Copy-paste ready examples for the most common patterns. For full variant lists s
 <!-- Secondary (glass) -->
 <button class="btn btn-secondary">Label</button>
 
-<!-- Destructive Primary (red fill, white text) -->
-<button class="btn btn-destructive-primary">Delete</button>
-
-<!-- Destructive Secondary (glass fill, red text) -->
-<button class="btn btn-destructive-secondary">Delete</button>
+<!-- Destructive (glass fill, red text) -->
+<button class="btn btn-destructive">Delete</button>
 
 <!-- Modeless — use on teal/light backgrounds -->
 <button class="btn btn-modeless">Label</button>
+
+<!-- Modeless Destructive (red fill, white text — high-emphasis danger) -->
+<button class="btn btn-modeless-destructive">Delete</button>
 
 <!-- Outline modifier (works with any variant) -->
 <button class="btn btn-primary btn-outline">Label</button>
