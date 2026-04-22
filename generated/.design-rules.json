@@ -317,13 +317,14 @@
       "transitions": "Uses transition tokens: duration-fast, easing-default",
       "statesCovered": ":hover, :disabled",
       "statesMissing": ":focus, :active",
-      "variantCount": 6,
+      "variantCount": 7,
       "variants": [
         "btn",
         "btn-icon-only",
         "btn-primary",
         "btn-secondary",
-        "btn-destructive",
+        "btn-destructive-primary",
+        "btn-destructive-secondary",
         "btn-modeless"
       ],
       "file": "components/button.css"
@@ -505,7 +506,8 @@
         "css",
         "btn-primary",
         "btn-secondary",
-        "btn-destructive",
+        "btn-destructive-primary",
+        "btn-destructive-secondary",
         "btn-modeless",
         "btn-outline",
         "btn-icon-only",
@@ -516,10 +518,11 @@
         "btn-icon-only",
         "btn-primary",
         "btn-secondary",
-        "btn-destructive",
+        "btn-destructive-primary",
+        "btn-destructive-secondary",
         "btn-modeless"
       ],
-      "variantCount": 6,
+      "variantCount": 7,
       "tokenRefs": [
         "space-10",
         "space-15",
