@@ -289,6 +289,7 @@ Constraints not obvious from class names alone:
 | Issue | Workaround |
 |-------|-----------|
 | `btn-icon-only` ghost (no fill, no border) | `btn btn-secondary btn-outline btn-icon-only` + `style="border-color:transparent"` — no dedicated class |
+| `btn-modeless-destructive` + `btn-outline` / `btn-ghost` | Unsupported — would produce a near-duplicate of `.btn-destructive.btn-outline` / `.btn-destructive.btn-ghost` (identical in light mode, marginal difference in dark mode). Use the `.btn-destructive` variant for outline/ghost styling. `.btn-modeless-destructive.btn-icon-only` is supported and already in the manifest. |
 | Dropdown menu clipped by ancestor | Never put `overflow:hidden` on any ancestor of `.dropdown` — the `dropdown-menu` is `position:absolute` and will be clipped |
 | Color picker mode dropdown clipped | Same as above — `.color-picker` must not have `overflow:hidden` |
 | Modeless button context | `.btn-modeless` is transparent with dark border — always place it on a teal or light background, not on dark backgrounds |
