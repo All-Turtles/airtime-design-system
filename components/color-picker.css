@@ -12,7 +12,6 @@
  *   .color-picker-alpha        Checkerboard + alpha gradient slider
  *   .color-picker-slider-thumb Circle thumb on hue/alpha sliders
  *   .color-picker-values       Bottom row (eyedropper, mode, inputs)
- *   .color-picker-icon-btn     Eyedropper / action icon button (28×28)
  *
  * See also: swatches.css for the standalone swatches panel (.swatch, .swatches)
  *
@@ -30,9 +29,9 @@
  *       <div class="color-picker-slider-thumb" style="left: 50%"></div>
  *     </div>
  *     <div class="color-picker-values">
- *       <button class="color-picker-icon-btn" aria-label="Pick color">
- *         <!-- SF Symbol: eyedropper (U+100399) — inline SVG from SFSymbolsFallback.otf -->
- *         <svg width="14" height="14" viewBox="0 0 2087 2074" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+ *       <button class="btn btn-secondary btn-icon-only" aria-label="Pick color">
+ *         <!-- SF Symbol: eyedropper (U+100399) — 16px container, 14px visual content -->
+ *         <svg width="16" height="16" viewBox="-149 -149 2385 2372" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
  *           <g transform="translate(-230, 1735) scale(1, -1)">
  *             <path d="M1560 867 1416 723C1380 688 1335 677 1300 714C1263 754 1271 790 1311 831L1452 977L1366 1062L558 254C249 -55 398 -7 230 -244L320 -339C549 -172 518 -336 832 -23L1643 783ZM1798 686 1826 717C1875 768 1878 828 1825 880L1795 909C1948 1046 2118 1065 2223 1172C2372 1322 2324 1532 2219 1637C2115 1743 1907 1788 1754 1641C1646 1537 1628 1366 1491 1213L1462 1243C1411 1295 1350 1293 1299 1244L1269 1216C1207 1157 1219 1105 1271 1052L1634 689C1687 636 1740 625 1798 686Z"/>
  *           </g>
@@ -59,8 +58,8 @@
  *     <div class="swatches-header">
  *       <span class="swatches-label">Custom Colors</span>
  *       <div class="swatches-actions">
- *         <button class="color-picker-icon-btn" aria-label="Add color">
- *           <img src="../icons/Plus_Stroke_20.svg" alt="" />
+ *         <button class="btn btn-secondary btn-icon-only" aria-label="Add color">
+ *           <img src="../icons/Plus_Stroke_16.svg" alt="" />
  *         </button>
  *       </div>
  *     </div>
@@ -178,37 +177,6 @@
   width: 100%;
 }
 
-/* Eyedropper / action icon button (28×28px) */
-.color-picker-icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: var(--size-70);                             /* 28px */
-  height: var(--size-70);                            /* 28px */
-  padding: var(--space-10);                          /* 4px */
-  background: var(--color-highlight-primary);
-  border: var(--border-width-thin) solid var(--color-highlight-primary);
-  border-radius: var(--radius-15);                   /* 6px */
-  backdrop-filter: blur(var(--blur-small));
-  -webkit-backdrop-filter: blur(var(--blur-small));
-  cursor: pointer;
-  box-sizing: border-box;
-  color: inherit;
-  transition: background var(--duration-fast) var(--easing-default);
-}
-
-.color-picker-icon-btn:hover {
-  background: var(--color-highlight-secondary);
-  border-color: var(--color-highlight-secondary);
-}
-
-.color-picker-icon-btn img,
-.color-picker-icon-btn svg {
-  display: block;
-  width: 20px;
-  height: 20px;
-}
 
 /* Mode selector (e.g. HSB / RGB / Hex) */
 .color-picker-mode {
