@@ -115,7 +115,7 @@
 
 /* Disabled */
 .input:disabled {
-  opacity: 0.3;
+  opacity: var(--opacity-32);
   cursor: not-allowed;
 }
 
@@ -207,7 +207,7 @@
 
 /* Disabled */
 .input-wrapper:has(.input-bare:disabled) {
-  opacity: 0.3;
+  opacity: var(--opacity-32);
   cursor: not-allowed;
 }
 
@@ -324,7 +324,7 @@ button.input-icon-right:hover {
 
 /* Disabled */
 .input-split:has(.input-split-segment:disabled) {
-  opacity: 0.3;
+  opacity: var(--opacity-32);
 }
 
 /* Individual segment <input> */

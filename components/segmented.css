@@ -115,7 +115,7 @@
 
 /* Disabled */
 .segmented-item:disabled {
-  opacity: 0.3;
+  opacity: var(--opacity-32);
   cursor: not-allowed;
 }
 

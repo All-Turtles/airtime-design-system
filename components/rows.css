@@ -105,7 +105,7 @@
 /* Disabled */
 .row:disabled,
 .row[aria-disabled="true"] {
-  opacity: 0.3;
+  opacity: var(--opacity-32);
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -172,7 +172,7 @@
 
 .row-thumbnail:disabled,
 .row-thumbnail[aria-disabled="true"] {
-  opacity: 0.3;
+  opacity: var(--opacity-32);
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -231,7 +231,7 @@
 
 .row-account:disabled,
 .row-account[aria-disabled="true"] {
-  opacity: 0.3;
+  opacity: var(--opacity-32);
   cursor: not-allowed;
   pointer-events: none;
 }

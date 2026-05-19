@@ -70,7 +70,7 @@
    ════════════════════════════════════════════════════ */
 
 .scrollbar-strong {
-  opacity: 0.8;
+  opacity: var(--opacity-72);
   padding: 2px var(--space-60);                      /* 2px 24px */
   background: var(--color-modeless-black-24);
   border-radius: var(--radius-9999);

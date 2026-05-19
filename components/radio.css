@@ -92,7 +92,7 @@
 /* Disabled */
 .radio input[type="radio"]:disabled ~ .radio-box,
 .radio input[type="radio"]:disabled ~ .radio-label {
-  opacity: 0.3;
+  opacity: var(--opacity-32);
 }
 
 .radio:has(input:disabled) {
