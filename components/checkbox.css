@@ -92,7 +92,7 @@
 /* Disabled */
 .checkbox input[type="checkbox"]:disabled ~ .checkbox-box,
 .checkbox input[type="checkbox"]:disabled ~ .checkbox-label {
-  opacity: 0.3;
+  opacity: var(--opacity-32);
 }
 
 .checkbox:has(input:disabled) {
