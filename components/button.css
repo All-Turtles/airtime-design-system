@@ -10,8 +10,9 @@
  *            .btn-modeless             Transparent + dark border (use on teal/light backgrounds)
  *            .btn-modeless-destructive Destructive red fill, white text (high-emphasis danger action)
  *
- * Modifiers: .btn-outline      Removes fill, keeps border (works with each variant)
- *            .btn-icon-only    Square icon-only button (28×28px)
+ * Modifiers: .btn-outline       Removes fill, keeps border (works with each variant)
+ *            .btn-icon-only     Square icon-only button (28×28px, 16px icon)
+ *            .btn-icon-only-lg  Same 28×28px button with a larger 20px icon
  */
 
 /* ─── Base ─── */
@@ -68,6 +69,17 @@
   width: var(--size-70);
   height: var(--size-70);
   box-sizing: border-box;
+}
+
+/* ─── Icon-only Large (28×28px button, 20px icon) ─── */
+.btn-icon-only-lg {
+  padding: calc(var(--space-10) - var(--border-width-thin));
+}
+
+.btn-icon-only-lg svg,
+.btn-icon-only-lg img {
+  width: var(--size-50);
+  height: var(--size-50);
 }
 
 /* ─── Primary ─────────────────────────────── */

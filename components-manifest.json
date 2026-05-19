@@ -17,10 +17,12 @@
       "modifiers": [
         "btn-outline",
         "btn-ghost",
-        "btn-icon-only"
+        "btn-icon-only",
+        "btn-icon-only-lg"
       ],
       "notes": [
         "btn-icon-only is a square 28×28px modifier combined with a variant class (e.g. btn btn-primary btn-icon-only)",
+        "btn-icon-only-lg keeps the 28×28px button but renders the inner icon at 20px (vs 16px default) — combine with btn-icon-only",
         "Ghost with icon-only has no dedicated CSS — use btn-outline + style borderColor:transparent",
         "Modeless is for use on teal/light backgrounds only; wrap in a teal-bg container for demos",
         "Disabled: use :disabled attribute or aria-disabled='true' — applies opacity-32"
@@ -39,6 +41,7 @@
         "icon-only-destructive": "<button class=\"btn btn-destructive btn-icon-only\" aria-label=\"Delete\"><img src=\"icons/Trash_Fill_16.svg\" alt=\"\" /></button>",
         "icon-only-modeless-destructive": "<button class=\"btn btn-modeless-destructive btn-icon-only\" aria-label=\"Delete\"><img src=\"icons/Trash_Fill_16.svg\" alt=\"\" /></button>",
         "icon-only-ghost": "<button class=\"btn btn-secondary btn-outline btn-icon-only\" aria-label=\"Add\" style=\"border-color:transparent\"><img src=\"icons/Plus_Stroke_16.svg\" alt=\"\" /></button>",
+        "icon-only-large": "<button class=\"btn btn-primary btn-icon-only btn-icon-only-lg\" aria-label=\"Add\"><img src=\"icons/Plus_Stroke_20.svg\" alt=\"\" /></button>",
         "with-icon-left": "<button class=\"btn btn-primary\"><img src=\"icons/Plus_Stroke_16.svg\" alt=\"\" />Add</button>",
         "disabled": "<button class=\"btn btn-primary\" disabled>Label</button>"
       },
@@ -47,6 +50,7 @@
         "btn-destructive",
         "btn-ghost",
         "btn-icon-only",
+        "btn-icon-only-lg",
         "btn-modeless",
         "btn-modeless-destructive",
         "btn-outline",
