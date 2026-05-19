@@ -83,7 +83,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-medium);         /* 12px */
   line-height: var(--line-height-body-medium);     /* 16px */
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-medium);
   color: var(--color-content-primary);
   caret-color: var(--color-modeless-teal);
 
@@ -126,7 +126,7 @@
   padding: var(--space-10) var(--space-20);        /* 4px 8px */
   font-size: var(--font-size-heading-large);       /* 16px */
   line-height: var(--line-height-heading-large);   /* 24px */
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-heading-large);
 }
 
 /* ─── Error state ─── */
@@ -225,7 +225,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-medium);         /* 12px */
   line-height: var(--line-height-body-medium);     /* 16px */
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-medium);
   color: var(--color-content-primary);
   caret-color: var(--color-modeless-teal);
 }
@@ -233,7 +233,7 @@
 .input-wrapper-lg .input-bare {
   font-size: var(--font-size-heading-large);       /* 16px */
   line-height: var(--line-height-heading-large);   /* 24px */
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-heading-large);
 }
 
 .input-bare::placeholder {
@@ -341,7 +341,7 @@ button.input-icon-right:hover {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-medium);         /* 12px */
   line-height: var(--line-height-body-medium);     /* 16px */
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-medium);
   color: var(--color-content-primary);
   caret-color: var(--color-modeless-teal);
 }
@@ -374,7 +374,7 @@ button.input-icon-right:hover {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-medium);
   line-height: var(--line-height-body-medium);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-medium);
   color: var(--color-content-primary);
   white-space: nowrap;
   user-select: none;

@@ -80,7 +80,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-button-default);        /* 12px */
   line-height: var(--line-height-button-default);    /* 16px */
-  font-weight: var(--font-weight-medium);            /* 500 */
+  font-weight: var(--font-weight-button-default);    /* 500 */
   color: var(--color-content-primary);
   white-space: nowrap;
 

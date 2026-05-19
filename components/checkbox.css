@@ -103,6 +103,6 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-medium);           /* 12px */
   line-height: var(--line-height-body-medium);       /* 16px */
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-medium);
   color: var(--color-content-primary);
 }
