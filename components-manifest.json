@@ -433,20 +433,19 @@
           "parts": {
             "coach-mark-text": "Body text",
             "coach-mark-footer": "Prev / step counter / Next row",
-            "coach-mark-btn": "Prev or Next button",
             "coach-mark-step": "'1 / 3' counter",
             "coach-mark-next": "Next button wrapper (right-aligned)"
           },
           "notes": [
             "Arrow direction via data-arrow (same values as tooltip)",
-            "320px wide teal floating panel"
+            "320px wide teal floating panel",
+            "Prev / Next buttons use the DS .btn .btn-modeless component"
           ],
-          "example": "<div class=\"coach-mark\" data-arrow=\"bottom-center\">\n  <p class=\"coach-mark-text\">Tip text here</p>\n  <div class=\"coach-mark-footer\">\n    <button class=\"coach-mark-btn\">Back</button>\n    <span class=\"coach-mark-step\">1 / 3</span>\n    <div class=\"coach-mark-next\"><button class=\"coach-mark-btn\">Next</button></div>\n  </div>\n</div>"
+          "example": "<div class=\"coach-mark\" data-arrow=\"bottom-center\">\n  <p class=\"coach-mark-text\">Tip text here</p>\n  <div class=\"coach-mark-footer\">\n    <button class=\"btn btn-modeless\">Back</button>\n    <span class=\"coach-mark-step\">1 / 3</span>\n    <div class=\"coach-mark-next\"><button class=\"btn btn-modeless\">Next</button></div>\n  </div>\n</div>"
         }
       },
       "cssClasses": [
         "coach-mark",
-        "coach-mark-btn",
         "coach-mark-footer",
         "coach-mark-next",
         "coach-mark-step",

@@ -8,9 +8,10 @@
  *   .coach-mark           Teal floating panel (320px)
  *   .coach-mark-text      Semibold 12px body text
  *   .coach-mark-footer    Prev / step counter / Next row
- *   .coach-mark-btn       Prev or Next button (modeless style)
  *   .coach-mark-step      "1 / 3" counter (50% opacity)
  *   .coach-mark-next      Next button wrapper (right-aligned)
+ *   Prev / Next buttons   Use the DS .btn .btn-modeless component
+ *                         (transparent + dark border, sits on teal bg)
  *
  *   Arrow position — set via data-arrow attribute:
  *     data-arrow="center-left"    Arrow on left side, vertically centered
@@ -43,10 +44,10 @@
  *       Create a new presentation or open an existing one
  *     </p>
  *     <div class="coach-mark-footer">
- *       <button class="coach-mark-btn">Prev</button>
+ *       <button class="btn btn-modeless">Prev</button>
  *       <span class="coach-mark-step">1 / 3</span>
  *       <div class="coach-mark-next">
- *         <button class="coach-mark-btn">Next</button>
+ *         <button class="btn btn-modeless">Next</button>
  *       </div>
  *     </div>
  *   </div>
@@ -92,28 +93,6 @@
   align-items: center;
   gap: var(--space-20);                              /* 8px */
   width: 100%;
-}
-
-.coach-mark-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-15) var(--space-20);          /* 6px 8px */
-  border: var(--border-width-thin) solid var(--color-modeless-black);
-  border-radius: var(--radius-15);                   /* 6px */
-  background: transparent;
-  color: var(--color-modeless-black);
-  cursor: pointer;
-  white-space: nowrap;
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-button-default);        /* 12px */
-  line-height: var(--line-height-button-default);    /* 16px */
-  font-weight: var(--font-weight-medium);            /* 500 */
-  transition: opacity var(--duration-fast) var(--easing-default);
-}
-
-.coach-mark-btn:hover {
-  opacity: 0.8;
 }
 
 .coach-mark-step {
