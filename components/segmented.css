@@ -82,7 +82,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-heading-medium);        /* 14px */
   line-height: var(--line-height-heading-medium);    /* 20px */
-  font-weight: var(--font-weight-semibold);          /* 600 */
+  font-weight: var(--font-weight-heading-medium);    /* 600 */
   color: var(--color-content-tertiary);
   white-space: nowrap;
 

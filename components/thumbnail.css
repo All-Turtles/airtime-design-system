@@ -94,7 +94,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-small);            /* 11px */
   line-height: var(--line-height-body-small);        /* 16px */
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-small);
   color: var(--color-content-tertiary);
   text-align: center;
   white-space: nowrap;
@@ -116,7 +116,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-small);            /* 11px */
   line-height: var(--line-height-body-small);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-small);
   color: var(--color-modeless-white);
   white-space: nowrap;
 }

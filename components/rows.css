@@ -86,7 +86,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-medium);           /* 12px */
   line-height: var(--line-height-body-medium);       /* 16px */
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-medium);
   color: var(--color-content-primary);
 
   transition: background var(--duration-fast) var(--easing-default);
@@ -160,7 +160,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-medium);           /* 12px */
   line-height: var(--line-height-body-medium);       /* 16px */
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-medium);
   color: var(--color-content-primary);
 
   transition: background var(--duration-fast) var(--easing-default);
@@ -254,7 +254,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-heading-large);         /* 16px */
   line-height: var(--line-height-heading-large);     /* 24px */
-  font-weight: var(--font-weight-bold);              /* 700 */
+  font-weight: var(--font-weight-heading-large);     /* 700 */
   color: var(--color-content-primary);
   white-space: nowrap;
   overflow: hidden;
@@ -266,7 +266,7 @@
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body-small);            /* 11px */
   line-height: var(--line-height-body-small);        /* 16px */
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-body-small);
   color: var(--color-content-secondary);
   white-space: nowrap;
   overflow: hidden;
