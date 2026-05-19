@@ -2,8 +2,8 @@
  * Airtime Design System v3 - Swatches
  * Figma: https://www.figma.com/design/4ycNiPIJ2oXZVaCwaECbUa/Airtime-apps-design-system?node-id=1-2251
  *
- * Requires: generated/tokens.css, components/slider.css
- * Note: .color-picker-icon-btn (eyedropper/add buttons) is defined in color-picker.css
+ * Requires: generated/tokens.css, components/slider.css, components/button.css
+ * Note: the eyedropper / add buttons use the DS .btn.btn-secondary.btn-icon-only component
  *
  * Parts:  .swatches              Panel container (280px)
  *         .swatches-header       Label + action buttons row
@@ -20,8 +20,8 @@
  *     <div class="swatches-header">
  *       <span class="swatches-label">Custom Colors</span>
  *       <div class="swatches-actions">
- *         <button class="color-picker-icon-btn" aria-label="Add color">
- *           <img src="../icons/Plus_Stroke_20.svg" alt="" />
+ *         <button class="btn btn-secondary btn-icon-only" aria-label="Add color">
+ *           <img src="../icons/Plus_Stroke_16.svg" alt="" />
  *         </button>
  *       </div>
  *     </div>
