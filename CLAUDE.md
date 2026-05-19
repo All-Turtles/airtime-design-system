@@ -79,7 +79,7 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 | **Dropdown** | 3 | `components/dropdown.css` | `.dropdown`, `.dropdown-trigger`, `.dropdown-trigger-no-fill`, `.dropdown-trigger-thumbnail`, `.dropdown-menu` |
 | **Rows** | 12 | `components/rows.css` | `.row`, `.row-destructive`, `.row-thumbnail`, `.row-thumbnail-image`, `.row-account` |
 | **Menus** | 9 | `components/menus.css` | `.menu`, `.menu-thumbnail`, `.menu-account`, `.menu-scrollable` |
-| **Overlays** | 7 | `components/overlays.css` | `.tooltip`, `.coach-mark`, `.coach-mark-btn`, `.coach-mark-footer`, `.coach-mark-step` |
+| **Overlays** | 6 | `components/overlays.css` | `.tooltip`, `.coach-mark`, `.coach-mark-footer`, `.coach-mark-step` (Prev/Next buttons use `.btn .btn-modeless`) |
 | **Badge** | 1 | `components/badge.css` | `.badge` |
 | **Divider** | 2 | `components/divider.css` | `.divider`, `.divider-vertical` |
 | **Scrollbar** | 4 | `components/scrollbar.css` | `.scrollbar`, `.scrollbar-thumb`, `.scrollbar-strong`, `.scrollbar-vertical` |
