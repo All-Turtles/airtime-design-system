@@ -470,7 +470,6 @@
         "color-picker-alpha": "Checkerboard + alpha gradient slider (set --color-picker-color CSS var)",
         "color-picker-slider-thumb": "Draggable thumb on hue/alpha sliders",
         "color-picker-values": "Bottom row (eyedropper, mode selector, inputs)",
-        "color-picker-icon-btn": "28×28 icon button (eyedropper etc.)",
         "color-picker-mode": "Mode dropdown trigger (HSB/RGB/CSS)",
         "color-picker-inputs": "Split input container for H/S/B values"
       },
@@ -478,7 +477,8 @@
         "Requires JS for interactivity — canvas drag, slider drag, EyeDropper API",
         "Do NOT put overflow:hidden on .color-picker — it clips the mode dropdown menu",
         "Slider order in HTML: alpha first, hue second",
-        "Split input gap should be 4px (var(--space-10)) not 8px"
+        "Split input gap should be 4px (var(--space-10)) not 8px",
+        "Eyedropper button uses the DS .btn.btn-secondary.btn-icon-only component"
       ],
       "cssClasses": [
         "color-picker",
@@ -486,7 +486,6 @@
         "color-picker-canvas",
         "color-picker-canvas-thumb",
         "color-picker-hue",
-        "color-picker-icon-btn",
         "color-picker-inputs",
         "color-picker-mode",
         "color-picker-slider-thumb",

@@ -83,7 +83,7 @@ These constraints prevent generic AI-generated output. Violating any is a critic
 | **Badge** | 1 | `components/badge.css` | `.badge` |
 | **Divider** | 2 | `components/divider.css` | `.divider`, `.divider-vertical` |
 | **Scrollbar** | 4 | `components/scrollbar.css` | `.scrollbar`, `.scrollbar-thumb`, `.scrollbar-strong`, `.scrollbar-vertical` |
-| **Color Picker** | 5 | `components/color-picker.css` | `.color-picker`, `.color-picker-canvas`, `.color-picker-hue`, `.color-picker-alpha`, `.color-picker-icon-btn` |
+| **Color Picker** | 4 | `components/color-picker.css` | `.color-picker`, `.color-picker-canvas`, `.color-picker-hue`, `.color-picker-alpha` (eyedropper button uses `.btn .btn-secondary .btn-icon-only`) |
 | **Swatches** | 3 | `components/swatches.css` | `.swatches`, `.swatches-grid`, `.swatch`, `.swatch-inner`, `.swatch.selected` |
 | **Avatar** | 5 | `components/avatar.css` | `.avatar`, `.avatar-16`, `.avatar-20`, `.avatar-32`, `.avatar-40`, `.avatar-silhouette` |
 | **Thumbnails** | 8 | `components/thumbnail.css` | `.thumbnail`, `.thumbnail-media`, `.thumbnail-name`, `.thumbnail-badge`, `.thumbnail-action`, `.thumbnail-action-label` |
