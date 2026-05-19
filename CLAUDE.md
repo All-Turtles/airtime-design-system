@@ -130,9 +130,8 @@ Copy-paste ready examples for the most common patterns. For full variant lists s
   <img src="icons/Plus_Stroke_16.svg" alt="" />
 </button>
 
-<!-- Icon only ghost — workaround (no dedicated class) -->
-<button class="btn btn-secondary btn-outline btn-icon-only" aria-label="Add"
-        style="border-color: transparent">
+<!-- Icon only ghost -->
+<button class="btn btn-secondary btn-ghost btn-icon-only" aria-label="Add">
   <img src="icons/Plus_Stroke_16.svg" alt="" />
 </button>
 
