@@ -400,6 +400,7 @@ Airtime's visual language is **technical and precise** -- a desktop application 
 - **Dark-first**: Dark theme is the default; light theme is secondary
 - **Teal accent**: Single accent color (`#79DDE8` dark / `#1A7580` light) for all interactive elements
 - **System font**: SF Pro via `-apple-system` stack -- no custom web fonts to load
+- **Smoothed type**: Apply `-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;` on `body` in consumer apps. Without this, macOS browsers render subpixel-antialiased text that appears slightly heavier than design intent, causing visible inconsistency between components.
 - **Compact scale**: Typography maxes out at 16px -- this is a tool UI, not a display typeface showcase
 - **Dense spacing**: 2px base unit with tight spacing between elements, reflecting desktop application density
 - **Layered surfaces**: Three background levels (primary/secondary/tertiary) create depth without shadows

@@ -34,7 +34,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-decoration: none;
-  -webkit-font-smoothing: antialiased;
   transition:
     background var(--duration-fast) var(--easing-default),
     border-color var(--duration-fast) var(--easing-default),
