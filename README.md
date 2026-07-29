@@ -7,9 +7,9 @@
 ![Icons](https://img.shields.io/badge/icons-742-79DDE8)
 ![Themes](https://img.shields.io/badge/themes-dark%20%2F%20light-79DDE8)
 
-**[View the Live Contact Sheet](https://dairien.github.io/airtime-design-system/)** -- all tokens, components, and icons in one interactive page.
+**[View the Live Contact Sheet](https://all-turtles.github.io/airtime-design-system/)** -- all tokens, components, and icons in one interactive page.
 
-[![Airtime Design System Contact Sheet](assets/contact-sheet-preview.png)](https://dairien.github.io/airtime-design-system/)
+[![Airtime Design System Contact Sheet](assets/contact-sheet-preview.png)](https://all-turtles.github.io/airtime-design-system/)
 
 ## Overview
 
@@ -27,17 +27,17 @@ Paste any of these directly into Claude Code:
 
 **Apply to an existing interface:**
 ```
-Apply the Airtime design system from https://github.com/dairien/airtime-design-system
+Apply the Airtime design system from https://github.com/all-turtles/airtime-design-system
 ```
 
 **Redesign an existing interface:**
 ```
-Re-design this using Airtime design system from https://github.com/dairien/airtime-design-system
+Re-design this using Airtime design system from https://github.com/all-turtles/airtime-design-system
 ```
 
 **Create something new:**
 ```
-Create a new settings panel using Airtime design system from https://github.com/dairien/airtime-design-system
+Create a new settings panel using Airtime design system from https://github.com/all-turtles/airtime-design-system
 ```
 
 Claude Code will read the `CLAUDE.md` file from the repository and apply the system's tokens, constraints, anti-patterns, and component patterns automatically.
@@ -58,7 +58,7 @@ Clone the design system alongside your project:
 
 ```bash
 # From your workspaces directory
-git clone https://github.com/dairien/airtime-design-system.git
+git clone https://github.com/all-turtles/airtime-design-system.git
 ```
 
 Then copy the design system files into your project:
