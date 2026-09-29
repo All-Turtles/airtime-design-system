@@ -42,6 +42,7 @@ const PK = ["P0", "P1", "P2r", "P2", "P3"];
   const m2 = M.p2r;
   const mrow = (label, f) => `<tr><td>${label}</td>${["p2r", "p2", "p3"].map((k) => `<td>${M[k]?.delta ? f(M[k]) : '<span class="muted">not run</span>'}</td>`).join("")}</tr>`;
   const proof = `<table class="spec" style="max-width:920px"><tr><th>Measured on the built app (${nf(m2?.delta?.elements ?? 0)} elements, ${m2?.delta?.states ?? 0} reproducible states, light + dark)</th><th>${PN.P2r} (P2r)</th><th>${PN.P2} (P2)</th><th>${PN.P3} (P3)</th></tr>
+  ${mrow("Colour declarations compared", (m) => nf(m.delta.colors.n))}
   ${mrow("Colour deltaE2000: max / mean", (m) => `${f1(m.delta.colors.max)} / ${f1(m.delta.colors.mean, 3)}`)}
   ${mrow("Colour declarations changed above deltaE 1 / 2 / 5", (m) => `${nf(m.delta.colors.over[">1"])} / ${nf(m.delta.colors.over[">2"])} / ${nf(m.delta.colors.over[">5"])}`)}
   ${mrow("Colour declarations at or under deltaE 2", (m) => pc(m.delta.colors.pctUnder2))}
@@ -52,10 +53,9 @@ const PK = ["P0", "P1", "P2r", "P2", "P3"];
   ${mrow("Padding / margin / gap / radius: max px shift", (m) => `${f1(m.delta.geo.pad.max)} / ${f1(m.delta.geo.margin.max)} / ${f1(m.delta.geo.gap.max)} / ${f1(m.delta.geo.radius.max)}`)}
   ${mrow("Wrap or overflow changes", (m) => `${nf(m.delta.wrapChanged)}`)}
   ${mrow("WCAG: text/surface token pairs falling across 3 / 4.5 / 7", (m) => `${m.contrast ? m.contrast.tokenPairs.light.crossAA + m.contrast.tokenPairs.dark.crossAA : "n/a"}`)}
-  ${mrow("Colour declarations compared", (m) => nf(m.delta.colors.n))}
   </table>`;
 
-  const cur = C.colors, cprof = (rows) => rows.map((r) => ({ x: r.T, y: r.tokensAfter, xl: `ΔE ${r.T}`, t: `T ${r.T}, org ${r.orgT}: ${r.tokensAfter} tokens, max ΔE ${r.max}, mean ${r.mean}`, note: r.T === 4 ? "P2" : r.T === 7 ? "P3" : "" }));
+  const cur = C.colors, cprof = (rows) => rows.map((r) => ({ x: r.T, y: r.tokensAfter, xl: `ΔE ${r.T}`, t: `T ${r.T}, org ${r.orgT}: ${r.tokensAfter} tokens, max ΔE ${r.max}, mean ${r.mean}`, note: r.T === 4 ? "P2r" : r.T === 7 ? "P3" : "" }));
   const curveColors = line(cprof(cur.filter((r) => [0, 2, 3, 4, 5, 7, 10].includes(r.T))), { xl: "colour tolerance T (deltaE2000)", yl: "colour tokens after" });
   const curveRef = line(C.colorTokens.filter((r) => r.orgT === 0 || r.orgT === 5).filter((r) => r.orgT === 0).map((r) => ({ x: r.T, y: r.usedOwn, xl: `ΔE ${r.T}`, t: `${r.usedOwn} referenced` })), { xl: "colour tolerance T (deltaE2000)", yl: "referenced tokens after", color: "#34c759" });
   const scaleBars = (name, label) => { const s = C.scales[name]; return `<div class="cell" style="width:300px"><div class="cap"><b>${label}</b> (${s.distinctBefore} distinct in use, org has ${s.org})</div><table class="spec"><tr><th>tolerance</th><th>steps after</th><th>max px</th><th>values moved</th></tr>${s.series[name === "fontSize" || name === "lineHeight" ? "protect5" : "free"].map((r) => `<tr><td>±${r.t}px</td><td><b>${r.after}</b></td><td>${f1(r.max)}</td><td>${f1(r.movedPct, 1)}%</td></tr>`).join("")}</table></div>`; };
@@ -81,7 +81,7 @@ const PK = ["P0", "P1", "P2r", "P2", "P3"];
   <h3>Before and after against the org breadth</h3>
   <p class="lede">Org breadth is what <code>airtime-design-system/generated/tokens.css</code> defines (123 custom properties: ${org.colors.tokens} colours, ${org.type.styles} type styles on ${org.type.fontSizes} sizes and ${org.type.weights} weights, ${org.spacing.space} spacing and ${org.spacing.size} size steps, ${org.radii} radii, ${org.opacity} opacities, ${org.shadows} shadows). Profiles trade breadth against change; * marks the recommended one (P2r = P2 without spacing snapping). Nothing is deleted from the app, unreferenced tokens are counted separately.</p>
   ${t1}
-  <div class="legend"><span><b>Lossless</b> exact duplicates aliased (pixel-identical: 0 differing pixels in all 12 QA renders)</span><span><b>Imperceptible</b> deltaE ≤ 2</span><span><b>Subtle</b> colour deltaE ≤ 4 (ramp rungs ≤ 2.5), spacing/radius ±1px, type size ±1px (max 8%), line height ±1px, popular sizes protected</span><span><b>Org-strict</b> deltaE ≤ 7, spacing/radius ±2px, line height ±2px</span></div>
+  <div class="legend"><span><b>Lossless (P0)</b> exact duplicates aliased: pixel-identical, 0 differing pixels in all 12 QA renders</span><span><b>Imperceptible (P1)</b> colour \u0394E \u2264 2</span><span><b>Recommended (P2r)</b> colour \u0394E \u2264 4 (ramp rungs \u2264 2.5), radii \u00b11px, type size \u00b11px (max 8%) and line height \u00b11px with the popular sizes pinned, shadow alphas on one ramp, spacing kept</span><span><b>+ spacing (P2)</b> adds spacing \u00b11px</span><span><b>Org-strict (P3)</b> \u0394E \u2264 7, spacing/radii/line height \u00b12px, weight 300 \u2192 400</span></div>
   <h3>Proof: measured change to the rendered app</h3>${proof}
   <p class="lede">Noise floor: two crawls of the unchanged build differ in ${D.noise} elements (timers, hover timing); those elements are excluded from every figure above. Transients such as the 260 ms <code>data-fired</code> flash are excluded and listed in the report.</p>
   <h3>Trade-off curves</h3>

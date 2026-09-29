@@ -27,15 +27,20 @@ creator/
                         shadows, materials, motion, z-index, opacity, derived); each token carries
                         $extensions.creator {css, kind, status, source, rendered, org, used}
   css/                  base.css (docs shell), sidebar.css, header.css, tray.css, stage.css, aux.css: real CSS from tokens only
-  js/                   main.js, lib.js (pattern renderer), overview/foundations/sidebar/header/tray/stage/aux.js
+  js/                   main.js, lib.js (pattern renderer), overview/audit/orgrel/simplify/foundations/sidebar/header/tray/stage/aux.js
   assets/icons.js       byte-identical copy of apps/airtime-creator/teleport/icons.js (AppIcons)
   assets/mask-icons.js  GENERATED: Mask*, StrokeGlyph, BandGlyph and other mmhmm-icons paths, verbatim
   data/                 extraction evidence: rendered-vars.json, declared.json, ledger.json, resolved.json,
-                        tokens-index.json, untokenized.json, sources.json, conformance.json
+                        tokens-index.json, untokenized.json, sources.json, conformance.json, simplification.json
+  assets/simplify/      before | after | difference screenshots for the Simplification section
   tools/                pipeline (below)
 ```
 
 Token status: `declared` (in `ui/tokens.ts`, value verified against the browser), `chakra-default` (Chakra scale entry the recipes use by number), `derived` (a literal inside a recipe or primitive that the app never names; source line recorded).
+
+## Simplification (experiment, not part of the extracted tokens)
+
+The "Simplification" section (`js/simplify.js`, `data/simplification.json`) shows how far the Creator's colour, type, spacing and radius definitions reduce toward the org breadth with no visible change: clustering of every value the crawled app renders (deltaE2000, alpha-aware), snapping to org tokens inside a stated tolerance, the mapping table, the breadth-vs-change curves, and the change measured on a build of the reduced set (per-declaration deltaE, element boxes, QA pixel diff, WCAG contrast, screenshots). The data is written by `docs/creator-sidebar/css-audit/simplify/build-page-data.mjs` in the app worktree; the experiment branch is `chore/creator-token-simplify` (never pushed) and the write-up is `docs/creator-sidebar/css-audit/TOKEN-SIMPLIFICATION.md`.
 
 ## Pipeline (`tools/`)
 
