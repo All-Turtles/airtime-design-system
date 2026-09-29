@@ -1,0 +1,85 @@
+{
+ "font-size": [
+  {
+   "value": "15.6px",
+   "n": 208,
+   "ex": [
+    "svg",
+    "path"
+   ]
+  },
+  {
+   "value": "16px",
+   "n": 104,
+   "ex": [
+    "div",
+    "div[Presenter controls]",
+    "button[Shape]",
+    "div[Replace]"
+   ]
+  }
+ ],
+ "radius": [
+  {
+   "value": "0px",
+   "n": 2300,
+   "ex": [
+    "div[creator-frame]",
+    "header[top-bar]",
+    "div[Scratchpad]",
+    "div[ScratchpadSaving…]"
+   ]
+  },
+  {
+   "value": "2px",
+   "n": 32,
+   "ex": [
+    "div"
+   ]
+  },
+  {
+   "value": "50%",
+   "n": 24,
+   "ex": [
+    "button[None]",
+    "button[Blue red]",
+    "button[Green blue]",
+    "span"
+   ]
+  },
+  {
+   "value": "0px 0px 14px 14px",
+   "n": 8,
+   "ex": [
+    "div[sidebar-scroll]"
+   ]
+  }
+ ],
+ "letter-spacing": [
+  {
+   "value": "0.6px",
+   "n": 8,
+   "ex": [
+    "span[Insert]"
+   ]
+  },
+  {
+   "value": "-1px",
+   "n": 2,
+   "ex": [
+    "span[⣿]"
+   ]
+  }
+ ],
+ "opacity": [],
+ "duration": [],
+ "z-index": [
+  {
+   "value": "-1",
+   "n": 8,
+   "ex": [
+    "div"
+   ]
+  }
+ ]
+}
