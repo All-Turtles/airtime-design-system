@@ -13,7 +13,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 176,
+              "line": 174,
               "export": "colors",
               "path": "selection.destructive"
             },
@@ -25,6 +25,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -42,7 +43,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 177,
+              "line": 175,
               "export": "colors",
               "path": "selection.destructiveHover"
             },
@@ -54,6 +55,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -71,7 +73,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 178,
+              "line": 176,
               "export": "colors",
               "path": "selection.destructiveActive"
             },
@@ -83,6 +85,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -100,7 +103,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 179,
+              "line": 177,
               "export": "colors",
               "path": "selection.muted"
             },
@@ -112,6 +115,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -129,7 +133,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 180,
+              "line": 178,
               "export": "colors",
               "path": "selection.track"
             },
@@ -141,6 +145,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 6,
               "dark": 21
@@ -158,7 +163,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 181,
+              "line": 179,
               "export": "colors",
               "path": "selection.swatch"
             },
@@ -170,6 +175,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 8
@@ -187,7 +193,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 182,
+              "line": 180,
               "export": "colors",
               "path": "selection.material"
             },
@@ -199,6 +205,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 2,
               "dark": 2
@@ -216,7 +223,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 183,
+              "line": 181,
               "export": "colors",
               "path": "selection.text"
             },
@@ -228,6 +235,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 172,
               "dark": 1140
@@ -245,7 +253,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 184,
+              "line": 182,
               "export": "colors",
               "path": "selection.disabled"
             },
@@ -257,6 +265,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 109
@@ -274,7 +283,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 185,
+              "line": 183,
               "export": "colors",
               "path": "selection.hover"
             },
@@ -286,6 +295,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -303,7 +313,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 186,
+              "line": 184,
               "export": "colors",
               "path": "selection.active"
             },
@@ -315,6 +325,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -332,7 +343,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 187,
+              "line": 185,
               "export": "colors",
               "path": "selection.line"
             },
@@ -344,6 +355,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 1,
               "dark": 9
@@ -363,7 +375,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 190,
+              "line": 188,
               "export": "colors",
               "path": "systemBlue.light"
             },
@@ -375,6 +387,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 15,
               "dark": 0
@@ -392,7 +405,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 191,
+              "line": 189,
               "export": "colors",
               "path": "systemBlue.lightHover"
             },
@@ -404,6 +417,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -421,7 +435,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 192,
+              "line": 190,
               "export": "colors",
               "path": "systemBlue.dark"
             },
@@ -433,6 +447,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 15
@@ -450,7 +465,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 193,
+              "line": 191,
               "export": "colors",
               "path": "systemBlue.darkHover"
             },
@@ -462,6 +477,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -479,7 +495,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 194,
+              "line": 192,
               "export": "colors",
               "path": "systemBlue.onLight"
             },
@@ -491,6 +507,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 57,
               "dark": 281
@@ -508,7 +525,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 195,
+              "line": 193,
               "export": "colors",
               "path": "systemBlue.onDark"
             },
@@ -520,6 +537,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 28
@@ -539,7 +557,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 198,
+              "line": 196,
               "export": "colors",
               "path": "systemRed.light"
             },
@@ -551,6 +569,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 32,
               "dark": 0
@@ -568,7 +587,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 199,
+              "line": 197,
               "export": "colors",
               "path": "systemRed.dark"
             },
@@ -580,6 +599,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 32
@@ -600,7 +620,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 203,
+                "line": 201,
                 "export": "colors",
                 "path": "ground.light.window"
               },
@@ -612,6 +632,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 0
@@ -629,7 +650,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 204,
+                "line": 202,
                 "export": "colors",
                 "path": "ground.light.surface"
               },
@@ -641,6 +662,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 57,
                 "dark": 281
@@ -658,7 +680,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 205,
+                "line": 203,
                 "export": "colors",
                 "path": "ground.light.recessed"
               },
@@ -670,6 +692,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -689,7 +712,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 208,
+                "line": 206,
                 "export": "colors",
                 "path": "ground.dark.window"
               },
@@ -701,6 +724,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 4
@@ -718,7 +742,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 209,
+                "line": 207,
                 "export": "colors",
                 "path": "ground.dark.surface"
               },
@@ -730,6 +754,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 4
@@ -747,7 +772,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 210,
+                "line": 208,
                 "export": "colors",
                 "path": "ground.dark.recessed"
               },
@@ -759,6 +784,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -780,7 +806,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 215,
+                "line": 213,
                 "export": "colors",
                 "path": "ink.light.primary"
               },
@@ -792,6 +818,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 262,
                 "dark": 6
@@ -809,7 +836,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 216,
+                "line": 214,
                 "export": "colors",
                 "path": "ink.light.secondary"
               },
@@ -821,6 +848,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 56,
                 "dark": 0
@@ -838,7 +866,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 217,
+                "line": 215,
                 "export": "colors",
                 "path": "ink.light.tertiary"
               },
@@ -850,6 +878,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 78,
                 "dark": 0
@@ -869,7 +898,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 220,
+                "line": 218,
                 "export": "colors",
                 "path": "ink.dark.primary"
               },
@@ -881,6 +910,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 57,
                 "dark": 281
@@ -898,7 +928,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 221,
+                "line": 219,
                 "export": "colors",
                 "path": "ink.dark.secondary"
               },
@@ -910,6 +940,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 56
@@ -927,7 +958,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 222,
+                "line": 220,
                 "export": "colors",
                 "path": "ink.dark.tertiary"
               },
@@ -939,6 +970,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 78
@@ -961,7 +993,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 231,
+                "line": 229,
                 "export": "semanticColors",
                 "path": "background.primary"
               },
@@ -974,6 +1006,7 @@
                 "org": "--color-background-primary",
                 "note": "legacy chrome ground (header, stage) still on the org-era values (creator rgb(255, 255, 255) / rgb(10, 10, 14); org #F5F5F5 / #0A0D0E)"
               },
+              "alias": null,
               "used": {
                 "light": 57,
                 "dark": 0
@@ -992,7 +1025,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 231,
+                "line": 229,
                 "export": "semanticColors",
                 "path": "background.primary"
               },
@@ -1005,6 +1038,7 @@
                 "org": "--color-background-primary",
                 "note": "legacy chrome ground (header, stage) still on the org-era values (creator rgb(255, 255, 255) / rgb(10, 10, 14); org #F5F5F5 / #0A0D0E)"
               },
+              "alias": null,
               "used": {
                 "light": 57,
                 "dark": 0
@@ -1025,7 +1059,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 232,
+                "line": 230,
                 "export": "semanticColors",
                 "path": "background.tertiary"
               },
@@ -1038,6 +1072,7 @@
                 "org": "--color-background-tertiary",
                 "note": "legacy chrome tertiary (creator rgb(235, 235, 235) / rgb(33, 33, 39); org #EBEBEB / #1B2326)"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1056,7 +1091,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 232,
+                "line": 230,
                 "export": "semanticColors",
                 "path": "background.tertiary"
               },
@@ -1069,6 +1104,7 @@
                 "org": "--color-background-tertiary",
                 "note": "legacy chrome tertiary (creator rgb(235, 235, 235) / rgb(33, 33, 39); org #EBEBEB / #1B2326)"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1089,7 +1125,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 235,
+              "line": 233,
               "export": "semanticColors",
               "path": "action.primary"
             },
@@ -1102,6 +1138,7 @@
               "org": "--color-accent-teal",
               "note": "legacy Airtime teal action (light org value is the darker #1A7580, which creator keeps as action.secondary) (creator rgb(121, 221, 232); org #1A7580 / #79DDE8)"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -1119,7 +1156,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 236,
+              "line": 234,
               "export": "semanticColors",
               "path": "action.secondary"
             },
@@ -1132,6 +1169,7 @@
               "org": "--color-accent-teal",
               "note": "teal, light-theme variant of the org accent (creator rgb(26, 117, 128); org #1A7580 / #79DDE8)"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -1151,7 +1189,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 237,
+                "line": 235,
                 "export": "semanticColors",
                 "path": "action.destructive"
               },
@@ -1164,6 +1202,7 @@
                 "org": "--color-accent-destructive",
                 "note": "destructive red; creator uses #ff715c/#ff7661, org #D6402F/#FF6D4C (creator rgb(255, 113, 92) / rgb(255, 118, 97); org #D6402F / #FF6D4C)"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1182,7 +1221,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 237,
+                "line": 235,
                 "export": "semanticColors",
                 "path": "action.destructive"
               },
@@ -1195,6 +1234,7 @@
                 "org": "--color-accent-destructive",
                 "note": "destructive red; creator uses #ff715c/#ff7661, org #D6402F/#FF6D4C (creator rgb(255, 113, 92) / rgb(255, 118, 97); org #D6402F / #FF6D4C)"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1215,7 +1255,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 240,
+              "line": 238,
               "export": "semanticColors",
               "path": "slide.badge"
             },
@@ -1227,6 +1267,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 646,
               "dark": 12
@@ -1246,7 +1287,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 242,
+              "line": 240,
               "export": "semanticColors",
               "path": "device.off"
             },
@@ -1258,6 +1299,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -1277,7 +1319,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 244,
+              "line": 242,
               "export": "semanticColors",
               "path": "status.live"
             },
@@ -1289,6 +1331,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -1308,7 +1351,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 245,
+                "line": 243,
                 "export": "semanticColors",
                 "path": "status.liveText"
               },
@@ -1320,6 +1363,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1338,7 +1382,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 245,
+                "line": 243,
                 "export": "semanticColors",
                 "path": "status.liveText"
               },
@@ -1350,6 +1394,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1368,7 +1413,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 246,
+              "line": 244,
               "export": "semanticColors",
               "path": "status.liveFill"
             },
@@ -1380,6 +1425,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -1399,7 +1445,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 250,
+              "line": 248,
               "export": "semanticColors",
               "path": "header.ground"
             },
@@ -1411,6 +1457,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 4,
               "dark": 4
@@ -1430,7 +1477,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 251,
+                "line": 249,
                 "export": "semanticColors",
                 "path": "header.titleHover"
               },
@@ -1442,6 +1489,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1460,7 +1508,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 251,
+                "line": 249,
                 "export": "semanticColors",
                 "path": "header.titleHover"
               },
@@ -1472,6 +1520,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1492,7 +1541,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 252,
+                "line": 250,
                 "export": "semanticColors",
                 "path": "header.titleBorder"
               },
@@ -1504,6 +1553,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1522,7 +1572,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 252,
+                "line": 250,
                 "export": "semanticColors",
                 "path": "header.titleBorder"
               },
@@ -1534,6 +1584,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1554,7 +1605,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 253,
+                "line": 251,
                 "export": "semanticColors",
                 "path": "header.historyHover"
               },
@@ -1566,6 +1617,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1584,7 +1636,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 253,
+                "line": 251,
                 "export": "semanticColors",
                 "path": "header.historyHover"
               },
@@ -1596,6 +1648,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1616,7 +1669,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 256,
+              "line": 254,
               "export": "semanticColors",
               "path": "splitPicker.content"
             },
@@ -1628,6 +1681,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -1645,7 +1699,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 257,
+              "line": 255,
               "export": "semanticColors",
               "path": "splitPicker.footer"
             },
@@ -1657,6 +1711,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -1677,7 +1732,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 261,
+              "line": 259,
               "export": "semanticColors",
               "path": "bg.DEFAULT"
             },
@@ -1690,6 +1745,7 @@
               "org": "--color-background-primary",
               "note": "window ground; org is a teal-tinted near-black/#F5F5F5, creator is neutral macOS grey (creator rgb(233, 233, 236) / rgb(19, 19, 21); org #F5F5F5 / #0A0D0E)"
             },
+            "alias": null,
             "used": {
               "light": 4,
               "dark": 4
@@ -1708,7 +1764,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 261,
+              "line": 259,
               "export": "semanticColors",
               "path": "bg.DEFAULT"
             },
@@ -1721,6 +1777,7 @@
               "org": "--color-background-primary",
               "note": "window ground; org is a teal-tinted near-black/#F5F5F5, creator is neutral macOS grey (creator rgb(233, 233, 236) / rgb(19, 19, 21); org #F5F5F5 / #0A0D0E)"
             },
+            "alias": null,
             "used": {
               "light": 4,
               "dark": 4
@@ -1740,7 +1797,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 262,
+                "line": 260,
                 "export": "semanticColors",
                 "path": "bg.panel"
               },
@@ -1753,6 +1810,7 @@
                 "org": "--color-background-secondary",
                 "note": "content surface (creator rgb(255, 255, 255) / rgb(30, 30, 32); org #FFFFFF / #12181A)"
               },
+              "alias": null,
               "used": {
                 "light": 57,
                 "dark": 4
@@ -1771,7 +1829,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 262,
+                "line": 260,
                 "export": "semanticColors",
                 "path": "bg.panel"
               },
@@ -1784,6 +1842,7 @@
                 "org": "--color-background-secondary",
                 "note": "content surface (creator rgb(255, 255, 255) / rgb(30, 30, 32); org #FFFFFF / #12181A)"
               },
+              "alias": null,
               "used": {
                 "light": 57,
                 "dark": 4
@@ -1804,7 +1863,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 263,
+                "line": 261,
                 "export": "semanticColors",
                 "path": "bg.subtle"
               },
@@ -1817,6 +1876,7 @@
                 "org": "--color-background-tertiary",
                 "note": "recessed well (creator rgb(241, 241, 244) / rgb(37, 37, 40); org #EBEBEB / #1B2326)"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1835,7 +1895,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 263,
+                "line": 261,
                 "export": "semanticColors",
                 "path": "bg.subtle"
               },
@@ -1848,6 +1908,7 @@
                 "org": "--color-background-tertiary",
                 "note": "recessed well (creator rgb(241, 241, 244) / rgb(37, 37, 40); org #EBEBEB / #1B2326)"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -1868,7 +1929,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 264,
+                "line": 262,
                 "export": "semanticColors",
                 "path": "bg.muted"
               },
@@ -1880,6 +1941,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 33,
                 "dark": 18
@@ -1898,7 +1960,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 264,
+                "line": 262,
                 "export": "semanticColors",
                 "path": "bg.muted"
               },
@@ -1910,6 +1972,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 33,
                 "dark": 18
@@ -1930,7 +1993,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 265,
+                "line": 263,
                 "export": "semanticColors",
                 "path": "bg.emphasized"
               },
@@ -1942,6 +2005,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 1375,
                 "dark": 9
@@ -1960,7 +2024,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 265,
+                "line": 263,
                 "export": "semanticColors",
                 "path": "bg.emphasized"
               },
@@ -1972,6 +2036,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 1375,
                 "dark": 9
@@ -1992,7 +2057,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 266,
+                "line": 264,
                 "export": "semanticColors",
                 "path": "bg.inverted"
               },
@@ -2004,6 +2069,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -2022,7 +2088,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 266,
+                "line": 264,
                 "export": "semanticColors",
                 "path": "bg.inverted"
               },
@@ -2034,6 +2100,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -2054,7 +2121,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 270,
+              "line": 268,
               "export": "semanticColors",
               "path": "content.accent"
             },
@@ -2066,6 +2133,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -2085,7 +2153,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 271,
+                "line": 269,
                 "export": "semanticColors",
                 "path": "content.primary"
               },
@@ -2098,6 +2166,7 @@
                 "org": "--color-content-primary",
                 "note": "primary ink; creator is pure black/white, org is #000E14 / white (creator rgb(0, 0, 0) / rgb(255, 255, 255); org #000E14 / #FFFFFF)"
               },
+              "alias": null,
               "used": {
                 "light": 262,
                 "dark": 281
@@ -2116,7 +2185,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 271,
+                "line": 269,
                 "export": "semanticColors",
                 "path": "content.primary"
               },
@@ -2129,6 +2198,7 @@
                 "org": "--color-content-primary",
                 "note": "primary ink; creator is pure black/white, org is #000E14 / white (creator rgb(0, 0, 0) / rgb(255, 255, 255); org #000E14 / #FFFFFF)"
               },
+              "alias": null,
               "used": {
                 "light": 262,
                 "dark": 281
@@ -2149,7 +2219,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 272,
+                "line": 270,
                 "export": "semanticColors",
                 "path": "content.secondary"
               },
@@ -2162,6 +2232,7 @@
                 "org": "--color-content-secondary",
                 "note": "secondary ink (creator rgb(60, 60, 67) / rgb(235, 235, 245); org #383D3D / #D2D5D6)"
               },
+              "alias": null,
               "used": {
                 "light": 56,
                 "dark": 56
@@ -2180,7 +2251,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 272,
+                "line": 270,
                 "export": "semanticColors",
                 "path": "content.secondary"
               },
@@ -2193,6 +2264,7 @@
                 "org": "--color-content-secondary",
                 "note": "secondary ink (creator rgb(60, 60, 67) / rgb(235, 235, 245); org #383D3D / #D2D5D6)"
               },
+              "alias": null,
               "used": {
                 "light": 56,
                 "dark": 56
@@ -2213,7 +2285,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 273,
+                "line": 271,
                 "export": "semanticColors",
                 "path": "content.tertiary"
               },
@@ -2226,6 +2298,7 @@
                 "org": "--color-content-tertiary",
                 "note": "tertiary ink (creator rgb(110, 110, 115) / rgb(171, 171, 178); org #646666 / #B0B1B2)"
               },
+              "alias": null,
               "used": {
                 "light": 78,
                 "dark": 78
@@ -2244,7 +2317,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 273,
+                "line": 271,
                 "export": "semanticColors",
                 "path": "content.tertiary"
               },
@@ -2257,6 +2330,7 @@
                 "org": "--color-content-tertiary",
                 "note": "tertiary ink (creator rgb(110, 110, 115) / rgb(171, 171, 178); org #646666 / #B0B1B2)"
               },
+              "alias": null,
               "used": {
                 "light": 78,
                 "dark": 78
@@ -2279,7 +2353,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 277,
+                "line": 275,
                 "export": "semanticColors",
                 "path": "text.1"
               },
@@ -2291,6 +2365,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 968,
                 "dark": 1140
@@ -2309,7 +2384,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 277,
+                "line": 275,
                 "export": "semanticColors",
                 "path": "text.1"
               },
@@ -2321,6 +2396,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 968,
                 "dark": 1140
@@ -2341,7 +2417,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 278,
+                "line": 276,
                 "export": "semanticColors",
                 "path": "text.2"
               },
@@ -2353,6 +2429,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 646,
                 "dark": 634
@@ -2371,7 +2448,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 278,
+                "line": 276,
                 "export": "semanticColors",
                 "path": "text.2"
               },
@@ -2383,6 +2460,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 646,
                 "dark": 634
@@ -2403,7 +2481,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 279,
+                "line": 277,
                 "export": "semanticColors",
                 "path": "text.3"
               },
@@ -2415,6 +2493,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 440,
                 "dark": 440
@@ -2433,7 +2512,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 279,
+                "line": 277,
                 "export": "semanticColors",
                 "path": "text.3"
               },
@@ -2445,6 +2524,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 440,
                 "dark": 440
@@ -2465,7 +2545,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 280,
+                "line": 278,
                 "export": "semanticColors",
                 "path": "text.4"
               },
@@ -2477,6 +2557,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 88,
                 "dark": 88
@@ -2495,7 +2576,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 280,
+                "line": 278,
                 "export": "semanticColors",
                 "path": "text.4"
               },
@@ -2507,6 +2588,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 88,
                 "dark": 88
@@ -2527,7 +2609,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 281,
+                "line": 279,
                 "export": "semanticColors",
                 "path": "text.5"
               },
@@ -2539,6 +2621,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 109,
                 "dark": 109
@@ -2557,7 +2640,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 281,
+                "line": 279,
                 "export": "semanticColors",
                 "path": "text.5"
               },
@@ -2569,6 +2652,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 109,
                 "dark": 109
@@ -2589,7 +2673,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 282,
+                "line": 280,
                 "export": "semanticColors",
                 "path": "text.6"
               },
@@ -2601,6 +2685,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 2,
                 "dark": 2
@@ -2619,7 +2704,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 282,
+                "line": 280,
                 "export": "semanticColors",
                 "path": "text.6"
               },
@@ -2631,6 +2716,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 2,
                 "dark": 2
@@ -2650,7 +2736,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 285,
+            "line": 283,
             "export": "semanticColors",
             "path": "fg.DEFAULT"
           },
@@ -2662,6 +2748,7 @@
             "relation": "creator-only",
             "note": "no counterpart in airtime-design-system tokens"
           },
+          "alias": null,
           "used": {
             "light": 968,
             "dark": 1140
@@ -2678,7 +2765,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 286,
+              "line": 284,
               "export": "semanticColors",
               "path": "fg.muted"
             },
@@ -2690,6 +2777,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 440,
               "dark": 440
@@ -2707,7 +2795,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 287,
+              "line": 285,
               "export": "semanticColors",
               "path": "fg.subtle"
             },
@@ -2719,6 +2807,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 88,
               "dark": 88
@@ -2738,7 +2827,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 288,
+                "line": 286,
                 "export": "semanticColors",
                 "path": "fg.inverted"
               },
@@ -2750,6 +2839,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 172,
                 "dark": 0
@@ -2768,7 +2858,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 288,
+                "line": 286,
                 "export": "semanticColors",
                 "path": "fg.inverted"
               },
@@ -2780,6 +2870,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 172,
                 "dark": 0
@@ -2801,7 +2892,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 292,
+              "line": 290,
               "export": "semanticColors",
               "path": "line.DEFAULT"
             },
@@ -2813,6 +2904,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 1375,
               "dark": 1371
@@ -2831,7 +2923,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 292,
+              "line": 290,
               "export": "semanticColors",
               "path": "line.DEFAULT"
             },
@@ -2843,6 +2935,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 1375,
               "dark": 1371
@@ -2862,7 +2955,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 293,
+                "line": 291,
                 "export": "semanticColors",
                 "path": "line.strong"
               },
@@ -2874,6 +2967,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 8,
                 "dark": 8
@@ -2892,7 +2986,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 293,
+                "line": 291,
                 "export": "semanticColors",
                 "path": "line.strong"
               },
@@ -2904,6 +2998,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 8,
                 "dark": 8
@@ -2924,7 +3019,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 294,
+                "line": 292,
                 "export": "semanticColors",
                 "path": "line.strongest"
               },
@@ -2936,6 +3031,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 1
@@ -2954,7 +3050,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 294,
+                "line": 292,
                 "export": "semanticColors",
                 "path": "line.strongest"
               },
@@ -2966,6 +3062,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 1
@@ -2985,7 +3082,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 297,
+            "line": 295,
             "export": "semanticColors",
             "path": "border.DEFAULT"
           },
@@ -2997,6 +3094,7 @@
             "relation": "creator-only",
             "note": "no counterpart in airtime-design-system tokens"
           },
+          "alias": null,
           "used": {
             "light": 1375,
             "dark": 1371
@@ -3013,7 +3111,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 298,
+              "line": 296,
               "export": "semanticColors",
               "path": "border.muted"
             },
@@ -3025,6 +3123,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 1375,
               "dark": 1371
@@ -3042,7 +3141,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 299,
+              "line": 297,
               "export": "semanticColors",
               "path": "border.subtle"
             },
@@ -3054,6 +3153,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 1375,
               "dark": 1371
@@ -3071,7 +3171,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 300,
+              "line": 298,
               "export": "semanticColors",
               "path": "border.emphasized"
             },
@@ -3083,6 +3183,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 8,
               "dark": 8
@@ -3102,7 +3203,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 301,
+                "line": 299,
                 "export": "semanticColors",
                 "path": "border.inverted"
               },
@@ -3114,6 +3215,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -3132,7 +3234,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 301,
+                "line": 299,
                 "export": "semanticColors",
                 "path": "border.inverted"
               },
@@ -3144,6 +3246,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -3164,7 +3267,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 304,
+              "line": 302,
               "export": "semanticColors",
               "path": "state.dropIndicator"
             },
@@ -3176,6 +3279,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 15,
               "dark": 15
@@ -3195,7 +3299,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 305,
+                "line": 303,
                 "export": "semanticColors",
                 "path": "state.hover"
               },
@@ -3208,6 +3312,7 @@
                 "org": "--color-highlight-secondary",
                 "note": "hover wash; creator 5.5%/8%, org 4%/16% (creator rgba(0, 0, 0, 0.055) / rgba(255, 255, 255, 0.08); org #0000000A / #FFFFFF29)"
               },
+              "alias": null,
               "used": {
                 "light": 33,
                 "dark": 21
@@ -3226,7 +3331,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 305,
+                "line": 303,
                 "export": "semanticColors",
                 "path": "state.hover"
               },
@@ -3239,6 +3344,7 @@
                 "org": "--color-highlight-secondary",
                 "note": "hover wash; creator 5.5%/8%, org 4%/16% (creator rgba(0, 0, 0, 0.055) / rgba(255, 255, 255, 0.08); org #0000000A / #FFFFFF29)"
               },
+              "alias": null,
               "used": {
                 "light": 33,
                 "dark": 21
@@ -3259,7 +3365,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 306,
+                "line": 304,
                 "export": "semanticColors",
                 "path": "state.active"
               },
@@ -3272,6 +3378,7 @@
                 "org": "--color-highlight-primary",
                 "note": "active wash; creator 10%/13%, org 8%/8% (creator rgba(0, 0, 0, 0.1) / rgba(255, 255, 255, 0.13); org #00000014 / #FFFFFF14)"
               },
+              "alias": null,
               "used": {
                 "light": 1375,
                 "dark": 9
@@ -3290,7 +3397,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 306,
+                "line": 304,
                 "export": "semanticColors",
                 "path": "state.active"
               },
@@ -3303,6 +3410,7 @@
                 "org": "--color-highlight-primary",
                 "note": "active wash; creator 10%/13%, org 8%/8% (creator rgba(0, 0, 0, 0.1) / rgba(255, 255, 255, 0.13); org #00000014 / #FFFFFF14)"
               },
+              "alias": null,
               "used": {
                 "light": 1375,
                 "dark": 9
@@ -3323,7 +3431,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 307,
+                "line": 305,
                 "export": "semanticColors",
                 "path": "state.activeStrong"
               },
@@ -3335,6 +3443,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 0
@@ -3353,7 +3462,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 307,
+                "line": 305,
                 "export": "semanticColors",
                 "path": "state.activeStrong"
               },
@@ -3365,6 +3474,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 0
@@ -3385,7 +3495,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 310,
+                "line": 308,
                 "export": "semanticColors",
                 "path": "state.selected"
               },
@@ -3397,6 +3507,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 4
@@ -3415,7 +3526,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 310,
+                "line": 308,
                 "export": "semanticColors",
                 "path": "state.selected"
               },
@@ -3427,6 +3538,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 4
@@ -3448,7 +3560,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 312,
+              "line": 310,
               "export": "semanticColors",
               "path": "dash"
             },
@@ -3460,6 +3572,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 1,
               "dark": 1
@@ -3478,7 +3591,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 312,
+              "line": 310,
               "export": "semanticColors",
               "path": "dash"
             },
@@ -3490,6 +3603,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 1,
               "dark": 1
@@ -3511,7 +3625,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 314,
+                "line": 312,
                 "export": "semanticColors",
                 "path": "highlight.primary"
               },
@@ -3524,6 +3638,7 @@
                 "org": "--color-highlight-primary",
                 "note": "legacy highlight token (creator rgba(0, 0, 0, 0.07) / rgba(255, 255, 255, 0.08); org #00000014 / #FFFFFF14)"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 21
@@ -3542,7 +3657,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 314,
+                "line": 312,
                 "export": "semanticColors",
                 "path": "highlight.primary"
               },
@@ -3555,6 +3670,7 @@
                 "org": "--color-highlight-primary",
                 "note": "legacy highlight token (creator rgba(0, 0, 0, 0.07) / rgba(255, 255, 255, 0.08); org #00000014 / #FFFFFF14)"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 21
@@ -3575,7 +3691,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 315,
+                "line": 313,
                 "export": "semanticColors",
                 "path": "highlight.secondary"
               },
@@ -3588,6 +3704,7 @@
                 "org": "--color-highlight-secondary",
                 "note": "legacy highlight token (creator rgba(0, 0, 0, 0.04) / rgba(255, 255, 255, 0.04); org #0000000A / #FFFFFF29)"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 0
@@ -3606,7 +3723,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 315,
+                "line": 313,
                 "export": "semanticColors",
                 "path": "highlight.secondary"
               },
@@ -3619,6 +3736,7 @@
                 "org": "--color-highlight-secondary",
                 "note": "legacy highlight token (creator rgba(0, 0, 0, 0.04) / rgba(255, 255, 255, 0.04); org #0000000A / #FFFFFF29)"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 0
@@ -3641,7 +3759,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 319,
+                "line": 317,
                 "export": "semanticColors",
                 "path": "edge.out"
               },
@@ -3653,6 +3771,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 8,
                 "dark": 0
@@ -3671,7 +3790,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 319,
+                "line": 317,
                 "export": "semanticColors",
                 "path": "edge.out"
               },
@@ -3683,6 +3802,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 8,
                 "dark": 0
@@ -3703,7 +3823,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 320,
+                "line": 318,
                 "export": "semanticColors",
                 "path": "edge.in"
               },
@@ -3715,6 +3835,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 1371
@@ -3733,7 +3854,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 320,
+                "line": 318,
                 "export": "semanticColors",
                 "path": "edge.in"
               },
@@ -3745,6 +3866,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 1371
@@ -3767,7 +3889,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 324,
+                "line": 322,
                 "export": "semanticColors",
                 "path": "mat.menu"
               },
@@ -3779,6 +3901,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -3797,7 +3920,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 324,
+                "line": 322,
                 "export": "semanticColors",
                 "path": "mat.menu"
               },
@@ -3809,6 +3932,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -3829,7 +3953,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 325,
+                "line": 323,
                 "export": "semanticColors",
                 "path": "mat.menuSolid"
               },
@@ -3841,6 +3965,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -3859,7 +3984,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 325,
+                "line": 323,
                 "export": "semanticColors",
                 "path": "mat.menuSolid"
               },
@@ -3871,6 +3996,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -3891,7 +4017,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 326,
+                "line": 324,
                 "export": "semanticColors",
                 "path": "mat.hud"
               },
@@ -3903,6 +4029,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 24,
                 "dark": 24
@@ -3921,7 +4048,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 326,
+                "line": 324,
                 "export": "semanticColors",
                 "path": "mat.hud"
               },
@@ -3933,6 +4060,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 24,
                 "dark": 24
@@ -3953,7 +4081,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 327,
+                "line": 325,
                 "export": "semanticColors",
                 "path": "mat.sheet"
               },
@@ -3965,6 +4093,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -3983,7 +4112,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 327,
+                "line": 325,
                 "export": "semanticColors",
                 "path": "mat.sheet"
               },
@@ -3995,6 +4124,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4015,7 +4145,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 328,
+                "line": 326,
                 "export": "semanticColors",
                 "path": "mat.sidebar"
               },
@@ -4027,6 +4157,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4045,7 +4176,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 328,
+                "line": 326,
                 "export": "semanticColors",
                 "path": "mat.sidebar"
               },
@@ -4057,6 +4188,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4078,7 +4210,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 331,
+              "line": 329,
               "export": "semanticColors",
               "path": "scrim.DEFAULT"
             },
@@ -4090,6 +4222,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -4108,7 +4241,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 331,
+              "line": 329,
               "export": "semanticColors",
               "path": "scrim.DEFAULT"
             },
@@ -4120,6 +4253,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -4139,7 +4273,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 333,
+                "line": 331,
                 "export": "semanticColors",
                 "path": "scrim.modal"
               },
@@ -4151,6 +4285,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4169,7 +4304,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 333,
+                "line": 331,
                 "export": "semanticColors",
                 "path": "scrim.modal"
               },
@@ -4181,6 +4316,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4202,7 +4338,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 335,
+              "line": 333,
               "export": "semanticColors",
               "path": "overlay"
             },
@@ -4214,6 +4350,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -4232,7 +4369,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 335,
+              "line": 333,
               "export": "semanticColors",
               "path": "overlay"
             },
@@ -4244,6 +4381,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -4263,7 +4401,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 337,
+              "line": 335,
               "export": "semanticColors",
               "path": "surface.raised"
             },
@@ -4275,6 +4413,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 0,
               "dark": 0
@@ -4294,7 +4433,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 338,
+                "line": 336,
                 "export": "semanticColors",
                 "path": "surface.inset"
               },
@@ -4306,6 +4445,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 33,
                 "dark": 18
@@ -4324,7 +4464,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 338,
+                "line": 336,
                 "export": "semanticColors",
                 "path": "surface.inset"
               },
@@ -4336,6 +4476,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 33,
                 "dark": 18
@@ -4358,7 +4499,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 342,
+                "line": 340,
                 "export": "semanticColors",
                 "path": "wire.1"
               },
@@ -4370,6 +4511,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 1371
@@ -4388,7 +4530,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 342,
+                "line": 340,
                 "export": "semanticColors",
                 "path": "wire.1"
               },
@@ -4400,6 +4542,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 1371
@@ -4420,7 +4563,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 343,
+                "line": 341,
                 "export": "semanticColors",
                 "path": "wire.2"
               },
@@ -4432,6 +4575,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4450,7 +4594,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 343,
+                "line": 341,
                 "export": "semanticColors",
                 "path": "wire.2"
               },
@@ -4462,6 +4606,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4482,7 +4627,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 344,
+                "line": 342,
                 "export": "semanticColors",
                 "path": "wire.3"
               },
@@ -4494,6 +4639,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4512,7 +4658,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 344,
+                "line": 342,
                 "export": "semanticColors",
                 "path": "wire.3"
               },
@@ -4524,6 +4670,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4544,7 +4691,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 345,
+                "line": 343,
                 "export": "semanticColors",
                 "path": "wire.void"
               },
@@ -4556,6 +4703,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 4
@@ -4574,7 +4722,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 345,
+                "line": 343,
                 "export": "semanticColors",
                 "path": "wire.void"
               },
@@ -4586,6 +4734,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 4,
                 "dark": 4
@@ -4608,7 +4757,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 349,
+                "line": 347,
                 "export": "semanticColors",
                 "path": "accent.solid"
               },
@@ -4620,6 +4769,7 @@
                 "relation": "creator-only",
                 "note": "org accent is teal (#79DDE8 / #1A7580); creator's selection accent is macOS system blue, spent only on selection, focus and on"
               },
+              "alias": null,
               "used": {
                 "light": 15,
                 "dark": 15
@@ -4638,7 +4788,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 349,
+                "line": 347,
                 "export": "semanticColors",
                 "path": "accent.solid"
               },
@@ -4650,6 +4800,7 @@
                 "relation": "creator-only",
                 "note": "org accent is teal (#79DDE8 / #1A7580); creator's selection accent is macOS system blue, spent only on selection, focus and on"
               },
+              "alias": null,
               "used": {
                 "light": 15,
                 "dark": 15
@@ -4670,7 +4821,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 305,
+                "line": 303,
                 "export": "semanticColors",
                 "path": "accent.hover"
               },
@@ -4682,6 +4833,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4700,7 +4852,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 305,
+                "line": 303,
                 "export": "semanticColors",
                 "path": "accent.hover"
               },
@@ -4712,6 +4864,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4732,7 +4885,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 351,
+                "line": 349,
                 "export": "semanticColors",
                 "path": "accent.contrast"
               },
@@ -4744,6 +4897,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 57,
                 "dark": 28
@@ -4762,7 +4916,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 351,
+                "line": 349,
                 "export": "semanticColors",
                 "path": "accent.contrast"
               },
@@ -4774,6 +4928,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 57,
                 "dark": 28
@@ -4794,7 +4949,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 284,
+                "line": 282,
                 "export": "semanticColors",
                 "path": "accent.fg"
               },
@@ -4806,6 +4961,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 15,
                 "dark": 15
@@ -4824,7 +4980,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 284,
+                "line": 282,
                 "export": "semanticColors",
                 "path": "accent.fg"
               },
@@ -4836,6 +4992,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 15,
                 "dark": 15
@@ -4856,7 +5013,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 287,
+                "line": 285,
                 "export": "semanticColors",
                 "path": "accent.subtle"
               },
@@ -4868,6 +5025,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4886,7 +5044,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 287,
+                "line": 285,
                 "export": "semanticColors",
                 "path": "accent.subtle"
               },
@@ -4898,6 +5056,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4918,7 +5077,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 286,
+                "line": 284,
                 "export": "semanticColors",
                 "path": "accent.muted"
               },
@@ -4930,6 +5089,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4948,7 +5108,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 286,
+                "line": 284,
                 "export": "semanticColors",
                 "path": "accent.muted"
               },
@@ -4960,6 +5120,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -4980,7 +5141,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 300,
+                "line": 298,
                 "export": "semanticColors",
                 "path": "accent.emphasized"
               },
@@ -4992,6 +5153,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5010,7 +5172,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 300,
+                "line": 298,
                 "export": "semanticColors",
                 "path": "accent.emphasized"
               },
@@ -5022,6 +5184,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5042,7 +5205,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 362,
+                "line": 360,
                 "export": "semanticColors",
                 "path": "accent.focusRing"
               },
@@ -5054,6 +5217,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 15,
                 "dark": 15
@@ -5072,7 +5236,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 362,
+                "line": 360,
                 "export": "semanticColors",
                 "path": "accent.focusRing"
               },
@@ -5084,6 +5248,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 15,
                 "dark": 15
@@ -5106,7 +5271,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 366,
+                "line": 364,
                 "export": "semanticColors",
                 "path": "danger.solid"
               },
@@ -5119,6 +5284,7 @@
                 "org": "--color-accent-destructive",
                 "note": "system red for recording/destruction; org destructive is warmer (creator rgb(215, 0, 21) / rgb(255, 79, 66); org #D6402F / #FF6D4C)"
               },
+              "alias": null,
               "used": {
                 "light": 32,
                 "dark": 32
@@ -5137,7 +5303,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 366,
+                "line": 364,
                 "export": "semanticColors",
                 "path": "danger.solid"
               },
@@ -5150,6 +5316,7 @@
                 "org": "--color-accent-destructive",
                 "note": "system red for recording/destruction; org destructive is warmer (creator rgb(215, 0, 21) / rgb(255, 79, 66); org #D6402F / #FF6D4C)"
               },
+              "alias": null,
               "used": {
                 "light": 32,
                 "dark": 32
@@ -5170,7 +5337,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 367,
+                "line": 365,
                 "export": "semanticColors",
                 "path": "danger.hover"
               },
@@ -5182,6 +5349,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5200,7 +5368,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 367,
+                "line": 365,
                 "export": "semanticColors",
                 "path": "danger.hover"
               },
@@ -5212,6 +5380,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5230,7 +5399,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 371,
+              "line": 369,
               "export": "semanticColors",
               "path": "danger.contrast"
             },
@@ -5242,6 +5411,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 57,
               "dark": 281
@@ -5261,7 +5431,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 372,
+                "line": 370,
                 "export": "semanticColors",
                 "path": "danger.fg"
               },
@@ -5273,6 +5443,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 32,
                 "dark": 32
@@ -5291,7 +5462,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 372,
+                "line": 370,
                 "export": "semanticColors",
                 "path": "danger.fg"
               },
@@ -5303,6 +5474,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 32,
                 "dark": 32
@@ -5323,7 +5495,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 373,
+                "line": 371,
                 "export": "semanticColors",
                 "path": "danger.subtle"
               },
@@ -5335,6 +5507,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5353,7 +5526,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 373,
+                "line": 371,
                 "export": "semanticColors",
                 "path": "danger.subtle"
               },
@@ -5365,6 +5538,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5385,7 +5559,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 377,
+                "line": 375,
                 "export": "semanticColors",
                 "path": "danger.muted"
               },
@@ -5397,6 +5571,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5415,7 +5590,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 377,
+                "line": 375,
                 "export": "semanticColors",
                 "path": "danger.muted"
               },
@@ -5427,6 +5602,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5447,7 +5623,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 381,
+                "line": 379,
                 "export": "semanticColors",
                 "path": "danger.emphasized"
               },
@@ -5459,6 +5635,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5477,7 +5654,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 381,
+                "line": 379,
                 "export": "semanticColors",
                 "path": "danger.emphasized"
               },
@@ -5489,6 +5666,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 0,
                 "dark": 0
@@ -5509,7 +5687,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 385,
+                "line": 383,
                 "export": "semanticColors",
                 "path": "danger.focusRing"
               },
@@ -5521,6 +5699,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 32,
                 "dark": 32
@@ -5539,7 +5718,7 @@
               "status": "declared",
               "source": {
                 "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 385,
+                "line": 383,
                 "export": "semanticColors",
                 "path": "danger.focusRing"
               },
@@ -5551,6 +5730,7 @@
                 "relation": "creator-only",
                 "note": "no counterpart in airtime-design-system tokens"
               },
+              "alias": null,
               "used": {
                 "light": 32,
                 "dark": 32
@@ -5571,7 +5751,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 390,
+              "line": 388,
               "export": "semanticColors",
               "path": "gray.solid"
             },
@@ -5583,6 +5763,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 968,
               "dark": 1140
@@ -5600,7 +5781,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 391,
+              "line": 389,
               "export": "semanticColors",
               "path": "gray.hover"
             },
@@ -5612,6 +5793,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 646,
               "dark": 634
@@ -5629,7 +5811,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 392,
+              "line": 390,
               "export": "semanticColors",
               "path": "gray.contrast"
             },
@@ -5641,6 +5823,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 57,
               "dark": 4
@@ -5658,7 +5841,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 393,
+              "line": 391,
               "export": "semanticColors",
               "path": "gray.fg"
             },
@@ -5670,6 +5853,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 968,
               "dark": 1140
@@ -5687,7 +5871,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 394,
+              "line": 392,
               "export": "semanticColors",
               "path": "gray.subtle"
             },
@@ -5699,6 +5883,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 33,
               "dark": 21
@@ -5716,7 +5901,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 395,
+              "line": 393,
               "export": "semanticColors",
               "path": "gray.muted"
             },
@@ -5728,6 +5913,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 1375,
               "dark": 9
@@ -5745,7 +5931,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 396,
+              "line": 394,
               "export": "semanticColors",
               "path": "gray.emphasized"
             },
@@ -5757,6 +5943,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 4,
               "dark": 0
@@ -5774,7 +5961,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 397,
+              "line": 395,
               "export": "semanticColors",
               "path": "gray.focusRing"
             },
@@ -5786,6 +5973,7 @@
               "relation": "creator-only",
               "note": "no counterpart in airtime-design-system tokens"
             },
+            "alias": null,
             "used": {
               "light": 15,
               "dark": 15
@@ -5804,7 +5992,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 362,
+            "line": 360,
             "export": "semanticColors",
             "path": "focusRing"
           },
@@ -5816,6 +6004,7 @@
             "relation": "creator-only",
             "note": "org has no focus-ring colour token"
           },
+          "alias": null,
           "used": {
             "light": 15,
             "dark": 15

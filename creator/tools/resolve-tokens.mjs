@@ -2,7 +2,7 @@
 import { launchBrowser } from "/Users/dairien/workspaces/mmhmm-tv-creator-sidebar/docs/creator-sidebar/qa/lib/paths.mjs";
 import fs from "node:fs";
 const idx = JSON.parse(fs.readFileSync(new URL("../data/tokens-index.json", import.meta.url), "utf8"));
-const css = fs.readFileSync(new URL("../tokens/tokens.css", import.meta.url), "utf8");
+const css = ["org/tokens.css", "org/org-theme.css", "tokens.css"].map((f) => fs.readFileSync(new URL("../tokens/" + f, import.meta.url), "utf8")).join("\n");
 const b = await launchBrowser([]); const page = await b.newPage();
 await page.setContent(`<style>${css}</style><body>`);
 const out = {};

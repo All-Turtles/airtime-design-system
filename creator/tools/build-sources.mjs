@@ -38,7 +38,8 @@ const M = {
   "ax.button": [["ui/recipes/buttonRecipe.ts", "variant: {"]],
   "ax.notice": [["creator/SessionNotice.tsx", "function Notice"]],
 };
+const OLD = fs.existsSync(new URL("../data/sources.json", import.meta.url)) ? JSON.parse(fs.readFileSync(new URL("../data/sources.json", import.meta.url), "utf8")) : {};
 const out = {};
-for (const [k, list] of Object.entries(M)) out[k] = list.map(([file, find]) => { const p = SRC + file; const lines = fs.readFileSync(p, "utf8").split("\n"); const line = lines.findIndex((l) => l.includes(find)) + 1; if (!line) console.warn("not found", k, file, find); return { file: file.startsWith("../") ? "../" + file.slice(3) : file, line: line || null, note: find.length < 44 ? find : "" }; });
+for (const [k, list] of Object.entries(M)) out[k] = list.map(([file, find]) => { const p = SRC + file; const lines = fs.existsSync(p) ? fs.readFileSync(p, "utf8").split("\n") : []; const line = lines.findIndex((l) => l.includes(find)) + 1; if (!line) console.warn("not found", k, file, find); const prev = OLD[k]?.find((o) => o.file === (file.startsWith("../") ? "../" + file.slice(3) : file) && o.note === (find.length < 44 ? find : ""))?.line ?? null; return { file: file.startsWith("../") ? "../" + file.slice(3) : file, line: line || prev, note: find.length < 44 ? find : "" }; });
 fs.writeFileSync(new URL("../data/sources.json", import.meta.url), JSON.stringify(out, null, 1));
 console.log(Object.keys(out).length, "source groups");

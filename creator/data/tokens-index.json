@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T17:54:35.739Z",
+ "generated": "2026-09-29T21:14:41.766Z",
  "tokens": [
   {
    "id": "font-family.body",
@@ -27,7 +27,8 @@
     "relation": "differs",
     "org": "--font-family-primary",
     "note": "system stack; creator puts SF Pro Text/Display before Helvetica, org starts with -apple-system, 'SF Pro', 'Segoe UI', Roboto (creator -apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif; org -apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "font-family.heading",
@@ -55,7 +56,8 @@
     "relation": "differs",
     "org": "--font-family-primary",
     "note": "same stack as body (creator -apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif; org -apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "font-family.mono",
@@ -82,7 +84,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "font-size.3xs",
@@ -111,7 +114,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org font-size token has value 9px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "font-size.2xs",
@@ -140,7 +144,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org font-size token has value 10px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "font-size.xs",
@@ -170,7 +175,8 @@
     "relation": "same",
     "org": "--font-size-body-small",
     "note": "value 11px equals org --font-size-body-small"
-   }
+   },
+   "alias": "--font-size-body-small"
   },
   {
    "id": "font-size.sm",
@@ -200,7 +206,8 @@
     "relation": "same",
     "org": "--font-size-heading-small",
     "note": "value 12px equals org --font-size-heading-small"
-   }
+   },
+   "alias": "--font-size-heading-small"
   },
   {
    "id": "font-size.md",
@@ -229,7 +236,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org font-size token has value 13px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "font-size.lg",
@@ -258,7 +266,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org font-size token has value 17px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "line-height.selection",
@@ -276,7 +285,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 175,
+    "line": 173,
     "export": "lineHeights",
     "path": "selection"
    },
@@ -285,7 +294,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "letter-spacing.label",
@@ -314,7 +324,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "letter-spacing.selectionLabel",
@@ -332,7 +343,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 31,
+    "line": 29,
     "export": "letterSpacings",
     "path": "selectionLabel"
    },
@@ -343,7 +354,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "radius.stage",
@@ -361,7 +373,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 37,
+    "line": 36,
     "export": "radii",
     "path": "stage"
    },
@@ -373,7 +385,8 @@
     "relation": "same",
     "org": "--radius-20",
     "note": "value 8px equals org --radius-20"
-   }
+   },
+   "alias": "--radius-20"
   },
   {
    "id": "radius.selectionTrack",
@@ -391,7 +404,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 38,
+    "line": 37,
     "export": "radii",
     "path": "selectionTrack"
    },
@@ -402,7 +415,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org radius token has value 9px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "radius.roomTile",
@@ -420,7 +434,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 39,
+    "line": 38,
     "export": "radii",
     "path": "roomTile"
    },
@@ -432,7 +446,8 @@
     "relation": "same",
     "org": "--radius-15",
     "note": "value 6px equals org --radius-15"
-   }
+   },
+   "alias": "--radius-15"
   },
   {
    "id": "radius.titleLabel",
@@ -450,7 +465,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 40,
+    "line": 39,
     "export": "radii",
     "path": "titleLabel"
    },
@@ -462,7 +477,8 @@
     "relation": "same",
     "org": "--radius-10",
     "note": "value 4px equals org --radius-10"
-   }
+   },
+   "alias": "--radius-10"
   },
   {
    "id": "radius.xs",
@@ -480,7 +496,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 41,
+    "line": 40,
     "export": "radii",
     "path": "xs"
    },
@@ -491,7 +507,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org radius token has value 3px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "radius.sm",
@@ -509,7 +526,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 42,
+    "line": 41,
     "export": "radii",
     "path": "sm"
    },
@@ -520,7 +537,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org radius token has value 5px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "radius.md",
@@ -538,7 +556,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 43,
+    "line": 42,
     "export": "radii",
     "path": "md"
    },
@@ -549,7 +567,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org radius token has value 7px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "radius.lg",
@@ -567,7 +586,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 44,
+    "line": 43,
     "export": "radii",
     "path": "lg"
    },
@@ -579,7 +598,8 @@
     "relation": "same",
     "org": "--radius-25",
     "note": "value 10px equals org --radius-25"
-   }
+   },
+   "alias": "--radius-25"
   },
   {
    "id": "radius.xl",
@@ -597,7 +617,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 45,
+    "line": 44,
     "export": "radii",
     "path": "xl"
    },
@@ -608,7 +628,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org radius token has value 13px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "radius.2xl",
@@ -626,7 +647,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 46,
+    "line": 45,
     "export": "radii",
     "path": "2xl"
    },
@@ -638,7 +659,8 @@
     "relation": "same",
     "org": "--radius-35",
     "note": "value 14px equals org --radius-35"
-   }
+   },
+   "alias": "--radius-35"
   },
   {
    "id": "radius.3xl",
@@ -656,7 +678,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 47,
+    "line": 46,
     "export": "radii",
     "path": "3xl"
    },
@@ -668,7 +690,8 @@
     "relation": "same",
     "org": "--radius-40",
     "note": "value 16px equals org --radius-40"
-   }
+   },
+   "alias": "--radius-40"
   },
   {
    "id": "radius.4xl",
@@ -686,7 +709,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 48,
+    "line": 47,
     "export": "radii",
     "path": "4xl"
    },
@@ -697,7 +720,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org radius token has value 22px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "radius.5xl",
@@ -715,7 +739,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 49,
+    "line": 48,
     "export": "radii",
     "path": "5xl"
    },
@@ -727,7 +751,8 @@
     "relation": "same",
     "org": "--radius-60",
     "note": "value 24px equals org --radius-60"
-   }
+   },
+   "alias": "--radius-60"
   },
   {
    "id": "radius.full",
@@ -745,7 +770,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 50,
+    "line": 49,
     "export": "radii",
     "path": "full"
    },
@@ -757,7 +782,8 @@
     "relation": "same",
     "org": "--radius-9999",
     "note": "value 9999px equals org --radius-9999"
-   }
+   },
+   "alias": "--radius-9999"
   },
   {
    "id": "size.creator.selectionMenuMin",
@@ -775,7 +801,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 55,
+    "line": 54,
     "export": "sizes",
     "path": "creator.selectionMenuMin"
    },
@@ -786,7 +812,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 220px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.selectionMenuMax",
@@ -804,7 +831,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 56,
+    "line": 55,
     "export": "sizes",
     "path": "creator.selectionMenuMax"
    },
@@ -815,7 +842,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 328px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.typographyMenuWidth",
@@ -833,7 +861,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 57,
+    "line": 56,
     "export": "sizes",
     "path": "creator.typographyMenuWidth"
    },
@@ -844,7 +872,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 368px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.topBar",
@@ -862,7 +891,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 58,
+    "line": 57,
     "export": "sizes",
     "path": "creator.topBar"
    },
@@ -873,7 +902,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 52px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.accountHeader",
@@ -891,7 +921,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 59,
+    "line": 58,
     "export": "sizes",
     "path": "creator.accountHeader"
    },
@@ -902,7 +932,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 260px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.title",
@@ -920,7 +951,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 60,
+    "line": 59,
     "export": "sizes",
     "path": "creator.title"
    },
@@ -931,7 +962,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 280px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.titleCompact",
@@ -949,7 +981,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 61,
+    "line": 60,
     "export": "sizes",
     "path": "creator.titleCompact"
    },
@@ -960,7 +992,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 180px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.titleGlyph",
@@ -978,7 +1011,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 62,
+    "line": 61,
     "export": "sizes",
     "path": "creator.titleGlyph"
    },
@@ -989,7 +1022,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 15px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.titleChevron",
@@ -1007,7 +1041,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 63,
+    "line": 62,
     "export": "sizes",
     "path": "creator.titleChevron"
    },
@@ -1018,7 +1052,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 22px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.hairline",
@@ -1036,7 +1071,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 64,
+    "line": 63,
     "export": "sizes",
     "path": "creator.hairline"
    },
@@ -1047,7 +1082,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 0.5px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.stageBand",
@@ -1065,7 +1101,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 65,
+    "line": 64,
     "export": "sizes",
     "path": "creator.stageBand"
    },
@@ -1076,7 +1112,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 46px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.stageBandNarrow",
@@ -1094,7 +1131,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 66,
+    "line": 65,
     "export": "sizes",
     "path": "creator.stageBandNarrow"
    },
@@ -1105,7 +1142,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 88px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.bandRow",
@@ -1123,7 +1161,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 67,
+    "line": 66,
     "export": "sizes",
     "path": "creator.bandRow"
    },
@@ -1134,7 +1172,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 38px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.deviceName",
@@ -1152,7 +1191,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 68,
+    "line": 67,
     "export": "sizes",
     "path": "creator.deviceName"
    },
@@ -1163,7 +1202,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 88px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.devicePopover",
@@ -1181,7 +1221,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 69,
+    "line": 68,
     "export": "sizes",
     "path": "creator.devicePopover"
    },
@@ -1192,7 +1232,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 258px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.deviceChevron",
@@ -1210,7 +1251,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 70,
+    "line": 69,
     "export": "sizes",
     "path": "creator.deviceChevron"
    },
@@ -1221,7 +1262,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 9px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.statusDot",
@@ -1239,7 +1281,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 71,
+    "line": 70,
     "export": "sizes",
     "path": "creator.statusDot"
    },
@@ -1250,7 +1292,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 7px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.statusBadgeDot",
@@ -1268,7 +1311,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 72,
+    "line": 71,
     "export": "sizes",
     "path": "creator.statusBadgeDot"
    },
@@ -1279,7 +1322,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 5px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.recordMin",
@@ -1297,7 +1341,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 73,
+    "line": 72,
     "export": "sizes",
     "path": "creator.recordMin"
    },
@@ -1308,7 +1352,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 93px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.recordLabel",
@@ -1326,7 +1371,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 74,
+    "line": 73,
     "export": "sizes",
     "path": "creator.recordLabel"
    },
@@ -1337,7 +1382,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 37px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.cameraPopover",
@@ -1355,7 +1401,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 75,
+    "line": 74,
     "export": "sizes",
     "path": "creator.cameraPopover"
    },
@@ -1366,7 +1412,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 360px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.tray",
@@ -1384,7 +1431,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 76,
+    "line": 75,
     "export": "sizes",
     "path": "creator.tray"
    },
@@ -1395,7 +1442,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 116px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.slideThumbnail",
@@ -1413,7 +1461,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 77,
+    "line": 76,
     "export": "sizes",
     "path": "creator.slideThumbnail"
    },
@@ -1424,7 +1472,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 78px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.roomTile",
@@ -1442,7 +1491,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 78,
+    "line": 77,
     "export": "sizes",
     "path": "creator.roomTile"
    },
@@ -1453,7 +1502,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 76px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.slideLane",
@@ -1471,7 +1521,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 79,
+    "line": 78,
     "export": "sizes",
     "path": "creator.slideLane"
    },
@@ -1482,7 +1532,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 84px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.overlayLane",
@@ -1500,7 +1551,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 80,
+    "line": 79,
     "export": "sizes",
     "path": "creator.overlayLane"
    },
@@ -1512,7 +1563,8 @@
     "relation": "same",
     "org": "--size-70",
     "note": "value 28px equals org --size-70"
-   }
+   },
+   "alias": "--size-70"
   },
   {
    "id": "size.creator.slidePopover",
@@ -1530,7 +1582,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 81,
+    "line": 53,
     "export": "sizes",
     "path": "creator.slidePopover"
    },
@@ -1541,7 +1593,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 324px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.sidebar",
@@ -1559,7 +1612,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 82,
+    "line": 80,
     "export": "sizes",
     "path": "creator.sidebar"
    },
@@ -1570,7 +1623,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 296px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.sidebarRow",
@@ -1588,7 +1642,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 83,
+    "line": 81,
     "export": "sizes",
     "path": "creator.sidebarRow"
    },
@@ -1599,7 +1653,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 30px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.sidebarControl",
@@ -1617,7 +1672,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 84,
+    "line": 82,
     "export": "sizes",
     "path": "creator.sidebarControl"
    },
@@ -1629,7 +1684,8 @@
     "relation": "same",
     "org": "--size-60",
     "note": "value 24px equals org --size-60"
-   }
+   },
+   "alias": "--size-60"
   },
   {
    "id": "size.creator.slideCounter",
@@ -1647,7 +1703,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 85,
+    "line": 83,
     "export": "sizes",
     "path": "creator.slideCounter"
    },
@@ -1658,7 +1714,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 46px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.slidesInfo",
@@ -1676,7 +1733,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 86,
+    "line": 84,
     "export": "sizes",
     "path": "creator.slidesInfo"
    },
@@ -1687,7 +1744,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 320px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.layoutPicker",
@@ -1705,7 +1763,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 88,
+    "line": 86,
     "export": "sizes",
     "path": "creator.layoutPicker"
    },
@@ -1716,7 +1774,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 470px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.layoutGrid",
@@ -1734,7 +1793,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 89,
+    "line": 87,
     "export": "sizes",
     "path": "creator.layoutGrid"
    },
@@ -1745,7 +1804,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 300px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.videoLibrary",
@@ -1763,7 +1823,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 90,
+    "line": 88,
     "export": "sizes",
     "path": "creator.videoLibrary"
    },
@@ -1774,7 +1834,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 280px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.videoDetails",
@@ -1792,7 +1853,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 91,
+    "line": 89,
     "export": "sizes",
     "path": "creator.videoDetails"
    },
@@ -1803,7 +1864,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 240px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.videoTimeline",
@@ -1821,7 +1883,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 92,
+    "line": 90,
     "export": "sizes",
     "path": "creator.videoTimeline"
    },
@@ -1832,7 +1894,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 144px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.shareDialog",
@@ -1850,7 +1913,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 93,
+    "line": 91,
     "export": "sizes",
     "path": "creator.shareDialog"
    },
@@ -1861,7 +1924,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 460px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.creator.shareSuggestions",
@@ -1879,7 +1943,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 94,
+    "line": 92,
     "export": "sizes",
     "path": "creator.shareSuggestions"
    },
@@ -1890,7 +1954,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 232px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.sheet.width",
@@ -1908,7 +1973,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 97,
+    "line": 95,
     "export": "sizes",
     "path": "sheet.width"
    },
@@ -1919,7 +1984,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 800px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.sheet.height",
@@ -1937,7 +2003,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 98,
+    "line": 96,
     "export": "sizes",
     "path": "sheet.height"
    },
@@ -1948,7 +2014,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 642px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.sheet.maxWidth",
@@ -1966,7 +2033,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 99,
+    "line": 97,
     "export": "sizes",
     "path": "sheet.maxWidth"
    },
@@ -1977,7 +2044,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value calc(100vw - 48px)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.sheet.maxHeight",
@@ -1995,7 +2063,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 100,
+    "line": 98,
     "export": "sizes",
     "path": "sheet.maxHeight"
    },
@@ -2006,7 +2074,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value calc(100vh - 48px)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.backgroundBrowser.width",
@@ -2024,7 +2093,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 103,
+    "line": 101,
     "export": "sizes",
     "path": "backgroundBrowser.width"
    },
@@ -2035,7 +2104,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value min(85vw, 800px)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.backgroundBrowser.height",
@@ -2053,7 +2123,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 104,
+    "line": 102,
     "export": "sizes",
     "path": "backgroundBrowser.height"
    },
@@ -2064,7 +2134,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value min(100vh, 640px)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.backgroundBrowser.sidebar",
@@ -2082,7 +2153,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 105,
+    "line": 103,
     "export": "sizes",
     "path": "backgroundBrowser.sidebar"
    },
@@ -2093,7 +2164,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 160px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.backgroundBrowser.row",
@@ -2111,7 +2183,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 106,
+    "line": 104,
     "export": "sizes",
     "path": "backgroundBrowser.row"
    },
@@ -2122,7 +2194,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 190px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.splitPicker.sidebar",
@@ -2140,7 +2213,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 109,
+    "line": 107,
     "export": "sizes",
     "path": "splitPicker.sidebar"
    },
@@ -2151,7 +2224,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 208px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.splitPicker.paneHeader",
@@ -2169,7 +2243,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 110,
+    "line": 108,
     "export": "sizes",
     "path": "splitPicker.paneHeader"
    },
@@ -2181,7 +2255,8 @@
     "relation": "same",
     "org": "--size-140",
     "note": "value 56px equals org --size-140"
-   }
+   },
+   "alias": "--size-140"
   },
   {
    "id": "size.splitPicker.inputWrapper",
@@ -2199,7 +2274,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 111,
+    "line": 109,
     "export": "sizes",
     "path": "splitPicker.inputWrapper"
    },
@@ -2210,7 +2285,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 30px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.splitPicker.details",
@@ -2228,7 +2304,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 112,
+    "line": 110,
     "export": "sizes",
     "path": "splitPicker.details"
    },
@@ -2239,7 +2315,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 208px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.segment",
@@ -2257,7 +2334,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 114,
+    "line": 112,
     "export": "sizes",
     "path": "segment"
    },
@@ -2268,7 +2345,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 26px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.gutter",
@@ -2286,7 +2364,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 119,
+    "line": 117,
     "export": "spacing",
     "path": "gutter"
    },
@@ -2298,7 +2376,8 @@
     "relation": "same",
     "org": "--space-40",
     "note": "value 16px equals org --space-40"
-   }
+   },
+   "alias": "--space-40"
   },
   {
    "id": "space.2.25",
@@ -2316,7 +2395,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 278,
+    "line": 276,
     "export": "spacing",
     "path": "2.25"
    },
@@ -2327,7 +2406,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 9px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.1.75",
@@ -2345,7 +2425,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 277,
+    "line": 275,
     "export": "spacing",
     "path": "1.75"
    },
@@ -2356,7 +2436,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 7px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.0.75",
@@ -2374,7 +2455,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 117,
+    "line": 115,
     "export": "spacing",
     "path": "0.75"
    },
@@ -2385,7 +2466,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 3px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.1.25",
@@ -2403,7 +2485,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 277,
+    "line": 275,
     "export": "spacing",
     "path": "1.25"
    },
@@ -2414,7 +2496,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 5px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "aspect.cameraDemo",
@@ -2432,7 +2515,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 126,
+    "line": 124,
     "export": "aspectRatios",
     "path": "cameraDemo"
    },
@@ -2441,7 +2524,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "z.stage",
@@ -2459,7 +2543,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 129,
+    "line": 127,
     "export": "zIndex",
     "path": "stage"
    },
@@ -2470,7 +2554,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org z token has value 1"
-   }
+   },
+   "alias": null
   },
   {
    "id": "z.stageBand",
@@ -2488,7 +2573,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 130,
+    "line": 128,
     "export": "zIndex",
     "path": "stageBand"
    },
@@ -2499,7 +2584,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org z token has value 12"
-   }
+   },
+   "alias": null
   },
   {
    "id": "z.stageControls",
@@ -2517,7 +2603,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 131,
+    "line": 129,
     "export": "zIndex",
     "path": "stageControls"
    },
@@ -2528,7 +2614,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org z token has value 13"
-   }
+   },
+   "alias": null
   },
   {
    "id": "z.tray",
@@ -2546,7 +2633,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 132,
+    "line": 130,
     "export": "zIndex",
     "path": "tray"
    },
@@ -2557,7 +2644,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org z token has value 15"
-   }
+   },
+   "alias": null
   },
   {
    "id": "z.topBar",
@@ -2575,7 +2663,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 133,
+    "line": 131,
     "export": "zIndex",
     "path": "topBar"
    },
@@ -2586,7 +2674,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org z token has value 20"
-   }
+   },
+   "alias": null
   },
   {
    "id": "blur.selectionBar",
@@ -2604,7 +2693,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 137,
+    "line": 135,
     "export": "blurs",
     "path": "selectionBar"
    },
@@ -2613,7 +2702,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "blur.selectionMenu",
@@ -2631,7 +2721,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 138,
+    "line": 136,
     "export": "blurs",
     "path": "selectionMenu"
    },
@@ -2640,7 +2730,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "border-width.hair",
@@ -2658,7 +2749,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 143,
+    "line": 141,
     "export": "borderWidths",
     "path": "hair"
    },
@@ -2667,7 +2758,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org border-width token has value 0.5px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "border-width.thin",
@@ -2685,7 +2777,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 144,
+    "line": 142,
     "export": "borderWidths",
     "path": "thin"
    },
@@ -2695,7 +2787,8 @@
     "relation": "same",
     "org": "--border-width-thin",
     "note": "value 1px equals org --border-width-thin"
-   }
+   },
+   "alias": "--border-width-thin"
   },
   {
    "id": "border-width.medium",
@@ -2713,7 +2806,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 145,
+    "line": 143,
     "export": "borderWidths",
     "path": "medium"
    },
@@ -2723,7 +2816,8 @@
     "relation": "same",
     "org": "--border-width-medium",
     "note": "value 2px equals org --border-width-medium"
-   }
+   },
+   "alias": "--border-width-medium"
   },
   {
    "id": "duration.insert",
@@ -2741,7 +2835,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 149,
+    "line": 147,
     "export": "durations",
     "path": "insert"
    },
@@ -2752,7 +2846,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org duration token has value 120ms"
-   }
+   },
+   "alias": null
   },
   {
    "id": "duration.fired",
@@ -2770,7 +2865,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 150,
+    "line": 148,
     "export": "durations",
     "path": "fired"
    },
@@ -2781,7 +2876,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org duration token has value 260ms"
-   }
+   },
+   "alias": null
   },
   {
    "id": "duration.fast",
@@ -2799,7 +2895,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 151,
+    "line": 149,
     "export": "durations",
     "path": "fast"
    },
@@ -2810,7 +2906,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org duration token has value 160ms"
-   }
+   },
+   "alias": null
   },
   {
    "id": "duration.history",
@@ -2828,7 +2925,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 152,
+    "line": 150,
     "export": "durations",
     "path": "history"
    },
@@ -2840,7 +2937,8 @@
     "relation": "same",
     "org": "--duration-fast",
     "note": "value 150ms equals org --duration-fast"
-   }
+   },
+   "alias": "--duration-fast"
   },
   {
    "id": "duration.titleDwell",
@@ -2858,7 +2956,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 153,
+    "line": 151,
     "export": "durations",
     "path": "titleDwell"
    },
@@ -2869,7 +2967,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org duration token has value 200ms"
-   }
+   },
+   "alias": null
   },
   {
    "id": "duration.normal",
@@ -2887,7 +2986,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 154,
+    "line": 152,
     "export": "durations",
     "path": "normal"
    },
@@ -2898,7 +2997,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org duration token has value 240ms"
-   }
+   },
+   "alias": null
   },
   {
    "id": "duration.slow",
@@ -2916,7 +3016,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 155,
+    "line": 153,
     "export": "durations",
     "path": "slow"
    },
@@ -2927,7 +3027,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org duration token has value 420ms"
-   }
+   },
+   "alias": null
   },
   {
    "id": "duration.settle",
@@ -2945,7 +3046,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 156,
+    "line": 154,
     "export": "durations",
     "path": "settle"
    },
@@ -2957,7 +3058,8 @@
     "relation": "same",
     "org": "--duration-normal",
     "note": "value 300ms equals org --duration-normal"
-   }
+   },
+   "alias": "--duration-normal"
   },
   {
    "id": "duration.stage",
@@ -2975,7 +3077,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 157,
+    "line": 155,
     "export": "durations",
     "path": "stage"
    },
@@ -2986,7 +3088,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org duration token has value 420ms"
-   }
+   },
+   "alias": null
   },
   {
    "id": "duration.panel",
@@ -3004,7 +3107,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 158,
+    "line": 156,
     "export": "durations",
     "path": "panel"
    },
@@ -3015,7 +3118,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org duration token has value 280ms"
-   }
+   },
+   "alias": null
   },
   {
    "id": "easing.out",
@@ -3033,7 +3137,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 162,
+    "line": 160,
     "export": "easings",
     "path": "out"
    },
@@ -3043,7 +3147,8 @@
     "relation": "same",
     "org": "--easing-default",
     "note": "value ease-out equals org --easing-default"
-   }
+   },
+   "alias": "--easing-default"
   },
   {
    "id": "easing.settle",
@@ -3061,7 +3166,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 164,
+    "line": 162,
     "export": "easings",
     "path": "settle"
    },
@@ -3070,7 +3175,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org easing token has value cubic-bezier(.32, .72, 0, 1)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "easing.standard",
@@ -3088,7 +3194,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 165,
+    "line": 163,
     "export": "easings",
     "path": "standard"
    },
@@ -3098,7 +3204,8 @@
     "relation": "same",
     "org": "--easing-in-out",
     "note": "value ease-in-out equals org --easing-in-out"
-   }
+   },
+   "alias": "--easing-in-out"
   },
   {
    "id": "easing.spring",
@@ -3116,7 +3223,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 166,
+    "line": 164,
     "export": "easings",
     "path": "spring"
    },
@@ -3125,7 +3232,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org easing token has value cubic-bezier(.34, 1.4, .5, 1)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "easing.flow",
@@ -3143,7 +3251,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 168,
+    "line": 166,
     "export": "easings",
     "path": "flow"
    },
@@ -3152,7 +3260,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org easing token has value cubic-bezier(.25, .46, .2, .99)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.destructive",
@@ -3170,7 +3279,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 176,
+    "line": 174,
     "export": "colors",
     "path": "selection.destructive"
    },
@@ -3182,7 +3291,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.destructiveHover",
@@ -3200,7 +3310,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 177,
+    "line": 175,
     "export": "colors",
     "path": "selection.destructiveHover"
    },
@@ -3212,7 +3322,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.destructiveActive",
@@ -3230,7 +3341,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 178,
+    "line": 176,
     "export": "colors",
     "path": "selection.destructiveActive"
    },
@@ -3242,7 +3353,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.muted",
@@ -3260,7 +3372,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 179,
+    "line": 177,
     "export": "colors",
     "path": "selection.muted"
    },
@@ -3272,7 +3384,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.track",
@@ -3290,7 +3403,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 180,
+    "line": 178,
     "export": "colors",
     "path": "selection.track"
    },
@@ -3302,7 +3415,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.swatch",
@@ -3320,7 +3434,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 181,
+    "line": 179,
     "export": "colors",
     "path": "selection.swatch"
    },
@@ -3332,7 +3446,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.material",
@@ -3350,7 +3465,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 182,
+    "line": 180,
     "export": "colors",
     "path": "selection.material"
    },
@@ -3362,7 +3477,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.text",
@@ -3380,7 +3496,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 183,
+    "line": 181,
     "export": "colors",
     "path": "selection.text"
    },
@@ -3392,7 +3508,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.disabled",
@@ -3410,7 +3527,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 184,
+    "line": 182,
     "export": "colors",
     "path": "selection.disabled"
    },
@@ -3422,7 +3539,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.hover",
@@ -3440,7 +3558,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 185,
+    "line": 183,
     "export": "colors",
     "path": "selection.hover"
    },
@@ -3452,7 +3570,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.active",
@@ -3470,7 +3589,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 186,
+    "line": 184,
     "export": "colors",
     "path": "selection.active"
    },
@@ -3482,7 +3601,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.selection.line",
@@ -3500,7 +3620,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 187,
+    "line": 185,
     "export": "colors",
     "path": "selection.line"
    },
@@ -3512,7 +3632,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.systemBlue.light",
@@ -3530,7 +3651,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 190,
+    "line": 188,
     "export": "colors",
     "path": "systemBlue.light"
    },
@@ -3542,7 +3663,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.systemBlue.lightHover",
@@ -3560,7 +3682,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 191,
+    "line": 189,
     "export": "colors",
     "path": "systemBlue.lightHover"
    },
@@ -3572,7 +3694,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.systemBlue.dark",
@@ -3590,7 +3713,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 192,
+    "line": 190,
     "export": "colors",
     "path": "systemBlue.dark"
    },
@@ -3602,7 +3725,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.systemBlue.darkHover",
@@ -3620,7 +3744,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 193,
+    "line": 191,
     "export": "colors",
     "path": "systemBlue.darkHover"
    },
@@ -3632,7 +3756,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.systemBlue.onLight",
@@ -3650,7 +3775,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 194,
+    "line": 192,
     "export": "colors",
     "path": "systemBlue.onLight"
    },
@@ -3662,7 +3787,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.systemBlue.onDark",
@@ -3680,7 +3806,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 195,
+    "line": 193,
     "export": "colors",
     "path": "systemBlue.onDark"
    },
@@ -3692,7 +3818,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.systemRed.light",
@@ -3710,7 +3837,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 198,
+    "line": 196,
     "export": "colors",
     "path": "systemRed.light"
    },
@@ -3722,7 +3849,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.systemRed.dark",
@@ -3740,7 +3868,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 199,
+    "line": 197,
     "export": "colors",
     "path": "systemRed.dark"
    },
@@ -3752,7 +3880,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ground.light.window",
@@ -3770,7 +3899,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 203,
+    "line": 201,
     "export": "colors",
     "path": "ground.light.window"
    },
@@ -3782,7 +3911,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ground.light.surface",
@@ -3800,7 +3930,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 204,
+    "line": 202,
     "export": "colors",
     "path": "ground.light.surface"
    },
@@ -3812,7 +3942,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ground.light.recessed",
@@ -3830,7 +3961,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 205,
+    "line": 203,
     "export": "colors",
     "path": "ground.light.recessed"
    },
@@ -3842,7 +3973,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ground.dark.window",
@@ -3860,7 +3992,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 208,
+    "line": 206,
     "export": "colors",
     "path": "ground.dark.window"
    },
@@ -3872,7 +4004,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ground.dark.surface",
@@ -3890,7 +4023,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 209,
+    "line": 207,
     "export": "colors",
     "path": "ground.dark.surface"
    },
@@ -3902,7 +4035,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ground.dark.recessed",
@@ -3920,7 +4054,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 210,
+    "line": 208,
     "export": "colors",
     "path": "ground.dark.recessed"
    },
@@ -3932,7 +4066,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ink.light.primary",
@@ -3950,7 +4085,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 215,
+    "line": 213,
     "export": "colors",
     "path": "ink.light.primary"
    },
@@ -3962,7 +4097,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ink.light.secondary",
@@ -3980,7 +4116,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 216,
+    "line": 214,
     "export": "colors",
     "path": "ink.light.secondary"
    },
@@ -3992,7 +4128,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ink.light.tertiary",
@@ -4010,7 +4147,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 217,
+    "line": 215,
     "export": "colors",
     "path": "ink.light.tertiary"
    },
@@ -4022,7 +4159,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ink.dark.primary",
@@ -4040,7 +4178,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 220,
+    "line": 218,
     "export": "colors",
     "path": "ink.dark.primary"
    },
@@ -4052,7 +4190,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ink.dark.secondary",
@@ -4070,7 +4209,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 221,
+    "line": 219,
     "export": "colors",
     "path": "ink.dark.secondary"
    },
@@ -4082,7 +4221,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.ink.dark.tertiary",
@@ -4100,7 +4240,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 222,
+    "line": 220,
     "export": "colors",
     "path": "ink.dark.tertiary"
    },
@@ -4112,7 +4252,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.background.primary",
@@ -4131,7 +4272,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 231,
+    "line": 229,
     "export": "semanticColors",
     "path": "background.primary"
    },
@@ -4144,7 +4285,8 @@
     "relation": "differs",
     "org": "--color-background-primary",
     "note": "legacy chrome ground (header, stage) still on the org-era values (creator rgb(255, 255, 255) / rgb(10, 10, 14); org #F5F5F5 / #0A0D0E)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.background.tertiary",
@@ -4163,7 +4305,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 232,
+    "line": 230,
     "export": "semanticColors",
     "path": "background.tertiary"
    },
@@ -4176,7 +4318,8 @@
     "relation": "differs",
     "org": "--color-background-tertiary",
     "note": "legacy chrome tertiary (creator rgb(235, 235, 235) / rgb(33, 33, 39); org #EBEBEB / #1B2326)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.action.primary",
@@ -4194,7 +4337,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 235,
+    "line": 233,
     "export": "semanticColors",
     "path": "action.primary"
    },
@@ -4207,7 +4350,8 @@
     "relation": "differs",
     "org": "--color-accent-teal",
     "note": "legacy Airtime teal action (light org value is the darker #1A7580, which creator keeps as action.secondary) (creator rgb(121, 221, 232); org #1A7580 / #79DDE8)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.action.secondary",
@@ -4225,7 +4369,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 236,
+    "line": 234,
     "export": "semanticColors",
     "path": "action.secondary"
    },
@@ -4238,7 +4382,8 @@
     "relation": "differs",
     "org": "--color-accent-teal",
     "note": "teal, light-theme variant of the org accent (creator rgb(26, 117, 128); org #1A7580 / #79DDE8)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.action.destructive",
@@ -4257,7 +4402,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 237,
+    "line": 235,
     "export": "semanticColors",
     "path": "action.destructive"
    },
@@ -4270,7 +4415,8 @@
     "relation": "differs",
     "org": "--color-accent-destructive",
     "note": "destructive red; creator uses #ff715c/#ff7661, org #D6402F/#FF6D4C (creator rgb(255, 113, 92) / rgb(255, 118, 97); org #D6402F / #FF6D4C)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.slide.badge",
@@ -4288,7 +4434,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 240,
+    "line": 238,
     "export": "semanticColors",
     "path": "slide.badge"
    },
@@ -4300,7 +4446,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.device.off",
@@ -4318,7 +4465,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 242,
+    "line": 240,
     "export": "semanticColors",
     "path": "device.off"
    },
@@ -4330,7 +4477,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.status.live",
@@ -4348,7 +4496,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 244,
+    "line": 242,
     "export": "semanticColors",
     "path": "status.live"
    },
@@ -4360,7 +4508,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.status.liveText",
@@ -4379,7 +4528,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 245,
+    "line": 243,
     "export": "semanticColors",
     "path": "status.liveText"
    },
@@ -4391,7 +4540,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.status.liveFill",
@@ -4409,7 +4559,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 246,
+    "line": 244,
     "export": "semanticColors",
     "path": "status.liveFill"
    },
@@ -4421,7 +4571,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.header.ground",
@@ -4439,7 +4590,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 250,
+    "line": 248,
     "export": "semanticColors",
     "path": "header.ground"
    },
@@ -4451,7 +4602,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.header.titleHover",
@@ -4470,7 +4622,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 251,
+    "line": 249,
     "export": "semanticColors",
     "path": "header.titleHover"
    },
@@ -4482,7 +4634,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.header.titleBorder",
@@ -4501,7 +4654,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 252,
+    "line": 250,
     "export": "semanticColors",
     "path": "header.titleBorder"
    },
@@ -4513,7 +4666,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.header.historyHover",
@@ -4532,7 +4686,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 253,
+    "line": 251,
     "export": "semanticColors",
     "path": "header.historyHover"
    },
@@ -4544,7 +4698,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.splitPicker.content",
@@ -4562,7 +4717,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 256,
+    "line": 254,
     "export": "semanticColors",
     "path": "splitPicker.content"
    },
@@ -4574,7 +4729,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.splitPicker.footer",
@@ -4592,7 +4748,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 257,
+    "line": 255,
     "export": "semanticColors",
     "path": "splitPicker.footer"
    },
@@ -4604,7 +4760,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.bg",
@@ -4623,7 +4780,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 261,
+    "line": 259,
     "export": "semanticColors",
     "path": "bg.DEFAULT"
    },
@@ -4636,7 +4793,8 @@
     "relation": "differs",
     "org": "--color-background-primary",
     "note": "window ground; org is a teal-tinted near-black/#F5F5F5, creator is neutral macOS grey (creator rgb(233, 233, 236) / rgb(19, 19, 21); org #F5F5F5 / #0A0D0E)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.bg.panel",
@@ -4655,7 +4813,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 262,
+    "line": 260,
     "export": "semanticColors",
     "path": "bg.panel"
    },
@@ -4668,7 +4826,8 @@
     "relation": "differs",
     "org": "--color-background-secondary",
     "note": "content surface (creator rgb(255, 255, 255) / rgb(30, 30, 32); org #FFFFFF / #12181A)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.bg.subtle",
@@ -4687,7 +4846,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 263,
+    "line": 261,
     "export": "semanticColors",
     "path": "bg.subtle"
    },
@@ -4700,7 +4859,8 @@
     "relation": "differs",
     "org": "--color-background-tertiary",
     "note": "recessed well (creator rgb(241, 241, 244) / rgb(37, 37, 40); org #EBEBEB / #1B2326)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.bg.muted",
@@ -4719,7 +4879,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 264,
+    "line": 262,
     "export": "semanticColors",
     "path": "bg.muted"
    },
@@ -4731,7 +4891,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.bg.emphasized",
@@ -4750,7 +4911,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 265,
+    "line": 263,
     "export": "semanticColors",
     "path": "bg.emphasized"
    },
@@ -4762,7 +4923,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.bg.inverted",
@@ -4781,7 +4943,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 266,
+    "line": 264,
     "export": "semanticColors",
     "path": "bg.inverted"
    },
@@ -4793,7 +4955,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.content.accent",
@@ -4811,7 +4974,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 270,
+    "line": 268,
     "export": "semanticColors",
     "path": "content.accent"
    },
@@ -4823,7 +4986,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.content.primary",
@@ -4842,7 +5006,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 271,
+    "line": 269,
     "export": "semanticColors",
     "path": "content.primary"
    },
@@ -4855,7 +5019,8 @@
     "relation": "differs",
     "org": "--color-content-primary",
     "note": "primary ink; creator is pure black/white, org is #000E14 / white (creator rgb(0, 0, 0) / rgb(255, 255, 255); org #000E14 / #FFFFFF)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.content.secondary",
@@ -4874,7 +5039,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 272,
+    "line": 270,
     "export": "semanticColors",
     "path": "content.secondary"
    },
@@ -4887,7 +5052,8 @@
     "relation": "differs",
     "org": "--color-content-secondary",
     "note": "secondary ink (creator rgb(60, 60, 67) / rgb(235, 235, 245); org #383D3D / #D2D5D6)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.content.tertiary",
@@ -4906,7 +5072,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 273,
+    "line": 271,
     "export": "semanticColors",
     "path": "content.tertiary"
    },
@@ -4919,7 +5085,8 @@
     "relation": "differs",
     "org": "--color-content-tertiary",
     "note": "tertiary ink (creator rgb(110, 110, 115) / rgb(171, 171, 178); org #646666 / #B0B1B2)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.text.1",
@@ -4938,7 +5105,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 277,
+    "line": 275,
     "export": "semanticColors",
     "path": "text.1"
    },
@@ -4950,7 +5117,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.text.2",
@@ -4969,7 +5137,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 278,
+    "line": 276,
     "export": "semanticColors",
     "path": "text.2"
    },
@@ -4981,7 +5149,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.text.3",
@@ -5000,7 +5169,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 279,
+    "line": 277,
     "export": "semanticColors",
     "path": "text.3"
    },
@@ -5012,7 +5181,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.text.4",
@@ -5031,7 +5201,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 280,
+    "line": 278,
     "export": "semanticColors",
     "path": "text.4"
    },
@@ -5043,7 +5213,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.text.5",
@@ -5062,7 +5233,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 281,
+    "line": 279,
     "export": "semanticColors",
     "path": "text.5"
    },
@@ -5074,7 +5245,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.text.6",
@@ -5093,7 +5265,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 282,
+    "line": 280,
     "export": "semanticColors",
     "path": "text.6"
    },
@@ -5105,7 +5277,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.fg",
@@ -5123,7 +5296,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 285,
+    "line": 283,
     "export": "semanticColors",
     "path": "fg.DEFAULT"
    },
@@ -5135,7 +5308,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.fg.muted",
@@ -5153,7 +5327,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 286,
+    "line": 284,
     "export": "semanticColors",
     "path": "fg.muted"
    },
@@ -5165,7 +5339,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.fg.subtle",
@@ -5183,7 +5358,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 287,
+    "line": 285,
     "export": "semanticColors",
     "path": "fg.subtle"
    },
@@ -5195,7 +5370,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.fg.inverted",
@@ -5214,7 +5390,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 288,
+    "line": 286,
     "export": "semanticColors",
     "path": "fg.inverted"
    },
@@ -5226,7 +5402,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.line",
@@ -5245,7 +5422,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 292,
+    "line": 290,
     "export": "semanticColors",
     "path": "line.DEFAULT"
    },
@@ -5257,7 +5434,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.line.strong",
@@ -5276,7 +5454,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 293,
+    "line": 291,
     "export": "semanticColors",
     "path": "line.strong"
    },
@@ -5288,7 +5466,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.line.strongest",
@@ -5307,7 +5486,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 294,
+    "line": 292,
     "export": "semanticColors",
     "path": "line.strongest"
    },
@@ -5319,7 +5498,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.border",
@@ -5337,7 +5517,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 297,
+    "line": 295,
     "export": "semanticColors",
     "path": "border.DEFAULT"
    },
@@ -5349,7 +5529,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.border.muted",
@@ -5367,7 +5548,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 298,
+    "line": 296,
     "export": "semanticColors",
     "path": "border.muted"
    },
@@ -5379,7 +5560,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.border.subtle",
@@ -5397,7 +5579,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 299,
+    "line": 297,
     "export": "semanticColors",
     "path": "border.subtle"
    },
@@ -5409,7 +5591,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.border.emphasized",
@@ -5427,7 +5610,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 300,
+    "line": 298,
     "export": "semanticColors",
     "path": "border.emphasized"
    },
@@ -5439,7 +5622,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.border.inverted",
@@ -5458,7 +5642,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 301,
+    "line": 299,
     "export": "semanticColors",
     "path": "border.inverted"
    },
@@ -5470,7 +5654,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.state.dropIndicator",
@@ -5488,7 +5673,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 304,
+    "line": 302,
     "export": "semanticColors",
     "path": "state.dropIndicator"
    },
@@ -5500,7 +5685,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.state.hover",
@@ -5519,7 +5705,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 305,
+    "line": 303,
     "export": "semanticColors",
     "path": "state.hover"
    },
@@ -5532,7 +5718,8 @@
     "relation": "differs",
     "org": "--color-highlight-secondary",
     "note": "hover wash; creator 5.5%/8%, org 4%/16% (creator rgba(0, 0, 0, 0.055) / rgba(255, 255, 255, 0.08); org #0000000A / #FFFFFF29)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.state.active",
@@ -5551,7 +5738,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 306,
+    "line": 304,
     "export": "semanticColors",
     "path": "state.active"
    },
@@ -5564,7 +5751,8 @@
     "relation": "differs",
     "org": "--color-highlight-primary",
     "note": "active wash; creator 10%/13%, org 8%/8% (creator rgba(0, 0, 0, 0.1) / rgba(255, 255, 255, 0.13); org #00000014 / #FFFFFF14)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.state.activeStrong",
@@ -5583,7 +5771,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 307,
+    "line": 305,
     "export": "semanticColors",
     "path": "state.activeStrong"
    },
@@ -5595,7 +5783,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.state.selected",
@@ -5614,7 +5803,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 310,
+    "line": 308,
     "export": "semanticColors",
     "path": "state.selected"
    },
@@ -5626,7 +5815,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.dash",
@@ -5645,7 +5835,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 312,
+    "line": 310,
     "export": "semanticColors",
     "path": "dash"
    },
@@ -5657,7 +5847,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.highlight.primary",
@@ -5676,7 +5867,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 314,
+    "line": 312,
     "export": "semanticColors",
     "path": "highlight.primary"
    },
@@ -5689,7 +5880,8 @@
     "relation": "differs",
     "org": "--color-highlight-primary",
     "note": "legacy highlight token (creator rgba(0, 0, 0, 0.07) / rgba(255, 255, 255, 0.08); org #00000014 / #FFFFFF14)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.highlight.secondary",
@@ -5708,7 +5900,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 315,
+    "line": 313,
     "export": "semanticColors",
     "path": "highlight.secondary"
    },
@@ -5721,7 +5913,8 @@
     "relation": "differs",
     "org": "--color-highlight-secondary",
     "note": "legacy highlight token (creator rgba(0, 0, 0, 0.04) / rgba(255, 255, 255, 0.04); org #0000000A / #FFFFFF29)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.edge.out",
@@ -5740,7 +5933,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 319,
+    "line": 317,
     "export": "semanticColors",
     "path": "edge.out"
    },
@@ -5752,7 +5945,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.edge.in",
@@ -5771,7 +5965,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 320,
+    "line": 318,
     "export": "semanticColors",
     "path": "edge.in"
    },
@@ -5783,7 +5977,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.mat.menu",
@@ -5802,7 +5997,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 324,
+    "line": 322,
     "export": "semanticColors",
     "path": "mat.menu"
    },
@@ -5814,7 +6009,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.mat.menuSolid",
@@ -5833,7 +6029,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 325,
+    "line": 323,
     "export": "semanticColors",
     "path": "mat.menuSolid"
    },
@@ -5845,7 +6041,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.mat.hud",
@@ -5864,7 +6061,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 326,
+    "line": 324,
     "export": "semanticColors",
     "path": "mat.hud"
    },
@@ -5876,7 +6073,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.mat.sheet",
@@ -5895,7 +6093,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 327,
+    "line": 325,
     "export": "semanticColors",
     "path": "mat.sheet"
    },
@@ -5907,7 +6105,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.mat.sidebar",
@@ -5926,7 +6125,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 328,
+    "line": 326,
     "export": "semanticColors",
     "path": "mat.sidebar"
    },
@@ -5938,7 +6137,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.scrim",
@@ -5957,7 +6157,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 331,
+    "line": 329,
     "export": "semanticColors",
     "path": "scrim.DEFAULT"
    },
@@ -5969,7 +6169,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.scrim.modal",
@@ -5988,7 +6189,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 333,
+    "line": 331,
     "export": "semanticColors",
     "path": "scrim.modal"
    },
@@ -6000,7 +6201,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.overlay",
@@ -6019,7 +6221,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 335,
+    "line": 333,
     "export": "semanticColors",
     "path": "overlay"
    },
@@ -6031,7 +6233,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.surface.raised",
@@ -6049,7 +6252,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 337,
+    "line": 335,
     "export": "semanticColors",
     "path": "surface.raised"
    },
@@ -6061,7 +6264,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.surface.inset",
@@ -6080,7 +6284,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 338,
+    "line": 336,
     "export": "semanticColors",
     "path": "surface.inset"
    },
@@ -6092,7 +6296,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.wire.1",
@@ -6111,7 +6316,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 342,
+    "line": 340,
     "export": "semanticColors",
     "path": "wire.1"
    },
@@ -6123,7 +6328,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.wire.2",
@@ -6142,7 +6348,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 343,
+    "line": 341,
     "export": "semanticColors",
     "path": "wire.2"
    },
@@ -6154,7 +6360,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.wire.3",
@@ -6173,7 +6380,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 344,
+    "line": 342,
     "export": "semanticColors",
     "path": "wire.3"
    },
@@ -6185,7 +6392,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.wire.void",
@@ -6204,7 +6412,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 345,
+    "line": 343,
     "export": "semanticColors",
     "path": "wire.void"
    },
@@ -6216,7 +6424,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.accent.solid",
@@ -6235,7 +6444,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 349,
+    "line": 347,
     "export": "semanticColors",
     "path": "accent.solid"
    },
@@ -6247,7 +6456,8 @@
    "org": {
     "relation": "creator-only",
     "note": "org accent is teal (#79DDE8 / #1A7580); creator's selection accent is macOS system blue, spent only on selection, focus and on"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.accent.hover",
@@ -6266,7 +6476,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 305,
+    "line": 303,
     "export": "semanticColors",
     "path": "accent.hover"
    },
@@ -6278,7 +6488,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.accent.contrast",
@@ -6297,7 +6508,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 351,
+    "line": 349,
     "export": "semanticColors",
     "path": "accent.contrast"
    },
@@ -6309,7 +6520,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.accent.fg",
@@ -6328,7 +6540,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 284,
+    "line": 282,
     "export": "semanticColors",
     "path": "accent.fg"
    },
@@ -6340,7 +6552,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.accent.subtle",
@@ -6359,7 +6572,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 287,
+    "line": 285,
     "export": "semanticColors",
     "path": "accent.subtle"
    },
@@ -6371,7 +6584,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.accent.muted",
@@ -6390,7 +6604,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 286,
+    "line": 284,
     "export": "semanticColors",
     "path": "accent.muted"
    },
@@ -6402,7 +6616,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.accent.emphasized",
@@ -6421,7 +6636,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 300,
+    "line": 298,
     "export": "semanticColors",
     "path": "accent.emphasized"
    },
@@ -6433,7 +6648,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.accent.focusRing",
@@ -6452,7 +6668,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 362,
+    "line": 360,
     "export": "semanticColors",
     "path": "accent.focusRing"
    },
@@ -6464,7 +6680,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.danger.solid",
@@ -6483,7 +6700,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 366,
+    "line": 364,
     "export": "semanticColors",
     "path": "danger.solid"
    },
@@ -6496,7 +6713,8 @@
     "relation": "differs",
     "org": "--color-accent-destructive",
     "note": "system red for recording/destruction; org destructive is warmer (creator rgb(215, 0, 21) / rgb(255, 79, 66); org #D6402F / #FF6D4C)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.danger.hover",
@@ -6515,7 +6733,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 367,
+    "line": 365,
     "export": "semanticColors",
     "path": "danger.hover"
    },
@@ -6527,7 +6745,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.danger.contrast",
@@ -6545,7 +6764,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 371,
+    "line": 369,
     "export": "semanticColors",
     "path": "danger.contrast"
    },
@@ -6557,7 +6776,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.danger.fg",
@@ -6576,7 +6796,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 372,
+    "line": 370,
     "export": "semanticColors",
     "path": "danger.fg"
    },
@@ -6588,7 +6808,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.danger.subtle",
@@ -6607,7 +6828,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 373,
+    "line": 371,
     "export": "semanticColors",
     "path": "danger.subtle"
    },
@@ -6619,7 +6840,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.danger.muted",
@@ -6638,7 +6860,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 377,
+    "line": 375,
     "export": "semanticColors",
     "path": "danger.muted"
    },
@@ -6650,7 +6872,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.danger.emphasized",
@@ -6669,7 +6892,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 381,
+    "line": 379,
     "export": "semanticColors",
     "path": "danger.emphasized"
    },
@@ -6681,7 +6904,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.danger.focusRing",
@@ -6700,7 +6924,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 385,
+    "line": 383,
     "export": "semanticColors",
     "path": "danger.focusRing"
    },
@@ -6712,7 +6936,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.gray.solid",
@@ -6730,7 +6955,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 390,
+    "line": 388,
     "export": "semanticColors",
     "path": "gray.solid"
    },
@@ -6742,7 +6967,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.gray.hover",
@@ -6760,7 +6986,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 391,
+    "line": 389,
     "export": "semanticColors",
     "path": "gray.hover"
    },
@@ -6772,7 +6998,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.gray.contrast",
@@ -6790,7 +7017,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 392,
+    "line": 390,
     "export": "semanticColors",
     "path": "gray.contrast"
    },
@@ -6802,7 +7029,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.gray.fg",
@@ -6820,7 +7048,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 393,
+    "line": 391,
     "export": "semanticColors",
     "path": "gray.fg"
    },
@@ -6832,7 +7060,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.gray.subtle",
@@ -6850,7 +7079,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 394,
+    "line": 392,
     "export": "semanticColors",
     "path": "gray.subtle"
    },
@@ -6862,7 +7091,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.gray.muted",
@@ -6880,7 +7110,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 395,
+    "line": 393,
     "export": "semanticColors",
     "path": "gray.muted"
    },
@@ -6892,7 +7122,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.gray.emphasized",
@@ -6910,7 +7141,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 396,
+    "line": 394,
     "export": "semanticColors",
     "path": "gray.emphasized"
    },
@@ -6922,7 +7153,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.gray.focusRing",
@@ -6940,7 +7172,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 397,
+    "line": 395,
     "export": "semanticColors",
     "path": "gray.focusRing"
    },
@@ -6952,7 +7184,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.focusRing",
@@ -6970,7 +7203,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 362,
+    "line": 360,
     "export": "semanticColors",
     "path": "focusRing"
    },
@@ -6982,7 +7215,8 @@
    "org": {
     "relation": "creator-only",
     "note": "org has no focus-ring colour token"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.selectionSwatch",
@@ -7000,7 +7234,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 405,
+    "line": 402,
     "export": "semanticShadows",
     "path": "selectionSwatch"
    },
@@ -7012,7 +7246,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.selectionSwatchSelected",
@@ -7030,7 +7265,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 406,
+    "line": 402,
     "export": "semanticShadows",
     "path": "selectionSwatchSelected"
    },
@@ -7042,7 +7277,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.selectionBar",
@@ -7060,7 +7296,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 409,
+    "line": 403,
     "export": "semanticShadows",
     "path": "selectionBar"
    },
@@ -7072,7 +7308,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.selectionMenu",
@@ -7090,7 +7327,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 413,
+    "line": 407,
     "export": "semanticShadows",
     "path": "selectionMenu"
    },
@@ -7102,7 +7339,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.trayConsole",
@@ -7120,7 +7358,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 417,
+    "line": 411,
     "export": "semanticShadows",
     "path": "trayConsole"
    },
@@ -7132,7 +7370,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.bandPill",
@@ -7150,7 +7389,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 421,
+    "line": 415,
     "export": "semanticShadows",
     "path": "bandPill"
    },
@@ -7162,7 +7401,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.placeholder",
@@ -7180,7 +7420,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 422,
+    "line": 416,
     "export": "semanticShadows",
     "path": "placeholder"
    },
@@ -7192,7 +7432,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.caption",
@@ -7210,7 +7451,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 423,
+    "line": 417,
     "export": "semanticShadows",
     "path": "caption"
    },
@@ -7222,7 +7463,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.sidebar",
@@ -7240,7 +7482,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 424,
+    "line": 418,
     "export": "semanticShadows",
     "path": "sidebar"
    },
@@ -7252,7 +7494,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.inputWrapper",
@@ -7270,7 +7513,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 425,
+    "line": 419,
     "export": "semanticShadows",
     "path": "inputWrapper"
    },
@@ -7282,7 +7525,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.topBar",
@@ -7300,7 +7544,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 428,
+    "line": 422,
     "export": "semanticShadows",
     "path": "topBar"
    },
@@ -7312,7 +7556,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.avatar",
@@ -7330,7 +7575,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 429,
+    "line": 423,
     "export": "semanticShadows",
     "path": "avatar"
    },
@@ -7342,7 +7587,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.avatarHover",
@@ -7361,7 +7607,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 430,
+    "line": 424,
     "export": "semanticShadows",
     "path": "avatarHover"
    },
@@ -7373,7 +7619,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.segmentTrack",
@@ -7391,7 +7638,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 431,
+    "line": 425,
     "export": "semanticShadows",
     "path": "segmentTrack"
    },
@@ -7403,7 +7650,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.segmentThumb",
@@ -7421,7 +7669,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 432,
+    "line": 426,
     "export": "semanticShadows",
     "path": "segmentThumb"
    },
@@ -7433,7 +7681,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.sm",
@@ -7452,7 +7701,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 436,
+    "line": 430,
     "export": "semanticShadows",
     "path": "sm"
    },
@@ -7465,7 +7714,8 @@
     "relation": "differs",
     "org": "--shadow-small",
     "note": "small elevation; creator adds a 0.5px edge hairline (creator rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px / rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px; org 0px 1px 3px 0px #00000014 / 0px 1px 3px 0px #0000003D)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.md",
@@ -7484,7 +7734,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 440,
+    "line": 434,
     "export": "semanticShadows",
     "path": "md"
    },
@@ -7497,7 +7747,8 @@
     "relation": "differs",
     "org": "--shadow-medium",
     "note": "medium elevation (creator rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 8px 22px 0px / rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 2px 6px 0px, rgba(0, 0, 0, 0.48) 0px 10px 28px 0px; org 0px 4px 12px 0px #00000029 / 0px 4px 12px 0px #0000007A)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.lg",
@@ -7516,7 +7767,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 444,
+    "line": 438,
     "export": "semanticShadows",
     "path": "lg"
    },
@@ -7529,7 +7780,8 @@
     "relation": "differs",
     "org": "--shadow-large",
     "note": "large elevation (creator rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px / rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px; org 0px 8px 24px 0px #0000003D / 0px 8px 24px 0px #000000B8)"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.up",
@@ -7548,7 +7800,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 449,
+    "line": 443,
     "export": "semanticShadows",
     "path": "up"
    },
@@ -7560,7 +7812,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.edge",
@@ -7578,7 +7831,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 454,
+    "line": 448,
     "export": "semanticShadows",
     "path": "edge"
    },
@@ -7590,7 +7843,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.menu",
@@ -7609,7 +7863,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 456,
+    "line": 450,
     "export": "semanticShadows",
     "path": "menu"
    },
@@ -7621,7 +7875,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.sheet",
@@ -7639,7 +7894,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 461,
+    "line": 455,
     "export": "semanticShadows",
     "path": "sheet"
    },
@@ -7651,7 +7906,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.tooltip",
@@ -7670,7 +7926,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 465,
+    "line": 459,
     "export": "semanticShadows",
     "path": "tooltip"
    },
@@ -7682,7 +7938,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.focus",
@@ -7700,7 +7957,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 467,
+    "line": 461,
     "export": "semanticShadows",
     "path": "focus"
    },
@@ -7712,7 +7969,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.focusInset",
@@ -7730,7 +7988,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 472,
+    "line": 466,
     "export": "semanticShadows",
     "path": "focusInset"
    },
@@ -7742,7 +8000,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.buttonSolid",
@@ -7760,7 +8019,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 474,
+    "line": 468,
     "export": "semanticShadows",
     "path": "buttonSolid"
    },
@@ -7772,7 +8031,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.buttonSecondary",
@@ -7790,7 +8050,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 477,
+    "line": 471,
     "export": "semanticShadows",
     "path": "buttonSecondary"
    },
@@ -7802,7 +8062,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "gradient.window",
@@ -7820,7 +8081,7 @@
    },
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
-    "line": 482,
+    "line": 476,
     "export": "semanticGradients",
     "path": "window"
    },
@@ -7829,7 +8090,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no counterpart in airtime-design-system tokens"
-   }
+   },
+   "alias": null
   },
   {
    "id": "font-weight.bold",
@@ -7859,7 +8121,8 @@
     "relation": "same",
     "org": "--font-weight-bold",
     "note": "value 700 equals org --font-weight-bold"
-   }
+   },
+   "alias": "--font-weight-bold"
   },
   {
    "id": "font-weight.medium",
@@ -7889,7 +8152,8 @@
     "relation": "same",
     "org": "--font-weight-medium",
     "note": "value 500 equals org --font-weight-medium"
-   }
+   },
+   "alias": "--font-weight-medium"
   },
   {
    "id": "font-weight.normal",
@@ -7919,7 +8183,8 @@
     "relation": "same",
     "org": "--font-weight-regular",
     "note": "value 400 equals org --font-weight-regular"
-   }
+   },
+   "alias": "--font-weight-regular"
   },
   {
    "id": "font-weight.semibold",
@@ -7949,7 +8214,8 @@
     "relation": "same",
     "org": "--font-weight-semibold",
     "note": "value 600 equals org --font-weight-semibold"
-   }
+   },
+   "alias": "--font-weight-semibold"
   },
   {
    "id": "space.0.5",
@@ -7979,7 +8245,8 @@
     "relation": "same",
     "org": "--space-05",
     "note": "value 2px equals org --space-05"
-   }
+   },
+   "alias": "--space-05"
   },
   {
    "id": "space.1",
@@ -8009,7 +8276,8 @@
     "relation": "same",
     "org": "--space-10",
     "note": "value 4px equals org --space-10"
-   }
+   },
+   "alias": "--space-10"
   },
   {
    "id": "space.1.5",
@@ -8039,7 +8307,8 @@
     "relation": "same",
     "org": "--space-15",
     "note": "value 6px equals org --space-15"
-   }
+   },
+   "alias": "--space-15"
   },
   {
    "id": "space.10",
@@ -8069,7 +8338,8 @@
     "relation": "same",
     "org": "--space-100",
     "note": "value 40px equals org --space-100"
-   }
+   },
+   "alias": "--space-100"
   },
   {
    "id": "space.11",
@@ -8098,7 +8368,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 44px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.12",
@@ -8127,7 +8398,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 48px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.14",
@@ -8156,7 +8428,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 56px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.16",
@@ -8185,7 +8458,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 64px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.2",
@@ -8215,7 +8489,8 @@
     "relation": "same",
     "org": "--space-20",
     "note": "value 8px equals org --space-20"
-   }
+   },
+   "alias": "--space-20"
   },
   {
    "id": "space.2.5",
@@ -8244,7 +8519,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 10px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.20",
@@ -8273,7 +8549,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 80px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.24",
@@ -8302,7 +8579,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 96px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.28",
@@ -8331,7 +8609,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 112px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.3",
@@ -8361,7 +8640,8 @@
     "relation": "same",
     "org": "--space-30",
     "note": "value 12px equals org --space-30"
-   }
+   },
+   "alias": "--space-30"
   },
   {
    "id": "space.3.5",
@@ -8390,7 +8670,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 14px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.32",
@@ -8419,7 +8700,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 128px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.36",
@@ -8448,7 +8730,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 144px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.4",
@@ -8478,7 +8761,8 @@
     "relation": "same",
     "org": "--space-40",
     "note": "value 16px equals org --space-40"
-   }
+   },
+   "alias": "--space-40"
   },
   {
    "id": "space.4.5",
@@ -8507,7 +8791,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 18px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.40",
@@ -8536,7 +8821,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 160px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.44",
@@ -8565,7 +8851,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 176px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.48",
@@ -8594,7 +8881,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 192px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.5",
@@ -8623,7 +8911,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 20px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.52",
@@ -8652,7 +8941,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 208px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.56",
@@ -8681,7 +8971,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 224px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.6",
@@ -8711,7 +9002,8 @@
     "relation": "same",
     "org": "--space-60",
     "note": "value 24px equals org --space-60"
-   }
+   },
+   "alias": "--space-60"
   },
   {
    "id": "space.60",
@@ -8740,7 +9032,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 240px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.64",
@@ -8769,7 +9062,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 256px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.7",
@@ -8798,7 +9092,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 28px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "space.8",
@@ -8828,7 +9123,8 @@
     "relation": "same",
     "org": "--space-80",
     "note": "value 32px equals org --space-80"
-   }
+   },
+   "alias": "--space-80"
   },
   {
    "id": "space.9",
@@ -8857,7 +9153,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org space token has value 36px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.0.5",
@@ -8887,7 +9184,8 @@
     "relation": "same",
     "org": "--size-05",
     "note": "value 2px equals org --size-05"
-   }
+   },
+   "alias": "--size-05"
   },
   {
    "id": "size.1",
@@ -8917,7 +9215,8 @@
     "relation": "same",
     "org": "--size-10",
     "note": "value 4px equals org --size-10"
-   }
+   },
+   "alias": "--size-10"
   },
   {
    "id": "size.1.5",
@@ -8947,7 +9246,8 @@
     "relation": "same",
     "org": "--size-15",
     "note": "value 6px equals org --size-15"
-   }
+   },
+   "alias": "--size-15"
   },
   {
    "id": "size.10",
@@ -8977,7 +9277,8 @@
     "relation": "same",
     "org": "--size-100",
     "note": "value 40px equals org --size-100"
-   }
+   },
+   "alias": "--size-100"
   },
   {
    "id": "size.11",
@@ -9006,7 +9307,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 44px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.12",
@@ -9036,7 +9338,8 @@
     "relation": "same",
     "org": "--size-120",
     "note": "value 48px equals org --size-120"
-   }
+   },
+   "alias": "--size-120"
   },
   {
    "id": "size.14",
@@ -9066,7 +9369,8 @@
     "relation": "same",
     "org": "--size-140",
     "note": "value 56px equals org --size-140"
-   }
+   },
+   "alias": "--size-140"
   },
   {
    "id": "size.16",
@@ -9096,7 +9400,8 @@
     "relation": "same",
     "org": "--size-160",
     "note": "value 64px equals org --size-160"
-   }
+   },
+   "alias": "--size-160"
   },
   {
    "id": "size.2",
@@ -9126,7 +9431,8 @@
     "relation": "same",
     "org": "--size-20",
     "note": "value 8px equals org --size-20"
-   }
+   },
+   "alias": "--size-20"
   },
   {
    "id": "size.2.5",
@@ -9155,7 +9461,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 10px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.20",
@@ -9185,7 +9492,8 @@
     "relation": "same",
     "org": "--size-200",
     "note": "value 80px equals org --size-200"
-   }
+   },
+   "alias": "--size-200"
   },
   {
    "id": "size.24",
@@ -9214,7 +9522,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 96px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.28",
@@ -9243,7 +9552,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 112px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.3",
@@ -9273,7 +9583,8 @@
     "relation": "same",
     "org": "--size-30",
     "note": "value 12px equals org --size-30"
-   }
+   },
+   "alias": "--size-30"
   },
   {
    "id": "size.3.5",
@@ -9302,7 +9613,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 14px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.32",
@@ -9331,7 +9643,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 128px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.36",
@@ -9360,7 +9673,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 144px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.4",
@@ -9390,7 +9704,8 @@
     "relation": "same",
     "org": "--size-40",
     "note": "value 16px equals org --size-40"
-   }
+   },
+   "alias": "--size-40"
   },
   {
    "id": "size.4.5",
@@ -9419,7 +9734,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 18px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.40",
@@ -9448,7 +9764,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 160px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.44",
@@ -9477,7 +9794,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 176px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.48",
@@ -9506,7 +9824,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 192px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.5",
@@ -9536,7 +9855,8 @@
     "relation": "same",
     "org": "--size-50",
     "note": "value 20px equals org --size-50"
-   }
+   },
+   "alias": "--size-50"
   },
   {
    "id": "size.52",
@@ -9565,7 +9885,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 208px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.56",
@@ -9594,7 +9915,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 224px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.6",
@@ -9624,7 +9946,8 @@
     "relation": "same",
     "org": "--size-60",
     "note": "value 24px equals org --size-60"
-   }
+   },
+   "alias": "--size-60"
   },
   {
    "id": "size.60",
@@ -9653,7 +9976,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 240px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.64",
@@ -9682,7 +10006,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 256px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.7",
@@ -9712,7 +10037,8 @@
     "relation": "same",
     "org": "--size-70",
     "note": "value 28px equals org --size-70"
-   }
+   },
+   "alias": "--size-70"
   },
   {
    "id": "size.8",
@@ -9742,7 +10068,8 @@
     "relation": "same",
     "org": "--size-80",
     "note": "value 32px equals org --size-80"
-   }
+   },
+   "alias": "--size-80"
   },
   {
    "id": "size.9",
@@ -9771,7 +10098,8 @@
    "org": {
     "relation": "creator-only",
     "note": "no org size token has value 36px"
-   }
+   },
+   "alias": null
   },
   {
    "id": "opacity.disabled",
@@ -9804,7 +10132,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "opacity.dimmed",
@@ -9817,7 +10146,7 @@
    "desc": "A hidden layer's thumbnail fades.",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 80,
+    "line": null,
     "find": "opacity={dimmed ? 0.45 : 1}"
    },
    "chakra": null,
@@ -9837,7 +10166,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "opacity.locked-grip",
@@ -9850,7 +10180,7 @@
    "desc": "A locked layer's grip glyph.",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 122,
+    "line": null,
     "find": "opacity={locked ? 0.3 : 1}"
    },
    "chakra": null,
@@ -9870,7 +10200,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "font-size.sidebar",
@@ -9883,7 +10214,7 @@
    "desc": "Sidebar root type size, inherited by every descendant.",
    "source": {
     "file": "creator/sidebar/Sidebar.tsx",
-    "line": 36,
+    "line": 34,
     "find": "fontSize=\"12px\""
    },
    "chakra": null,
@@ -9903,7 +10234,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "line-height.sidebar",
@@ -9916,7 +10248,7 @@
    "desc": "Sidebar root line height: every 30px row is two of these.",
    "source": {
     "file": "creator/sidebar/Sidebar.tsx",
-    "line": 38,
+    "line": 36,
     "find": "lineHeight=\"15px\""
    },
    "chakra": null,
@@ -9934,7 +10266,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "letter-spacing.sidebar",
@@ -9947,7 +10280,7 @@
    "desc": "Sidebar root tracking (prototype computed -0.04px at 12px).",
    "source": {
     "file": "creator/sidebar/Sidebar.tsx",
-    "line": 39,
+    "line": 37,
     "find": "letterSpacing=\"-0.036px\""
    },
    "chakra": null,
@@ -9967,7 +10300,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.pill-fill",
@@ -9980,7 +10314,7 @@
    "desc": "Dropdown value pill: the same translucent lift in both themes.",
    "source": {
     "file": "ui/recipes/sidebarFieldRecipe.ts",
-    "line": 74,
+    "line": 76,
     "find": "bg: \"rgba(255, 255, 255, 0.12)\""
    },
    "chakra": null,
@@ -10001,7 +10335,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.swatch-ring-dot",
@@ -10014,7 +10349,7 @@
    "desc": "1px inset ring on tint dots and the color-well dot (white in both themes).",
    "source": {
     "file": "creator/sidebar/primitives/Swatches.tsx",
-    "line": 175,
+    "line": 176,
     "find": "\"inset 0 0 0 1px rgba(255, 255, 255, 0.24)\""
    },
    "chakra": null,
@@ -10035,7 +10370,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.swatch-ring-tile",
@@ -10048,7 +10384,7 @@
    "desc": "1px ring around background tiles.",
    "source": {
     "file": "creator/sidebar/primitives/Swatches.tsx",
-    "line": 176,
+    "line": 177,
     "find": "\"0 0 0 1px rgba(255, 255, 255, 0.16)\""
    },
    "chakra": null,
@@ -10069,7 +10405,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.swatch-none-slash",
@@ -10082,7 +10419,7 @@
    "desc": "The red diagonal of the empty (None) dot.",
    "source": {
     "file": "creator/sidebar/primitives/Swatches.tsx",
-    "line": 187,
+    "line": null,
     "find": "rgb(255, 69, 58)"
    },
    "chakra": null,
@@ -10103,7 +10440,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.swatch-none-fill",
@@ -10116,7 +10454,7 @@
    "desc": "Fill behind the None dot's slash.",
    "source": {
     "file": "creator/sidebar/primitives/Swatches.tsx",
-    "line": 188,
+    "line": null,
     "find": "bgColor: \"rgba(255, 255, 255, 0.08)\""
    },
    "chakra": null,
@@ -10137,7 +10475,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.chip-ground",
@@ -10150,7 +10489,7 @@
    "desc": "Drop-shadow preset chip: the miniature slide's ground (content, same in both themes).",
    "source": {
     "file": "creator/sidebar/primitives/Dropdown.tsx",
-    "line": 171,
+    "line": 175,
     "find": "bg=\"#E6E6EC\""
    },
    "chakra": null,
@@ -10171,7 +10510,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.checker-a",
@@ -10205,7 +10545,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.checker-b",
@@ -10239,7 +10580,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.thumb-selected-fill",
@@ -10252,7 +10594,7 @@
    "desc": "Thumb slot inside a selected (accent) list row.",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 78,
+    "line": null,
     "find": "rgba(255, 255, 255, 0.18)"
    },
    "chakra": null,
@@ -10273,7 +10615,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.thumb-selected-ring",
@@ -10286,7 +10629,7 @@
    "desc": "Thumb hairline inside a selected list row.",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 79,
+    "line": null,
     "find": "rgba(255, 255, 255, 0.3)"
    },
    "chakra": null,
@@ -10307,7 +10650,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.knob",
@@ -10320,7 +10664,7 @@
    "desc": "Slider and switch knobs are white in both themes.",
    "source": {
     "file": "creator/sidebar/primitives/SliderRow.tsx",
-    "line": 20,
+    "line": 21,
     "find": "bg: \"white\""
    },
    "chakra": null,
@@ -10341,7 +10685,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.sidebar-card",
@@ -10354,7 +10699,7 @@
    "desc": "The sidebar card itself: a 1px white hairline and a 20/40 drop. (The declared token shadow.sidebar is not what renders.)",
    "source": {
     "file": "creator/sidebar/Sidebar.tsx",
-    "line": 43,
+    "line": null,
     "find": "0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 40px"
    },
    "chakra": null,
@@ -10375,7 +10720,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.action-button",
@@ -10409,7 +10755,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.pill",
@@ -10422,7 +10769,7 @@
    "desc": "Dropdown value pill.",
    "source": {
     "file": "ui/recipes/sidebarFieldRecipe.ts",
-    "line": 75,
+    "line": 77,
     "find": "boxShadow: \"inset 0 0.5px 0 0 rgba(255, 255, 255, 0.16), 0 1px 2px"
    },
    "chakra": null,
@@ -10443,7 +10790,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.field-well",
@@ -10477,7 +10825,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.field-well-hover",
@@ -10511,7 +10860,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.field-focus",
@@ -10545,7 +10895,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.segment-track-sidebar",
@@ -10558,7 +10909,7 @@
    "desc": "Segmented and shape tracks: hairline ring and 1px inner drop.",
    "source": {
     "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-    "line": 8,
+    "line": null,
     "find": "const track ="
    },
    "chakra": null,
@@ -10579,7 +10930,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.popover",
@@ -10592,7 +10944,7 @@
    "desc": "Dropdown panel and color-well popover.",
    "source": {
     "file": "creator/sidebar/primitives/Dropdown.tsx",
-    "line": 100,
+    "line": 115,
     "find": "boxShadow=\"0 0 0 0.5px {colors.edge.out}, 0 8px 24px rgba(0, 0, 0, 0.45)\""
    },
    "chakra": null,
@@ -10613,7 +10965,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.popover-range",
@@ -10626,7 +10979,7 @@
    "desc": "Range popup under a value field.",
    "source": {
     "file": "creator/sidebar/primitives/SliderRow.tsx",
-    "line": 120,
+    "line": 135,
     "find": "0 8px 20px rgba(0, 0, 0, 0.45)"
    },
    "chakra": null,
@@ -10647,7 +11000,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.swatch-selected-tile",
@@ -10660,7 +11014,7 @@
    "desc": "Selected background tile: 2px accent ring.",
    "source": {
     "file": "creator/sidebar/primitives/Swatches.tsx",
-    "line": 129,
+    "line": 130,
     "find": "boxShadow: circle"
    },
    "chakra": null,
@@ -10681,7 +11035,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.swatch-selected-dot",
@@ -10694,7 +11049,7 @@
    "desc": "Selected tint dot: 2.5px accent ring outside a white inner hairline.",
    "source": {
     "file": "creator/sidebar/primitives/Swatches.tsx",
-    "line": 130,
+    "line": 131,
     "find": "0 0 0 2.5px {colors.accent.solid}"
    },
    "chakra": null,
@@ -10715,7 +11070,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.range-track",
@@ -10728,7 +11084,7 @@
    "desc": "Range slider track (4px, state.active fill).",
    "source": {
     "file": "creator/sidebar/primitives/SliderRow.tsx",
-    "line": 14,
+    "line": 15,
     "find": "inset 0 1px 1.5px rgba(0, 0, 0, 0.3)"
    },
    "chakra": null,
@@ -10749,7 +11105,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.range-thumb",
@@ -10762,7 +11119,7 @@
    "desc": "Range slider thumb (15px white).",
    "source": {
     "file": "creator/sidebar/primitives/SliderRow.tsx",
-    "line": 21,
+    "line": 22,
     "find": "0 0 0 0.5px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.38)"
    },
    "chakra": null,
@@ -10783,7 +11140,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.switch-track",
@@ -10796,7 +11154,7 @@
    "desc": "Switch track (30x18).",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 261,
+    "line": null,
     "find": "inset 0 1px 2px rgba(0, 0, 0, 0.1)"
    },
    "chakra": null,
@@ -10817,7 +11175,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.switch-knob",
@@ -10830,7 +11189,7 @@
    "desc": "Switch knob (14px white).",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 272,
+    "line": null,
     "find": "0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28)"
    },
    "chakra": null,
@@ -10851,7 +11210,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.thumb-ring",
@@ -10885,7 +11245,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.drop-before",
@@ -10898,7 +11259,7 @@
    "desc": "Layer drag: insertion line on a row's top edge (bottom: inset 0 -2px).",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 49,
+    "line": null,
     "find": "inset 0 2px 0 {colors.state.dropIndicator}"
    },
    "chakra": null,
@@ -10919,7 +11280,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.row",
@@ -10953,7 +11315,8 @@
    "org": {
     "relation": "creator-only",
     "note": "Org rows are 32px/40px (rows.css)."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.control",
@@ -10966,7 +11329,7 @@
    "desc": "Segment, value field, pill and tool height, 24px.",
    "source": {
     "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-    "line": 20,
+    "line": null,
     "find": "h: \"creator.sidebarControl\""
    },
    "chakra": null,
@@ -10986,7 +11349,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.icon-row",
@@ -11019,7 +11383,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.icon-action",
@@ -11052,7 +11417,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.icon-header",
@@ -11065,7 +11431,7 @@
    "desc": "Header toggle glyph: 16px.",
    "source": {
     "file": "creator/sidebar/primitives/IconToggle.tsx",
-    "line": 46,
+    "line": 44,
     "find": "size === \"back\" ? \"5\" : \"4\""
    },
    "chakra": null,
@@ -11085,7 +11451,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.icon-inline",
@@ -11098,7 +11465,7 @@
    "desc": "Layer-row eye/lock glyph: 14px.",
    "source": {
     "file": "creator/sidebar/primitives/IconToggle.tsx",
-    "line": 46,
+    "line": 44,
     "find": "inline ? \"3.5\""
    },
    "chakra": null,
@@ -11118,7 +11485,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.icon-shape",
@@ -11131,7 +11499,7 @@
    "desc": "Shape segment glyph.",
    "source": {
     "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-    "line": 87,
+    "line": null,
     "find": "\"& svg\": { boxSize: \"22px\" }"
    },
    "chakra": null,
@@ -11151,7 +11519,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.icon-chevron",
@@ -11164,7 +11533,7 @@
    "desc": "Pill chevron: 9px.",
    "source": {
     "file": "ui/recipes/sidebarFieldRecipe.ts",
-    "line": 80,
+    "line": 82,
     "find": "\"& svg\": { boxSize: \"9px\""
    },
    "chakra": null,
@@ -11184,7 +11553,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.hit-header",
@@ -11197,7 +11567,7 @@
    "desc": "Header IconToggle box (back, hide, lock); 22px inline.",
    "source": {
     "file": "creator/sidebar/primitives/IconToggle.tsx",
-    "line": 34,
+    "line": 32,
     "find": "boxSize={inline ? \"22px\" : \"26px\"}"
    },
    "chakra": null,
@@ -11217,7 +11587,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.hit-inline",
@@ -11230,7 +11601,7 @@
    "desc": "Layer-row eye/lock box.",
    "source": {
     "file": "creator/sidebar/primitives/IconToggle.tsx",
-    "line": 34,
+    "line": 32,
     "find": "boxSize={inline ? \"22px\" : \"26px\"}"
    },
    "chakra": null,
@@ -11250,7 +11621,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.pane-header",
@@ -11263,7 +11635,7 @@
    "desc": "Pane header band: 44px.",
    "source": {
     "file": "ui/recipes/sidebarSectionSlotRecipe.ts",
-    "line": 122,
+    "line": 121,
     "find": "h: \"11\""
    },
    "chakra": null,
@@ -11283,7 +11655,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.thumb-row",
@@ -11296,7 +11669,7 @@
    "desc": "List row min height: 36px.",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 40,
+    "line": 29,
     "find": "minH=\"9\""
    },
    "chakra": null,
@@ -11316,7 +11689,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.thumb-w",
@@ -11329,7 +11703,7 @@
    "desc": "Row thumbnail slot: 48px wide.",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 74,
+    "line": 46,
     "find": "w=\"12\""
    },
    "chakra": null,
@@ -11349,7 +11723,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.thumb-h",
@@ -11362,7 +11737,7 @@
    "desc": "Row thumbnail slot: 28px tall.",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 75,
+    "line": 47,
     "find": "h=\"7\""
    },
    "chakra": null,
@@ -11382,7 +11757,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.color-dot",
@@ -11395,7 +11771,7 @@
    "desc": "Color-well dot: 20px.",
    "source": {
     "file": "creator/sidebar/primitives/ColorWellRow.tsx",
-    "line": 79,
+    "line": 53,
     "find": "boxSize=\"5\""
    },
    "chakra": null,
@@ -11415,7 +11791,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.tint-dot",
@@ -11428,7 +11805,7 @@
    "desc": "Tint dot in a swatch grid: 24px.",
    "source": {
     "file": "creator/sidebar/primitives/Swatches.tsx",
-    "line": 112,
+    "line": 113,
     "find": "w={circle ? \"6\""
    },
    "chakra": null,
@@ -11448,7 +11825,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.switch-w",
@@ -11461,7 +11839,7 @@
    "desc": "Switch track width (hit box 34x26).",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 257,
+    "line": null,
     "find": "w=\"30px\""
    },
    "chakra": null,
@@ -11481,7 +11859,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.switch-h",
@@ -11494,7 +11873,7 @@
    "desc": "Switch track height.",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 258,
+    "line": null,
     "find": "h=\"18px\""
    },
    "chakra": null,
@@ -11514,7 +11893,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.switch-knob",
@@ -11527,7 +11907,7 @@
    "desc": "Switch knob.",
    "source": {
     "file": "creator/sidebar/primitives/ThumbRow.tsx",
-    "line": 269,
+    "line": null,
     "find": "boxSize=\"14px\""
    },
    "chakra": null,
@@ -11547,7 +11927,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.range-thumb",
@@ -11560,7 +11941,7 @@
    "desc": "Range thumb.",
    "source": {
     "file": "creator/sidebar/primitives/SliderRow.tsx",
-    "line": 18,
+    "line": 19,
     "find": "boxSize: \"15px\""
    },
    "chakra": null,
@@ -11580,7 +11961,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.range-track",
@@ -11593,7 +11975,7 @@
    "desc": "Range track height.",
    "source": {
     "file": "creator/sidebar/primitives/SliderRow.tsx",
-    "line": 11,
+    "line": 12,
     "find": "height: \"4px\""
    },
    "chakra": null,
@@ -11613,7 +11995,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.popup-range-w",
@@ -11626,7 +12009,7 @@
    "desc": "Range popup width.",
    "source": {
     "file": "creator/sidebar/primitives/SliderRow.tsx",
-    "line": 110,
+    "line": 125,
     "find": "w=\"250px\""
    },
    "chakra": null,
@@ -11646,7 +12029,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.popup-color-w",
@@ -11659,7 +12043,7 @@
    "desc": "Color-well popover width: 240px.",
    "source": {
     "file": "creator/sidebar/primitives/ColorWellRow.tsx",
-    "line": 91,
+    "line": 65,
     "find": "w=\"60\""
    },
    "chakra": null,
@@ -11679,7 +12063,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.popup-grid-col",
@@ -11692,7 +12077,7 @@
    "desc": "Dropdown grid panel: three 56px columns.",
    "source": {
     "file": "creator/sidebar/primitives/Dropdown.tsx",
-    "line": 107,
+    "line": 125,
     "find": "repeat(3, 56px)"
    },
    "chakra": null,
@@ -11712,7 +12097,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.popup-gutter",
@@ -11745,7 +12131,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.popup-edge",
@@ -11778,7 +12165,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.field-value-w",
@@ -11811,7 +12199,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.field-wide-w",
@@ -11824,7 +12213,7 @@
    "desc": "Wide value field (hex).",
    "source": {
     "file": "ui/recipes/sidebarFieldRecipe.ts",
-    "line": 55,
+    "line": 57,
     "find": "w: \"112px\""
    },
    "chakra": null,
@@ -11844,7 +12233,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "transition.control",
@@ -11857,7 +12247,7 @@
    "desc": "Segments, rows, fields: colour changes on 160ms settle.",
    "source": {
     "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-    "line": 34,
+    "line": null,
     "find": "transitionProperty: \"background, color\""
    },
    "chakra": null,
@@ -11875,7 +12265,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "transition.swatch",
@@ -11888,7 +12279,7 @@
    "desc": "Swatch hover scale and ring: 160ms spring.",
    "source": {
     "file": "creator/sidebar/primitives/Swatches.tsx",
-    "line": 115,
+    "line": 116,
     "find": "transitionTimingFunction=\"spring\""
    },
    "chakra": null,
@@ -11906,7 +12297,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.stage-frame",
@@ -11940,7 +12332,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.stage-guide-hit",
@@ -11974,7 +12367,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.stage-guide",
@@ -12008,7 +12402,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.stage-grid-fill",
@@ -12042,7 +12437,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.handle-fill",
@@ -12076,7 +12472,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "color.on-badge",
@@ -12110,7 +12507,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.handle",
@@ -12143,7 +12541,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "radius.handle",
@@ -12176,7 +12575,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "size.frame-width",
@@ -12209,7 +12609,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.handle",
@@ -12243,7 +12644,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "shadow.tile-action",
@@ -12256,7 +12658,7 @@
    "desc": "Slide tile edit/layers chip.",
    "source": {
     "file": "ui/recipes/slideTileSlotRecipe.ts",
-    "line": 93,
+    "line": null,
     "find": "0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px"
    },
    "chakra": null,
@@ -12277,7 +12679,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "opacity.disabled-button",
@@ -12290,7 +12693,7 @@
    "desc": "Disabled Button (and disabled menu item): heavier than the sidebar's 0.4.",
    "source": {
     "file": "ui/recipes/buttonRecipe.ts",
-    "line": 23,
+    "line": 42,
     "find": "_disabled: { opacity: 0.45"
    },
    "chakra": null,
@@ -12310,7 +12713,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "opacity.disabled-icon",
@@ -12323,7 +12727,7 @@
    "desc": "Disabled icon button (size xs: Undo/Redo).",
    "source": {
     "file": "ui/recipes/buttonRecipe.ts",
-    "line": 34,
+    "line": 53,
     "find": "opacity: 0.3, cursor"
    },
    "chakra": null,
@@ -12343,7 +12747,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "opacity.disabled-split",
@@ -12376,7 +12781,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   },
   {
    "id": "opacity.status-dot",
@@ -12409,7 +12815,8 @@
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."
-   }
+   },
+   "alias": null
   }
  ],
  "textStyles": [
@@ -12428,7 +12835,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 490
+    "line": 484
    }
   },
   {
@@ -12447,7 +12854,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 491
+    "line": 485
    }
   },
   {
@@ -12467,7 +12874,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 499
+    "line": 493
    }
   },
   {
@@ -12484,7 +12891,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 508
+    "line": 502
    }
   },
   {
@@ -12501,7 +12908,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 509
+    "line": 503
    }
   },
   {
@@ -12521,7 +12928,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 510
+    "line": 504
    }
   },
   {
@@ -12540,7 +12947,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 518
+    "line": 512
    }
   },
   {
@@ -12559,7 +12966,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 519
+    "line": 513
    }
   },
   {
@@ -12578,7 +12985,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 520
+    "line": 514
    }
   },
   {
@@ -12597,7 +13004,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 521
+    "line": 515
    }
   },
   {
@@ -12616,7 +13023,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 522
+    "line": 516
    }
   },
   {
@@ -12635,7 +13042,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 523
+    "line": 517
    }
   },
   {
@@ -12653,7 +13060,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 524
+    "line": 518
    }
   },
   {
@@ -12691,7 +13098,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 535
+    "line": 529
    }
   },
   {
@@ -12709,7 +13116,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 536
+    "line": 530
    }
   },
   {
@@ -12727,7 +13134,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 537
+    "line": 531
    }
   },
   {
@@ -12745,7 +13152,7 @@
    "source": {
     "file": "apps/airtime-creator/src/ui/tokens.ts",
     "export": "textStyles",
-    "line": 538
+    "line": 532
    }
   }
  ]

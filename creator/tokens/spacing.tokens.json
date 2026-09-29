@@ -26,6 +26,7 @@
               "org": "--space-05",
               "note": "value 2px equals org --space-05"
             },
+            "alias": "--space-05",
             "used": {
               "all": 166
             }
@@ -42,7 +43,7 @@
             "status": "declared",
             "source": {
               "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 117,
+              "line": 115,
               "export": "spacing",
               "path": "0.75"
             },
@@ -54,6 +55,7 @@
               "relation": "creator-only",
               "note": "no org space token has value 3px"
             },
+            "alias": null,
             "used": {
               "all": 72
             }
@@ -85,6 +87,7 @@
               "org": "--space-15",
               "note": "value 6px equals org --space-15"
             },
+            "alias": "--space-15",
             "used": {
               "all": 414
             }
@@ -113,6 +116,7 @@
             "org": "--space-10",
             "note": "value 4px equals org --space-10"
           },
+          "alias": "--space-10",
           "used": {
             "all": 368
           }
@@ -142,6 +146,7 @@
               "relation": "creator-only",
               "note": "no org space token has value 10px"
             },
+            "alias": null,
             "used": {
               "all": 30
             }
@@ -170,6 +175,7 @@
             "org": "--space-20",
             "note": "value 8px equals org --space-20"
           },
+          "alias": "--space-20",
           "used": {
             "all": 346
           }
@@ -199,6 +205,7 @@
               "relation": "creator-only",
               "note": "no org space token has value 14px"
             },
+            "alias": null,
             "used": {
               "all": 0
             }
@@ -227,6 +234,7 @@
             "org": "--space-30",
             "note": "value 12px equals org --space-30"
           },
+          "alias": "--space-30",
           "used": {
             "all": 126
           }
@@ -256,6 +264,7 @@
               "relation": "creator-only",
               "note": "no org space token has value 18px"
             },
+            "alias": null,
             "used": {
               "all": 6
             }
@@ -284,6 +293,7 @@
             "org": "--space-40",
             "note": "value 16px equals org --space-40"
           },
+          "alias": "--space-40",
           "used": {
             "all": 154
           }
@@ -312,6 +322,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 20px"
           },
+          "alias": null,
           "used": {
             "all": 8
           }
@@ -341,6 +352,7 @@
             "org": "--space-60",
             "note": "value 24px equals org --space-60"
           },
+          "alias": "--space-60",
           "used": {
             "all": 0
           }
@@ -369,6 +381,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 28px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -398,6 +411,7 @@
             "org": "--space-80",
             "note": "value 32px equals org --space-80"
           },
+          "alias": "--space-80",
           "used": {
             "all": 16
           }
@@ -426,6 +440,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 36px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -455,6 +470,7 @@
             "org": "--space-100",
             "note": "value 40px equals org --space-100"
           },
+          "alias": "--space-100",
           "used": {
             "all": 16
           }
@@ -483,6 +499,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 44px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -511,6 +528,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 48px"
           },
+          "alias": null,
           "used": {
             "all": 8
           }
@@ -539,6 +557,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 56px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -567,6 +586,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 64px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -595,6 +615,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 80px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -623,6 +644,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 96px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -651,6 +673,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 112px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -679,6 +702,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 128px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -707,6 +731,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 144px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -735,6 +760,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 160px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -763,6 +789,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 176px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -791,6 +818,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 192px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -819,6 +847,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 208px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -847,6 +876,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 224px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -875,6 +905,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 240px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -903,6 +934,7 @@
             "relation": "creator-only",
             "note": "no org space token has value 256px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -919,7 +951,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 119,
+            "line": 117,
             "export": "spacing",
             "path": "gutter"
           },
@@ -932,6 +964,7 @@
             "org": "--space-40",
             "note": "value 16px equals org --space-40"
           },
+          "alias": "--space-40",
           "used": {
             "all": 154
           }

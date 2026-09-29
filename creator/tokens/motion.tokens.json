@@ -12,7 +12,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 149,
+            "line": 147,
             "export": "durations",
             "path": "insert"
           },
@@ -24,6 +24,7 @@
             "relation": "creator-only",
             "note": "no org duration token has value 120ms"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -40,7 +41,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 150,
+            "line": 148,
             "export": "durations",
             "path": "fired"
           },
@@ -52,6 +53,7 @@
             "relation": "creator-only",
             "note": "no org duration token has value 260ms"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -68,7 +70,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 151,
+            "line": 149,
             "export": "durations",
             "path": "fast"
           },
@@ -80,6 +82,7 @@
             "relation": "creator-only",
             "note": "no org duration token has value 160ms"
           },
+          "alias": null,
           "used": {
             "all": 150
           }
@@ -96,7 +99,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 152,
+            "line": 150,
             "export": "durations",
             "path": "history"
           },
@@ -109,6 +112,7 @@
             "org": "--duration-fast",
             "note": "value 150ms equals org --duration-fast"
           },
+          "alias": "--duration-fast",
           "used": {
             "all": 404
           }
@@ -125,7 +129,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 153,
+            "line": 151,
             "export": "durations",
             "path": "titleDwell"
           },
@@ -137,6 +141,7 @@
             "relation": "creator-only",
             "note": "no org duration token has value 200ms"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -153,7 +158,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 154,
+            "line": 152,
             "export": "durations",
             "path": "normal"
           },
@@ -165,6 +170,7 @@
             "relation": "creator-only",
             "note": "no org duration token has value 240ms"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -181,7 +187,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 155,
+            "line": 153,
             "export": "durations",
             "path": "slow"
           },
@@ -193,6 +199,7 @@
             "relation": "creator-only",
             "note": "no org duration token has value 420ms"
           },
+          "alias": null,
           "used": {
             "all": 8
           }
@@ -209,7 +216,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 156,
+            "line": 154,
             "export": "durations",
             "path": "settle"
           },
@@ -222,6 +229,7 @@
             "org": "--duration-normal",
             "note": "value 300ms equals org --duration-normal"
           },
+          "alias": "--duration-normal",
           "used": {
             "all": 8
           }
@@ -238,7 +246,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 157,
+            "line": 155,
             "export": "durations",
             "path": "stage"
           },
@@ -250,6 +258,7 @@
             "relation": "creator-only",
             "note": "no org duration token has value 420ms"
           },
+          "alias": null,
           "used": {
             "all": 8
           }
@@ -266,7 +275,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 158,
+            "line": 156,
             "export": "durations",
             "path": "panel"
           },
@@ -278,6 +287,7 @@
             "relation": "creator-only",
             "note": "no org duration token has value 280ms"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -296,7 +306,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 162,
+            "line": 160,
             "export": "easings",
             "path": "out"
           },
@@ -309,6 +319,7 @@
             "org": "--easing-default",
             "note": "value ease-out equals org --easing-default"
           },
+          "alias": "--easing-default",
           "used": null
         }
       }
@@ -323,7 +334,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 164,
+            "line": 162,
             "export": "easings",
             "path": "settle"
           },
@@ -335,6 +346,7 @@
             "relation": "creator-only",
             "note": "no org easing token has value cubic-bezier(.32, .72, 0, 1)"
           },
+          "alias": null,
           "used": null
         }
       }
@@ -349,7 +361,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 165,
+            "line": 163,
             "export": "easings",
             "path": "standard"
           },
@@ -362,6 +374,7 @@
             "org": "--easing-in-out",
             "note": "value ease-in-out equals org --easing-in-out"
           },
+          "alias": "--easing-in-out",
           "used": null
         }
       }
@@ -376,7 +389,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 166,
+            "line": 164,
             "export": "easings",
             "path": "spring"
           },
@@ -388,6 +401,7 @@
             "relation": "creator-only",
             "note": "no org easing token has value cubic-bezier(.34, 1.4, .5, 1)"
           },
+          "alias": null,
           "used": null
         }
       }
@@ -402,7 +416,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 168,
+            "line": 166,
             "export": "easings",
             "path": "flow"
           },
@@ -414,6 +428,7 @@
             "relation": "creator-only",
             "note": "no org easing token has value cubic-bezier(.25, .46, .2, .99)"
           },
+          "alias": null,
           "used": null
         }
       }

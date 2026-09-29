@@ -12,7 +12,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 143,
+            "line": 141,
             "export": "borderWidths",
             "path": "hair"
           },
@@ -24,6 +24,7 @@
             "relation": "creator-only",
             "note": "no org border-width token has value 0.5px"
           },
+          "alias": null,
           "used": null
         }
       }
@@ -38,7 +39,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 144,
+            "line": 142,
             "export": "borderWidths",
             "path": "thin"
           },
@@ -51,6 +52,7 @@
             "org": "--border-width-thin",
             "note": "value 1px equals org --border-width-thin"
           },
+          "alias": "--border-width-thin",
           "used": null
         }
       }
@@ -65,7 +67,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 145,
+            "line": 143,
             "export": "borderWidths",
             "path": "medium"
           },
@@ -78,6 +80,7 @@
             "org": "--border-width-medium",
             "note": "value 2px equals org --border-width-medium"
           },
+          "alias": "--border-width-medium",
           "used": null
         }
       }

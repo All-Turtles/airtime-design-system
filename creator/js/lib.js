@@ -5,6 +5,7 @@ export async function load() {
   S.index = await (await fetch("data/tokens-index.json")).json();
   S.tokens = new Map(S.index.tokens.map((t) => [t.css, t]));
   try { S.audit = await (await fetch("data/audit.json")).json(); } catch { S.audit = null; }
+  S.orglayer = await (await fetch("data/org-layer.json")).json();
   S.untok = await (await fetch("data/untokenized.json")).json();
   S.unmatched = await (await fetch("data/unmatched.json")).json();
   try { S.sources = await (await fetch("data/sources.json")).json(); } catch { S.sources = {}; }
@@ -32,13 +33,14 @@ export const BUCKET_CLS = (sub) => (sub === "airtime-design-system" ? "ds" : /^c
 export const provBadge = (sub) => `<span class="org prov-${BUCKET_CLS(sub)}">${esc(sub)}</span>`;
 export const EXC = { "exclusive to DS": "prov-ds", "shared with prototypes": "prov-rd", "not DS": "prov-none", none: "prov-none" };
 export function tokenProv(css) {
+  const al = S.tokens.get(css)?.alias; const aliasHtml = al ? `<div><span class="org prov-ds">alias of ${esc(al)}</span></div>` : "";
   const a = S.audit?.tokens?.[css];
-  if (!a) return `<span class="from">no audit data</span>`;
-  if (!a.found) return `<span class="org prov-none">not in audit</span> <span class="from">no declaration with this name or literal was captured</span>`;
+  if (!a) return aliasHtml + `<span class="from">no audit data</span>`;
+  if (!a.found) return aliasHtml + `<span class="org prov-none">not in audit</span> <span class="from">no declaration with this name or literal was captured</span>`;
   const L = a.light, D = a.dark; const same = L.bucket === D.bucket && L.src === D.src;
   const one = (x, th) => `${th ? `<span class="from">${th}</span> ` : ""}${provBadge(x.sub)} <span class="from">${esc(x.src || "no source")}${x.weak ? " (weak value)" : ""}</span>`;
   const flags = [a.light.status === "overridden-everywhere" ? "dead (loses cascade)" : "", !a.light.used ? "unused rule" : ""].filter(Boolean).join(", ");
-  return `${same ? one(L) : one(L, "light") + "<br>" + one(D, "dark")}<div><span class="org ${EXC[a.exclusivity] ?? "prov-none"}">${a.exclusivity}</span>${flags ? ` <span class="org prov-un">${flags}</span>` : ""}</div>`;
+  return `${aliasHtml}${same ? one(L) : one(L, "light") + "<br>" + one(D, "dark")}<div><span class="org ${EXC[a.exclusivity] ?? "prov-none"}">${a.exclusivity}</span>${flags ? ` <span class="org prov-un">${flags}</span>` : ""}</div>`;
 }
 export const badge = (rel, note) => `<span class="org ${rel}" title="${esc(note ?? "")}">${ORGTXT[rel]}</span>`;
 

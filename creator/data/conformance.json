@@ -2,9 +2,15 @@
  {
   "theme": "light",
   "name": "card",
-  "status": "match",
+  "status": "differs",
   "checked": 9,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "boxShadow",
+    "live": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px -2px 6px 0px, rgba(0, 0, 0, 0.16) 0px -14px 40px 0px",
+    "docs": "rgba(255, 255, 255, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.35) 0px 20px 40px 0px"
+   }
+  ]
  },
  {
   "theme": "light",
@@ -30,8 +36,7 @@
  {
   "theme": "light",
   "name": "action button (Duplicate)",
-  "status": "match",
-  "checked": 17,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -58,22 +63,19 @@
  {
   "theme": "light",
   "name": "segmented item (Blurred)",
-  "status": "match",
-  "checked": 17,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "light",
   "name": "segmented item selected (Visible)",
-  "status": "match",
-  "checked": 6,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "light",
   "name": "shape item (Rectangle)",
-  "status": "match",
-  "checked": 7,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -86,16 +88,46 @@
  {
   "theme": "light",
   "name": "aspect chip (1:1)",
-  "status": "match",
-  "checked": 6,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "light",
   "name": "value field (Opacity)",
-  "status": "match",
+  "status": "differs",
   "checked": 8,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "width",
+    "live": "32.6562px",
+    "docs": "54px"
+   },
+   {
+    "prop": "height",
+    "live": "15px",
+    "docs": "24px"
+   },
+   {
+    "prop": "paddingLeft",
+    "live": "0px",
+    "docs": "9px"
+   },
+   {
+    "prop": "borderTopLeftRadius",
+    "live": "0px",
+    "docs": "7px"
+   },
+   {
+    "prop": "backgroundColor",
+    "live": "rgba(0, 0, 0, 0)",
+    "docs": "rgba(0, 0, 0, 0.05)"
+   },
+   {
+    "prop": "boxShadow",
+    "live": "none",
+    "docs": "rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset"
+   }
+  ]
  },
  {
   "theme": "light",
@@ -142,43 +174,37 @@
  {
   "theme": "light",
   "name": "layer row",
-  "status": "match",
-  "checked": 9,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "light",
   "name": "inline toggle (Hide layer)",
-  "status": "match",
-  "checked": 4,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "light",
   "name": "background tile",
-  "status": "match",
-  "checked": 3,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "light",
   "name": "logo switch",
-  "status": "match",
-  "checked": 2,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "light",
   "name": "switch track",
-  "status": "match",
-  "checked": 5,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "light",
   "name": "tall head (Layers)",
-  "status": "match",
-  "checked": 6,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -191,9 +217,15 @@
  {
   "theme": "light",
   "name": "title trigger",
-  "status": "match",
+  "status": "differs",
   "checked": 7,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "lineHeight",
+    "live": "17px",
+    "docs": "14.95px"
+   }
+  ]
  },
  {
   "theme": "light",
@@ -247,9 +279,15 @@
  {
   "theme": "light",
   "name": "record",
-  "status": "match",
+  "status": "differs",
   "checked": 9,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "fontSize",
+    "live": "11px",
+    "docs": "13px"
+   }
+  ]
  },
  {
   "theme": "light",
@@ -289,29 +327,71 @@
  {
   "theme": "light",
   "name": "tray surface",
-  "status": "match",
+  "status": "differs",
   "checked": 4,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "height",
+    "live": "149px",
+    "docs": "116px"
+   }
+  ]
  },
  {
   "theme": "light",
   "name": "tray console",
-  "status": "match",
+  "status": "differs",
   "checked": 6,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "height",
+    "live": "32px",
+    "docs": "40px"
+   },
+   {
+    "prop": "paddingLeft",
+    "live": "0px",
+    "docs": "6px"
+   },
+   {
+    "prop": "gap",
+    "live": "8px",
+    "docs": "4px"
+   },
+   {
+    "prop": "borderTopLeftRadius",
+    "live": "0px",
+    "docs": "13px"
+   },
+   {
+    "prop": "backgroundColor",
+    "live": "rgba(0, 0, 0, 0)",
+    "docs": "rgba(247, 247, 250, 0.984)"
+   },
+   {
+    "prop": "boxShadow",
+    "live": "none",
+    "docs": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, color(srgb 0 0 0 / 0.12) 0px 2px 5px 0px"
+   }
+  ]
  },
  {
   "theme": "light",
   "name": "add slide",
-  "status": "match",
+  "status": "differs",
   "checked": 8,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "fontSize",
+    "live": "12px",
+    "docs": "13px"
+   }
+  ]
  },
  {
   "theme": "light",
   "name": "tray button",
-  "status": "match",
-  "checked": 4,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -331,8 +411,7 @@
  {
   "theme": "light",
   "name": "tile action chip",
-  "status": "match",
-  "checked": 6,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -345,9 +424,20 @@
  {
   "theme": "light",
   "name": "selection button",
-  "status": "match",
+  "status": "differs",
   "checked": 8,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "fontSize",
+    "live": "13px",
+    "docs": "16px"
+   },
+   {
+    "prop": "lineHeight",
+    "live": "13px",
+    "docs": "18.4px"
+   }
+  ]
  },
  {
   "theme": "light",
@@ -387,9 +477,15 @@
  {
   "theme": "dark",
   "name": "card",
-  "status": "match",
+  "status": "differs",
   "checked": 9,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "boxShadow",
+    "live": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.34) 0px -2px 8px 0px, rgba(0, 0, 0, 0.5) 0px -16px 46px 0px",
+    "docs": "rgba(255, 255, 255, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.35) 0px 20px 40px 0px"
+   }
+  ]
  },
  {
   "theme": "dark",
@@ -415,8 +511,7 @@
  {
   "theme": "dark",
   "name": "action button (Duplicate)",
-  "status": "match",
-  "checked": 17,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -443,22 +538,19 @@
  {
   "theme": "dark",
   "name": "segmented item (Blurred)",
-  "status": "match",
-  "checked": 17,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "dark",
   "name": "segmented item selected (Visible)",
-  "status": "match",
-  "checked": 6,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "dark",
   "name": "shape item (Rectangle)",
-  "status": "match",
-  "checked": 7,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -471,16 +563,46 @@
  {
   "theme": "dark",
   "name": "aspect chip (1:1)",
-  "status": "match",
-  "checked": 6,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "dark",
   "name": "value field (Opacity)",
-  "status": "match",
+  "status": "differs",
   "checked": 8,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "width",
+    "live": "32.6562px",
+    "docs": "54px"
+   },
+   {
+    "prop": "height",
+    "live": "15px",
+    "docs": "24px"
+   },
+   {
+    "prop": "paddingLeft",
+    "live": "0px",
+    "docs": "9px"
+   },
+   {
+    "prop": "borderTopLeftRadius",
+    "live": "0px",
+    "docs": "7px"
+   },
+   {
+    "prop": "backgroundColor",
+    "live": "rgba(0, 0, 0, 0)",
+    "docs": "rgba(255, 255, 255, 0.06)"
+   },
+   {
+    "prop": "boxShadow",
+    "live": "none",
+    "docs": "rgba(255, 255, 255, 0.1) 0px 0px 0px 0.5px inset"
+   }
+  ]
  },
  {
   "theme": "dark",
@@ -527,15 +649,13 @@
  {
   "theme": "dark",
   "name": "layer row",
-  "status": "match",
-  "checked": 9,
+  "status": "live element not found",
   "diffs": []
  },
  {
   "theme": "dark",
   "name": "inline toggle (Hide layer)",
-  "status": "match",
-  "checked": 4,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -562,9 +682,35 @@
  {
   "theme": "dark",
   "name": "tall head (Layers)",
-  "status": "match",
+  "status": "differs",
   "checked": 6,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "minHeight",
+    "live": "auto",
+    "docs": "21px"
+   },
+   {
+    "prop": "fontSize",
+    "live": "12px",
+    "docs": "13px"
+   },
+   {
+    "prop": "fontWeight",
+    "live": "400",
+    "docs": "500"
+   },
+   {
+    "prop": "color",
+    "live": "rgba(255, 255, 255, 0.96)",
+    "docs": "rgba(255, 255, 255, 0.84)"
+   },
+   {
+    "prop": "gap",
+    "live": "normal",
+    "docs": "8px"
+   }
+  ]
  },
  {
   "theme": "dark",
@@ -576,9 +722,15 @@
  {
   "theme": "dark",
   "name": "title trigger",
-  "status": "match",
+  "status": "differs",
   "checked": 7,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "lineHeight",
+    "live": "17px",
+    "docs": "14.95px"
+   }
+  ]
  },
  {
   "theme": "dark",
@@ -632,9 +784,15 @@
  {
   "theme": "dark",
   "name": "record",
-  "status": "match",
+  "status": "differs",
   "checked": 9,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "fontSize",
+    "live": "11px",
+    "docs": "13px"
+   }
+  ]
  },
  {
   "theme": "dark",
@@ -674,29 +832,71 @@
  {
   "theme": "dark",
   "name": "tray surface",
-  "status": "match",
+  "status": "differs",
   "checked": 4,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "height",
+    "live": "149px",
+    "docs": "116px"
+   }
+  ]
  },
  {
   "theme": "dark",
   "name": "tray console",
-  "status": "match",
+  "status": "differs",
   "checked": 6,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "height",
+    "live": "32px",
+    "docs": "40px"
+   },
+   {
+    "prop": "paddingLeft",
+    "live": "0px",
+    "docs": "6px"
+   },
+   {
+    "prop": "gap",
+    "live": "8px",
+    "docs": "4px"
+   },
+   {
+    "prop": "borderTopLeftRadius",
+    "live": "0px",
+    "docs": "13px"
+   },
+   {
+    "prop": "backgroundColor",
+    "live": "rgba(0, 0, 0, 0)",
+    "docs": "rgba(38, 38, 42, 0.984)"
+   },
+   {
+    "prop": "boxShadow",
+    "live": "none",
+    "docs": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, color(srgb 1 1 1 / 0.12) 0px 2px 5px 0px"
+   }
+  ]
  },
  {
   "theme": "dark",
   "name": "add slide",
-  "status": "match",
+  "status": "differs",
   "checked": 8,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "fontSize",
+    "live": "12px",
+    "docs": "13px"
+   }
+  ]
  },
  {
   "theme": "dark",
   "name": "tray button",
-  "status": "match",
-  "checked": 4,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -716,8 +916,7 @@
  {
   "theme": "dark",
   "name": "tile action chip",
-  "status": "match",
-  "checked": 6,
+  "status": "live element not found",
   "diffs": []
  },
  {
@@ -730,9 +929,20 @@
  {
   "theme": "dark",
   "name": "selection button",
-  "status": "match",
+  "status": "differs",
   "checked": 8,
-  "diffs": []
+  "diffs": [
+   {
+    "prop": "fontSize",
+    "live": "13px",
+    "docs": "16px"
+   },
+   {
+    "prop": "lineHeight",
+    "live": "13px",
+    "docs": "18.4px"
+   }
+  ]
  },
  {
   "theme": "dark",

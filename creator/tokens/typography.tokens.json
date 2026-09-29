@@ -25,6 +25,7 @@
             "org": "--font-family-primary",
             "note": "system stack; creator puts SF Pro Text/Display before Helvetica, org starts with -apple-system, 'SF Pro', 'Segoe UI', Roboto (creator -apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif; org -apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif)"
           },
+          "alias": null,
           "used": null
         }
       }
@@ -52,6 +53,7 @@
             "org": "--font-family-primary",
             "note": "same stack as body (creator -apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif; org -apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif)"
           },
+          "alias": null,
           "used": null
         }
       }
@@ -78,6 +80,7 @@
             "relation": "creator-only",
             "note": "no counterpart in airtime-design-system tokens"
           },
+          "alias": null,
           "used": null
         }
       }
@@ -106,6 +109,7 @@
             "relation": "creator-only",
             "note": "no org font-size token has value 9px"
           },
+          "alias": null,
           "used": {
             "all": 10
           }
@@ -134,6 +138,7 @@
             "relation": "creator-only",
             "note": "no org font-size token has value 10px"
           },
+          "alias": null,
           "used": {
             "all": 92
           }
@@ -163,6 +168,7 @@
             "org": "--font-size-body-small",
             "note": "value 11px equals org --font-size-body-small"
           },
+          "alias": "--font-size-body-small",
           "used": {
             "all": 80
           }
@@ -192,6 +198,7 @@
             "org": "--font-size-heading-small",
             "note": "value 12px equals org --font-size-heading-small"
           },
+          "alias": "--font-size-heading-small",
           "used": {
             "all": 1194
           }
@@ -220,6 +227,7 @@
             "relation": "creator-only",
             "note": "no org font-size token has value 13px"
           },
+          "alias": null,
           "used": {
             "all": 1304
           }
@@ -248,6 +256,7 @@
             "relation": "creator-only",
             "note": "no org font-size token has value 17px"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -266,7 +275,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 175,
+            "line": 173,
             "export": "lineHeights",
             "path": "selection"
           },
@@ -278,6 +287,7 @@
             "relation": "creator-only",
             "note": "no counterpart in airtime-design-system tokens"
           },
+          "alias": null,
           "used": null
         }
       }
@@ -306,6 +316,7 @@
             "relation": "creator-only",
             "note": "no counterpart in airtime-design-system tokens"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -322,7 +333,7 @@
           "status": "declared",
           "source": {
             "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 31,
+            "line": 29,
             "export": "letterSpacings",
             "path": "selectionLabel"
           },
@@ -334,6 +345,7 @@
             "relation": "creator-only",
             "note": "no counterpart in airtime-design-system tokens"
           },
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -365,6 +377,7 @@
             "org": "--font-weight-bold",
             "note": "value 700 equals org --font-weight-bold"
           },
+          "alias": "--font-weight-bold",
           "used": {
             "all": 2
           }
@@ -394,6 +407,7 @@
             "org": "--font-weight-medium",
             "note": "value 500 equals org --font-weight-medium"
           },
+          "alias": "--font-weight-medium",
           "used": {
             "all": 588
           }
@@ -423,6 +437,7 @@
             "org": "--font-weight-regular",
             "note": "value 400 equals org --font-weight-regular"
           },
+          "alias": "--font-weight-regular",
           "used": {
             "all": 2356
           }
@@ -452,6 +467,7 @@
             "org": "--font-weight-semibold",
             "note": "value 600 equals org --font-weight-semibold"
           },
+          "alias": "--font-weight-semibold",
           "used": {
             "all": 46
           }

@@ -2,7 +2,7 @@
  "sb.card": [
   {
    "file": "creator/sidebar/Sidebar.tsx",
-   "line": 15,
+   "line": 14,
    "note": "export function Sidebar"
   },
   {
@@ -14,24 +14,24 @@
  "sb.pane": [
   {
    "file": "ui/recipes/sidebarSectionSlotRecipe.ts",
-   "line": 35,
+   "line": 34,
    "note": "paneHeader: {"
   },
   {
    "file": "creator/sidebar/primitives/PaneHeader.tsx",
-   "line": 20,
+   "line": 19,
    "note": "export function PaneHeader"
   },
   {
    "file": "creator/sidebar/primitives/IconToggle.tsx",
-   "line": 11,
+   "line": 9,
    "note": "export function IconToggle"
   }
  ],
  "sb.icontoggle": [
   {
    "file": "creator/sidebar/primitives/IconToggle.tsx",
-   "line": 11,
+   "line": 9,
    "note": "export function IconToggle"
   }
  ],
@@ -70,7 +70,7 @@
   },
   {
    "file": "creator/sidebar/primitives/Row.tsx",
-   "line": 49,
+   "line": 51,
    "note": "export function Row("
   },
   {
@@ -116,19 +116,19 @@
   },
   {
    "file": "creator/sidebar/primitives/CommitInput.tsx",
-   "line": 9,
+   "line": 14,
    "note": "export"
   },
   {
    "file": "creator/sidebar/primitives/GeoGrid.tsx",
-   "line": 16,
+   "line": 24,
    "note": "export function GeoGrid"
   }
  ],
  "sb.slider": [
   {
    "file": "creator/sidebar/primitives/SliderRow.tsx",
-   "line": 29,
+   "line": 30,
    "note": "export function SliderRow"
   },
   {
@@ -145,31 +145,31 @@
   },
   {
    "file": "ui/recipes/sidebarFieldRecipe.ts",
-   "line": 70,
+   "line": 72,
    "note": "pill: {"
   }
  ],
  "sb.colorwell": [
   {
    "file": "creator/sidebar/primitives/ColorWellRow.tsx",
-   "line": 45,
+   "line": 19,
    "note": "export function ColorWellRow"
   },
   {
    "file": "creator/sidebar/primitives/Swatches.tsx",
-   "line": 24,
+   "line": 25,
    "note": "export function Swatches"
   }
  ],
  "sb.swatches": [
   {
    "file": "creator/sidebar/primitives/Swatches.tsx",
-   "line": 24,
+   "line": 25,
    "note": "export function Swatches"
   },
   {
    "file": "creator/sidebar/primitives/Swatches.tsx",
-   "line": 192,
+   "line": 185,
    "note": "export function NoneMark"
   },
   {
@@ -186,7 +186,7 @@
   },
   {
    "file": "creator/sidebar/primitives/Swatches.tsx",
-   "line": 192,
+   "line": 185,
    "note": "export function NoneMark"
   }
  ],
@@ -203,12 +203,12 @@
   },
   {
    "file": "creator/sidebar/primitives/ThumbRow.tsx",
-   "line": 173,
+   "line": 64,
    "note": "export function LayoutRow"
   },
   {
    "file": "creator/sidebar/primitives/ThumbRow.tsx",
-   "line": 192,
+   "line": 83,
    "note": "export function LogoRow"
   },
   {
@@ -276,7 +276,7 @@
   },
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 221,
+   "line": 218,
    "note": "plain: {"
   }
  ],
@@ -288,19 +288,19 @@
   },
   {
    "file": "ui/recipes/segmentGroupSlotRecipe.ts",
-   "line": 7,
+   "line": 10,
    "note": "root: {"
   }
  ],
  "hd.iconbtn": [
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 28,
+   "line": 47,
    "note": "xs: {"
   },
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 221,
+   "line": 218,
    "note": "plain: {"
   },
   {
@@ -310,7 +310,7 @@
   },
   {
    "file": "creator/sidebar/SidebarToggle.tsx",
-   "line": 12,
+   "line": 11,
    "note": "export function SidebarToggle"
   },
   {
@@ -322,12 +322,12 @@
  "hd.record": [
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 184,
+   "line": 181,
    "note": "record: {"
   },
   {
    "file": "creator/RecordingControls.tsx",
-   "line": 32,
+   "line": 33,
    "note": "export function RecordingControls"
   },
   {
@@ -339,12 +339,12 @@
  "hd.insert": [
   {
    "file": "creator/InsertBar.tsx",
-   "line": 80,
+   "line": 75,
    "note": "export function InsertBar"
   },
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 164,
+   "line": 161,
    "note": "insert: {"
   },
   {
@@ -356,7 +356,7 @@
  "hd.split": [
   {
    "file": "creator/DeviceSplit.tsx",
-   "line": 140,
+   "line": 142,
    "note": "export"
   },
   {
@@ -380,7 +380,7 @@
  "tr.tray": [
   {
    "file": "creator/TrayArea.tsx",
-   "line": 49,
+   "line": 55,
    "note": "export"
   },
   {
@@ -390,12 +390,12 @@
   },
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 127,
+   "line": 124,
    "note": "tray: {"
   },
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 156,
+   "line": 153,
    "note": "addSlide: {"
   }
  ],
@@ -414,7 +414,7 @@
  "st.pill": [
   {
    "file": "creator/PresenterSelectionControls.tsx",
-   "line": 20,
+   "line": 16,
    "note": "export"
   },
   {
@@ -431,7 +431,7 @@
  "st.popover": [
   {
    "file": "creator/StageControlPopover.tsx",
-   "line": 10,
+   "line": 19,
    "note": "export function StageControlPopover"
   },
   {
@@ -441,12 +441,12 @@
   },
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 86,
+   "line": 90,
    "note": "stageOption: {"
   },
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 69,
+   "line": 73,
    "note": "stageRow: {"
   },
   {
@@ -502,7 +502,7 @@
   },
   {
    "file": "creator/StageControlTooltip.tsx",
-   "line": 5,
+   "line": 10,
    "note": "export function StageControlTooltip"
   }
  ],
@@ -521,7 +521,7 @@
  "ax.button": [
   {
    "file": "ui/recipes/buttonRecipe.ts",
-   "line": 38,
+   "line": 57,
    "note": "variant: {"
   }
  ],

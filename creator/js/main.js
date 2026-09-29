@@ -1,6 +1,7 @@
 import { S, load, hydrateIcons } from "./lib.js";
 import { overview } from "./overview.js";
 import { audit } from "./audit.js";
+import { orgrel } from "./orgrel.js";
 import { foundations } from "./foundations.js";
 import { sidebar } from "./sidebar.js";
 import { header } from "./header.js";
@@ -11,7 +12,7 @@ import { aux } from "./aux.js";
 await load();
 const main = document.getElementById("main");
 const mk = (id) => { const s = document.createElement("div"); s.id = id; main.appendChild(s); return s; };
-const parts = [["overview", overview], ["audit", audit], ["foundations", foundations], ["sidebar", sidebar], ["header", header], ["tray", tray], ["stage", stage], ["aux", aux]];
+const parts = [["overview", overview], ["audit", audit], ["orgrel", orgrel], ["foundations", foundations], ["sidebar", sidebar], ["header", header], ["tray", tray], ["stage", stage], ["aux", aux]];
 for (const [id, fn] of parts) { const el = mk("area-" + id); try { await fn(el); } catch (e) { el.innerHTML = `<section><h2>${id}</h2><p class="callout">Render error: ${e.message}</p></section>`; console.error(id, e); } }
 hydrateIcons(document);
 // nav from headings

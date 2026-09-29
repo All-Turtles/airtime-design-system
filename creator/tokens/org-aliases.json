@@ -1,0 +1,341 @@
+{
+ "description": "Creator tokens whose value equals an airtime-design-system token; declared in tokens.css as var(--org-token).",
+ "aliases": [
+  {
+   "token": "--cr-font-size-xs",
+   "org": "--font-size-body-small",
+   "value": "11px",
+   "family": "typography",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-font-size-sm",
+   "org": "--font-size-heading-small",
+   "value": "12px",
+   "family": "typography",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-radius-stage",
+   "org": "--radius-20",
+   "value": "8px",
+   "family": "radii",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-radius-room-tile",
+   "org": "--radius-15",
+   "value": "6px",
+   "family": "radii",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-radius-title-label",
+   "org": "--radius-10",
+   "value": "4px",
+   "family": "radii",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-radius-lg",
+   "org": "--radius-25",
+   "value": "10px",
+   "family": "radii",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-radius-2xl",
+   "org": "--radius-35",
+   "value": "14px",
+   "family": "radii",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-radius-3xl",
+   "org": "--radius-40",
+   "value": "16px",
+   "family": "radii",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-radius-5xl",
+   "org": "--radius-60",
+   "value": "24px",
+   "family": "radii",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-radius-full",
+   "org": "--radius-9999",
+   "value": "9999px",
+   "family": "radii",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-creator-overlay-lane",
+   "org": "--size-70",
+   "value": "28px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-creator-sidebar-control",
+   "org": "--size-60",
+   "value": "24px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-split-picker-pane-header",
+   "org": "--size-140",
+   "value": "56px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-space-gutter",
+   "org": "--space-40",
+   "value": "16px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-border-width-thin",
+   "org": "--border-width-thin",
+   "value": "1px",
+   "family": "borders, z-index, opacity",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-border-width-medium",
+   "org": "--border-width-medium",
+   "value": "2px",
+   "family": "borders, z-index, opacity",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-duration-history",
+   "org": "--duration-fast",
+   "value": "150ms",
+   "family": "motion",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-duration-settle",
+   "org": "--duration-normal",
+   "value": "300ms",
+   "family": "motion",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-easing-out",
+   "org": "--easing-default",
+   "value": "ease-out",
+   "family": "motion",
+   "audit": "structural"
+  },
+  {
+   "token": "--cr-easing-standard",
+   "org": "--easing-in-out",
+   "value": "ease-in-out",
+   "family": "motion",
+   "audit": "structural"
+  },
+  {
+   "token": "--cr-font-weight-bold",
+   "org": "--font-weight-bold",
+   "value": "700",
+   "family": "typography",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-font-weight-medium",
+   "org": "--font-weight-medium",
+   "value": "500",
+   "family": "typography",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-font-weight-normal",
+   "org": "--font-weight-regular",
+   "value": "400",
+   "family": "typography",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-font-weight-semibold",
+   "org": "--font-weight-semibold",
+   "value": "600",
+   "family": "typography",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-space-0-5",
+   "org": "--space-05",
+   "value": "2px",
+   "family": "spacing and sizes",
+   "audit": null
+  },
+  {
+   "token": "--cr-space-1",
+   "org": "--space-10",
+   "value": "4px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-space-1-5",
+   "org": "--space-15",
+   "value": "6px",
+   "family": "spacing and sizes",
+   "audit": null
+  },
+  {
+   "token": "--cr-space-10",
+   "org": "--space-100",
+   "value": "40px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-space-2",
+   "org": "--space-20",
+   "value": "8px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-space-3",
+   "org": "--space-30",
+   "value": "12px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-space-4",
+   "org": "--space-40",
+   "value": "16px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-space-6",
+   "org": "--space-60",
+   "value": "24px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-space-8",
+   "org": "--space-80",
+   "value": "32px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-0-5",
+   "org": "--size-05",
+   "value": "2px",
+   "family": "spacing and sizes",
+   "audit": null
+  },
+  {
+   "token": "--cr-size-1",
+   "org": "--size-10",
+   "value": "4px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-1-5",
+   "org": "--size-15",
+   "value": "6px",
+   "family": "spacing and sizes",
+   "audit": null
+  },
+  {
+   "token": "--cr-size-10",
+   "org": "--size-100",
+   "value": "40px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-12",
+   "org": "--size-120",
+   "value": "48px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-14",
+   "org": "--size-140",
+   "value": "56px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-16",
+   "org": "--size-160",
+   "value": "64px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-2",
+   "org": "--size-20",
+   "value": "8px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-20",
+   "org": "--size-200",
+   "value": "80px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-3",
+   "org": "--size-30",
+   "value": "12px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-4",
+   "org": "--size-40",
+   "value": "16px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-5",
+   "org": "--size-50",
+   "value": "20px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-6",
+   "org": "--size-60",
+   "value": "24px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-7",
+   "org": "--size-70",
+   "value": "28px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  },
+  {
+   "token": "--cr-size-8",
+   "org": "--size-80",
+   "value": "32px",
+   "family": "spacing and sizes",
+   "audit": "airtime-design-system"
+  }
+ ]
+}

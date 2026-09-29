@@ -30,7 +30,7 @@
           "css": "--cr-opacity-dimmed",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 80,
+            "line": null,
             "find": "opacity={dimmed ? 0.45 : 1}"
           },
           "org": {
@@ -50,7 +50,7 @@
           "css": "--cr-opacity-locked-grip",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 122,
+            "line": null,
             "find": "opacity={locked ? 0.3 : 1}"
           },
           "org": {
@@ -70,7 +70,7 @@
           "css": "--cr-opacity-disabled-button",
           "source": {
             "file": "ui/recipes/buttonRecipe.ts",
-            "line": 23,
+            "line": 42,
             "find": "_disabled: { opacity: 0.45"
           },
           "org": {
@@ -90,7 +90,7 @@
           "css": "--cr-opacity-disabled-icon",
           "source": {
             "file": "ui/recipes/buttonRecipe.ts",
-            "line": 34,
+            "line": 53,
             "find": "opacity: 0.3, cursor"
           },
           "org": {
@@ -152,7 +152,7 @@
           "css": "--cr-font-size-sidebar",
           "source": {
             "file": "creator/sidebar/Sidebar.tsx",
-            "line": 36,
+            "line": 34,
             "find": "fontSize=\"12px\""
           },
           "org": {
@@ -174,7 +174,7 @@
           "css": "--cr-line-height-sidebar",
           "source": {
             "file": "creator/sidebar/Sidebar.tsx",
-            "line": 38,
+            "line": 36,
             "find": "lineHeight=\"15px\""
           },
           "org": {
@@ -196,7 +196,7 @@
           "css": "--cr-letter-spacing-sidebar",
           "source": {
             "file": "creator/sidebar/Sidebar.tsx",
-            "line": 39,
+            "line": 37,
             "find": "letterSpacing=\"-0.036px\""
           },
           "org": {
@@ -218,7 +218,7 @@
           "css": "--cr-color-pill-fill",
           "source": {
             "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 74,
+            "line": 76,
             "find": "bg: \"rgba(255, 255, 255, 0.12)\""
           },
           "org": {
@@ -238,7 +238,7 @@
           "css": "--cr-color-swatch-ring-dot",
           "source": {
             "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 175,
+            "line": 176,
             "find": "\"inset 0 0 0 1px rgba(255, 255, 255, 0.24)\""
           },
           "org": {
@@ -258,7 +258,7 @@
           "css": "--cr-color-swatch-ring-tile",
           "source": {
             "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 176,
+            "line": 177,
             "find": "\"0 0 0 1px rgba(255, 255, 255, 0.16)\""
           },
           "org": {
@@ -278,7 +278,7 @@
           "css": "--cr-color-swatch-none-slash",
           "source": {
             "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 187,
+            "line": null,
             "find": "rgb(255, 69, 58)"
           },
           "org": {
@@ -298,7 +298,7 @@
           "css": "--cr-color-swatch-none-fill",
           "source": {
             "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 188,
+            "line": null,
             "find": "bgColor: \"rgba(255, 255, 255, 0.08)\""
           },
           "org": {
@@ -318,7 +318,7 @@
           "css": "--cr-color-chip-ground",
           "source": {
             "file": "creator/sidebar/primitives/Dropdown.tsx",
-            "line": 171,
+            "line": 175,
             "find": "bg=\"#E6E6EC\""
           },
           "org": {
@@ -378,7 +378,7 @@
           "css": "--cr-color-thumb-selected-fill",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 78,
+            "line": null,
             "find": "rgba(255, 255, 255, 0.18)"
           },
           "org": {
@@ -398,7 +398,7 @@
           "css": "--cr-color-thumb-selected-ring",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 79,
+            "line": null,
             "find": "rgba(255, 255, 255, 0.3)"
           },
           "org": {
@@ -418,7 +418,7 @@
           "css": "--cr-color-knob",
           "source": {
             "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 20,
+            "line": 21,
             "find": "bg: \"white\""
           },
           "org": {
@@ -560,7 +560,7 @@
           "css": "--cr-shadow-sidebar-card",
           "source": {
             "file": "creator/sidebar/Sidebar.tsx",
-            "line": 43,
+            "line": null,
             "find": "0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 40px"
           },
           "org": {
@@ -600,7 +600,7 @@
           "css": "--cr-shadow-pill",
           "source": {
             "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 75,
+            "line": 77,
             "find": "boxShadow: \"inset 0 0.5px 0 0 rgba(255, 255, 255, 0.16), 0 1px 2px"
           },
           "org": {
@@ -680,7 +680,7 @@
           "css": "--cr-shadow-segment-track-sidebar",
           "source": {
             "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-            "line": 8,
+            "line": null,
             "find": "const track ="
           },
           "org": {
@@ -700,7 +700,7 @@
           "css": "--cr-shadow-popover",
           "source": {
             "file": "creator/sidebar/primitives/Dropdown.tsx",
-            "line": 100,
+            "line": 115,
             "find": "boxShadow=\"0 0 0 0.5px {colors.edge.out}, 0 8px 24px rgba(0, 0, 0, 0.45)\""
           },
           "org": {
@@ -720,7 +720,7 @@
           "css": "--cr-shadow-popover-range",
           "source": {
             "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 120,
+            "line": 135,
             "find": "0 8px 20px rgba(0, 0, 0, 0.45)"
           },
           "org": {
@@ -740,7 +740,7 @@
           "css": "--cr-shadow-swatch-selected-tile",
           "source": {
             "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 129,
+            "line": 130,
             "find": "boxShadow: circle"
           },
           "org": {
@@ -760,7 +760,7 @@
           "css": "--cr-shadow-swatch-selected-dot",
           "source": {
             "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 130,
+            "line": 131,
             "find": "0 0 0 2.5px {colors.accent.solid}"
           },
           "org": {
@@ -780,7 +780,7 @@
           "css": "--cr-shadow-range-track",
           "source": {
             "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 14,
+            "line": 15,
             "find": "inset 0 1px 1.5px rgba(0, 0, 0, 0.3)"
           },
           "org": {
@@ -800,7 +800,7 @@
           "css": "--cr-shadow-range-thumb",
           "source": {
             "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 21,
+            "line": 22,
             "find": "0 0 0 0.5px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.38)"
           },
           "org": {
@@ -820,7 +820,7 @@
           "css": "--cr-shadow-switch-track",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 261,
+            "line": null,
             "find": "inset 0 1px 2px rgba(0, 0, 0, 0.1)"
           },
           "org": {
@@ -840,7 +840,7 @@
           "css": "--cr-shadow-switch-knob",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 272,
+            "line": null,
             "find": "0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28)"
           },
           "org": {
@@ -880,7 +880,7 @@
           "css": "--cr-shadow-drop-before",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 49,
+            "line": null,
             "find": "inset 0 2px 0 {colors.state.dropIndicator}"
           },
           "org": {
@@ -920,7 +920,7 @@
           "css": "--cr-shadow-tile-action",
           "source": {
             "file": "ui/recipes/slideTileSlotRecipe.ts",
-            "line": 93,
+            "line": null,
             "find": "0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px"
           },
           "org": {
@@ -962,7 +962,7 @@
           "css": "--cr-size-control",
           "source": {
             "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-            "line": 20,
+            "line": null,
             "find": "h: \"creator.sidebarControl\""
           },
           "org": {
@@ -1022,7 +1022,7 @@
           "css": "--cr-size-icon-header",
           "source": {
             "file": "creator/sidebar/primitives/IconToggle.tsx",
-            "line": 46,
+            "line": 44,
             "find": "size === \"back\" ? \"5\" : \"4\""
           },
           "org": {
@@ -1042,7 +1042,7 @@
           "css": "--cr-size-icon-inline",
           "source": {
             "file": "creator/sidebar/primitives/IconToggle.tsx",
-            "line": 46,
+            "line": 44,
             "find": "inline ? \"3.5\""
           },
           "org": {
@@ -1062,7 +1062,7 @@
           "css": "--cr-size-icon-shape",
           "source": {
             "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-            "line": 87,
+            "line": null,
             "find": "\"& svg\": { boxSize: \"22px\" }"
           },
           "org": {
@@ -1082,7 +1082,7 @@
           "css": "--cr-size-icon-chevron",
           "source": {
             "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 80,
+            "line": 82,
             "find": "\"& svg\": { boxSize: \"9px\""
           },
           "org": {
@@ -1102,7 +1102,7 @@
           "css": "--cr-size-hit-header",
           "source": {
             "file": "creator/sidebar/primitives/IconToggle.tsx",
-            "line": 34,
+            "line": 32,
             "find": "boxSize={inline ? \"22px\" : \"26px\"}"
           },
           "org": {
@@ -1122,7 +1122,7 @@
           "css": "--cr-size-hit-inline",
           "source": {
             "file": "creator/sidebar/primitives/IconToggle.tsx",
-            "line": 34,
+            "line": 32,
             "find": "boxSize={inline ? \"22px\" : \"26px\"}"
           },
           "org": {
@@ -1142,7 +1142,7 @@
           "css": "--cr-size-pane-header",
           "source": {
             "file": "ui/recipes/sidebarSectionSlotRecipe.ts",
-            "line": 122,
+            "line": 121,
             "find": "h: \"11\""
           },
           "org": {
@@ -1162,7 +1162,7 @@
           "css": "--cr-size-thumb-row",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 40,
+            "line": 29,
             "find": "minH=\"9\""
           },
           "org": {
@@ -1182,7 +1182,7 @@
           "css": "--cr-size-thumb-w",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 74,
+            "line": 46,
             "find": "w=\"12\""
           },
           "org": {
@@ -1202,7 +1202,7 @@
           "css": "--cr-size-thumb-h",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 75,
+            "line": 47,
             "find": "h=\"7\""
           },
           "org": {
@@ -1222,7 +1222,7 @@
           "css": "--cr-size-color-dot",
           "source": {
             "file": "creator/sidebar/primitives/ColorWellRow.tsx",
-            "line": 79,
+            "line": 53,
             "find": "boxSize=\"5\""
           },
           "org": {
@@ -1242,7 +1242,7 @@
           "css": "--cr-size-tint-dot",
           "source": {
             "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 112,
+            "line": 113,
             "find": "w={circle ? \"6\""
           },
           "org": {
@@ -1262,7 +1262,7 @@
           "css": "--cr-size-switch-w",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 257,
+            "line": null,
             "find": "w=\"30px\""
           },
           "org": {
@@ -1282,7 +1282,7 @@
           "css": "--cr-size-switch-h",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 258,
+            "line": null,
             "find": "h=\"18px\""
           },
           "org": {
@@ -1302,7 +1302,7 @@
           "css": "--cr-size-switch-knob",
           "source": {
             "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 269,
+            "line": null,
             "find": "boxSize=\"14px\""
           },
           "org": {
@@ -1322,7 +1322,7 @@
           "css": "--cr-size-range-thumb",
           "source": {
             "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 18,
+            "line": 19,
             "find": "boxSize: \"15px\""
           },
           "org": {
@@ -1342,7 +1342,7 @@
           "css": "--cr-size-range-track",
           "source": {
             "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 11,
+            "line": 12,
             "find": "height: \"4px\""
           },
           "org": {
@@ -1362,7 +1362,7 @@
           "css": "--cr-size-popup-range-w",
           "source": {
             "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 110,
+            "line": 125,
             "find": "w=\"250px\""
           },
           "org": {
@@ -1382,7 +1382,7 @@
           "css": "--cr-size-popup-color-w",
           "source": {
             "file": "creator/sidebar/primitives/ColorWellRow.tsx",
-            "line": 91,
+            "line": 65,
             "find": "w=\"60\""
           },
           "org": {
@@ -1402,7 +1402,7 @@
           "css": "--cr-size-popup-grid-col",
           "source": {
             "file": "creator/sidebar/primitives/Dropdown.tsx",
-            "line": 107,
+            "line": 125,
             "find": "repeat(3, 56px)"
           },
           "org": {
@@ -1482,7 +1482,7 @@
           "css": "--cr-size-field-wide-w",
           "source": {
             "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 55,
+            "line": 57,
             "find": "w: \"112px\""
           },
           "org": {
@@ -1544,7 +1544,7 @@
           "css": "--cr-transition-control",
           "source": {
             "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-            "line": 34,
+            "line": null,
             "find": "transitionProperty: \"background, color\""
           },
           "org": {
@@ -1564,7 +1564,7 @@
           "css": "--cr-transition-swatch",
           "source": {
             "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 115,
+            "line": 116,
             "find": "transitionTimingFunction=\"spring\""
           },
           "org": {
