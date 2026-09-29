@@ -47,7 +47,7 @@ export const DERIVED = [
   // sizes (anatomy aliases of the Chakra numeric ladder)
   d("size.row", "sizes", "dimension", one("var(--cr-size-creator-sidebar-row)"), "Row height, 30px (min-height).", R + "sidebarRowRecipe.ts", 'minH: "creator.sidebarRow"', { orgNote: "Org rows are 32px/40px (rows.css)." }),
   d("size.control", "sizes", "dimension", one("var(--cr-size-creator-sidebar-control)"), "Segment, value field, pill and tool height, 24px.", R + "sidebarSegmentSlotRecipe.ts", 'h: "creator.sidebarControl"'),
-  d("size.icon-row", "sizes", "dimension", one("var(--cr-size-5)"), "Row glyph box: 20px. Glyph painted with fill: currentColor.", P + "Row.tsx", 'boxSize="5"'),
+  d("size.icon-row", "sizes", "dimension", one("var(--cr-size-5)"), "Row glyph box: 20px. Glyph painted with fill: currentColor.", R + "sidebarRowRecipe.ts", '"& svg": { boxSize: "5" }'),
   d("size.icon-action", "sizes", "dimension", one("var(--cr-size-4-5)"), "Action button glyph: 18px.", P + "Actions.tsx", 'boxSize="4.5"'),
   d("size.icon-header", "sizes", "dimension", one("var(--cr-size-4)"), "Header toggle glyph: 16px.", P + "IconToggle.tsx", 'size === "back" ? "5" : "4"'),
   d("size.icon-inline", "sizes", "dimension", one("var(--cr-size-3-5)"), "Layer-row eye/lock glyph: 14px.", P + "IconToggle.tsx", 'inline ? "3.5"'),
@@ -105,3 +105,23 @@ export const ORG_ROLE = {
   "--cr-font-family-heading": { org: "--font-family-primary", why: "same stack as body" },
 };
 export const TEXT_ROLE = { "heading.large": "heading-large", "heading.medium": "heading-medium", "heading.small": "heading-small", "body.large": "body-large", "body.medium": "body-medium", "body.small": "body-small", button: "button-default" };
+
+// ---- stage overlay, tray and button-variant literals (added in the header/tray/stage/aux pass)
+
+DERIVED.push(
+  d("color.stage-frame", "colors", "color", one("#99E5EE"), "Selection frame and handle border: legacy Airtime teal (--action-hover), not Creator's accent blue.", "../teleport/stage/objects/overlay.css", "--frame-color: var(--action-hover)"),
+  d("color.stage-guide-hit", "colors", "color", one("#E55242"), "Alignment guide that the dragged object is snapping to.", "../teleport/stage/objects/alignment_grid.js", 'color = "#E55242"'),
+  d("color.stage-guide", "colors", "color", one("#FFFFFF"), "Anchor snap lines (thirds/centre).", "../teleport/stage/objects/alignment_grid.js", 'color = "white"'),
+  d("color.stage-grid-fill", "colors", "color", one("rgba(127, 127, 127, 0.65)"), "Alignment grid canvas fill.", "../teleport/stage/objects/alignment_grid.js", "rgba(127, 127, 127, 0.65)"),
+  d("color.handle-fill", "colors", "color", one("#FFFFFF"), "Resize handle fill.", "../teleport/stage/objects/overlay.css", "background: #ffffff"),
+  d("color.on-badge", "colors", "color", one("rgba(255, 255, 255, 0.96)"), "Artwork on a dark slide badge or tile action: white in both themes.", "ui/recipes/slideTileSlotRecipe.ts", 'color: "rgba(255, 255, 255, 0.96)"'),
+  d("size.handle", "sizes", "dimension", one("10px"), "Resize handle knob (corner and edge); crop edge handles are 10x20.", "../teleport/stage/objects/overlay.css", "--knob-diameter: 10px"),
+  d("radius.handle", "radii", "dimension", one("2px"), "Resize handle radius.", "../teleport/stage/objects/overlay.css", "border-radius: 2px"),
+  d("size.frame-width", "sizes", "dimension", one("2px"), "Selection frame and handle border width.", "../teleport/stage/objects/overlay.css", "--frame-width: 2px"),
+  d("shadow.handle", "shadows", "shadow", one("0 1px 4px rgba(0, 0, 0, 0.18)"), "Resize handle.", "../teleport/stage/objects/overlay.css", "box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.18)"),
+  d("shadow.tile-action", "shadows", "shadow", one("0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28)"), "Slide tile edit/layers chip.", "ui/recipes/slideTileSlotRecipe.ts", "0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px"),
+  d("opacity.disabled-button", "opacity", "number", one("0.45"), "Disabled Button (and disabled menu item): heavier than the sidebar's 0.4.", "ui/recipes/buttonRecipe.ts", "_disabled: { opacity: 0.45"),
+  d("opacity.disabled-icon", "opacity", "number", one("0.3"), "Disabled icon button (size xs: Undo/Redo).", "ui/recipes/buttonRecipe.ts", "opacity: 0.3, cursor"),
+  d("opacity.disabled-split", "opacity", "number", one("0.2"), "Disabled half of a device split button.", "ui/recipes/splitButtonSlotRecipe.ts", "opacity: 0.2"),
+  d("opacity.status-dot", "opacity", "number", one("0.55"), "Idle status dot.", "ui/recipes/statusChipSlotRecipe.ts", "opacity: 0.55"),
+);

@@ -21,23 +21,6 @@
  ],
  "radius": [
   {
-   "value": "0px",
-   "n": 2300,
-   "ex": [
-    "div[creator-frame]",
-    "header[top-bar]",
-    "div[Scratchpad]",
-    "div[ScratchpadSaving…]"
-   ]
-  },
-  {
-   "value": "2px",
-   "n": 32,
-   "ex": [
-    "div"
-   ]
-  },
-  {
    "value": "50%",
    "n": 24,
    "ex": [

@@ -354,6 +354,12 @@
   --cr-color-thumb-selected-fill: rgba(255, 255, 255, 0.18);
   --cr-color-thumb-selected-ring: rgba(255, 255, 255, 0.3);
   --cr-color-knob: #FFFFFF;
+  --cr-color-stage-frame: #99E5EE;
+  --cr-color-stage-guide-hit: #E55242;
+  --cr-color-stage-guide: #FFFFFF;
+  --cr-color-stage-grid-fill: rgba(127, 127, 127, 0.65);
+  --cr-color-handle-fill: #FFFFFF;
+  --cr-color-on-badge: rgba(255, 255, 255, 0.96);
 
   /* font-sizes (derived) */
   --cr-font-size-sidebar: 12px;
@@ -371,6 +377,13 @@
   --cr-opacity-disabled: 0.4;
   --cr-opacity-dimmed: 0.45;
   --cr-opacity-locked-grip: 0.3;
+  --cr-opacity-disabled-button: 0.45;
+  --cr-opacity-disabled-icon: 0.3;
+  --cr-opacity-disabled-split: 0.2;
+  --cr-opacity-status-dot: 0.55;
+
+  /* radii (derived) */
+  --cr-radius-handle: 2px;
 
   /* shadows (semantic) */
   --cr-shadow-selection-swatch: inset 0 0 0 1px rgba(255,255,255,0.18);
@@ -417,6 +430,8 @@
   --cr-shadow-switch-knob: 0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28);
   --cr-shadow-thumb-ring: inset 0 0 0 0.5px var(--cr-color-line-strong);
   --cr-shadow-drop-before: inset 0 2px 0 var(--cr-color-state-drop-indicator);
+  --cr-shadow-handle: 0 1px 4px rgba(0, 0, 0, 0.18);
+  --cr-shadow-tile-action: 0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28);
 
   /* sizes (derived) */
   --cr-size-row: var(--cr-size-creator-sidebar-row);
@@ -447,6 +462,8 @@
   --cr-size-popup-edge: 16px;
   --cr-size-field-value-w: 54px;
   --cr-size-field-wide-w: 112px;
+  --cr-size-handle: 10px;
+  --cr-size-frame-width: 2px;
 
   /* transitions (derived) */
   --cr-transition-control: background var(--cr-duration-fast) var(--cr-easing-settle), color var(--cr-duration-fast) var(--cr-easing-settle);
@@ -561,6 +578,12 @@
   --cr-color-thumb-selected-fill: rgba(255, 255, 255, 0.18);
   --cr-color-thumb-selected-ring: rgba(255, 255, 255, 0.3);
   --cr-color-knob: #FFFFFF;
+  --cr-color-stage-frame: #99E5EE;
+  --cr-color-stage-guide-hit: #E55242;
+  --cr-color-stage-guide: #FFFFFF;
+  --cr-color-stage-grid-fill: rgba(127, 127, 127, 0.65);
+  --cr-color-handle-fill: #FFFFFF;
+  --cr-color-on-badge: rgba(255, 255, 255, 0.96);
 
   /* font-sizes (derived) */
   --cr-font-size-sidebar: 12px;
@@ -578,6 +601,13 @@
   --cr-opacity-disabled: 0.4;
   --cr-opacity-dimmed: 0.45;
   --cr-opacity-locked-grip: 0.3;
+  --cr-opacity-disabled-button: 0.45;
+  --cr-opacity-disabled-icon: 0.3;
+  --cr-opacity-disabled-split: 0.2;
+  --cr-opacity-status-dot: 0.55;
+
+  /* radii (derived) */
+  --cr-radius-handle: 2px;
 
   /* shadows (semantic) */
   --cr-shadow-selection-swatch: inset 0 0 0 1px rgba(255,255,255,0.18);
@@ -624,6 +654,8 @@
   --cr-shadow-switch-knob: 0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28);
   --cr-shadow-thumb-ring: inset 0 0 0 0.5px var(--cr-color-line-strong);
   --cr-shadow-drop-before: inset 0 2px 0 var(--cr-color-state-drop-indicator);
+  --cr-shadow-handle: 0 1px 4px rgba(0, 0, 0, 0.18);
+  --cr-shadow-tile-action: 0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28);
 
   /* sizes (derived) */
   --cr-size-row: var(--cr-size-creator-sidebar-row);
@@ -654,6 +686,8 @@
   --cr-size-popup-edge: 16px;
   --cr-size-field-value-w: 54px;
   --cr-size-field-wide-w: 112px;
+  --cr-size-handle: 10px;
+  --cr-size-frame-width: 2px;
 
   /* transitions (derived) */
   --cr-transition-control: background var(--cr-duration-fast) var(--cr-easing-settle), color var(--cr-duration-fast) var(--cr-easing-settle);

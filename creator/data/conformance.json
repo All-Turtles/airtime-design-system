@@ -140,6 +140,251 @@
   "diffs": []
  },
  {
+  "theme": "light",
+  "name": "layer row",
+  "status": "match",
+  "checked": 9,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "inline toggle (Hide layer)",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "background tile",
+  "status": "match",
+  "checked": 3,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "logo switch",
+  "status": "match",
+  "checked": 2,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "switch track",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "tall head (Layers)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "topbar",
+  "status": "match",
+  "checked": 9,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "title trigger",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "title label",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "mode track",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "mode item (unselected)",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "undo (disabled)",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "sidebar toggle (pressed)",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "help",
+  "status": "match",
+  "checked": 3,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "avatar",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "record",
+  "status": "match",
+  "checked": 9,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "insert pill",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "insert label",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "insert button",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "camera main",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "camera picker",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "tray surface",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "tray console",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "add slide",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "tray button",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "slide counter",
+  "status": "match",
+  "checked": 3,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "tile face",
+  "status": "match",
+  "checked": 2,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "tile action chip",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "selection pill",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "selection button",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "resize handle",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "selection frame",
+  "status": "match",
+  "checked": 2,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "menu content",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "menu item",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "tooltip",
+  "status": "match",
+  "checked": 10,
+  "diffs": []
+ },
+ {
   "theme": "dark",
   "name": "card",
   "status": "match",
@@ -277,6 +522,251 @@
   "name": "head link (Reset crop)",
   "status": "match",
   "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "layer row",
+  "status": "match",
+  "checked": 9,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "inline toggle (Hide layer)",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "background tile",
+  "status": "match",
+  "checked": 3,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "logo switch",
+  "status": "match",
+  "checked": 2,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "switch track",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "tall head (Layers)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "topbar",
+  "status": "match",
+  "checked": 9,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "title trigger",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "title label",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "mode track",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "mode item (unselected)",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "undo (disabled)",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "sidebar toggle (pressed)",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "help",
+  "status": "match",
+  "checked": 3,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "avatar",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "record",
+  "status": "match",
+  "checked": 9,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "insert pill",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "insert label",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "insert button",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "camera main",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "camera picker",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "tray surface",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "tray console",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "add slide",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "tray button",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "slide counter",
+  "status": "match",
+  "checked": 3,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "tile face",
+  "status": "match",
+  "checked": 2,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "tile action chip",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "selection pill",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "selection button",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "resize handle",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "selection frame",
+  "status": "match",
+  "checked": 2,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "menu content",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "menu item",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "tooltip",
+  "status": "match",
+  "checked": 10,
   "diffs": []
  }
 ]

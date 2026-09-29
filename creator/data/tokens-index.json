@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T17:44:02.019Z",
+ "generated": "2026-09-29T17:54:35.739Z",
  "tokens": [
   {
    "id": "font-family.body",
@@ -9783,7 +9783,7 @@
    },
    "desc": "Disabled control and unwired placeholder: the whole control dims once.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarRowRecipe.ts",
+    "file": "ui/recipes/sidebarRowRecipe.ts",
     "line": 32,
     "find": "_disabled: { opacity: 0.4"
    },
@@ -9816,7 +9816,7 @@
    },
    "desc": "A hidden layer's thumbnail fades.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 80,
     "find": "opacity={dimmed ? 0.45 : 1}"
    },
@@ -9849,7 +9849,7 @@
    },
    "desc": "A locked layer's grip glyph.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 122,
     "find": "opacity={locked ? 0.3 : 1}"
    },
@@ -9882,7 +9882,7 @@
    },
    "desc": "Sidebar root type size, inherited by every descendant.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/Sidebar.tsx",
+    "file": "creator/sidebar/Sidebar.tsx",
     "line": 36,
     "find": "fontSize=\"12px\""
    },
@@ -9915,7 +9915,7 @@
    },
    "desc": "Sidebar root line height: every 30px row is two of these.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/Sidebar.tsx",
+    "file": "creator/sidebar/Sidebar.tsx",
     "line": 38,
     "find": "lineHeight=\"15px\""
    },
@@ -9946,7 +9946,7 @@
    },
    "desc": "Sidebar root tracking (prototype computed -0.04px at 12px).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/Sidebar.tsx",
+    "file": "creator/sidebar/Sidebar.tsx",
     "line": 39,
     "find": "letterSpacing=\"-0.036px\""
    },
@@ -9979,7 +9979,7 @@
    },
    "desc": "Dropdown value pill: the same translucent lift in both themes.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarFieldRecipe.ts",
+    "file": "ui/recipes/sidebarFieldRecipe.ts",
     "line": 74,
     "find": "bg: \"rgba(255, 255, 255, 0.12)\""
    },
@@ -10013,7 +10013,7 @@
    },
    "desc": "1px inset ring on tint dots and the color-well dot (white in both themes).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Swatches.tsx",
+    "file": "creator/sidebar/primitives/Swatches.tsx",
     "line": 175,
     "find": "\"inset 0 0 0 1px rgba(255, 255, 255, 0.24)\""
    },
@@ -10047,7 +10047,7 @@
    },
    "desc": "1px ring around background tiles.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Swatches.tsx",
+    "file": "creator/sidebar/primitives/Swatches.tsx",
     "line": 176,
     "find": "\"0 0 0 1px rgba(255, 255, 255, 0.16)\""
    },
@@ -10081,7 +10081,7 @@
    },
    "desc": "The red diagonal of the empty (None) dot.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Swatches.tsx",
+    "file": "creator/sidebar/primitives/Swatches.tsx",
     "line": 187,
     "find": "rgb(255, 69, 58)"
    },
@@ -10115,7 +10115,7 @@
    },
    "desc": "Fill behind the None dot's slash.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Swatches.tsx",
+    "file": "creator/sidebar/primitives/Swatches.tsx",
     "line": 188,
     "find": "bgColor: \"rgba(255, 255, 255, 0.08)\""
    },
@@ -10149,7 +10149,7 @@
    },
    "desc": "Drop-shadow preset chip: the miniature slide's ground (content, same in both themes).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Dropdown.tsx",
+    "file": "creator/sidebar/primitives/Dropdown.tsx",
     "line": 171,
     "find": "bg=\"#E6E6EC\""
    },
@@ -10183,7 +10183,7 @@
    },
    "desc": "Transparency checker, light square.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/TransparencyChecker.tsx",
+    "file": "creator/sidebar/primitives/TransparencyChecker.tsx",
     "line": 22,
     "find": "#FFFFFF 0% 25%"
    },
@@ -10217,7 +10217,7 @@
    },
    "desc": "Transparency checker, dark square.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/TransparencyChecker.tsx",
+    "file": "creator/sidebar/primitives/TransparencyChecker.tsx",
     "line": 22,
     "find": "#D4D4DA 0% 50%"
    },
@@ -10251,7 +10251,7 @@
    },
    "desc": "Thumb slot inside a selected (accent) list row.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 78,
     "find": "rgba(255, 255, 255, 0.18)"
    },
@@ -10285,7 +10285,7 @@
    },
    "desc": "Thumb hairline inside a selected list row.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 79,
     "find": "rgba(255, 255, 255, 0.3)"
    },
@@ -10319,7 +10319,7 @@
    },
    "desc": "Slider and switch knobs are white in both themes.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/SliderRow.tsx",
+    "file": "creator/sidebar/primitives/SliderRow.tsx",
     "line": 20,
     "find": "bg: \"white\""
    },
@@ -10353,7 +10353,7 @@
    },
    "desc": "The sidebar card itself: a 1px white hairline and a 20/40 drop. (The declared token shadow.sidebar is not what renders.)",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/Sidebar.tsx",
+    "file": "creator/sidebar/Sidebar.tsx",
     "line": 43,
     "find": "0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 40px"
    },
@@ -10387,7 +10387,7 @@
    },
    "desc": "Action button raised edge: top highlight plus 1px drop.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarRowRecipe.ts",
+    "file": "ui/recipes/sidebarRowRecipe.ts",
     "line": 66,
     "find": "boxShadow: \"inset 0 0.5px 0 0 {colors.edge.in}, 0 1px 2px rgba(0, 0, 0, 0.2)\""
    },
@@ -10421,7 +10421,7 @@
    },
    "desc": "Dropdown value pill.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarFieldRecipe.ts",
+    "file": "ui/recipes/sidebarFieldRecipe.ts",
     "line": 75,
     "find": "boxShadow: \"inset 0 0.5px 0 0 rgba(255, 255, 255, 0.16), 0 1px 2px"
    },
@@ -10455,7 +10455,7 @@
    },
    "desc": "Value field well: hairline ring.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarFieldRecipe.ts",
+    "file": "ui/recipes/sidebarFieldRecipe.ts",
     "line": 22,
     "find": "boxShadow: \"inset 0 0 0 0.5px {colors.line}\""
    },
@@ -10489,7 +10489,7 @@
    },
    "desc": "Value field well on hover.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarFieldRecipe.ts",
+    "file": "ui/recipes/sidebarFieldRecipe.ts",
     "line": 23,
     "find": "_hover: { boxShadow: \"inset 0 0 0 0.5px {colors.line.strong}\""
    },
@@ -10523,7 +10523,7 @@
    },
    "desc": "Value field focus: 0.5px accent line inside a 3px 22% halo (softer than shadow.focus).",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarFieldRecipe.ts",
+    "file": "ui/recipes/sidebarFieldRecipe.ts",
     "line": 7,
     "find": "const focusRing ="
    },
@@ -10557,7 +10557,7 @@
    },
    "desc": "Segmented and shape tracks: hairline ring and 1px inner drop.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarSegmentSlotRecipe.ts",
+    "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
     "line": 8,
     "find": "const track ="
    },
@@ -10591,7 +10591,7 @@
    },
    "desc": "Dropdown panel and color-well popover.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Dropdown.tsx",
+    "file": "creator/sidebar/primitives/Dropdown.tsx",
     "line": 100,
     "find": "boxShadow=\"0 0 0 0.5px {colors.edge.out}, 0 8px 24px rgba(0, 0, 0, 0.45)\""
    },
@@ -10625,7 +10625,7 @@
    },
    "desc": "Range popup under a value field.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/SliderRow.tsx",
+    "file": "creator/sidebar/primitives/SliderRow.tsx",
     "line": 120,
     "find": "0 8px 20px rgba(0, 0, 0, 0.45)"
    },
@@ -10659,7 +10659,7 @@
    },
    "desc": "Selected background tile: 2px accent ring.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Swatches.tsx",
+    "file": "creator/sidebar/primitives/Swatches.tsx",
     "line": 129,
     "find": "boxShadow: circle"
    },
@@ -10693,7 +10693,7 @@
    },
    "desc": "Selected tint dot: 2.5px accent ring outside a white inner hairline.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Swatches.tsx",
+    "file": "creator/sidebar/primitives/Swatches.tsx",
     "line": 130,
     "find": "0 0 0 2.5px {colors.accent.solid}"
    },
@@ -10727,7 +10727,7 @@
    },
    "desc": "Range slider track (4px, state.active fill).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/SliderRow.tsx",
+    "file": "creator/sidebar/primitives/SliderRow.tsx",
     "line": 14,
     "find": "inset 0 1px 1.5px rgba(0, 0, 0, 0.3)"
    },
@@ -10761,7 +10761,7 @@
    },
    "desc": "Range slider thumb (15px white).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/SliderRow.tsx",
+    "file": "creator/sidebar/primitives/SliderRow.tsx",
     "line": 21,
     "find": "0 0 0 0.5px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.38)"
    },
@@ -10795,7 +10795,7 @@
    },
    "desc": "Switch track (30x18).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 261,
     "find": "inset 0 1px 2px rgba(0, 0, 0, 0.1)"
    },
@@ -10829,7 +10829,7 @@
    },
    "desc": "Switch knob (14px white).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 272,
     "find": "0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28)"
    },
@@ -10863,7 +10863,7 @@
    },
    "desc": "Thumbnail frame hairline (layer, layout, logo).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbFrame.tsx",
+    "file": "creator/sidebar/primitives/ThumbFrame.tsx",
     "line": 19,
     "find": "inset 0 0 0 0.5px {colors.line.strong}"
    },
@@ -10897,7 +10897,7 @@
    },
    "desc": "Layer drag: insertion line on a row's top edge (bottom: inset 0 -2px).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 49,
     "find": "inset 0 2px 0 {colors.state.dropIndicator}"
    },
@@ -10931,7 +10931,7 @@
    },
    "desc": "Row height, 30px (min-height).",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarRowRecipe.ts",
+    "file": "ui/recipes/sidebarRowRecipe.ts",
     "line": 24,
     "find": "minH: \"creator.sidebarRow\""
    },
@@ -10965,7 +10965,7 @@
    },
    "desc": "Segment, value field, pill and tool height, 24px.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarSegmentSlotRecipe.ts",
+    "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
     "line": 20,
     "find": "h: \"creator.sidebarControl\""
    },
@@ -10998,9 +10998,9 @@
    },
    "desc": "Row glyph box: 20px. Glyph painted with fill: currentColor.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Row.tsx",
-    "line": null,
-    "find": "boxSize=\"5\""
+    "file": "ui/recipes/sidebarRowRecipe.ts",
+    "line": 13,
+    "find": "\"& svg\": { boxSize: \"5\" }"
    },
    "chakra": null,
    "kind": "derived",
@@ -11031,7 +11031,7 @@
    },
    "desc": "Action button glyph: 18px.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Actions.tsx",
+    "file": "creator/sidebar/primitives/Actions.tsx",
     "line": 61,
     "find": "boxSize=\"4.5\""
    },
@@ -11064,7 +11064,7 @@
    },
    "desc": "Header toggle glyph: 16px.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/IconToggle.tsx",
+    "file": "creator/sidebar/primitives/IconToggle.tsx",
     "line": 46,
     "find": "size === \"back\" ? \"5\" : \"4\""
    },
@@ -11097,7 +11097,7 @@
    },
    "desc": "Layer-row eye/lock glyph: 14px.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/IconToggle.tsx",
+    "file": "creator/sidebar/primitives/IconToggle.tsx",
     "line": 46,
     "find": "inline ? \"3.5\""
    },
@@ -11130,7 +11130,7 @@
    },
    "desc": "Shape segment glyph.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarSegmentSlotRecipe.ts",
+    "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
     "line": 87,
     "find": "\"& svg\": { boxSize: \"22px\" }"
    },
@@ -11163,7 +11163,7 @@
    },
    "desc": "Pill chevron: 9px.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarFieldRecipe.ts",
+    "file": "ui/recipes/sidebarFieldRecipe.ts",
     "line": 80,
     "find": "\"& svg\": { boxSize: \"9px\""
    },
@@ -11196,7 +11196,7 @@
    },
    "desc": "Header IconToggle box (back, hide, lock); 22px inline.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/IconToggle.tsx",
+    "file": "creator/sidebar/primitives/IconToggle.tsx",
     "line": 34,
     "find": "boxSize={inline ? \"22px\" : \"26px\"}"
    },
@@ -11229,7 +11229,7 @@
    },
    "desc": "Layer-row eye/lock box.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/IconToggle.tsx",
+    "file": "creator/sidebar/primitives/IconToggle.tsx",
     "line": 34,
     "find": "boxSize={inline ? \"22px\" : \"26px\"}"
    },
@@ -11262,7 +11262,7 @@
    },
    "desc": "Pane header band: 44px.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarSectionSlotRecipe.ts",
+    "file": "ui/recipes/sidebarSectionSlotRecipe.ts",
     "line": 122,
     "find": "h: \"11\""
    },
@@ -11295,7 +11295,7 @@
    },
    "desc": "List row min height: 36px.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 40,
     "find": "minH=\"9\""
    },
@@ -11328,7 +11328,7 @@
    },
    "desc": "Row thumbnail slot: 48px wide.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 74,
     "find": "w=\"12\""
    },
@@ -11361,7 +11361,7 @@
    },
    "desc": "Row thumbnail slot: 28px tall.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 75,
     "find": "h=\"7\""
    },
@@ -11394,7 +11394,7 @@
    },
    "desc": "Color-well dot: 20px.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ColorWellRow.tsx",
+    "file": "creator/sidebar/primitives/ColorWellRow.tsx",
     "line": 79,
     "find": "boxSize=\"5\""
    },
@@ -11427,7 +11427,7 @@
    },
    "desc": "Tint dot in a swatch grid: 24px.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Swatches.tsx",
+    "file": "creator/sidebar/primitives/Swatches.tsx",
     "line": 112,
     "find": "w={circle ? \"6\""
    },
@@ -11460,7 +11460,7 @@
    },
    "desc": "Switch track width (hit box 34x26).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 257,
     "find": "w=\"30px\""
    },
@@ -11493,7 +11493,7 @@
    },
    "desc": "Switch track height.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 258,
     "find": "h=\"18px\""
    },
@@ -11526,7 +11526,7 @@
    },
    "desc": "Switch knob.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ThumbRow.tsx",
+    "file": "creator/sidebar/primitives/ThumbRow.tsx",
     "line": 269,
     "find": "boxSize=\"14px\""
    },
@@ -11559,7 +11559,7 @@
    },
    "desc": "Range thumb.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/SliderRow.tsx",
+    "file": "creator/sidebar/primitives/SliderRow.tsx",
     "line": 18,
     "find": "boxSize: \"15px\""
    },
@@ -11592,7 +11592,7 @@
    },
    "desc": "Range track height.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/SliderRow.tsx",
+    "file": "creator/sidebar/primitives/SliderRow.tsx",
     "line": 11,
     "find": "height: \"4px\""
    },
@@ -11625,7 +11625,7 @@
    },
    "desc": "Range popup width.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/SliderRow.tsx",
+    "file": "creator/sidebar/primitives/SliderRow.tsx",
     "line": 110,
     "find": "w=\"250px\""
    },
@@ -11658,7 +11658,7 @@
    },
    "desc": "Color-well popover width: 240px.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/ColorWellRow.tsx",
+    "file": "creator/sidebar/primitives/ColorWellRow.tsx",
     "line": 91,
     "find": "w=\"60\""
    },
@@ -11691,7 +11691,7 @@
    },
    "desc": "Dropdown grid panel: three 56px columns.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Dropdown.tsx",
+    "file": "creator/sidebar/primitives/Dropdown.tsx",
     "line": 107,
     "find": "repeat(3, 56px)"
    },
@@ -11724,7 +11724,7 @@
    },
    "desc": "Gap between the row's edge and its popup.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/popupPlacement.ts",
+    "file": "creator/sidebar/primitives/popupPlacement.ts",
     "line": 50,
     "find": "gutter: 4"
    },
@@ -11757,7 +11757,7 @@
    },
    "desc": "Popup keeps this far inside the sidebar card (flip/slide boundary).",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/popupPlacement.ts",
+    "file": "creator/sidebar/primitives/popupPlacement.ts",
     "line": 53,
     "find": "overflowPadding: 16"
    },
@@ -11790,7 +11790,7 @@
    },
    "desc": "Value field width; the wide (hex) field is 112px.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarFieldRecipe.ts",
+    "file": "ui/recipes/sidebarFieldRecipe.ts",
     "line": 47,
     "find": "w: \"54px\""
    },
@@ -11823,7 +11823,7 @@
    },
    "desc": "Wide value field (hex).",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarFieldRecipe.ts",
+    "file": "ui/recipes/sidebarFieldRecipe.ts",
     "line": 55,
     "find": "w: \"112px\""
    },
@@ -11856,7 +11856,7 @@
    },
    "desc": "Segments, rows, fields: colour changes on 160ms settle.",
    "source": {
-    "file": "apps/airtime-creator/src/ui/recipes/sidebarSegmentSlotRecipe.ts",
+    "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
     "line": 34,
     "find": "transitionProperty: \"background, color\""
    },
@@ -11887,7 +11887,7 @@
    },
    "desc": "Swatch hover scale and ring: 160ms spring.",
    "source": {
-    "file": "apps/airtime-creator/src/creator/sidebar/primitives/Swatches.tsx",
+    "file": "creator/sidebar/primitives/Swatches.tsx",
     "line": 115,
     "find": "transitionTimingFunction=\"spring\""
    },
@@ -11903,6 +11903,509 @@
     "dark": "box-shadow 160ms cubic-bezier(.34, 1.4, .5, 1), transform 160ms cubic-bezier(.34, 1.4, .5, 1)"
    },
    "used": null,
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "color.stage-frame",
+   "css": "--cr-color-stage-frame",
+   "category": "colors",
+   "type": "color",
+   "value": {
+    "value": "#99E5EE"
+   },
+   "desc": "Selection frame and handle border: legacy Airtime teal (--action-hover), not Creator's accent blue.",
+   "source": {
+    "file": "../teleport/stage/objects/overlay.css",
+    "line": 6,
+    "find": "--frame-color: var(--action-hover)"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "#99E5EE"
+   },
+   "rendered": {
+    "light": "rgb(153, 229, 238)",
+    "dark": "rgb(153, 229, 238)"
+   },
+   "used": {
+    "light": 18,
+    "dark": 18
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "color.stage-guide-hit",
+   "css": "--cr-color-stage-guide-hit",
+   "category": "colors",
+   "type": "color",
+   "value": {
+    "value": "#E55242"
+   },
+   "desc": "Alignment guide that the dragged object is snapping to.",
+   "source": {
+    "file": "../teleport/stage/objects/alignment_grid.js",
+    "line": 556,
+    "find": "color = \"#E55242\""
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "#E55242"
+   },
+   "rendered": {
+    "light": "rgb(229, 82, 66)",
+    "dark": "rgb(229, 82, 66)"
+   },
+   "used": {
+    "light": 0,
+    "dark": 0
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "color.stage-guide",
+   "css": "--cr-color-stage-guide",
+   "category": "colors",
+   "type": "color",
+   "value": {
+    "value": "#FFFFFF"
+   },
+   "desc": "Anchor snap lines (thirds/centre).",
+   "source": {
+    "file": "../teleport/stage/objects/alignment_grid.js",
+    "line": 560,
+    "find": "color = \"white\""
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "#FFFFFF"
+   },
+   "rendered": {
+    "light": "rgb(255, 255, 255)",
+    "dark": "rgb(255, 255, 255)"
+   },
+   "used": {
+    "light": 57,
+    "dark": 281
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "color.stage-grid-fill",
+   "css": "--cr-color-stage-grid-fill",
+   "category": "colors",
+   "type": "color",
+   "value": {
+    "value": "rgba(127, 127, 127, 0.65)"
+   },
+   "desc": "Alignment grid canvas fill.",
+   "source": {
+    "file": "../teleport/stage/objects/alignment_grid.js",
+    "line": 314,
+    "find": "rgba(127, 127, 127, 0.65)"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "rgba(127, 127, 127, 0.65)"
+   },
+   "rendered": {
+    "light": "rgba(127, 127, 127, 0.65)",
+    "dark": "rgba(127, 127, 127, 0.65)"
+   },
+   "used": {
+    "light": 0,
+    "dark": 0
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "color.handle-fill",
+   "css": "--cr-color-handle-fill",
+   "category": "colors",
+   "type": "color",
+   "value": {
+    "value": "#FFFFFF"
+   },
+   "desc": "Resize handle fill.",
+   "source": {
+    "file": "../teleport/stage/objects/overlay.css",
+    "line": 155,
+    "find": "background: #ffffff"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "#FFFFFF"
+   },
+   "rendered": {
+    "light": "rgb(255, 255, 255)",
+    "dark": "rgb(255, 255, 255)"
+   },
+   "used": {
+    "light": 57,
+    "dark": 281
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "color.on-badge",
+   "css": "--cr-color-on-badge",
+   "category": "colors",
+   "type": "color",
+   "value": {
+    "value": "rgba(255, 255, 255, 0.96)"
+   },
+   "desc": "Artwork on a dark slide badge or tile action: white in both themes.",
+   "source": {
+    "file": "ui/recipes/slideTileSlotRecipe.ts",
+    "line": 17,
+    "find": "color: \"rgba(255, 255, 255, 0.96)\""
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "rgba(255, 255, 255, 0.96)"
+   },
+   "rendered": {
+    "light": "rgba(255, 255, 255, 0.96)",
+    "dark": "rgba(255, 255, 255, 0.96)"
+   },
+   "used": {
+    "light": 172,
+    "dark": 1140
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "size.handle",
+   "css": "--cr-size-handle",
+   "category": "sizes",
+   "type": "dimension",
+   "value": {
+    "value": "10px"
+   },
+   "desc": "Resize handle knob (corner and edge); crop edge handles are 10x20.",
+   "source": {
+    "file": "../teleport/stage/objects/overlay.css",
+    "line": 158,
+    "find": "--knob-diameter: 10px"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "10px"
+   },
+   "rendered": {
+    "light": "10px",
+    "dark": "10px"
+   },
+   "used": {
+    "all": 56
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "radius.handle",
+   "css": "--cr-radius-handle",
+   "category": "radii",
+   "type": "dimension",
+   "value": {
+    "value": "2px"
+   },
+   "desc": "Resize handle radius.",
+   "source": {
+    "file": "../teleport/stage/objects/overlay.css",
+    "line": 163,
+    "find": "border-radius: 2px"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "2px"
+   },
+   "rendered": {
+    "light": "2px",
+    "dark": "2px"
+   },
+   "used": {
+    "all": 32
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "size.frame-width",
+   "css": "--cr-size-frame-width",
+   "category": "sizes",
+   "type": "dimension",
+   "value": {
+    "value": "2px"
+   },
+   "desc": "Selection frame and handle border width.",
+   "source": {
+    "file": "../teleport/stage/objects/overlay.css",
+    "line": 7,
+    "find": "--frame-width: 2px"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "2px"
+   },
+   "rendered": {
+    "light": "2px",
+    "dark": "2px"
+   },
+   "used": {
+    "all": 0
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "shadow.handle",
+   "css": "--cr-shadow-handle",
+   "category": "shadows",
+   "type": "shadow",
+   "value": {
+    "value": "0 1px 4px rgba(0, 0, 0, 0.18)"
+   },
+   "desc": "Resize handle.",
+   "source": {
+    "file": "../teleport/stage/objects/overlay.css",
+    "line": 162,
+    "find": "box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.18)"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "0 1px 4px rgba(0, 0, 0, 0.18)"
+   },
+   "rendered": {
+    "light": "rgba(0, 0, 0, 0.18) 0px 1px 4px 0px",
+    "dark": "rgba(0, 0, 0, 0.18) 0px 1px 4px 0px"
+   },
+   "used": {
+    "light": 16,
+    "dark": 16
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "shadow.tile-action",
+   "css": "--cr-shadow-tile-action",
+   "category": "shadows",
+   "type": "shadow",
+   "value": {
+    "value": "0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28)"
+   },
+   "desc": "Slide tile edit/layers chip.",
+   "source": {
+    "file": "ui/recipes/slideTileSlotRecipe.ts",
+    "line": 93,
+    "find": "0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28)"
+   },
+   "rendered": {
+    "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.28) 0px 2px 8px 0px",
+    "dark": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.28) 0px 2px 8px 0px"
+   },
+   "used": {
+    "light": 4,
+    "dark": 4
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "opacity.disabled-button",
+   "css": "--cr-opacity-disabled-button",
+   "category": "opacity",
+   "type": "number",
+   "value": {
+    "value": "0.45"
+   },
+   "desc": "Disabled Button (and disabled menu item): heavier than the sidebar's 0.4.",
+   "source": {
+    "file": "ui/recipes/buttonRecipe.ts",
+    "line": 23,
+    "find": "_disabled: { opacity: 0.45"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "0.45"
+   },
+   "rendered": {
+    "light": "0.45",
+    "dark": "0.45"
+   },
+   "used": {
+    "all": 6
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "opacity.disabled-icon",
+   "css": "--cr-opacity-disabled-icon",
+   "category": "opacity",
+   "type": "number",
+   "value": {
+    "value": "0.3"
+   },
+   "desc": "Disabled icon button (size xs: Undo/Redo).",
+   "source": {
+    "file": "ui/recipes/buttonRecipe.ts",
+    "line": 34,
+    "find": "opacity: 0.3, cursor"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "0.3"
+   },
+   "rendered": {
+    "light": "0.3",
+    "dark": "0.3"
+   },
+   "used": {
+    "all": 28
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "opacity.disabled-split",
+   "css": "--cr-opacity-disabled-split",
+   "category": "opacity",
+   "type": "number",
+   "value": {
+    "value": "0.2"
+   },
+   "desc": "Disabled half of a device split button.",
+   "source": {
+    "file": "ui/recipes/splitButtonSlotRecipe.ts",
+    "line": 55,
+    "find": "opacity: 0.2"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "0.2"
+   },
+   "rendered": {
+    "light": "0.2",
+    "dark": "0.2"
+   },
+   "used": {
+    "all": 0
+   },
+   "org": {
+    "relation": "creator-only",
+    "note": "A literal in Creator recipes with no org token."
+   }
+  },
+  {
+   "id": "opacity.status-dot",
+   "css": "--cr-opacity-status-dot",
+   "category": "opacity",
+   "type": "number",
+   "value": {
+    "value": "0.55"
+   },
+   "desc": "Idle status dot.",
+   "source": {
+    "file": "ui/recipes/statusChipSlotRecipe.ts",
+    "line": 33,
+    "find": "opacity: 0.55"
+   },
+   "chakra": null,
+   "kind": "derived",
+   "status": "derived",
+   "themed": false,
+   "declared": {
+    "value": "0.55"
+   },
+   "rendered": {
+    "light": "0.55",
+    "dark": "0.55"
+   },
+   "used": {
+    "all": 0
+   },
    "org": {
     "relation": "creator-only",
     "note": "A literal in Creator recipes with no org token."

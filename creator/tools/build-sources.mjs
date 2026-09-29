@@ -20,6 +20,23 @@ const M = {
   "sb.icons": [[C + "icons.tsx", "const sources"], ["creator/LegacyIcon.tsx", "export function LegacyIcon"], ["../teleport/icons.js", "var AppIcons"]],
   "sb.placeholder": [[P + "Placeholder.tsx", "export function Placeholder"]],
   "sb.popup": [[P + "popupPlacement.ts", "export const sidebarPopupPositioning"], [P + "popupPlacement.ts", "export function popupAnchor"]],
+  "hd.topbar": [["creator/TopBar.tsx", "export"], ["creator/PresentationTitle.tsx", "export function PresentationTitle"], ["ui/recipes/presentationTitleSlotRecipe.ts", "trigger: {"], ["ui/recipes/buttonRecipe.ts", "plain: {"]],
+  "hd.mode": [["creator/ModeSwitch.tsx", "export function ModeSwitch"], ["ui/recipes/segmentGroupSlotRecipe.ts", "root: {"]],
+  "hd.iconbtn": [["ui/recipes/buttonRecipe.ts", "xs: {"], ["ui/recipes/buttonRecipe.ts", "plain: {"], ["creator/UndoRedo.tsx", "export function UndoRedo"], ["creator/sidebar/SidebarToggle.tsx", "export function SidebarToggle"], ["ui/recipes/avatarRecipe.ts", "defineRecipe"]],
+  "hd.record": [["ui/recipes/buttonRecipe.ts", "record: {"], ["creator/RecordingControls.tsx", "export function RecordingControls"], ["creator/RecordingStatus.tsx", "export"]],
+  "hd.insert": [["creator/InsertBar.tsx", "export function InsertBar"], ["ui/recipes/buttonRecipe.ts", "insert: {"], ["ui/recipes/pillSlotRecipe.ts", "hud: {"]],
+  "hd.split": [["creator/DeviceSplit.tsx", "export"], ["ui/recipes/splitButtonSlotRecipe.ts", "defineSlotRecipe"]],
+  "hd.status": [["ui/recipes/statusChipSlotRecipe.ts", "defineSlotRecipe"], ["creator/RecordingStatus.tsx", "export"]],
+  "tr.tray": [["creator/TrayArea.tsx", "export"], ["creator/TrayConsole.tsx", "export"], ["ui/recipes/buttonRecipe.ts", "tray: {"], ["ui/recipes/buttonRecipe.ts", "addSlide: {"]],
+  "tr.tile": [["ui/recipes/slideTileSlotRecipe.ts", "defineSlotRecipe"], ["creator/SlideThumbnail.tsx", "export"]],
+  "st.pill": [["creator/PresenterSelectionControls.tsx", "export"], ["ui/recipes/pillSlotRecipe.ts", "glass: {"], ["ui/recipes/buttonRecipe.ts", "stage: {"]],
+  "st.popover": [["creator/StageControlPopover.tsx", "export function StageControlPopover"], ["ui/recipes/menuSlotRecipe.ts", "stage: {"], ["ui/recipes/buttonRecipe.ts", "stageOption: {"], ["ui/recipes/buttonRecipe.ts", "stageRow: {"], ["creator/StageSliderField.tsx", "export function StageSliderField"]],
+  "st.overlay": [["../teleport/stage/objects/overlay.css", "div.slide_overlay div.handles div.handle {"], ["../teleport/stage/objects/overlay.css", "div.slide_overlay div.frame {"], ["../teleport/stage/objects/alignment_grid.js", "_isAnchorLine"], ["../teleport/stage/objects/overlay.css", "div.button_bar {"]],
+  "ax.menu": [["ui/recipes/menuSlotRecipe.ts", "defineSlotRecipe"], ["creator/ContextMenu.tsx", "export function ContextMenu"], ["creator/menuItems.ts", "export"]],
+  "ax.tooltip": [["ui/recipes/tooltipSlotRecipe.ts", "defineSlotRecipe"], ["creator/StageControlTooltip.tsx", "export function StageControlTooltip"]],
+  "ax.dialog": [["ui/recipes/dialogSlotRecipe.ts", "defineSlotRecipe"], ["creator/ShareVideoDialog.tsx", "export"]],
+  "ax.button": [["ui/recipes/buttonRecipe.ts", "variant: {"]],
+  "ax.notice": [["creator/SessionNotice.tsx", "function Notice"]],
 };
 const out = {};
 for (const [k, list] of Object.entries(M)) out[k] = list.map(([file, find]) => { const p = SRC + file; const lines = fs.readFileSync(p, "utf8").split("\n"); const line = lines.findIndex((l) => l.includes(find)) + 1; if (!line) console.warn("not found", k, file, find); return { file: file.startsWith("../") ? "../" + file.slice(3) : file, line: line || null, note: find.length < 44 ? find : "" }; });

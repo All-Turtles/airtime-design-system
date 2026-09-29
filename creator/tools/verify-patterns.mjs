@@ -29,8 +29,44 @@ const PAIRS = [
   { n: "rule", pane: "presenter", live: { css: "hr" }, doc: "#sb-labels .cr-rule.is-shown", props: ["height", "marginTop", "marginBottom", "backgroundColor"] },
   { n: "tint dot", pane: "presenter", live: { label: "Blue red", role: "radio" }, doc: "#sb-swatches .cr-swatches.is-circle .cr-swatch", props: ["width", "height", "borderTopLeftRadius", "boxShadow"] },
   { n: "head link (Reset crop)", pane: "presenter", live: { text: "Reset crop", tag: "button", child: "span" }, doc: "#sb-labels .cr-headlink > span", props: ["fontSize", "fontWeight", "lineHeight", "color"] },
+  { n: "layer row", pane: "slide", live: { css: '[role=group][aria-label="Layers"] > [role=button]' }, doc: "#sb-thumbrow .cr-thumbrow", props: ["height", "paddingTop", "paddingLeft", "borderTopLeftRadius", "gap", "fontSize", "lineHeight", "color", "backgroundColor"] },
+  { n: "inline toggle (Hide layer)", pane: "slide", live: { label: "Hide layer" }, doc: "#sb-icontoggle .cr-icontoggle.is-inline", props: ["width", "height", "borderTopLeftRadius", "color"] },
+  { n: "background tile", pane: "slide", live: { text: "Cosmic Glow", role: "radio" }, doc: { css: "#sb-swatches .cr-swatches:not(.is-circle):not(.is-square) .cr-swatch", nth: 1 }, props: ["height", "borderTopLeftRadius", "boxShadow"] },
+  { n: "logo switch", pane: "slide", live: { text: "", role: "switch", tag: "button" }, doc: "#sb-thumbrow .cr-switch", props: ["width", "height"] },
+  { n: "switch track", pane: "slide", live: { role: "switch", tag: "button", child: "span" }, doc: { css: "#sb-thumbrow .cr-switch > span", nth: 1 }, props: ["width", "height", "borderTopLeftRadius", "backgroundColor", "boxShadow"] },
+  { n: "tall head (Layers)", pane: "slide", live: { css: '[role=group][aria-label="Layers"] > div:first-child' }, doc: "#sb-labels .cr-section-head.is-tall", props: ["minHeight", "fontSize", "fontWeight", "lineHeight", "color", "gap"] },
+  // ---- header / band / tray / stage (whole document scope)
+  { n: "topbar", pane: "presenter", live: { css: "header", abs: 1 }, doc: "#hd-topbar .cr-topbar", props: ["height", "paddingLeft", "gap", "backgroundColor", "boxShadow", "fontSize", "lineHeight", "zIndex", "color"] },
+  { n: "title trigger", pane: "presenter", live: { label: "Document menu", abs: 1 }, doc: "#hd-topbar .cr-title", props: ["height", "paddingTop", "paddingLeft", "borderTopLeftRadius", "gap", "color", "lineHeight"] },
+  { n: "title label", pane: "presenter", live: { label: "Document menu", abs: 1, child: "span:nth-child(2)" }, doc: "#hd-topbar .cr-title .label", props: ["fontSize", "fontWeight", "lineHeight", "color", "paddingTop", "paddingLeft", "borderTopLeftRadius"] },
+  { n: "mode track", pane: "presenter", live: { role: "radiogroup", label: "Mode", abs: 1 }, doc: "#hd-topbar .cr-mode", props: ["height", "paddingTop", "gap", "borderTopLeftRadius", "backgroundColor", "boxShadow"] },
+  { n: "mode item (unselected)", pane: "presenter", live: { css: '[role=radiogroup][aria-label="Mode"] label:last-of-type', abs: 1 }, doc: { css: "#hd-topbar .cr-mode-item", nth: 1 }, props: ["height", "paddingLeft", "borderTopLeftRadius", "fontSize", "fontWeight", "lineHeight", "color"] },
+  { n: "undo (disabled)", pane: "presenter", live: { label: "Undo", abs: 1 }, doc: "#hd-topbar .cr-iconbtn", props: ["width", "height", "borderTopLeftRadius", "color", "opacity"] },
+  { n: "sidebar toggle (pressed)", pane: "presenter", live: { label: "Hide sidebar", abs: 1 }, doc: "#hd-topbar .cr-iconbtn.is-toggle", props: ["width", "height", "borderTopLeftRadius", "color", "backgroundColor"] },
+  { n: "help", pane: "presenter", live: { label: "Help", abs: 1 }, doc: "#hd-topbar .cr-iconbtn.is-quiet", props: ["width", "height", "color"] },
+  { n: "avatar", pane: "presenter", live: { label: "Account menu", abs: 1 }, doc: "#hd-topbar .cr-avatar", props: ["width", "height", "borderTopLeftRadius", "boxShadow"] },
+  { n: "record", pane: "presenter", live: { label: "Record", abs: 1 }, doc: "#hd-record .cr-record", props: ["height", "paddingLeft", "paddingRight", "borderTopLeftRadius", "gap", "backgroundColor", "boxShadow", "fontSize", "color"] },
+  { n: "insert pill", pane: "presenter", live: { role: "toolbar", label: "Insert", abs: 1 }, doc: "#hd-insert .cr-hud", props: ["height", "paddingTop", "gap", "borderTopLeftRadius", "backgroundColor", "boxShadow"] },
+  { n: "insert label", pane: "presenter", live: { role: "toolbar", label: "Insert", abs: 1, child: "span" }, doc: "#hd-insert .cr-hud-label", props: ["fontSize", "fontWeight", "lineHeight", "letterSpacing", "textTransform", "color", "paddingLeft", "paddingRight"] },
+  { n: "insert button", pane: "presenter", live: { label: "Screenshare", abs: 1 }, doc: "#hd-insert .cr-insert", props: ["width", "height", "borderTopLeftRadius", "color"] },
+  { n: "camera main", pane: "presenter", live: { label: "Turn off camera", abs: 1 }, doc: "#hd-split .cr-split .main", props: ["height", "paddingLeft", "paddingRight", "gap", "color"] },
+  { n: "camera picker", pane: "presenter", live: { label: "Select a camera", abs: 1 }, doc: "#hd-split .cr-split .trigger", props: ["height", "paddingLeft", "paddingRight", "color"] },
+  { n: "tray surface", pane: "presenter", live: { css: "[data-testid=tray-surface]", abs: 1 }, doc: "#tr-tray .cr-tray-surface", props: ["height", "borderTopLeftRadius", "backgroundColor", "boxShadow"] },
+  { n: "tray console", pane: "presenter", live: { role: "toolbar", label: "Slide controls", abs: 1 }, doc: "#tr-tray .cr-tray-controls", props: ["height", "paddingLeft", "gap", "borderTopLeftRadius", "backgroundColor", "boxShadow"] },
+  { n: "add slide", pane: "presenter", live: { text: "Add Slide", tag: "button", abs: 1 }, doc: "#tr-buttons .cr-addslide", props: ["height", "paddingLeft", "gap", "borderTopLeftRadius", "backgroundColor", "color", "fontSize", "fontWeight"] },
+  { n: "tray button", pane: "presenter", live: { label: "Import slides", abs: 1 }, doc: "#tr-buttons .cr-traybtn", props: ["width", "height", "borderTopLeftRadius", "color"] },
+  { n: "slide counter", pane: "presenter", live: { role: "status", label: "Slide position", abs: 1 }, doc: "#tr-buttons .cr-counter", props: ["fontSize", "lineHeight", "color"] },
+  { n: "tile face", pane: "presenter", live: { label: "Slide 1", tag: "button", abs: 1 }, doc: "#tr-tile .cr-tile .face", props: ["height", "borderTopLeftRadius"] },
+  { n: "tile action chip", pane: "presenter", live: { label: "Show layers for slide 1", abs: 1 }, doc: { css: "#tr-tile .cr-tile.is-selected .act.edit" }, props: ["width", "height", "borderTopLeftRadius", "backgroundColor", "color", "boxShadow"] },
+  { n: "selection pill", pane: "presenter", live: { role: "toolbar", label: "Presenter controls", abs: 1 }, doc: "#st-pill .cr-glass", props: ["height", "paddingTop", "gap", "borderTopLeftRadius", "backgroundColor", "boxShadow", "color"] },
+  { n: "selection button", pane: "presenter", live: { label: "Shape", abs: 1 }, doc: "#st-pill .cr-gbtn", props: ["height", "paddingLeft", "borderTopLeftRadius", "gap", "fontSize", "fontWeight", "lineHeight", "color"] },
+  { n: "resize handle", pane: "presenter", live: { css: "div.slide_overlay div.handles div.handle", abs: 1 }, doc: "#st-overlay .cr-handle", props: ["width", "height", "borderTopLeftRadius", "borderTopWidth", "borderTopColor", "backgroundColor", "boxShadow"] },
+  { n: "selection frame", pane: "presenter", live: { css: "div.slide_overlay div.frame", abs: 1 }, doc: "#st-overlay .cr-frame", props: ["borderTopWidth", "borderTopColor"] },
+  { n: "menu content", pane: "presenter+click:Help", live: { css: "[data-part=content][role=menu]", abs: 1 }, doc: "#ax-menu .cr-menu", props: ["paddingTop", "paddingLeft", "borderTopLeftRadius", "backgroundColor", "boxShadow", "color"] },
+  { n: "menu item", pane: "presenter+click:Help", live: { css: "[role=menuitem]", abs: 1 }, doc: "#ax-menu .cr-menu-item", props: ["paddingTop", "paddingLeft", "gap", "borderTopLeftRadius", "fontSize", "lineHeight", "color"] },
+  { n: "tooltip", pane: "presenter+hover:Shape", live: { css: "[data-part=content][role=tooltip]", abs: 1 }, doc: "#ax-tooltip .cr-tooltip", props: ["paddingTop", "paddingLeft", "borderTopLeftRadius", "backgroundColor", "color", "boxShadow", "fontSize", "lineHeight", "borderTopWidth", "borderTopColor"] },
 ];
-const finder = `(sb, s) => { const cands = s.abs ? [document.querySelector(s.css)] : [...sb.querySelectorAll(s.css ?? "*")]; const norm = (x) => (x || "").trim();
+const finder = `(sb, s) => { const cands = s.abs ? [...document.querySelectorAll(s.css ?? "*")] : [...sb.querySelectorAll(s.css ?? "*")]; const norm = (x) => (x || "").trim();
   let list = cands.filter((e) => (!s.tag || e.tagName.toLowerCase() === s.tag) && (!s.role || e.getAttribute("role") === s.role) && (!s.label || e.getAttribute("aria-label") === s.label) && (!s.text || norm(e.textContent).startsWith(s.text) || (e.getAttribute("aria-label") || "").startsWith(s.text)));
   let e = list[0]; if (!e) return null; if (s.parent) e = e.parentElement; if (s.child) e = e.querySelector(s.child); if (s.lastChild) e = e.lastElementChild; return e; }`;
 const grab = `(e, props) => { const c = getComputedStyle(e), o = {}; for (const p of props) o[p] = c[p]; return o; }`;
@@ -38,8 +74,10 @@ const out = [];
 const ctxB = await launchBrowser([]);
 for (const theme of ["light", "dark"]) {
   const live = {};
-  for (const pane of ["presenter"]) {
-    const { browser, page } = await open(theme, pane);
+  for (const pane of [...new Set(PAIRS.map((x) => x.pane))]) {
+    const [base, act] = pane.split("+");
+    const { browser, page } = await open(theme, base === "slide" ? "none" : base);
+    if (act) { const [kind, name] = act.split(":"); const b = page.getByRole("button", { name, exact: true }).first(); if (kind === "click") await b.click(); else { const bb = await b.boundingBox(); await page.mouse.move(bb.x + bb.width / 2 - 4, bb.y + bb.height / 2); await page.mouse.move(bb.x + bb.width / 2, bb.y + bb.height / 2, { steps: 4 }); } await page.waitForTimeout(700); }
     for (const p of PAIRS.filter((x) => x.pane === pane)) live[p.n] = await page.evaluate(({ f, g, s, props }) => { const sb = document.querySelector('[data-testid="sidebar"]'); const e = eval(f)(sb, s); if (!e) return null; return eval(g)(e, props); }, { f: finder, g: grab, s: p.live, props: p.props });
     await browser.close();
   }

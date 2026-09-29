@@ -257,5 +257,279 @@
    "line": 35,
    "note": "export function popupAnchor"
   }
+ ],
+ "hd.topbar": [
+  {
+   "file": "creator/TopBar.tsx",
+   "line": 13,
+   "note": "export"
+  },
+  {
+   "file": "creator/PresentationTitle.tsx",
+   "line": 13,
+   "note": "export function PresentationTitle"
+  },
+  {
+   "file": "ui/recipes/presentationTitleSlotRecipe.ts",
+   "line": 7,
+   "note": "trigger: {"
+  },
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 221,
+   "note": "plain: {"
+  }
+ ],
+ "hd.mode": [
+  {
+   "file": "creator/ModeSwitch.tsx",
+   "line": 10,
+   "note": "export function ModeSwitch"
+  },
+  {
+   "file": "ui/recipes/segmentGroupSlotRecipe.ts",
+   "line": 7,
+   "note": "root: {"
+  }
+ ],
+ "hd.iconbtn": [
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 28,
+   "note": "xs: {"
+  },
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 221,
+   "note": "plain: {"
+  },
+  {
+   "file": "creator/UndoRedo.tsx",
+   "line": 8,
+   "note": "export function UndoRedo"
+  },
+  {
+   "file": "creator/sidebar/SidebarToggle.tsx",
+   "line": 12,
+   "note": "export function SidebarToggle"
+  },
+  {
+   "file": "ui/recipes/avatarRecipe.ts",
+   "line": 1,
+   "note": "defineRecipe"
+  }
+ ],
+ "hd.record": [
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 184,
+   "note": "record: {"
+  },
+  {
+   "file": "creator/RecordingControls.tsx",
+   "line": 32,
+   "note": "export function RecordingControls"
+  },
+  {
+   "file": "creator/RecordingStatus.tsx",
+   "line": 11,
+   "note": "export"
+  }
+ ],
+ "hd.insert": [
+  {
+   "file": "creator/InsertBar.tsx",
+   "line": 80,
+   "note": "export function InsertBar"
+  },
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 164,
+   "note": "insert: {"
+  },
+  {
+   "file": "ui/recipes/pillSlotRecipe.ts",
+   "line": 32,
+   "note": "hud: {"
+  }
+ ],
+ "hd.split": [
+  {
+   "file": "creator/DeviceSplit.tsx",
+   "line": 140,
+   "note": "export"
+  },
+  {
+   "file": "ui/recipes/splitButtonSlotRecipe.ts",
+   "line": 1,
+   "note": "defineSlotRecipe"
+  }
+ ],
+ "hd.status": [
+  {
+   "file": "ui/recipes/statusChipSlotRecipe.ts",
+   "line": 1,
+   "note": "defineSlotRecipe"
+  },
+  {
+   "file": "creator/RecordingStatus.tsx",
+   "line": 11,
+   "note": "export"
+  }
+ ],
+ "tr.tray": [
+  {
+   "file": "creator/TrayArea.tsx",
+   "line": 49,
+   "note": "export"
+  },
+  {
+   "file": "creator/TrayConsole.tsx",
+   "line": 12,
+   "note": "export"
+  },
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 127,
+   "note": "tray: {"
+  },
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 156,
+   "note": "addSlide: {"
+  }
+ ],
+ "tr.tile": [
+  {
+   "file": "ui/recipes/slideTileSlotRecipe.ts",
+   "line": 1,
+   "note": "defineSlotRecipe"
+  },
+  {
+   "file": "creator/SlideThumbnail.tsx",
+   "line": 6,
+   "note": "export"
+  }
+ ],
+ "st.pill": [
+  {
+   "file": "creator/PresenterSelectionControls.tsx",
+   "line": 20,
+   "note": "export"
+  },
+  {
+   "file": "ui/recipes/pillSlotRecipe.ts",
+   "line": 17,
+   "note": "glass: {"
+  },
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 39,
+   "note": "stage: {"
+  }
+ ],
+ "st.popover": [
+  {
+   "file": "creator/StageControlPopover.tsx",
+   "line": 10,
+   "note": "export function StageControlPopover"
+  },
+  {
+   "file": "ui/recipes/menuSlotRecipe.ts",
+   "line": 71,
+   "note": "stage: {"
+  },
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 86,
+   "note": "stageOption: {"
+  },
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 69,
+   "note": "stageRow: {"
+  },
+  {
+   "file": "creator/StageSliderField.tsx",
+   "line": 6,
+   "note": "export function StageSliderField"
+  }
+ ],
+ "st.overlay": [
+  {
+   "file": "../teleport/stage/objects/overlay.css",
+   "line": 154,
+   "note": "div.slide_overlay div.handles div.handle {"
+  },
+  {
+   "file": "../teleport/stage/objects/overlay.css",
+   "line": 133,
+   "note": "div.slide_overlay div.frame {"
+  },
+  {
+   "file": "../teleport/stage/objects/alignment_grid.js",
+   "line": 559,
+   "note": "_isAnchorLine"
+  },
+  {
+   "file": "../teleport/stage/objects/overlay.css",
+   "line": 21,
+   "note": "div.button_bar {"
+  }
+ ],
+ "ax.menu": [
+  {
+   "file": "ui/recipes/menuSlotRecipe.ts",
+   "line": 5,
+   "note": "defineSlotRecipe"
+  },
+  {
+   "file": "creator/ContextMenu.tsx",
+   "line": 17,
+   "note": "export function ContextMenu"
+  },
+  {
+   "file": "creator/menuItems.ts",
+   "line": 8,
+   "note": "export"
+  }
+ ],
+ "ax.tooltip": [
+  {
+   "file": "ui/recipes/tooltipSlotRecipe.ts",
+   "line": 1,
+   "note": "defineSlotRecipe"
+  },
+  {
+   "file": "creator/StageControlTooltip.tsx",
+   "line": 5,
+   "note": "export function StageControlTooltip"
+  }
+ ],
+ "ax.dialog": [
+  {
+   "file": "ui/recipes/dialogSlotRecipe.ts",
+   "line": 1,
+   "note": "defineSlotRecipe"
+  },
+  {
+   "file": "creator/ShareVideoDialog.tsx",
+   "line": 58,
+   "note": "export"
+  }
+ ],
+ "ax.button": [
+  {
+   "file": "ui/recipes/buttonRecipe.ts",
+   "line": 38,
+   "note": "variant: {"
+  }
+ ],
+ "ax.notice": [
+  {
+   "file": "creator/SessionNotice.tsx",
+   "line": 99,
+   "note": "function Notice"
+  }
  ]
 }

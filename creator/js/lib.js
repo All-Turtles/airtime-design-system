@@ -12,7 +12,11 @@ export const REPO = "apps/airtime-creator/src/";
 /* icons: real glyphs from assets/icons.js (AppIcons) and assets/mask-icons.js, hydrated after render */
 export const icon = (name, cls = "") => `<span class="cr-icon ${cls}" data-icon="${name}" aria-hidden="true"></span>`;
 export const mask = (name, cls = "") => `<span class="cr-icon ${cls}" data-mask="${name}" aria-hidden="true"></span>`;
+export const mm = (name, cls = "") => `<span class="cr-icon ${cls}" data-mm="${name}" aria-hidden="true"></span>`;
+export const glyph = (name, cls = "") => `<span class="cr-icon ${cls}" data-glyph="${name}" aria-hidden="true"></span>`;
 export function hydrateIcons(root = document) {
+  root.querySelectorAll("[data-mm]:not([data-done])").forEach((el) => { const g = window.MmhmmIcons?.[el.dataset.mm]; if (!g) return; el.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${g.viewBox}" ${g.root} aria-hidden="true">${g.inner}</svg>`; el.dataset.done = "1"; });
+  root.querySelectorAll("[data-glyph]:not([data-done])").forEach((el) => { const g = window.GlyphIcons?.[el.dataset.glyph]; if (!g) return; el.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${g.viewBox}" fill="currentColor" aria-hidden="true">${g.inner}</svg>`; el.dataset.done = "1"; });
   root.querySelectorAll("[data-icon]:not([data-done])").forEach((el) => { const f = window.AppIcons?.[el.dataset.icon]; if (f) el.replaceChildren(f()); else el.textContent = "?"; el.dataset.done = "1"; });
   root.querySelectorAll("[data-mask]:not([data-done])").forEach((el) => { const m = window.MaskIcons?.[el.dataset.mask]; if (!m) return; el.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${m.viewBox}" fill="currentColor" aria-hidden="true"><path d="${m.d}" fill-rule="evenodd" clip-rule="evenodd"/></svg>`; el.dataset.done = "1"; });
 }
@@ -42,7 +46,8 @@ export const cell = (cap, html) => `<div class="cell"><div class="cap">${cap}</d
 /* One pattern: anatomy table, live light|dark stages, source, tokens, org relation. */
 export function pattern(p) {
   const anat = p.anatomy?.length ? `<div class="sub"><h4>Anatomy</h4><table class="spec"><tr><th style="width:150px">Part</th><th>Spec</th><th style="width:34%">Tokens / measure</th></tr>${p.anatomy.map(([a, b, c]) => `<tr><td>${a}</td><td>${b}</td><td>${c ?? ""}</td></tr>`).join("")}</table></div>` : "";
-  const groups = (p.groups ?? []).map((g) => cell(g.cap, g.html)).join("");
+  let groups = (p.groups ?? []).map((g) => cell(g.cap, g.html)).join("");
+  if (p.flex) groups = `<div class="cells-flex">${groups}</div>`;
   const body = p.raw ? groups : card(groups, { compact: true });
   const stage = (th) => `<div class="stage" data-theme="${th}"><div class="tag">${th}</div>${body}</div>`;
   const toks = tokensUsed(p.css ?? []);

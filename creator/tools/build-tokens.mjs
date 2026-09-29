@@ -78,10 +78,11 @@ for (const n of ext) {
 const MM = "/Users/dairien/workspaces/mmhmm-tv-creator-sidebar/";
 const resolved = fs.existsSync(new URL("../data/resolved.json", import.meta.url)) ? D("resolved.json") : {};
 for (const d of DERIVED) {
-  const lines = fs.readFileSync(MM + d.source.file, "utf8").split("\n");
+  const abs = d.source.file.startsWith("apps/") ? MM + d.source.file : MM + "apps/airtime-creator/src/" + d.source.file;
+  const lines = fs.readFileSync(abs, "utf8").split("\n");
   const line = lines.findIndex((l) => l.includes(d.source.find)) + 1;
   if (!line) console.warn("derived source not found:", d.id, d.source.find);
-  recs.push({ ...d, chakra: null, css: d.css, kind: "derived", status: "derived", themed: false, declared: d.value, rendered: resolved[d.css] ?? null, source: { file: d.source.file, line: line || null, find: d.source.find } });
+  recs.push({ ...d, chakra: null, css: d.css, kind: "derived", status: "derived", themed: false, declared: d.value, rendered: resolved[d.css] ?? null, source: { file: d.source.file.replace(/^\.\.\/teleport/, "../teleport").replace(/^apps\/airtime-creator\/src\//, ""), line: line || null, find: d.source.find } });
 }
 
 { const seen = new Set(); for (const r of recs) { if (seen.has(r.css)) throw new Error("duplicate token " + r.css); seen.add(r.css); } }
@@ -209,8 +210,8 @@ const pxSet = (cats) => new Set([...tokVals(cats)].filter(Boolean));
 const timeS = (v) => (v.endsWith("ms") ? (parseFloat(v) / 1000) + "s" : v);
 const UNT = {
   fontSize: [pxSet(["font-sizes"]), "font-size"], borderRadius: [pxSet(["radii"]), "radius"], letterSpacing: [pxSet(["letter-spacings"]), "letter-spacing"],
-  opacity: [new Set(recs.filter((r) => r.category === "opacity").map((r) => r.rendered.light).concat(["1", "0"])), "opacity"],
-  transitionDuration: [new Set([...tokVals(["durations"])].map(timeS).concat(["0s"])), "duration"], zIndex: [new Set(recs.filter((r) => r.category === "z-index").map((r) => r.rendered.light).concat(["auto"])), "z-index"],
+  opacity: [new Set(recs.filter((r) => r.category === "opacity" && r.rendered).map((r) => r.rendered.light).concat(["1", "0"])), "opacity"],
+  transitionDuration: [new Set([...tokVals(["durations"])].map(timeS).concat(["0s"])), "duration"], zIndex: [new Set(recs.filter((r) => r.category === "z-index" && r.rendered).map((r) => r.rendered.light).concat(["auto"])), "z-index"],
 };
 const untok = {};
 for (const [prop, [known_, label]] of Object.entries(UNT)) {
