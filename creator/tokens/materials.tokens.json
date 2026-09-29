@@ -1,0 +1,86 @@
+{
+  "$name": "Creator - materials",
+  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "blur": {
+    "selectionBar": {
+      "$value": "28px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-blur-selection-bar",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 137,
+            "export": "blurs",
+            "path": "selectionBar"
+          },
+          "rendered": {
+            "light": "28px",
+            "dark": "28px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no counterpart in airtime-design-system tokens"
+          },
+          "used": null
+        }
+      }
+    },
+    "selectionMenu": {
+      "$value": "34px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-blur-selection-menu",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 138,
+            "export": "blurs",
+            "path": "selectionMenu"
+          },
+          "rendered": {
+            "light": "34px",
+            "dark": "34px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no counterpart in airtime-design-system tokens"
+          },
+          "used": null
+        }
+      }
+    }
+  },
+  "gradient": {
+    "window": {
+      "$value": "linear-gradient(180deg, color-mix(in srgb, var(--cr-color-bg) 88%, var(--cr-color-content-primary)) 0%, var(--cr-color-bg) 34%, color-mix(in srgb, var(--cr-color-bg) 96%, var(--cr-color-content-primary)) 100%)",
+      "$type": "gradient",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-gradient-window",
+          "kind": "semantic",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 482,
+            "export": "semanticGradients",
+            "path": "window"
+          },
+          "rendered": {
+            "light": "linear-gradient(180deg, color-mix(in srgb, #E9E9EC 88%, #000000) 0%, #E9E9EC 34%, color-mix(in srgb, #E9E9EC 96%, #000000) 100%)",
+            "dark": "linear-gradient(180deg, color-mix(in srgb, #131315 88%, #FFFFFF) 0%, #131315 34%, color-mix(in srgb, #131315 96%, #FFFFFF) 100%)"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no counterpart in airtime-design-system tokens"
+          },
+          "used": null
+        }
+      }
+    }
+  }
+}

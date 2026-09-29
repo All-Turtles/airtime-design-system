@@ -1,0 +1,4 @@
+{
+  "$name": "Creator - opacity",
+  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation."
+}

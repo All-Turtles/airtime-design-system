@@ -1,0 +1,5790 @@
+{
+ "light": {
+  "--chakra-animations-bounce": {
+   "raw": "bounce 1s infinite",
+   "resolved": "bounce 1s infinite"
+  },
+  "--chakra-animations-ping": {
+   "raw": "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
+   "resolved": "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite"
+  },
+  "--chakra-animations-pulse": {
+   "raw": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+   "resolved": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite"
+  },
+  "--chakra-animations-spin": {
+   "raw": "spin 1s linear infinite",
+   "resolved": "spin 1s linear infinite"
+  },
+  "--chakra-aspect-ratios-camera-demo": {
+   "raw": "736/414",
+   "resolved": "736/414"
+  },
+  "--chakra-aspect-ratios-golden": {
+   "raw": "1.618/1",
+   "resolved": "1.618/1"
+  },
+  "--chakra-aspect-ratios-landscape": {
+   "raw": "4/3",
+   "resolved": "4/3"
+  },
+  "--chakra-aspect-ratios-portrait": {
+   "raw": "3/4",
+   "resolved": "3/4"
+  },
+  "--chakra-aspect-ratios-square": {
+   "raw": "1/1",
+   "resolved": "1/1"
+  },
+  "--chakra-aspect-ratios-ultrawide": {
+   "raw": "18/5",
+   "resolved": "18/5"
+  },
+  "--chakra-aspect-ratios-wide": {
+   "raw": "16/9",
+   "resolved": "16/9"
+  },
+  "--chakra-blurs-2xl": {
+   "raw": "24px",
+   "resolved": "24px"
+  },
+  "--chakra-blurs-3xl": {
+   "raw": "40px",
+   "resolved": "40px"
+  },
+  "--chakra-blurs-4xl": {
+   "raw": "64px",
+   "resolved": "64px"
+  },
+  "--chakra-blurs-lg": {
+   "raw": "12px",
+   "resolved": "12px"
+  },
+  "--chakra-blurs-md": {
+   "raw": "8px",
+   "resolved": "8px"
+  },
+  "--chakra-blurs-selection-bar": {
+   "raw": "28px",
+   "resolved": "28px"
+  },
+  "--chakra-blurs-selection-menu": {
+   "raw": "34px",
+   "resolved": "34px"
+  },
+  "--chakra-blurs-sm": {
+   "raw": "4px",
+   "resolved": "4px"
+  },
+  "--chakra-blurs-xl": {
+   "raw": "16px",
+   "resolved": "16px"
+  },
+  "--chakra-border-widths-hair": {
+   "raw": "0.5px",
+   "resolved": "0.5px"
+  },
+  "--chakra-border-widths-medium": {
+   "raw": "2px",
+   "resolved": "2px"
+  },
+  "--chakra-border-widths-thin": {
+   "raw": "1px",
+   "resolved": "1px"
+  },
+  "--chakra-borders-lg": {
+   "raw": "4px solid",
+   "resolved": "4px solid"
+  },
+  "--chakra-borders-md": {
+   "raw": "2px solid",
+   "resolved": "2px solid"
+  },
+  "--chakra-borders-sm": {
+   "raw": "1px solid",
+   "resolved": "1px solid"
+  },
+  "--chakra-borders-xl": {
+   "raw": "8px solid",
+   "resolved": "8px solid"
+  },
+  "--chakra-borders-xs": {
+   "raw": "0.5px solid",
+   "resolved": "0.5px solid"
+  },
+  "--chakra-breakpoints-2xl": {
+   "raw": "1536px",
+   "resolved": "1536px"
+  },
+  "--chakra-breakpoints-lg": {
+   "raw": "1024px",
+   "resolved": "1024px"
+  },
+  "--chakra-breakpoints-md": {
+   "raw": "768px",
+   "resolved": "768px"
+  },
+  "--chakra-breakpoints-sm": {
+   "raw": "480px",
+   "resolved": "480px"
+  },
+  "--chakra-breakpoints-xl": {
+   "raw": "1280px",
+   "resolved": "1280px"
+  },
+  "--chakra-colors-accent-contrast": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-accent-emphasized": {
+   "raw": "#0059B8",
+   "resolved": "rgb(0, 89, 184)"
+  },
+  "--chakra-colors-accent-fg": {
+   "raw": "#0069D9",
+   "resolved": "rgb(0, 105, 217)"
+  },
+  "--chakra-colors-accent-focus-ring": {
+   "raw": "#0069D9",
+   "resolved": "rgb(0, 105, 217)"
+  },
+  "--chakra-colors-accent-hover": {
+   "raw": "#0059B8",
+   "resolved": "rgb(0, 89, 184)"
+  },
+  "--chakra-colors-accent-muted": {
+   "raw": "color-mix(in srgb, #0069D9 22%, transparent)",
+   "resolved": "color(srgb 0 0.411765 0.85098 / 0.22)"
+  },
+  "--chakra-colors-accent-solid": {
+   "raw": "#0069D9",
+   "resolved": "rgb(0, 105, 217)"
+  },
+  "--chakra-colors-accent-subtle": {
+   "raw": "color-mix(in srgb, #0069D9 12%, transparent)",
+   "resolved": "color(srgb 0 0.411765 0.85098 / 0.12)"
+  },
+  "--chakra-colors-action-destructive": {
+   "raw": "#ff715c",
+   "resolved": "rgb(255, 113, 92)"
+  },
+  "--chakra-colors-action-primary": {
+   "raw": "#79DDE8",
+   "resolved": "rgb(121, 221, 232)"
+  },
+  "--chakra-colors-action-secondary": {
+   "raw": "#1A7580",
+   "resolved": "rgb(26, 117, 128)"
+  },
+  "--chakra-colors-background-primary": {
+   "raw": "#ffffff",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-background-tertiary": {
+   "raw": "#ebebeb",
+   "resolved": "rgb(235, 235, 235)"
+  },
+  "--chakra-colors-bg": {
+   "raw": "#E9E9EC",
+   "resolved": "rgb(233, 233, 236)"
+  },
+  "--chakra-colors-bg-emphasized": {
+   "raw": "rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1)"
+  },
+  "--chakra-colors-bg-error": {
+   "raw": "#fef2f2",
+   "resolved": "rgb(254, 242, 242)"
+  },
+  "--chakra-colors-bg-info": {
+   "raw": "#eff6ff",
+   "resolved": "rgb(239, 246, 255)"
+  },
+  "--chakra-colors-bg-inverted": {
+   "raw": "#131315",
+   "resolved": "rgb(19, 19, 21)"
+  },
+  "--chakra-colors-bg-muted": {
+   "raw": "rgba(0, 0, 0, 0.05)",
+   "resolved": "rgba(0, 0, 0, 0.05)"
+  },
+  "--chakra-colors-bg-panel": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-bg-subtle": {
+   "raw": "#F1F1F4",
+   "resolved": "rgb(241, 241, 244)"
+  },
+  "--chakra-colors-bg-success": {
+   "raw": "#f0fdf4",
+   "resolved": "rgb(240, 253, 244)"
+  },
+  "--chakra-colors-bg-warning": {
+   "raw": "#fff7ed",
+   "resolved": "rgb(255, 247, 237)"
+  },
+  "--chakra-colors-black": {
+   "raw": "#09090B",
+   "resolved": "rgb(9, 9, 11)"
+  },
+  "--chakra-colors-black-alpha-100": {
+   "raw": "rgba(0, 0, 0, 0.06)",
+   "resolved": "rgba(0, 0, 0, 0.06)"
+  },
+  "--chakra-colors-black-alpha-200": {
+   "raw": "rgba(0, 0, 0, 0.08)",
+   "resolved": "rgba(0, 0, 0, 0.08)"
+  },
+  "--chakra-colors-black-alpha-300": {
+   "raw": "rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(0, 0, 0, 0.16)"
+  },
+  "--chakra-colors-black-alpha-400": {
+   "raw": "rgba(0, 0, 0, 0.24)",
+   "resolved": "rgba(0, 0, 0, 0.24)"
+  },
+  "--chakra-colors-black-alpha-50": {
+   "raw": "rgba(0, 0, 0, 0.04)",
+   "resolved": "rgba(0, 0, 0, 0.04)"
+  },
+  "--chakra-colors-black-alpha-500": {
+   "raw": "rgba(0, 0, 0, 0.36)",
+   "resolved": "rgba(0, 0, 0, 0.36)"
+  },
+  "--chakra-colors-black-alpha-600": {
+   "raw": "rgba(0, 0, 0, 0.48)",
+   "resolved": "rgba(0, 0, 0, 0.48)"
+  },
+  "--chakra-colors-black-alpha-700": {
+   "raw": "rgba(0, 0, 0, 0.64)",
+   "resolved": "rgba(0, 0, 0, 0.64)"
+  },
+  "--chakra-colors-black-alpha-800": {
+   "raw": "rgba(0, 0, 0, 0.80)",
+   "resolved": "rgba(0, 0, 0, 0.8)"
+  },
+  "--chakra-colors-black-alpha-900": {
+   "raw": "rgba(0, 0, 0, 0.92)",
+   "resolved": "rgba(0, 0, 0, 0.92)"
+  },
+  "--chakra-colors-black-alpha-950": {
+   "raw": "rgba(0, 0, 0, 0.95)",
+   "resolved": "rgba(0, 0, 0, 0.95)"
+  },
+  "--chakra-colors-blue-100": {
+   "raw": "#dbeafe",
+   "resolved": "rgb(219, 234, 254)"
+  },
+  "--chakra-colors-blue-200": {
+   "raw": "#bfdbfe",
+   "resolved": "rgb(191, 219, 254)"
+  },
+  "--chakra-colors-blue-300": {
+   "raw": "#a3cfff",
+   "resolved": "rgb(163, 207, 255)"
+  },
+  "--chakra-colors-blue-400": {
+   "raw": "#60a5fa",
+   "resolved": "rgb(96, 165, 250)"
+  },
+  "--chakra-colors-blue-50": {
+   "raw": "#eff6ff",
+   "resolved": "rgb(239, 246, 255)"
+  },
+  "--chakra-colors-blue-500": {
+   "raw": "#3b82f6",
+   "resolved": "rgb(59, 130, 246)"
+  },
+  "--chakra-colors-blue-600": {
+   "raw": "#2563eb",
+   "resolved": "rgb(37, 99, 235)"
+  },
+  "--chakra-colors-blue-700": {
+   "raw": "#173da6",
+   "resolved": "rgb(23, 61, 166)"
+  },
+  "--chakra-colors-blue-800": {
+   "raw": "#1a3478",
+   "resolved": "rgb(26, 52, 120)"
+  },
+  "--chakra-colors-blue-900": {
+   "raw": "#14204a",
+   "resolved": "rgb(20, 32, 74)"
+  },
+  "--chakra-colors-blue-950": {
+   "raw": "#0c142e",
+   "resolved": "rgb(12, 20, 46)"
+  },
+  "--chakra-colors-blue-border": {
+   "raw": "#3b82f6",
+   "resolved": "rgb(59, 130, 246)"
+  },
+  "--chakra-colors-blue-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-blue-emphasized": {
+   "raw": "#a3cfff",
+   "resolved": "rgb(163, 207, 255)"
+  },
+  "--chakra-colors-blue-fg": {
+   "raw": "#173da6",
+   "resolved": "rgb(23, 61, 166)"
+  },
+  "--chakra-colors-blue-focus-ring": {
+   "raw": "#3b82f6",
+   "resolved": "rgb(59, 130, 246)"
+  },
+  "--chakra-colors-blue-muted": {
+   "raw": "#bfdbfe",
+   "resolved": "rgb(191, 219, 254)"
+  },
+  "--chakra-colors-blue-solid": {
+   "raw": "#2563eb",
+   "resolved": "rgb(37, 99, 235)"
+  },
+  "--chakra-colors-blue-subtle": {
+   "raw": "#dbeafe",
+   "resolved": "rgb(219, 234, 254)"
+  },
+  "--chakra-colors-border": {
+   "raw": "rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1)"
+  },
+  "--chakra-colors-border-emphasized": {
+   "raw": "rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(0, 0, 0, 0.16)"
+  },
+  "--chakra-colors-border-error": {
+   "raw": "#ef4444",
+   "resolved": "rgb(239, 68, 68)"
+  },
+  "--chakra-colors-border-info": {
+   "raw": "#3b82f6",
+   "resolved": "rgb(59, 130, 246)"
+  },
+  "--chakra-colors-border-inverted": {
+   "raw": "rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1)"
+  },
+  "--chakra-colors-border-muted": {
+   "raw": "rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1)"
+  },
+  "--chakra-colors-border-subtle": {
+   "raw": "rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1)"
+  },
+  "--chakra-colors-border-success": {
+   "raw": "#22c55e",
+   "resolved": "rgb(34, 197, 94)"
+  },
+  "--chakra-colors-border-warning": {
+   "raw": "#f97316",
+   "resolved": "rgb(249, 115, 22)"
+  },
+  "--chakra-colors-color-palette-100": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-200": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-300": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-400": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-50": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-500": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-600": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-700": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-800": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-900": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-950": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-border": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-contrast": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-emphasized": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-fg": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-focus-ring": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-hover": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-muted": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-solid": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-color-palette-subtle": {
+   "raw": "",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-content-accent": {
+   "raw": "#f9df74",
+   "resolved": "rgb(249, 223, 116)"
+  },
+  "--chakra-colors-content-primary": {
+   "raw": "#000000",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-content-secondary": {
+   "raw": "#3C3C43",
+   "resolved": "rgb(60, 60, 67)"
+  },
+  "--chakra-colors-content-tertiary": {
+   "raw": "#6E6E73",
+   "resolved": "rgb(110, 110, 115)"
+  },
+  "--chakra-colors-current": {
+   "raw": "currentColor",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-cyan-100": {
+   "raw": "#cffafe",
+   "resolved": "rgb(207, 250, 254)"
+  },
+  "--chakra-colors-cyan-200": {
+   "raw": "#a5f3fc",
+   "resolved": "rgb(165, 243, 252)"
+  },
+  "--chakra-colors-cyan-300": {
+   "raw": "#67e8f9",
+   "resolved": "rgb(103, 232, 249)"
+  },
+  "--chakra-colors-cyan-400": {
+   "raw": "#22d3ee",
+   "resolved": "rgb(34, 211, 238)"
+  },
+  "--chakra-colors-cyan-50": {
+   "raw": "#ecfeff",
+   "resolved": "rgb(236, 254, 255)"
+  },
+  "--chakra-colors-cyan-500": {
+   "raw": "#06b6d4",
+   "resolved": "rgb(6, 182, 212)"
+  },
+  "--chakra-colors-cyan-600": {
+   "raw": "#0891b2",
+   "resolved": "rgb(8, 145, 178)"
+  },
+  "--chakra-colors-cyan-700": {
+   "raw": "#0c5c72",
+   "resolved": "rgb(12, 92, 114)"
+  },
+  "--chakra-colors-cyan-800": {
+   "raw": "#134152",
+   "resolved": "rgb(19, 65, 82)"
+  },
+  "--chakra-colors-cyan-900": {
+   "raw": "#072a38",
+   "resolved": "rgb(7, 42, 56)"
+  },
+  "--chakra-colors-cyan-950": {
+   "raw": "#051b24",
+   "resolved": "rgb(5, 27, 36)"
+  },
+  "--chakra-colors-cyan-border": {
+   "raw": "#06b6d4",
+   "resolved": "rgb(6, 182, 212)"
+  },
+  "--chakra-colors-cyan-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-cyan-emphasized": {
+   "raw": "#67e8f9",
+   "resolved": "rgb(103, 232, 249)"
+  },
+  "--chakra-colors-cyan-fg": {
+   "raw": "#0c5c72",
+   "resolved": "rgb(12, 92, 114)"
+  },
+  "--chakra-colors-cyan-focus-ring": {
+   "raw": "#06b6d4",
+   "resolved": "rgb(6, 182, 212)"
+  },
+  "--chakra-colors-cyan-muted": {
+   "raw": "#a5f3fc",
+   "resolved": "rgb(165, 243, 252)"
+  },
+  "--chakra-colors-cyan-solid": {
+   "raw": "#0891b2",
+   "resolved": "rgb(8, 145, 178)"
+  },
+  "--chakra-colors-cyan-subtle": {
+   "raw": "#cffafe",
+   "resolved": "rgb(207, 250, 254)"
+  },
+  "--chakra-colors-danger-contrast": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-danger-emphasized": {
+   "raw": "color-mix(in srgb, #D70015 88%, black)",
+   "resolved": "color(srgb 0.741961 0 0.0724706)"
+  },
+  "--chakra-colors-danger-fg": {
+   "raw": "#D70015",
+   "resolved": "rgb(215, 0, 21)"
+  },
+  "--chakra-colors-danger-focus-ring": {
+   "raw": "#D70015",
+   "resolved": "rgb(215, 0, 21)"
+  },
+  "--chakra-colors-danger-hover": {
+   "raw": "color-mix(in srgb, #D70015 88%, black)",
+   "resolved": "color(srgb 0.741961 0 0.0724706)"
+  },
+  "--chakra-colors-danger-muted": {
+   "raw": "color-mix(in srgb, #D70015 22%, transparent)",
+   "resolved": "color(srgb 0.843137 0 0.0823529 / 0.22)"
+  },
+  "--chakra-colors-danger-solid": {
+   "raw": "#D70015",
+   "resolved": "rgb(215, 0, 21)"
+  },
+  "--chakra-colors-danger-subtle": {
+   "raw": "color-mix(in srgb, #D70015 12%, transparent)",
+   "resolved": "color(srgb 0.843137 0 0.0823529 / 0.12)"
+  },
+  "--chakra-colors-dash": {
+   "raw": "rgba(0, 0, 0, 0.28)",
+   "resolved": "rgba(0, 0, 0, 0.28)"
+  },
+  "--chakra-colors-device-off": {
+   "raw": "#F65F4C",
+   "resolved": "rgb(246, 95, 76)"
+  },
+  "--chakra-colors-edge-in": {
+   "raw": "rgba(255, 255, 255, 0.75)",
+   "resolved": "rgba(255, 255, 255, 0.75)"
+  },
+  "--chakra-colors-edge-out": {
+   "raw": "rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(0, 0, 0, 0.16)"
+  },
+  "--chakra-colors-fg": {
+   "raw": "rgba(0, 0, 0, 0.92)",
+   "resolved": "rgba(0, 0, 0, 0.92)"
+  },
+  "--chakra-colors-fg-error": {
+   "raw": "#ef4444",
+   "resolved": "rgb(239, 68, 68)"
+  },
+  "--chakra-colors-fg-info": {
+   "raw": "#2563eb",
+   "resolved": "rgb(37, 99, 235)"
+  },
+  "--chakra-colors-fg-inverted": {
+   "raw": "rgba(255, 255, 255, 0.96)",
+   "resolved": "rgba(255, 255, 255, 0.96)"
+  },
+  "--chakra-colors-fg-muted": {
+   "raw": "rgba(0, 0, 0, 0.64)",
+   "resolved": "rgba(0, 0, 0, 0.64)"
+  },
+  "--chakra-colors-fg-subtle": {
+   "raw": "rgba(0, 0, 0, 0.50)",
+   "resolved": "rgba(0, 0, 0, 0.5)"
+  },
+  "--chakra-colors-fg-success": {
+   "raw": "#16a34a",
+   "resolved": "rgb(22, 163, 74)"
+  },
+  "--chakra-colors-fg-warning": {
+   "raw": "#ea580c",
+   "resolved": "rgb(234, 88, 12)"
+  },
+  "--chakra-colors-focus-ring": {
+   "raw": "#0069D9",
+   "resolved": "rgb(0, 105, 217)"
+  },
+  "--chakra-colors-gray-100": {
+   "raw": "#f4f4f5",
+   "resolved": "rgb(244, 244, 245)"
+  },
+  "--chakra-colors-gray-200": {
+   "raw": "#e4e4e7",
+   "resolved": "rgb(228, 228, 231)"
+  },
+  "--chakra-colors-gray-300": {
+   "raw": "#d4d4d8",
+   "resolved": "rgb(212, 212, 216)"
+  },
+  "--chakra-colors-gray-400": {
+   "raw": "#a1a1aa",
+   "resolved": "rgb(161, 161, 170)"
+  },
+  "--chakra-colors-gray-50": {
+   "raw": "#fafafa",
+   "resolved": "rgb(250, 250, 250)"
+  },
+  "--chakra-colors-gray-500": {
+   "raw": "#71717a",
+   "resolved": "rgb(113, 113, 122)"
+  },
+  "--chakra-colors-gray-600": {
+   "raw": "#52525b",
+   "resolved": "rgb(82, 82, 91)"
+  },
+  "--chakra-colors-gray-700": {
+   "raw": "#3f3f46",
+   "resolved": "rgb(63, 63, 70)"
+  },
+  "--chakra-colors-gray-800": {
+   "raw": "#27272a",
+   "resolved": "rgb(39, 39, 42)"
+  },
+  "--chakra-colors-gray-900": {
+   "raw": "#18181b",
+   "resolved": "rgb(24, 24, 27)"
+  },
+  "--chakra-colors-gray-950": {
+   "raw": "#111111",
+   "resolved": "rgb(17, 17, 17)"
+  },
+  "--chakra-colors-gray-border": {
+   "raw": "#e4e4e7",
+   "resolved": "rgb(228, 228, 231)"
+  },
+  "--chakra-colors-gray-contrast": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-gray-emphasized": {
+   "raw": "rgba(0, 0, 0, 0.15)",
+   "resolved": "rgba(0, 0, 0, 0.15)"
+  },
+  "--chakra-colors-gray-fg": {
+   "raw": "rgba(0, 0, 0, 0.92)",
+   "resolved": "rgba(0, 0, 0, 0.92)"
+  },
+  "--chakra-colors-gray-focus-ring": {
+   "raw": "#0069D9",
+   "resolved": "rgb(0, 105, 217)"
+  },
+  "--chakra-colors-gray-hover": {
+   "raw": "rgba(0, 0, 0, 0.80)",
+   "resolved": "rgba(0, 0, 0, 0.8)"
+  },
+  "--chakra-colors-gray-muted": {
+   "raw": "rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1)"
+  },
+  "--chakra-colors-gray-solid": {
+   "raw": "rgba(0, 0, 0, 0.92)",
+   "resolved": "rgba(0, 0, 0, 0.92)"
+  },
+  "--chakra-colors-gray-subtle": {
+   "raw": "rgba(0, 0, 0, 0.055)",
+   "resolved": "rgba(0, 0, 0, 0.055)"
+  },
+  "--chakra-colors-green-100": {
+   "raw": "#dcfce7",
+   "resolved": "rgb(220, 252, 231)"
+  },
+  "--chakra-colors-green-200": {
+   "raw": "#bbf7d0",
+   "resolved": "rgb(187, 247, 208)"
+  },
+  "--chakra-colors-green-300": {
+   "raw": "#86efac",
+   "resolved": "rgb(134, 239, 172)"
+  },
+  "--chakra-colors-green-400": {
+   "raw": "#4ade80",
+   "resolved": "rgb(74, 222, 128)"
+  },
+  "--chakra-colors-green-50": {
+   "raw": "#f0fdf4",
+   "resolved": "rgb(240, 253, 244)"
+  },
+  "--chakra-colors-green-500": {
+   "raw": "#22c55e",
+   "resolved": "rgb(34, 197, 94)"
+  },
+  "--chakra-colors-green-600": {
+   "raw": "#16a34a",
+   "resolved": "rgb(22, 163, 74)"
+  },
+  "--chakra-colors-green-700": {
+   "raw": "#116932",
+   "resolved": "rgb(17, 105, 50)"
+  },
+  "--chakra-colors-green-800": {
+   "raw": "#124a28",
+   "resolved": "rgb(18, 74, 40)"
+  },
+  "--chakra-colors-green-900": {
+   "raw": "#042713",
+   "resolved": "rgb(4, 39, 19)"
+  },
+  "--chakra-colors-green-950": {
+   "raw": "#03190c",
+   "resolved": "rgb(3, 25, 12)"
+  },
+  "--chakra-colors-green-border": {
+   "raw": "#22c55e",
+   "resolved": "rgb(34, 197, 94)"
+  },
+  "--chakra-colors-green-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-green-emphasized": {
+   "raw": "#86efac",
+   "resolved": "rgb(134, 239, 172)"
+  },
+  "--chakra-colors-green-fg": {
+   "raw": "#116932",
+   "resolved": "rgb(17, 105, 50)"
+  },
+  "--chakra-colors-green-focus-ring": {
+   "raw": "#22c55e",
+   "resolved": "rgb(34, 197, 94)"
+  },
+  "--chakra-colors-green-muted": {
+   "raw": "#bbf7d0",
+   "resolved": "rgb(187, 247, 208)"
+  },
+  "--chakra-colors-green-solid": {
+   "raw": "#16a34a",
+   "resolved": "rgb(22, 163, 74)"
+  },
+  "--chakra-colors-green-subtle": {
+   "raw": "#dcfce7",
+   "resolved": "rgb(220, 252, 231)"
+  },
+  "--chakra-colors-ground-dark-recessed": {
+   "raw": "#252528",
+   "resolved": "rgb(37, 37, 40)"
+  },
+  "--chakra-colors-ground-dark-surface": {
+   "raw": "#1E1E20",
+   "resolved": "rgb(30, 30, 32)"
+  },
+  "--chakra-colors-ground-dark-window": {
+   "raw": "#131315",
+   "resolved": "rgb(19, 19, 21)"
+  },
+  "--chakra-colors-ground-light-recessed": {
+   "raw": "#F1F1F4",
+   "resolved": "rgb(241, 241, 244)"
+  },
+  "--chakra-colors-ground-light-surface": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-ground-light-window": {
+   "raw": "#E9E9EC",
+   "resolved": "rgb(233, 233, 236)"
+  },
+  "--chakra-colors-header-ground": {
+   "raw": "color-mix(in srgb, rgba(247, 247, 250, 0.985) 92%, transparent)",
+   "resolved": "color(srgb 0.968627 0.968627 0.980392 / 0.905569)"
+  },
+  "--chakra-colors-header-history-hover": {
+   "raw": "#f5f5f5",
+   "resolved": "rgb(245, 245, 245)"
+  },
+  "--chakra-colors-header-title-border": {
+   "raw": "#e0e0e0",
+   "resolved": "rgb(224, 224, 224)"
+  },
+  "--chakra-colors-header-title-hover": {
+   "raw": "#ebebeb",
+   "resolved": "rgb(235, 235, 235)"
+  },
+  "--chakra-colors-highlight-primary": {
+   "raw": "#00000012",
+   "resolved": "rgba(0, 0, 0, 0.07)"
+  },
+  "--chakra-colors-highlight-secondary": {
+   "raw": "#0000000A",
+   "resolved": "rgba(0, 0, 0, 0.04)"
+  },
+  "--chakra-colors-ink-dark-primary": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-ink-dark-secondary": {
+   "raw": "#EBEBF5",
+   "resolved": "rgb(235, 235, 245)"
+  },
+  "--chakra-colors-ink-dark-tertiary": {
+   "raw": "#ABABB2",
+   "resolved": "rgb(171, 171, 178)"
+  },
+  "--chakra-colors-ink-light-primary": {
+   "raw": "#000000",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-ink-light-secondary": {
+   "raw": "#3C3C43",
+   "resolved": "rgb(60, 60, 67)"
+  },
+  "--chakra-colors-ink-light-tertiary": {
+   "raw": "#6E6E73",
+   "resolved": "rgb(110, 110, 115)"
+  },
+  "--chakra-colors-line": {
+   "raw": "rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1)"
+  },
+  "--chakra-colors-line-strong": {
+   "raw": "rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(0, 0, 0, 0.16)"
+  },
+  "--chakra-colors-line-strongest": {
+   "raw": "rgba(0, 0, 0, 0.30)",
+   "resolved": "rgba(0, 0, 0, 0.3)"
+  },
+  "--chakra-colors-mat-hud": {
+   "raw": "rgba(247, 247, 250, 0.985)",
+   "resolved": "rgba(247, 247, 250, 0.984)"
+  },
+  "--chakra-colors-mat-menu": {
+   "raw": "rgba(250, 250, 252, 0.86)",
+   "resolved": "rgba(250, 250, 252, 0.86)"
+  },
+  "--chakra-colors-mat-menu-solid": {
+   "raw": "rgba(250, 250, 252, 0.98)",
+   "resolved": "rgba(250, 250, 252, 0.98)"
+  },
+  "--chakra-colors-mat-sheet": {
+   "raw": "rgba(242, 242, 245, 0.99)",
+   "resolved": "rgba(242, 242, 245, 0.99)"
+  },
+  "--chakra-colors-mat-sidebar": {
+   "raw": "rgba(239, 239, 243, 0.985)",
+   "resolved": "rgba(239, 239, 243, 0.984)"
+  },
+  "--chakra-colors-orange-100": {
+   "raw": "#ffedd5",
+   "resolved": "rgb(255, 237, 213)"
+  },
+  "--chakra-colors-orange-200": {
+   "raw": "#fed7aa",
+   "resolved": "rgb(254, 215, 170)"
+  },
+  "--chakra-colors-orange-300": {
+   "raw": "#fdba74",
+   "resolved": "rgb(253, 186, 116)"
+  },
+  "--chakra-colors-orange-400": {
+   "raw": "#fb923c",
+   "resolved": "rgb(251, 146, 60)"
+  },
+  "--chakra-colors-orange-50": {
+   "raw": "#fff7ed",
+   "resolved": "rgb(255, 247, 237)"
+  },
+  "--chakra-colors-orange-500": {
+   "raw": "#f97316",
+   "resolved": "rgb(249, 115, 22)"
+  },
+  "--chakra-colors-orange-600": {
+   "raw": "#ea580c",
+   "resolved": "rgb(234, 88, 12)"
+  },
+  "--chakra-colors-orange-700": {
+   "raw": "#92310a",
+   "resolved": "rgb(146, 49, 10)"
+  },
+  "--chakra-colors-orange-800": {
+   "raw": "#6c2710",
+   "resolved": "rgb(108, 39, 16)"
+  },
+  "--chakra-colors-orange-900": {
+   "raw": "#3b1106",
+   "resolved": "rgb(59, 17, 6)"
+  },
+  "--chakra-colors-orange-950": {
+   "raw": "#220a04",
+   "resolved": "rgb(34, 10, 4)"
+  },
+  "--chakra-colors-orange-border": {
+   "raw": "#f97316",
+   "resolved": "rgb(249, 115, 22)"
+  },
+  "--chakra-colors-orange-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-orange-emphasized": {
+   "raw": "#fdba74",
+   "resolved": "rgb(253, 186, 116)"
+  },
+  "--chakra-colors-orange-fg": {
+   "raw": "#92310a",
+   "resolved": "rgb(146, 49, 10)"
+  },
+  "--chakra-colors-orange-focus-ring": {
+   "raw": "#f97316",
+   "resolved": "rgb(249, 115, 22)"
+  },
+  "--chakra-colors-orange-muted": {
+   "raw": "#fed7aa",
+   "resolved": "rgb(254, 215, 170)"
+  },
+  "--chakra-colors-orange-solid": {
+   "raw": "#ea580c",
+   "resolved": "rgb(234, 88, 12)"
+  },
+  "--chakra-colors-orange-subtle": {
+   "raw": "#ffedd5",
+   "resolved": "rgb(255, 237, 213)"
+  },
+  "--chakra-colors-overlay": {
+   "raw": "#00000073",
+   "resolved": "rgba(0, 0, 0, 0.45)"
+  },
+  "--chakra-colors-pink-100": {
+   "raw": "#fce7f3",
+   "resolved": "rgb(252, 231, 243)"
+  },
+  "--chakra-colors-pink-200": {
+   "raw": "#fbcfe8",
+   "resolved": "rgb(251, 207, 232)"
+  },
+  "--chakra-colors-pink-300": {
+   "raw": "#f9a8d4",
+   "resolved": "rgb(249, 168, 212)"
+  },
+  "--chakra-colors-pink-400": {
+   "raw": "#f472b6",
+   "resolved": "rgb(244, 114, 182)"
+  },
+  "--chakra-colors-pink-50": {
+   "raw": "#fdf2f8",
+   "resolved": "rgb(253, 242, 248)"
+  },
+  "--chakra-colors-pink-500": {
+   "raw": "#ec4899",
+   "resolved": "rgb(236, 72, 153)"
+  },
+  "--chakra-colors-pink-600": {
+   "raw": "#db2777",
+   "resolved": "rgb(219, 39, 119)"
+  },
+  "--chakra-colors-pink-700": {
+   "raw": "#a41752",
+   "resolved": "rgb(164, 23, 82)"
+  },
+  "--chakra-colors-pink-800": {
+   "raw": "#6d0e34",
+   "resolved": "rgb(109, 14, 52)"
+  },
+  "--chakra-colors-pink-900": {
+   "raw": "#45061f",
+   "resolved": "rgb(69, 6, 31)"
+  },
+  "--chakra-colors-pink-950": {
+   "raw": "#2c0514",
+   "resolved": "rgb(44, 5, 20)"
+  },
+  "--chakra-colors-pink-border": {
+   "raw": "#ec4899",
+   "resolved": "rgb(236, 72, 153)"
+  },
+  "--chakra-colors-pink-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-pink-emphasized": {
+   "raw": "#f9a8d4",
+   "resolved": "rgb(249, 168, 212)"
+  },
+  "--chakra-colors-pink-fg": {
+   "raw": "#a41752",
+   "resolved": "rgb(164, 23, 82)"
+  },
+  "--chakra-colors-pink-focus-ring": {
+   "raw": "#ec4899",
+   "resolved": "rgb(236, 72, 153)"
+  },
+  "--chakra-colors-pink-muted": {
+   "raw": "#fbcfe8",
+   "resolved": "rgb(251, 207, 232)"
+  },
+  "--chakra-colors-pink-solid": {
+   "raw": "#db2777",
+   "resolved": "rgb(219, 39, 119)"
+  },
+  "--chakra-colors-pink-subtle": {
+   "raw": "#fce7f3",
+   "resolved": "rgb(252, 231, 243)"
+  },
+  "--chakra-colors-purple-100": {
+   "raw": "#f3e8ff",
+   "resolved": "rgb(243, 232, 255)"
+  },
+  "--chakra-colors-purple-200": {
+   "raw": "#e9d5ff",
+   "resolved": "rgb(233, 213, 255)"
+  },
+  "--chakra-colors-purple-300": {
+   "raw": "#d8b4fe",
+   "resolved": "rgb(216, 180, 254)"
+  },
+  "--chakra-colors-purple-400": {
+   "raw": "#c084fc",
+   "resolved": "rgb(192, 132, 252)"
+  },
+  "--chakra-colors-purple-50": {
+   "raw": "#faf5ff",
+   "resolved": "rgb(250, 245, 255)"
+  },
+  "--chakra-colors-purple-500": {
+   "raw": "#a855f7",
+   "resolved": "rgb(168, 85, 247)"
+  },
+  "--chakra-colors-purple-600": {
+   "raw": "#9333ea",
+   "resolved": "rgb(147, 51, 234)"
+  },
+  "--chakra-colors-purple-700": {
+   "raw": "#641ba3",
+   "resolved": "rgb(100, 27, 163)"
+  },
+  "--chakra-colors-purple-800": {
+   "raw": "#4a1772",
+   "resolved": "rgb(74, 23, 114)"
+  },
+  "--chakra-colors-purple-900": {
+   "raw": "#2f0553",
+   "resolved": "rgb(47, 5, 83)"
+  },
+  "--chakra-colors-purple-950": {
+   "raw": "#1a032e",
+   "resolved": "rgb(26, 3, 46)"
+  },
+  "--chakra-colors-purple-border": {
+   "raw": "#a855f7",
+   "resolved": "rgb(168, 85, 247)"
+  },
+  "--chakra-colors-purple-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-purple-emphasized": {
+   "raw": "#d8b4fe",
+   "resolved": "rgb(216, 180, 254)"
+  },
+  "--chakra-colors-purple-fg": {
+   "raw": "#641ba3",
+   "resolved": "rgb(100, 27, 163)"
+  },
+  "--chakra-colors-purple-focus-ring": {
+   "raw": "#a855f7",
+   "resolved": "rgb(168, 85, 247)"
+  },
+  "--chakra-colors-purple-muted": {
+   "raw": "#e9d5ff",
+   "resolved": "rgb(233, 213, 255)"
+  },
+  "--chakra-colors-purple-solid": {
+   "raw": "#9333ea",
+   "resolved": "rgb(147, 51, 234)"
+  },
+  "--chakra-colors-purple-subtle": {
+   "raw": "#f3e8ff",
+   "resolved": "rgb(243, 232, 255)"
+  },
+  "--chakra-colors-red-100": {
+   "raw": "#fee2e2",
+   "resolved": "rgb(254, 226, 226)"
+  },
+  "--chakra-colors-red-200": {
+   "raw": "#fecaca",
+   "resolved": "rgb(254, 202, 202)"
+  },
+  "--chakra-colors-red-300": {
+   "raw": "#fca5a5",
+   "resolved": "rgb(252, 165, 165)"
+  },
+  "--chakra-colors-red-400": {
+   "raw": "#f87171",
+   "resolved": "rgb(248, 113, 113)"
+  },
+  "--chakra-colors-red-50": {
+   "raw": "#fef2f2",
+   "resolved": "rgb(254, 242, 242)"
+  },
+  "--chakra-colors-red-500": {
+   "raw": "#ef4444",
+   "resolved": "rgb(239, 68, 68)"
+  },
+  "--chakra-colors-red-600": {
+   "raw": "#dc2626",
+   "resolved": "rgb(220, 38, 38)"
+  },
+  "--chakra-colors-red-700": {
+   "raw": "#991919",
+   "resolved": "rgb(153, 25, 25)"
+  },
+  "--chakra-colors-red-800": {
+   "raw": "#511111",
+   "resolved": "rgb(81, 17, 17)"
+  },
+  "--chakra-colors-red-900": {
+   "raw": "#300c0c",
+   "resolved": "rgb(48, 12, 12)"
+  },
+  "--chakra-colors-red-950": {
+   "raw": "#1f0808",
+   "resolved": "rgb(31, 8, 8)"
+  },
+  "--chakra-colors-red-border": {
+   "raw": "#ef4444",
+   "resolved": "rgb(239, 68, 68)"
+  },
+  "--chakra-colors-red-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-red-emphasized": {
+   "raw": "#fca5a5",
+   "resolved": "rgb(252, 165, 165)"
+  },
+  "--chakra-colors-red-fg": {
+   "raw": "#991919",
+   "resolved": "rgb(153, 25, 25)"
+  },
+  "--chakra-colors-red-focus-ring": {
+   "raw": "#ef4444",
+   "resolved": "rgb(239, 68, 68)"
+  },
+  "--chakra-colors-red-muted": {
+   "raw": "#fecaca",
+   "resolved": "rgb(254, 202, 202)"
+  },
+  "--chakra-colors-red-solid": {
+   "raw": "#dc2626",
+   "resolved": "rgb(220, 38, 38)"
+  },
+  "--chakra-colors-red-subtle": {
+   "raw": "#fee2e2",
+   "resolved": "rgb(254, 226, 226)"
+  },
+  "--chakra-colors-scrim": {
+   "raw": "rgba(250, 250, 252, 0.86)",
+   "resolved": "rgba(250, 250, 252, 0.86)"
+  },
+  "--chakra-colors-scrim-modal": {
+   "raw": "rgba(0, 0, 0, 0.60)",
+   "resolved": "rgba(0, 0, 0, 0.6)"
+  },
+  "--chakra-colors-selection-active": {
+   "raw": "rgba(255,255,255,0.20)",
+   "resolved": "rgba(255, 255, 255, 0.2)"
+  },
+  "--chakra-colors-selection-destructive": {
+   "raw": "rgb(255,92,92)",
+   "resolved": "rgb(255, 92, 92)"
+  },
+  "--chakra-colors-selection-destructive-active": {
+   "raw": "rgba(255,92,92,0.24)",
+   "resolved": "rgba(255, 92, 92, 0.24)"
+  },
+  "--chakra-colors-selection-destructive-hover": {
+   "raw": "rgba(255,92,92,0.14)",
+   "resolved": "rgba(255, 92, 92, 0.14)"
+  },
+  "--chakra-colors-selection-disabled": {
+   "raw": "rgba(255,255,255,0.40)",
+   "resolved": "rgba(255, 255, 255, 0.4)"
+  },
+  "--chakra-colors-selection-hover": {
+   "raw": "rgba(255,255,255,0.11)",
+   "resolved": "rgba(255, 255, 255, 0.11)"
+  },
+  "--chakra-colors-selection-line": {
+   "raw": "rgba(255,255,255,0.13)",
+   "resolved": "rgba(255, 255, 255, 0.13)"
+  },
+  "--chakra-colors-selection-material": {
+   "raw": "rgba(26,26,29,0.66)",
+   "resolved": "rgba(26, 26, 29, 0.66)"
+  },
+  "--chakra-colors-selection-muted": {
+   "raw": "rgba(255,255,255,0.60)",
+   "resolved": "rgba(255, 255, 255, 0.6)"
+  },
+  "--chakra-colors-selection-swatch": {
+   "raw": "rgba(255,255,255,0.16)",
+   "resolved": "rgba(255, 255, 255, 0.16)"
+  },
+  "--chakra-colors-selection-text": {
+   "raw": "rgba(255,255,255,0.96)",
+   "resolved": "rgba(255, 255, 255, 0.96)"
+  },
+  "--chakra-colors-selection-track": {
+   "raw": "rgba(255,255,255,0.08)",
+   "resolved": "rgba(255, 255, 255, 0.08)"
+  },
+  "--chakra-colors-slide-badge": {
+   "raw": "rgba(0, 0, 0, 0.8)",
+   "resolved": "rgba(0, 0, 0, 0.8)"
+  },
+  "--chakra-colors-split-picker-content": {
+   "raw": "color-mix(in srgb, #FFFFFF 62%, transparent)",
+   "resolved": "color(srgb 1 1 1 / 0.62)"
+  },
+  "--chakra-colors-split-picker-footer": {
+   "raw": "color-mix(in srgb, #FFFFFF 40%, transparent)",
+   "resolved": "color(srgb 1 1 1 / 0.4)"
+  },
+  "--chakra-colors-state-active": {
+   "raw": "rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1)"
+  },
+  "--chakra-colors-state-active-strong": {
+   "raw": "rgba(0, 0, 0, 0.15)",
+   "resolved": "rgba(0, 0, 0, 0.15)"
+  },
+  "--chakra-colors-state-drop-indicator": {
+   "raw": "#0069D9",
+   "resolved": "rgb(0, 105, 217)"
+  },
+  "--chakra-colors-state-hover": {
+   "raw": "rgba(0, 0, 0, 0.055)",
+   "resolved": "rgba(0, 0, 0, 0.055)"
+  },
+  "--chakra-colors-state-selected": {
+   "raw": "rgba(0, 0, 0, 0.15)",
+   "resolved": "rgba(0, 0, 0, 0.15)"
+  },
+  "--chakra-colors-status-live": {
+   "raw": "#34C759",
+   "resolved": "rgb(52, 199, 89)"
+  },
+  "--chakra-colors-status-live-fill": {
+   "raw": "color-mix(in srgb, #34C759 16%, transparent)",
+   "resolved": "color(srgb 0.203922 0.780392 0.34902 / 0.16)"
+  },
+  "--chakra-colors-status-live-text": {
+   "raw": "#2FA84F",
+   "resolved": "rgb(47, 168, 79)"
+  },
+  "--chakra-colors-surface-inset": {
+   "raw": "rgba(0, 0, 0, 0.05)",
+   "resolved": "rgba(0, 0, 0, 0.05)"
+  },
+  "--chakra-colors-surface-raised": {
+   "raw": "rgba(250, 250, 252, 0.86)",
+   "resolved": "rgba(250, 250, 252, 0.86)"
+  },
+  "--chakra-colors-system-blue-dark": {
+   "raw": "#3B9BFF",
+   "resolved": "rgb(59, 155, 255)"
+  },
+  "--chakra-colors-system-blue-dark-hover": {
+   "raw": "#57ACFF",
+   "resolved": "rgb(87, 172, 255)"
+  },
+  "--chakra-colors-system-blue-light": {
+   "raw": "#0069D9",
+   "resolved": "rgb(0, 105, 217)"
+  },
+  "--chakra-colors-system-blue-light-hover": {
+   "raw": "#0059B8",
+   "resolved": "rgb(0, 89, 184)"
+  },
+  "--chakra-colors-system-blue-on-dark": {
+   "raw": "#08121C",
+   "resolved": "rgb(8, 18, 28)"
+  },
+  "--chakra-colors-system-blue-on-light": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-system-red-dark": {
+   "raw": "#FF4F42",
+   "resolved": "rgb(255, 79, 66)"
+  },
+  "--chakra-colors-system-red-light": {
+   "raw": "#D70015",
+   "resolved": "rgb(215, 0, 21)"
+  },
+  "--chakra-colors-teal-100": {
+   "raw": "#ccfbf1",
+   "resolved": "rgb(204, 251, 241)"
+  },
+  "--chakra-colors-teal-200": {
+   "raw": "#99f6e4",
+   "resolved": "rgb(153, 246, 228)"
+  },
+  "--chakra-colors-teal-300": {
+   "raw": "#5eead4",
+   "resolved": "rgb(94, 234, 212)"
+  },
+  "--chakra-colors-teal-400": {
+   "raw": "#2dd4bf",
+   "resolved": "rgb(45, 212, 191)"
+  },
+  "--chakra-colors-teal-50": {
+   "raw": "#f0fdfa",
+   "resolved": "rgb(240, 253, 250)"
+  },
+  "--chakra-colors-teal-500": {
+   "raw": "#14b8a6",
+   "resolved": "rgb(20, 184, 166)"
+  },
+  "--chakra-colors-teal-600": {
+   "raw": "#0d9488",
+   "resolved": "rgb(13, 148, 136)"
+  },
+  "--chakra-colors-teal-700": {
+   "raw": "#0c5d56",
+   "resolved": "rgb(12, 93, 86)"
+  },
+  "--chakra-colors-teal-800": {
+   "raw": "#114240",
+   "resolved": "rgb(17, 66, 64)"
+  },
+  "--chakra-colors-teal-900": {
+   "raw": "#032726",
+   "resolved": "rgb(3, 39, 38)"
+  },
+  "--chakra-colors-teal-950": {
+   "raw": "#021716",
+   "resolved": "rgb(2, 23, 22)"
+  },
+  "--chakra-colors-teal-border": {
+   "raw": "#14b8a6",
+   "resolved": "rgb(20, 184, 166)"
+  },
+  "--chakra-colors-teal-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-teal-emphasized": {
+   "raw": "#5eead4",
+   "resolved": "rgb(94, 234, 212)"
+  },
+  "--chakra-colors-teal-fg": {
+   "raw": "#0c5d56",
+   "resolved": "rgb(12, 93, 86)"
+  },
+  "--chakra-colors-teal-focus-ring": {
+   "raw": "#14b8a6",
+   "resolved": "rgb(20, 184, 166)"
+  },
+  "--chakra-colors-teal-muted": {
+   "raw": "#99f6e4",
+   "resolved": "rgb(153, 246, 228)"
+  },
+  "--chakra-colors-teal-solid": {
+   "raw": "#0d9488",
+   "resolved": "rgb(13, 148, 136)"
+  },
+  "--chakra-colors-teal-subtle": {
+   "raw": "#ccfbf1",
+   "resolved": "rgb(204, 251, 241)"
+  },
+  "--chakra-colors-text-1": {
+   "raw": "rgba(0, 0, 0, 0.92)",
+   "resolved": "rgba(0, 0, 0, 0.92)"
+  },
+  "--chakra-colors-text-2": {
+   "raw": "rgba(0, 0, 0, 0.80)",
+   "resolved": "rgba(0, 0, 0, 0.8)"
+  },
+  "--chakra-colors-text-3": {
+   "raw": "rgba(0, 0, 0, 0.64)",
+   "resolved": "rgba(0, 0, 0, 0.64)"
+  },
+  "--chakra-colors-text-4": {
+   "raw": "rgba(0, 0, 0, 0.50)",
+   "resolved": "rgba(0, 0, 0, 0.5)"
+  },
+  "--chakra-colors-text-5": {
+   "raw": "rgba(0, 0, 0, 0.38)",
+   "resolved": "rgba(0, 0, 0, 0.38)"
+  },
+  "--chakra-colors-text-6": {
+   "raw": "rgba(0, 0, 0, 0.26)",
+   "resolved": "rgba(0, 0, 0, 0.26)"
+  },
+  "--chakra-colors-transparent": {
+   "raw": "transparent",
+   "resolved": "rgba(0, 0, 0, 0)"
+  },
+  "--chakra-colors-white": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-white-alpha-100": {
+   "raw": "rgba(255, 255, 255, 0.06)",
+   "resolved": "rgba(255, 255, 255, 0.06)"
+  },
+  "--chakra-colors-white-alpha-200": {
+   "raw": "rgba(255, 255, 255, 0.08)",
+   "resolved": "rgba(255, 255, 255, 0.08)"
+  },
+  "--chakra-colors-white-alpha-300": {
+   "raw": "rgba(255, 255, 255, 0.16)",
+   "resolved": "rgba(255, 255, 255, 0.16)"
+  },
+  "--chakra-colors-white-alpha-400": {
+   "raw": "rgba(255, 255, 255, 0.24)",
+   "resolved": "rgba(255, 255, 255, 0.24)"
+  },
+  "--chakra-colors-white-alpha-50": {
+   "raw": "rgba(255, 255, 255, 0.04)",
+   "resolved": "rgba(255, 255, 255, 0.04)"
+  },
+  "--chakra-colors-white-alpha-500": {
+   "raw": "rgba(255, 255, 255, 0.36)",
+   "resolved": "rgba(255, 255, 255, 0.36)"
+  },
+  "--chakra-colors-white-alpha-600": {
+   "raw": "rgba(255, 255, 255, 0.48)",
+   "resolved": "rgba(255, 255, 255, 0.48)"
+  },
+  "--chakra-colors-white-alpha-700": {
+   "raw": "rgba(255, 255, 255, 0.64)",
+   "resolved": "rgba(255, 255, 255, 0.64)"
+  },
+  "--chakra-colors-white-alpha-800": {
+   "raw": "rgba(255, 255, 255, 0.80)",
+   "resolved": "rgba(255, 255, 255, 0.8)"
+  },
+  "--chakra-colors-white-alpha-900": {
+   "raw": "rgba(255, 255, 255, 0.92)",
+   "resolved": "rgba(255, 255, 255, 0.92)"
+  },
+  "--chakra-colors-white-alpha-950": {
+   "raw": "rgba(255, 255, 255, 0.95)",
+   "resolved": "rgba(255, 255, 255, 0.95)"
+  },
+  "--chakra-colors-wire-1": {
+   "raw": "rgba(0, 0, 0, 0.09)",
+   "resolved": "rgba(0, 0, 0, 0.09)"
+  },
+  "--chakra-colors-wire-2": {
+   "raw": "rgba(0, 0, 0, 0.20)",
+   "resolved": "rgba(0, 0, 0, 0.2)"
+  },
+  "--chakra-colors-wire-3": {
+   "raw": "rgba(0, 0, 0, 0.34)",
+   "resolved": "rgba(0, 0, 0, 0.34)"
+  },
+  "--chakra-colors-wire-void": {
+   "raw": "rgba(0, 0, 0, 0.045)",
+   "resolved": "rgba(0, 0, 0, 0.043)"
+  },
+  "--chakra-colors-yellow-100": {
+   "raw": "#fef9c3",
+   "resolved": "rgb(254, 249, 195)"
+  },
+  "--chakra-colors-yellow-200": {
+   "raw": "#fef08a",
+   "resolved": "rgb(254, 240, 138)"
+  },
+  "--chakra-colors-yellow-300": {
+   "raw": "#fde047",
+   "resolved": "rgb(253, 224, 71)"
+  },
+  "--chakra-colors-yellow-400": {
+   "raw": "#facc15",
+   "resolved": "rgb(250, 204, 21)"
+  },
+  "--chakra-colors-yellow-50": {
+   "raw": "#fefce8",
+   "resolved": "rgb(254, 252, 232)"
+  },
+  "--chakra-colors-yellow-500": {
+   "raw": "#eab308",
+   "resolved": "rgb(234, 179, 8)"
+  },
+  "--chakra-colors-yellow-600": {
+   "raw": "#ca8a04",
+   "resolved": "rgb(202, 138, 4)"
+  },
+  "--chakra-colors-yellow-700": {
+   "raw": "#845209",
+   "resolved": "rgb(132, 82, 9)"
+  },
+  "--chakra-colors-yellow-800": {
+   "raw": "#713f12",
+   "resolved": "rgb(113, 63, 18)"
+  },
+  "--chakra-colors-yellow-900": {
+   "raw": "#422006",
+   "resolved": "rgb(66, 32, 6)"
+  },
+  "--chakra-colors-yellow-950": {
+   "raw": "#281304",
+   "resolved": "rgb(40, 19, 4)"
+  },
+  "--chakra-colors-yellow-border": {
+   "raw": "#eab308",
+   "resolved": "rgb(234, 179, 8)"
+  },
+  "--chakra-colors-yellow-contrast": {
+   "raw": "black",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-yellow-emphasized": {
+   "raw": "#fde047",
+   "resolved": "rgb(253, 224, 71)"
+  },
+  "--chakra-colors-yellow-fg": {
+   "raw": "#713f12",
+   "resolved": "rgb(113, 63, 18)"
+  },
+  "--chakra-colors-yellow-focus-ring": {
+   "raw": "#eab308",
+   "resolved": "rgb(234, 179, 8)"
+  },
+  "--chakra-colors-yellow-muted": {
+   "raw": "#fef08a",
+   "resolved": "rgb(254, 240, 138)"
+  },
+  "--chakra-colors-yellow-solid": {
+   "raw": "#fde047",
+   "resolved": "rgb(253, 224, 71)"
+  },
+  "--chakra-colors-yellow-subtle": {
+   "raw": "#fef9c3",
+   "resolved": "rgb(254, 249, 195)"
+  },
+  "--chakra-cursor-button": {
+   "raw": "pointer",
+   "resolved": "pointer"
+  },
+  "--chakra-cursor-checkbox": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-disabled": {
+   "raw": "not-allowed",
+   "resolved": "not-allowed"
+  },
+  "--chakra-cursor-menuitem": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-option": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-radio": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-slider": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-switch": {
+   "raw": "pointer",
+   "resolved": "pointer"
+  },
+  "--chakra-durations-fast": {
+   "raw": "160ms",
+   "resolved": "160ms"
+  },
+  "--chakra-durations-faster": {
+   "raw": "100ms",
+   "resolved": "100ms"
+  },
+  "--chakra-durations-fastest": {
+   "raw": "50ms",
+   "resolved": "50ms"
+  },
+  "--chakra-durations-fired": {
+   "raw": "260ms",
+   "resolved": "260ms"
+  },
+  "--chakra-durations-history": {
+   "raw": "150ms",
+   "resolved": "150ms"
+  },
+  "--chakra-durations-insert": {
+   "raw": "120ms",
+   "resolved": "120ms"
+  },
+  "--chakra-durations-moderate": {
+   "raw": "200ms",
+   "resolved": "200ms"
+  },
+  "--chakra-durations-normal": {
+   "raw": "240ms",
+   "resolved": "240ms"
+  },
+  "--chakra-durations-panel": {
+   "raw": "280ms",
+   "resolved": "280ms"
+  },
+  "--chakra-durations-settle": {
+   "raw": "300ms",
+   "resolved": "300ms"
+  },
+  "--chakra-durations-slow": {
+   "raw": "420ms",
+   "resolved": "420ms"
+  },
+  "--chakra-durations-slower": {
+   "raw": "400ms",
+   "resolved": "400ms"
+  },
+  "--chakra-durations-slowest": {
+   "raw": "500ms",
+   "resolved": "500ms"
+  },
+  "--chakra-durations-stage": {
+   "raw": "420ms",
+   "resolved": "420ms"
+  },
+  "--chakra-durations-title-dwell": {
+   "raw": "200ms",
+   "resolved": "200ms"
+  },
+  "--chakra-easings-ease-in": {
+   "raw": "cubic-bezier(0.42, 0, 1, 1)",
+   "resolved": "cubic-bezier(0.42, 0, 1, 1)"
+  },
+  "--chakra-easings-ease-in-out": {
+   "raw": "cubic-bezier(0.42, 0, 0.58, 1)",
+   "resolved": "cubic-bezier(0.42, 0, 0.58, 1)"
+  },
+  "--chakra-easings-ease-in-smooth": {
+   "raw": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "resolved": "cubic-bezier(0.32, 0.72, 0, 1)"
+  },
+  "--chakra-easings-ease-out": {
+   "raw": "cubic-bezier(0, 0, 0.58, 1)",
+   "resolved": "cubic-bezier(0, 0, 0.58, 1)"
+  },
+  "--chakra-easings-flow": {
+   "raw": "cubic-bezier(.25, .46, .2, .99)",
+   "resolved": "cubic-bezier(.25, .46, .2, .99)"
+  },
+  "--chakra-easings-out": {
+   "raw": "ease-out",
+   "resolved": "ease-out"
+  },
+  "--chakra-easings-settle": {
+   "raw": "cubic-bezier(.32, .72, 0, 1)",
+   "resolved": "cubic-bezier(.32, .72, 0, 1)"
+  },
+  "--chakra-easings-spring": {
+   "raw": "cubic-bezier(.34, 1.4, .5, 1)",
+   "resolved": "cubic-bezier(.34, 1.4, .5, 1)"
+  },
+  "--chakra-easings-standard": {
+   "raw": "ease-in-out",
+   "resolved": "ease-in-out"
+  },
+  "--chakra-font-sizes-2xl": {
+   "raw": "1.5rem",
+   "resolved": "1.5rem"
+  },
+  "--chakra-font-sizes-2xs": {
+   "raw": "10px",
+   "resolved": "10px"
+  },
+  "--chakra-font-sizes-3xl": {
+   "raw": "1.875rem",
+   "resolved": "1.875rem"
+  },
+  "--chakra-font-sizes-3xs": {
+   "raw": "9px",
+   "resolved": "9px"
+  },
+  "--chakra-font-sizes-4xl": {
+   "raw": "2.25rem",
+   "resolved": "2.25rem"
+  },
+  "--chakra-font-sizes-5xl": {
+   "raw": "3rem",
+   "resolved": "3rem"
+  },
+  "--chakra-font-sizes-6xl": {
+   "raw": "3.75rem",
+   "resolved": "3.75rem"
+  },
+  "--chakra-font-sizes-7xl": {
+   "raw": "4.5rem",
+   "resolved": "4.5rem"
+  },
+  "--chakra-font-sizes-8xl": {
+   "raw": "6rem",
+   "resolved": "6rem"
+  },
+  "--chakra-font-sizes-9xl": {
+   "raw": "8rem",
+   "resolved": "8rem"
+  },
+  "--chakra-font-sizes-lg": {
+   "raw": "17px",
+   "resolved": "17px"
+  },
+  "--chakra-font-sizes-md": {
+   "raw": "13px",
+   "resolved": "13px"
+  },
+  "--chakra-font-sizes-sm": {
+   "raw": "12px",
+   "resolved": "12px"
+  },
+  "--chakra-font-sizes-xl": {
+   "raw": "1.25rem",
+   "resolved": "1.25rem"
+  },
+  "--chakra-font-sizes-xs": {
+   "raw": "11px",
+   "resolved": "11px"
+  },
+  "--chakra-font-weights-black": {
+   "raw": "900",
+   "resolved": "900"
+  },
+  "--chakra-font-weights-bold": {
+   "raw": "700",
+   "resolved": "700"
+  },
+  "--chakra-font-weights-extrabold": {
+   "raw": "800",
+   "resolved": "800"
+  },
+  "--chakra-font-weights-extralight": {
+   "raw": "200",
+   "resolved": "200"
+  },
+  "--chakra-font-weights-light": {
+   "raw": "300",
+   "resolved": "300"
+  },
+  "--chakra-font-weights-medium": {
+   "raw": "500",
+   "resolved": "500"
+  },
+  "--chakra-font-weights-normal": {
+   "raw": "400",
+   "resolved": "400"
+  },
+  "--chakra-font-weights-semibold": {
+   "raw": "600",
+   "resolved": "600"
+  },
+  "--chakra-font-weights-thin": {
+   "raw": "100",
+   "resolved": "100"
+  },
+  "--chakra-fonts-body": {
+   "raw": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif",
+   "resolved": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+  },
+  "--chakra-fonts-heading": {
+   "raw": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif",
+   "resolved": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+  },
+  "--chakra-fonts-mono": {
+   "raw": "ui-monospace,'SF Mono',Menlo,monospace",
+   "resolved": "ui-monospace,'SF Mono',Menlo,monospace"
+  },
+  "--chakra-gradients-window": {
+   "raw": "linear-gradient(180deg, color-mix(in srgb, #E9E9EC 88%, #000000) 0%, #E9E9EC 34%, color-mix(in srgb, #E9E9EC 96%, #000000) 100%)",
+   "resolved": "linear-gradient(180deg, color-mix(in srgb, #E9E9EC 88%, #000000) 0%, #E9E9EC 34%, color-mix(in srgb, #E9E9EC 96%, #000000) 100%)"
+  },
+  "--chakra-letter-spacings-label": {
+   "raw": "0.055em",
+   "resolved": "0.055em"
+  },
+  "--chakra-letter-spacings-selection-label": {
+   "raw": "0.04em",
+   "resolved": "0.04em"
+  },
+  "--chakra-letter-spacings-tight": {
+   "raw": "-0.025em",
+   "resolved": "-0.025em"
+  },
+  "--chakra-letter-spacings-tighter": {
+   "raw": "-0.05em",
+   "resolved": "-0.05em"
+  },
+  "--chakra-letter-spacings-wide": {
+   "raw": "0.025em",
+   "resolved": "0.025em"
+  },
+  "--chakra-letter-spacings-wider": {
+   "raw": "0.05em",
+   "resolved": "0.05em"
+  },
+  "--chakra-letter-spacings-widest": {
+   "raw": "0.1em",
+   "resolved": "0.1em"
+  },
+  "--chakra-line-heights-moderate": {
+   "raw": "1.5",
+   "resolved": "1.5"
+  },
+  "--chakra-line-heights-selection": {
+   "raw": "1.15",
+   "resolved": "1.15"
+  },
+  "--chakra-line-heights-short": {
+   "raw": "1.375",
+   "resolved": "1.375"
+  },
+  "--chakra-line-heights-shorter": {
+   "raw": "1.25",
+   "resolved": "1.25"
+  },
+  "--chakra-line-heights-tall": {
+   "raw": "1.625",
+   "resolved": "1.625"
+  },
+  "--chakra-line-heights-taller": {
+   "raw": "2",
+   "resolved": "2"
+  },
+  "--chakra-radii-2xl": {
+   "raw": "14px",
+   "resolved": "14px"
+  },
+  "--chakra-radii-2xs": {
+   "raw": "0.0625rem",
+   "resolved": "0.0625rem"
+  },
+  "--chakra-radii-3xl": {
+   "raw": "16px",
+   "resolved": "16px"
+  },
+  "--chakra-radii-4xl": {
+   "raw": "22px",
+   "resolved": "22px"
+  },
+  "--chakra-radii-5xl": {
+   "raw": "24px",
+   "resolved": "24px"
+  },
+  "--chakra-radii-full": {
+   "raw": "9999px",
+   "resolved": "9999px"
+  },
+  "--chakra-radii-l1": {
+   "raw": "3px",
+   "resolved": "3px"
+  },
+  "--chakra-radii-l2": {
+   "raw": "5px",
+   "resolved": "5px"
+  },
+  "--chakra-radii-l3": {
+   "raw": "7px",
+   "resolved": "7px"
+  },
+  "--chakra-radii-lg": {
+   "raw": "10px",
+   "resolved": "10px"
+  },
+  "--chakra-radii-md": {
+   "raw": "7px",
+   "resolved": "7px"
+  },
+  "--chakra-radii-none": {
+   "raw": "0",
+   "resolved": "0"
+  },
+  "--chakra-radii-room-tile": {
+   "raw": "6px",
+   "resolved": "6px"
+  },
+  "--chakra-radii-selection-track": {
+   "raw": "9px",
+   "resolved": "9px"
+  },
+  "--chakra-radii-sm": {
+   "raw": "5px",
+   "resolved": "5px"
+  },
+  "--chakra-radii-stage": {
+   "raw": "8px",
+   "resolved": "8px"
+  },
+  "--chakra-radii-title-label": {
+   "raw": "4px",
+   "resolved": "4px"
+  },
+  "--chakra-radii-xl": {
+   "raw": "13px",
+   "resolved": "13px"
+  },
+  "--chakra-radii-xs": {
+   "raw": "3px",
+   "resolved": "3px"
+  },
+  "--chakra-shadows-2xl": {
+   "raw": "0px 24px 40px color-mix(in srgb, #18181b 16%, transparent),0px 0px 1px color-mix(in srgb, #18181b 30%, transparent)",
+   "resolved": "color(srgb 0.0941176 0.0941176 0.105882 / 0.16) 0px 24px 40px 0px, color(srgb 0.0941176 0.0941176 0.105882 / 0.3) 0px 0px 1px 0px"
+  },
+  "--chakra-shadows-avatar": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px"
+  },
+  "--chakra-shadows-avatar-hover": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.30)",
+   "resolved": "rgba(0, 0, 0, 0.3) 0px 0px 0px 0.5px"
+  },
+  "--chakra-shadows-band-pill": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.75),0 0 0 0.5px rgba(0, 0, 0, 0.16),0 -2px 6px rgba(0, 0, 0, 0.06),0 -14px 40px rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px -2px 6px 0px, rgba(0, 0, 0, 0.16) 0px -14px 40px 0px"
+  },
+  "--chakra-shadows-button-secondary": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.16),0 1px 2px rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px"
+  },
+  "--chakra-shadows-button-solid": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.22),0 1px 2px rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(255, 255, 255, 0.22) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 1px 2px 0px"
+  },
+  "--chakra-shadows-caption": {
+   "raw": "inset 0 0.5px 0 0 rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1) 0px 0.5px 0px 0px inset"
+  },
+  "--chakra-shadows-edge": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.75)",
+   "resolved": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset"
+  },
+  "--chakra-shadows-focus": {
+   "raw": "0 0 0 1px #0069D9,0 0 0 4px color-mix(in srgb, #0069D9 34%, transparent)",
+   "resolved": "rgb(0, 105, 217) 0px 0px 0px 1px, color(srgb 0 0.411765 0.85098 / 0.34) 0px 0px 0px 4px"
+  },
+  "--chakra-shadows-focus-inset": {
+   "raw": "inset 0 0 0 2px #0069D9",
+   "resolved": "rgb(0, 105, 217) 0px 0px 0px 2px inset"
+  },
+  "--chakra-shadows-inner": {
+   "raw": "inset 0 2px 4px 0 color-mix(in srgb, black 5%, transparent)",
+   "resolved": "color(srgb 0 0 0 / 0.05) 0px 2px 4px 0px inset"
+  },
+  "--chakra-shadows-input-wrapper": {
+   "raw": "inset 0 0 0 0.5px rgba(0, 0, 0, 0.16),inset 0 1px 2px rgba(0, 0, 0, 0.06)",
+   "resolved": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px inset, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset"
+  },
+  "--chakra-shadows-inset": {
+   "raw": "inset 0 0 0 1px color-mix(in srgb, black 5%, transparent)",
+   "resolved": "color(srgb 0 0 0 / 0.05) 0px 0px 0px 1px inset"
+  },
+  "--chakra-shadows-lg": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.16),0 4px 10px rgba(0, 0, 0, 0.10),0 18px 48px rgba(0, 0, 0, 0.20)",
+   "resolved": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px"
+  },
+  "--chakra-shadows-md": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.16),0 2px 5px rgba(0, 0, 0, 0.08),0 8px 22px rgba(0, 0, 0, 0.12)",
+   "resolved": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 8px 22px 0px"
+  },
+  "--chakra-shadows-menu": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.75),0 0 0 0.5px rgba(0, 0, 0, 0.16),0 4px 10px rgba(0, 0, 0, 0.10),0 18px 48px rgba(0, 0, 0, 0.20)",
+   "resolved": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px"
+  },
+  "--chakra-shadows-placeholder": {
+   "raw": "inset 0 0 0 0.5px rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset"
+  },
+  "--chakra-shadows-segment-thumb": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.75),0 0 0 0.5px rgba(0, 0, 0, 0.16),0 1px 3px rgba(0, 0, 0, 0.12)",
+   "resolved": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px"
+  },
+  "--chakra-shadows-segment-track": {
+   "raw": "inset 0 0.5px 1px 0 rgba(0, 0, 0, 0.06)",
+   "resolved": "rgba(0, 0, 0, 0.06) 0px 0.5px 1px 0px inset"
+  },
+  "--chakra-shadows-selection-bar": {
+   "raw": "inset 0 0.5px 0 0 rgba(255,255,255,0.18),0 0 0 0.5px rgba(0,0,0,0.34),0 4px 10px rgba(0,0,0,0.22),0 14px 36px rgba(0,0,0,0.34)",
+   "resolved": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 4px 10px 0px, rgba(0, 0, 0, 0.34) 0px 14px 36px 0px"
+  },
+  "--chakra-shadows-selection-menu": {
+   "raw": "inset 0 0.5px 0 0 rgba(255,255,255,0.18),0 0 0 0.5px rgba(0,0,0,0.34),0 6px 16px rgba(0,0,0,0.22),0 22px 56px rgba(0,0,0,0.34)",
+   "resolved": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 6px 16px 0px, rgba(0, 0, 0, 0.34) 0px 22px 56px 0px"
+  },
+  "--chakra-shadows-selection-swatch": {
+   "raw": "inset 0 0 0 1px rgba(255,255,255,0.18)",
+   "resolved": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset"
+  },
+  "--chakra-shadows-selection-swatch-selected": {
+   "raw": "inset 0 0 0 1px rgba(255,255,255,0.18),0 0 0 2px rgba(255,255,255,0.60)",
+   "resolved": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.6) 0px 0px 0px 2px"
+  },
+  "--chakra-shadows-sheet": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.75),0 0 0 0.5px rgba(0, 0, 0, 0.16),0 8px 16px rgba(0, 0, 0, 0.10),0 40px 100px rgba(0, 0, 0, 0.34)",
+   "resolved": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px, rgba(0, 0, 0, 0.34) 0px 40px 100px 0px"
+  },
+  "--chakra-shadows-sidebar": {
+   "raw": "inset -1px 0 0 0 rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1) -1px 0px 0px 0px inset"
+  },
+  "--chakra-shadows-sm": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.16),0 1px 2px rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px"
+  },
+  "--chakra-shadows-tooltip": {
+   "raw": "0 8px 16px rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(0, 0, 0, 0.16) 0px 8px 16px 0px"
+  },
+  "--chakra-shadows-top-bar": {
+   "raw": "0 0.5px 0 0 rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1) 0px 0.5px 0px 0px"
+  },
+  "--chakra-shadows-tray-console": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.16),0 2px 5px color-mix(in srgb, #000000 12%, transparent)",
+   "resolved": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, color(srgb 0 0 0 / 0.12) 0px 2px 5px 0px"
+  },
+  "--chakra-shadows-up": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.16),0 -2px 6px rgba(0, 0, 0, 0.06),0 -14px 40px rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px -2px 6px 0px, rgba(0, 0, 0, 0.16) 0px -14px 40px 0px"
+  },
+  "--chakra-shadows-xl": {
+   "raw": "0px 16px 24px color-mix(in srgb, #18181b 10%, transparent),0px 0px 1px color-mix(in srgb, #18181b 30%, transparent)",
+   "resolved": "color(srgb 0.0941176 0.0941176 0.105882 / 0.1) 0px 16px 24px 0px, color(srgb 0.0941176 0.0941176 0.105882 / 0.3) 0px 0px 1px 0px"
+  },
+  "--chakra-shadows-xs": {
+   "raw": "0px 1px 2px color-mix(in srgb, #18181b 10%, transparent),0px 0px 1px color-mix(in srgb, #18181b 20%, transparent)",
+   "resolved": "color(srgb 0.0941176 0.0941176 0.105882 / 0.1) 0px 1px 2px 0px, color(srgb 0.0941176 0.0941176 0.105882 / 0.2) 0px 0px 1px 0px"
+  },
+  "--chakra-sizes-0.5": {
+   "raw": "0.125rem",
+   "resolved": "0.125rem"
+  },
+  "--chakra-sizes-1": {
+   "raw": "0.25rem",
+   "resolved": "0.25rem"
+  },
+  "--chakra-sizes-1.5": {
+   "raw": "0.375rem",
+   "resolved": "0.375rem"
+  },
+  "--chakra-sizes-1/12": {
+   "raw": "8.333333%",
+   "resolved": "8.333333%"
+  },
+  "--chakra-sizes-1/2": {
+   "raw": "50%",
+   "resolved": "50%"
+  },
+  "--chakra-sizes-1/3": {
+   "raw": "33.333333%",
+   "resolved": "33.333333%"
+  },
+  "--chakra-sizes-1/4": {
+   "raw": "25%",
+   "resolved": "25%"
+  },
+  "--chakra-sizes-1/5": {
+   "raw": "20%",
+   "resolved": "20%"
+  },
+  "--chakra-sizes-1/6": {
+   "raw": "16.666667%",
+   "resolved": "16.666667%"
+  },
+  "--chakra-sizes-10": {
+   "raw": "2.5rem",
+   "resolved": "2.5rem"
+  },
+  "--chakra-sizes-10/12": {
+   "raw": "83.333333%",
+   "resolved": "83.333333%"
+  },
+  "--chakra-sizes-11": {
+   "raw": "2.75rem",
+   "resolved": "2.75rem"
+  },
+  "--chakra-sizes-11/12": {
+   "raw": "91.666667%",
+   "resolved": "91.666667%"
+  },
+  "--chakra-sizes-12": {
+   "raw": "3rem",
+   "resolved": "3rem"
+  },
+  "--chakra-sizes-14": {
+   "raw": "3.5rem",
+   "resolved": "3.5rem"
+  },
+  "--chakra-sizes-16": {
+   "raw": "4rem",
+   "resolved": "4rem"
+  },
+  "--chakra-sizes-2": {
+   "raw": "0.5rem",
+   "resolved": "0.5rem"
+  },
+  "--chakra-sizes-2.5": {
+   "raw": "0.625rem",
+   "resolved": "0.625rem"
+  },
+  "--chakra-sizes-2/12": {
+   "raw": "16.666667%",
+   "resolved": "16.666667%"
+  },
+  "--chakra-sizes-2/3": {
+   "raw": "66.666667%",
+   "resolved": "66.666667%"
+  },
+  "--chakra-sizes-2/5": {
+   "raw": "40%",
+   "resolved": "40%"
+  },
+  "--chakra-sizes-2/6": {
+   "raw": "33.333333%",
+   "resolved": "33.333333%"
+  },
+  "--chakra-sizes-20": {
+   "raw": "5rem",
+   "resolved": "5rem"
+  },
+  "--chakra-sizes-24": {
+   "raw": "6rem",
+   "resolved": "6rem"
+  },
+  "--chakra-sizes-28": {
+   "raw": "7rem",
+   "resolved": "7rem"
+  },
+  "--chakra-sizes-2xl": {
+   "raw": "42rem",
+   "resolved": "42rem"
+  },
+  "--chakra-sizes-2xs": {
+   "raw": "16rem",
+   "resolved": "16rem"
+  },
+  "--chakra-sizes-3": {
+   "raw": "0.75rem",
+   "resolved": "0.75rem"
+  },
+  "--chakra-sizes-3.5": {
+   "raw": "0.875rem",
+   "resolved": "0.875rem"
+  },
+  "--chakra-sizes-3/12": {
+   "raw": "25%",
+   "resolved": "25%"
+  },
+  "--chakra-sizes-3/4": {
+   "raw": "75%",
+   "resolved": "75%"
+  },
+  "--chakra-sizes-3/5": {
+   "raw": "60%",
+   "resolved": "60%"
+  },
+  "--chakra-sizes-3/6": {
+   "raw": "50%",
+   "resolved": "50%"
+  },
+  "--chakra-sizes-32": {
+   "raw": "8rem",
+   "resolved": "8rem"
+  },
+  "--chakra-sizes-36": {
+   "raw": "9rem",
+   "resolved": "9rem"
+  },
+  "--chakra-sizes-3xl": {
+   "raw": "48rem",
+   "resolved": "48rem"
+  },
+  "--chakra-sizes-3xs": {
+   "raw": "14rem",
+   "resolved": "14rem"
+  },
+  "--chakra-sizes-4": {
+   "raw": "1rem",
+   "resolved": "1rem"
+  },
+  "--chakra-sizes-4.5": {
+   "raw": "1.125rem",
+   "resolved": "1.125rem"
+  },
+  "--chakra-sizes-4/12": {
+   "raw": "33.333333%",
+   "resolved": "33.333333%"
+  },
+  "--chakra-sizes-4/5": {
+   "raw": "80%",
+   "resolved": "80%"
+  },
+  "--chakra-sizes-4/6": {
+   "raw": "66.666667%",
+   "resolved": "66.666667%"
+  },
+  "--chakra-sizes-40": {
+   "raw": "10rem",
+   "resolved": "10rem"
+  },
+  "--chakra-sizes-44": {
+   "raw": "11rem",
+   "resolved": "11rem"
+  },
+  "--chakra-sizes-48": {
+   "raw": "12rem",
+   "resolved": "12rem"
+  },
+  "--chakra-sizes-4xl": {
+   "raw": "56rem",
+   "resolved": "56rem"
+  },
+  "--chakra-sizes-5": {
+   "raw": "1.25rem",
+   "resolved": "1.25rem"
+  },
+  "--chakra-sizes-5/12": {
+   "raw": "41.666667%",
+   "resolved": "41.666667%"
+  },
+  "--chakra-sizes-5/6": {
+   "raw": "83.333333%",
+   "resolved": "83.333333%"
+  },
+  "--chakra-sizes-52": {
+   "raw": "13rem",
+   "resolved": "13rem"
+  },
+  "--chakra-sizes-56": {
+   "raw": "14rem",
+   "resolved": "14rem"
+  },
+  "--chakra-sizes-5xl": {
+   "raw": "64rem",
+   "resolved": "64rem"
+  },
+  "--chakra-sizes-6": {
+   "raw": "1.5rem",
+   "resolved": "1.5rem"
+  },
+  "--chakra-sizes-6/12": {
+   "raw": "50%",
+   "resolved": "50%"
+  },
+  "--chakra-sizes-60": {
+   "raw": "15rem",
+   "resolved": "15rem"
+  },
+  "--chakra-sizes-64": {
+   "raw": "16rem",
+   "resolved": "16rem"
+  },
+  "--chakra-sizes-6xl": {
+   "raw": "72rem",
+   "resolved": "72rem"
+  },
+  "--chakra-sizes-7": {
+   "raw": "1.75rem",
+   "resolved": "1.75rem"
+  },
+  "--chakra-sizes-7/12": {
+   "raw": "58.333333%",
+   "resolved": "58.333333%"
+  },
+  "--chakra-sizes-72": {
+   "raw": "18rem",
+   "resolved": "18rem"
+  },
+  "--chakra-sizes-7xl": {
+   "raw": "80rem",
+   "resolved": "80rem"
+  },
+  "--chakra-sizes-8": {
+   "raw": "2rem",
+   "resolved": "2rem"
+  },
+  "--chakra-sizes-8/12": {
+   "raw": "66.666667%",
+   "resolved": "66.666667%"
+  },
+  "--chakra-sizes-80": {
+   "raw": "20rem",
+   "resolved": "20rem"
+  },
+  "--chakra-sizes-8xl": {
+   "raw": "90rem",
+   "resolved": "90rem"
+  },
+  "--chakra-sizes-9": {
+   "raw": "2.25rem",
+   "resolved": "2.25rem"
+  },
+  "--chakra-sizes-9/12": {
+   "raw": "75%",
+   "resolved": "75%"
+  },
+  "--chakra-sizes-96": {
+   "raw": "24rem",
+   "resolved": "24rem"
+  },
+  "--chakra-sizes-background-browser-height": {
+   "raw": "min(100vh, 640px)",
+   "resolved": "min(100vh, 640px)"
+  },
+  "--chakra-sizes-background-browser-row": {
+   "raw": "190px",
+   "resolved": "190px"
+  },
+  "--chakra-sizes-background-browser-sidebar": {
+   "raw": "160px",
+   "resolved": "160px"
+  },
+  "--chakra-sizes-background-browser-width": {
+   "raw": "min(85vw, 800px)",
+   "resolved": "min(85vw, 800px)"
+  },
+  "--chakra-sizes-breakpoint-2xl": {
+   "raw": "1536px",
+   "resolved": "1536px"
+  },
+  "--chakra-sizes-breakpoint-lg": {
+   "raw": "1024px",
+   "resolved": "1024px"
+  },
+  "--chakra-sizes-breakpoint-md": {
+   "raw": "768px",
+   "resolved": "768px"
+  },
+  "--chakra-sizes-breakpoint-sm": {
+   "raw": "480px",
+   "resolved": "480px"
+  },
+  "--chakra-sizes-breakpoint-xl": {
+   "raw": "1280px",
+   "resolved": "1280px"
+  },
+  "--chakra-sizes-creator-account-header": {
+   "raw": "260px",
+   "resolved": "260px"
+  },
+  "--chakra-sizes-creator-band-row": {
+   "raw": "38px",
+   "resolved": "38px"
+  },
+  "--chakra-sizes-creator-camera-popover": {
+   "raw": "360px",
+   "resolved": "360px"
+  },
+  "--chakra-sizes-creator-device-chevron": {
+   "raw": "9px",
+   "resolved": "9px"
+  },
+  "--chakra-sizes-creator-device-name": {
+   "raw": "88px",
+   "resolved": "88px"
+  },
+  "--chakra-sizes-creator-device-popover": {
+   "raw": "258px",
+   "resolved": "258px"
+  },
+  "--chakra-sizes-creator-hairline": {
+   "raw": "0.5px",
+   "resolved": "0.5px"
+  },
+  "--chakra-sizes-creator-layout-grid": {
+   "raw": "300px",
+   "resolved": "300px"
+  },
+  "--chakra-sizes-creator-layout-picker": {
+   "raw": "470px",
+   "resolved": "470px"
+  },
+  "--chakra-sizes-creator-overlay-lane": {
+   "raw": "28px",
+   "resolved": "28px"
+  },
+  "--chakra-sizes-creator-record-label": {
+   "raw": "37px",
+   "resolved": "37px"
+  },
+  "--chakra-sizes-creator-record-min": {
+   "raw": "93px",
+   "resolved": "93px"
+  },
+  "--chakra-sizes-creator-room-tile": {
+   "raw": "76px",
+   "resolved": "76px"
+  },
+  "--chakra-sizes-creator-selection-menu-max": {
+   "raw": "328px",
+   "resolved": "328px"
+  },
+  "--chakra-sizes-creator-selection-menu-min": {
+   "raw": "220px",
+   "resolved": "220px"
+  },
+  "--chakra-sizes-creator-share-dialog": {
+   "raw": "460px",
+   "resolved": "460px"
+  },
+  "--chakra-sizes-creator-share-suggestions": {
+   "raw": "232px",
+   "resolved": "232px"
+  },
+  "--chakra-sizes-creator-sidebar": {
+   "raw": "296px",
+   "resolved": "296px"
+  },
+  "--chakra-sizes-creator-sidebar-control": {
+   "raw": "24px",
+   "resolved": "24px"
+  },
+  "--chakra-sizes-creator-sidebar-row": {
+   "raw": "30px",
+   "resolved": "30px"
+  },
+  "--chakra-sizes-creator-slide-counter": {
+   "raw": "46px",
+   "resolved": "46px"
+  },
+  "--chakra-sizes-creator-slide-lane": {
+   "raw": "84px",
+   "resolved": "84px"
+  },
+  "--chakra-sizes-creator-slide-popover": {
+   "raw": "324px",
+   "resolved": "324px"
+  },
+  "--chakra-sizes-creator-slide-thumbnail": {
+   "raw": "78px",
+   "resolved": "78px"
+  },
+  "--chakra-sizes-creator-slides-info": {
+   "raw": "320px",
+   "resolved": "320px"
+  },
+  "--chakra-sizes-creator-stage-band": {
+   "raw": "46px",
+   "resolved": "46px"
+  },
+  "--chakra-sizes-creator-stage-band-narrow": {
+   "raw": "88px",
+   "resolved": "88px"
+  },
+  "--chakra-sizes-creator-status-badge-dot": {
+   "raw": "5px",
+   "resolved": "5px"
+  },
+  "--chakra-sizes-creator-status-dot": {
+   "raw": "7px",
+   "resolved": "7px"
+  },
+  "--chakra-sizes-creator-title": {
+   "raw": "280px",
+   "resolved": "280px"
+  },
+  "--chakra-sizes-creator-title-chevron": {
+   "raw": "22px",
+   "resolved": "22px"
+  },
+  "--chakra-sizes-creator-title-compact": {
+   "raw": "180px",
+   "resolved": "180px"
+  },
+  "--chakra-sizes-creator-title-glyph": {
+   "raw": "15px",
+   "resolved": "15px"
+  },
+  "--chakra-sizes-creator-top-bar": {
+   "raw": "52px",
+   "resolved": "52px"
+  },
+  "--chakra-sizes-creator-tray": {
+   "raw": "116px",
+   "resolved": "116px"
+  },
+  "--chakra-sizes-creator-typography-menu-width": {
+   "raw": "368px",
+   "resolved": "368px"
+  },
+  "--chakra-sizes-creator-video-details": {
+   "raw": "240px",
+   "resolved": "240px"
+  },
+  "--chakra-sizes-creator-video-library": {
+   "raw": "280px",
+   "resolved": "280px"
+  },
+  "--chakra-sizes-creator-video-timeline": {
+   "raw": "144px",
+   "resolved": "144px"
+  },
+  "--chakra-sizes-dvh": {
+   "raw": "100dvh",
+   "resolved": "100dvh"
+  },
+  "--chakra-sizes-dvw": {
+   "raw": "100dvw",
+   "resolved": "100dvw"
+  },
+  "--chakra-sizes-fit": {
+   "raw": "fit-content",
+   "resolved": "fit-content"
+  },
+  "--chakra-sizes-full": {
+   "raw": "100%",
+   "resolved": "100%"
+  },
+  "--chakra-sizes-lg": {
+   "raw": "32rem",
+   "resolved": "32rem"
+  },
+  "--chakra-sizes-lvh": {
+   "raw": "100lvh",
+   "resolved": "100lvh"
+  },
+  "--chakra-sizes-lvw": {
+   "raw": "100lvw",
+   "resolved": "100lvw"
+  },
+  "--chakra-sizes-max": {
+   "raw": "max-content",
+   "resolved": "max-content"
+  },
+  "--chakra-sizes-md": {
+   "raw": "28rem",
+   "resolved": "28rem"
+  },
+  "--chakra-sizes-min": {
+   "raw": "min-content",
+   "resolved": "min-content"
+  },
+  "--chakra-sizes-prose": {
+   "raw": "60ch",
+   "resolved": "60ch"
+  },
+  "--chakra-sizes-segment": {
+   "raw": "26px",
+   "resolved": "26px"
+  },
+  "--chakra-sizes-sheet-height": {
+   "raw": "642px",
+   "resolved": "642px"
+  },
+  "--chakra-sizes-sheet-max-height": {
+   "raw": "calc(100vh - 48px)",
+   "resolved": "calc(100vh - 48px)"
+  },
+  "--chakra-sizes-sheet-max-width": {
+   "raw": "calc(100vw - 48px)",
+   "resolved": "calc(100vw - 48px)"
+  },
+  "--chakra-sizes-sheet-width": {
+   "raw": "800px",
+   "resolved": "800px"
+  },
+  "--chakra-sizes-sm": {
+   "raw": "24rem",
+   "resolved": "24rem"
+  },
+  "--chakra-sizes-split-picker-details": {
+   "raw": "208px",
+   "resolved": "208px"
+  },
+  "--chakra-sizes-split-picker-input-wrapper": {
+   "raw": "30px",
+   "resolved": "30px"
+  },
+  "--chakra-sizes-split-picker-pane-header": {
+   "raw": "56px",
+   "resolved": "56px"
+  },
+  "--chakra-sizes-split-picker-sidebar": {
+   "raw": "208px",
+   "resolved": "208px"
+  },
+  "--chakra-sizes-svh": {
+   "raw": "100svh",
+   "resolved": "100svh"
+  },
+  "--chakra-sizes-svw": {
+   "raw": "100svw",
+   "resolved": "100svw"
+  },
+  "--chakra-sizes-vh": {
+   "raw": "100vh",
+   "resolved": "100vh"
+  },
+  "--chakra-sizes-vw": {
+   "raw": "100vw",
+   "resolved": "100vw"
+  },
+  "--chakra-sizes-xl": {
+   "raw": "36rem",
+   "resolved": "36rem"
+  },
+  "--chakra-sizes-xs": {
+   "raw": "20rem",
+   "resolved": "20rem"
+  },
+  "--chakra-spacing-0.5": {
+   "raw": "0.125rem",
+   "resolved": "0.125rem"
+  },
+  "--chakra-spacing-0.75": {
+   "raw": "3px",
+   "resolved": "3px"
+  },
+  "--chakra-spacing-1": {
+   "raw": "0.25rem",
+   "resolved": "0.25rem"
+  },
+  "--chakra-spacing-1.25": {
+   "raw": "5px",
+   "resolved": "5px"
+  },
+  "--chakra-spacing-1.5": {
+   "raw": "0.375rem",
+   "resolved": "0.375rem"
+  },
+  "--chakra-spacing-1.75": {
+   "raw": "7px",
+   "resolved": "7px"
+  },
+  "--chakra-spacing-10": {
+   "raw": "2.5rem",
+   "resolved": "2.5rem"
+  },
+  "--chakra-spacing-11": {
+   "raw": "2.75rem",
+   "resolved": "2.75rem"
+  },
+  "--chakra-spacing-12": {
+   "raw": "3rem",
+   "resolved": "3rem"
+  },
+  "--chakra-spacing-14": {
+   "raw": "3.5rem",
+   "resolved": "3.5rem"
+  },
+  "--chakra-spacing-16": {
+   "raw": "4rem",
+   "resolved": "4rem"
+  },
+  "--chakra-spacing-2": {
+   "raw": "0.5rem",
+   "resolved": "0.5rem"
+  },
+  "--chakra-spacing-2.25": {
+   "raw": "9px",
+   "resolved": "9px"
+  },
+  "--chakra-spacing-2.5": {
+   "raw": "0.625rem",
+   "resolved": "0.625rem"
+  },
+  "--chakra-spacing-20": {
+   "raw": "5rem",
+   "resolved": "5rem"
+  },
+  "--chakra-spacing-24": {
+   "raw": "6rem",
+   "resolved": "6rem"
+  },
+  "--chakra-spacing-28": {
+   "raw": "7rem",
+   "resolved": "7rem"
+  },
+  "--chakra-spacing-3": {
+   "raw": "0.75rem",
+   "resolved": "0.75rem"
+  },
+  "--chakra-spacing-3.5": {
+   "raw": "0.875rem",
+   "resolved": "0.875rem"
+  },
+  "--chakra-spacing-32": {
+   "raw": "8rem",
+   "resolved": "8rem"
+  },
+  "--chakra-spacing-36": {
+   "raw": "9rem",
+   "resolved": "9rem"
+  },
+  "--chakra-spacing-4": {
+   "raw": "1rem",
+   "resolved": "1rem"
+  },
+  "--chakra-spacing-4.5": {
+   "raw": "1.125rem",
+   "resolved": "1.125rem"
+  },
+  "--chakra-spacing-40": {
+   "raw": "10rem",
+   "resolved": "10rem"
+  },
+  "--chakra-spacing-44": {
+   "raw": "11rem",
+   "resolved": "11rem"
+  },
+  "--chakra-spacing-48": {
+   "raw": "12rem",
+   "resolved": "12rem"
+  },
+  "--chakra-spacing-5": {
+   "raw": "1.25rem",
+   "resolved": "1.25rem"
+  },
+  "--chakra-spacing-52": {
+   "raw": "13rem",
+   "resolved": "13rem"
+  },
+  "--chakra-spacing-56": {
+   "raw": "14rem",
+   "resolved": "14rem"
+  },
+  "--chakra-spacing-6": {
+   "raw": "1.5rem",
+   "resolved": "1.5rem"
+  },
+  "--chakra-spacing-60": {
+   "raw": "15rem",
+   "resolved": "15rem"
+  },
+  "--chakra-spacing-64": {
+   "raw": "16rem",
+   "resolved": "16rem"
+  },
+  "--chakra-spacing-7": {
+   "raw": "1.75rem",
+   "resolved": "1.75rem"
+  },
+  "--chakra-spacing-72": {
+   "raw": "18rem",
+   "resolved": "18rem"
+  },
+  "--chakra-spacing-8": {
+   "raw": "2rem",
+   "resolved": "2rem"
+  },
+  "--chakra-spacing-80": {
+   "raw": "20rem",
+   "resolved": "20rem"
+  },
+  "--chakra-spacing-9": {
+   "raw": "2.25rem",
+   "resolved": "2.25rem"
+  },
+  "--chakra-spacing-96": {
+   "raw": "24rem",
+   "resolved": "24rem"
+  },
+  "--chakra-spacing-gutter": {
+   "raw": "16px",
+   "resolved": "16px"
+  },
+  "--chakra-z-index-banner": {
+   "raw": "1200",
+   "resolved": "1200"
+  },
+  "--chakra-z-index-base": {
+   "raw": "0",
+   "resolved": "0"
+  },
+  "--chakra-z-index-docked": {
+   "raw": "10",
+   "resolved": "10"
+  },
+  "--chakra-z-index-dropdown": {
+   "raw": "1000",
+   "resolved": "1000"
+  },
+  "--chakra-z-index-hide": {
+   "raw": "-1",
+   "resolved": "-1"
+  },
+  "--chakra-z-index-max": {
+   "raw": "2147483647",
+   "resolved": "2147483647"
+  },
+  "--chakra-z-index-modal": {
+   "raw": "1400",
+   "resolved": "1400"
+  },
+  "--chakra-z-index-overlay": {
+   "raw": "1300",
+   "resolved": "1300"
+  },
+  "--chakra-z-index-popover": {
+   "raw": "1500",
+   "resolved": "1500"
+  },
+  "--chakra-z-index-skip-nav": {
+   "raw": "1600",
+   "resolved": "1600"
+  },
+  "--chakra-z-index-stage": {
+   "raw": "1",
+   "resolved": "1"
+  },
+  "--chakra-z-index-stage-band": {
+   "raw": "12",
+   "resolved": "12"
+  },
+  "--chakra-z-index-stage-controls": {
+   "raw": "13",
+   "resolved": "13"
+  },
+  "--chakra-z-index-sticky": {
+   "raw": "1100",
+   "resolved": "1100"
+  },
+  "--chakra-z-index-toast": {
+   "raw": "1700",
+   "resolved": "1700"
+  },
+  "--chakra-z-index-tooltip": {
+   "raw": "1800",
+   "resolved": "1800"
+  },
+  "--chakra-z-index-top-bar": {
+   "raw": "20",
+   "resolved": "20"
+  },
+  "--chakra-z-index-tray": {
+   "raw": "15",
+   "resolved": "15"
+  }
+ },
+ "dark": {
+  "--chakra-animations-bounce": {
+   "raw": "bounce 1s infinite",
+   "resolved": "bounce 1s infinite"
+  },
+  "--chakra-animations-ping": {
+   "raw": "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
+   "resolved": "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite"
+  },
+  "--chakra-animations-pulse": {
+   "raw": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+   "resolved": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite"
+  },
+  "--chakra-animations-spin": {
+   "raw": "spin 1s linear infinite",
+   "resolved": "spin 1s linear infinite"
+  },
+  "--chakra-aspect-ratios-camera-demo": {
+   "raw": "736/414",
+   "resolved": "736/414"
+  },
+  "--chakra-aspect-ratios-golden": {
+   "raw": "1.618/1",
+   "resolved": "1.618/1"
+  },
+  "--chakra-aspect-ratios-landscape": {
+   "raw": "4/3",
+   "resolved": "4/3"
+  },
+  "--chakra-aspect-ratios-portrait": {
+   "raw": "3/4",
+   "resolved": "3/4"
+  },
+  "--chakra-aspect-ratios-square": {
+   "raw": "1/1",
+   "resolved": "1/1"
+  },
+  "--chakra-aspect-ratios-ultrawide": {
+   "raw": "18/5",
+   "resolved": "18/5"
+  },
+  "--chakra-aspect-ratios-wide": {
+   "raw": "16/9",
+   "resolved": "16/9"
+  },
+  "--chakra-blurs-2xl": {
+   "raw": "24px",
+   "resolved": "24px"
+  },
+  "--chakra-blurs-3xl": {
+   "raw": "40px",
+   "resolved": "40px"
+  },
+  "--chakra-blurs-4xl": {
+   "raw": "64px",
+   "resolved": "64px"
+  },
+  "--chakra-blurs-lg": {
+   "raw": "12px",
+   "resolved": "12px"
+  },
+  "--chakra-blurs-md": {
+   "raw": "8px",
+   "resolved": "8px"
+  },
+  "--chakra-blurs-selection-bar": {
+   "raw": "28px",
+   "resolved": "28px"
+  },
+  "--chakra-blurs-selection-menu": {
+   "raw": "34px",
+   "resolved": "34px"
+  },
+  "--chakra-blurs-sm": {
+   "raw": "4px",
+   "resolved": "4px"
+  },
+  "--chakra-blurs-xl": {
+   "raw": "16px",
+   "resolved": "16px"
+  },
+  "--chakra-border-widths-hair": {
+   "raw": "0.5px",
+   "resolved": "0.5px"
+  },
+  "--chakra-border-widths-medium": {
+   "raw": "2px",
+   "resolved": "2px"
+  },
+  "--chakra-border-widths-thin": {
+   "raw": "1px",
+   "resolved": "1px"
+  },
+  "--chakra-borders-lg": {
+   "raw": "4px solid",
+   "resolved": "4px solid"
+  },
+  "--chakra-borders-md": {
+   "raw": "2px solid",
+   "resolved": "2px solid"
+  },
+  "--chakra-borders-sm": {
+   "raw": "1px solid",
+   "resolved": "1px solid"
+  },
+  "--chakra-borders-xl": {
+   "raw": "8px solid",
+   "resolved": "8px solid"
+  },
+  "--chakra-borders-xs": {
+   "raw": "0.5px solid",
+   "resolved": "0.5px solid"
+  },
+  "--chakra-breakpoints-2xl": {
+   "raw": "1536px",
+   "resolved": "1536px"
+  },
+  "--chakra-breakpoints-lg": {
+   "raw": "1024px",
+   "resolved": "1024px"
+  },
+  "--chakra-breakpoints-md": {
+   "raw": "768px",
+   "resolved": "768px"
+  },
+  "--chakra-breakpoints-sm": {
+   "raw": "480px",
+   "resolved": "480px"
+  },
+  "--chakra-breakpoints-xl": {
+   "raw": "1280px",
+   "resolved": "1280px"
+  },
+  "--chakra-colors-accent-contrast": {
+   "raw": "#08121C",
+   "resolved": "rgb(8, 18, 28)"
+  },
+  "--chakra-colors-accent-emphasized": {
+   "raw": "#57ACFF",
+   "resolved": "rgb(87, 172, 255)"
+  },
+  "--chakra-colors-accent-fg": {
+   "raw": "#3B9BFF",
+   "resolved": "rgb(59, 155, 255)"
+  },
+  "--chakra-colors-accent-focus-ring": {
+   "raw": "#3B9BFF",
+   "resolved": "rgb(59, 155, 255)"
+  },
+  "--chakra-colors-accent-hover": {
+   "raw": "#57ACFF",
+   "resolved": "rgb(87, 172, 255)"
+  },
+  "--chakra-colors-accent-muted": {
+   "raw": "color-mix(in srgb, #3B9BFF 26%, transparent)",
+   "resolved": "color(srgb 0.231373 0.607843 1 / 0.26)"
+  },
+  "--chakra-colors-accent-solid": {
+   "raw": "#3B9BFF",
+   "resolved": "rgb(59, 155, 255)"
+  },
+  "--chakra-colors-accent-subtle": {
+   "raw": "color-mix(in srgb, #3B9BFF 14%, transparent)",
+   "resolved": "color(srgb 0.231373 0.607843 1 / 0.14)"
+  },
+  "--chakra-colors-action-destructive": {
+   "raw": "#ff7661",
+   "resolved": "rgb(255, 118, 97)"
+  },
+  "--chakra-colors-action-primary": {
+   "raw": "#79DDE8",
+   "resolved": "rgb(121, 221, 232)"
+  },
+  "--chakra-colors-action-secondary": {
+   "raw": "#1A7580",
+   "resolved": "rgb(26, 117, 128)"
+  },
+  "--chakra-colors-background-primary": {
+   "raw": "#0a0a0e",
+   "resolved": "rgb(10, 10, 14)"
+  },
+  "--chakra-colors-background-tertiary": {
+   "raw": "#212127",
+   "resolved": "rgb(33, 33, 39)"
+  },
+  "--chakra-colors-bg": {
+   "raw": "#131315",
+   "resolved": "rgb(19, 19, 21)"
+  },
+  "--chakra-colors-bg-emphasized": {
+   "raw": "rgba(255, 255, 255, 0.13)",
+   "resolved": "rgba(255, 255, 255, 0.13)"
+  },
+  "--chakra-colors-bg-error": {
+   "raw": "#1f0808",
+   "resolved": "rgb(31, 8, 8)"
+  },
+  "--chakra-colors-bg-info": {
+   "raw": "#0c142e",
+   "resolved": "rgb(12, 20, 46)"
+  },
+  "--chakra-colors-bg-inverted": {
+   "raw": "#E9E9EC",
+   "resolved": "rgb(233, 233, 236)"
+  },
+  "--chakra-colors-bg-muted": {
+   "raw": "rgba(255, 255, 255, 0.06)",
+   "resolved": "rgba(255, 255, 255, 0.06)"
+  },
+  "--chakra-colors-bg-panel": {
+   "raw": "#1E1E20",
+   "resolved": "rgb(30, 30, 32)"
+  },
+  "--chakra-colors-bg-subtle": {
+   "raw": "#252528",
+   "resolved": "rgb(37, 37, 40)"
+  },
+  "--chakra-colors-bg-success": {
+   "raw": "#03190c",
+   "resolved": "rgb(3, 25, 12)"
+  },
+  "--chakra-colors-bg-warning": {
+   "raw": "#220a04",
+   "resolved": "rgb(34, 10, 4)"
+  },
+  "--chakra-colors-black": {
+   "raw": "#09090B",
+   "resolved": "rgb(9, 9, 11)"
+  },
+  "--chakra-colors-black-alpha-100": {
+   "raw": "rgba(0, 0, 0, 0.06)",
+   "resolved": "rgba(0, 0, 0, 0.06)"
+  },
+  "--chakra-colors-black-alpha-200": {
+   "raw": "rgba(0, 0, 0, 0.08)",
+   "resolved": "rgba(0, 0, 0, 0.08)"
+  },
+  "--chakra-colors-black-alpha-300": {
+   "raw": "rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(0, 0, 0, 0.16)"
+  },
+  "--chakra-colors-black-alpha-400": {
+   "raw": "rgba(0, 0, 0, 0.24)",
+   "resolved": "rgba(0, 0, 0, 0.24)"
+  },
+  "--chakra-colors-black-alpha-50": {
+   "raw": "rgba(0, 0, 0, 0.04)",
+   "resolved": "rgba(0, 0, 0, 0.04)"
+  },
+  "--chakra-colors-black-alpha-500": {
+   "raw": "rgba(0, 0, 0, 0.36)",
+   "resolved": "rgba(0, 0, 0, 0.36)"
+  },
+  "--chakra-colors-black-alpha-600": {
+   "raw": "rgba(0, 0, 0, 0.48)",
+   "resolved": "rgba(0, 0, 0, 0.48)"
+  },
+  "--chakra-colors-black-alpha-700": {
+   "raw": "rgba(0, 0, 0, 0.64)",
+   "resolved": "rgba(0, 0, 0, 0.64)"
+  },
+  "--chakra-colors-black-alpha-800": {
+   "raw": "rgba(0, 0, 0, 0.80)",
+   "resolved": "rgba(0, 0, 0, 0.8)"
+  },
+  "--chakra-colors-black-alpha-900": {
+   "raw": "rgba(0, 0, 0, 0.92)",
+   "resolved": "rgba(0, 0, 0, 0.92)"
+  },
+  "--chakra-colors-black-alpha-950": {
+   "raw": "rgba(0, 0, 0, 0.95)",
+   "resolved": "rgba(0, 0, 0, 0.95)"
+  },
+  "--chakra-colors-blue-100": {
+   "raw": "#dbeafe",
+   "resolved": "rgb(219, 234, 254)"
+  },
+  "--chakra-colors-blue-200": {
+   "raw": "#bfdbfe",
+   "resolved": "rgb(191, 219, 254)"
+  },
+  "--chakra-colors-blue-300": {
+   "raw": "#a3cfff",
+   "resolved": "rgb(163, 207, 255)"
+  },
+  "--chakra-colors-blue-400": {
+   "raw": "#60a5fa",
+   "resolved": "rgb(96, 165, 250)"
+  },
+  "--chakra-colors-blue-50": {
+   "raw": "#eff6ff",
+   "resolved": "rgb(239, 246, 255)"
+  },
+  "--chakra-colors-blue-500": {
+   "raw": "#3b82f6",
+   "resolved": "rgb(59, 130, 246)"
+  },
+  "--chakra-colors-blue-600": {
+   "raw": "#2563eb",
+   "resolved": "rgb(37, 99, 235)"
+  },
+  "--chakra-colors-blue-700": {
+   "raw": "#173da6",
+   "resolved": "rgb(23, 61, 166)"
+  },
+  "--chakra-colors-blue-800": {
+   "raw": "#1a3478",
+   "resolved": "rgb(26, 52, 120)"
+  },
+  "--chakra-colors-blue-900": {
+   "raw": "#14204a",
+   "resolved": "rgb(20, 32, 74)"
+  },
+  "--chakra-colors-blue-950": {
+   "raw": "#0c142e",
+   "resolved": "rgb(12, 20, 46)"
+  },
+  "--chakra-colors-blue-border": {
+   "raw": "#60a5fa",
+   "resolved": "rgb(96, 165, 250)"
+  },
+  "--chakra-colors-blue-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-blue-emphasized": {
+   "raw": "#173da6",
+   "resolved": "rgb(23, 61, 166)"
+  },
+  "--chakra-colors-blue-fg": {
+   "raw": "#a3cfff",
+   "resolved": "rgb(163, 207, 255)"
+  },
+  "--chakra-colors-blue-focus-ring": {
+   "raw": "#3b82f6",
+   "resolved": "rgb(59, 130, 246)"
+  },
+  "--chakra-colors-blue-muted": {
+   "raw": "#1a3478",
+   "resolved": "rgb(26, 52, 120)"
+  },
+  "--chakra-colors-blue-solid": {
+   "raw": "#2563eb",
+   "resolved": "rgb(37, 99, 235)"
+  },
+  "--chakra-colors-blue-subtle": {
+   "raw": "#14204a",
+   "resolved": "rgb(20, 32, 74)"
+  },
+  "--chakra-colors-border": {
+   "raw": "rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1)"
+  },
+  "--chakra-colors-border-emphasized": {
+   "raw": "rgba(255, 255, 255, 0.16)",
+   "resolved": "rgba(255, 255, 255, 0.16)"
+  },
+  "--chakra-colors-border-error": {
+   "raw": "#f87171",
+   "resolved": "rgb(248, 113, 113)"
+  },
+  "--chakra-colors-border-info": {
+   "raw": "#60a5fa",
+   "resolved": "rgb(96, 165, 250)"
+  },
+  "--chakra-colors-border-inverted": {
+   "raw": "rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.1)"
+  },
+  "--chakra-colors-border-muted": {
+   "raw": "rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1)"
+  },
+  "--chakra-colors-border-subtle": {
+   "raw": "rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1)"
+  },
+  "--chakra-colors-border-success": {
+   "raw": "#4ade80",
+   "resolved": "rgb(74, 222, 128)"
+  },
+  "--chakra-colors-border-warning": {
+   "raw": "#fb923c",
+   "resolved": "rgb(251, 146, 60)"
+  },
+  "--chakra-colors-color-palette-100": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-200": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-300": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-400": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-50": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-500": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-600": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-700": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-800": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-900": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-950": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-border": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-contrast": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-emphasized": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-fg": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-focus-ring": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-hover": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-muted": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-solid": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-color-palette-subtle": {
+   "raw": "",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-content-accent": {
+   "raw": "#f9df74",
+   "resolved": "rgb(249, 223, 116)"
+  },
+  "--chakra-colors-content-primary": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-content-secondary": {
+   "raw": "#EBEBF5",
+   "resolved": "rgb(235, 235, 245)"
+  },
+  "--chakra-colors-content-tertiary": {
+   "raw": "#ABABB2",
+   "resolved": "rgb(171, 171, 178)"
+  },
+  "--chakra-colors-current": {
+   "raw": "currentColor",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-cyan-100": {
+   "raw": "#cffafe",
+   "resolved": "rgb(207, 250, 254)"
+  },
+  "--chakra-colors-cyan-200": {
+   "raw": "#a5f3fc",
+   "resolved": "rgb(165, 243, 252)"
+  },
+  "--chakra-colors-cyan-300": {
+   "raw": "#67e8f9",
+   "resolved": "rgb(103, 232, 249)"
+  },
+  "--chakra-colors-cyan-400": {
+   "raw": "#22d3ee",
+   "resolved": "rgb(34, 211, 238)"
+  },
+  "--chakra-colors-cyan-50": {
+   "raw": "#ecfeff",
+   "resolved": "rgb(236, 254, 255)"
+  },
+  "--chakra-colors-cyan-500": {
+   "raw": "#06b6d4",
+   "resolved": "rgb(6, 182, 212)"
+  },
+  "--chakra-colors-cyan-600": {
+   "raw": "#0891b2",
+   "resolved": "rgb(8, 145, 178)"
+  },
+  "--chakra-colors-cyan-700": {
+   "raw": "#0c5c72",
+   "resolved": "rgb(12, 92, 114)"
+  },
+  "--chakra-colors-cyan-800": {
+   "raw": "#134152",
+   "resolved": "rgb(19, 65, 82)"
+  },
+  "--chakra-colors-cyan-900": {
+   "raw": "#072a38",
+   "resolved": "rgb(7, 42, 56)"
+  },
+  "--chakra-colors-cyan-950": {
+   "raw": "#051b24",
+   "resolved": "rgb(5, 27, 36)"
+  },
+  "--chakra-colors-cyan-border": {
+   "raw": "#22d3ee",
+   "resolved": "rgb(34, 211, 238)"
+  },
+  "--chakra-colors-cyan-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-cyan-emphasized": {
+   "raw": "#0c5c72",
+   "resolved": "rgb(12, 92, 114)"
+  },
+  "--chakra-colors-cyan-fg": {
+   "raw": "#67e8f9",
+   "resolved": "rgb(103, 232, 249)"
+  },
+  "--chakra-colors-cyan-focus-ring": {
+   "raw": "#06b6d4",
+   "resolved": "rgb(6, 182, 212)"
+  },
+  "--chakra-colors-cyan-muted": {
+   "raw": "#134152",
+   "resolved": "rgb(19, 65, 82)"
+  },
+  "--chakra-colors-cyan-solid": {
+   "raw": "#0891b2",
+   "resolved": "rgb(8, 145, 178)"
+  },
+  "--chakra-colors-cyan-subtle": {
+   "raw": "#072a38",
+   "resolved": "rgb(7, 42, 56)"
+  },
+  "--chakra-colors-danger-contrast": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-danger-emphasized": {
+   "raw": "color-mix(in srgb, #FF4F42 88%, white)",
+   "resolved": "color(srgb 1 0.392627 0.347765)"
+  },
+  "--chakra-colors-danger-fg": {
+   "raw": "#FF4F42",
+   "resolved": "rgb(255, 79, 66)"
+  },
+  "--chakra-colors-danger-focus-ring": {
+   "raw": "#FF4F42",
+   "resolved": "rgb(255, 79, 66)"
+  },
+  "--chakra-colors-danger-hover": {
+   "raw": "color-mix(in srgb, #FF4F42 88%, white)",
+   "resolved": "color(srgb 1 0.392627 0.347765)"
+  },
+  "--chakra-colors-danger-muted": {
+   "raw": "color-mix(in srgb, #FF4F42 26%, transparent)",
+   "resolved": "color(srgb 1 0.309804 0.258824 / 0.26)"
+  },
+  "--chakra-colors-danger-solid": {
+   "raw": "#FF4F42",
+   "resolved": "rgb(255, 79, 66)"
+  },
+  "--chakra-colors-danger-subtle": {
+   "raw": "color-mix(in srgb, #FF4F42 14%, transparent)",
+   "resolved": "color(srgb 1 0.309804 0.258824 / 0.14)"
+  },
+  "--chakra-colors-dash": {
+   "raw": "rgba(255, 255, 255, 0.30)",
+   "resolved": "rgba(255, 255, 255, 0.3)"
+  },
+  "--chakra-colors-device-off": {
+   "raw": "#F65F4C",
+   "resolved": "rgb(246, 95, 76)"
+  },
+  "--chakra-colors-edge-in": {
+   "raw": "rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1)"
+  },
+  "--chakra-colors-edge-out": {
+   "raw": "rgba(0, 0, 0, 0.62)",
+   "resolved": "rgba(0, 0, 0, 0.62)"
+  },
+  "--chakra-colors-fg": {
+   "raw": "rgba(255, 255, 255, 0.96)",
+   "resolved": "rgba(255, 255, 255, 0.96)"
+  },
+  "--chakra-colors-fg-error": {
+   "raw": "#f87171",
+   "resolved": "rgb(248, 113, 113)"
+  },
+  "--chakra-colors-fg-info": {
+   "raw": "#a3cfff",
+   "resolved": "rgb(163, 207, 255)"
+  },
+  "--chakra-colors-fg-inverted": {
+   "raw": "rgba(0, 0, 0, 0.92)",
+   "resolved": "rgba(0, 0, 0, 0.92)"
+  },
+  "--chakra-colors-fg-muted": {
+   "raw": "rgba(255, 255, 255, 0.68)",
+   "resolved": "rgba(255, 255, 255, 0.68)"
+  },
+  "--chakra-colors-fg-subtle": {
+   "raw": "rgba(255, 255, 255, 0.54)",
+   "resolved": "rgba(255, 255, 255, 0.54)"
+  },
+  "--chakra-colors-fg-success": {
+   "raw": "#86efac",
+   "resolved": "rgb(134, 239, 172)"
+  },
+  "--chakra-colors-fg-warning": {
+   "raw": "#fdba74",
+   "resolved": "rgb(253, 186, 116)"
+  },
+  "--chakra-colors-focus-ring": {
+   "raw": "#3B9BFF",
+   "resolved": "rgb(59, 155, 255)"
+  },
+  "--chakra-colors-gray-100": {
+   "raw": "#f4f4f5",
+   "resolved": "rgb(244, 244, 245)"
+  },
+  "--chakra-colors-gray-200": {
+   "raw": "#e4e4e7",
+   "resolved": "rgb(228, 228, 231)"
+  },
+  "--chakra-colors-gray-300": {
+   "raw": "#d4d4d8",
+   "resolved": "rgb(212, 212, 216)"
+  },
+  "--chakra-colors-gray-400": {
+   "raw": "#a1a1aa",
+   "resolved": "rgb(161, 161, 170)"
+  },
+  "--chakra-colors-gray-50": {
+   "raw": "#fafafa",
+   "resolved": "rgb(250, 250, 250)"
+  },
+  "--chakra-colors-gray-500": {
+   "raw": "#71717a",
+   "resolved": "rgb(113, 113, 122)"
+  },
+  "--chakra-colors-gray-600": {
+   "raw": "#52525b",
+   "resolved": "rgb(82, 82, 91)"
+  },
+  "--chakra-colors-gray-700": {
+   "raw": "#3f3f46",
+   "resolved": "rgb(63, 63, 70)"
+  },
+  "--chakra-colors-gray-800": {
+   "raw": "#27272a",
+   "resolved": "rgb(39, 39, 42)"
+  },
+  "--chakra-colors-gray-900": {
+   "raw": "#18181b",
+   "resolved": "rgb(24, 24, 27)"
+  },
+  "--chakra-colors-gray-950": {
+   "raw": "#111111",
+   "resolved": "rgb(17, 17, 17)"
+  },
+  "--chakra-colors-gray-border": {
+   "raw": "#27272a",
+   "resolved": "rgb(39, 39, 42)"
+  },
+  "--chakra-colors-gray-contrast": {
+   "raw": "#1E1E20",
+   "resolved": "rgb(30, 30, 32)"
+  },
+  "--chakra-colors-gray-emphasized": {
+   "raw": "rgba(255, 255, 255, 0.18)",
+   "resolved": "rgba(255, 255, 255, 0.18)"
+  },
+  "--chakra-colors-gray-fg": {
+   "raw": "rgba(255, 255, 255, 0.96)",
+   "resolved": "rgba(255, 255, 255, 0.96)"
+  },
+  "--chakra-colors-gray-focus-ring": {
+   "raw": "#3B9BFF",
+   "resolved": "rgb(59, 155, 255)"
+  },
+  "--chakra-colors-gray-hover": {
+   "raw": "rgba(255, 255, 255, 0.84)",
+   "resolved": "rgba(255, 255, 255, 0.84)"
+  },
+  "--chakra-colors-gray-muted": {
+   "raw": "rgba(255, 255, 255, 0.13)",
+   "resolved": "rgba(255, 255, 255, 0.13)"
+  },
+  "--chakra-colors-gray-solid": {
+   "raw": "rgba(255, 255, 255, 0.96)",
+   "resolved": "rgba(255, 255, 255, 0.96)"
+  },
+  "--chakra-colors-gray-subtle": {
+   "raw": "rgba(255, 255, 255, 0.08)",
+   "resolved": "rgba(255, 255, 255, 0.08)"
+  },
+  "--chakra-colors-green-100": {
+   "raw": "#dcfce7",
+   "resolved": "rgb(220, 252, 231)"
+  },
+  "--chakra-colors-green-200": {
+   "raw": "#bbf7d0",
+   "resolved": "rgb(187, 247, 208)"
+  },
+  "--chakra-colors-green-300": {
+   "raw": "#86efac",
+   "resolved": "rgb(134, 239, 172)"
+  },
+  "--chakra-colors-green-400": {
+   "raw": "#4ade80",
+   "resolved": "rgb(74, 222, 128)"
+  },
+  "--chakra-colors-green-50": {
+   "raw": "#f0fdf4",
+   "resolved": "rgb(240, 253, 244)"
+  },
+  "--chakra-colors-green-500": {
+   "raw": "#22c55e",
+   "resolved": "rgb(34, 197, 94)"
+  },
+  "--chakra-colors-green-600": {
+   "raw": "#16a34a",
+   "resolved": "rgb(22, 163, 74)"
+  },
+  "--chakra-colors-green-700": {
+   "raw": "#116932",
+   "resolved": "rgb(17, 105, 50)"
+  },
+  "--chakra-colors-green-800": {
+   "raw": "#124a28",
+   "resolved": "rgb(18, 74, 40)"
+  },
+  "--chakra-colors-green-900": {
+   "raw": "#042713",
+   "resolved": "rgb(4, 39, 19)"
+  },
+  "--chakra-colors-green-950": {
+   "raw": "#03190c",
+   "resolved": "rgb(3, 25, 12)"
+  },
+  "--chakra-colors-green-border": {
+   "raw": "#4ade80",
+   "resolved": "rgb(74, 222, 128)"
+  },
+  "--chakra-colors-green-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-green-emphasized": {
+   "raw": "#116932",
+   "resolved": "rgb(17, 105, 50)"
+  },
+  "--chakra-colors-green-fg": {
+   "raw": "#86efac",
+   "resolved": "rgb(134, 239, 172)"
+  },
+  "--chakra-colors-green-focus-ring": {
+   "raw": "#22c55e",
+   "resolved": "rgb(34, 197, 94)"
+  },
+  "--chakra-colors-green-muted": {
+   "raw": "#124a28",
+   "resolved": "rgb(18, 74, 40)"
+  },
+  "--chakra-colors-green-solid": {
+   "raw": "#16a34a",
+   "resolved": "rgb(22, 163, 74)"
+  },
+  "--chakra-colors-green-subtle": {
+   "raw": "#042713",
+   "resolved": "rgb(4, 39, 19)"
+  },
+  "--chakra-colors-ground-dark-recessed": {
+   "raw": "#252528",
+   "resolved": "rgb(37, 37, 40)"
+  },
+  "--chakra-colors-ground-dark-surface": {
+   "raw": "#1E1E20",
+   "resolved": "rgb(30, 30, 32)"
+  },
+  "--chakra-colors-ground-dark-window": {
+   "raw": "#131315",
+   "resolved": "rgb(19, 19, 21)"
+  },
+  "--chakra-colors-ground-light-recessed": {
+   "raw": "#F1F1F4",
+   "resolved": "rgb(241, 241, 244)"
+  },
+  "--chakra-colors-ground-light-surface": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-ground-light-window": {
+   "raw": "#E9E9EC",
+   "resolved": "rgb(233, 233, 236)"
+  },
+  "--chakra-colors-header-ground": {
+   "raw": "color-mix(in srgb, rgba(38, 38, 42, 0.985) 92%, transparent)",
+   "resolved": "color(srgb 0.14902 0.14902 0.164706 / 0.905569)"
+  },
+  "--chakra-colors-header-history-hover": {
+   "raw": "#212127",
+   "resolved": "rgb(33, 33, 39)"
+  },
+  "--chakra-colors-header-title-border": {
+   "raw": "#2f2f32",
+   "resolved": "rgb(47, 47, 50)"
+  },
+  "--chakra-colors-header-title-hover": {
+   "raw": "#2f2f32",
+   "resolved": "rgb(47, 47, 50)"
+  },
+  "--chakra-colors-highlight-primary": {
+   "raw": "#FFFFFF14",
+   "resolved": "rgba(255, 255, 255, 0.08)"
+  },
+  "--chakra-colors-highlight-secondary": {
+   "raw": "#FFFFFF0A",
+   "resolved": "rgba(255, 255, 255, 0.04)"
+  },
+  "--chakra-colors-ink-dark-primary": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-ink-dark-secondary": {
+   "raw": "#EBEBF5",
+   "resolved": "rgb(235, 235, 245)"
+  },
+  "--chakra-colors-ink-dark-tertiary": {
+   "raw": "#ABABB2",
+   "resolved": "rgb(171, 171, 178)"
+  },
+  "--chakra-colors-ink-light-primary": {
+   "raw": "#000000",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-ink-light-secondary": {
+   "raw": "#3C3C43",
+   "resolved": "rgb(60, 60, 67)"
+  },
+  "--chakra-colors-ink-light-tertiary": {
+   "raw": "#6E6E73",
+   "resolved": "rgb(110, 110, 115)"
+  },
+  "--chakra-colors-line": {
+   "raw": "rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1)"
+  },
+  "--chakra-colors-line-strong": {
+   "raw": "rgba(255, 255, 255, 0.16)",
+   "resolved": "rgba(255, 255, 255, 0.16)"
+  },
+  "--chakra-colors-line-strongest": {
+   "raw": "rgba(255, 255, 255, 0.30)",
+   "resolved": "rgba(255, 255, 255, 0.3)"
+  },
+  "--chakra-colors-mat-hud": {
+   "raw": "rgba(38, 38, 42, 0.985)",
+   "resolved": "rgba(38, 38, 42, 0.984)"
+  },
+  "--chakra-colors-mat-menu": {
+   "raw": "rgba(44, 44, 48, 0.88)",
+   "resolved": "rgba(44, 44, 48, 0.88)"
+  },
+  "--chakra-colors-mat-menu-solid": {
+   "raw": "rgba(44, 44, 48, 0.97)",
+   "resolved": "rgba(44, 44, 48, 0.97)"
+  },
+  "--chakra-colors-mat-sheet": {
+   "raw": "rgba(34, 34, 38, 0.99)",
+   "resolved": "rgba(34, 34, 38, 0.99)"
+  },
+  "--chakra-colors-mat-sidebar": {
+   "raw": "rgba(28, 28, 32, 0.985)",
+   "resolved": "rgba(28, 28, 32, 0.984)"
+  },
+  "--chakra-colors-orange-100": {
+   "raw": "#ffedd5",
+   "resolved": "rgb(255, 237, 213)"
+  },
+  "--chakra-colors-orange-200": {
+   "raw": "#fed7aa",
+   "resolved": "rgb(254, 215, 170)"
+  },
+  "--chakra-colors-orange-300": {
+   "raw": "#fdba74",
+   "resolved": "rgb(253, 186, 116)"
+  },
+  "--chakra-colors-orange-400": {
+   "raw": "#fb923c",
+   "resolved": "rgb(251, 146, 60)"
+  },
+  "--chakra-colors-orange-50": {
+   "raw": "#fff7ed",
+   "resolved": "rgb(255, 247, 237)"
+  },
+  "--chakra-colors-orange-500": {
+   "raw": "#f97316",
+   "resolved": "rgb(249, 115, 22)"
+  },
+  "--chakra-colors-orange-600": {
+   "raw": "#ea580c",
+   "resolved": "rgb(234, 88, 12)"
+  },
+  "--chakra-colors-orange-700": {
+   "raw": "#92310a",
+   "resolved": "rgb(146, 49, 10)"
+  },
+  "--chakra-colors-orange-800": {
+   "raw": "#6c2710",
+   "resolved": "rgb(108, 39, 16)"
+  },
+  "--chakra-colors-orange-900": {
+   "raw": "#3b1106",
+   "resolved": "rgb(59, 17, 6)"
+  },
+  "--chakra-colors-orange-950": {
+   "raw": "#220a04",
+   "resolved": "rgb(34, 10, 4)"
+  },
+  "--chakra-colors-orange-border": {
+   "raw": "#fb923c",
+   "resolved": "rgb(251, 146, 60)"
+  },
+  "--chakra-colors-orange-contrast": {
+   "raw": "black",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-orange-emphasized": {
+   "raw": "#92310a",
+   "resolved": "rgb(146, 49, 10)"
+  },
+  "--chakra-colors-orange-fg": {
+   "raw": "#fdba74",
+   "resolved": "rgb(253, 186, 116)"
+  },
+  "--chakra-colors-orange-focus-ring": {
+   "raw": "#f97316",
+   "resolved": "rgb(249, 115, 22)"
+  },
+  "--chakra-colors-orange-muted": {
+   "raw": "#6c2710",
+   "resolved": "rgb(108, 39, 16)"
+  },
+  "--chakra-colors-orange-solid": {
+   "raw": "#f97316",
+   "resolved": "rgb(249, 115, 22)"
+  },
+  "--chakra-colors-orange-subtle": {
+   "raw": "#3b1106",
+   "resolved": "rgb(59, 17, 6)"
+  },
+  "--chakra-colors-overlay": {
+   "raw": "rgba(0, 0, 0, 0.62)",
+   "resolved": "rgba(0, 0, 0, 0.62)"
+  },
+  "--chakra-colors-pink-100": {
+   "raw": "#fce7f3",
+   "resolved": "rgb(252, 231, 243)"
+  },
+  "--chakra-colors-pink-200": {
+   "raw": "#fbcfe8",
+   "resolved": "rgb(251, 207, 232)"
+  },
+  "--chakra-colors-pink-300": {
+   "raw": "#f9a8d4",
+   "resolved": "rgb(249, 168, 212)"
+  },
+  "--chakra-colors-pink-400": {
+   "raw": "#f472b6",
+   "resolved": "rgb(244, 114, 182)"
+  },
+  "--chakra-colors-pink-50": {
+   "raw": "#fdf2f8",
+   "resolved": "rgb(253, 242, 248)"
+  },
+  "--chakra-colors-pink-500": {
+   "raw": "#ec4899",
+   "resolved": "rgb(236, 72, 153)"
+  },
+  "--chakra-colors-pink-600": {
+   "raw": "#db2777",
+   "resolved": "rgb(219, 39, 119)"
+  },
+  "--chakra-colors-pink-700": {
+   "raw": "#a41752",
+   "resolved": "rgb(164, 23, 82)"
+  },
+  "--chakra-colors-pink-800": {
+   "raw": "#6d0e34",
+   "resolved": "rgb(109, 14, 52)"
+  },
+  "--chakra-colors-pink-900": {
+   "raw": "#45061f",
+   "resolved": "rgb(69, 6, 31)"
+  },
+  "--chakra-colors-pink-950": {
+   "raw": "#2c0514",
+   "resolved": "rgb(44, 5, 20)"
+  },
+  "--chakra-colors-pink-border": {
+   "raw": "#f472b6",
+   "resolved": "rgb(244, 114, 182)"
+  },
+  "--chakra-colors-pink-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-pink-emphasized": {
+   "raw": "#a41752",
+   "resolved": "rgb(164, 23, 82)"
+  },
+  "--chakra-colors-pink-fg": {
+   "raw": "#f9a8d4",
+   "resolved": "rgb(249, 168, 212)"
+  },
+  "--chakra-colors-pink-focus-ring": {
+   "raw": "#ec4899",
+   "resolved": "rgb(236, 72, 153)"
+  },
+  "--chakra-colors-pink-muted": {
+   "raw": "#6d0e34",
+   "resolved": "rgb(109, 14, 52)"
+  },
+  "--chakra-colors-pink-solid": {
+   "raw": "#db2777",
+   "resolved": "rgb(219, 39, 119)"
+  },
+  "--chakra-colors-pink-subtle": {
+   "raw": "#45061f",
+   "resolved": "rgb(69, 6, 31)"
+  },
+  "--chakra-colors-purple-100": {
+   "raw": "#f3e8ff",
+   "resolved": "rgb(243, 232, 255)"
+  },
+  "--chakra-colors-purple-200": {
+   "raw": "#e9d5ff",
+   "resolved": "rgb(233, 213, 255)"
+  },
+  "--chakra-colors-purple-300": {
+   "raw": "#d8b4fe",
+   "resolved": "rgb(216, 180, 254)"
+  },
+  "--chakra-colors-purple-400": {
+   "raw": "#c084fc",
+   "resolved": "rgb(192, 132, 252)"
+  },
+  "--chakra-colors-purple-50": {
+   "raw": "#faf5ff",
+   "resolved": "rgb(250, 245, 255)"
+  },
+  "--chakra-colors-purple-500": {
+   "raw": "#a855f7",
+   "resolved": "rgb(168, 85, 247)"
+  },
+  "--chakra-colors-purple-600": {
+   "raw": "#9333ea",
+   "resolved": "rgb(147, 51, 234)"
+  },
+  "--chakra-colors-purple-700": {
+   "raw": "#641ba3",
+   "resolved": "rgb(100, 27, 163)"
+  },
+  "--chakra-colors-purple-800": {
+   "raw": "#4a1772",
+   "resolved": "rgb(74, 23, 114)"
+  },
+  "--chakra-colors-purple-900": {
+   "raw": "#2f0553",
+   "resolved": "rgb(47, 5, 83)"
+  },
+  "--chakra-colors-purple-950": {
+   "raw": "#1a032e",
+   "resolved": "rgb(26, 3, 46)"
+  },
+  "--chakra-colors-purple-border": {
+   "raw": "#c084fc",
+   "resolved": "rgb(192, 132, 252)"
+  },
+  "--chakra-colors-purple-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-purple-emphasized": {
+   "raw": "#641ba3",
+   "resolved": "rgb(100, 27, 163)"
+  },
+  "--chakra-colors-purple-fg": {
+   "raw": "#d8b4fe",
+   "resolved": "rgb(216, 180, 254)"
+  },
+  "--chakra-colors-purple-focus-ring": {
+   "raw": "#a855f7",
+   "resolved": "rgb(168, 85, 247)"
+  },
+  "--chakra-colors-purple-muted": {
+   "raw": "#4a1772",
+   "resolved": "rgb(74, 23, 114)"
+  },
+  "--chakra-colors-purple-solid": {
+   "raw": "#9333ea",
+   "resolved": "rgb(147, 51, 234)"
+  },
+  "--chakra-colors-purple-subtle": {
+   "raw": "#2f0553",
+   "resolved": "rgb(47, 5, 83)"
+  },
+  "--chakra-colors-red-100": {
+   "raw": "#fee2e2",
+   "resolved": "rgb(254, 226, 226)"
+  },
+  "--chakra-colors-red-200": {
+   "raw": "#fecaca",
+   "resolved": "rgb(254, 202, 202)"
+  },
+  "--chakra-colors-red-300": {
+   "raw": "#fca5a5",
+   "resolved": "rgb(252, 165, 165)"
+  },
+  "--chakra-colors-red-400": {
+   "raw": "#f87171",
+   "resolved": "rgb(248, 113, 113)"
+  },
+  "--chakra-colors-red-50": {
+   "raw": "#fef2f2",
+   "resolved": "rgb(254, 242, 242)"
+  },
+  "--chakra-colors-red-500": {
+   "raw": "#ef4444",
+   "resolved": "rgb(239, 68, 68)"
+  },
+  "--chakra-colors-red-600": {
+   "raw": "#dc2626",
+   "resolved": "rgb(220, 38, 38)"
+  },
+  "--chakra-colors-red-700": {
+   "raw": "#991919",
+   "resolved": "rgb(153, 25, 25)"
+  },
+  "--chakra-colors-red-800": {
+   "raw": "#511111",
+   "resolved": "rgb(81, 17, 17)"
+  },
+  "--chakra-colors-red-900": {
+   "raw": "#300c0c",
+   "resolved": "rgb(48, 12, 12)"
+  },
+  "--chakra-colors-red-950": {
+   "raw": "#1f0808",
+   "resolved": "rgb(31, 8, 8)"
+  },
+  "--chakra-colors-red-border": {
+   "raw": "#f87171",
+   "resolved": "rgb(248, 113, 113)"
+  },
+  "--chakra-colors-red-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-red-emphasized": {
+   "raw": "#991919",
+   "resolved": "rgb(153, 25, 25)"
+  },
+  "--chakra-colors-red-fg": {
+   "raw": "#fca5a5",
+   "resolved": "rgb(252, 165, 165)"
+  },
+  "--chakra-colors-red-focus-ring": {
+   "raw": "#ef4444",
+   "resolved": "rgb(239, 68, 68)"
+  },
+  "--chakra-colors-red-muted": {
+   "raw": "#511111",
+   "resolved": "rgb(81, 17, 17)"
+  },
+  "--chakra-colors-red-solid": {
+   "raw": "#dc2626",
+   "resolved": "rgb(220, 38, 38)"
+  },
+  "--chakra-colors-red-subtle": {
+   "raw": "#300c0c",
+   "resolved": "rgb(48, 12, 12)"
+  },
+  "--chakra-colors-scrim": {
+   "raw": "rgba(30, 30, 34, 0.88)",
+   "resolved": "rgba(30, 30, 34, 0.88)"
+  },
+  "--chakra-colors-scrim-modal": {
+   "raw": "rgba(0, 0, 0, 0.60)",
+   "resolved": "rgba(0, 0, 0, 0.6)"
+  },
+  "--chakra-colors-selection-active": {
+   "raw": "rgba(255,255,255,0.20)",
+   "resolved": "rgba(255, 255, 255, 0.2)"
+  },
+  "--chakra-colors-selection-destructive": {
+   "raw": "rgb(255,92,92)",
+   "resolved": "rgb(255, 92, 92)"
+  },
+  "--chakra-colors-selection-destructive-active": {
+   "raw": "rgba(255,92,92,0.24)",
+   "resolved": "rgba(255, 92, 92, 0.24)"
+  },
+  "--chakra-colors-selection-destructive-hover": {
+   "raw": "rgba(255,92,92,0.14)",
+   "resolved": "rgba(255, 92, 92, 0.14)"
+  },
+  "--chakra-colors-selection-disabled": {
+   "raw": "rgba(255,255,255,0.40)",
+   "resolved": "rgba(255, 255, 255, 0.4)"
+  },
+  "--chakra-colors-selection-hover": {
+   "raw": "rgba(255,255,255,0.11)",
+   "resolved": "rgba(255, 255, 255, 0.11)"
+  },
+  "--chakra-colors-selection-line": {
+   "raw": "rgba(255,255,255,0.13)",
+   "resolved": "rgba(255, 255, 255, 0.13)"
+  },
+  "--chakra-colors-selection-material": {
+   "raw": "rgba(26,26,29,0.66)",
+   "resolved": "rgba(26, 26, 29, 0.66)"
+  },
+  "--chakra-colors-selection-muted": {
+   "raw": "rgba(255,255,255,0.60)",
+   "resolved": "rgba(255, 255, 255, 0.6)"
+  },
+  "--chakra-colors-selection-swatch": {
+   "raw": "rgba(255,255,255,0.16)",
+   "resolved": "rgba(255, 255, 255, 0.16)"
+  },
+  "--chakra-colors-selection-text": {
+   "raw": "rgba(255,255,255,0.96)",
+   "resolved": "rgba(255, 255, 255, 0.96)"
+  },
+  "--chakra-colors-selection-track": {
+   "raw": "rgba(255,255,255,0.08)",
+   "resolved": "rgba(255, 255, 255, 0.08)"
+  },
+  "--chakra-colors-slide-badge": {
+   "raw": "rgba(0, 0, 0, 0.8)",
+   "resolved": "rgba(0, 0, 0, 0.8)"
+  },
+  "--chakra-colors-split-picker-content": {
+   "raw": "color-mix(in srgb, #1E1E20 62%, transparent)",
+   "resolved": "color(srgb 0.117647 0.117647 0.12549 / 0.62)"
+  },
+  "--chakra-colors-split-picker-footer": {
+   "raw": "color-mix(in srgb, #1E1E20 40%, transparent)",
+   "resolved": "color(srgb 0.117647 0.117647 0.12549 / 0.4)"
+  },
+  "--chakra-colors-state-active": {
+   "raw": "rgba(255, 255, 255, 0.13)",
+   "resolved": "rgba(255, 255, 255, 0.13)"
+  },
+  "--chakra-colors-state-active-strong": {
+   "raw": "rgba(255, 255, 255, 0.18)",
+   "resolved": "rgba(255, 255, 255, 0.18)"
+  },
+  "--chakra-colors-state-drop-indicator": {
+   "raw": "#3B9BFF",
+   "resolved": "rgb(59, 155, 255)"
+  },
+  "--chakra-colors-state-hover": {
+   "raw": "rgba(255, 255, 255, 0.08)",
+   "resolved": "rgba(255, 255, 255, 0.08)"
+  },
+  "--chakra-colors-state-selected": {
+   "raw": "rgba(0, 0, 0, 0.15)",
+   "resolved": "rgba(0, 0, 0, 0.15)"
+  },
+  "--chakra-colors-status-live": {
+   "raw": "#34C759",
+   "resolved": "rgb(52, 199, 89)"
+  },
+  "--chakra-colors-status-live-fill": {
+   "raw": "color-mix(in srgb, #34C759 16%, transparent)",
+   "resolved": "color(srgb 0.203922 0.780392 0.34902 / 0.16)"
+  },
+  "--chakra-colors-status-live-text": {
+   "raw": "#4CD470",
+   "resolved": "rgb(76, 212, 112)"
+  },
+  "--chakra-colors-surface-inset": {
+   "raw": "rgba(255, 255, 255, 0.06)",
+   "resolved": "rgba(255, 255, 255, 0.06)"
+  },
+  "--chakra-colors-surface-raised": {
+   "raw": "rgba(44, 44, 48, 0.88)",
+   "resolved": "rgba(44, 44, 48, 0.88)"
+  },
+  "--chakra-colors-system-blue-dark": {
+   "raw": "#3B9BFF",
+   "resolved": "rgb(59, 155, 255)"
+  },
+  "--chakra-colors-system-blue-dark-hover": {
+   "raw": "#57ACFF",
+   "resolved": "rgb(87, 172, 255)"
+  },
+  "--chakra-colors-system-blue-light": {
+   "raw": "#0069D9",
+   "resolved": "rgb(0, 105, 217)"
+  },
+  "--chakra-colors-system-blue-light-hover": {
+   "raw": "#0059B8",
+   "resolved": "rgb(0, 89, 184)"
+  },
+  "--chakra-colors-system-blue-on-dark": {
+   "raw": "#08121C",
+   "resolved": "rgb(8, 18, 28)"
+  },
+  "--chakra-colors-system-blue-on-light": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-system-red-dark": {
+   "raw": "#FF4F42",
+   "resolved": "rgb(255, 79, 66)"
+  },
+  "--chakra-colors-system-red-light": {
+   "raw": "#D70015",
+   "resolved": "rgb(215, 0, 21)"
+  },
+  "--chakra-colors-teal-100": {
+   "raw": "#ccfbf1",
+   "resolved": "rgb(204, 251, 241)"
+  },
+  "--chakra-colors-teal-200": {
+   "raw": "#99f6e4",
+   "resolved": "rgb(153, 246, 228)"
+  },
+  "--chakra-colors-teal-300": {
+   "raw": "#5eead4",
+   "resolved": "rgb(94, 234, 212)"
+  },
+  "--chakra-colors-teal-400": {
+   "raw": "#2dd4bf",
+   "resolved": "rgb(45, 212, 191)"
+  },
+  "--chakra-colors-teal-50": {
+   "raw": "#f0fdfa",
+   "resolved": "rgb(240, 253, 250)"
+  },
+  "--chakra-colors-teal-500": {
+   "raw": "#14b8a6",
+   "resolved": "rgb(20, 184, 166)"
+  },
+  "--chakra-colors-teal-600": {
+   "raw": "#0d9488",
+   "resolved": "rgb(13, 148, 136)"
+  },
+  "--chakra-colors-teal-700": {
+   "raw": "#0c5d56",
+   "resolved": "rgb(12, 93, 86)"
+  },
+  "--chakra-colors-teal-800": {
+   "raw": "#114240",
+   "resolved": "rgb(17, 66, 64)"
+  },
+  "--chakra-colors-teal-900": {
+   "raw": "#032726",
+   "resolved": "rgb(3, 39, 38)"
+  },
+  "--chakra-colors-teal-950": {
+   "raw": "#021716",
+   "resolved": "rgb(2, 23, 22)"
+  },
+  "--chakra-colors-teal-border": {
+   "raw": "#2dd4bf",
+   "resolved": "rgb(45, 212, 191)"
+  },
+  "--chakra-colors-teal-contrast": {
+   "raw": "white",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-teal-emphasized": {
+   "raw": "#0c5d56",
+   "resolved": "rgb(12, 93, 86)"
+  },
+  "--chakra-colors-teal-fg": {
+   "raw": "#5eead4",
+   "resolved": "rgb(94, 234, 212)"
+  },
+  "--chakra-colors-teal-focus-ring": {
+   "raw": "#14b8a6",
+   "resolved": "rgb(20, 184, 166)"
+  },
+  "--chakra-colors-teal-muted": {
+   "raw": "#114240",
+   "resolved": "rgb(17, 66, 64)"
+  },
+  "--chakra-colors-teal-solid": {
+   "raw": "#0d9488",
+   "resolved": "rgb(13, 148, 136)"
+  },
+  "--chakra-colors-teal-subtle": {
+   "raw": "#032726",
+   "resolved": "rgb(3, 39, 38)"
+  },
+  "--chakra-colors-text-1": {
+   "raw": "rgba(255, 255, 255, 0.96)",
+   "resolved": "rgba(255, 255, 255, 0.96)"
+  },
+  "--chakra-colors-text-2": {
+   "raw": "rgba(255, 255, 255, 0.84)",
+   "resolved": "rgba(255, 255, 255, 0.84)"
+  },
+  "--chakra-colors-text-3": {
+   "raw": "rgba(255, 255, 255, 0.68)",
+   "resolved": "rgba(255, 255, 255, 0.68)"
+  },
+  "--chakra-colors-text-4": {
+   "raw": "rgba(255, 255, 255, 0.54)",
+   "resolved": "rgba(255, 255, 255, 0.54)"
+  },
+  "--chakra-colors-text-5": {
+   "raw": "rgba(255, 255, 255, 0.40)",
+   "resolved": "rgba(255, 255, 255, 0.4)"
+  },
+  "--chakra-colors-text-6": {
+   "raw": "rgba(255, 255, 255, 0.28)",
+   "resolved": "rgba(255, 255, 255, 0.28)"
+  },
+  "--chakra-colors-transparent": {
+   "raw": "transparent",
+   "resolved": "rgba(0, 0, 0, 0)"
+  },
+  "--chakra-colors-white": {
+   "raw": "#FFFFFF",
+   "resolved": "rgb(255, 255, 255)"
+  },
+  "--chakra-colors-white-alpha-100": {
+   "raw": "rgba(255, 255, 255, 0.06)",
+   "resolved": "rgba(255, 255, 255, 0.06)"
+  },
+  "--chakra-colors-white-alpha-200": {
+   "raw": "rgba(255, 255, 255, 0.08)",
+   "resolved": "rgba(255, 255, 255, 0.08)"
+  },
+  "--chakra-colors-white-alpha-300": {
+   "raw": "rgba(255, 255, 255, 0.16)",
+   "resolved": "rgba(255, 255, 255, 0.16)"
+  },
+  "--chakra-colors-white-alpha-400": {
+   "raw": "rgba(255, 255, 255, 0.24)",
+   "resolved": "rgba(255, 255, 255, 0.24)"
+  },
+  "--chakra-colors-white-alpha-50": {
+   "raw": "rgba(255, 255, 255, 0.04)",
+   "resolved": "rgba(255, 255, 255, 0.04)"
+  },
+  "--chakra-colors-white-alpha-500": {
+   "raw": "rgba(255, 255, 255, 0.36)",
+   "resolved": "rgba(255, 255, 255, 0.36)"
+  },
+  "--chakra-colors-white-alpha-600": {
+   "raw": "rgba(255, 255, 255, 0.48)",
+   "resolved": "rgba(255, 255, 255, 0.48)"
+  },
+  "--chakra-colors-white-alpha-700": {
+   "raw": "rgba(255, 255, 255, 0.64)",
+   "resolved": "rgba(255, 255, 255, 0.64)"
+  },
+  "--chakra-colors-white-alpha-800": {
+   "raw": "rgba(255, 255, 255, 0.80)",
+   "resolved": "rgba(255, 255, 255, 0.8)"
+  },
+  "--chakra-colors-white-alpha-900": {
+   "raw": "rgba(255, 255, 255, 0.92)",
+   "resolved": "rgba(255, 255, 255, 0.92)"
+  },
+  "--chakra-colors-white-alpha-950": {
+   "raw": "rgba(255, 255, 255, 0.95)",
+   "resolved": "rgba(255, 255, 255, 0.95)"
+  },
+  "--chakra-colors-wire-1": {
+   "raw": "rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1)"
+  },
+  "--chakra-colors-wire-2": {
+   "raw": "rgba(255, 255, 255, 0.22)",
+   "resolved": "rgba(255, 255, 255, 0.22)"
+  },
+  "--chakra-colors-wire-3": {
+   "raw": "rgba(255, 255, 255, 0.38)",
+   "resolved": "rgba(255, 255, 255, 0.38)"
+  },
+  "--chakra-colors-wire-void": {
+   "raw": "rgba(255, 255, 255, 0.05)",
+   "resolved": "rgba(255, 255, 255, 0.05)"
+  },
+  "--chakra-colors-yellow-100": {
+   "raw": "#fef9c3",
+   "resolved": "rgb(254, 249, 195)"
+  },
+  "--chakra-colors-yellow-200": {
+   "raw": "#fef08a",
+   "resolved": "rgb(254, 240, 138)"
+  },
+  "--chakra-colors-yellow-300": {
+   "raw": "#fde047",
+   "resolved": "rgb(253, 224, 71)"
+  },
+  "--chakra-colors-yellow-400": {
+   "raw": "#facc15",
+   "resolved": "rgb(250, 204, 21)"
+  },
+  "--chakra-colors-yellow-50": {
+   "raw": "#fefce8",
+   "resolved": "rgb(254, 252, 232)"
+  },
+  "--chakra-colors-yellow-500": {
+   "raw": "#eab308",
+   "resolved": "rgb(234, 179, 8)"
+  },
+  "--chakra-colors-yellow-600": {
+   "raw": "#ca8a04",
+   "resolved": "rgb(202, 138, 4)"
+  },
+  "--chakra-colors-yellow-700": {
+   "raw": "#845209",
+   "resolved": "rgb(132, 82, 9)"
+  },
+  "--chakra-colors-yellow-800": {
+   "raw": "#713f12",
+   "resolved": "rgb(113, 63, 18)"
+  },
+  "--chakra-colors-yellow-900": {
+   "raw": "#422006",
+   "resolved": "rgb(66, 32, 6)"
+  },
+  "--chakra-colors-yellow-950": {
+   "raw": "#281304",
+   "resolved": "rgb(40, 19, 4)"
+  },
+  "--chakra-colors-yellow-border": {
+   "raw": "#eab308",
+   "resolved": "rgb(234, 179, 8)"
+  },
+  "--chakra-colors-yellow-contrast": {
+   "raw": "black",
+   "resolved": "rgb(0, 0, 0)"
+  },
+  "--chakra-colors-yellow-emphasized": {
+   "raw": "#845209",
+   "resolved": "rgb(132, 82, 9)"
+  },
+  "--chakra-colors-yellow-fg": {
+   "raw": "#fde047",
+   "resolved": "rgb(253, 224, 71)"
+  },
+  "--chakra-colors-yellow-focus-ring": {
+   "raw": "#eab308",
+   "resolved": "rgb(234, 179, 8)"
+  },
+  "--chakra-colors-yellow-muted": {
+   "raw": "#713f12",
+   "resolved": "rgb(113, 63, 18)"
+  },
+  "--chakra-colors-yellow-solid": {
+   "raw": "#fde047",
+   "resolved": "rgb(253, 224, 71)"
+  },
+  "--chakra-colors-yellow-subtle": {
+   "raw": "#422006",
+   "resolved": "rgb(66, 32, 6)"
+  },
+  "--chakra-cursor-button": {
+   "raw": "pointer",
+   "resolved": "pointer"
+  },
+  "--chakra-cursor-checkbox": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-disabled": {
+   "raw": "not-allowed",
+   "resolved": "not-allowed"
+  },
+  "--chakra-cursor-menuitem": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-option": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-radio": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-slider": {
+   "raw": "default",
+   "resolved": "default"
+  },
+  "--chakra-cursor-switch": {
+   "raw": "pointer",
+   "resolved": "pointer"
+  },
+  "--chakra-durations-fast": {
+   "raw": "160ms",
+   "resolved": "160ms"
+  },
+  "--chakra-durations-faster": {
+   "raw": "100ms",
+   "resolved": "100ms"
+  },
+  "--chakra-durations-fastest": {
+   "raw": "50ms",
+   "resolved": "50ms"
+  },
+  "--chakra-durations-fired": {
+   "raw": "260ms",
+   "resolved": "260ms"
+  },
+  "--chakra-durations-history": {
+   "raw": "150ms",
+   "resolved": "150ms"
+  },
+  "--chakra-durations-insert": {
+   "raw": "120ms",
+   "resolved": "120ms"
+  },
+  "--chakra-durations-moderate": {
+   "raw": "200ms",
+   "resolved": "200ms"
+  },
+  "--chakra-durations-normal": {
+   "raw": "240ms",
+   "resolved": "240ms"
+  },
+  "--chakra-durations-panel": {
+   "raw": "280ms",
+   "resolved": "280ms"
+  },
+  "--chakra-durations-settle": {
+   "raw": "300ms",
+   "resolved": "300ms"
+  },
+  "--chakra-durations-slow": {
+   "raw": "420ms",
+   "resolved": "420ms"
+  },
+  "--chakra-durations-slower": {
+   "raw": "400ms",
+   "resolved": "400ms"
+  },
+  "--chakra-durations-slowest": {
+   "raw": "500ms",
+   "resolved": "500ms"
+  },
+  "--chakra-durations-stage": {
+   "raw": "420ms",
+   "resolved": "420ms"
+  },
+  "--chakra-durations-title-dwell": {
+   "raw": "200ms",
+   "resolved": "200ms"
+  },
+  "--chakra-easings-ease-in": {
+   "raw": "cubic-bezier(0.42, 0, 1, 1)",
+   "resolved": "cubic-bezier(0.42, 0, 1, 1)"
+  },
+  "--chakra-easings-ease-in-out": {
+   "raw": "cubic-bezier(0.42, 0, 0.58, 1)",
+   "resolved": "cubic-bezier(0.42, 0, 0.58, 1)"
+  },
+  "--chakra-easings-ease-in-smooth": {
+   "raw": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "resolved": "cubic-bezier(0.32, 0.72, 0, 1)"
+  },
+  "--chakra-easings-ease-out": {
+   "raw": "cubic-bezier(0, 0, 0.58, 1)",
+   "resolved": "cubic-bezier(0, 0, 0.58, 1)"
+  },
+  "--chakra-easings-flow": {
+   "raw": "cubic-bezier(.25, .46, .2, .99)",
+   "resolved": "cubic-bezier(.25, .46, .2, .99)"
+  },
+  "--chakra-easings-out": {
+   "raw": "ease-out",
+   "resolved": "ease-out"
+  },
+  "--chakra-easings-settle": {
+   "raw": "cubic-bezier(.32, .72, 0, 1)",
+   "resolved": "cubic-bezier(.32, .72, 0, 1)"
+  },
+  "--chakra-easings-spring": {
+   "raw": "cubic-bezier(.34, 1.4, .5, 1)",
+   "resolved": "cubic-bezier(.34, 1.4, .5, 1)"
+  },
+  "--chakra-easings-standard": {
+   "raw": "ease-in-out",
+   "resolved": "ease-in-out"
+  },
+  "--chakra-font-sizes-2xl": {
+   "raw": "1.5rem",
+   "resolved": "1.5rem"
+  },
+  "--chakra-font-sizes-2xs": {
+   "raw": "10px",
+   "resolved": "10px"
+  },
+  "--chakra-font-sizes-3xl": {
+   "raw": "1.875rem",
+   "resolved": "1.875rem"
+  },
+  "--chakra-font-sizes-3xs": {
+   "raw": "9px",
+   "resolved": "9px"
+  },
+  "--chakra-font-sizes-4xl": {
+   "raw": "2.25rem",
+   "resolved": "2.25rem"
+  },
+  "--chakra-font-sizes-5xl": {
+   "raw": "3rem",
+   "resolved": "3rem"
+  },
+  "--chakra-font-sizes-6xl": {
+   "raw": "3.75rem",
+   "resolved": "3.75rem"
+  },
+  "--chakra-font-sizes-7xl": {
+   "raw": "4.5rem",
+   "resolved": "4.5rem"
+  },
+  "--chakra-font-sizes-8xl": {
+   "raw": "6rem",
+   "resolved": "6rem"
+  },
+  "--chakra-font-sizes-9xl": {
+   "raw": "8rem",
+   "resolved": "8rem"
+  },
+  "--chakra-font-sizes-lg": {
+   "raw": "17px",
+   "resolved": "17px"
+  },
+  "--chakra-font-sizes-md": {
+   "raw": "13px",
+   "resolved": "13px"
+  },
+  "--chakra-font-sizes-sm": {
+   "raw": "12px",
+   "resolved": "12px"
+  },
+  "--chakra-font-sizes-xl": {
+   "raw": "1.25rem",
+   "resolved": "1.25rem"
+  },
+  "--chakra-font-sizes-xs": {
+   "raw": "11px",
+   "resolved": "11px"
+  },
+  "--chakra-font-weights-black": {
+   "raw": "900",
+   "resolved": "900"
+  },
+  "--chakra-font-weights-bold": {
+   "raw": "700",
+   "resolved": "700"
+  },
+  "--chakra-font-weights-extrabold": {
+   "raw": "800",
+   "resolved": "800"
+  },
+  "--chakra-font-weights-extralight": {
+   "raw": "200",
+   "resolved": "200"
+  },
+  "--chakra-font-weights-light": {
+   "raw": "300",
+   "resolved": "300"
+  },
+  "--chakra-font-weights-medium": {
+   "raw": "500",
+   "resolved": "500"
+  },
+  "--chakra-font-weights-normal": {
+   "raw": "400",
+   "resolved": "400"
+  },
+  "--chakra-font-weights-semibold": {
+   "raw": "600",
+   "resolved": "600"
+  },
+  "--chakra-font-weights-thin": {
+   "raw": "100",
+   "resolved": "100"
+  },
+  "--chakra-fonts-body": {
+   "raw": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif",
+   "resolved": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+  },
+  "--chakra-fonts-heading": {
+   "raw": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif",
+   "resolved": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+  },
+  "--chakra-fonts-mono": {
+   "raw": "ui-monospace,'SF Mono',Menlo,monospace",
+   "resolved": "ui-monospace,'SF Mono',Menlo,monospace"
+  },
+  "--chakra-gradients-window": {
+   "raw": "linear-gradient(180deg, color-mix(in srgb, #131315 88%, #FFFFFF) 0%, #131315 34%, color-mix(in srgb, #131315 96%, #FFFFFF) 100%)",
+   "resolved": "linear-gradient(180deg, color-mix(in srgb, #131315 88%, #FFFFFF) 0%, #131315 34%, color-mix(in srgb, #131315 96%, #FFFFFF) 100%)"
+  },
+  "--chakra-letter-spacings-label": {
+   "raw": "0.055em",
+   "resolved": "0.055em"
+  },
+  "--chakra-letter-spacings-selection-label": {
+   "raw": "0.04em",
+   "resolved": "0.04em"
+  },
+  "--chakra-letter-spacings-tight": {
+   "raw": "-0.025em",
+   "resolved": "-0.025em"
+  },
+  "--chakra-letter-spacings-tighter": {
+   "raw": "-0.05em",
+   "resolved": "-0.05em"
+  },
+  "--chakra-letter-spacings-wide": {
+   "raw": "0.025em",
+   "resolved": "0.025em"
+  },
+  "--chakra-letter-spacings-wider": {
+   "raw": "0.05em",
+   "resolved": "0.05em"
+  },
+  "--chakra-letter-spacings-widest": {
+   "raw": "0.1em",
+   "resolved": "0.1em"
+  },
+  "--chakra-line-heights-moderate": {
+   "raw": "1.5",
+   "resolved": "1.5"
+  },
+  "--chakra-line-heights-selection": {
+   "raw": "1.15",
+   "resolved": "1.15"
+  },
+  "--chakra-line-heights-short": {
+   "raw": "1.375",
+   "resolved": "1.375"
+  },
+  "--chakra-line-heights-shorter": {
+   "raw": "1.25",
+   "resolved": "1.25"
+  },
+  "--chakra-line-heights-tall": {
+   "raw": "1.625",
+   "resolved": "1.625"
+  },
+  "--chakra-line-heights-taller": {
+   "raw": "2",
+   "resolved": "2"
+  },
+  "--chakra-radii-2xl": {
+   "raw": "14px",
+   "resolved": "14px"
+  },
+  "--chakra-radii-2xs": {
+   "raw": "0.0625rem",
+   "resolved": "0.0625rem"
+  },
+  "--chakra-radii-3xl": {
+   "raw": "16px",
+   "resolved": "16px"
+  },
+  "--chakra-radii-4xl": {
+   "raw": "22px",
+   "resolved": "22px"
+  },
+  "--chakra-radii-5xl": {
+   "raw": "24px",
+   "resolved": "24px"
+  },
+  "--chakra-radii-full": {
+   "raw": "9999px",
+   "resolved": "9999px"
+  },
+  "--chakra-radii-l1": {
+   "raw": "3px",
+   "resolved": "3px"
+  },
+  "--chakra-radii-l2": {
+   "raw": "5px",
+   "resolved": "5px"
+  },
+  "--chakra-radii-l3": {
+   "raw": "7px",
+   "resolved": "7px"
+  },
+  "--chakra-radii-lg": {
+   "raw": "10px",
+   "resolved": "10px"
+  },
+  "--chakra-radii-md": {
+   "raw": "7px",
+   "resolved": "7px"
+  },
+  "--chakra-radii-none": {
+   "raw": "0",
+   "resolved": "0"
+  },
+  "--chakra-radii-room-tile": {
+   "raw": "6px",
+   "resolved": "6px"
+  },
+  "--chakra-radii-selection-track": {
+   "raw": "9px",
+   "resolved": "9px"
+  },
+  "--chakra-radii-sm": {
+   "raw": "5px",
+   "resolved": "5px"
+  },
+  "--chakra-radii-stage": {
+   "raw": "8px",
+   "resolved": "8px"
+  },
+  "--chakra-radii-title-label": {
+   "raw": "4px",
+   "resolved": "4px"
+  },
+  "--chakra-radii-xl": {
+   "raw": "13px",
+   "resolved": "13px"
+  },
+  "--chakra-radii-xs": {
+   "raw": "3px",
+   "resolved": "3px"
+  },
+  "--chakra-shadows-2xl": {
+   "raw": "0px 24px 40px color-mix(in srgb, black 64%, transparent),0px 0px 1px inset color-mix(in srgb, #d4d4d8 30%, transparent)",
+   "resolved": "color(srgb 0 0 0 / 0.64) 0px 24px 40px 0px, color(srgb 0.831373 0.831373 0.847059 / 0.3) 0px 0px 1px 0px inset"
+  },
+  "--chakra-shadows-avatar": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.62)",
+   "resolved": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px"
+  },
+  "--chakra-shadows-avatar-hover": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.78)",
+   "resolved": "rgba(0, 0, 0, 0.78) 0px 0px 0px 0.5px"
+  },
+  "--chakra-shadows-band-pill": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.10),0 0 0 0.5px rgba(0, 0, 0, 0.62),0 -2px 8px rgba(0, 0, 0, 0.34),0 -16px 46px rgba(0, 0, 0, 0.50)",
+   "resolved": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.34) 0px -2px 8px 0px, rgba(0, 0, 0, 0.5) 0px -16px 46px 0px"
+  },
+  "--chakra-shadows-button-secondary": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.62),0 1px 2px rgba(0, 0, 0, 0.10)",
+   "resolved": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px"
+  },
+  "--chakra-shadows-button-solid": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.22),0 1px 2px rgba(0, 0, 0, 0.16)",
+   "resolved": "rgba(255, 255, 255, 0.22) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 1px 2px 0px"
+  },
+  "--chakra-shadows-caption": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset"
+  },
+  "--chakra-shadows-edge": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset"
+  },
+  "--chakra-shadows-focus": {
+   "raw": "0 0 0 1px #3B9BFF,0 0 0 4px color-mix(in srgb, #3B9BFF 34%, transparent)",
+   "resolved": "rgb(59, 155, 255) 0px 0px 0px 1px, color(srgb 0.231373 0.607843 1 / 0.34) 0px 0px 0px 4px"
+  },
+  "--chakra-shadows-focus-inset": {
+   "raw": "inset 0 0 0 2px #3B9BFF",
+   "resolved": "rgb(59, 155, 255) 0px 0px 0px 2px inset"
+  },
+  "--chakra-shadows-inner": {
+   "raw": "inset 0 2px 4px 0 black",
+   "resolved": "rgb(0, 0, 0) 0px 2px 4px 0px inset"
+  },
+  "--chakra-shadows-input-wrapper": {
+   "raw": "inset 0 0 0 0.5px rgba(255, 255, 255, 0.16),inset 0 1px 2px rgba(0, 0, 0, 0.06)",
+   "resolved": "rgba(255, 255, 255, 0.16) 0px 0px 0px 0.5px inset, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset"
+  },
+  "--chakra-shadows-inset": {
+   "raw": "inset 0 0 0 1px color-mix(in srgb, #d4d4d8 5%, transparent)",
+   "resolved": "color(srgb 0.831373 0.831373 0.847059 / 0.05) 0px 0px 0px 1px inset"
+  },
+  "--chakra-shadows-lg": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.62),0 4px 12px rgba(0, 0, 0, 0.44),0 22px 60px rgba(0, 0, 0, 0.60)",
+   "resolved": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
+  },
+  "--chakra-shadows-md": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.62),0 2px 6px rgba(0, 0, 0, 0.40),0 10px 28px rgba(0, 0, 0, 0.48)",
+   "resolved": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 2px 6px 0px, rgba(0, 0, 0, 0.48) 0px 10px 28px 0px"
+  },
+  "--chakra-shadows-menu": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.10),0 0 0 0.5px rgba(0, 0, 0, 0.62),0 4px 12px rgba(0, 0, 0, 0.44),0 22px 60px rgba(0, 0, 0, 0.60)",
+   "resolved": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
+  },
+  "--chakra-shadows-placeholder": {
+   "raw": "inset 0 0 0 0.5px rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1) 0px 0px 0px 0.5px inset"
+  },
+  "--chakra-shadows-segment-thumb": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.10),0 0 0 0.5px rgba(0, 0, 0, 0.62),0 1px 3px rgba(0, 0, 0, 0.12)",
+   "resolved": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px"
+  },
+  "--chakra-shadows-segment-track": {
+   "raw": "inset 0 0.5px 1px 0 rgba(0, 0, 0, 0.06)",
+   "resolved": "rgba(0, 0, 0, 0.06) 0px 0.5px 1px 0px inset"
+  },
+  "--chakra-shadows-selection-bar": {
+   "raw": "inset 0 0.5px 0 0 rgba(255,255,255,0.18),0 0 0 0.5px rgba(0,0,0,0.34),0 4px 10px rgba(0,0,0,0.22),0 14px 36px rgba(0,0,0,0.34)",
+   "resolved": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 4px 10px 0px, rgba(0, 0, 0, 0.34) 0px 14px 36px 0px"
+  },
+  "--chakra-shadows-selection-menu": {
+   "raw": "inset 0 0.5px 0 0 rgba(255,255,255,0.18),0 0 0 0.5px rgba(0,0,0,0.34),0 6px 16px rgba(0,0,0,0.22),0 22px 56px rgba(0,0,0,0.34)",
+   "resolved": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 6px 16px 0px, rgba(0, 0, 0, 0.34) 0px 22px 56px 0px"
+  },
+  "--chakra-shadows-selection-swatch": {
+   "raw": "inset 0 0 0 1px rgba(255,255,255,0.18)",
+   "resolved": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset"
+  },
+  "--chakra-shadows-selection-swatch-selected": {
+   "raw": "inset 0 0 0 1px rgba(255,255,255,0.18),0 0 0 2px rgba(255,255,255,0.60)",
+   "resolved": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.6) 0px 0px 0px 2px"
+  },
+  "--chakra-shadows-sheet": {
+   "raw": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.10),0 0 0 0.5px rgba(0, 0, 0, 0.62),0 8px 16px rgba(0, 0, 0, 0.10),0 40px 100px rgba(0, 0, 0, 0.34)",
+   "resolved": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px, rgba(0, 0, 0, 0.34) 0px 40px 100px 0px"
+  },
+  "--chakra-shadows-sidebar": {
+   "raw": "inset -1px 0 0 0 rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1) -1px 0px 0px 0px inset"
+  },
+  "--chakra-shadows-sm": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.62),0 1px 3px rgba(0, 0, 0, 0.40)",
+   "resolved": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px"
+  },
+  "--chakra-shadows-tooltip": {
+   "raw": "0 8px 16px rgba(0, 0, 0, 0.55)",
+   "resolved": "rgba(0, 0, 0, 0.55) 0px 8px 16px 0px"
+  },
+  "--chakra-shadows-top-bar": {
+   "raw": "0 0.5px 0 0 rgba(255, 255, 255, 0.10)",
+   "resolved": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px"
+  },
+  "--chakra-shadows-tray-console": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.62),0 2px 5px color-mix(in srgb, #FFFFFF 12%, transparent)",
+   "resolved": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, color(srgb 1 1 1 / 0.12) 0px 2px 5px 0px"
+  },
+  "--chakra-shadows-up": {
+   "raw": "0 0 0 0.5px rgba(0, 0, 0, 0.62),0 -2px 8px rgba(0, 0, 0, 0.34),0 -16px 46px rgba(0, 0, 0, 0.50)",
+   "resolved": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.34) 0px -2px 8px 0px, rgba(0, 0, 0, 0.5) 0px -16px 46px 0px"
+  },
+  "--chakra-shadows-xl": {
+   "raw": "0px 16px 24px color-mix(in srgb, black 64%, transparent),0px 0px 1px inset color-mix(in srgb, #d4d4d8 30%, transparent)",
+   "resolved": "color(srgb 0 0 0 / 0.64) 0px 16px 24px 0px, color(srgb 0.831373 0.831373 0.847059 / 0.3) 0px 0px 1px 0px inset"
+  },
+  "--chakra-shadows-xs": {
+   "raw": "0px 1px 1px color-mix(in srgb, black 64%, transparent),0px 0px 1px inset color-mix(in srgb, #d4d4d8 20%, transparent)",
+   "resolved": "color(srgb 0 0 0 / 0.64) 0px 1px 1px 0px, color(srgb 0.831373 0.831373 0.847059 / 0.2) 0px 0px 1px 0px inset"
+  },
+  "--chakra-sizes-0.5": {
+   "raw": "0.125rem",
+   "resolved": "0.125rem"
+  },
+  "--chakra-sizes-1": {
+   "raw": "0.25rem",
+   "resolved": "0.25rem"
+  },
+  "--chakra-sizes-1.5": {
+   "raw": "0.375rem",
+   "resolved": "0.375rem"
+  },
+  "--chakra-sizes-1/12": {
+   "raw": "8.333333%",
+   "resolved": "8.333333%"
+  },
+  "--chakra-sizes-1/2": {
+   "raw": "50%",
+   "resolved": "50%"
+  },
+  "--chakra-sizes-1/3": {
+   "raw": "33.333333%",
+   "resolved": "33.333333%"
+  },
+  "--chakra-sizes-1/4": {
+   "raw": "25%",
+   "resolved": "25%"
+  },
+  "--chakra-sizes-1/5": {
+   "raw": "20%",
+   "resolved": "20%"
+  },
+  "--chakra-sizes-1/6": {
+   "raw": "16.666667%",
+   "resolved": "16.666667%"
+  },
+  "--chakra-sizes-10": {
+   "raw": "2.5rem",
+   "resolved": "2.5rem"
+  },
+  "--chakra-sizes-10/12": {
+   "raw": "83.333333%",
+   "resolved": "83.333333%"
+  },
+  "--chakra-sizes-11": {
+   "raw": "2.75rem",
+   "resolved": "2.75rem"
+  },
+  "--chakra-sizes-11/12": {
+   "raw": "91.666667%",
+   "resolved": "91.666667%"
+  },
+  "--chakra-sizes-12": {
+   "raw": "3rem",
+   "resolved": "3rem"
+  },
+  "--chakra-sizes-14": {
+   "raw": "3.5rem",
+   "resolved": "3.5rem"
+  },
+  "--chakra-sizes-16": {
+   "raw": "4rem",
+   "resolved": "4rem"
+  },
+  "--chakra-sizes-2": {
+   "raw": "0.5rem",
+   "resolved": "0.5rem"
+  },
+  "--chakra-sizes-2.5": {
+   "raw": "0.625rem",
+   "resolved": "0.625rem"
+  },
+  "--chakra-sizes-2/12": {
+   "raw": "16.666667%",
+   "resolved": "16.666667%"
+  },
+  "--chakra-sizes-2/3": {
+   "raw": "66.666667%",
+   "resolved": "66.666667%"
+  },
+  "--chakra-sizes-2/5": {
+   "raw": "40%",
+   "resolved": "40%"
+  },
+  "--chakra-sizes-2/6": {
+   "raw": "33.333333%",
+   "resolved": "33.333333%"
+  },
+  "--chakra-sizes-20": {
+   "raw": "5rem",
+   "resolved": "5rem"
+  },
+  "--chakra-sizes-24": {
+   "raw": "6rem",
+   "resolved": "6rem"
+  },
+  "--chakra-sizes-28": {
+   "raw": "7rem",
+   "resolved": "7rem"
+  },
+  "--chakra-sizes-2xl": {
+   "raw": "42rem",
+   "resolved": "42rem"
+  },
+  "--chakra-sizes-2xs": {
+   "raw": "16rem",
+   "resolved": "16rem"
+  },
+  "--chakra-sizes-3": {
+   "raw": "0.75rem",
+   "resolved": "0.75rem"
+  },
+  "--chakra-sizes-3.5": {
+   "raw": "0.875rem",
+   "resolved": "0.875rem"
+  },
+  "--chakra-sizes-3/12": {
+   "raw": "25%",
+   "resolved": "25%"
+  },
+  "--chakra-sizes-3/4": {
+   "raw": "75%",
+   "resolved": "75%"
+  },
+  "--chakra-sizes-3/5": {
+   "raw": "60%",
+   "resolved": "60%"
+  },
+  "--chakra-sizes-3/6": {
+   "raw": "50%",
+   "resolved": "50%"
+  },
+  "--chakra-sizes-32": {
+   "raw": "8rem",
+   "resolved": "8rem"
+  },
+  "--chakra-sizes-36": {
+   "raw": "9rem",
+   "resolved": "9rem"
+  },
+  "--chakra-sizes-3xl": {
+   "raw": "48rem",
+   "resolved": "48rem"
+  },
+  "--chakra-sizes-3xs": {
+   "raw": "14rem",
+   "resolved": "14rem"
+  },
+  "--chakra-sizes-4": {
+   "raw": "1rem",
+   "resolved": "1rem"
+  },
+  "--chakra-sizes-4.5": {
+   "raw": "1.125rem",
+   "resolved": "1.125rem"
+  },
+  "--chakra-sizes-4/12": {
+   "raw": "33.333333%",
+   "resolved": "33.333333%"
+  },
+  "--chakra-sizes-4/5": {
+   "raw": "80%",
+   "resolved": "80%"
+  },
+  "--chakra-sizes-4/6": {
+   "raw": "66.666667%",
+   "resolved": "66.666667%"
+  },
+  "--chakra-sizes-40": {
+   "raw": "10rem",
+   "resolved": "10rem"
+  },
+  "--chakra-sizes-44": {
+   "raw": "11rem",
+   "resolved": "11rem"
+  },
+  "--chakra-sizes-48": {
+   "raw": "12rem",
+   "resolved": "12rem"
+  },
+  "--chakra-sizes-4xl": {
+   "raw": "56rem",
+   "resolved": "56rem"
+  },
+  "--chakra-sizes-5": {
+   "raw": "1.25rem",
+   "resolved": "1.25rem"
+  },
+  "--chakra-sizes-5/12": {
+   "raw": "41.666667%",
+   "resolved": "41.666667%"
+  },
+  "--chakra-sizes-5/6": {
+   "raw": "83.333333%",
+   "resolved": "83.333333%"
+  },
+  "--chakra-sizes-52": {
+   "raw": "13rem",
+   "resolved": "13rem"
+  },
+  "--chakra-sizes-56": {
+   "raw": "14rem",
+   "resolved": "14rem"
+  },
+  "--chakra-sizes-5xl": {
+   "raw": "64rem",
+   "resolved": "64rem"
+  },
+  "--chakra-sizes-6": {
+   "raw": "1.5rem",
+   "resolved": "1.5rem"
+  },
+  "--chakra-sizes-6/12": {
+   "raw": "50%",
+   "resolved": "50%"
+  },
+  "--chakra-sizes-60": {
+   "raw": "15rem",
+   "resolved": "15rem"
+  },
+  "--chakra-sizes-64": {
+   "raw": "16rem",
+   "resolved": "16rem"
+  },
+  "--chakra-sizes-6xl": {
+   "raw": "72rem",
+   "resolved": "72rem"
+  },
+  "--chakra-sizes-7": {
+   "raw": "1.75rem",
+   "resolved": "1.75rem"
+  },
+  "--chakra-sizes-7/12": {
+   "raw": "58.333333%",
+   "resolved": "58.333333%"
+  },
+  "--chakra-sizes-72": {
+   "raw": "18rem",
+   "resolved": "18rem"
+  },
+  "--chakra-sizes-7xl": {
+   "raw": "80rem",
+   "resolved": "80rem"
+  },
+  "--chakra-sizes-8": {
+   "raw": "2rem",
+   "resolved": "2rem"
+  },
+  "--chakra-sizes-8/12": {
+   "raw": "66.666667%",
+   "resolved": "66.666667%"
+  },
+  "--chakra-sizes-80": {
+   "raw": "20rem",
+   "resolved": "20rem"
+  },
+  "--chakra-sizes-8xl": {
+   "raw": "90rem",
+   "resolved": "90rem"
+  },
+  "--chakra-sizes-9": {
+   "raw": "2.25rem",
+   "resolved": "2.25rem"
+  },
+  "--chakra-sizes-9/12": {
+   "raw": "75%",
+   "resolved": "75%"
+  },
+  "--chakra-sizes-96": {
+   "raw": "24rem",
+   "resolved": "24rem"
+  },
+  "--chakra-sizes-background-browser-height": {
+   "raw": "min(100vh, 640px)",
+   "resolved": "min(100vh, 640px)"
+  },
+  "--chakra-sizes-background-browser-row": {
+   "raw": "190px",
+   "resolved": "190px"
+  },
+  "--chakra-sizes-background-browser-sidebar": {
+   "raw": "160px",
+   "resolved": "160px"
+  },
+  "--chakra-sizes-background-browser-width": {
+   "raw": "min(85vw, 800px)",
+   "resolved": "min(85vw, 800px)"
+  },
+  "--chakra-sizes-breakpoint-2xl": {
+   "raw": "1536px",
+   "resolved": "1536px"
+  },
+  "--chakra-sizes-breakpoint-lg": {
+   "raw": "1024px",
+   "resolved": "1024px"
+  },
+  "--chakra-sizes-breakpoint-md": {
+   "raw": "768px",
+   "resolved": "768px"
+  },
+  "--chakra-sizes-breakpoint-sm": {
+   "raw": "480px",
+   "resolved": "480px"
+  },
+  "--chakra-sizes-breakpoint-xl": {
+   "raw": "1280px",
+   "resolved": "1280px"
+  },
+  "--chakra-sizes-creator-account-header": {
+   "raw": "260px",
+   "resolved": "260px"
+  },
+  "--chakra-sizes-creator-band-row": {
+   "raw": "38px",
+   "resolved": "38px"
+  },
+  "--chakra-sizes-creator-camera-popover": {
+   "raw": "360px",
+   "resolved": "360px"
+  },
+  "--chakra-sizes-creator-device-chevron": {
+   "raw": "9px",
+   "resolved": "9px"
+  },
+  "--chakra-sizes-creator-device-name": {
+   "raw": "88px",
+   "resolved": "88px"
+  },
+  "--chakra-sizes-creator-device-popover": {
+   "raw": "258px",
+   "resolved": "258px"
+  },
+  "--chakra-sizes-creator-hairline": {
+   "raw": "0.5px",
+   "resolved": "0.5px"
+  },
+  "--chakra-sizes-creator-layout-grid": {
+   "raw": "300px",
+   "resolved": "300px"
+  },
+  "--chakra-sizes-creator-layout-picker": {
+   "raw": "470px",
+   "resolved": "470px"
+  },
+  "--chakra-sizes-creator-overlay-lane": {
+   "raw": "28px",
+   "resolved": "28px"
+  },
+  "--chakra-sizes-creator-record-label": {
+   "raw": "37px",
+   "resolved": "37px"
+  },
+  "--chakra-sizes-creator-record-min": {
+   "raw": "93px",
+   "resolved": "93px"
+  },
+  "--chakra-sizes-creator-room-tile": {
+   "raw": "76px",
+   "resolved": "76px"
+  },
+  "--chakra-sizes-creator-selection-menu-max": {
+   "raw": "328px",
+   "resolved": "328px"
+  },
+  "--chakra-sizes-creator-selection-menu-min": {
+   "raw": "220px",
+   "resolved": "220px"
+  },
+  "--chakra-sizes-creator-share-dialog": {
+   "raw": "460px",
+   "resolved": "460px"
+  },
+  "--chakra-sizes-creator-share-suggestions": {
+   "raw": "232px",
+   "resolved": "232px"
+  },
+  "--chakra-sizes-creator-sidebar": {
+   "raw": "296px",
+   "resolved": "296px"
+  },
+  "--chakra-sizes-creator-sidebar-control": {
+   "raw": "24px",
+   "resolved": "24px"
+  },
+  "--chakra-sizes-creator-sidebar-row": {
+   "raw": "30px",
+   "resolved": "30px"
+  },
+  "--chakra-sizes-creator-slide-counter": {
+   "raw": "46px",
+   "resolved": "46px"
+  },
+  "--chakra-sizes-creator-slide-lane": {
+   "raw": "84px",
+   "resolved": "84px"
+  },
+  "--chakra-sizes-creator-slide-popover": {
+   "raw": "324px",
+   "resolved": "324px"
+  },
+  "--chakra-sizes-creator-slide-thumbnail": {
+   "raw": "78px",
+   "resolved": "78px"
+  },
+  "--chakra-sizes-creator-slides-info": {
+   "raw": "320px",
+   "resolved": "320px"
+  },
+  "--chakra-sizes-creator-stage-band": {
+   "raw": "46px",
+   "resolved": "46px"
+  },
+  "--chakra-sizes-creator-stage-band-narrow": {
+   "raw": "88px",
+   "resolved": "88px"
+  },
+  "--chakra-sizes-creator-status-badge-dot": {
+   "raw": "5px",
+   "resolved": "5px"
+  },
+  "--chakra-sizes-creator-status-dot": {
+   "raw": "7px",
+   "resolved": "7px"
+  },
+  "--chakra-sizes-creator-title": {
+   "raw": "280px",
+   "resolved": "280px"
+  },
+  "--chakra-sizes-creator-title-chevron": {
+   "raw": "22px",
+   "resolved": "22px"
+  },
+  "--chakra-sizes-creator-title-compact": {
+   "raw": "180px",
+   "resolved": "180px"
+  },
+  "--chakra-sizes-creator-title-glyph": {
+   "raw": "15px",
+   "resolved": "15px"
+  },
+  "--chakra-sizes-creator-top-bar": {
+   "raw": "52px",
+   "resolved": "52px"
+  },
+  "--chakra-sizes-creator-tray": {
+   "raw": "116px",
+   "resolved": "116px"
+  },
+  "--chakra-sizes-creator-typography-menu-width": {
+   "raw": "368px",
+   "resolved": "368px"
+  },
+  "--chakra-sizes-creator-video-details": {
+   "raw": "240px",
+   "resolved": "240px"
+  },
+  "--chakra-sizes-creator-video-library": {
+   "raw": "280px",
+   "resolved": "280px"
+  },
+  "--chakra-sizes-creator-video-timeline": {
+   "raw": "144px",
+   "resolved": "144px"
+  },
+  "--chakra-sizes-dvh": {
+   "raw": "100dvh",
+   "resolved": "100dvh"
+  },
+  "--chakra-sizes-dvw": {
+   "raw": "100dvw",
+   "resolved": "100dvw"
+  },
+  "--chakra-sizes-fit": {
+   "raw": "fit-content",
+   "resolved": "fit-content"
+  },
+  "--chakra-sizes-full": {
+   "raw": "100%",
+   "resolved": "100%"
+  },
+  "--chakra-sizes-lg": {
+   "raw": "32rem",
+   "resolved": "32rem"
+  },
+  "--chakra-sizes-lvh": {
+   "raw": "100lvh",
+   "resolved": "100lvh"
+  },
+  "--chakra-sizes-lvw": {
+   "raw": "100lvw",
+   "resolved": "100lvw"
+  },
+  "--chakra-sizes-max": {
+   "raw": "max-content",
+   "resolved": "max-content"
+  },
+  "--chakra-sizes-md": {
+   "raw": "28rem",
+   "resolved": "28rem"
+  },
+  "--chakra-sizes-min": {
+   "raw": "min-content",
+   "resolved": "min-content"
+  },
+  "--chakra-sizes-prose": {
+   "raw": "60ch",
+   "resolved": "60ch"
+  },
+  "--chakra-sizes-segment": {
+   "raw": "26px",
+   "resolved": "26px"
+  },
+  "--chakra-sizes-sheet-height": {
+   "raw": "642px",
+   "resolved": "642px"
+  },
+  "--chakra-sizes-sheet-max-height": {
+   "raw": "calc(100vh - 48px)",
+   "resolved": "calc(100vh - 48px)"
+  },
+  "--chakra-sizes-sheet-max-width": {
+   "raw": "calc(100vw - 48px)",
+   "resolved": "calc(100vw - 48px)"
+  },
+  "--chakra-sizes-sheet-width": {
+   "raw": "800px",
+   "resolved": "800px"
+  },
+  "--chakra-sizes-sm": {
+   "raw": "24rem",
+   "resolved": "24rem"
+  },
+  "--chakra-sizes-split-picker-details": {
+   "raw": "208px",
+   "resolved": "208px"
+  },
+  "--chakra-sizes-split-picker-input-wrapper": {
+   "raw": "30px",
+   "resolved": "30px"
+  },
+  "--chakra-sizes-split-picker-pane-header": {
+   "raw": "56px",
+   "resolved": "56px"
+  },
+  "--chakra-sizes-split-picker-sidebar": {
+   "raw": "208px",
+   "resolved": "208px"
+  },
+  "--chakra-sizes-svh": {
+   "raw": "100svh",
+   "resolved": "100svh"
+  },
+  "--chakra-sizes-svw": {
+   "raw": "100svw",
+   "resolved": "100svw"
+  },
+  "--chakra-sizes-vh": {
+   "raw": "100vh",
+   "resolved": "100vh"
+  },
+  "--chakra-sizes-vw": {
+   "raw": "100vw",
+   "resolved": "100vw"
+  },
+  "--chakra-sizes-xl": {
+   "raw": "36rem",
+   "resolved": "36rem"
+  },
+  "--chakra-sizes-xs": {
+   "raw": "20rem",
+   "resolved": "20rem"
+  },
+  "--chakra-spacing-0.5": {
+   "raw": "0.125rem",
+   "resolved": "0.125rem"
+  },
+  "--chakra-spacing-0.75": {
+   "raw": "3px",
+   "resolved": "3px"
+  },
+  "--chakra-spacing-1": {
+   "raw": "0.25rem",
+   "resolved": "0.25rem"
+  },
+  "--chakra-spacing-1.25": {
+   "raw": "5px",
+   "resolved": "5px"
+  },
+  "--chakra-spacing-1.5": {
+   "raw": "0.375rem",
+   "resolved": "0.375rem"
+  },
+  "--chakra-spacing-1.75": {
+   "raw": "7px",
+   "resolved": "7px"
+  },
+  "--chakra-spacing-10": {
+   "raw": "2.5rem",
+   "resolved": "2.5rem"
+  },
+  "--chakra-spacing-11": {
+   "raw": "2.75rem",
+   "resolved": "2.75rem"
+  },
+  "--chakra-spacing-12": {
+   "raw": "3rem",
+   "resolved": "3rem"
+  },
+  "--chakra-spacing-14": {
+   "raw": "3.5rem",
+   "resolved": "3.5rem"
+  },
+  "--chakra-spacing-16": {
+   "raw": "4rem",
+   "resolved": "4rem"
+  },
+  "--chakra-spacing-2": {
+   "raw": "0.5rem",
+   "resolved": "0.5rem"
+  },
+  "--chakra-spacing-2.25": {
+   "raw": "9px",
+   "resolved": "9px"
+  },
+  "--chakra-spacing-2.5": {
+   "raw": "0.625rem",
+   "resolved": "0.625rem"
+  },
+  "--chakra-spacing-20": {
+   "raw": "5rem",
+   "resolved": "5rem"
+  },
+  "--chakra-spacing-24": {
+   "raw": "6rem",
+   "resolved": "6rem"
+  },
+  "--chakra-spacing-28": {
+   "raw": "7rem",
+   "resolved": "7rem"
+  },
+  "--chakra-spacing-3": {
+   "raw": "0.75rem",
+   "resolved": "0.75rem"
+  },
+  "--chakra-spacing-3.5": {
+   "raw": "0.875rem",
+   "resolved": "0.875rem"
+  },
+  "--chakra-spacing-32": {
+   "raw": "8rem",
+   "resolved": "8rem"
+  },
+  "--chakra-spacing-36": {
+   "raw": "9rem",
+   "resolved": "9rem"
+  },
+  "--chakra-spacing-4": {
+   "raw": "1rem",
+   "resolved": "1rem"
+  },
+  "--chakra-spacing-4.5": {
+   "raw": "1.125rem",
+   "resolved": "1.125rem"
+  },
+  "--chakra-spacing-40": {
+   "raw": "10rem",
+   "resolved": "10rem"
+  },
+  "--chakra-spacing-44": {
+   "raw": "11rem",
+   "resolved": "11rem"
+  },
+  "--chakra-spacing-48": {
+   "raw": "12rem",
+   "resolved": "12rem"
+  },
+  "--chakra-spacing-5": {
+   "raw": "1.25rem",
+   "resolved": "1.25rem"
+  },
+  "--chakra-spacing-52": {
+   "raw": "13rem",
+   "resolved": "13rem"
+  },
+  "--chakra-spacing-56": {
+   "raw": "14rem",
+   "resolved": "14rem"
+  },
+  "--chakra-spacing-6": {
+   "raw": "1.5rem",
+   "resolved": "1.5rem"
+  },
+  "--chakra-spacing-60": {
+   "raw": "15rem",
+   "resolved": "15rem"
+  },
+  "--chakra-spacing-64": {
+   "raw": "16rem",
+   "resolved": "16rem"
+  },
+  "--chakra-spacing-7": {
+   "raw": "1.75rem",
+   "resolved": "1.75rem"
+  },
+  "--chakra-spacing-72": {
+   "raw": "18rem",
+   "resolved": "18rem"
+  },
+  "--chakra-spacing-8": {
+   "raw": "2rem",
+   "resolved": "2rem"
+  },
+  "--chakra-spacing-80": {
+   "raw": "20rem",
+   "resolved": "20rem"
+  },
+  "--chakra-spacing-9": {
+   "raw": "2.25rem",
+   "resolved": "2.25rem"
+  },
+  "--chakra-spacing-96": {
+   "raw": "24rem",
+   "resolved": "24rem"
+  },
+  "--chakra-spacing-gutter": {
+   "raw": "16px",
+   "resolved": "16px"
+  },
+  "--chakra-z-index-banner": {
+   "raw": "1200",
+   "resolved": "1200"
+  },
+  "--chakra-z-index-base": {
+   "raw": "0",
+   "resolved": "0"
+  },
+  "--chakra-z-index-docked": {
+   "raw": "10",
+   "resolved": "10"
+  },
+  "--chakra-z-index-dropdown": {
+   "raw": "1000",
+   "resolved": "1000"
+  },
+  "--chakra-z-index-hide": {
+   "raw": "-1",
+   "resolved": "-1"
+  },
+  "--chakra-z-index-max": {
+   "raw": "2147483647",
+   "resolved": "2147483647"
+  },
+  "--chakra-z-index-modal": {
+   "raw": "1400",
+   "resolved": "1400"
+  },
+  "--chakra-z-index-overlay": {
+   "raw": "1300",
+   "resolved": "1300"
+  },
+  "--chakra-z-index-popover": {
+   "raw": "1500",
+   "resolved": "1500"
+  },
+  "--chakra-z-index-skip-nav": {
+   "raw": "1600",
+   "resolved": "1600"
+  },
+  "--chakra-z-index-stage": {
+   "raw": "1",
+   "resolved": "1"
+  },
+  "--chakra-z-index-stage-band": {
+   "raw": "12",
+   "resolved": "12"
+  },
+  "--chakra-z-index-stage-controls": {
+   "raw": "13",
+   "resolved": "13"
+  },
+  "--chakra-z-index-sticky": {
+   "raw": "1100",
+   "resolved": "1100"
+  },
+  "--chakra-z-index-toast": {
+   "raw": "1700",
+   "resolved": "1700"
+  },
+  "--chakra-z-index-tooltip": {
+   "raw": "1800",
+   "resolved": "1800"
+  },
+  "--chakra-z-index-top-bar": {
+   "raw": "20",
+   "resolved": "20"
+  },
+  "--chakra-z-index-tray": {
+   "raw": "15",
+   "resolved": "15"
+  }
+ }
+}

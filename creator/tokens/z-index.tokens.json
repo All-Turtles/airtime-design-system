@@ -1,0 +1,146 @@
+{
+  "$name": "Creator - z-index",
+  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "z": {
+    "stage": {
+      "$value": "1",
+      "$type": "number",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-z-stage",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 129,
+            "export": "zIndex",
+            "path": "stage"
+          },
+          "rendered": {
+            "light": "1",
+            "dark": "1"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org z token has value 1"
+          },
+          "used": {
+            "all": 68
+          }
+        }
+      }
+    },
+    "stageBand": {
+      "$value": "12",
+      "$type": "number",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-z-stage-band",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 130,
+            "export": "zIndex",
+            "path": "stageBand"
+          },
+          "rendered": {
+            "light": "12",
+            "dark": "12"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org z token has value 12"
+          },
+          "used": {
+            "all": 8
+          }
+        }
+      }
+    },
+    "stageControls": {
+      "$value": "13",
+      "$type": "number",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-z-stage-controls",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 131,
+            "export": "zIndex",
+            "path": "stageControls"
+          },
+          "rendered": {
+            "light": "13",
+            "dark": "13"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org z token has value 13"
+          },
+          "used": {
+            "all": 8
+          }
+        }
+      }
+    },
+    "tray": {
+      "$value": "15",
+      "$type": "number",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-z-tray",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 132,
+            "export": "zIndex",
+            "path": "tray"
+          },
+          "rendered": {
+            "light": "15",
+            "dark": "15"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org z token has value 15"
+          },
+          "used": {
+            "all": 8
+          }
+        }
+      }
+    },
+    "topBar": {
+      "$value": "20",
+      "$type": "number",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-z-top-bar",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 133,
+            "export": "zIndex",
+            "path": "topBar"
+          },
+          "rendered": {
+            "light": "20",
+            "dark": "20"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org z token has value 20"
+          },
+          "used": {
+            "all": 8
+          }
+        }
+      }
+    }
+  }
+}

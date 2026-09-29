@@ -1,0 +1,2463 @@
+{
+ "tokens": [
+  {
+   "var": "--chakra-fonts-body",
+   "group": "fonts",
+   "path": "body",
+   "value": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+   "export": "fonts",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-fonts-heading",
+   "group": "fonts",
+   "path": "heading",
+   "value": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+   "export": "fonts",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-fonts-mono",
+   "group": "fonts",
+   "path": "mono",
+   "value": "ui-monospace, 'SF Mono', Menlo, monospace",
+   "export": "fonts",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-font-sizes-3xs",
+   "group": "font-sizes",
+   "path": "3xs",
+   "value": "9px",
+   "export": "fontSizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-font-sizes-2xs",
+   "group": "font-sizes",
+   "path": "2xs",
+   "value": "10px",
+   "export": "fontSizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-font-sizes-xs",
+   "group": "font-sizes",
+   "path": "xs",
+   "value": "11px",
+   "export": "fontSizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-font-sizes-sm",
+   "group": "font-sizes",
+   "path": "sm",
+   "value": "12px",
+   "export": "fontSizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-font-sizes-md",
+   "group": "font-sizes",
+   "path": "md",
+   "value": "13px",
+   "export": "fontSizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-font-sizes-lg",
+   "group": "font-sizes",
+   "path": "lg",
+   "value": "17px",
+   "export": "fontSizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-line-heights-selection",
+   "group": "line-heights",
+   "path": "selection",
+   "value": "1.15",
+   "export": "lineHeights",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-letter-spacings-label",
+   "group": "letter-spacings",
+   "path": "label",
+   "value": "0.055em",
+   "export": "letterSpacings",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-letter-spacings-selection-label",
+   "group": "letter-spacings",
+   "path": "selectionLabel",
+   "value": "0.04em",
+   "export": "letterSpacings",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-stage",
+   "group": "radii",
+   "path": "stage",
+   "value": "8px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-selection-track",
+   "group": "radii",
+   "path": "selectionTrack",
+   "value": "9px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-room-tile",
+   "group": "radii",
+   "path": "roomTile",
+   "value": "6px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-title-label",
+   "group": "radii",
+   "path": "titleLabel",
+   "value": "4px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-xs",
+   "group": "radii",
+   "path": "xs",
+   "value": "3px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-sm",
+   "group": "radii",
+   "path": "sm",
+   "value": "5px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-md",
+   "group": "radii",
+   "path": "md",
+   "value": "7px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-lg",
+   "group": "radii",
+   "path": "lg",
+   "value": "10px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-xl",
+   "group": "radii",
+   "path": "xl",
+   "value": "13px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-2xl",
+   "group": "radii",
+   "path": "2xl",
+   "value": "14px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-3xl",
+   "group": "radii",
+   "path": "3xl",
+   "value": "16px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-4xl",
+   "group": "radii",
+   "path": "4xl",
+   "value": "22px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-5xl",
+   "group": "radii",
+   "path": "5xl",
+   "value": "24px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-radii-full",
+   "group": "radii",
+   "path": "full",
+   "value": "9999px",
+   "export": "radii",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-selection-menu-min",
+   "group": "sizes",
+   "path": "creator.selectionMenuMin",
+   "value": "220px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-selection-menu-max",
+   "group": "sizes",
+   "path": "creator.selectionMenuMax",
+   "value": "328px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-typography-menu-width",
+   "group": "sizes",
+   "path": "creator.typographyMenuWidth",
+   "value": "368px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-top-bar",
+   "group": "sizes",
+   "path": "creator.topBar",
+   "value": "52px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-account-header",
+   "group": "sizes",
+   "path": "creator.accountHeader",
+   "value": "260px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-title",
+   "group": "sizes",
+   "path": "creator.title",
+   "value": "280px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-title-compact",
+   "group": "sizes",
+   "path": "creator.titleCompact",
+   "value": "180px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-title-glyph",
+   "group": "sizes",
+   "path": "creator.titleGlyph",
+   "value": "15px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-title-chevron",
+   "group": "sizes",
+   "path": "creator.titleChevron",
+   "value": "22px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-hairline",
+   "group": "sizes",
+   "path": "creator.hairline",
+   "value": "0.5px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-stage-band",
+   "group": "sizes",
+   "path": "creator.stageBand",
+   "value": "46px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-stage-band-narrow",
+   "group": "sizes",
+   "path": "creator.stageBandNarrow",
+   "value": "88px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-band-row",
+   "group": "sizes",
+   "path": "creator.bandRow",
+   "value": "38px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-device-name",
+   "group": "sizes",
+   "path": "creator.deviceName",
+   "value": "88px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-device-popover",
+   "group": "sizes",
+   "path": "creator.devicePopover",
+   "value": "258px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-device-chevron",
+   "group": "sizes",
+   "path": "creator.deviceChevron",
+   "value": "9px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-status-dot",
+   "group": "sizes",
+   "path": "creator.statusDot",
+   "value": "7px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-status-badge-dot",
+   "group": "sizes",
+   "path": "creator.statusBadgeDot",
+   "value": "5px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-record-min",
+   "group": "sizes",
+   "path": "creator.recordMin",
+   "value": "93px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-record-label",
+   "group": "sizes",
+   "path": "creator.recordLabel",
+   "value": "37px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-camera-popover",
+   "group": "sizes",
+   "path": "creator.cameraPopover",
+   "value": "360px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-tray",
+   "group": "sizes",
+   "path": "creator.tray",
+   "value": "116px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-slide-thumbnail",
+   "group": "sizes",
+   "path": "creator.slideThumbnail",
+   "value": "78px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-room-tile",
+   "group": "sizes",
+   "path": "creator.roomTile",
+   "value": "76px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-slide-lane",
+   "group": "sizes",
+   "path": "creator.slideLane",
+   "value": "84px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-overlay-lane",
+   "group": "sizes",
+   "path": "creator.overlayLane",
+   "value": "28px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-slide-popover",
+   "group": "sizes",
+   "path": "creator.slidePopover",
+   "value": "324px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-sidebar",
+   "group": "sizes",
+   "path": "creator.sidebar",
+   "value": "296px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-sidebar-row",
+   "group": "sizes",
+   "path": "creator.sidebarRow",
+   "value": "30px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-sidebar-control",
+   "group": "sizes",
+   "path": "creator.sidebarControl",
+   "value": "24px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-slide-counter",
+   "group": "sizes",
+   "path": "creator.slideCounter",
+   "value": "46px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-slides-info",
+   "group": "sizes",
+   "path": "creator.slidesInfo",
+   "value": "320px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-layout-picker",
+   "group": "sizes",
+   "path": "creator.layoutPicker",
+   "value": "470px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-layout-grid",
+   "group": "sizes",
+   "path": "creator.layoutGrid",
+   "value": "300px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-video-library",
+   "group": "sizes",
+   "path": "creator.videoLibrary",
+   "value": "280px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-video-details",
+   "group": "sizes",
+   "path": "creator.videoDetails",
+   "value": "240px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-video-timeline",
+   "group": "sizes",
+   "path": "creator.videoTimeline",
+   "value": "144px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-share-dialog",
+   "group": "sizes",
+   "path": "creator.shareDialog",
+   "value": "460px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-creator-share-suggestions",
+   "group": "sizes",
+   "path": "creator.shareSuggestions",
+   "value": "232px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-sheet-width",
+   "group": "sizes",
+   "path": "sheet.width",
+   "value": "800px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-sheet-height",
+   "group": "sizes",
+   "path": "sheet.height",
+   "value": "642px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-sheet-max-width",
+   "group": "sizes",
+   "path": "sheet.maxWidth",
+   "value": "calc(100vw - 48px)",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-sheet-max-height",
+   "group": "sizes",
+   "path": "sheet.maxHeight",
+   "value": "calc(100vh - 48px)",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-background-browser-width",
+   "group": "sizes",
+   "path": "backgroundBrowser.width",
+   "value": "min(85vw, 800px)",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-background-browser-height",
+   "group": "sizes",
+   "path": "backgroundBrowser.height",
+   "value": "min(100vh, 640px)",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-background-browser-sidebar",
+   "group": "sizes",
+   "path": "backgroundBrowser.sidebar",
+   "value": "160px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-background-browser-row",
+   "group": "sizes",
+   "path": "backgroundBrowser.row",
+   "value": "190px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-split-picker-sidebar",
+   "group": "sizes",
+   "path": "splitPicker.sidebar",
+   "value": "208px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-split-picker-pane-header",
+   "group": "sizes",
+   "path": "splitPicker.paneHeader",
+   "value": "56px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-split-picker-input-wrapper",
+   "group": "sizes",
+   "path": "splitPicker.inputWrapper",
+   "value": "30px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-split-picker-details",
+   "group": "sizes",
+   "path": "splitPicker.details",
+   "value": "208px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-sizes-segment",
+   "group": "sizes",
+   "path": "segment",
+   "value": "26px",
+   "export": "sizes",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-spacing-gutter",
+   "group": "spacing",
+   "path": "gutter",
+   "value": "16px",
+   "export": "spacing",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-spacing-2.25",
+   "group": "spacing",
+   "path": "2.25",
+   "value": "9px",
+   "export": "spacing",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-spacing-1.75",
+   "group": "spacing",
+   "path": "1.75",
+   "value": "7px",
+   "export": "spacing",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-spacing-0.75",
+   "group": "spacing",
+   "path": "0.75",
+   "value": "3px",
+   "export": "spacing",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-spacing-1.25",
+   "group": "spacing",
+   "path": "1.25",
+   "value": "5px",
+   "export": "spacing",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-aspect-ratios-camera-demo",
+   "group": "aspect-ratios",
+   "path": "cameraDemo",
+   "value": "736 / 414",
+   "export": "aspectRatios",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-z-index-stage",
+   "group": "z-index",
+   "path": "stage",
+   "value": 1,
+   "export": "zIndex",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-z-index-stage-band",
+   "group": "z-index",
+   "path": "stageBand",
+   "value": 12,
+   "export": "zIndex",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-z-index-stage-controls",
+   "group": "z-index",
+   "path": "stageControls",
+   "value": 13,
+   "export": "zIndex",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-z-index-tray",
+   "group": "z-index",
+   "path": "tray",
+   "value": 15,
+   "export": "zIndex",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-z-index-top-bar",
+   "group": "z-index",
+   "path": "topBar",
+   "value": 20,
+   "export": "zIndex",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-blurs-selection-bar",
+   "group": "blurs",
+   "path": "selectionBar",
+   "value": "28px",
+   "export": "blurs",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-blurs-selection-menu",
+   "group": "blurs",
+   "path": "selectionMenu",
+   "value": "34px",
+   "export": "blurs",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-border-widths-hair",
+   "group": "border-widths",
+   "path": "hair",
+   "value": "0.5px",
+   "export": "borderWidths",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-border-widths-thin",
+   "group": "border-widths",
+   "path": "thin",
+   "value": "1px",
+   "export": "borderWidths",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-border-widths-medium",
+   "group": "border-widths",
+   "path": "medium",
+   "value": "2px",
+   "export": "borderWidths",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-insert",
+   "group": "durations",
+   "path": "insert",
+   "value": "120ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-fired",
+   "group": "durations",
+   "path": "fired",
+   "value": "260ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-fast",
+   "group": "durations",
+   "path": "fast",
+   "value": "160ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-history",
+   "group": "durations",
+   "path": "history",
+   "value": "150ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-title-dwell",
+   "group": "durations",
+   "path": "titleDwell",
+   "value": "200ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-normal",
+   "group": "durations",
+   "path": "normal",
+   "value": "240ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-slow",
+   "group": "durations",
+   "path": "slow",
+   "value": "420ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-settle",
+   "group": "durations",
+   "path": "settle",
+   "value": "300ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-stage",
+   "group": "durations",
+   "path": "stage",
+   "value": "420ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-durations-panel",
+   "group": "durations",
+   "path": "panel",
+   "value": "280ms",
+   "export": "durations",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-easings-out",
+   "group": "easings",
+   "path": "out",
+   "value": "ease-out",
+   "export": "easings",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-easings-settle",
+   "group": "easings",
+   "path": "settle",
+   "value": "cubic-bezier(.32, .72, 0, 1)",
+   "export": "easings",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-easings-standard",
+   "group": "easings",
+   "path": "standard",
+   "value": "ease-in-out",
+   "export": "easings",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-easings-spring",
+   "group": "easings",
+   "path": "spring",
+   "value": "cubic-bezier(.34, 1.4, .5, 1)",
+   "export": "easings",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-easings-flow",
+   "group": "easings",
+   "path": "flow",
+   "value": "cubic-bezier(.25, .46, .2, .99)",
+   "export": "easings",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-destructive",
+   "group": "colors",
+   "path": "selection.destructive",
+   "value": "rgb(255,92,92)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-destructive-hover",
+   "group": "colors",
+   "path": "selection.destructiveHover",
+   "value": "rgba(255,92,92,0.14)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-destructive-active",
+   "group": "colors",
+   "path": "selection.destructiveActive",
+   "value": "rgba(255,92,92,0.24)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-muted",
+   "group": "colors",
+   "path": "selection.muted",
+   "value": "rgba(255,255,255,0.60)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-track",
+   "group": "colors",
+   "path": "selection.track",
+   "value": "rgba(255,255,255,0.08)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-swatch",
+   "group": "colors",
+   "path": "selection.swatch",
+   "value": "rgba(255,255,255,0.16)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-material",
+   "group": "colors",
+   "path": "selection.material",
+   "value": "rgba(26,26,29,0.66)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-text",
+   "group": "colors",
+   "path": "selection.text",
+   "value": "rgba(255,255,255,0.96)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-disabled",
+   "group": "colors",
+   "path": "selection.disabled",
+   "value": "rgba(255,255,255,0.40)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-hover",
+   "group": "colors",
+   "path": "selection.hover",
+   "value": "rgba(255,255,255,0.11)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-active",
+   "group": "colors",
+   "path": "selection.active",
+   "value": "rgba(255,255,255,0.20)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-selection-line",
+   "group": "colors",
+   "path": "selection.line",
+   "value": "rgba(255,255,255,0.13)",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-system-blue-light",
+   "group": "colors",
+   "path": "systemBlue.light",
+   "value": "#0069D9",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-system-blue-light-hover",
+   "group": "colors",
+   "path": "systemBlue.lightHover",
+   "value": "#0059B8",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-system-blue-dark",
+   "group": "colors",
+   "path": "systemBlue.dark",
+   "value": "#3B9BFF",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-system-blue-dark-hover",
+   "group": "colors",
+   "path": "systemBlue.darkHover",
+   "value": "#57ACFF",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-system-blue-on-light",
+   "group": "colors",
+   "path": "systemBlue.onLight",
+   "value": "#FFFFFF",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-system-blue-on-dark",
+   "group": "colors",
+   "path": "systemBlue.onDark",
+   "value": "#08121C",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-system-red-light",
+   "group": "colors",
+   "path": "systemRed.light",
+   "value": "#D70015",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-system-red-dark",
+   "group": "colors",
+   "path": "systemRed.dark",
+   "value": "#FF4F42",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ground-light-window",
+   "group": "colors",
+   "path": "ground.light.window",
+   "value": "#E9E9EC",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ground-light-surface",
+   "group": "colors",
+   "path": "ground.light.surface",
+   "value": "#FFFFFF",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ground-light-recessed",
+   "group": "colors",
+   "path": "ground.light.recessed",
+   "value": "#F1F1F4",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ground-dark-window",
+   "group": "colors",
+   "path": "ground.dark.window",
+   "value": "#131315",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ground-dark-surface",
+   "group": "colors",
+   "path": "ground.dark.surface",
+   "value": "#1E1E20",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ground-dark-recessed",
+   "group": "colors",
+   "path": "ground.dark.recessed",
+   "value": "#252528",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ink-light-primary",
+   "group": "colors",
+   "path": "ink.light.primary",
+   "value": "#000000",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ink-light-secondary",
+   "group": "colors",
+   "path": "ink.light.secondary",
+   "value": "#3C3C43",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ink-light-tertiary",
+   "group": "colors",
+   "path": "ink.light.tertiary",
+   "value": "#6E6E73",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ink-dark-primary",
+   "group": "colors",
+   "path": "ink.dark.primary",
+   "value": "#FFFFFF",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ink-dark-secondary",
+   "group": "colors",
+   "path": "ink.dark.secondary",
+   "value": "#EBEBF5",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-ink-dark-tertiary",
+   "group": "colors",
+   "path": "ink.dark.tertiary",
+   "value": "#ABABB2",
+   "export": "colors",
+   "semantic": false
+  },
+  {
+   "var": "--chakra-colors-background-primary",
+   "group": "colors",
+   "path": "background.primary",
+   "value": {
+    "_light": "#ffffff",
+    "_dark": "#0a0a0e"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-background-tertiary",
+   "group": "colors",
+   "path": "background.tertiary",
+   "value": {
+    "_light": "#ebebeb",
+    "_dark": "#212127"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-action-primary",
+   "group": "colors",
+   "path": "action.primary",
+   "value": "#79DDE8",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-action-secondary",
+   "group": "colors",
+   "path": "action.secondary",
+   "value": "#1A7580",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-action-destructive",
+   "group": "colors",
+   "path": "action.destructive",
+   "value": {
+    "_light": "#ff715c",
+    "_dark": "#ff7661"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-slide-badge",
+   "group": "colors",
+   "path": "slide.badge",
+   "value": "rgba(0, 0, 0, 0.8)",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-device-off",
+   "group": "colors",
+   "path": "device.off",
+   "value": "#F65F4C",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-status-live",
+   "group": "colors",
+   "path": "status.live",
+   "value": "#34C759",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-status-live-text",
+   "group": "colors",
+   "path": "status.liveText",
+   "value": {
+    "_light": "#2FA84F",
+    "_dark": "#4CD470"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-status-live-fill",
+   "group": "colors",
+   "path": "status.liveFill",
+   "value": "color-mix(in srgb, {colors.status.live} 16%, transparent)",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-header-ground",
+   "group": "colors",
+   "path": "header.ground",
+   "value": "color-mix(in srgb, {colors.mat.hud} 92%, transparent)",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-header-title-hover",
+   "group": "colors",
+   "path": "header.titleHover",
+   "value": {
+    "_light": "#ebebeb",
+    "_dark": "#2f2f32"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-header-title-border",
+   "group": "colors",
+   "path": "header.titleBorder",
+   "value": {
+    "_light": "#e0e0e0",
+    "_dark": "#2f2f32"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-header-history-hover",
+   "group": "colors",
+   "path": "header.historyHover",
+   "value": {
+    "_light": "#f5f5f5",
+    "_dark": "#212127"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-split-picker-content",
+   "group": "colors",
+   "path": "splitPicker.content",
+   "value": "color-mix(in srgb, {colors.bg.panel} 62%, transparent)",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-split-picker-footer",
+   "group": "colors",
+   "path": "splitPicker.footer",
+   "value": "color-mix(in srgb, {colors.bg.panel} 40%, transparent)",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-bg",
+   "group": "colors",
+   "path": "bg.DEFAULT",
+   "value": {
+    "_light": "{colors.ground.light.window}",
+    "_dark": "{colors.ground.dark.window}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-bg-panel",
+   "group": "colors",
+   "path": "bg.panel",
+   "value": {
+    "_light": "{colors.ground.light.surface}",
+    "_dark": "{colors.ground.dark.surface}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-bg-subtle",
+   "group": "colors",
+   "path": "bg.subtle",
+   "value": {
+    "_light": "{colors.ground.light.recessed}",
+    "_dark": "{colors.ground.dark.recessed}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-bg-muted",
+   "group": "colors",
+   "path": "bg.muted",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.05)",
+    "_dark": "rgba(255, 255, 255, 0.06)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-bg-emphasized",
+   "group": "colors",
+   "path": "bg.emphasized",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.10)",
+    "_dark": "rgba(255, 255, 255, 0.13)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-bg-inverted",
+   "group": "colors",
+   "path": "bg.inverted",
+   "value": {
+    "_light": "{colors.ground.dark.window}",
+    "_dark": "{colors.ground.light.window}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-content-accent",
+   "group": "colors",
+   "path": "content.accent",
+   "value": "#f9df74",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-content-primary",
+   "group": "colors",
+   "path": "content.primary",
+   "value": {
+    "_light": "{colors.ink.light.primary}",
+    "_dark": "{colors.ink.dark.primary}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-content-secondary",
+   "group": "colors",
+   "path": "content.secondary",
+   "value": {
+    "_light": "{colors.ink.light.secondary}",
+    "_dark": "{colors.ink.dark.secondary}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-content-tertiary",
+   "group": "colors",
+   "path": "content.tertiary",
+   "value": {
+    "_light": "{colors.ink.light.tertiary}",
+    "_dark": "{colors.ink.dark.tertiary}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-text-1",
+   "group": "colors",
+   "path": "text.1",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.92)",
+    "_dark": "rgba(255, 255, 255, 0.96)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-text-2",
+   "group": "colors",
+   "path": "text.2",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.80)",
+    "_dark": "rgba(255, 255, 255, 0.84)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-text-3",
+   "group": "colors",
+   "path": "text.3",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.64)",
+    "_dark": "rgba(255, 255, 255, 0.68)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-text-4",
+   "group": "colors",
+   "path": "text.4",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.50)",
+    "_dark": "rgba(255, 255, 255, 0.54)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-text-5",
+   "group": "colors",
+   "path": "text.5",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.38)",
+    "_dark": "rgba(255, 255, 255, 0.40)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-text-6",
+   "group": "colors",
+   "path": "text.6",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.26)",
+    "_dark": "rgba(255, 255, 255, 0.28)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-fg",
+   "group": "colors",
+   "path": "fg.DEFAULT",
+   "value": "{colors.text.1}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-fg-muted",
+   "group": "colors",
+   "path": "fg.muted",
+   "value": "{colors.text.3}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-fg-subtle",
+   "group": "colors",
+   "path": "fg.subtle",
+   "value": "{colors.text.4}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-fg-inverted",
+   "group": "colors",
+   "path": "fg.inverted",
+   "value": {
+    "_light": "rgba(255, 255, 255, 0.96)",
+    "_dark": "rgba(0, 0, 0, 0.92)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-line",
+   "group": "colors",
+   "path": "line.DEFAULT",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.10)",
+    "_dark": "rgba(255, 255, 255, 0.10)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-line-strong",
+   "group": "colors",
+   "path": "line.strong",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.16)",
+    "_dark": "rgba(255, 255, 255, 0.16)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-line-strongest",
+   "group": "colors",
+   "path": "line.strongest",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.30)",
+    "_dark": "rgba(255, 255, 255, 0.30)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-border",
+   "group": "colors",
+   "path": "border.DEFAULT",
+   "value": "{colors.line}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-border-muted",
+   "group": "colors",
+   "path": "border.muted",
+   "value": "{colors.line}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-border-subtle",
+   "group": "colors",
+   "path": "border.subtle",
+   "value": "{colors.line}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-border-emphasized",
+   "group": "colors",
+   "path": "border.emphasized",
+   "value": "{colors.line.strong}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-border-inverted",
+   "group": "colors",
+   "path": "border.inverted",
+   "value": {
+    "_light": "rgba(255, 255, 255, 0.10)",
+    "_dark": "rgba(0, 0, 0, 0.10)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-state-drop-indicator",
+   "group": "colors",
+   "path": "state.dropIndicator",
+   "value": "{colors.accent.solid}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-state-hover",
+   "group": "colors",
+   "path": "state.hover",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.055)",
+    "_dark": "rgba(255, 255, 255, 0.08)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-state-active",
+   "group": "colors",
+   "path": "state.active",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.10)",
+    "_dark": "rgba(255, 255, 255, 0.13)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-state-active-strong",
+   "group": "colors",
+   "path": "state.activeStrong",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.15)",
+    "_dark": "rgba(255, 255, 255, 0.18)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-state-selected",
+   "group": "colors",
+   "path": "state.selected",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.15)",
+    "_dark": "rgba(0, 0, 0, 0.15)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-dash",
+   "group": "colors",
+   "path": "dash",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.28)",
+    "_dark": "rgba(255, 255, 255, 0.30)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-highlight-primary",
+   "group": "colors",
+   "path": "highlight.primary",
+   "value": {
+    "_light": "#00000012",
+    "_dark": "#FFFFFF14"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-highlight-secondary",
+   "group": "colors",
+   "path": "highlight.secondary",
+   "value": {
+    "_light": "#0000000A",
+    "_dark": "#FFFFFF0A"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-edge-out",
+   "group": "colors",
+   "path": "edge.out",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.16)",
+    "_dark": "rgba(0, 0, 0, 0.62)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-edge-in",
+   "group": "colors",
+   "path": "edge.in",
+   "value": {
+    "_light": "rgba(255, 255, 255, 0.75)",
+    "_dark": "rgba(255, 255, 255, 0.10)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-mat-menu",
+   "group": "colors",
+   "path": "mat.menu",
+   "value": {
+    "_light": "rgba(250, 250, 252, 0.86)",
+    "_dark": "rgba(44, 44, 48, 0.88)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-mat-menu-solid",
+   "group": "colors",
+   "path": "mat.menuSolid",
+   "value": {
+    "_light": "rgba(250, 250, 252, 0.98)",
+    "_dark": "rgba(44, 44, 48, 0.97)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-mat-hud",
+   "group": "colors",
+   "path": "mat.hud",
+   "value": {
+    "_light": "rgba(247, 247, 250, 0.985)",
+    "_dark": "rgba(38, 38, 42, 0.985)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-mat-sheet",
+   "group": "colors",
+   "path": "mat.sheet",
+   "value": {
+    "_light": "rgba(242, 242, 245, 0.99)",
+    "_dark": "rgba(34, 34, 38, 0.99)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-mat-sidebar",
+   "group": "colors",
+   "path": "mat.sidebar",
+   "value": {
+    "_light": "rgba(239, 239, 243, 0.985)",
+    "_dark": "rgba(28, 28, 32, 0.985)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-scrim",
+   "group": "colors",
+   "path": "scrim.DEFAULT",
+   "value": {
+    "_light": "rgba(250, 250, 252, 0.86)",
+    "_dark": "rgba(30, 30, 34, 0.88)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-scrim-modal",
+   "group": "colors",
+   "path": "scrim.modal",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.60)",
+    "_dark": "rgba(0, 0, 0, 0.60)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-overlay",
+   "group": "colors",
+   "path": "overlay",
+   "value": {
+    "_light": "#00000073",
+    "_dark": "rgba(0, 0, 0, 0.62)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-surface-raised",
+   "group": "colors",
+   "path": "surface.raised",
+   "value": "{colors.mat.menu}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-surface-inset",
+   "group": "colors",
+   "path": "surface.inset",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.05)",
+    "_dark": "rgba(255, 255, 255, 0.06)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-wire-1",
+   "group": "colors",
+   "path": "wire.1",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.09)",
+    "_dark": "rgba(255, 255, 255, 0.10)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-wire-2",
+   "group": "colors",
+   "path": "wire.2",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.20)",
+    "_dark": "rgba(255, 255, 255, 0.22)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-wire-3",
+   "group": "colors",
+   "path": "wire.3",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.34)",
+    "_dark": "rgba(255, 255, 255, 0.38)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-wire-void",
+   "group": "colors",
+   "path": "wire.void",
+   "value": {
+    "_light": "rgba(0, 0, 0, 0.045)",
+    "_dark": "rgba(255, 255, 255, 0.05)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-accent-solid",
+   "group": "colors",
+   "path": "accent.solid",
+   "value": {
+    "_light": "{colors.systemBlue.light}",
+    "_dark": "{colors.systemBlue.dark}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-accent-hover",
+   "group": "colors",
+   "path": "accent.hover",
+   "value": {
+    "_light": "{colors.systemBlue.lightHover}",
+    "_dark": "{colors.systemBlue.darkHover}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-accent-contrast",
+   "group": "colors",
+   "path": "accent.contrast",
+   "value": {
+    "_light": "{colors.systemBlue.onLight}",
+    "_dark": "{colors.systemBlue.onDark}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-accent-fg",
+   "group": "colors",
+   "path": "accent.fg",
+   "value": {
+    "_light": "{colors.systemBlue.light}",
+    "_dark": "{colors.systemBlue.dark}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-accent-subtle",
+   "group": "colors",
+   "path": "accent.subtle",
+   "value": {
+    "_light": "color-mix(in srgb, {colors.systemBlue.light} 12%, transparent)",
+    "_dark": "color-mix(in srgb, {colors.systemBlue.dark} 14%, transparent)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-accent-muted",
+   "group": "colors",
+   "path": "accent.muted",
+   "value": {
+    "_light": "color-mix(in srgb, {colors.systemBlue.light} 22%, transparent)",
+    "_dark": "color-mix(in srgb, {colors.systemBlue.dark} 26%, transparent)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-accent-emphasized",
+   "group": "colors",
+   "path": "accent.emphasized",
+   "value": {
+    "_light": "{colors.systemBlue.lightHover}",
+    "_dark": "{colors.systemBlue.darkHover}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-accent-focus-ring",
+   "group": "colors",
+   "path": "accent.focusRing",
+   "value": {
+    "_light": "{colors.systemBlue.light}",
+    "_dark": "{colors.systemBlue.dark}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-danger-solid",
+   "group": "colors",
+   "path": "danger.solid",
+   "value": {
+    "_light": "{colors.systemRed.light}",
+    "_dark": "{colors.systemRed.dark}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-danger-hover",
+   "group": "colors",
+   "path": "danger.hover",
+   "value": {
+    "_light": "color-mix(in srgb, {colors.systemRed.light} 88%, black)",
+    "_dark": "color-mix(in srgb, {colors.systemRed.dark} 88%, white)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-danger-contrast",
+   "group": "colors",
+   "path": "danger.contrast",
+   "value": "#FFFFFF",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-danger-fg",
+   "group": "colors",
+   "path": "danger.fg",
+   "value": {
+    "_light": "{colors.systemRed.light}",
+    "_dark": "{colors.systemRed.dark}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-danger-subtle",
+   "group": "colors",
+   "path": "danger.subtle",
+   "value": {
+    "_light": "color-mix(in srgb, {colors.systemRed.light} 12%, transparent)",
+    "_dark": "color-mix(in srgb, {colors.systemRed.dark} 14%, transparent)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-danger-muted",
+   "group": "colors",
+   "path": "danger.muted",
+   "value": {
+    "_light": "color-mix(in srgb, {colors.systemRed.light} 22%, transparent)",
+    "_dark": "color-mix(in srgb, {colors.systemRed.dark} 26%, transparent)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-danger-emphasized",
+   "group": "colors",
+   "path": "danger.emphasized",
+   "value": {
+    "_light": "color-mix(in srgb, {colors.systemRed.light} 88%, black)",
+    "_dark": "color-mix(in srgb, {colors.systemRed.dark} 88%, white)"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-danger-focus-ring",
+   "group": "colors",
+   "path": "danger.focusRing",
+   "value": {
+    "_light": "{colors.systemRed.light}",
+    "_dark": "{colors.systemRed.dark}"
+   },
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-gray-solid",
+   "group": "colors",
+   "path": "gray.solid",
+   "value": "{colors.text.1}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-gray-hover",
+   "group": "colors",
+   "path": "gray.hover",
+   "value": "{colors.text.2}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-gray-contrast",
+   "group": "colors",
+   "path": "gray.contrast",
+   "value": "{colors.bg.panel}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-gray-fg",
+   "group": "colors",
+   "path": "gray.fg",
+   "value": "{colors.text.1}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-gray-subtle",
+   "group": "colors",
+   "path": "gray.subtle",
+   "value": "{colors.state.hover}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-gray-muted",
+   "group": "colors",
+   "path": "gray.muted",
+   "value": "{colors.state.active}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-gray-emphasized",
+   "group": "colors",
+   "path": "gray.emphasized",
+   "value": "{colors.state.activeStrong}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-gray-focus-ring",
+   "group": "colors",
+   "path": "gray.focusRing",
+   "value": "{colors.accent.solid}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-colors-focus-ring",
+   "group": "colors",
+   "path": "focusRing",
+   "value": "{colors.accent.solid}",
+   "export": "semanticColors",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-selection-swatch",
+   "group": "shadows",
+   "path": "selectionSwatch",
+   "value": "inset 0 0 0 1px rgba(255,255,255,0.18)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-selection-swatch-selected",
+   "group": "shadows",
+   "path": "selectionSwatchSelected",
+   "value": "inset 0 0 0 1px rgba(255,255,255,0.18), 0 0 0 2px rgba(255,255,255,0.60)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-selection-bar",
+   "group": "shadows",
+   "path": "selectionBar",
+   "value": "inset 0 0.5px 0 0 rgba(255,255,255,0.18), 0 0 0 0.5px rgba(0,0,0,0.34), 0 4px 10px rgba(0,0,0,0.22), 0 14px 36px rgba(0,0,0,0.34)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-selection-menu",
+   "group": "shadows",
+   "path": "selectionMenu",
+   "value": "inset 0 0.5px 0 0 rgba(255,255,255,0.18), 0 0 0 0.5px rgba(0,0,0,0.34), 0 6px 16px rgba(0,0,0,0.22), 0 22px 56px rgba(0,0,0,0.34)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-tray-console",
+   "group": "shadows",
+   "path": "trayConsole",
+   "value": "0 0 0 0.5px {colors.edge.out}, 0 2px 5px color-mix(in srgb, {colors.content.primary} 12%, transparent)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-band-pill",
+   "group": "shadows",
+   "path": "bandPill",
+   "value": "{shadows.edge}, {shadows.up}",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-placeholder",
+   "group": "shadows",
+   "path": "placeholder",
+   "value": "inset 0 0 0 0.5px {colors.line}",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-caption",
+   "group": "shadows",
+   "path": "caption",
+   "value": "inset 0 0.5px 0 0 {colors.line}",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-sidebar",
+   "group": "shadows",
+   "path": "sidebar",
+   "value": "inset -1px 0 0 0 {colors.line}",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-input-wrapper",
+   "group": "shadows",
+   "path": "inputWrapper",
+   "value": "inset 0 0 0 0.5px {colors.line.strong}, inset 0 1px 2px rgba(0, 0, 0, 0.06)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-top-bar",
+   "group": "shadows",
+   "path": "topBar",
+   "value": "0 0.5px 0 0 {colors.line}",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-avatar",
+   "group": "shadows",
+   "path": "avatar",
+   "value": "0 0 0 0.5px {colors.edge.out}",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-avatar-hover",
+   "group": "shadows",
+   "path": "avatarHover",
+   "value": {
+    "_light": "0 0 0 0.5px rgba(0, 0, 0, 0.30)",
+    "_dark": "0 0 0 0.5px rgba(0, 0, 0, 0.78)"
+   },
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-segment-track",
+   "group": "shadows",
+   "path": "segmentTrack",
+   "value": "inset 0 0.5px 1px 0 rgba(0, 0, 0, 0.06)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-segment-thumb",
+   "group": "shadows",
+   "path": "segmentThumb",
+   "value": "inset 0 0.5px 0 0 {colors.edge.in}, 0 0 0 0.5px {colors.edge.out}, 0 1px 3px rgba(0, 0, 0, 0.12)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-sm",
+   "group": "shadows",
+   "path": "sm",
+   "value": {
+    "_light": "0 0 0 0.5px {colors.edge.out}, 0 1px 2px rgba(0, 0, 0, 0.10)",
+    "_dark": "0 0 0 0.5px {colors.edge.out}, 0 1px 3px rgba(0, 0, 0, 0.40)"
+   },
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-md",
+   "group": "shadows",
+   "path": "md",
+   "value": {
+    "_light": "0 0 0 0.5px {colors.edge.out}, 0 2px 5px rgba(0, 0, 0, 0.08), 0 8px 22px rgba(0, 0, 0, 0.12)",
+    "_dark": "0 0 0 0.5px {colors.edge.out}, 0 2px 6px rgba(0, 0, 0, 0.40), 0 10px 28px rgba(0, 0, 0, 0.48)"
+   },
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-lg",
+   "group": "shadows",
+   "path": "lg",
+   "value": {
+    "_light": "0 0 0 0.5px {colors.edge.out}, 0 4px 10px rgba(0, 0, 0, 0.10), 0 18px 48px rgba(0, 0, 0, 0.20)",
+    "_dark": "0 0 0 0.5px {colors.edge.out}, 0 4px 12px rgba(0, 0, 0, 0.44), 0 22px 60px rgba(0, 0, 0, 0.60)"
+   },
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-up",
+   "group": "shadows",
+   "path": "up",
+   "value": {
+    "_light": "0 0 0 0.5px {colors.edge.out}, 0 -2px 6px rgba(0, 0, 0, 0.06), 0 -14px 40px rgba(0, 0, 0, 0.16)",
+    "_dark": "0 0 0 0.5px {colors.edge.out}, 0 -2px 8px rgba(0, 0, 0, 0.34), 0 -16px 46px rgba(0, 0, 0, 0.50)"
+   },
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-edge",
+   "group": "shadows",
+   "path": "edge",
+   "value": "inset 0 0.5px 0 0 {colors.edge.in}",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-menu",
+   "group": "shadows",
+   "path": "menu",
+   "value": {
+    "_light": "inset 0 0.5px 0 0 {colors.edge.in}, 0 0 0 0.5px {colors.edge.out}, 0 4px 10px rgba(0, 0, 0, 0.10), 0 18px 48px rgba(0, 0, 0, 0.20)",
+    "_dark": "inset 0 0.5px 0 0 {colors.edge.in}, 0 0 0 0.5px {colors.edge.out}, 0 4px 12px rgba(0, 0, 0, 0.44), 0 22px 60px rgba(0, 0, 0, 0.60)"
+   },
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-sheet",
+   "group": "shadows",
+   "path": "sheet",
+   "value": "inset 0 0.5px 0 0 {colors.edge.in}, 0 0 0 0.5px {colors.edge.out}, 0 8px 16px rgba(0, 0, 0, 0.10), 0 40px 100px rgba(0, 0, 0, 0.34)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-tooltip",
+   "group": "shadows",
+   "path": "tooltip",
+   "value": {
+    "_light": "0 8px 16px rgba(0, 0, 0, 0.16)",
+    "_dark": "0 8px 16px rgba(0, 0, 0, 0.55)"
+   },
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-focus",
+   "group": "shadows",
+   "path": "focus",
+   "value": "0 0 0 1px {colors.accent.solid}, 0 0 0 4px color-mix(in srgb, {colors.accent.solid} 34%, transparent)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-focus-inset",
+   "group": "shadows",
+   "path": "focusInset",
+   "value": "inset 0 0 0 2px {colors.accent.solid}",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-button-solid",
+   "group": "shadows",
+   "path": "buttonSolid",
+   "value": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.22), 0 1px 2px rgba(0, 0, 0, 0.16)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-shadows-button-secondary",
+   "group": "shadows",
+   "path": "buttonSecondary",
+   "value": "0 0 0 0.5px {colors.edge.out}, 0 1px 2px rgba(0, 0, 0, 0.10)",
+   "export": "semanticShadows",
+   "semantic": true
+  },
+  {
+   "var": "--chakra-gradients-window",
+   "group": "gradients",
+   "path": "window",
+   "value": "linear-gradient(180deg, color-mix(in srgb, {colors.bg} 88%, {colors.content.primary}) 0%, {colors.bg} 34%, color-mix(in srgb, {colors.bg} 96%, {colors.content.primary}) 100%)",
+   "export": "semanticGradients",
+   "semantic": true
+  }
+ ],
+ "textStyles": [
+  {
+   "name": "band.readout",
+   "value": {
+    "fontSize": "11px",
+    "lineHeight": "15px",
+    "fontWeight": "400"
+   }
+  },
+  {
+   "name": "band.record",
+   "value": {
+    "fontSize": "11px",
+    "lineHeight": "11px",
+    "fontWeight": "400",
+    "fontVariantNumeric": "tabular-nums"
+   }
+  },
+  {
+   "name": "band.label",
+   "value": {
+    "fontSize": "10px",
+    "lineHeight": "16px",
+    "fontWeight": "600",
+    "letterSpacing": "0.06em",
+    "textTransform": "uppercase"
+   }
+  },
+  {
+   "name": "status.badge",
+   "value": {
+    "fontSize": "10px",
+    "fontWeight": "500"
+   }
+  },
+  {
+   "name": "status.lead",
+   "value": {
+    "fontSize": "11px",
+    "lineHeight": "1.45"
+   }
+  },
+  {
+   "name": "heading.large",
+   "value": {
+    "fontSize": "17px",
+    "lineHeight": "22px",
+    "fontWeight": "600",
+    "letterSpacing": "-0.01em"
+   }
+  },
+  {
+   "name": "heading.medium",
+   "value": {
+    "fontSize": "13px",
+    "lineHeight": "16px",
+    "fontWeight": "600"
+   }
+  },
+  {
+   "name": "heading.small",
+   "value": {
+    "fontSize": "13px",
+    "lineHeight": "16px",
+    "fontWeight": "600"
+   }
+  },
+  {
+   "name": "body.large",
+   "value": {
+    "fontSize": "13px",
+    "lineHeight": "17px",
+    "fontWeight": "400"
+   }
+  },
+  {
+   "name": "body.medium",
+   "value": {
+    "fontSize": "12px",
+    "lineHeight": "15px",
+    "fontWeight": "400"
+   }
+  },
+  {
+   "name": "body.small",
+   "value": {
+    "fontSize": "11px",
+    "lineHeight": "14px",
+    "fontWeight": "400"
+   }
+  },
+  {
+   "name": "button",
+   "value": {
+    "fontSize": "12px",
+    "lineHeight": "15px",
+    "fontWeight": "500"
+   }
+  },
+  {
+   "name": "button.segment",
+   "value": {
+    "fontSize": "12px",
+    "lineHeight": "16px",
+    "fontWeight": "500"
+   }
+  },
+  {
+   "name": "label",
+   "value": {
+    "fontSize": "10px",
+    "lineHeight": "12px",
+    "fontWeight": "600",
+    "letterSpacing": "0.055em",
+    "textTransform": "uppercase"
+   }
+  },
+  {
+   "name": "accountName",
+   "value": {
+    "fontSize": "16px",
+    "lineHeight": "20px",
+    "fontWeight": "600"
+   }
+  },
+  {
+   "name": "accountEmail",
+   "value": {
+    "fontSize": "11px",
+    "lineHeight": "16px",
+    "fontWeight": "300"
+   }
+  },
+  {
+   "name": "saveState",
+   "value": {
+    "fontSize": "11px",
+    "lineHeight": "16px",
+    "fontWeight": "600"
+   }
+  },
+  {
+   "name": "nano",
+   "value": {
+    "fontSize": "9px",
+    "lineHeight": "11px",
+    "fontWeight": "400"
+   }
+  }
+ ]
+}

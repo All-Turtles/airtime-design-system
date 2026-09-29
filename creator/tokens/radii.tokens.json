@@ -1,0 +1,406 @@
+{
+  "$name": "Creator - radii",
+  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "radius": {
+    "stage": {
+      "$value": "8px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-stage",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 37,
+            "export": "radii",
+            "path": "stage"
+          },
+          "rendered": {
+            "light": "8px",
+            "dark": "8px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--radius-20",
+            "note": "value 8px equals org --radius-20"
+          },
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "selectionTrack": {
+      "$value": "9px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-selection-track",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 38,
+            "export": "radii",
+            "path": "selectionTrack"
+          },
+          "rendered": {
+            "light": "9px",
+            "dark": "9px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org radius token has value 9px"
+          },
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "roomTile": {
+      "$value": "6px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-room-tile",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 39,
+            "export": "radii",
+            "path": "roomTile"
+          },
+          "rendered": {
+            "light": "6px",
+            "dark": "6px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--radius-15",
+            "note": "value 6px equals org --radius-15"
+          },
+          "used": {
+            "all": 16
+          }
+        }
+      }
+    },
+    "titleLabel": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-title-label",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 40,
+            "export": "radii",
+            "path": "titleLabel"
+          },
+          "rendered": {
+            "light": "4px",
+            "dark": "4px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--radius-10",
+            "note": "value 4px equals org --radius-10"
+          },
+          "used": {
+            "all": 8
+          }
+        }
+      }
+    },
+    "xs": {
+      "$value": "3px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-xs",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 41,
+            "export": "radii",
+            "path": "xs"
+          },
+          "rendered": {
+            "light": "3px",
+            "dark": "3px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org radius token has value 3px"
+          },
+          "used": {
+            "all": 22
+          }
+        }
+      }
+    },
+    "sm": {
+      "$value": "5px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-sm",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 42,
+            "export": "radii",
+            "path": "sm"
+          },
+          "rendered": {
+            "light": "5px",
+            "dark": "5px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org radius token has value 5px"
+          },
+          "used": {
+            "all": 24
+          }
+        }
+      }
+    },
+    "md": {
+      "$value": "7px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-md",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 43,
+            "export": "radii",
+            "path": "md"
+          },
+          "rendered": {
+            "light": "7px",
+            "dark": "7px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org radius token has value 7px"
+          },
+          "used": {
+            "all": 280
+          }
+        }
+      }
+    },
+    "lg": {
+      "$value": "10px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-lg",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 44,
+            "export": "radii",
+            "path": "lg"
+          },
+          "rendered": {
+            "light": "10px",
+            "dark": "10px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--radius-25",
+            "note": "value 10px equals org --radius-25"
+          },
+          "used": {
+            "all": 140
+          }
+        }
+      }
+    },
+    "xl": {
+      "$value": "13px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-xl",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 45,
+            "export": "radii",
+            "path": "xl"
+          },
+          "rendered": {
+            "light": "13px",
+            "dark": "13px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org radius token has value 13px"
+          },
+          "used": {
+            "all": 52
+          }
+        }
+      }
+    },
+    "2xl": {
+      "$value": "14px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-2xl",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 46,
+            "export": "radii",
+            "path": "2xl"
+          },
+          "rendered": {
+            "light": "14px",
+            "dark": "14px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--radius-35",
+            "note": "value 14px equals org --radius-35"
+          },
+          "used": {
+            "all": 16
+          }
+        }
+      }
+    },
+    "3xl": {
+      "$value": "16px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-3xl",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 47,
+            "export": "radii",
+            "path": "3xl"
+          },
+          "rendered": {
+            "light": "16px",
+            "dark": "16px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--radius-40",
+            "note": "value 16px equals org --radius-40"
+          },
+          "used": {
+            "all": 8
+          }
+        }
+      }
+    },
+    "4xl": {
+      "$value": "22px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-4xl",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 48,
+            "export": "radii",
+            "path": "4xl"
+          },
+          "rendered": {
+            "light": "22px",
+            "dark": "22px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org radius token has value 22px"
+          },
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "5xl": {
+      "$value": "24px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-5xl",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 49,
+            "export": "radii",
+            "path": "5xl"
+          },
+          "rendered": {
+            "light": "24px",
+            "dark": "24px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--radius-60",
+            "note": "value 24px equals org --radius-60"
+          },
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "full": {
+      "$value": "9999px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-full",
+          "kind": "primitive",
+          "status": "declared",
+          "source": {
+            "file": "apps/airtime-creator/src/ui/tokens.ts",
+            "line": 50,
+            "export": "radii",
+            "path": "full"
+          },
+          "rendered": {
+            "light": "9999px",
+            "dark": "9999px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--radius-9999",
+            "note": "value 9999px equals org --radius-9999"
+          },
+          "used": {
+            "all": 62
+          }
+        }
+      }
+    }
+  }
+}
