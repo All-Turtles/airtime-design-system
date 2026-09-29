@@ -27,8 +27,7 @@
 .cr-pane-head { position: relative; display: flex; align-items: center; gap: var(--cr-space-2); min-width: 0; height: var(--cr-size-pane-header); flex: 0 0 auto; padding: 0 var(--cr-space-3) 0 var(--cr-space-4); }
 .cr-pane-head.has-back { padding-left: var(--cr-space-2-5); }
 .cr-pane-head::after { content: ""; position: absolute; left: var(--cr-space-4); right: var(--cr-space-3); bottom: 0; height: var(--cr-size-creator-hairline); background: var(--cr-color-line); }
-.cr-pane-title { flex: 1 1 auto; min-width: 0; margin: 0; color: var(--cr-color-text-1); font-size: 13px; font-weight: 500; line-height: 15px; letter-spacing: normal; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.cr-pane-actions { display: flex; align-items: center; gap: var(--cr-space-0-5); margin-right: calc(-1 * var(--cr-space-1-5)); flex: 0 0 auto; }
+.cr-pane-title { flex: 1 1 auto; min-width: 0; margin: 0; color: var(--cr-color-text-1); font-size: 13px; font-weight: 500; line-height: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.cr-pane-actions { display: flex; align-items: center; gap: var(--cr-space-0-5); margin-right: calc(-1 * var(--cr-space-1-5)); flex: 0 0 auto; }
 
 /* ── IconToggle.tsx: round ghost icon button ─────────────────────── */
 .cr-icontoggle { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: var(--cr-size-hit-header); height: var(--cr-size-hit-header); border-radius: var(--cr-radius-full); color: var(--cr-color-text-3); transition: var(--cr-transition-control); }
@@ -129,7 +128,7 @@ button.cr-row { line-height: normal; letter-spacing: normal; text-align: left; }
 .cr-field.is-geo { height: var(--cr-size-row); padding: 0 var(--cr-space-2); gap: var(--cr-space-1); }
 .cr-field.is-geo > [data-affix] { color: var(--cr-color-text-5); font-size: var(--cr-font-size-2xs); flex: 0 0 auto; }
 .cr-field.is-geo > [data-affix]:first-child { width: var(--cr-size-3); font-weight: 600; }
-.cr-field.is-pill { height: var(--cr-size-control); padding: 0 var(--cr-space-2-5); gap: var(--cr-space-1-5); background: var(--cr-color-pill-fill); box-shadow: var(--cr-shadow-pill); font-size: 13px; line-height: inherit; text-align: start; letter-spacing: inherit; color: var(--cr-color-text-2); }
+.cr-field.is-pill { height: var(--cr-size-control); padding: 0 var(--cr-space-2-5); gap: var(--cr-space-1-5); background: var(--cr-color-pill-fill); box-shadow: var(--cr-shadow-pill); font-size: 13px; line-height: inherit; text-align: start; letter-spacing: inherit; }
 .cr-field.is-pill .cr-icon { width: var(--cr-size-icon-chevron); height: var(--cr-size-icon-chevron); color: var(--cr-color-text-4); }
 .cr-field.is-pill:is(:focus-visible, .is-focus) { outline: none; box-shadow: var(--cr-shadow-focus); }
 .cr-field.is-pill.is-fill { flex: 1 1 auto; justify-content: space-between; }

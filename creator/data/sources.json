@@ -1,0 +1,261 @@
+{
+ "sb.card": [
+  {
+   "file": "creator/sidebar/Sidebar.tsx",
+   "line": 15,
+   "note": "export function Sidebar"
+  },
+  {
+   "file": "creator/sidebar/SidebarBody.tsx",
+   "line": 42,
+   "note": "data-testid=\"sidebar-scroll\""
+  }
+ ],
+ "sb.pane": [
+  {
+   "file": "ui/recipes/sidebarSectionSlotRecipe.ts",
+   "line": 35,
+   "note": "paneHeader: {"
+  },
+  {
+   "file": "creator/sidebar/primitives/PaneHeader.tsx",
+   "line": 20,
+   "note": "export function PaneHeader"
+  },
+  {
+   "file": "creator/sidebar/primitives/IconToggle.tsx",
+   "line": 11,
+   "note": "export function IconToggle"
+  }
+ ],
+ "sb.icontoggle": [
+  {
+   "file": "creator/sidebar/primitives/IconToggle.tsx",
+   "line": 11,
+   "note": "export function IconToggle"
+  }
+ ],
+ "sb.section": [
+  {
+   "file": "ui/recipes/sidebarSectionSlotRecipe.ts",
+   "line": 6,
+   "note": "defineSlotRecipe"
+  },
+  {
+   "file": "creator/sidebar/primitives/Section.tsx",
+   "line": 23,
+   "note": "export function Section("
+  },
+  {
+   "file": "creator/sidebar/primitives/Section.tsx",
+   "line": 44,
+   "note": "export function SectionHead"
+  },
+  {
+   "file": "creator/sidebar/primitives/Section.tsx",
+   "line": 78,
+   "note": "export function Rule"
+  },
+  {
+   "file": "creator/sidebar/primitives/Section.tsx",
+   "line": 83,
+   "note": "export function HeadLink"
+  }
+ ],
+ "sb.row": [
+  {
+   "file": "ui/recipes/sidebarRowRecipe.ts",
+   "line": 36,
+   "note": "variant: {"
+  },
+  {
+   "file": "creator/sidebar/primitives/Row.tsx",
+   "line": 49,
+   "note": "export function Row("
+  },
+  {
+   "file": "creator/sidebar/primitives/Row.tsx",
+   "line": 12,
+   "note": "export function RowLabel"
+  }
+ ],
+ "sb.action": [
+  {
+   "file": "ui/recipes/sidebarRowRecipe.ts",
+   "line": 53,
+   "note": "action: {"
+  },
+  {
+   "file": "creator/sidebar/primitives/Actions.tsx",
+   "line": 11,
+   "note": "export function ActionButtons"
+  },
+  {
+   "file": "creator/sidebar/primitives/Actions.tsx",
+   "line": 11,
+   "note": "export function ActionButton"
+  }
+ ],
+ "sb.seg": [
+  {
+   "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
+   "line": 44,
+   "note": "variants: {"
+  },
+  {
+   "file": "creator/sidebar/primitives/Segmented.tsx",
+   "line": 33,
+   "note": "export function Segmented"
+  }
+ ],
+ "sb.field": [
+  {
+   "file": "ui/recipes/sidebarFieldRecipe.ts",
+   "line": 43,
+   "note": "variants: {"
+  },
+  {
+   "file": "creator/sidebar/primitives/CommitInput.tsx",
+   "line": 9,
+   "note": "export"
+  },
+  {
+   "file": "creator/sidebar/primitives/GeoGrid.tsx",
+   "line": 16,
+   "note": "export function GeoGrid"
+  }
+ ],
+ "sb.slider": [
+  {
+   "file": "creator/sidebar/primitives/SliderRow.tsx",
+   "line": 29,
+   "note": "export function SliderRow"
+  },
+  {
+   "file": "creator/sidebar/primitives/popupPlacement.ts",
+   "line": 48,
+   "note": "sidebarPopupPositioning"
+  }
+ ],
+ "sb.dropdown": [
+  {
+   "file": "creator/sidebar/primitives/Dropdown.tsx",
+   "line": 26,
+   "note": "export function DropdownRow"
+  },
+  {
+   "file": "ui/recipes/sidebarFieldRecipe.ts",
+   "line": 70,
+   "note": "pill: {"
+  }
+ ],
+ "sb.colorwell": [
+  {
+   "file": "creator/sidebar/primitives/ColorWellRow.tsx",
+   "line": 45,
+   "note": "export function ColorWellRow"
+  },
+  {
+   "file": "creator/sidebar/primitives/Swatches.tsx",
+   "line": 24,
+   "note": "export function Swatches"
+  }
+ ],
+ "sb.swatches": [
+  {
+   "file": "creator/sidebar/primitives/Swatches.tsx",
+   "line": 24,
+   "note": "export function Swatches"
+  },
+  {
+   "file": "creator/sidebar/primitives/Swatches.tsx",
+   "line": 192,
+   "note": "export function NoneMark"
+  },
+  {
+   "file": "creator/sidebar/primitives/Swatches.tsx",
+   "line": 184,
+   "note": "export const noneDot"
+  }
+ ],
+ "sb.bggrid": [
+  {
+   "file": "creator/sidebar/primitives/BackgroundGrid.tsx",
+   "line": 11,
+   "note": "export function BackgroundGrid"
+  },
+  {
+   "file": "creator/sidebar/primitives/Swatches.tsx",
+   "line": 192,
+   "note": "export function NoneMark"
+  }
+ ],
+ "sb.thumbrow": [
+  {
+   "file": "creator/sidebar/primitives/ThumbRow.tsx",
+   "line": 14,
+   "note": "export function ThumbRow"
+  },
+  {
+   "file": "creator/sidebar/primitives/ThumbRow.tsx",
+   "line": 93,
+   "note": "export function LayerRow"
+  },
+  {
+   "file": "creator/sidebar/primitives/ThumbRow.tsx",
+   "line": 173,
+   "note": "export function LayoutRow"
+  },
+  {
+   "file": "creator/sidebar/primitives/ThumbRow.tsx",
+   "line": 192,
+   "note": "export function LogoRow"
+  },
+  {
+   "file": "creator/sidebar/primitives/ThumbFrame.tsx",
+   "line": 9,
+   "note": "export function ThumbFrame"
+  },
+  {
+   "file": "creator/sidebar/primitives/TransparencyChecker.tsx",
+   "line": 9,
+   "note": "export function TransparencyChecker"
+  }
+ ],
+ "sb.icons": [
+  {
+   "file": "creator/sidebar/icons.tsx",
+   "line": 14,
+   "note": "const sources"
+  },
+  {
+   "file": "creator/LegacyIcon.tsx",
+   "line": 30,
+   "note": "export function LegacyIcon"
+  },
+  {
+   "file": "../teleport/icons.js",
+   "line": 151,
+   "note": "var AppIcons"
+  }
+ ],
+ "sb.placeholder": [
+  {
+   "file": "creator/sidebar/primitives/Placeholder.tsx",
+   "line": 15,
+   "note": "export function Placeholder"
+  }
+ ],
+ "sb.popup": [
+  {
+   "file": "creator/sidebar/primitives/popupPlacement.ts",
+   "line": 48,
+   "note": "export const sidebarPopupPositioning"
+  },
+  {
+   "file": "creator/sidebar/primitives/popupPlacement.ts",
+   "line": 35,
+   "note": "export function popupAnchor"
+  }
+ ]
+}

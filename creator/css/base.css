@@ -17,7 +17,7 @@ a { color: var(--cr-color-accent-fg); text-decoration: none; } a:hover { text-de
 .doc-nav .themebtn { margin-top: 14px; padding: 4px 10px; border-radius: 7px; border: 0; background: var(--cr-color-state-hover); color: var(--cr-color-text-2); cursor: pointer; font-size: 11px; }
 .doc-main { padding: 0 40px 120px; min-width: 0; max-width: 1400px; }
 .doc-main > section { padding-top: 48px; }
-.doc-main h2 { font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 6px; }
+.doc-main > section > h2 { font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 6px; }
 .doc-main h3 { font-size: 15px; line-height: 20px; font-weight: 600; margin: 34px 0 8px; }
 .doc-main h4 { font-size: 12px; line-height: 16px; font-weight: 600; margin: 16px 0 6px; color: var(--cr-color-text-2); text-transform: uppercase; letter-spacing: 0.055em; }
 .lede { max-width: 78ch; color: var(--cr-color-text-3); margin: 0 0 16px; }

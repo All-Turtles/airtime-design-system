@@ -1,0 +1,282 @@
+[
+ {
+  "theme": "light",
+  "name": "card",
+  "status": "match",
+  "checked": 9,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "pane title",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "header toggle (Hide)",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "back toggle",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "action button (Duplicate)",
+  "status": "match",
+  "checked": 17,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "row (Border)",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "row label (Border)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "segmented track (Background)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "segmented item (Blurred)",
+  "status": "match",
+  "checked": 17,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "segmented item selected (Visible)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "shape item (Rectangle)",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "shape track",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "aspect chip (1:1)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "value field (Opacity)",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "geo field (X)",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "dropdown row (Effects)",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "dropdown pill (Effects)",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "rule",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "tint dot",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "light",
+  "name": "head link (Reset crop)",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "card",
+  "status": "match",
+  "checked": 9,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "pane title",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "header toggle (Hide)",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "back toggle",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "action button (Duplicate)",
+  "status": "match",
+  "checked": 17,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "row (Border)",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "row label (Border)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "segmented track (Background)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "segmented item (Blurred)",
+  "status": "match",
+  "checked": 17,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "segmented item selected (Visible)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "shape item (Rectangle)",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "shape track",
+  "status": "match",
+  "checked": 5,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "aspect chip (1:1)",
+  "status": "match",
+  "checked": 6,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "value field (Opacity)",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "geo field (X)",
+  "status": "match",
+  "checked": 7,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "dropdown row (Effects)",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "dropdown pill (Effects)",
+  "status": "match",
+  "checked": 8,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "rule",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "tint dot",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ },
+ {
+  "theme": "dark",
+  "name": "head link (Reset crop)",
+  "status": "match",
+  "checked": 4,
+  "diffs": []
+ }
+]

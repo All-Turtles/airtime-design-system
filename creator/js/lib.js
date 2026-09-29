@@ -47,7 +47,7 @@ export function pattern(p) {
   const stage = (th) => `<div class="stage" data-theme="${th}"><div class="tag">${th}</div>${body}</div>`;
   const toks = tokensUsed(p.css ?? []);
   const rel = p.org ? badge(p.org[0], p.org[1]) : "";
-  return `<article class="pattern" id="${p.id}"><header><h3>${p.title}</h3>${rel}<span class="muted">${p.org?.[1] ? esc(p.org[1]) : ""}</span></header>${p.note ? `<p class="note">${p.note}</p>` : ""}${anat}
+  return `<article class="pattern" id="${p.id}"><header><h3>${p.title}</h3>${rel}<span class="muted">${p.org?.[1] ? esc(p.org[1]) : ""}</span></header>${p.note ? `<p class="note">${p.note.replace(/`([^`]+)`/g, "<code>$1</code>")}</p>` : ""}${anat}
   <div class="stage-pair">${stage("light")}${stage("dark")}</div>
   <footer><h4 style="margin-top:0">Source</h4>${srcList(p.src)}<h4>Tokens used (scanned from ${(p.css ?? []).map((c) => "." + c).join(", ")})</h4><div class="chips">${toks.map(tokChip).join("") || '<span class="muted">none</span>'}</div></footer></article>`;
 }
