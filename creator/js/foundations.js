@@ -100,6 +100,8 @@ export function foundations(root) {
   const untHtml = `<p class="lede">Rendered values (whole app, all four panes, both themes) that no token explains: the audit's list of drift. Counts are elements.</p>${Object.entries(unt).map(([k, l]) => l.length ? `<h4>${k}</h4><table class="spec"><tr><th style="width:160px">Value</th><th style="width:60px">Elements</th><th>Examples</th></tr>${l.map((t) => `<tr><td class="mono">${esc(t.value)}</td><td>${t.n}</td><td class="src">${t.ex.map(esc).join(", ")}</td></tr>`).join("")}</table>` : "").join("")}
   <h4>Sidebar colours not in any token or derived token</h4><table class="spec"><tr><th>Theme</th><th>Prop</th><th>Value</th><th>Elements</th></tr>${S.unmatched.length ? S.unmatched.map((u) => `<tr><td>${u.theme}</td><td>${u.prop}</td><td class="mono">${esc(u.value)}</td><td>${u.n}</td></tr>`).join("") : '<tr><td colspan="4">none</td></tr>'}</table>`;
 
+  const zero = S.index.tokens.filter((t) => t.status === "declared" && t.used && ((t.used.all ?? 0) + (t.used.light ?? 0) + (t.used.dark ?? 0)) === 0 && t.category !== "aspect-ratios");
+  const zeroHtml = `<h4>Declared tokens not observed in the resting ledger (${zero.length})</h4><p class="lede">Not proof they are dead: hover, focus, open popups, menus, dialogs and other panes are not in the resting ledger. Candidates for the CSS audit.</p><div class="chips">${zero.map((t) => `<span class="chip"><a href="#tok-${t.css.slice(5)}">${t.css.slice(5)}</a></span>`).join("")}</div>`;
   const sec = (id, title, lede, body) => `<section id="${id}"><h2>${title}</h2>${lede ? `<p class="lede">${lede}</p>` : ""}${body}</section>`;
   root.innerHTML = [
     sec("f-color", "Color", "Semantic (role) and primitive (raw) colours, light and dark side by side. Values are what the browser resolved from the running app, not what tokens.ts says.", colorHtml + (orphans.length ? `<h4>Other</h4>${table(orphans, pvColor)}` : "")),
@@ -113,7 +115,7 @@ export function foundations(root) {
     sec("f-z", "Z-index", "", zHtml),
     sec("f-opacity", "Opacity and disabled", "", opacityHtml),
     sec("f-focus", "Focus ring", "", focusHtml),
-    sec("f-untokenized", "Audit: untokenized values", "", untHtml),
+    sec("f-untokenized", "Audit: untokenized values", "", untHtml + zeroHtml),
   ].join("");
   root.querySelectorAll(".mplay").forEach((el) => el.addEventListener("click", () => { const i = el.firstElementChild; const d = el.dataset.d; i.style.transition = "none"; i.style.left = "2px"; requestAnimationFrame(() => requestAnimationFrame(() => { i.style.transition = `left ${d} ease-out`; i.style.left = `calc(100% - 18px)`; })); }));
   hydrateIcons(root);
