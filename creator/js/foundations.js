@@ -1,4 +1,4 @@
-import { S, esc, badge, hydrateIcons } from "./lib.js";
+import { S, esc, badge, hydrateIcons, tokenProv, provBadge } from "./lib.js";
 
 const T = (f) => S.index.tokens.filter(f);
 const val = (t, m) => (t.rendered ? t.rendered[m] : "");
@@ -14,9 +14,9 @@ function row(t, pv) {
   const via = t.kind !== "derived" && t.declared ? "" : "";
   return `<div class="tok" id="tok-${t.css.slice(5)}"><div>${pv}</div><div><div class="name">${t.css}</div><div class="kind">${t.kind}${t.status === "chakra-default" ? " · chakra default" : t.status === "derived" ? " · derived from recipe literal" : ""}</div></div>
   <div class="vals">${vals}</div><div class="mono">${usedTxt(t)}</div>
-  <div><div class="from">${srcTxt(t)}</div>${badge(t.org.relation, t.org.note)}${t.org.org ? ` <span class="from">${esc(t.org.org)}</span>` : ""}${t.org.relation === "differs" ? `<div class="from">${esc(short(t.org.note, 140))}</div>` : ""}</div></div>`;
+  <div><div class="from">${srcTxt(t)}</div>${tokenProv(t.css)}</div></div>`;
 }
-const head = (extra = "") => `<div class="tok head"><div>Preview</div><div>Token</div><div>Resolved value (rendered)</div><div>Used*</div><div>Source · org relationship</div></div>`;
+const head = (extra = "") => `<div class="tok head"><div>Preview</div><div>Token</div><div>Resolved value (rendered)</div><div>Used*</div><div>Source · audit provenance (bucket, matched source, exclusivity)</div></div>`;
 const table = (list, pv) => head() + list.map((t) => row(t, pv(t))).join("");
 
 const pvColor = (t) => `<div class="pv checkerbg"><i data-theme="light" style="background:var(${t.css})"></i><i data-theme="dark" style="background:var(${t.css})"></i></div>`;
@@ -52,8 +52,8 @@ export function foundations(root) {
   <h4>Letter-spacing</h4>${table(lsp.concat(T((t) => t.css === "--cr-letter-spacing-sidebar")), (t) => `<div style="font-size:12px;letter-spacing:var(${t.css});white-space:nowrap;text-transform:uppercase">Label ${t.css.slice(5)}</div>`)}
   <h4>Line-heights</h4>${table(lh.concat(T((t) => t.css === "--cr-line-height-sidebar")), (t) => `<div class="mono">${val(t, "light")}</div>`)}
   <h4>Text styles (roles)</h4><p class="lede">A control's type is chosen by what it is. Each pairs size, line height, weight (and tracking/case) and is emitted as <code>.cr-text-*</code> in tokens/text-styles.css.</p>
-  <div class="tok head" style="grid-template-columns:1.4fr 1.2fr 1.4fr 1.6fr"><div>Sample</div><div>Style</div><div>Metrics</div><div>Source · org relationship</div></div>
-  ${styles.map((s) => `<div class="tok" style="grid-template-columns:1.4fr 1.2fr 1.4fr 1.6fr"><div><span class="${s.css}">The quick brown fox</span></div><div><div class="name">${s.css}</div></div><div class="vals">${Object.entries(s.value).map(([k, v]) => `${k}: ${v}`).join("; ")}</div><div><div class="from">${s.source.file.replace("apps/airtime-creator/src/", "")}:${s.source.line}</div>${badge(s.org.relation, s.org.note)} <span class="from">${esc(s.org.org ?? "")}</span> <div class="from">${esc(s.org.note)}</div></div></div>`).join("")}`;
+  <div class="tok head" style="grid-template-columns:1.4fr 1.2fr 1.4fr 1.6fr"><div>Sample</div><div>Style</div><div>Metrics</div><div>Source · audit provenance (bucket, matched source, exclusivity)</div></div>
+  ${styles.map((s) => `<div class="tok" style="grid-template-columns:1.4fr 1.2fr 1.4fr 1.6fr"><div><span class="${s.css}">The quick brown fox</span></div><div><div class="name">${s.css}</div></div><div class="vals">${Object.entries(s.value).map(([k, v]) => `${k}: ${v}`).join("; ")}</div><div><div class="from">${s.source.file.replace("apps/airtime-creator/src/", "")}:${s.source.line}</div><span class="from">text styles are composite: no single audit row; see the size/weight/line tokens above. Manual comparison with org ${esc(s.org.org ?? "none")}: ${esc(s.org.relation)}</span></div></div>`).join("")}`;
 
   // ── spacing / sizes ───────────────────────────────────
   const sp = T((t) => t.category === "spacing").sort((a, b) => parseFloat(val(a, "light")) - parseFloat(val(b, "light")));

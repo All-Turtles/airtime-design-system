@@ -4,6 +4,7 @@ export const S = { tokens: null, sources: {}, index: null };
 export async function load() {
   S.index = await (await fetch("data/tokens-index.json")).json();
   S.tokens = new Map(S.index.tokens.map((t) => [t.css, t]));
+  try { S.audit = await (await fetch("data/audit.json")).json(); } catch { S.audit = null; }
   S.untok = await (await fetch("data/untokenized.json")).json();
   S.unmatched = await (await fetch("data/unmatched.json")).json();
   try { S.sources = await (await fetch("data/sources.json")).json(); } catch { S.sources = {}; }
@@ -26,6 +27,19 @@ export const MASKS = { maskRectangle: "MaskRectangle", maskSquare: "MaskSquare",
 export const si = (n, cls = "") => (MASKS[n] ? mask(MASKS[n], cls) : icon(SIDE[n] ?? n, cls));
 
 export const ORGTXT = { same: "same as airtime-design-system", differs: "differs", "creator-only": "creator-only" };
+/* provenance (from the CSS audit) replaces the old value-only org badge */
+export const BUCKET_CLS = (sub) => (sub === "airtime-design-system" ? "ds" : /^creator-v2/.test(sub) ? "rd" : /^legacy/.test(sub) ? "lg" : sub === "unmatched" ? "un" : "st");
+export const provBadge = (sub) => `<span class="org prov-${BUCKET_CLS(sub)}">${esc(sub)}</span>`;
+export const EXC = { "exclusive to DS": "prov-ds", "shared with prototypes": "prov-rd", "not DS": "prov-none", none: "prov-none" };
+export function tokenProv(css) {
+  const a = S.audit?.tokens?.[css];
+  if (!a) return `<span class="from">no audit data</span>`;
+  if (!a.found) return `<span class="org prov-none">not in audit</span> <span class="from">no declaration with this name or literal was captured</span>`;
+  const L = a.light, D = a.dark; const same = L.bucket === D.bucket && L.src === D.src;
+  const one = (x, th) => `${th ? `<span class="from">${th}</span> ` : ""}${provBadge(x.sub)} <span class="from">${esc(x.src || "no source")}${x.weak ? " (weak value)" : ""}</span>`;
+  const flags = [a.light.status === "overridden-everywhere" ? "dead (loses cascade)" : "", !a.light.used ? "unused rule" : ""].filter(Boolean).join(", ");
+  return `${same ? one(L) : one(L, "light") + "<br>" + one(D, "dark")}<div><span class="org ${EXC[a.exclusivity] ?? "prov-none"}">${a.exclusivity}</span>${flags ? ` <span class="org prov-un">${flags}</span>` : ""}</div>`;
+}
 export const badge = (rel, note) => `<span class="org ${rel}" title="${esc(note ?? "")}">${ORGTXT[rel]}</span>`;
 
 /* tokens a class family uses: scans the loaded stylesheets, so it can never drift from the CSS shown */
@@ -51,10 +65,26 @@ export function pattern(p) {
   const body = p.raw ? groups : card(groups, { compact: true });
   const stage = (th) => `<div class="stage" data-theme="${th}"><div class="tag">${th}</div>${body}</div>`;
   const toks = tokensUsed(p.css ?? []);
-  const rel = p.org ? badge(p.org[0], p.org[1]) : "";
-  return `<article class="pattern" id="${p.id}"><header><h3>${p.title}</h3>${rel}<span class="muted">${p.org?.[1] ? esc(p.org[1]) : ""}</span></header>${p.note ? `<p class="note">${p.note.replace(/`([^`]+)`/g, "<code>$1</code>")}</p>` : ""}${anat}
+  const rel = auditBadges(p.id);
+  return `<article class="pattern" id="${p.id}"><header><h3>${p.title}</h3>${rel}</header>${p.org?.[1] ? `<p class="note muted" style="font-size:11px;margin-bottom:2px">Manual comparison with the org system: ${esc(p.org[1])}</p>` : ""}${p.note ? `<p class="note">${p.note.replace(/`([^`]+)`/g, "<code>$1</code>")}</p>` : ""}${anat}
   <div class="stage-pair">${stage("light")}${stage("dark")}</div>
-  <footer><h4 style="margin-top:0">Source</h4>${srcList(p.src)}<h4>Tokens used (scanned from ${(p.css ?? []).map((c) => "." + c).join(", ")})</h4><div class="chips">${toks.map(tokChip).join("") || '<span class="muted">none</span>'}</div></footer></article>`;
+  ${auditBlock(p.id)}<footer><h4 style="margin-top:0">Source</h4>${srcList(p.src)}<h4>Tokens used (scanned from ${(p.css ?? []).map((c) => "." + c).join(", ")})</h4><div class="chips">${toks.map(tokChip).join("") || '<span class="muted">none</span>'}</div></footer></article>`;
 }
 /* build helpers for the recurring markup */
 export const btn = (cls, attrs, inner) => `<button type="button" class="cr-btn0 ${cls}" ${attrs ?? ""}>${inner}</button>`;
+
+/* per-pattern audit: bucket mix, exclusivity, and the declarations to clean */
+export function auditBadges(id) {
+  const a = S.audit?.patterns?.[id]; if (!a || !a.attributable) return `<span class="org prov-none" title="No CSS declarations are attributed to this pattern's files in the audit">audit: no attributed CSS</span>`;
+  const pc = (n) => Math.round((100 * n) / a.attributable);
+  return `<span class="org prov-ds" title="value matches the DS (DS wins ties)">DS ${pc(a.ds)}%</span><span class="org prov-rd">redesign ${pc(a.redesign)}%</span>${a.legacy ? `<span class="org prov-lg">legacy ${pc(a.legacy)}%</span>` : ""}<span class="org prov-un">one-off ${a.unmatched}</span>${a.dead ? `<span class="org prov-un">dead ${a.dead}</span>` : ""}`;
+}
+export function auditBlock(id) {
+  const a = S.audit?.patterns?.[id]; if (!a || !a.attributable) return "";
+  const li = (arr, cls) => arr.length ? `<table class="spec"><tr><th>Property: value</th><th>Rule file</th><th>Theme</th><th>${cls === "dead" ? "Cascade" : "Matched source"}</th></tr>${arr.map((x) => `<tr><td class="src">${esc(x.prop)}: ${esc(x.value)}</td><td class="src">${esc(x.file)}</td><td>${x.themes}</td><td class="src">${esc(cls === "dead" ? x.status : x.src || "no match")}</td></tr>`).join("")}</table>` : `<div class="muted">none captured</div>`;
+  return `<div class="sub auditblock"><h4>Audit: what to clean (files: ${a.files.map((f) => esc(f.split("/").pop())).join(", ")})</h4>
+  <p class="lede" style="margin:0 0 6px">${a.total} distinct declarations attributed to these files: ${a.ds} value-match the DS (${a.dsExclusive} exclusively), ${a.redesign} the creator-v2 redesign, ${a.legacy} legacy/other, <b>${a.unmatched} unmatched</b>, ${a.structural} structural; <b>${a.dead} dead</b> (lose the cascade everywhere sampled), ${a.unusedRule} in rules never matched; ${a.legacyN} from legacy stylesheets. Attribution is by the component that rendered the rule, so recipe output is counted under its host component.</p>
+  <details><summary><b>${a.unmatched}</b> one-off literals (unmatched, in rules that matched; first ${a.lists.oneOff.length})</summary>${li(a.lists.oneOff, "one")}</details>
+  <details><summary><b>${a.dead}</b> dead declarations (first ${a.lists.dead.length})</summary>${li(a.lists.dead, "dead")}</details>
+  ${a.legacyN ? `<details><summary><b>${a.legacyN}</b> legacy declarations</summary>${li(a.lists.legacy, "lg")}</details>` : ""}</div>`;
+}

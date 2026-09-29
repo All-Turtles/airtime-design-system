@@ -53,7 +53,7 @@ table.spec td { padding: 5px 8px 5px 0; border-bottom: 0.5px solid var(--cr-colo
 .src { font-family: var(--cr-font-family-mono); font-size: 10.5px; color: var(--cr-color-text-3); word-break: break-all; }
 .pattern > footer { padding: 10px 16px 14px; border-top: 0.5px solid var(--cr-color-line); }
 /* token tables */
-.tok { display: grid; grid-template-columns: 96px minmax(210px, 1.1fr) minmax(0, 2fr) 60px 180px; gap: 0 12px; align-items: center; padding: 5px 0; border-bottom: 0.5px solid var(--cr-color-line); font-size: 11px; }
+.tok { display: grid; grid-template-columns: 96px minmax(200px, 1fr) minmax(0, 1.3fr) 56px minmax(340px, 1.7fr); gap: 0 12px; align-items: center; padding: 5px 0; border-bottom: 0.5px solid var(--cr-color-line); font-size: 11px; }
 .tok.head { font-size: 10px; text-transform: uppercase; letter-spacing: 0.055em; color: var(--cr-color-text-4); font-weight: 600; position: sticky; top: 0; background: var(--cr-color-bg-panel); z-index: 2; }
 .tok .name { font-family: var(--cr-font-family-mono); font-size: 11px; word-break: break-all; }
 .tok .vals { color: var(--cr-color-text-3); font-family: var(--cr-font-family-mono); font-size: 10.5px; word-break: break-word; }
@@ -75,3 +75,13 @@ table.spec td { padding: 5px 8px 5px 0; border-bottom: 0.5px solid var(--cr-colo
 .stage.pad { padding: 16px 20px; }
 .ctx-bar { padding: 0; }
 .cell .cr-hud, .cell .cr-split, .cell .cr-glass, .cell .cr-tray-controls, .cell .cr-cropbar { width: fit-content; }
+.org.prov-ds { background: color-mix(in srgb, #34c759 18%, transparent); color: #1f7a38; }
+.org.prov-rd { background: color-mix(in srgb, var(--cr-color-accent-solid) 16%, transparent); color: var(--cr-color-accent-fg); }
+.org.prov-lg { background: color-mix(in srgb, #ff9f0a 22%, transparent); color: #8a5300; }
+.org.prov-un { background: color-mix(in srgb, #ff453a 16%, transparent); color: #b3261e; }
+.org.prov-st, .org.prov-none { background: var(--cr-color-state-hover); color: var(--cr-color-text-3); }
+[data-theme="dark"] .org.prov-ds { color: #6ee08a; } [data-theme="dark"] .org.prov-lg { color: #ffc35c; } [data-theme="dark"] .org.prov-un { color: #ff8a80; }
+.pattern > header .org { margin-right: -4px; }
+.auditblock details { margin: 6px 0; } .auditblock summary { cursor: pointer; font-size: 12px; } .auditblock table { margin: 6px 0 10px; }
+.bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 0.5px var(--cr-color-line-strong); max-width: 640px; }
+.bar > i { display: block; } .bar .b-ds { background: #34c759; } .bar .b-rd { background: var(--cr-color-accent-solid); } .bar .b-lg { background: #ff9f0a; } .bar .b-un { background: #ff453a; }
