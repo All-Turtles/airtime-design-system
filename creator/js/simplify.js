@@ -32,7 +32,7 @@ const PK = ["P0", "P1", "P2r", "P2", "P3"];
     ["Colour tokens (referenced by a rendered rule)", "", B.colors.referenced, (p) => p.colors.referencedAfter],
     ["Text styles", `${org.type.styles}`, B.type.textStyles, (p) => p.textStyles.after],
     ["Font sizes rendered (distinct)", `${org.type.fontSizes}`, B.type.renderedSizes.light, (p) => p.fontSize.after],
-    ["Line heights rendered (distinct)", `${org.type.lineHeights}`, B.type.renderedLineHeights.light, (p) => p.lineHeight.after],
+    ["Line heights rendered (distinct)", `${org.type.lineHeights}`, P.P0.lineHeight.before, (p) => p.lineHeight.after],
     ["Spacing steps rendered (padding, margin, gap, 2 to 64px)", `${org.spacing.space} <span class="muted">(+${org.spacing.size - org.spacing.space} size steps)</span>`, P.P0.spacing.before, (p) => p.spacing.after],
     ["Radii rendered (distinct px)", `${org.radii}`, P.P0.radius.before, (p) => p.radius.after],
   ];
