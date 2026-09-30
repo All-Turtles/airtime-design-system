@@ -23,7 +23,7 @@ creator/
   js/                 main.js (views, nav), human.js (Overview), eng.js (Engineering), atoms.js, patterns.js,
                       areas.js (the component registries), components.js (markup builders), view.js, lib.js,
                       icons.js (inline copies of public org icons)
-  data/               overview.json (numbers and swatch values), tokens.json (all tokens and text styles)
+  data/               tokens.json (every token, the org color list and the color proposal; all page counts come from it)
   tokens/
     tokens.css        Creator custom properties, prefix --cr-, [data-theme=light|dark]
     text-styles.css   .cr-text-* classes
@@ -41,4 +41,4 @@ Creator tokens sit on top of the org tokens. `tokens/org/tokens.css` is a verbat
 
 ## Icons
 
-Icons are the public Airtime icons from `icons/`, inlined by `js/icons.js` and recolored to `currentColor`. The Engineering view lists which org icon each control uses, and which controls have only a near match or no match (those show a neutral ring).
+Icons are the public Airtime icons from `icons/`, inlined by `js/icons.js` and recolored to `currentColor`. The Engineering view lists which org icon each control uses, and which controls have only a near match, or no match (a neutral ring shows for those). Today every control has an org icon and a few are near matches.

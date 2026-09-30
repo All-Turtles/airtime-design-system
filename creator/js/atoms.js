@@ -42,7 +42,7 @@ const TS = ["default", "hover", "focus", "selected", "disabled"];
 const toolItem = (ic, c, n) => `<div class="cr-seg is-tool"><button type="button" class="cr-btn0 cr-seg-item ${c}" aria-label="${n}" aria-pressed="${n === "selected"}" ${dis(n)}>${si(ic)}</button></div>`;
 add("Buttons", "btn-tool", "Tool-strip toggle", "A small square tool inside a strip: text alignment, bold, italic.", {
   surface: SB, tokens: ["text-3", "text-1", "state-selected", "size-control", "radius-md"], classes: ["cr-seg", "is-tool", "cr-seg-item", "is-fill"], states: TS,
-  cells: [...st(TS, (c, n) => toolItem("textAlignCenter", c, n)), ["strip", seg("tool", [{ icon: "textAlignLeft", label: "Left" }, { icon: "textAlignCenter", label: "Center" }, { icon: "textAlignRight", label: "Right" }], { on: 1 })], ["toggles", seg("tool", [{ icon: "bold", label: "Bold" }, { icon: "italic", label: "Italic" }, { text: "<u>U</u>", label: "Underline" }], { mode: "toggle", on: [0, 2] })]],
+  cells: [...st(TS, (c, n) => toolItem("textAlignCenter", c, n)), ["strip", seg("tool", [{ icon: "textAlignLeft", label: "Left" }, { icon: "textAlignCenter", label: "Center" }, { icon: "textAlignRight", label: "Right" }], { on: 1 })], ["toggles", seg("tool", [{ icon: "bold", label: "Bold" }, { icon: "italic", label: "Italic" }, { icon: "underline", label: "Underline" }], { mode: "toggle", on: [0, 2] })]],
 });
 const segState = (c, n) => `<div class="w180">${seg("segmented", [{ text: "Visible", cls: n === "selected" ? "is-selected" : "" }, { text: "Blurred", cls: n === "selected" ? "" : c, dis: n === "disabled" }, { text: "Hidden" }], { on: n === "selected" ? 0 : 0 })}</div>`;
 add("Buttons", "btn-segment", "Segmented item", "Pick one of a few options. The selected item is filled.", {

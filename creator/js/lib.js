@@ -1,8 +1,8 @@
 // Small helpers for the page. No framework: template strings.
 import { ICONS } from "./icons.js";
 export const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-export const S = { data: null, tokens: null };
-export async function load() { S.data = await (await fetch("data/overview.json")).json(); }
+export const S = { tokens: null };
+export async function load() { await loadTokens(); }
 export async function loadTokens() { if (!S.tokens) S.tokens = await (await fetch("data/tokens.json")).json(); return S.tokens; }
 
 /* Icons come from the public Airtime icon set (see js/icons.js). Unknown names fall back to a neutral ring. */

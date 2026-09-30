@@ -22,6 +22,7 @@ export function cardHtml(it) {
 
 export function iconGaps() {
   const rows = Object.entries(ICON_SRC).filter(([, v]) => v.match !== "exact");
+  const gaps = rows.filter(([, v]) => v.match === "gap").length;
   const li = rows.map(([k, v]) => `<li><span class="ico20">${si(k)}</span><div><b>${esc(v.note || k)}</b><small>${v.match === "gap" ? "No org icon fits. Shows a neutral ring." : "Closest org icon"}: ${esc(v.file)}</small></div></li>`).join("");
-  return `<article class="at-card" id="icon-gaps"><div class="at-preview"><div class="at-pair is-single"><div class="at-theme at-window cr-ctx"><ul class="gap-list">${li}</ul></div></div></div><footer><h3>Icon gaps</h3><p>Controls where the org icon set has no exact match. Near matches use the closest org icon; gaps use a neutral ring until an icon is drawn.</p></footer></article>`;
+  return `<article class="at-card" id="icon-gaps"><div class="at-preview"><div class="at-pair is-single"><div class="at-theme at-window cr-ctx"><ul class="gap-list">${li}</ul></div></div></div><footer><h3>Icon near matches</h3><p>${rows.length ? `${rows.length} controls use the closest org icon because no exact one exists. ${gaps ? `${gaps} have no fit and show a neutral ring.` : "None are left without an icon."}` : "Every control has an exact org icon."}</p></footer></article>`;
 }

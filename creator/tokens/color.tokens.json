@@ -1382,7 +1382,7 @@
             "org": {
               "relation": "differs",
               "org": "--color-background-primary",
-              "note": "window ground; org is a teal-tinted near-black/#F5F5F5, creator is neutral macOS grey (creator rgb(233, 233, 236) / rgb(19, 19, 21); org #F5F5F5 / #0A0D0E)"
+              "note": "window ground; org is a teal-tinted near-black/#F5F5F5, creator is neutral macOS gray (creator rgb(233, 233, 236) / rgb(19, 19, 21); org #F5F5F5 / #0A0D0E)"
             },
             "alias": null,
             "used": {
@@ -1408,7 +1408,7 @@
             "org": {
               "relation": "differs",
               "org": "--color-background-primary",
-              "note": "window ground; org is a teal-tinted near-black/#F5F5F5, creator is neutral macOS grey (creator rgb(233, 233, 236) / rgb(19, 19, 21); org #F5F5F5 / #0A0D0E)"
+              "note": "window ground; org is a teal-tinted near-black/#F5F5F5, creator is neutral macOS gray (creator rgb(233, 233, 236) / rgb(19, 19, 21); org #F5F5F5 / #0A0D0E)"
             },
             "alias": null,
             "used": {

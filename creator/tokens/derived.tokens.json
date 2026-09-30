@@ -357,7 +357,7 @@
     "stage-guide": {
       "$value": "#FFFFFF",
       "$type": "color",
-      "$description": "Anchor snap lines (thirds/centre).",
+      "$description": "Anchor snap lines (thirds/center).",
       "$extensions": {
         "creator": {
           "css": "--cr-color-stage-guide",
