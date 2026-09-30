@@ -1,6 +1,6 @@
 import { esc } from "./lib.js";
 import * as K from "./color.js";
-import { inline, todayProposed } from "./states.js";
+import { inline, todayProposed, setCards } from "./states.js";
 
 /* The color audit. Everything here is computed at load from data/tokens.json:
    color tokens, the org color list, the proposal settings. No count or flag is typed by hand. */
@@ -33,6 +33,7 @@ export function analyze(T) {
   const chromatic = colors.filter((t) => t.family !== "neutral");
   const fam = (f) => { const l = colors.filter((t) => f.includes(t.family)); return { names: l.length, values: new Set(l.map(K.valueKey)).size }; };
   const nearPairs = pairs.reduce((n, p) => n + p.near.length, 0) / 2;
+  setCards(pairs.length);
   const stats = {
     total: colors.length,
     distinct: pairs.length,
