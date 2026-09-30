@@ -289,7 +289,7 @@
         "creator": {
           "css": "--cr-font-weight-bold",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "700",
             "dark": "700"
@@ -313,7 +313,7 @@
         "creator": {
           "css": "--cr-font-weight-medium",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "500",
             "dark": "500"
@@ -337,7 +337,7 @@
         "creator": {
           "css": "--cr-font-weight-normal",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "400",
             "dark": "400"
@@ -361,7 +361,7 @@
         "creator": {
           "css": "--cr-font-weight-semibold",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "600",
             "dark": "600"
