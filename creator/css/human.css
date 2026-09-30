@@ -22,7 +22,7 @@ html { scroll-padding-top: 60px; }
 .hv-sub { color: var(--cr-color-text-3); max-width: 70ch; margin: 6px 0 14px; font-size: 13px; line-height: 19px; }
 .hv-foot { color: var(--cr-color-text-4); font-size: 12px; max-width: 70ch; }
 .hv-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
-.hv-chips span { padding: 5px 12px; border-radius: 999px; background: var(--cr-color-bg-muted); color: var(--cr-color-text-2); font-size: 12px; }
+.hv-chips > span { padding: 5px 12px; border-radius: 999px; background: var(--cr-color-bg-muted); color: var(--cr-color-text-2); font-size: 12px; }
 .hv-chips b { font-weight: 600; color: var(--cr-color-text-1); margin-right: 3px; }
 .hv-showcase { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; padding: 28px; border-radius: 14px; background: var(--cr-color-bg); box-shadow: inset 0 0 0 0.5px var(--cr-color-line); }
 .hv-showcase-note { flex: 1 1 220px; max-width: 320px; color: var(--cr-color-text-3); }
@@ -223,3 +223,54 @@ html[data-view="overview"] #eng, html[data-view="eng"] #human { display: none; }
 .ca-steps td:nth-child(3) { font-weight: 400; color: var(--cr-color-text-3); font-size: 12px; }
 .ca-steps td:nth-child(2) { font-weight: 600; }
 @media (max-width: 760px) { .ca-grid { grid-template-columns: minmax(0, 1fr); } .ca-full { min-width: 1020px; } .e-scroll .ca-full, .e-scroll .ca-canon, .e-scroll .ca-rank { min-width: 720px; } .e-scroll .ca-full { min-width: 1020px; } }
+
+/* color counts: definitions and distinct values, with hover, focus and tap lists (js/tip.js, js/states.js) */
+.hv-chips span.cs-chip { border-radius: 14px; padding: 6px 14px; display: inline-flex; flex-direction: column; gap: 1px; }
+.cs-line { display: block; line-height: 18px; }
+.cs-2nd { color: var(--cr-color-text-3); }
+.cs-bd { color: var(--cr-color-text-4); font-size: 11px; line-height: 15px; }
+.hv-chips .cs-chip small { display: block; margin: 0; }
+.cs-tipwrap { display: inline; }
+.cs-num { appearance: none; font: inherit; color: inherit; background: none; border: 0; padding: 0 1px; margin: 0; cursor: help; border-radius: 4px; text-decoration: underline dotted var(--cr-color-text-4); text-underline-offset: 3px; }
+.cs-num b { margin-right: 0; }
+.cs-num:hover, .cs-tipwrap.is-open > .cs-num { background: var(--cr-color-state-hover); }
+.cs-num:focus-visible { outline: 2px solid var(--cr-color-focus-ring); outline-offset: 1px; }
+.cs-tip { position: fixed; z-index: 80; box-sizing: border-box; width: 420px; max-width: calc(100vw - 24px); overflow: auto; overscroll-behavior: contain; padding: 12px 14px; border: var(--cr-border-width-thin) solid var(--cr-color-highlight-primary); border-radius: var(--cr-radius-sm); background: var(--cr-color-bg-panel); color: var(--cr-color-content-primary); box-shadow: var(--cr-shadow-tooltip); font-size: 12px; line-height: 17px; font-weight: 400; text-align: left; text-transform: none; letter-spacing: 0; white-space: normal; }
+.cs-tip[hidden] { display: none; }
+.cs-tip:focus-visible { outline: 2px solid var(--cr-color-focus-ring); outline-offset: -2px; }
+.cs-tip::before { content: ""; position: absolute; left: 0; right: 0; top: -8px; height: 8px; }
+.cs-tip-h { font-size: 13px; font-weight: 600; line-height: 18px; }
+.cs-tip-s { margin: 2px 0 8px; color: var(--cr-color-text-3); }
+.cs-tip h5 { margin: 10px 0 3px; font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--cr-color-text-3); }
+.cs-tip h5 small { margin-left: 4px; color: var(--cr-color-text-4); font-size: 11px; }
+.cs-names { margin: 0; display: flex; flex-wrap: wrap; gap: 2px 8px; }
+.cs-tip code { font-size: 11px; white-space: nowrap; }
+.cs-alias, .cs-groups { list-style: none; margin: 0; padding: 0; }
+.cs-alias li { padding: 1px 0; }
+.cs-groups li { display: grid; grid-template-columns: 30px 1fr; column-gap: 8px; padding: 6px 0; border-top: 0.5px solid var(--cr-color-line); }
+.cs-groups li:first-child { border-top: 0; }
+.cs-pair { grid-row: span 2; display: grid; grid-template-columns: 1fr 1fr; width: 30px; height: 20px; border-radius: 5px; overflow: hidden; box-shadow: 0 0 0 0.5px var(--cr-color-line-strongest); align-self: start; }
+.cs-pair .ca-sw { display: block; width: auto; height: auto; margin: 0; border-radius: 0; box-shadow: none; }
+.cs-gv { font-size: 11px; color: var(--cr-color-text-3); font-variant-numeric: tabular-nums; }
+.cs-gn { display: flex; flex-wrap: wrap; gap: 1px 8px; }
+.cs-table td { vertical-align: top; }
+.cs-cell .cs-line { font-size: 13px; }
+.cs-cell .cs-2nd { color: var(--cr-color-text-3); }
+.cs-cell .cs-bd { font-size: 11px; margin-top: 2px; }
+.cs-table td:first-child span { display: block; }
+.cs-table td .cs-line b, .cs-table td .cs-line span { display: inline; }
+.cs-table td .cs-line b { font-size: 15px; }
+.cs-table .is-target b { color: var(--cr-color-accent-fg); }
+.cs-pairs { display: flex; flex-wrap: wrap; gap: 12px; margin: 10px 0 6px; }
+.cs-box { flex: 1 1 230px; max-width: 320px; padding: 10px 16px 12px; border-radius: 12px; background: var(--cr-color-bg-subtle); box-shadow: inset 0 0 0 0.5px var(--cr-color-line); font-size: 13px; }
+.cs-box.is-target { box-shadow: inset 0 0 0 1px var(--cr-color-accent-fg); }
+.cs-box em { display: block; font-style: normal; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--cr-color-text-4); margin-bottom: 2px; }
+.cs-box b { font-size: 20px; }
+.cs-box .cs-2nd b { font-size: 20px; }
+.ca-strip-pairs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+@media (max-width: 640px) { .cs-tip { width: calc(100vw - 24px); } .cs-table th, .cs-table td { padding-left: 6px; padding-right: 6px; } }
+.ca-sw.is-dark { background: linear-gradient(var(--c), var(--c)), repeating-conic-gradient(#1e1e20 0% 25%, #3a3a3e 0% 50%) 0 0 / 6px 6px; }
+.cs-tag { font-style: normal; font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--cr-color-text-4); margin-right: 4px; }
+.cs-rawtag { color: var(--cr-color-text-4); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+.hv-chips { align-items: flex-start; }
+.cs-tip code { font-size: 11px; }

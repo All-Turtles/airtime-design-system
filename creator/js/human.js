@@ -4,6 +4,7 @@ import { ATOMS } from "./atoms.js";
 import { PATTERNS } from "./patterns.js";
 import { AREAS } from "./areas.js";
 import { cardHtml, iconGaps } from "./view.js";
+import { colorChip, countsTable } from "./states.js";
 import { analyze, counts, colorBlocks, summary, whyMore, consolidation } from "./colors.js";
 
 /* Overview: the short, human-readable page. Live components built from the same CSS as the app. */
@@ -66,9 +67,6 @@ function motion() {
 
 export async function human(root) {
   const T = S.tokens, CA = analyze(T), N = counts(T, CA), aliases = N.sharedWithOrg, sc = scales(N, T), RW = N.rows, cs = CA.stats;
-  const tgt = (c) => (c.target == null ? `<span class="hv-dash">not set</span>` : `<b class="is-new">${nf(c.target)}</b>`);
-  const famRows = [["Colors", RW.colors, `${cs.unused} of them are not used anywhere in the app's code`], ["Text styles", RW.textStyles, "one family, a handful of sizes"], ["Font sizes", RW.fontSizes, "distinct px across the text styles"], ["Corner radii", RW.radii, "distinct values in use; the org has more, in even steps"], ["Spacing steps", RW.spacing, "distinct values in use; snapping them is a separate, optional step"]];
-  const fam = famRows.map(([n, c, note]) => `<tr><td>${n}<span>${note}</span></td><td>${nf(c.today)}</td><td>${tgt(c)}</td><td>${nf(c.org)}</td></tr>`).join("");
   const styles = T.textStyles.map((s) => `<div class="hv-ts"><span class="cr-text-${s.name.replace(/\./g, "-")}">${esc(SAMPLE[s.name] ?? s.name)}</span><small>${esc(s.name)} · ${s.fontSize} / ${s.lineHeight ?? "auto"} / ${s.fontWeight}</small></div>`).join("");
   const deviations = [
     ["Some type sizes render larger than written.", "The Record button and the stage pill buttons are written as 11 and 13 px but render at 13 and 16. This page shows what renders."],
@@ -84,21 +82,21 @@ export async function human(root) {
   <section id="h-start" class="hv-hero" data-group="start">
     <h1>Creator design system</h1>
     <p class="hv-lede">The look of the Creator app: color, type, shape and the components in its sidebar, top bar, slide tray and stage. It sits on top of the <b>Airtime design system</b> tokens, and adds what Creator needs that the org system does not have: a blue accent, frosted glass, and translucent ink that works in light and dark.</p>
-    <div class="hv-chips"><span><b>${nf(RW.colors.today)}</b> colors <small>target ${nf(RW.colors.target)}</small></span><span><b>${RW.textStyles.today}</b> text styles</span><span><b>${sc.n.rad}</b> radii</span><span><b>${sc.n.sp}</b> spacing steps</span><span><b>${ATOMS.length + PATTERNS.length + AREAS.length}</b> components</span></div>
+    <div class="hv-chips">${colorChip(T)}<span><b>${RW.textStyles.today}</b> text styles</span><span><b>${sc.n.rad}</b> radii</span><span><b>${sc.n.sp}</b> spacing steps</span><span><b>${ATOMS.length + PATTERNS.length + AREAS.length}</b> components</span></div>
     <div class="hv-showcase">${card(C.head("Appearance", { icon: "effects" }) + C.row("border", "Border", { trailing: `<span class="cr-dot" style="background:#3D7BFF"></span>` }) + C.seg("segmented", [{ text: "Visible" }, { text: "Blurred" }, { text: "Hidden" }], { on: 0 }) + `<div style="height:8px"></div>` + C.actions(2, [C.action("duplicate", "Duplicate"), C.action("trash", "Delete", { destructive: true })]))}
       <div class="hv-showcase-note"><p>These are live components built from the same CSS as the app. The page reads in three layers: <b>atoms</b> (single controls and their states), <b>patterns</b> (the sidebar) and <b>areas</b> (top bar, tray, stage, menus). Use the toggle at the top to flip the whole page between light and dark.</p></div></div>
   </section>
 
   <section id="h-tokens" data-group="foundations"><h2>How many tokens</h2>
-    <p class="hv-sub">Creator grew its own token set. Today is counted from the tokens in use. Target is a proposal for where to merge and simplify; nothing in the app has changed. Every number on this page is counted from one data file when the page loads.</p>
-    <table class="hv-table"><thead><tr><th>Family</th><th>Today</th><th>Simplified target</th><th>Airtime org</th></tr></thead><tbody>${fam}</tbody></table>
+    <p class="hv-sub">Creator grew its own token set. Each family is counted in three states: what is on the main development branch, what is in open changes that are not merged yet, and the target for the simplification. Every number on this page is counted from one data file when the page loads. Hover, focus or tap a color number to list what it counts.</p>
+    ${countsTable(T)}
     <p class="hv-foot">The org has fewer colors because Creator draws things it has no words for: a blue accent, stage glass, translucent ink and materials. <a href="#h-colors-all">See every color</a> for the full list and the plain-language reasons.</p></section>
 
   <section id="h-color" data-group="foundations"><h2>Key colors</h2><p class="hv-sub">A hand-picked set. Every swatch shows light on the left and dark on the right. Checkerboard means the color is see-through.</p>
     ${GROUPS.map(([t, d, sws]) => `<h3>${t}</h3><p class="hv-sub">${d}</p><div class="hv-swatches">${sws.map(swatch).join("")}</div>`).join("")}</section>
 
   <section id="h-colors-all" data-group="foundations"><h2>Every color in the app</h2>
-    <p class="hv-sub">All ${nf(cs.total)} color tokens, generated from the data file. Each card is one distinct light and dark pair, with every token name that shares it. Checkerboard means see-through. Flags: DUPLICATE OF (same light and dark values as another token), NEAR (within deltaE 3 of another value), ORG (closest org color: EXACT, NEAR, ROLE-ONLY when the org has a color for the role but not this one, or NONE), and what the proposal does with it.</p>
+    <p class="hv-sub">All ${nf(cs.total)} color tokens, generated from the data file. Each card is one distinct light and dark pair, with every token name that shares it. Checkerboard means see-through. Flags: DUPLICATE OF (same light and dark values as another token), NEAR (within deltaE 3 of another value), ORG (closest org color: EXACT, NEAR, ROLE-ONLY when the org has a color for the role but not this one, or NONE), and what the proposal does with it. The cards group every definition, raw swatches included, so there can be more cards than the distinct values counted in the pair below, which cover the semantic colors only.</p>
     ${summary(CA)}${whyMore(CA)}${colorBlocks(CA)}</section>
 
   <section id="h-consolidation" data-group="foundations"><h2>Proposed color consolidation</h2>
