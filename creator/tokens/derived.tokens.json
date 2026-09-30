@@ -1158,7 +1158,7 @@
     "control": {
       "$value": "background var(--cr-duration-fast) var(--cr-easing-settle), color var(--cr-duration-fast) var(--cr-easing-settle)",
       "$type": "transition",
-      "$description": "Segments, rows, fields: colour changes on 160ms settle.",
+      "$description": "Segments, rows, fields: color changes on 160ms settle.",
       "$extensions": {
         "creator": {
           "css": "--cr-transition-control",

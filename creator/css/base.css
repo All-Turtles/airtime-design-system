@@ -86,7 +86,7 @@ table.spec td { padding: 5px 8px 5px 0; border-bottom: 0.5px solid var(--cr-colo
 .bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 0.5px var(--cr-color-line-strong); max-width: 640px; }
 .bar > i { display: block; } .bar .b-ds { background: #34c759; } .bar .b-rd { background: var(--cr-color-accent-solid); } .bar .b-lg { background: #ff9f0a; } .bar .b-un { background: #ff453a; }
 
-/* simplification section: colour swatches (light | dark) */
+/* simplification section: color swatches (light | dark) */
 .swp { display: inline-flex; vertical-align: middle; border-radius: 5px; overflow: hidden; box-shadow: inset 0 0 0 0.5px var(--cr-color-line-strong); }
 .swh { display: block; width: 22px; height: 16px; position: relative; } .swh .sw { position: absolute; inset: 0; display: block; }
 .swh.checkerbg { background: repeating-conic-gradient(#fff 0% 25%, #d4d4da 0% 50%) 0 0 / 8px 8px; }

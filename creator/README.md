@@ -1,6 +1,6 @@
 # Creator design system
 
-The visual language of the Creator app: colour, type, space, shape, motion and the sidebar components, layered on top of the Airtime design system (`airtime-design-system`) tokens.
+The visual language of the Creator app: color, type, space, shape, motion and the sidebar components, layered on top of the Airtime design system (`airtime-design-system`) tokens.
 
 The page (`index.html`) is a single static Overview. It has no build step and needs no server-side code.
 
@@ -17,7 +17,7 @@ creator/
   index.html          the Overview page
   css/                base.css (page shell), sidebar.css (component styles), human.css (Overview layout)
   js/                 main.js, human.js (Overview), components.js (markup builders), lib.js (helpers)
-  data/overview.json  the numbers and colour values the Overview shows
+  data/overview.json  the numbers and color values the Overview shows
   tokens/
     tokens.css        Creator custom properties, prefix --cr-, [data-theme=light|dark]
     text-styles.css   .cr-text-* classes

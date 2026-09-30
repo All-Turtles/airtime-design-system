@@ -6,7 +6,7 @@ export async function load() {
 }
 
 /* Generic placeholder glyphs. The components below show their real structure; the artwork inside icon slots is
-   deliberately neutral (a chevron or a ring), because this page documents layout, colour and type, not icons. */
+   deliberately neutral (a chevron or a ring), because this page documents layout, color and type, not icons. */
 const CHEVRONS = { chevronDown: 90, chevronForward: 0, chevronBack: 180 };
 export const si = (name, cls = "") => {
   const rot = CHEVRONS[name];

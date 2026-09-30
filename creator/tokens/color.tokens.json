@@ -4868,7 +4868,7 @@
           },
           "org": {
             "relation": "creator-only",
-            "note": "org has no focus-ring colour token"
+            "note": "org has no focus-ring color token"
           },
           "alias": null,
           "used": {
