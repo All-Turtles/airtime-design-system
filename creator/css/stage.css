@@ -1,6 +1,6 @@
 /* stage.css - Creator design system: stage selection pills, popovers, resize handles, crop UI, guides.
  * The pill, its buttons and the popover sit on always-dark glass (selection.*), independent of the shell theme.
- * Handles, frame, guides and the crop bar use the older Airtime teal, not Creator's accent blue. */
+ * Frame and handle borders use the accent color (system blue, light and dark). The crop bar stays neutral dark glass. */
 .cr-stage-mock { position: relative; aspect-ratio: 16 / 9; border-radius: var(--cr-radius-stage); overflow: hidden; background: linear-gradient(135deg, #1d3b5c, #5a2d59 60%, #2f6b5e); }
 .cr-stage-mock .obj { position: absolute; background: linear-gradient(135deg, #f0a23c, #e0453a); }
 /* glass pill */
@@ -36,18 +36,23 @@
 .cr-gswatch { width: var(--cr-size-6); height: var(--cr-size-6); padding: 0; border: 0; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24); cursor: pointer; transition: transform var(--cr-duration-fast) var(--cr-easing-settle); }
 .cr-gswatch:is(:hover, .is-hover) { transform: scale(1.14); }
 .cr-gswatch:is(:active) { transform: scale(0.98); }
-.cr-gswatch:is([aria-pressed="true"], .is-selected) { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 2.5px #79DDE8; }
+.cr-gswatch:is([aria-pressed="true"], .is-selected) { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 2.5px var(--cr-color-accent-solid); }
 .cr-gslider { display: flex; flex-direction: column; gap: var(--cr-space-1); padding: var(--cr-space-1) var(--cr-space-1-75); }
 .cr-gslider .top { display: flex; align-items: center; justify-content: space-between; gap: var(--cr-space-2); color: var(--cr-color-selection-muted); font-size: 13px; }
 .cr-gslider .val { width: 52px; height: var(--cr-size-6); padding: 0 var(--cr-space-1-5); border-radius: var(--cr-radius-room-tile); background: var(--cr-color-selection-track); color: var(--cr-color-selection-text); text-align: right; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.13); font-size: 13px; line-height: 24px; }
 .cr-gslider .track { position: relative; height: 4px; border-radius: 4px; background: var(--cr-color-selection-track); }
 .cr-gslider .track > i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; background: var(--cr-color-selection-muted); }
 .cr-gslider .track > b { position: absolute; top: -5px; width: 14px; height: 14px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); margin-left: -7px; }
-/* overlay: frame, handles, guides (older Airtime teal) */
+/* overlay: frame, handles, guides. Frame and handle borders use the accent color. */
 .cr-frame { position: absolute; border: var(--cr-size-frame-width) solid var(--cr-color-stage-frame); filter: drop-shadow(0 0 6px #000) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.18)); pointer-events: none; }
 .cr-handle { position: absolute; width: var(--cr-size-handle); height: var(--cr-size-handle); margin: calc(var(--cr-size-handle) / -2) 0 0 calc(var(--cr-size-handle) / -2); background: var(--cr-color-handle-fill); border: var(--cr-size-frame-width) solid var(--cr-color-stage-frame); border-radius: var(--cr-radius-handle); box-shadow: var(--cr-shadow-handle); box-sizing: content-box; }
 .cr-handle.is-nw { cursor: nwse-resize; } .cr-handle.is-ne { cursor: nesw-resize; } .cr-handle.is-ew { cursor: ew-resize; } .cr-handle.is-ns { cursor: ns-resize; }
-.cr-handle { box-sizing: border-box; }
+.cr-handle { box-sizing: border-box; transition: background var(--cr-duration-fast); }
+.cr-handle:is(:hover, .is-hover) { background: linear-gradient(var(--cr-color-accent-subtle), var(--cr-color-accent-subtle)), var(--cr-color-handle-fill); }
+.cr-handle:is(:active, .is-active) { background: var(--cr-color-accent-solid); }
+.cr-handle.is-rotate { border-radius: var(--cr-radius-full); cursor: grab; }
+.cr-handle.is-rotate:is(:active, .is-active) { cursor: grabbing; }
+.cr-stem { position: absolute; width: var(--cr-size-frame-width); margin-left: calc(var(--cr-size-frame-width) / -2); background: var(--cr-color-stage-frame); pointer-events: none; }
 .cr-handle.crop-h { height: calc(var(--cr-size-handle) * 2); margin-top: calc(var(--cr-size-handle) * -1); }
 .cr-handle.crop-v { width: calc(var(--cr-size-handle) * 2); margin-left: calc(var(--cr-size-handle) * -1); }
 .cr-guide { position: absolute; background: var(--cr-color-stage-guide); opacity: 1; }

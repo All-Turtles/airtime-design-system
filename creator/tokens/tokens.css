@@ -253,7 +253,6 @@
   /* colors (semantic) */
   --cr-color-background-primary: #ffffff;
   --cr-color-background-tertiary: #ebebeb;
-  --cr-color-action-primary: #79DDE8;
   --cr-color-action-secondary: #1A7580;
   --cr-color-action-destructive: #ff715c;
   --cr-color-slide-badge: rgba(0, 0, 0, 0.8);
@@ -355,7 +354,7 @@
   --cr-color-thumb-selected-fill: rgba(255, 255, 255, 0.18);
   --cr-color-thumb-selected-ring: rgba(255, 255, 255, 0.3);
   --cr-color-knob: #FFFFFF;
-  --cr-color-stage-frame: #99E5EE;
+  --cr-color-stage-frame: var(--cr-color-accent-solid);
   --cr-color-stage-guide-hit: #E55242;
   --cr-color-stage-guide: #FFFFFF;
   --cr-color-stage-grid-fill: rgba(127, 127, 127, 0.65);
@@ -430,7 +429,6 @@
   --cr-shadow-switch-track: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   --cr-shadow-switch-knob: 0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28);
   --cr-shadow-thumb-ring: inset 0 0 0 0.5px var(--cr-color-line-strong);
-  --cr-shadow-drop-before: inset 0 2px 0 var(--cr-color-state-drop-indicator);
   --cr-shadow-handle: 0 1px 4px rgba(0, 0, 0, 0.18);
   --cr-shadow-tile-action: 0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28);
 
@@ -477,7 +475,6 @@
   /* colors (semantic) */
   --cr-color-background-primary: #0a0a0e;
   --cr-color-background-tertiary: #212127;
-  --cr-color-action-primary: #79DDE8;
   --cr-color-action-secondary: #1A7580;
   --cr-color-action-destructive: #ff7661;
   --cr-color-slide-badge: rgba(0, 0, 0, 0.8);
@@ -579,7 +576,7 @@
   --cr-color-thumb-selected-fill: rgba(255, 255, 255, 0.18);
   --cr-color-thumb-selected-ring: rgba(255, 255, 255, 0.3);
   --cr-color-knob: #FFFFFF;
-  --cr-color-stage-frame: #99E5EE;
+  --cr-color-stage-frame: var(--cr-color-accent-solid);
   --cr-color-stage-guide-hit: #E55242;
   --cr-color-stage-guide: #FFFFFF;
   --cr-color-stage-grid-fill: rgba(127, 127, 127, 0.65);
@@ -654,7 +651,6 @@
   --cr-shadow-switch-track: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   --cr-shadow-switch-knob: 0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28);
   --cr-shadow-thumb-ring: inset 0 0 0 0.5px var(--cr-color-line-strong);
-  --cr-shadow-drop-before: inset 0 2px 0 var(--cr-color-state-drop-indicator);
   --cr-shadow-handle: 0 1px 4px rgba(0, 0, 0, 0.18);
   --cr-shadow-tile-action: 0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28);
 

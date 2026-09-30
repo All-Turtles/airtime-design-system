@@ -13,10 +13,11 @@ const theme = (t, surface, inner) => `<div class="at-theme at-${surface} cr-ctx"
 export function cardHtml(it) {
   const inner = body(it);
   const surface = it.surface ?? (it.group === "atoms" ? "panel" : "window");
-  const both = it.group === "atoms";
-  const preview = both ? `<div class="at-pair">${theme("light", surface, inner)}${theme("dark", surface, inner)}</div>` : `<div class="at-pair is-single">${surface === "glass" ? `<div class="at-theme at-none cr-ctx">${inner}</div>` : `<div class="at-theme at-${surface} cr-ctx">${inner}</div>`}</div>`;
+  const both = it.group === "atoms" || it.both;
+  const surf = both && surface === "glass" ? "none" : surface;
+  const preview = both ? `<div class="at-pair">${theme("light", surf, inner)}${theme("dark", surf, inner)}</div>` : `<div class="at-pair is-single">${surface === "glass" ? `<div class="at-theme at-none cr-ctx">${inner}</div>` : `<div class="at-theme at-${surface} cr-ctx">${inner}</div>`}</div>`;
   const toks = (it.tokens ?? []).map((t) => `<code>${esc(t)}</code>`).join("");
-  return `<article class="at-card" id="${it.id}"><div class="at-preview">${preview}</div><footer><h3>${esc(it.title)}</h3><p>${esc(it.use)}</p>${toks ? `<div class="at-toks">${toks}</div>` : ""}</footer></article>`;
+  return `<article class="at-card" id="${it.id}"><div class="at-preview">${preview}</div><footer><h3>${esc(it.title)}</h3><p>${esc(it.use)}</p>${it.note ? `<p class="at-note"><b>Note:</b> ${esc(it.note)}</p>` : ""}${toks ? `<div class="at-toks">${toks}</div>` : ""}</footer></article>`;
 }
 
 export function iconGaps() {
