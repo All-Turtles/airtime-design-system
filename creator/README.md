@@ -23,7 +23,7 @@ creator/
   js/                 main.js (views, nav), human.js (Overview), eng.js (Engineering), atoms.js, patterns.js,
                       areas.js (the component registries), components.js (markup builders), view.js, lib.js,
                       icons.js (inline copies of public org icons)
-  data/               overview.json (numbers and swatch values), tokens.json (all tokens and text styles)
+  data/               tokens.json (every token, the org color list and the color proposal; all page counts come from it)
   tokens/
     tokens.css        Creator custom properties, prefix --cr-, [data-theme=light|dark]
     text-styles.css   .cr-text-* classes

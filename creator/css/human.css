@@ -177,3 +177,49 @@ html[data-view="overview"] #eng, html[data-view="eng"] #human { display: none; }
   .hv-main { overflow-x: clip; }
 }
 @media (max-width: 760px) { .e-scroll .e-table { min-width: 720px; } }
+
+/* color audit */
+.hv-chips small { color: var(--cr-color-text-4); margin-left: 4px; font-size: 11px; }
+.hv-dash { color: var(--cr-color-text-5); font-size: 12px; }
+.hv-rad i.is-own { background: transparent; }
+.ca-sw { background: linear-gradient(var(--c), var(--c)), repeating-conic-gradient(#fff 0% 25%, #d4d4da 0% 50%) 0 0 / 6px 6px; }
+[data-theme="dark"] .ca-sw { background: linear-gradient(var(--c), var(--c)), repeating-conic-gradient(#1e1e20 0% 25%, #3a3a3e 0% 50%) 0 0 / 6px 6px; }
+.ca-strip span { white-space: nowrap; }
+.ca-why { max-width: 76ch; margin: 4px 0 8px; padding: 14px 18px; border-radius: 12px; background: var(--cr-color-bg-subtle); box-shadow: inset 0 0 0 0.5px var(--cr-color-line); }
+.hv-main .ca-why h3 { margin: 0 0 6px; }
+.ca-why ul { margin: 0; padding-left: 18px; }
+.ca-why li { margin: 0 0 6px; color: var(--cr-color-text-3); line-height: 19px; font-size: 13px; }
+.ca-why b { color: var(--cr-color-text-1); font-weight: 600; }
+.ca-why .hv-foot { margin: 6px 0 0; }
+.ca-group h3 { font-size: 11px; line-height: 16px; font-weight: 600; margin: 28px 0 4px; color: var(--cr-color-text-3); text-transform: uppercase; letter-spacing: 0.06em; }
+.ca-group h3 small { font-weight: 400; color: var(--cr-color-text-5); letter-spacing: 0; text-transform: none; margin-left: 6px; }
+.ca-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.ca-card { min-width: 0; display: grid; gap: 8px; align-content: start; padding: 10px; border-radius: 12px; background: var(--cr-color-bg-panel); box-shadow: 0 0 0 0.5px var(--cr-color-line-strong); }
+.ca-card.has-dup { box-shadow: 0 0 0 1px var(--cr-color-line-strongest); }
+.ca-pair { height: 56px; }
+.ca-vals { display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: baseline; }
+.ca-vals code, .ca-chip code { padding: 0 4px; border-radius: 4px; background: var(--cr-color-bg-muted); color: var(--cr-color-text-2); font-size: 10.5px; line-height: 15px; font-family: var(--cr-font-family-mono); }
+.ca-vals small { font-size: 10.5px; color: var(--cr-color-text-4); }
+.ca-names { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ca-names li { display: grid; gap: 3px; padding-top: 6px; border-top: 0.5px solid var(--cr-color-line); }
+.ca-names li:first-child { border-top: 0; padding-top: 0; }
+.ca-nm { display: flex; flex-wrap: wrap; gap: 2px 8px; align-items: baseline; }
+.ca-nm b { font-size: 12px; font-weight: 600; color: var(--cr-color-text-1); overflow-wrap: anywhere; }
+.ca-role, .ca-uses { font-size: 10.5px; color: var(--cr-color-text-4); }
+.ca-fl { display: flex; flex-wrap: wrap; gap: 4px; }
+.ca-card-fl { padding-top: 6px; border-top: 0.5px solid var(--cr-color-line); }
+.ca-chip { display: inline-flex; flex-wrap: wrap; gap: 4px; align-items: center; padding: 1px 7px; border-radius: 999px; background: var(--cr-color-state-hover); color: var(--cr-color-text-3); font-size: 10px; line-height: 15px; font-weight: 500; letter-spacing: 0.02em; }
+.ca-chip.is-dup { background: var(--cr-color-accent-subtle); color: var(--cr-color-accent-fg); }
+.ca-chip.is-keep { background: var(--cr-color-status-live-fill); color: var(--cr-color-status-live-text); }
+.ca-chip.is-fold { background: var(--cr-color-danger-subtle); color: var(--cr-color-danger-fg); }
+.ca-chip.is-org-exact { background: var(--cr-color-status-live-fill); color: var(--cr-color-status-live-text); }
+.ca-chip.is-org-none { color: var(--cr-color-text-4); }
+.ca-full td, .ca-canon td { vertical-align: top; }
+.ca-grp th { padding-top: 22px; font-size: 11px; color: var(--cr-color-text-2); text-transform: none; letter-spacing: 0; white-space: normal; }
+.ca-grp th small { font-weight: 400; color: var(--cr-color-text-5); margin-left: 6px; }
+.ca-full .ca-chip, .ca-canon .ca-chip { margin: 0 3px 3px 0; }
+.ca-steps tr.is-target td { background: var(--cr-color-accent-subtle); }
+.ca-steps tr.is-option td { color: var(--cr-color-text-3); }
+.ca-steps td:nth-child(3) { font-weight: 400; color: var(--cr-color-text-3); font-size: 12px; }
+.ca-steps td:nth-child(2) { font-weight: 600; }
+@media (max-width: 760px) { .ca-grid { grid-template-columns: minmax(0, 1fr); } .ca-full { min-width: 1020px; } .e-scroll .ca-full, .e-scroll .ca-canon, .e-scroll .ca-rank { min-width: 720px; } .e-scroll .ca-full { min-width: 1020px; } }
