@@ -7,7 +7,7 @@ The page (`index.html`) is a single static Overview. It has no build step and ne
 ## Run
 
 ```sh
-python3 -m http.server 3100     # from the repo root, then open http://localhost:3100/creator/
+python3 -m http.server           # from the repo root, then open /creator/ on the port it prints
 ```
 
 ## What is here
