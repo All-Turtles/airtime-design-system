@@ -10,7 +10,7 @@
           "creator": {
             "css": "--cr-space-0-5",
             "kind": "primitive",
-            "status": "chakra-default",
+            "status": "default",
             "rendered": {
               "light": "2px",
               "dark": "2px"
@@ -59,7 +59,7 @@
           "creator": {
             "css": "--cr-space-1-5",
             "kind": "primitive",
-            "status": "chakra-default",
+            "status": "default",
             "rendered": {
               "light": "6px",
               "dark": "6px"
@@ -82,7 +82,7 @@
         "creator": {
           "css": "--cr-space-1",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "4px",
             "dark": "4px"
@@ -107,7 +107,7 @@
           "creator": {
             "css": "--cr-space-2-5",
             "kind": "primitive",
-            "status": "chakra-default",
+            "status": "default",
             "rendered": {
               "light": "10px",
               "dark": "10px"
@@ -129,7 +129,7 @@
         "creator": {
           "css": "--cr-space-2",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "8px",
             "dark": "8px"
@@ -154,7 +154,7 @@
           "creator": {
             "css": "--cr-space-3-5",
             "kind": "primitive",
-            "status": "chakra-default",
+            "status": "default",
             "rendered": {
               "light": "14px",
               "dark": "14px"
@@ -176,7 +176,7 @@
         "creator": {
           "css": "--cr-space-3",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "12px",
             "dark": "12px"
@@ -201,7 +201,7 @@
           "creator": {
             "css": "--cr-space-4-5",
             "kind": "primitive",
-            "status": "chakra-default",
+            "status": "default",
             "rendered": {
               "light": "18px",
               "dark": "18px"
@@ -223,7 +223,7 @@
         "creator": {
           "css": "--cr-space-4",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "16px",
             "dark": "16px"
@@ -247,7 +247,7 @@
         "creator": {
           "css": "--cr-space-5",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "20px",
             "dark": "20px"
@@ -270,7 +270,7 @@
         "creator": {
           "css": "--cr-space-6",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "24px",
             "dark": "24px"
@@ -294,7 +294,7 @@
         "creator": {
           "css": "--cr-space-7",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "28px",
             "dark": "28px"
@@ -317,7 +317,7 @@
         "creator": {
           "css": "--cr-space-8",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "32px",
             "dark": "32px"
@@ -341,7 +341,7 @@
         "creator": {
           "css": "--cr-space-9",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "36px",
             "dark": "36px"
@@ -364,7 +364,7 @@
         "creator": {
           "css": "--cr-space-10",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "40px",
             "dark": "40px"
@@ -388,7 +388,7 @@
         "creator": {
           "css": "--cr-space-11",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "44px",
             "dark": "44px"
@@ -411,7 +411,7 @@
         "creator": {
           "css": "--cr-space-12",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "48px",
             "dark": "48px"
@@ -434,7 +434,7 @@
         "creator": {
           "css": "--cr-space-14",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "56px",
             "dark": "56px"
@@ -457,7 +457,7 @@
         "creator": {
           "css": "--cr-space-16",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "64px",
             "dark": "64px"
@@ -480,7 +480,7 @@
         "creator": {
           "css": "--cr-space-20",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "80px",
             "dark": "80px"
@@ -503,7 +503,7 @@
         "creator": {
           "css": "--cr-space-24",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "96px",
             "dark": "96px"
@@ -526,7 +526,7 @@
         "creator": {
           "css": "--cr-space-28",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "112px",
             "dark": "112px"
@@ -549,7 +549,7 @@
         "creator": {
           "css": "--cr-space-32",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "128px",
             "dark": "128px"
@@ -572,7 +572,7 @@
         "creator": {
           "css": "--cr-space-36",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "144px",
             "dark": "144px"
@@ -595,7 +595,7 @@
         "creator": {
           "css": "--cr-space-40",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "160px",
             "dark": "160px"
@@ -618,7 +618,7 @@
         "creator": {
           "css": "--cr-space-44",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "176px",
             "dark": "176px"
@@ -641,7 +641,7 @@
         "creator": {
           "css": "--cr-space-48",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "192px",
             "dark": "192px"
@@ -664,7 +664,7 @@
         "creator": {
           "css": "--cr-space-52",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "208px",
             "dark": "208px"
@@ -687,7 +687,7 @@
         "creator": {
           "css": "--cr-space-56",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "224px",
             "dark": "224px"
@@ -710,7 +710,7 @@
         "creator": {
           "css": "--cr-space-60",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "240px",
             "dark": "240px"
@@ -733,7 +733,7 @@
         "creator": {
           "css": "--cr-space-64",
           "kind": "primitive",
-          "status": "chakra-default",
+          "status": "default",
           "rendered": {
             "light": "256px",
             "dark": "256px"

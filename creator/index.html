@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-view="overview">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:,">
 <title>Creator Design System</title>
+<script>
+/* choose the view before first paint: ?view=eng|overview, else the remembered choice, else Overview */
+(function () {
+  var v = "overview";
+  try {
+    var q = new URLSearchParams(location.search).get("view"), s = null;
+    try { s = localStorage.getItem("creator-ds-view"); } catch (e) {}
+    if (q === "eng" || q === "overview") v = q; else if (s === "eng" || s === "overview") v = s;
+  } catch (e) {}
+  document.documentElement.setAttribute("data-view", v);
+})();
+</script>
 <!-- org layer first (copies of airtime-design-system tokens), then Creator tokens that alias it -->
 <link rel="stylesheet" href="tokens/org/tokens.css">
 <link rel="stylesheet" href="tokens/org/org-theme.css">
@@ -12,16 +24,26 @@
 <link rel="stylesheet" href="tokens/text-styles.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/atoms.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/tray.css">
+<link rel="stylesheet" href="css/stage.css">
+<link rel="stylesheet" href="css/aux.css">
 <link rel="stylesheet" href="css/human.css">
 </head>
 <body>
 <header class="viewbar">
-  <a class="viewbar-title" href="./">Creator design system</a>
+  <a class="viewbar-title" href="?view=overview" data-set-view="overview">Creator design system</a>
+  <div class="viewswitch" role="group" aria-label="Page view">
+    <button type="button" data-set-view="overview" aria-pressed="true">Overview</button>
+    <button type="button" data-set-view="eng" aria-pressed="false">Engineering</button>
+  </div>
   <button type="button" class="viewbar-theme" id="viewtheme" aria-label="Toggle light and dark">Light / Dark</button>
 </header>
 <div class="doc">
   <nav class="hv-nav" id="hnav" aria-label="Sections"></nav>
   <main class="hv-main" id="human"></main>
+  <main class="hv-main" id="eng"></main>
 </div>
 <script type="module" src="js/main.js"></script>
 </body>
