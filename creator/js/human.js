@@ -71,7 +71,8 @@ export async function human(root) {
   const deviations = [
     ["Some type sizes render larger than written.", "The Record button and the stage pill buttons are written as 11 and 13 px but render at 13 and 16. This page shows what renders."],
     ["Four different disabled fades.", "40, 45, 30 and 20 percent, depending on the control."],
-    ["Pointers differ by area.", "The sidebar keeps the arrow cursor. The top bar, tray and stage buttons show a pointing hand."],
+    ["Pointers differ by area.", "The sidebar, the crop button bar on the stage and the older hidden-presenter microphone button keep the arrow cursor. The top bar, tray and the other stage buttons show a pointing hand."],
+    ["Sidebar icons are smaller than in the prototype.", "Action button icons are 16 px and dropdown chevrons are 12 px. The prototype draws them at 18 and 9. These sizes are approved and deliberate."],
     ["Some tokens are only used in hover and popup states.", "A few sidebar shadow and material tokens are declared but not visible at rest."],
     ["Mostly its own values.", `Only ${aliases} tokens are exactly the org's, mostly spacing, radii and type. Of ${cs.total} colors, ${cs.cls.exact} match an org color exactly and ${cs.cls.near} more are within deltaE 5, so nearly all are Creator's own.`],
     ["Two kinds of message.", "A full-width banner under the top bar for session problems, and a floating toast for short notices with one action."],

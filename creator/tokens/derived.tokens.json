@@ -521,36 +521,6 @@
         }
       }
     },
-    "popover": {
-      "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 8px 24px rgba(0, 0, 0, 0.45)",
-      "$type": "shadow",
-      "$description": "Dropdown panel and color-well popover.",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-popover",
-          "org": {
-            "relation": "creator-only",
-            "note": "A literal in Creator recipes with no org token."
-          },
-          "status": "derived"
-        }
-      }
-    },
-    "popover-range": {
-      "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 8px 20px rgba(0, 0, 0, 0.45)",
-      "$type": "shadow",
-      "$description": "Range popup under a value field.",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-popover-range",
-          "org": {
-            "relation": "creator-only",
-            "note": "A literal in Creator recipes with no org token."
-          },
-          "status": "derived"
-        }
-      }
-    },
     "swatch-selected-tile": {
       "$value": "0 0 0 2px var(--cr-color-accent-solid)",
       "$type": "shadow",
@@ -734,9 +704,9 @@
       }
     },
     "icon-action": {
-      "$value": "var(--cr-size-4-5)",
+      "$value": "var(--cr-size-4)",
       "$type": "dimension",
-      "$description": "Action button glyph: 18px.",
+      "$description": "Action button glyph: 16px.",
       "$extensions": {
         "creator": {
           "css": "--cr-size-icon-action",
@@ -794,9 +764,9 @@
       }
     },
     "icon-chevron": {
-      "$value": "var(--cr-size-creator-device-chevron)",
+      "$value": "var(--cr-size-3)",
       "$type": "dimension",
-      "$description": "Pill chevron: 9px.",
+      "$description": "Pill chevron: 12px.",
       "$extensions": {
         "creator": {
           "css": "--cr-size-icon-chevron",

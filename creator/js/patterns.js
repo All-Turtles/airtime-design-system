@@ -34,7 +34,7 @@ add("pt-tool", "Tool strip", "Small square tools in a row: text alignment, bold,
   html: inSide(seg("tool", [{ icon: "textAlignLeft", label: "Left" }, { icon: "textAlignCenter", label: "Center" }, { icon: "textAlignRight", label: "Right" }], { on: 1, fill: true }) + gap(8) + seg("tool", [{ icon: "bold", label: "Bold" }, { icon: "italic", label: "Italic" }, { icon: "underline", label: "Underline" }], { mode: "toggle", on: [0, 2], fill: true })),
 });
 add("pt-fields", "Value fields", "Type a value, or drag its slider. Position fields carry an axis and a unit.", {
-  tokens: ["surface-inset", "shadow-field-well", "size-field-value-w", "size-field-wide-w", "popover-range"], classes: ["cr-field", "is-value", "is-wide", "is-geo", "cr-range-pop", "cr-range"], states: ["default", "hover", "focus"],
+  tokens: ["surface-inset", "shadow-field-well", "size-field-value-w", "size-field-wide-w", "shadow-menu"], classes: ["cr-field", "is-value", "is-wide", "is-geo", "cr-range-pop", "cr-range"], states: ["default", "hover", "focus"],
   html: inSide(`<div style="display:flex;gap:8px;justify-content:flex-end;align-items:center">${valueField("42%")}${valueField("#3D7BFF", "is-wide")}</div>${gap(8)}<div style="display:flex;gap:8px">${geo("X", "50")}${geo("Y", "50")}</div>${gap(8)}<div class="cr-range-pop" style="width:auto"><input class="cr-range" type="range" value="60" aria-label="Opacity"></div>`),
 });
 add("pt-swatches", "Swatches and backgrounds", "Choose a color or a background. Circles for colors, tiles when the name matters.", {
@@ -65,7 +65,7 @@ add("pt-switch", "Switch row", "A row with a name, a value and a switch.", {
   html: inSide(thumbRow({ name: "Logo", grip: false, thumb: art("#3cb0a4", "#3b6bf0"), trailing: sw34(true) }) + thumbRow({ name: "Captions", grip: false, thumb: art("#8E9294", "#0B0F11"), trailing: sw34(false) })),
 });
 add("pt-popups", "Popups", "Small popups anchored to a row: a list, a grid of choices, a color panel.", {
-  tokens: ["bg-panel", "shadow-popover", "accent-solid", "accent-contrast", "size-popup-color-w", "size-popup-grid-col"], classes: ["cr-popup", "is-list", "is-grid", "is-color", "cr-popup-list", "cr-popup-grid", "cr-panel-item", "is-chip", "cr-chip", "cr-popup-label"], states: ["default", "hover", "selected"],
+  tokens: ["bg-panel", "shadow-menu", "accent-solid", "accent-contrast", "size-popup-color-w", "size-popup-grid-col"], classes: ["cr-popup", "is-list", "is-grid", "is-color", "cr-popup-list", "cr-popup-grid", "cr-panel-item", "is-chip", "cr-chip", "cr-popup-label"], states: ["default", "hover", "selected"],
   html: inSide(`<div style="display:grid;gap:12px;justify-items:center"><div class="cr-popup is-list"><div class="cr-popup-list">${["Blur", "Glow", "Shadow"].map((t, i) => `<button type="button" class="cr-btn0 cr-panel-item ${i === 1 ? "is-hover" : ""}" role="menuitemradio" aria-checked="${i === 0}">${t}</button>`).join("")}</div></div><div class="cr-popup is-grid"><div class="cr-popup-grid" style="grid-template-columns:repeat(3,56px)">${["Fit", "Fill", "Stretch"].map((t, i) => `<button type="button" class="cr-btn0 cr-panel-item is-chip ${i === 0 ? "is-selected" : ""}" role="radio" aria-checked="${i === 0}"><span class="cr-chip"><i></i></span>${t}</button>`).join("")}</div></div></div>`),
 });
 export const PATTERNS = P;

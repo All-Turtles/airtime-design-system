@@ -61,7 +61,7 @@
 .cr-gridfill { position: absolute; inset: 0; background: var(--cr-color-stage-grid-fill); mix-blend-mode: normal; }
 /* crop option bar */
 .cr-cropbar { display: inline-flex; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(5px); overflow: hidden; }
-.cr-cropbar > button { padding: 4px 16px; height: 32px; background: rgba(0, 0, 0, 0.6); border: 0; color: #fff; font-size: 14px; font-weight: 590; cursor: pointer; display: flex; align-items: center; }
+.cr-cropbar > button { padding: 4px 16px; height: 32px; background: rgba(0, 0, 0, 0.6); border: 0; color: #fff; font-size: 14px; font-weight: 590; cursor: default; display: flex; align-items: center; }
 .cr-cropbar > button + button { border-left: 1px solid rgba(255, 255, 255, 0.15); }
 .cr-cropbar > button:active, .cr-cropbar > button.is-pressed { background: rgba(0, 0, 0, 0.4); color: rgb(200, 200, 200); }
 .cr-cropbar > button:disabled, .cr-cropbar > button.is-disabled { cursor: not-allowed; color: rgb(128, 128, 128); }
