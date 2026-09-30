@@ -99,8 +99,8 @@ export async function human(root) {
     <p class="hv-sub">All ${nf(cs.total)} color tokens, generated from the data file. Each card is one distinct light and dark pair, with every token name that shares it. Checkerboard means see-through. Flags: DUPLICATE OF (same light and dark values as another token), NEAR (within deltaE 3 of another value), ORG (closest org color: EXACT, NEAR, ROLE-ONLY when the org has a color for the role but not this one, or NONE), and what the proposal does with it. The cards group every definition, raw swatches included, so there can be more cards than the distinct values counted in the pair below, which cover the semantic colors only.</p>
     ${summary(CA)}${whyMore(CA)}${colorBlocks(CA)}</section>
 
-  <section id="h-consolidation" data-group="foundations"><h2>Proposed color consolidation</h2>
-    <p class="hv-sub">Where to merge and simplify. This is a proposal computed from the same data; it is not applied.</p>${consolidation(CA)}</section>
+  <section id="h-consolidation" data-group="foundations"><h2>Further color reductions</h2>
+    <p class="hv-sub">The first round of consolidation has landed on dev; the counts above are after it. What follows are the ranked further reductions, computed from the same data. They are not applied.</p>${consolidation(CA)}</section>
 
   <section id="h-type" data-group="foundations"><h2>Type</h2><p class="hv-sub">One system font stack: SF Pro on Apple devices, then Helvetica Neue and Arial. Weights 400, 500 and 600, plus one 300 for a caption. Each style shows size / line height / weight.</p>
     <div class="hv-fonts"><div class="hv-font"><span style="font-size:44px;line-height:1;font-weight:600;letter-spacing:-0.02em">Aa</span><small>Interface text</small></div><div class="hv-font"><span class="mono" style="font-size:36px;line-height:1.1;font-family:var(--cr-font-family-mono)">Aa 01</span><small>Numbers and code</small></div></div>

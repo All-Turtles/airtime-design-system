@@ -84,10 +84,10 @@ function card(A, p) {
 }
 
 const SECTIONS = [
-  { id: "reds", title: "Reds", fam: ["red", "orange"], note: "The proposal is one red: the Creator danger red, rgb(215, 0, 21) in light and rgb(255, 79, 66) in dark, not the org's destructive red. Every distinct red is shown side by side." },
-  { id: "blues", title: "Blues", fam: ["blue"], note: "The system blue. Most of these are the same blue in a different role name." },
-  { id: "greens", title: "Greens", fam: ["green"], note: "Status: live." },
-  { id: "teal-yellow", title: "Teal and yellow", fam: ["teal", "yellow", "purple"], note: "One-off brand colors." },
+  { id: "reds", title: "Reds", fam: ["red", "orange"], note: "One red: the Creator danger red, rgb(215, 0, 21) in light and rgb(255, 79, 66) in dark, with its hover, subtle and muted steps. The stage glass red is the same red as the dark half. This is how it is on dev today." },
+  { id: "blues", title: "Blues", fam: ["blue"], note: "One blue: the system blue, with its hover and subtle steps. The stage glass accent is the dark half of the same blue." },
+  { id: "greens", title: "Greens", fam: ["green"], note: "One green, for the live status: the solid dot, its text and its soft fill." },
+  { id: "teal-yellow", title: "Teal and yellow", fam: ["teal", "yellow", "purple"], note: "One yellow, the accent used for highlighted content. There is no teal." },
 ];
 const NEUTRAL_ROLES = [
   ["ground", "Grounds", "Window, panel and raised surfaces, plus the raw light and dark ground swatches behind them."],
@@ -111,14 +111,22 @@ export function colorBlocks(A) {
 export function summary(A) {
   const s = A.stats, c = s.cls;
   const T = A.T, dev = T.states.dev.colors, tgt = T.states.target?.colors;
-  const pairs = `<div class="ca-strip-pairs hv-chips"><span><em class="cs-tag">today</em> ${inline(dev)}</span>${tgt ? `<span><em class="cs-tag">proposed</em> ${inline(tgt)}</span>` : ""}</div>`;
+  const pairs = `<div class="ca-strip-pairs hv-chips"><span><em class="cs-tag">on dev today</em> ${inline(dev)}</span></div>${landed(A)}`;
   const chips = [
     [s.duplicates, "tokens repeating another's values"],
     [`${s.chromatic} / ${s.neutral}`, "chromatic / neutral"], [s.neutralValues, "distinct neutral values"],
     [c.exact, "exact org matches"], [c.near, "near org (dE 5 or less)"], [c.role, "org role only"], [c.none, "no org match"],
-    [s.recommended, "recommended set (target)"],
+    [s.recommended, "recommended set (further, not applied)"],
   ];
   return `${pairs}<div class="hv-chips ca-strip">${chips.map(([n, l]) => `<span><b>${typeof n === "number" ? nf(n) : n}</b> ${l}</span>`).join("")}</div>`;
+}
+/* what the first round of consolidation did, computed from the data */
+function landed(A) {
+  const s = A.stats, h = A.T.history?.colors, dev = A.T.states.dev.colors;
+  const nt = A.colors.filter((t) => t.family === "neutral");
+  const lightN = new Set(nt.map((t) => K.norm(t.light))).size, darkN = new Set(nt.map((t) => K.norm(t.dark))).size;
+  const from = h ? `Colors were consolidated from ${nf(h.definitions)} definitions and ${nf(h.distinct)} distinct values to ${nf(dev.definitions)} and ${nf(dev.distinct)}. ` : "";
+  return `<p class="hv-foot ca-landed"><b>What the consolidation left.</b> ${from}One red, one blue, one green, one yellow. The neutrals use ${lightN} distinct light values and ${darkN} distinct dark values. The ranked further reductions below are not applied.</p>`;
 }
 export function whyMore(A) {
   const s = A.stats;
@@ -140,10 +148,10 @@ export function consolidation(A, { eng = false } = {}) {
   const nearList = F.filter((f) => f.kind === "near"), orgList = F.filter((f) => f.kind === "org");
   const nDup = st.total - st.afterDuplicates, nFold = [...A.P.into.values()].filter((m) => m.kind === "fold").length, nHalf = [...A.P.into.values()].filter((m) => m.kind === "half").length;
   const steps = [
-    ["Today", st.total, "every color token in the app"],
+    ["Today", st.total, "every color token on dev, after the first round of consolidation"],
     ["Merge pure duplicates", st.afterDuplicates, `${nDup} tokens have exactly the same light and dark values as another; no pixel changes`],
     ["Inline raw swatches and stage glass", st.afterDuplicates - nHalf, `${nHalf} one-value tokens equal one half of a themed token (for example the raw blue is the light half of the accent)`],
-    ["Fold to one red (computed recommended set)", st.recommended, `${nFold} tokens fold into the Creator danger red; this is the target. ${s.recommendedChromatic} chromatic (${s.coreChromatic} core plus ${s.uniqueChromatic} one-offs to decide) and ${s.recommendedNeutral} neutral`],
+    ["Recommended set (computed, not applied)", st.recommended, `${nFold} more token${nFold === 1 ? "" : "s"} fold${nFold === 1 ? "s" : ""} into the Creator danger red. ${s.recommendedChromatic} chromatic (${s.coreChromatic} core plus ${s.uniqueChromatic} one-offs to decide) and ${s.recommendedNeutral} neutral`],
     ["Option: merge near neighbors (dE 3 or less)", st.afterNear, `${nearList.length} more, ranked below. Not applied`],
     ["Option: adopt the org's content and highlight steps", st.afterOrg, `${orgList.length} more, ranked below. Not applied`],
   ];
@@ -152,9 +160,9 @@ export function consolidation(A, { eng = false } = {}) {
   const chro = A.P.canonical.filter((t) => t.family !== "neutral");
   const rank = (list, label) => `<div class="e-scroll"><table class="e-table ca-rank"><thead><tr><th>#</th><th>Replace</th><th>With</th><th>dE</th><th>Uses moved</th><th>Tokens left</th></tr></thead><tbody>${list.map((f, i) => `<tr><td class="num">${i + 1}</td><td><code>${esc(f.from)}</code></td><td>${f.kind === "org" ? `org <code>${esc(f.into)}</code>` : `<code>${esc(f.into)}</code>`}</td><td class="num">${d1(f.d)}</td><td class="num">${f.uses}</td><td class="num">${f.left}</td></tr>`).join("")}</tbody></table></div>`;
   const method = eng ? `<p class="hv-foot">Method: deltaE2000 over the two grounds of each theme, worst case of the four. Translucent colors are composited first. NEAR means 3 or less between Creator tokens, and 5 or less against the org. EXACT means 0.5 or less. The recommendation is computed from the <code>proposal</code> block in <code>data/tokens.json</code> (core set, one-offs, folds, org steps), so it regenerates when that block changes.</p>` : "";
-  const prop = A.T.states.target?.colors;
-  return `<h3>Today and proposed</h3><p class="hv-sub">Two different numbers, always shown together: <b>definitions</b> are every color token written in the source; <b>distinct values</b> are the different light and dark pairs among the semantic colors, with aliases counted as the color they point to. Hover, focus or tap a number to list it.</p>${todayProposed(A.T)}
-  <h3>Computed steps</h3><p class="hv-sub">The steps below are this page's own merge suggestions, computed from the audit data${prop ? `; the proposed set above is the current consolidation plan and is tighter than the computed recommended set (${nf(st.recommended)} definitions)` : ""}. The two options under them are ranked ways to go further. Nothing here changes the app.</p>${stepTbl}
+  const prop = true;
+  return `<h3>Today</h3><p class="hv-sub">Two different numbers, always shown together: <b>definitions</b> are every color token written in the source; <b>distinct values</b> are the different light and dark pairs among the semantic colors, with aliases counted as the color they point to. Hover, focus or tap a number to list it.</p>${todayProposed(A.T)}
+  <h3>Further reductions, computed</h3><p class="hv-sub">The steps below are this page's own merge suggestions, computed from the audit data${prop ? `; the recommended set would leave ${nf(st.recommended)} definitions` : ""}. The two options under them are ranked ways to go further. None of them is applied, and nothing here changes the app.</p>${stepTbl}
   <h3>Recommended chromatic set</h3><p class="hv-sub">${s.coreChromatic} core colors (system blue and the Creator danger red, each with hover, subtle and muted) plus ${s.uniqueChromatic} one-offs that no other token covers. Everything else red or blue collapses into these.</p>${canon(chro)}
   <h3>Recommended neutral set</h3><p class="hv-sub">${s.recommendedNeutral} neutrals stay. Each row lists the tokens that collapse into it.</p>${canon(A.P.canonical.filter((t) => t.family === "neutral"))}
   <h3>Option: ranked near merges</h3><p class="hv-sub">Pairs of neutrals within deltaE 3 of each other, cheapest first. The token with fewer uses is the one replaced.</p>${rank(nearList)}
