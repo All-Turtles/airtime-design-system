@@ -45,7 +45,7 @@ const NOTE = {
   Surfaces: "Materials, dividers, shadows and the focus ring.",
   Sidebar: "The right-hand inspector, built from the atoms above.",
   "Top bar": "The bar across the top and the controls above the stage.",
-  "Slide tray": "The console and the lane of slide tiles under the stage.",
+  "Slide tray": "The control row and the lane of slide tiles under the stage.",
   Stage: "What is drawn over the stage while you edit.",
   "Menus and dialogs": "Menus, popovers, dialogs and banners.",
 };
@@ -75,7 +75,7 @@ export async function human(root) {
     ["Pointers differ by area.", "The sidebar keeps the arrow cursor. The top bar, tray and stage buttons show a pointing hand."],
     ["Some tokens are only used in hover and popup states.", "A few sidebar shadow and material tokens are declared but not visible at rest."],
     ["Mostly its own values.", `Only ${aliases} values are exactly the org's, mostly spacing, radii and type. No color, shadow or material matches, so they are Creator's own.`],
-    ["No toast.", "The session banner is the only transient message."],
+    ["Two kinds of message.", "A full-width banner under the top bar for session problems, and a floating toast for short notices with one action."],
   ].map(([a, b]) => `<li><b>${a}</b> ${b}</li>`).join("");
   const A = cats(ATOMS), P = cats(PATTERNS), R = cats(AREAS);
 

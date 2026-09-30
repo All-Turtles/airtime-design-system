@@ -16,8 +16,8 @@ html { scroll-padding-top: 60px; }
 .hv-main { min-width: 0; max-width: 1080px; padding: 0 40px 120px; color: var(--cr-color-text-1); }
 .hv-main section { padding-top: 56px; }
 .hv-main h1 { font-size: 30px; line-height: 36px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 10px; }
-.hv-main h2 { font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 6px; padding-bottom: 8px; border-bottom: 0.5px solid var(--cr-color-line-strong); }
-.hv-main h3 { font-size: 11px; line-height: 16px; font-weight: 600; margin: 26px 0 4px; color: var(--cr-color-text-3); text-transform: uppercase; letter-spacing: 0.06em; }
+.hv-main section > h2 { font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 6px; padding-bottom: 8px; border-bottom: 0.5px solid var(--cr-color-line-strong); }
+.hv-main section > h3 { font-size: 11px; line-height: 16px; font-weight: 600; margin: 26px 0 4px; color: var(--cr-color-text-3); text-transform: uppercase; letter-spacing: 0.06em; }
 .hv-lede { font-size: 15px; line-height: 22px; max-width: 66ch; color: var(--cr-color-text-2); margin: 0 0 16px; }
 .hv-sub { color: var(--cr-color-text-3); max-width: 70ch; margin: 6px 0 14px; font-size: 13px; line-height: 19px; }
 .hv-foot { color: var(--cr-color-text-4); font-size: 12px; max-width: 70ch; }
@@ -175,3 +175,4 @@ html[data-view="overview"] #eng, html[data-view="eng"] #human { display: none; }
   .at-grid { --min: 80px !important; }
   .hv-main { overflow-x: clip; }
 }
+@media (max-width: 760px) { .e-scroll .e-table { min-width: 720px; } }

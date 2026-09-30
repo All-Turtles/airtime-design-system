@@ -98,3 +98,8 @@
 .cr-split .glyph { display: inline-flex; }
 .cr-iconbtn.is-toggle[aria-pressed="true"], .cr-iconbtn.is-toggle.is-selected { color: var(--cr-color-text-1); }
 .cr-avatar { flex: 0 0 auto; }
+/* thin divider between groups of bar buttons */
+.cr-bar-sep { width: 1px; height: 20px; margin: 0 var(--cr-space-1); background: var(--cr-color-line-strong); flex: 0 0 auto; }
+.cr-avatar.is-silhouette > span { background: none; color: var(--cr-color-ink-light-tertiary, currentColor); }
+.cr-avatar.is-silhouette > span .cr-icon { width: 26px; height: 26px; }
+.cr-split .errg { color: var(--cr-color-danger-solid); display: inline-flex; }
