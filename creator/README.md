@@ -22,8 +22,8 @@ creator/
                       tray.css, stage.css, aux.css (component styles)
   js/                 main.js (views, nav), human.js (Overview), eng.js (Engineering), atoms.js, patterns.js,
                       areas.js (the component registries), components.js (markup builders), view.js, lib.js,
-                      icons.js (inline copies of public org icons)
-  data/               tokens.json (every token, the org color list and the color proposal; all page counts come from it)
+                      icons.js (inline copies of public org icons), tip.js (hover, focus and tap lists), states.js (color counts in three states)
+  data/               tokens.json (every token, the org color list, the color proposal and `states`: the counts on dev, in review and target, with the color names behind them; all page counts come from it)
   tokens/
     tokens.css        Creator custom properties, prefix --cr-, [data-theme=light|dark]
     text-styles.css   .cr-text-* classes

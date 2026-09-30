@@ -2,6 +2,7 @@ import { S, esc, loadTokens } from "./lib.js";
 import { ATOMS, ICON_MAP } from "./atoms.js";
 import { PATTERNS } from "./patterns.js";
 import { AREAS } from "./areas.js";
+import { colorChip } from "./states.js";
 import { analyze, counts, summary, whyMore, consolidation, fullTable } from "./colors.js";
 
 /* Engineering view: the same system as data. Built only from public-safe fields. */
@@ -34,11 +35,11 @@ export async function eng(root) {
   root.innerHTML = `
   <section id="e-about" data-group="eng"><h1>Creator design system: Engineering</h1>
     <p class="hv-lede">The same system as data: every token with its light and dark value, every text style, and every atom, pattern and area with its class names, states and tokens. Load order: <code>tokens/org/tokens.css</code>, <code>tokens/org/org-theme.css</code>, <code>tokens/tokens.css</code>, <code>tokens/text-styles.css</code>, then the component CSS. Set <code>data-theme="light"</code> or <code>"dark"</code> on any element.</p>
-    <div class="hv-chips"><span><b>${N.tokens}</b> tokens</span><span><b>${A.stats.total}</b> colors <small>target ${A.stats.recommended}</small></span><span><b>${T.textStyles.length}</b> text styles</span><span><b>${ATOMS.length}</b> atoms</span><span><b>${PATTERNS.length}</b> patterns</span><span><b>${AREAS.length}</b> areas</span><span><b>${ICON_MAP.length}</b> mapped icons</span></div>
+    <div class="hv-chips"><span><b>${N.tokens}</b> tokens</span>${colorChip(T)}<span><b>${T.textStyles.length}</b> text styles</span><span><b>${ATOMS.length}</b> atoms</span><span><b>${PATTERNS.length}</b> patterns</span><span><b>${AREAS.length}</b> areas</span><span><b>${ICON_MAP.length}</b> mapped icons</span></div>
     <p class="hv-sub">States are forced with classes so they can be shown without interaction: <code>.is-hover</code>, <code>.is-pressed</code>, <code>.is-focus</code>, <code>.is-selected</code>, <code>.is-disabled</code>, <code>.is-error</code>, <code>.is-open</code>. Real pseudo-classes work the same way.</p></section>
   <section id="e-downloads" data-group="eng"><h2>Downloads</h2><ul class="e-files">${files.map(([n, f]) => `<li><a href="${f}" ${f.endsWith(".json") || f.endsWith(".css") ? "download" : ""}>${esc(n)}</a><code>${f}</code></li>`).join("")}</ul></section>
   <section id="e-colors" data-group="eng"><h2>Every color in the app</h2><p class="hv-sub">All ${A.stats.total} color tokens, computed at load from <code>data/tokens.json</code>. Uses counts references to the token in the app's code. Flags: DUPLICATE OF (same light and dark values), NEAR (deltaE 3 or less, cheapest first), closest org token with class EXACT, NEAR (deltaE 5 or less), ROLE-ONLY or NONE, and the proposal for the token. Nothing is applied to the app.</p>${summary(A)}${whyMore(A)}${fullTable(A)}</section>
-  <section id="e-consolidation" data-group="eng"><h2>Proposed color consolidation</h2>${consolidation(A, { eng: true })}</section>
+  <section id="e-consolidation" data-group="eng"><h2>Further color reductions</h2>${consolidation(A, { eng: true })}</section>
   <section id="e-tokens" data-group="eng"><h2>Other tokens</h2><p class="hv-sub">Everything except color. Uses counts how many rules use the token in the rendered UI. Colors are in the sections above.</p>${tokenSections}</section>
   <section id="e-text" data-group="eng"><h2>Text styles</h2>${tsTable}</section>
   <section id="e-scales" data-group="eng"><h2>Spacing and radii</h2><h3>Spacing</h3><div class="e-chips">${spacing}</div><h3>Radii</h3><div class="e-chips">${radii}</div></section>

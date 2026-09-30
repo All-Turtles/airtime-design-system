@@ -1,6 +1,8 @@
 import { load } from "./lib.js";
 import { human } from "./human.js";
 import { eng } from "./eng.js";
+import { initTips } from "./tip.js";
+initTips();
 
 const root = document.documentElement;
 const toggleTheme = () => { root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark"; };
