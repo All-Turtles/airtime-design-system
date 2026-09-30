@@ -420,8 +420,6 @@
   --cr-shadow-field-well-hover: inset 0 0 0 0.5px var(--cr-color-line-strong);
   --cr-shadow-field-focus: inset 0 0 0 0.5px var(--cr-color-accent-solid), 0 0 0 3px color-mix(in srgb, var(--cr-color-accent-solid) 22%, transparent);
   --cr-shadow-segment-track-sidebar: inset 0 0 0 0.5px var(--cr-color-line), inset 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --cr-shadow-popover: 0 0 0 0.5px var(--cr-color-edge-out), 0 8px 24px rgba(0, 0, 0, 0.45);
-  --cr-shadow-popover-range: 0 0 0 0.5px var(--cr-color-edge-out), 0 8px 20px rgba(0, 0, 0, 0.45);
   --cr-shadow-swatch-selected-tile: 0 0 0 2px var(--cr-color-accent-solid);
   --cr-shadow-swatch-selected-dot: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 2.5px var(--cr-color-accent-solid);
   --cr-shadow-range-track: inset 0 1px 1.5px rgba(0, 0, 0, 0.3);
@@ -436,11 +434,11 @@
   --cr-size-row: var(--cr-size-creator-sidebar-row);
   --cr-size-control: var(--cr-size-creator-sidebar-control);
   --cr-size-icon-row: var(--cr-size-5);
-  --cr-size-icon-action: var(--cr-size-4-5);
+  --cr-size-icon-action: var(--cr-size-4);
   --cr-size-icon-header: var(--cr-size-4);
   --cr-size-icon-inline: var(--cr-size-3-5);
   --cr-size-icon-shape: 22px;
-  --cr-size-icon-chevron: var(--cr-size-creator-device-chevron);
+  --cr-size-icon-chevron: var(--cr-size-3);
   --cr-size-hit-header: 26px;
   --cr-size-hit-inline: 22px;
   --cr-size-pane-header: var(--cr-size-11);
@@ -642,8 +640,6 @@
   --cr-shadow-field-well-hover: inset 0 0 0 0.5px var(--cr-color-line-strong);
   --cr-shadow-field-focus: inset 0 0 0 0.5px var(--cr-color-accent-solid), 0 0 0 3px color-mix(in srgb, var(--cr-color-accent-solid) 22%, transparent);
   --cr-shadow-segment-track-sidebar: inset 0 0 0 0.5px var(--cr-color-line), inset 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --cr-shadow-popover: 0 0 0 0.5px var(--cr-color-edge-out), 0 8px 24px rgba(0, 0, 0, 0.45);
-  --cr-shadow-popover-range: 0 0 0 0.5px var(--cr-color-edge-out), 0 8px 20px rgba(0, 0, 0, 0.45);
   --cr-shadow-swatch-selected-tile: 0 0 0 2px var(--cr-color-accent-solid);
   --cr-shadow-swatch-selected-dot: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 2.5px var(--cr-color-accent-solid);
   --cr-shadow-range-track: inset 0 1px 1.5px rgba(0, 0, 0, 0.3);
@@ -658,11 +654,11 @@
   --cr-size-row: var(--cr-size-creator-sidebar-row);
   --cr-size-control: var(--cr-size-creator-sidebar-control);
   --cr-size-icon-row: var(--cr-size-5);
-  --cr-size-icon-action: var(--cr-size-4-5);
+  --cr-size-icon-action: var(--cr-size-4);
   --cr-size-icon-header: var(--cr-size-4);
   --cr-size-icon-inline: var(--cr-size-3-5);
   --cr-size-icon-shape: 22px;
-  --cr-size-icon-chevron: var(--cr-size-creator-device-chevron);
+  --cr-size-icon-chevron: var(--cr-size-3);
   --cr-size-hit-header: 26px;
   --cr-size-hit-inline: 22px;
   --cr-size-pane-header: var(--cr-size-11);

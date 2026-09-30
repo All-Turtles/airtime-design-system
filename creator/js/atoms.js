@@ -170,7 +170,7 @@ add("Text and labels", "labels", "Labels", "The small text that names and explai
 /* ---------- Icons ---------- */
 const ICON_NAMES = ["eye", "lock", "trash", "duplicate", "expand", "effects", "border", "layout", "cam", "mic", "plus", "check", "chevronDown", "more", "undo", "redo", "help", "gear", "person", "search"];
 add("Icons", "icon-sizes", "Icon sizes", "The same glyph at each size used in the app.", {
-  tokens: ["size-icon-inline", "size-icon-row", "size-icon-header", "size-icon-action", "size-4", "size-5", "size-6"], classes: ["cr-icon"], states: ["12", "14", "16", "20", "24"], wide: 1,
+  tokens: ["size-icon-inline", "size-icon-row", "size-icon-header", "size-icon-action", "size-icon-chevron", "size-4", "size-5", "size-6"], classes: ["cr-icon"], states: ["12", "14", "16", "20", "24"], wide: 1,
   cells: [12, 14, 16, 20, 24].map((n) => [`${n}px`, `<span class="cr-icon" style="width:${n}px;height:${n}px;color:var(--cr-color-text-2)">${si("effects").replace(/^<span[^>]*>|<\/span>$/g, "")}</span>`]),
 });
 add("Icons", "icon-fill", "Stroke and fill", "Outline icons for controls, filled icons where a state needs weight.", {
@@ -198,8 +198,8 @@ add("Surfaces", "dividers", "Dividers", "Hairlines that separate groups. Half a 
 });
 const shadowTile = (v) => `<span class="sf is-card" style="box-shadow:var(--cr-shadow-${v})"></span>`;
 add("Surfaces", "shadows", "Shadows", "Elevation from hairline to dialog. Each is a stack of edge, contact and drop.", {
-  tokens: ["shadow-sidebar-card", "shadow-popover", "shadow-menu", "shadow-sheet", "shadow-tooltip", "shadow-band-pill", "shadow-top-bar", "shadow-button-solid", "shadow-focus"], classes: [], states: [], wide: 1,
-  cells: ["sidebar-card", "popover", "menu", "sheet", "tooltip", "band-pill", "top-bar", "button-solid", "focus"].map((n) => [n, shadowTile(n)]),
+  tokens: ["shadow-sidebar-card", "shadow-menu", "shadow-sheet", "shadow-tooltip", "shadow-band-pill", "shadow-top-bar", "shadow-button-solid", "shadow-focus"], classes: [], states: [], wide: 1,
+  cells: ["sidebar-card", "menu", "sheet", "tooltip", "band-pill", "top-bar", "button-solid", "focus"].map((n) => [n, shadowTile(n)]),
 });
 add("Surfaces", "focus", "Focus ring and selection", "A blue ring for keyboard focus. A blue outline or fill for what is selected.", {
   min: 130,

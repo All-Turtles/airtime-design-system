@@ -135,7 +135,7 @@ button.cr-row { line-height: normal; letter-spacing: normal; text-align: left; }
 .cr-field.is-pill.is-compact { height: var(--cr-size-row); border-radius: var(--cr-radius-lg); }
 
 /* ── slider row + range popup ─────────────────────── */
-.cr-range-pop { width: var(--cr-size-popup-range-w); padding: var(--cr-space-3) var(--cr-space-2-5) var(--cr-space-2); background: var(--cr-color-bg-panel); border-radius: var(--cr-radius-md); box-shadow: var(--cr-shadow-popover-range); }
+.cr-range-pop { width: var(--cr-size-popup-range-w); padding: var(--cr-space-3) var(--cr-space-2-5) var(--cr-space-2); background: var(--cr-color-bg-panel); border-radius: var(--cr-radius-md); box-shadow: var(--cr-shadow-menu); }
 .cr-range { appearance: none; width: 100%; height: var(--cr-size-4); margin: 0; background: transparent; cursor: default; display: block; }
 .cr-range::-webkit-slider-runnable-track { height: var(--cr-size-range-track); border-radius: var(--cr-radius-full); background: var(--cr-color-state-active); box-shadow: var(--cr-shadow-range-track); }
 .cr-range::-webkit-slider-thumb { -webkit-appearance: none; margin-top: -5.5px; width: var(--cr-size-range-thumb); height: var(--cr-size-range-thumb); border-radius: var(--cr-radius-full); background: var(--cr-color-knob); box-shadow: var(--cr-shadow-range-thumb); }
@@ -143,7 +143,7 @@ button.cr-row { line-height: normal; letter-spacing: normal; text-align: left; }
 .cr-range:focus-visible::-webkit-slider-thumb, .cr-range.is-focus::-webkit-slider-thumb { box-shadow: 0 0 0 3px var(--cr-color-accent-solid); }
 
 /* ── popups ── */
-.cr-popup { background: var(--cr-color-bg-panel); border-radius: var(--cr-radius-md); box-shadow: var(--cr-shadow-popover); width: max-content; }
+.cr-popup { background: var(--cr-color-bg-panel); border-radius: var(--cr-radius-md); box-shadow: var(--cr-shadow-menu); width: max-content; }
 .cr-popup.is-list { padding: var(--cr-space-1); }
 .cr-popup.is-grid { padding: var(--cr-space-2-5); }
 .cr-popup.is-color { width: var(--cr-size-popup-color-w); padding: var(--cr-space-2); }

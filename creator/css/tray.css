@@ -23,7 +23,7 @@
 .cr-tile:not(.is-selected):is(:hover, .is-hover) { outline-color: var(--cr-color-line-strong); }
 .cr-tile.is-selected { outline-color: var(--cr-color-accent-solid); }
 .cr-tile.is-dragging { opacity: 0.5; }
-.cr-tile .num { position: absolute; right: var(--cr-space-1-5); bottom: var(--cr-space-0-75); padding: 1px var(--cr-space-1); border-radius: var(--cr-radius-xs); background: var(--cr-color-slide-badge); color: var(--cr-color-ink-dark-primary); font-size: 9px; line-height: 11px; font-variant-numeric: tabular-nums; pointer-events: none; }
+.cr-tile .num { position: absolute; right: var(--cr-space-1-5); bottom: var(--cr-space-0-75); padding: 1px var(--cr-space-1); border-radius: var(--cr-radius-xs); background: var(--cr-color-slide-badge); color: var(--cr-color-ink-dark-primary); font-size: 9px; line-height: 12px; font-variant-numeric: tabular-nums; pointer-events: none; }
 .cr-tile .act { position: absolute; top: var(--cr-space-1-25); display: flex; align-items: center; justify-content: center; width: var(--cr-size-6); height: var(--cr-size-6); padding: 0; border-radius: 6px; background: var(--cr-color-slide-badge); color: var(--cr-color-on-badge); cursor: pointer; opacity: 0; pointer-events: none; transition: opacity var(--cr-duration-history) ease, transform var(--cr-duration-history) ease; }
 .cr-tile .act .cr-icon { width: var(--cr-size-4); height: var(--cr-size-4); }
 .cr-tile .act.edit { left: var(--cr-space-1-25); box-shadow: var(--cr-shadow-tile-action); transform: scale(0.94); }
