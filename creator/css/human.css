@@ -258,7 +258,7 @@ html[data-view="overview"] #eng, html[data-view="eng"] #human { display: none; }
 .cs-cell .cs-2nd { color: var(--cr-color-text-3); }
 .cs-cell .cs-bd { font-size: 11px; margin-top: 2px; }
 .cs-table td:first-child span { display: block; }
-.cs-table td .cs-line b, .cs-table td .cs-line span { display: inline; }
+.cs-table td .cs-line > b, .cs-table td .cs-line > span { display: inline; }
 .cs-table td .cs-line b { font-size: 15px; }
 .cs-table .is-target b { color: var(--cr-color-accent-fg); }
 .cs-pairs { display: flex; flex-wrap: wrap; gap: 12px; margin: 10px 0 6px; }
