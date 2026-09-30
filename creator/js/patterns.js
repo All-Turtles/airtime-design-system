@@ -31,7 +31,7 @@ add("pt-seg", "Segmented control", "Pick one of a few options: text, or shapes w
 });
 add("pt-tool", "Tool strip", "Small square tools in a row: text alignment, bold, italic, underline.", {
   tokens: ["text-3", "text-1", "state-selected", "size-control"], classes: ["cr-seg", "is-tool", "is-fill", "cr-seg-sep"], states: ["default", "selected"],
-  html: inSide(seg("tool", [{ icon: "textAlignLeft", label: "Left" }, { icon: "textAlignCenter", label: "Center" }, { icon: "textAlignRight", label: "Right" }], { on: 1, fill: true }) + gap(8) + seg("tool", [{ icon: "bold", label: "Bold" }, { icon: "italic", label: "Italic" }, { text: "<u>U</u>", label: "Underline" }], { mode: "toggle", on: [0, 2], fill: true })),
+  html: inSide(seg("tool", [{ icon: "textAlignLeft", label: "Left" }, { icon: "textAlignCenter", label: "Center" }, { icon: "textAlignRight", label: "Right" }], { on: 1, fill: true }) + gap(8) + seg("tool", [{ icon: "bold", label: "Bold" }, { icon: "italic", label: "Italic" }, { icon: "underline", label: "Underline" }], { mode: "toggle", on: [0, 2], fill: true })),
 });
 add("pt-fields", "Value fields", "Type a value, or drag its slider. Position fields carry an axis and a unit.", {
   tokens: ["surface-inset", "shadow-field-well", "size-field-value-w", "size-field-wide-w", "popover-range"], classes: ["cr-field", "is-value", "is-wide", "is-geo", "cr-range-pop", "cr-range"], states: ["default", "hover", "focus"],

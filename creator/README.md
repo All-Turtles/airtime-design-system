@@ -41,4 +41,4 @@ Creator tokens sit on top of the org tokens. `tokens/org/tokens.css` is a verbat
 
 ## Icons
 
-Icons are the public Airtime icons from `icons/`, inlined by `js/icons.js` and recolored to `currentColor`. The Engineering view lists which org icon each control uses, and which controls have only a near match or no match (those show a neutral ring).
+Icons are the public Airtime icons from `icons/`, inlined by `js/icons.js` and recolored to `currentColor`. The Engineering view lists which org icon each control uses, and which controls have only a near match, or no match (a neutral ring shows for those). Today every control has an org icon and a few are near matches.

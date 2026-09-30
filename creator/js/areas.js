@@ -112,19 +112,19 @@ add("Stage", "st-guides", "Alignment guides", "Snap lines while dragging: white 
 const mi = menuItem;
 add("Menus and dialogs", "mn-document", "Document menu", "Opens from the title: file actions for the presentation.", {
   tokens: ["mat-menu-solid", "shadow-menu", "radius-2xl", "accent-solid", "danger-fg", "text-4"], classes: ["cr-menu", "cr-menu-item", "cr-menu-label", "cr-menu-sep"], states: ["default", "hover", "checked", "disabled", "destructive"],
-  html: menu(`<div class="cr-menu-label">Presentation</div>${mi("plus", "New presentation")}${mi("duplicate", "Duplicate", "is-hover")}${mi("check", "Autosave")}${mi("", "Open recent", "", "", `<span class="ind">${si("chevronForward")}</span>`)}<div class="cr-menu-sep"></div>${mi("trash", "Delete", "", "data-destructive")}${mi("gear", "Settings", "is-disabled", "disabled")}`),
+  html: menu(`<div class="cr-menu-label">Presentation</div>${mi("plus", "New presentation")}${mi("newFromTemplate", "New from template...")}${mi("open", "Open")}${mi("allPresentations", "All presentations")}${mi("duplicate", "Duplicate", "is-hover")}${mi("shareCopy", "Share a copy")}${mi("notes", "Speaker notes")}${mi("check", "Autosave")}${mi("", "Open recent", "", "", `<span class="ind">${si("chevronForward")}</span>`)}<div class="cr-menu-sep"></div>${mi("trash", "Delete", "", "data-destructive")}${mi("gear", "Settings", "is-disabled", "disabled")}`),
 });
 add("Menus and dialogs", "mn-account", "Account menu", "Opens from the avatar: theme, language, legal, and sign in or create an account.", {
   tokens: ["mat-menu-solid", "shadow-menu", "text-2", "text-4", "line"], classes: ["cr-menu", "cr-menu-item", "cr-menu-sep", "ind"], states: ["default", "hover"],
-  html: menu(`${mi("theme", "Theme", "", "", `<span class="ind">${si("chevronForward")}</span>`)}${mi("language", "Language", "is-hover", "", `<span class="ind">${si("chevronForward")}</span>`)}<div class="cr-menu-sep"></div>${mi("legal", "Legal", "", "", `<span class="ind">${si("chevronForward")}</span>`)}<div class="cr-menu-sep"></div>${mi("personFill", "Sign In")}${mi("invite", "Create account")}`, 145),
+  html: menu(`${mi("theme", "Theme", "", "", `<span class="ind">${si("chevronForward")}</span>`)}${mi("language", "Language", "is-hover", "", `<span class="ind">${si("chevronForward")}</span>`)}<div class="cr-menu-sep"></div>${mi("legal", "Legal", "", "", `<span class="ind">${si("chevronForward")}</span>`)}<div class="cr-menu-sep"></div>${mi("personFill", "Sign In")}${mi("invite", "Create account")}<div class="cr-menu-sep"></div>${mi("signout", "Sign out")}`, 145),
 });
 add("Menus and dialogs", "mn-help", "Help menu", "Opens from the help button: tutorials, about slides, help center, support.", {
   tokens: ["mat-menu-solid", "shadow-menu", "accent-solid", "line"], classes: ["cr-menu", "cr-menu-item", "cr-menu-sep"], states: ["default", "hover"],
-  html: menu(`${mi("video", "Watch tutorial videos")}${mi("help", "About slides", "is-hover")}<div class="cr-menu-sep"></div>${mi("search", "Search our help center")}${mi("ask", "Contact support")}`, 190),
+  html: menu(`${mi("video", "Watch tutorial videos")}${mi("help", "About slides", "is-hover")}${mi("keyboard", "Keyboard shortcuts")}<div class="cr-menu-sep"></div>${mi("search", "Search our help center")}${mi("ask", "Contact support")}`, 190),
 });
 add("Menus and dialogs", "mn-context", "Context menu", "Right-click on an object: arrange, copy, delete.", {
   tokens: ["mat-menu-solid", "shadow-menu", "danger-fg", "danger-solid"], classes: ["cr-menu", "cr-menu-item"], states: ["default", "hover", "destructive"],
-  html: menu(`${mi("duplicate", "Duplicate")}${mi("arrange", "Bring to front", "is-hover")}${mi("paste", "Paste settings", "is-disabled", "disabled")}<div class="cr-menu-sep"></div>${mi("trash", "Delete", "", "data-destructive")}`, 220),
+  html: menu(`${mi("duplicate", "Duplicate")}${mi("arrangeToFront", "Bring to front", "is-hover")}${mi("arrange", "Bring forward")}${mi("arrangeBackward", "Send backward")}${mi("arrangeToBack", "Send to back")}${mi("paste", "Paste settings", "is-disabled", "disabled")}<div class="cr-menu-sep"></div>${mi("trash", "Delete", "", "data-destructive")}`, 220),
 });
 add("Menus and dialogs", "mn-dialog", "Dialog", "A small confirmation on a dimmed window. Cancel, and a primary or danger action.", {
   tokens: ["mat-sheet", "scrim-modal", "shadow-sheet", "radius-3xl", "text-1", "text-2"], classes: ["cr-scrim", "cr-dialog", "header", "body", "footer"], states: ["default"], wide: 1,
