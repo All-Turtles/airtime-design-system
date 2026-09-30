@@ -1,0 +1,1966 @@
+{
+  "$name": "Creator - sizing",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
+  "size": {
+    "0": {
+      "5": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-0-5",
+            "kind": "primitive",
+            "status": "chakra-default",
+            "rendered": {
+              "light": "2px",
+              "dark": "2px"
+            },
+            "org": {
+              "relation": "same",
+              "org": "--size-05",
+              "note": "value 2px equals org --size-05"
+            },
+            "alias": "--size-05",
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "5": {
+        "$value": "6px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-1-5",
+            "kind": "primitive",
+            "status": "chakra-default",
+            "rendered": {
+              "light": "6px",
+              "dark": "6px"
+            },
+            "org": {
+              "relation": "same",
+              "org": "--size-15",
+              "note": "value 6px equals org --size-15"
+            },
+            "alias": "--size-15",
+            "used": {
+              "all": 2
+            }
+          }
+        }
+      },
+      "$value": "4px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-1",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "4px",
+            "dark": "4px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-10",
+            "note": "value 4px equals org --size-10"
+          },
+          "alias": "--size-10",
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "2": {
+      "5": {
+        "$value": "10px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-2-5",
+            "kind": "primitive",
+            "status": "chakra-default",
+            "rendered": {
+              "light": "10px",
+              "dark": "10px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 10px"
+            },
+            "alias": null,
+            "used": {
+              "all": 56
+            }
+          }
+        }
+      },
+      "$value": "8px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-2",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "8px",
+            "dark": "8px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-20",
+            "note": "value 8px equals org --size-20"
+          },
+          "alias": "--size-20",
+          "used": {
+            "all": 12
+          }
+        }
+      }
+    },
+    "3": {
+      "5": {
+        "$value": "14px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-3-5",
+            "kind": "primitive",
+            "status": "chakra-default",
+            "rendered": {
+              "light": "14px",
+              "dark": "14px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 14px"
+            },
+            "alias": null,
+            "used": {
+              "all": 28
+            }
+          }
+        }
+      },
+      "$value": "12px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-3",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "12px",
+            "dark": "12px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-30",
+            "note": "value 12px equals org --size-30"
+          },
+          "alias": "--size-30",
+          "used": {
+            "all": 30
+          }
+        }
+      }
+    },
+    "4": {
+      "5": {
+        "$value": "18px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-4-5",
+            "kind": "primitive",
+            "status": "chakra-default",
+            "rendered": {
+              "light": "18px",
+              "dark": "18px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 18px"
+            },
+            "alias": null,
+            "used": {
+              "all": 194
+            }
+          }
+        }
+      },
+      "$value": "16px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-4",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "16px",
+            "dark": "16px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-40",
+            "note": "value 16px equals org --size-40"
+          },
+          "alias": "--size-40",
+          "used": {
+            "all": 280
+          }
+        }
+      }
+    },
+    "5": {
+      "$value": "20px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-5",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "20px",
+            "dark": "20px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-50",
+            "note": "value 20px equals org --size-50"
+          },
+          "alias": "--size-50",
+          "used": {
+            "all": 878
+          }
+        }
+      }
+    },
+    "6": {
+      "$value": "24px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-6",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "24px",
+            "dark": "24px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-60",
+            "note": "value 24px equals org --size-60"
+          },
+          "alias": "--size-60",
+          "used": {
+            "all": 170
+          }
+        }
+      }
+    },
+    "7": {
+      "$value": "28px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-7",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "28px",
+            "dark": "28px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-70",
+            "note": "value 28px equals org --size-70"
+          },
+          "alias": "--size-70",
+          "used": {
+            "all": 62
+          }
+        }
+      }
+    },
+    "8": {
+      "$value": "32px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-8",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "32px",
+            "dark": "32px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-80",
+            "note": "value 32px equals org --size-80"
+          },
+          "alias": "--size-80",
+          "used": {
+            "all": 426
+          }
+        }
+      }
+    },
+    "9": {
+      "$value": "36px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-9",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "36px",
+            "dark": "36px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 36px"
+          },
+          "alias": null,
+          "used": {
+            "all": 4
+          }
+        }
+      }
+    },
+    "10": {
+      "$value": "40px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-10",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "40px",
+            "dark": "40px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-100",
+            "note": "value 40px equals org --size-100"
+          },
+          "alias": "--size-100",
+          "used": {
+            "all": 16
+          }
+        }
+      }
+    },
+    "11": {
+      "$value": "44px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-11",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "44px",
+            "dark": "44px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 44px"
+          },
+          "alias": null,
+          "used": {
+            "all": 8
+          }
+        }
+      }
+    },
+    "12": {
+      "$value": "48px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-12",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "48px",
+            "dark": "48px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-120",
+            "note": "value 48px equals org --size-120"
+          },
+          "alias": "--size-120",
+          "used": {
+            "all": 14
+          }
+        }
+      }
+    },
+    "14": {
+      "$value": "56px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-14",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "56px",
+            "dark": "56px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-140",
+            "note": "value 56px equals org --size-140"
+          },
+          "alias": "--size-140",
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "16": {
+      "$value": "64px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-16",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "64px",
+            "dark": "64px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-160",
+            "note": "value 64px equals org --size-160"
+          },
+          "alias": "--size-160",
+          "used": {
+            "all": 8
+          }
+        }
+      }
+    },
+    "20": {
+      "$value": "80px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-20",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "80px",
+            "dark": "80px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--size-200",
+            "note": "value 80px equals org --size-200"
+          },
+          "alias": "--size-200",
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "24": {
+      "$value": "96px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-24",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "96px",
+            "dark": "96px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 96px"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "28": {
+      "$value": "112px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-28",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "112px",
+            "dark": "112px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 112px"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "32": {
+      "$value": "128px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-32",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "128px",
+            "dark": "128px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 128px"
+          },
+          "alias": null,
+          "used": {
+            "all": 24
+          }
+        }
+      }
+    },
+    "36": {
+      "$value": "144px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-36",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "144px",
+            "dark": "144px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 144px"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "40": {
+      "$value": "160px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-40",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "160px",
+            "dark": "160px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 160px"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "44": {
+      "$value": "176px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-44",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "176px",
+            "dark": "176px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 176px"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "48": {
+      "$value": "192px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-48",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "192px",
+            "dark": "192px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 192px"
+          },
+          "alias": null,
+          "used": {
+            "all": 12
+          }
+        }
+      }
+    },
+    "52": {
+      "$value": "208px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-52",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "208px",
+            "dark": "208px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 208px"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "56": {
+      "$value": "224px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-56",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "224px",
+            "dark": "224px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 224px"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "60": {
+      "$value": "240px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-60",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "240px",
+            "dark": "240px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 240px"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "64": {
+      "$value": "256px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-64",
+          "kind": "primitive",
+          "status": "chakra-default",
+          "rendered": {
+            "light": "256px",
+            "dark": "256px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 256px"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "creator": {
+      "selectionMenuMin": {
+        "$value": "220px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-selection-menu-min",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "220px",
+              "dark": "220px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 220px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "selectionMenuMax": {
+        "$value": "328px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-selection-menu-max",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "328px",
+              "dark": "328px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 328px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "typographyMenuWidth": {
+        "$value": "368px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-typography-menu-width",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "368px",
+              "dark": "368px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 368px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "topBar": {
+        "$value": "52px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-top-bar",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "52px",
+              "dark": "52px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 52px"
+            },
+            "alias": null,
+            "used": {
+              "all": 8
+            }
+          }
+        }
+      },
+      "accountHeader": {
+        "$value": "260px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-account-header",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "260px",
+              "dark": "260px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 260px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "title": {
+        "$value": "280px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-title",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "280px",
+              "dark": "280px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 280px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "titleCompact": {
+        "$value": "180px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-title-compact",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "180px",
+              "dark": "180px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 180px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "titleGlyph": {
+        "$value": "15px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-title-glyph",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "15px",
+              "dark": "15px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 15px"
+            },
+            "alias": null,
+            "used": {
+              "all": 324
+            }
+          }
+        }
+      },
+      "titleChevron": {
+        "$value": "22px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-title-chevron",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "22px",
+              "dark": "22px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 22px"
+            },
+            "alias": null,
+            "used": {
+              "all": 56
+            }
+          }
+        }
+      },
+      "hairline": {
+        "$value": "0.5px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-hairline",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "0.5px",
+              "dark": "0.5px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 0.5px"
+            },
+            "alias": null,
+            "used": {
+              "all": 62
+            }
+          }
+        }
+      },
+      "stageBand": {
+        "$value": "46px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-stage-band",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "46px",
+              "dark": "46px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 46px"
+            },
+            "alias": null,
+            "used": {
+              "all": 16
+            }
+          }
+        }
+      },
+      "stageBandNarrow": {
+        "$value": "88px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-stage-band-narrow",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "88px",
+              "dark": "88px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 88px"
+            },
+            "alias": null,
+            "used": {
+              "all": 16
+            }
+          }
+        }
+      },
+      "bandRow": {
+        "$value": "38px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-band-row",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "38px",
+              "dark": "38px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 38px"
+            },
+            "alias": null,
+            "used": {
+              "all": 96
+            }
+          }
+        }
+      },
+      "deviceName": {
+        "$value": "88px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-device-name",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "88px",
+              "dark": "88px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 88px"
+            },
+            "alias": null,
+            "used": {
+              "all": 16
+            }
+          }
+        }
+      },
+      "devicePopover": {
+        "$value": "258px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-device-popover",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "258px",
+              "dark": "258px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 258px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "deviceChevron": {
+        "$value": "9px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-device-chevron",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "9px",
+              "dark": "9px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 9px"
+            },
+            "alias": null,
+            "used": {
+              "all": 136
+            }
+          }
+        }
+      },
+      "statusDot": {
+        "$value": "7px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-status-dot",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "7px",
+              "dark": "7px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 7px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "statusBadgeDot": {
+        "$value": "5px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-status-badge-dot",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "5px",
+              "dark": "5px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 5px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "recordMin": {
+        "$value": "93px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-record-min",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "93px",
+              "dark": "93px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 93px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "recordLabel": {
+        "$value": "37px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-record-label",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "37px",
+              "dark": "37px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 37px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "cameraPopover": {
+        "$value": "360px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-camera-popover",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "360px",
+              "dark": "360px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 360px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "tray": {
+        "$value": "116px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-tray",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "116px",
+              "dark": "116px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 116px"
+            },
+            "alias": null,
+            "used": {
+              "all": 16
+            }
+          }
+        }
+      },
+      "slideThumbnail": {
+        "$value": "78px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-slide-thumbnail",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "78px",
+              "dark": "78px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 78px"
+            },
+            "alias": null,
+            "used": {
+              "all": 32
+            }
+          }
+        }
+      },
+      "roomTile": {
+        "$value": "76px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-room-tile",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "76px",
+              "dark": "76px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 76px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "slideLane": {
+        "$value": "84px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-slide-lane",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "84px",
+              "dark": "84px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 84px"
+            },
+            "alias": null,
+            "used": {
+              "all": 8
+            }
+          }
+        }
+      },
+      "overlayLane": {
+        "$value": "28px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-overlay-lane",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "28px",
+              "dark": "28px"
+            },
+            "org": {
+              "relation": "same",
+              "org": "--size-70",
+              "note": "value 28px equals org --size-70"
+            },
+            "alias": "--size-70",
+            "used": {
+              "all": 62
+            }
+          }
+        }
+      },
+      "slidePopover": {
+        "$value": "324px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-slide-popover",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "324px",
+              "dark": "324px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 324px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "sidebar": {
+        "$value": "296px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-sidebar",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "296px",
+              "dark": "296px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 296px"
+            },
+            "alias": null,
+            "used": {
+              "all": 24
+            }
+          }
+        }
+      },
+      "sidebarRow": {
+        "$value": "30px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-sidebar-row",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "30px",
+              "dark": "30px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 30px"
+            },
+            "alias": null,
+            "used": {
+              "all": 164
+            }
+          }
+        }
+      },
+      "sidebarControl": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-sidebar-control",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "24px",
+              "dark": "24px"
+            },
+            "org": {
+              "relation": "same",
+              "org": "--size-60",
+              "note": "value 24px equals org --size-60"
+            },
+            "alias": "--size-60",
+            "used": {
+              "all": 170
+            }
+          }
+        }
+      },
+      "slideCounter": {
+        "$value": "46px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-slide-counter",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "46px",
+              "dark": "46px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 46px"
+            },
+            "alias": null,
+            "used": {
+              "all": 16
+            }
+          }
+        }
+      },
+      "slidesInfo": {
+        "$value": "320px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-slides-info",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "320px",
+              "dark": "320px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 320px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "layoutPicker": {
+        "$value": "470px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-layout-picker",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "470px",
+              "dark": "470px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 470px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "layoutGrid": {
+        "$value": "300px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-layout-grid",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "300px",
+              "dark": "300px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 300px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "videoLibrary": {
+        "$value": "280px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-video-library",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "280px",
+              "dark": "280px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 280px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "videoDetails": {
+        "$value": "240px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-video-details",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "240px",
+              "dark": "240px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 240px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "videoTimeline": {
+        "$value": "144px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-video-timeline",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "144px",
+              "dark": "144px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 144px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "shareDialog": {
+        "$value": "460px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-share-dialog",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "460px",
+              "dark": "460px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 460px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "shareSuggestions": {
+        "$value": "232px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-creator-share-suggestions",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "232px",
+              "dark": "232px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 232px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      }
+    },
+    "sheet": {
+      "width": {
+        "$value": "800px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-sheet-width",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "800px",
+              "dark": "800px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 800px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "height": {
+        "$value": "642px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-sheet-height",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "642px",
+              "dark": "642px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 642px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "maxWidth": {
+        "$value": "calc(100vw - 48px)",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-sheet-max-width",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "calc(100vw - 48px)",
+              "dark": "calc(100vw - 48px)"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value calc(100vw - 48px)"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "maxHeight": {
+        "$value": "calc(100vh - 48px)",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-sheet-max-height",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "calc(100vh - 48px)",
+              "dark": "calc(100vh - 48px)"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value calc(100vh - 48px)"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      }
+    },
+    "backgroundBrowser": {
+      "width": {
+        "$value": "min(85vw, 800px)",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-background-browser-width",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "min(85vw, 800px)",
+              "dark": "min(85vw, 800px)"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value min(85vw, 800px)"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "height": {
+        "$value": "min(100vh, 640px)",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-background-browser-height",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "min(100vh, 640px)",
+              "dark": "min(100vh, 640px)"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value min(100vh, 640px)"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "sidebar": {
+        "$value": "160px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-background-browser-sidebar",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "160px",
+              "dark": "160px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 160px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "row": {
+        "$value": "190px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-background-browser-row",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "190px",
+              "dark": "190px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 190px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      }
+    },
+    "splitPicker": {
+      "sidebar": {
+        "$value": "208px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-split-picker-sidebar",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "208px",
+              "dark": "208px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 208px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "paneHeader": {
+        "$value": "56px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-split-picker-pane-header",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "56px",
+              "dark": "56px"
+            },
+            "org": {
+              "relation": "same",
+              "org": "--size-140",
+              "note": "value 56px equals org --size-140"
+            },
+            "alias": "--size-140",
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      },
+      "inputWrapper": {
+        "$value": "30px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-split-picker-input-wrapper",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "30px",
+              "dark": "30px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 30px"
+            },
+            "alias": null,
+            "used": {
+              "all": 164
+            }
+          }
+        }
+      },
+      "details": {
+        "$value": "208px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-size-split-picker-details",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "208px",
+              "dark": "208px"
+            },
+            "org": {
+              "relation": "creator-only",
+              "note": "no org size token has value 208px"
+            },
+            "alias": null,
+            "used": {
+              "all": 0
+            }
+          }
+        }
+      }
+    },
+    "segment": {
+      "$value": "26px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-segment",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "26px",
+            "dark": "26px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org size token has value 26px"
+          },
+          "alias": null,
+          "used": {
+            "all": 112
+          }
+        }
+      }
+    }
+  },
+  "aspect": {
+    "cameraDemo": {
+      "$value": "736 / 414",
+      "$type": "string",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-aspect-camera-demo",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "736/414",
+            "dark": "736/414"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no counterpart in airtime-design-system tokens"
+          },
+          "alias": null,
+          "used": null
+        }
+      }
+    }
+  }
+}

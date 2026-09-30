@@ -1,0 +1,1206 @@
+{
+  "$name": "Creator - derived (literals found in recipes and primitives that the app does not name)",
+  "opacity": {
+    "disabled": {
+      "$value": "0.4",
+      "$type": "number",
+      "$description": "Disabled control and unwired placeholder: the whole control dims once.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-opacity-disabled",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "dimmed": {
+      "$value": "0.45",
+      "$type": "number",
+      "$description": "A hidden layer's thumbnail fades.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-opacity-dimmed",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "locked-grip": {
+      "$value": "0.3",
+      "$type": "number",
+      "$description": "A locked layer's grip glyph.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-opacity-locked-grip",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "disabled-button": {
+      "$value": "0.45",
+      "$type": "number",
+      "$description": "Disabled Button (and disabled menu item): heavier than the sidebar's 0.4.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-opacity-disabled-button",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "disabled-icon": {
+      "$value": "0.3",
+      "$type": "number",
+      "$description": "Disabled icon button (size xs: Undo/Redo).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-opacity-disabled-icon",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "disabled-split": {
+      "$value": "0.2",
+      "$type": "number",
+      "$description": "Disabled half of a device split button.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-opacity-disabled-split",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "status-dot": {
+      "$value": "0.55",
+      "$type": "number",
+      "$description": "Idle status dot.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-opacity-status-dot",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    }
+  },
+  "font-size": {
+    "sidebar": {
+      "$value": "12px",
+      "$type": "dimension",
+      "$description": "Sidebar root type size, inherited by every descendant.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-font-size-sidebar",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    }
+  },
+  "line-height": {
+    "sidebar": {
+      "$value": "15px",
+      "$type": "dimension",
+      "$description": "Sidebar root line height: every 30px row is two of these.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-line-height-sidebar",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    }
+  },
+  "letter-spacing": {
+    "sidebar": {
+      "$value": "-0.036px",
+      "$type": "dimension",
+      "$description": "Sidebar root tracking (prototype computed -0.04px at 12px).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-letter-spacing-sidebar",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    }
+  },
+  "color": {
+    "pill-fill": {
+      "$value": "rgba(255, 255, 255, 0.12)",
+      "$type": "color",
+      "$description": "Dropdown value pill: the same translucent lift in both themes.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-pill-fill",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "swatch-ring-dot": {
+      "$value": "rgba(255, 255, 255, 0.24)",
+      "$type": "color",
+      "$description": "1px inset ring on tint dots and the color-well dot (white in both themes).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-swatch-ring-dot",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "swatch-ring-tile": {
+      "$value": "rgba(255, 255, 255, 0.16)",
+      "$type": "color",
+      "$description": "1px ring around background tiles.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-swatch-ring-tile",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "swatch-none-slash": {
+      "$value": "rgb(255, 69, 58)",
+      "$type": "color",
+      "$description": "The red diagonal of the empty (None) dot.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-swatch-none-slash",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "swatch-none-fill": {
+      "$value": "rgba(255, 255, 255, 0.08)",
+      "$type": "color",
+      "$description": "Fill behind the None dot's slash.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-swatch-none-fill",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "chip-ground": {
+      "$value": "#E6E6EC",
+      "$type": "color",
+      "$description": "Drop-shadow preset chip: the miniature slide's ground (content, same in both themes).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-chip-ground",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "checker-a": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "Transparency checker, light square.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-checker-a",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "checker-b": {
+      "$value": "#D4D4DA",
+      "$type": "color",
+      "$description": "Transparency checker, dark square.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-checker-b",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "thumb-selected-fill": {
+      "$value": "rgba(255, 255, 255, 0.18)",
+      "$type": "color",
+      "$description": "Thumb slot inside a selected (accent) list row.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-thumb-selected-fill",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "thumb-selected-ring": {
+      "$value": "rgba(255, 255, 255, 0.3)",
+      "$type": "color",
+      "$description": "Thumb hairline inside a selected list row.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-thumb-selected-ring",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "knob": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "Slider and switch knobs are white in both themes.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-knob",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "stage-frame": {
+      "$value": "#99E5EE",
+      "$type": "color",
+      "$description": "Selection frame and handle border: legacy Airtime teal (--action-hover), not Creator's accent blue.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-stage-frame",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "stage-guide-hit": {
+      "$value": "#E55242",
+      "$type": "color",
+      "$description": "Alignment guide that the dragged object is snapping to.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-stage-guide-hit",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "stage-guide": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "Anchor snap lines (thirds/centre).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-stage-guide",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "stage-grid-fill": {
+      "$value": "rgba(127, 127, 127, 0.65)",
+      "$type": "color",
+      "$description": "Alignment grid canvas fill.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-stage-grid-fill",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "handle-fill": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "Resize handle fill.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-handle-fill",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "on-badge": {
+      "$value": "rgba(255, 255, 255, 0.96)",
+      "$type": "color",
+      "$description": "Artwork on a dark slide badge or tile action: white in both themes.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-on-badge",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    }
+  },
+  "shadow": {
+    "sidebar-card": {
+      "$value": "0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 40px 0 rgba(0, 0, 0, 0.35)",
+      "$type": "shadow",
+      "$description": "The sidebar card itself: a 1px white hairline and a 20/40 drop. (The declared token shadow.sidebar is not what renders.)",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-sidebar-card",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "action-button": {
+      "$value": "inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 1px 2px rgba(0, 0, 0, 0.2)",
+      "$type": "shadow",
+      "$description": "Action button raised edge: top highlight plus 1px drop.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-action-button",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "pill": {
+      "$value": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.16), 0 1px 2px rgba(0, 0, 0, 0.2)",
+      "$type": "shadow",
+      "$description": "Dropdown value pill.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-pill",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "field-well": {
+      "$value": "inset 0 0 0 0.5px var(--cr-color-line)",
+      "$type": "shadow",
+      "$description": "Value field well: hairline ring.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-field-well",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "field-well-hover": {
+      "$value": "inset 0 0 0 0.5px var(--cr-color-line-strong)",
+      "$type": "shadow",
+      "$description": "Value field well on hover.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-field-well-hover",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "field-focus": {
+      "$value": "inset 0 0 0 0.5px var(--cr-color-accent-solid), 0 0 0 3px color-mix(in srgb, var(--cr-color-accent-solid) 22%, transparent)",
+      "$type": "shadow",
+      "$description": "Value field focus: 0.5px accent line inside a 3px 22% halo (softer than shadow.focus).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-field-focus",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "segment-track-sidebar": {
+      "$value": "inset 0 0 0 0.5px var(--cr-color-line), inset 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+      "$type": "shadow",
+      "$description": "Segmented and shape tracks: hairline ring and 1px inner drop.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-segment-track-sidebar",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "popover": {
+      "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 8px 24px rgba(0, 0, 0, 0.45)",
+      "$type": "shadow",
+      "$description": "Dropdown panel and color-well popover.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-popover",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "popover-range": {
+      "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 8px 20px rgba(0, 0, 0, 0.45)",
+      "$type": "shadow",
+      "$description": "Range popup under a value field.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-popover-range",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "swatch-selected-tile": {
+      "$value": "0 0 0 2px var(--cr-color-accent-solid)",
+      "$type": "shadow",
+      "$description": "Selected background tile: 2px accent ring.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-swatch-selected-tile",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "swatch-selected-dot": {
+      "$value": "inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 2.5px var(--cr-color-accent-solid)",
+      "$type": "shadow",
+      "$description": "Selected tint dot: 2.5px accent ring outside a white inner hairline.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-swatch-selected-dot",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "range-track": {
+      "$value": "inset 0 1px 1.5px rgba(0, 0, 0, 0.3)",
+      "$type": "shadow",
+      "$description": "Range slider track (4px, state.active fill).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-range-track",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "range-thumb": {
+      "$value": "0 0 0 0.5px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.38)",
+      "$type": "shadow",
+      "$description": "Range slider thumb (15px white).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-range-thumb",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "switch-track": {
+      "$value": "inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+      "$type": "shadow",
+      "$description": "Switch track (30x18).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-switch-track",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "switch-knob": {
+      "$value": "0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28)",
+      "$type": "shadow",
+      "$description": "Switch knob (14px white).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-switch-knob",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "thumb-ring": {
+      "$value": "inset 0 0 0 0.5px var(--cr-color-line-strong)",
+      "$type": "shadow",
+      "$description": "Thumbnail frame hairline (layer, layout, logo).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-thumb-ring",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "drop-before": {
+      "$value": "inset 0 2px 0 var(--cr-color-state-drop-indicator)",
+      "$type": "shadow",
+      "$description": "Layer drag: insertion line on a row's top edge (bottom: inset 0 -2px).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-drop-before",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "handle": {
+      "$value": "0 1px 4px rgba(0, 0, 0, 0.18)",
+      "$type": "shadow",
+      "$description": "Resize handle.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-handle",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "tile-action": {
+      "$value": "0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28)",
+      "$type": "shadow",
+      "$description": "Slide tile edit/layers chip.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-tile-action",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    }
+  },
+  "size": {
+    "row": {
+      "$value": "var(--cr-size-creator-sidebar-row)",
+      "$type": "dimension",
+      "$description": "Row height, 30px (min-height).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-row",
+          "org": {
+            "relation": "creator-only",
+            "note": "Org rows are 32px/40px (rows.css)."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "control": {
+      "$value": "var(--cr-size-creator-sidebar-control)",
+      "$type": "dimension",
+      "$description": "Segment, value field, pill and tool height, 24px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-control",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "icon-row": {
+      "$value": "var(--cr-size-5)",
+      "$type": "dimension",
+      "$description": "Row glyph box: 20px. Glyph painted with fill: currentColor.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-icon-row",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "icon-action": {
+      "$value": "var(--cr-size-4-5)",
+      "$type": "dimension",
+      "$description": "Action button glyph: 18px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-icon-action",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "icon-header": {
+      "$value": "var(--cr-size-4)",
+      "$type": "dimension",
+      "$description": "Header toggle glyph: 16px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-icon-header",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "icon-inline": {
+      "$value": "var(--cr-size-3-5)",
+      "$type": "dimension",
+      "$description": "Layer-row eye/lock glyph: 14px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-icon-inline",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "icon-shape": {
+      "$value": "22px",
+      "$type": "dimension",
+      "$description": "Shape segment glyph.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-icon-shape",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "icon-chevron": {
+      "$value": "var(--cr-size-creator-device-chevron)",
+      "$type": "dimension",
+      "$description": "Pill chevron: 9px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-icon-chevron",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "hit-header": {
+      "$value": "26px",
+      "$type": "dimension",
+      "$description": "Header IconToggle box (back, hide, lock); 22px inline.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-hit-header",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "hit-inline": {
+      "$value": "22px",
+      "$type": "dimension",
+      "$description": "Layer-row eye/lock box.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-hit-inline",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "pane-header": {
+      "$value": "var(--cr-size-11)",
+      "$type": "dimension",
+      "$description": "Pane header band: 44px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-pane-header",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "thumb-row": {
+      "$value": "var(--cr-size-9)",
+      "$type": "dimension",
+      "$description": "List row min height: 36px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-thumb-row",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "thumb-w": {
+      "$value": "var(--cr-size-12)",
+      "$type": "dimension",
+      "$description": "Row thumbnail slot: 48px wide.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-thumb-w",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "thumb-h": {
+      "$value": "var(--cr-size-7)",
+      "$type": "dimension",
+      "$description": "Row thumbnail slot: 28px tall.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-thumb-h",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "color-dot": {
+      "$value": "var(--cr-size-5)",
+      "$type": "dimension",
+      "$description": "Color-well dot: 20px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-color-dot",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "tint-dot": {
+      "$value": "var(--cr-size-6)",
+      "$type": "dimension",
+      "$description": "Tint dot in a swatch grid: 24px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-tint-dot",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "switch-w": {
+      "$value": "30px",
+      "$type": "dimension",
+      "$description": "Switch track width (hit box 34x26).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-switch-w",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "switch-h": {
+      "$value": "18px",
+      "$type": "dimension",
+      "$description": "Switch track height.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-switch-h",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "switch-knob": {
+      "$value": "14px",
+      "$type": "dimension",
+      "$description": "Switch knob.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-switch-knob",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "range-thumb": {
+      "$value": "15px",
+      "$type": "dimension",
+      "$description": "Range thumb.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-range-thumb",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "range-track": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$description": "Range track height.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-range-track",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "popup-range-w": {
+      "$value": "250px",
+      "$type": "dimension",
+      "$description": "Range popup width.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-popup-range-w",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "popup-color-w": {
+      "$value": "var(--cr-size-60)",
+      "$type": "dimension",
+      "$description": "Color-well popover width: 240px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-popup-color-w",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "popup-grid-col": {
+      "$value": "56px",
+      "$type": "dimension",
+      "$description": "Dropdown grid panel: three 56px columns.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-popup-grid-col",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "popup-gutter": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$description": "Gap between the row's edge and its popup.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-popup-gutter",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "popup-edge": {
+      "$value": "16px",
+      "$type": "dimension",
+      "$description": "Popup keeps this far inside the sidebar card (flip/slide boundary).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-popup-edge",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "field-value-w": {
+      "$value": "54px",
+      "$type": "dimension",
+      "$description": "Value field width; the wide (hex) field is 112px.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-field-value-w",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "field-wide-w": {
+      "$value": "112px",
+      "$type": "dimension",
+      "$description": "Wide value field (hex).",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-field-wide-w",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "handle": {
+      "$value": "10px",
+      "$type": "dimension",
+      "$description": "Resize handle knob (corner and edge); crop edge handles are 10x20.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-handle",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "frame-width": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Selection frame and handle border width.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-size-frame-width",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    }
+  },
+  "transition": {
+    "control": {
+      "$value": "background var(--cr-duration-fast) var(--cr-easing-settle), color var(--cr-duration-fast) var(--cr-easing-settle)",
+      "$type": "transition",
+      "$description": "Segments, rows, fields: color changes on 160ms settle.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-transition-control",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    },
+    "swatch": {
+      "$value": "box-shadow var(--cr-duration-fast) var(--cr-easing-spring), transform var(--cr-duration-fast) var(--cr-easing-spring)",
+      "$type": "transition",
+      "$description": "Swatch hover scale and ring: 160ms spring.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-transition-swatch",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    }
+  },
+  "radius": {
+    "handle": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Resize handle radius.",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-radius-handle",
+          "org": {
+            "relation": "creator-only",
+            "note": "A literal in Creator recipes with no org token."
+          },
+          "status": "derived"
+        }
+      }
+    }
+  }
+}

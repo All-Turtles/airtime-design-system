@@ -1,0 +1,71 @@
+{
+  "$name": "Creator - borders",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
+  "border-width": {
+    "hair": {
+      "$value": "0.5px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-border-width-hair",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "0.5px",
+            "dark": "0.5px"
+          },
+          "org": {
+            "relation": "creator-only",
+            "note": "no org border-width token has value 0.5px"
+          },
+          "alias": null,
+          "used": null
+        }
+      }
+    },
+    "thin": {
+      "$value": "1px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-border-width-thin",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "1px",
+            "dark": "1px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--border-width-thin",
+            "note": "value 1px equals org --border-width-thin"
+          },
+          "alias": "--border-width-thin",
+          "used": null
+        }
+      }
+    },
+    "medium": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-border-width-medium",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "2px",
+            "dark": "2px"
+          },
+          "org": {
+            "relation": "same",
+            "org": "--border-width-medium",
+            "note": "value 2px equals org --border-width-medium"
+          },
+          "alias": "--border-width-medium",
+          "used": null
+        }
+      }
+    }
+  }
+}

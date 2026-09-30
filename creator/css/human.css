@@ -1,0 +1,90 @@
+/* human.css - the Overview view, the top bar. Docs chrome only, built on tokens.css. */
+.viewbar { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; gap: 14px; height: 44px; padding: 0 20px; background: var(--cr-color-bg-panel); border-bottom: 0.5px solid var(--cr-color-line-strong); }
+.viewbar-title { font-weight: 600; font-size: 14px; color: var(--cr-color-text-1); letter-spacing: -0.01em; margin-right: auto; }
+.viewbar-title:hover { text-decoration: none; }
+.viewbar-theme { appearance: none; white-space: nowrap; flex: none; border: 0; height: 28px; padding: 0 10px; border-radius: 7px; background: var(--cr-color-state-hover); color: var(--cr-color-text-2); font-size: 12px; cursor: pointer; }
+.viewbar button:focus-visible, .hv-btn:focus-visible, .hv-motion:focus-visible, .hv-nav a:focus-visible { outline: 2px solid var(--cr-color-focus-ring); outline-offset: 2px; }
+
+.doc { min-height: calc(100vh - 44px); }
+html { scroll-padding-top: 60px; }
+
+/* overview layout */
+.hv-nav { position: sticky; top: 44px; align-self: start; height: calc(100vh - 44px); overflow: auto; padding: 20px 14px 40px 20px; border-right: 0.5px solid var(--cr-color-line-strong); background: var(--cr-color-bg-subtle); }
+.hv-nav h1 { font-size: 15px; line-height: 20px; margin: 0 0 12px; font-weight: 600; }
+.hv-nav a { display: block; padding: 4px 8px; margin: 0 -8px; border-radius: 6px; color: var(--cr-color-text-2); font-size: 12px; line-height: 16px; }
+.hv-nav a:hover { background: var(--cr-color-state-hover); text-decoration: none; }
+.hv-main { min-width: 0; max-width: 1080px; padding: 0 40px 120px; color: var(--cr-color-text-1); }
+.hv-main section { padding-top: 56px; }
+.hv-main h1 { font-size: 30px; line-height: 36px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 10px; }
+.hv-main h2 { font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 6px; padding-bottom: 8px; border-bottom: 0.5px solid var(--cr-color-line-strong); }
+.hv-main h3 { font-size: 11px; line-height: 16px; font-weight: 600; margin: 26px 0 4px; color: var(--cr-color-text-3); text-transform: uppercase; letter-spacing: 0.06em; }
+.hv-lede { font-size: 15px; line-height: 22px; max-width: 66ch; color: var(--cr-color-text-2); margin: 0 0 16px; }
+.hv-sub { color: var(--cr-color-text-3); max-width: 70ch; margin: 6px 0 14px; font-size: 13px; line-height: 19px; }
+.hv-foot { color: var(--cr-color-text-4); font-size: 12px; max-width: 70ch; }
+.hv-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
+.hv-chips span { padding: 5px 12px; border-radius: 999px; background: var(--cr-color-bg-muted); color: var(--cr-color-text-2); font-size: 12px; }
+.hv-chips b { font-weight: 600; color: var(--cr-color-text-1); margin-right: 3px; }
+.hv-showcase { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; padding: 28px; border-radius: 14px; background: var(--cr-color-bg); box-shadow: inset 0 0 0 0.5px var(--cr-color-line); }
+.hv-showcase-note { flex: 1 1 220px; max-width: 320px; color: var(--cr-color-text-3); }
+.hv-btn { display: inline-block; padding: 8px 16px; border-radius: 9px; background: var(--cr-color-accent-solid); color: var(--cr-color-accent-contrast); font-weight: 500; }
+.hv-btn:hover { text-decoration: none; background: var(--cr-color-accent-hover); }
+
+.hv-table { width: 100%; max-width: 760px; border-collapse: collapse; }
+.hv-table th { text-align: left; font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--cr-color-text-4); padding: 6px 10px; border-bottom: 0.5px solid var(--cr-color-line-strong); }
+.hv-table td { padding: 9px 10px; border-bottom: 0.5px solid var(--cr-color-line); font-variant-numeric: tabular-nums; }
+.hv-table td:first-child { color: var(--cr-color-text-1); font-weight: 500; }
+.hv-table td:first-child span { display: block; font-weight: 400; color: var(--cr-color-text-4); font-size: 11px; }
+.hv-table .is-new { color: var(--cr-color-accent-fg); font-size: 15px; }
+
+.hv-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.hs { margin: 0; }
+.hs-pair { display: grid; grid-template-columns: 1fr 1fr; height: 64px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 0 0.5px var(--cr-color-line-strong); }
+.hs-half { background: linear-gradient(var(--c), var(--c)), repeating-conic-gradient(#fff 0% 25%, #d4d4da 0% 50%) 0 0 / 8px 8px; }
+.hs-half.is-dark { background: linear-gradient(var(--c), var(--c)), repeating-conic-gradient(#1e1e20 0% 25%, #3a3a3e 0% 50%) 0 0 / 8px 8px; }
+.hs figcaption { display: grid; margin-top: 6px; font-size: 11px; line-height: 15px; color: var(--cr-color-text-4); font-family: var(--cr-font-family-mono); }
+.hs figcaption b { font-family: var(--cr-font-family-body); font-size: 12px; font-weight: 500; color: var(--cr-color-text-1); }
+
+.hv-fonts { display: flex; gap: 40px; flex-wrap: wrap; margin: 8px 0 22px; }
+.hv-font { display: grid; gap: 4px; }
+.hv-font small, .hv-ts small { color: var(--cr-color-text-4); font-size: 11px; }
+.hv-ts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px 28px; }
+.hv-ts { display: grid; gap: 2px; padding: 8px 0; border-bottom: 0.5px solid var(--cr-color-line); min-width: 0; }
+.hv-ts > span { color: var(--cr-color-text-1); overflow-wrap: anywhere; }
+
+.hv-sps { display: grid; gap: 4px; }
+.hv-sp { display: flex; align-items: center; gap: 10px; }
+.hv-sp i { display: block; height: 12px; border-radius: 2px; background: var(--cr-color-accent-solid); }
+.hv-sp i.is-own { background: transparent; box-shadow: inset 0 0 0 1.5px var(--cr-color-accent-solid); }
+.hv-sp b, .hv-rad b, .hv-motion b { font-size: 11px; font-weight: 500; color: var(--cr-color-text-3); font-variant-numeric: tabular-nums; }
+.hv-rads { display: flex; flex-wrap: wrap; gap: 14px; }
+.hv-rad { display: grid; justify-items: center; gap: 6px; }
+.hv-rad i { display: block; width: 52px; height: 52px; background: var(--cr-color-bg-emphasized); box-shadow: inset 0 0 0 1px var(--cr-color-line-strongest); }
+.hv-motions { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.hv-motion { --hv-run: 128px; appearance: none; border: 0; text-align: left; display: grid; gap: 4px; padding: 12px; border-radius: 10px; background: var(--cr-color-bg-muted); color: var(--cr-color-text-3); font-size: 11px; cursor: pointer; }
+.hv-track { display: block; height: 20px; position: relative; }
+.hv-track i { position: absolute; left: 0; top: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--cr-color-accent-solid); }
+
+.hv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px; }
+.hv-card { border-radius: 12px; overflow: hidden; box-shadow: 0 0 0 0.5px var(--cr-color-line-strong); background: var(--cr-color-bg-panel); min-width: 0; }
+.hv-spec { display: flex; justify-content: center; padding: 22px 16px; background: var(--cr-color-bg); overflow-x: auto; }
+.hv-card footer { display: grid; gap: 1px; padding: 10px 14px 12px; border-top: 0.5px solid var(--cr-color-line); }
+.hv-card footer b { font-size: 13px; font-weight: 600; }
+.hv-card footer span { color: var(--cr-color-text-4); font-size: 12px; }
+.hv-dev { max-width: 74ch; padding-left: 18px; margin: 0; }
+.hv-dev li { margin: 0 0 10px; color: var(--cr-color-text-3); line-height: 19px; }
+.hv-dev b { color: var(--cr-color-text-1); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .hv-track i { transition: none !important; } }
+
+@media (max-width: 760px) {
+  .viewbar { padding: 0 12px; gap: 8px; }
+  .viewbar-title { font-size: 13px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .viewbar-theme { padding: 0 8px; }
+  .doc { grid-template-columns: minmax(0, 1fr); }
+  .hv-nav { display: none; }
+  .hv-main { padding: 0 16px 80px; }
+  .hv-main h1 { font-size: 25px; line-height: 31px; }
+  .hv-showcase { padding: 16px; }
+  .hv-grid { grid-template-columns: minmax(0, 1fr); }
+  .hs-pair { height: 52px; }
+  .hv-motion { --hv-run: calc(100vw - 110px); }
+}

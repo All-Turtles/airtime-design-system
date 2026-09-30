@@ -1,0 +1,251 @@
+{
+ "counts": {
+  "colors": {
+   "today": 142,
+   "simplified": 94,
+   "org": 21,
+   "used": 54
+  },
+  "textStyles": {
+   "today": 18,
+   "simplified": 16,
+   "org": 7
+  },
+  "fontSizes": {
+   "today": 12,
+   "simplified": 9,
+   "org": 4
+  },
+  "radii": {
+   "today": 14,
+   "simplified": 10,
+   "org": 17
+  },
+  "spacing": {
+   "today": 18,
+   "simplified": 18,
+   "org": 10
+  }
+ },
+ "colorsUnder2Pct": 99.53,
+ "sharedWithOrg": 48,
+ "spacingSteps": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  6.5,
+  7,
+  8,
+  9,
+  10,
+  12,
+  16,
+  18,
+  20,
+  24,
+  32,
+  40,
+  48
+ ],
+ "spacingOrg": [
+  2,
+  4,
+  6,
+  8,
+  12,
+  16,
+  20,
+  24,
+  32,
+  40,
+  48
+ ],
+ "radiusSteps": [
+  2,
+  4,
+  6,
+  8,
+  10,
+  14,
+  16,
+  20,
+  22,
+  9999
+ ],
+ "swatches": {
+  "bg": {
+   "light": "rgb(233, 233, 236)",
+   "dark": "rgb(19, 19, 21)"
+  },
+  "bg-panel": {
+   "light": "rgb(255, 255, 255)",
+   "dark": "rgb(30, 30, 32)"
+  },
+  "bg-subtle": {
+   "light": "rgb(241, 241, 244)",
+   "dark": "rgb(37, 37, 40)"
+  },
+  "bg-inverted": {
+   "light": "rgb(19, 19, 21)",
+   "dark": "rgb(233, 233, 236)"
+  },
+  "mat-hud": {
+   "light": "rgba(247, 247, 250, 0.984)",
+   "dark": "rgba(38, 38, 42, 0.984)"
+  },
+  "text-1": {
+   "light": "rgba(0, 0, 0, 0.92)",
+   "dark": "rgba(255, 255, 255, 0.96)"
+  },
+  "text-2": {
+   "light": "rgba(0, 0, 0, 0.8)",
+   "dark": "rgba(255, 255, 255, 0.84)"
+  },
+  "text-3": {
+   "light": "rgba(0, 0, 0, 0.64)",
+   "dark": "rgba(255, 255, 255, 0.68)"
+  },
+  "text-4": {
+   "light": "rgba(0, 0, 0, 0.5)",
+   "dark": "rgba(255, 255, 255, 0.54)"
+  },
+  "text-5": {
+   "light": "rgba(0, 0, 0, 0.38)",
+   "dark": "rgba(255, 255, 255, 0.4)"
+  },
+  "accent-solid": {
+   "light": "rgb(0, 105, 217)",
+   "dark": "rgb(59, 155, 255)"
+  },
+  "accent-subtle": {
+   "light": "color(srgb 0 0.411765 0.85098 / 0.12)",
+   "dark": "color(srgb 0.231373 0.607843 1 / 0.14)"
+  },
+  "danger-solid": {
+   "light": "rgb(215, 0, 21)",
+   "dark": "rgb(255, 79, 66)"
+  },
+  "status-live": {
+   "light": "rgb(52, 199, 89)",
+   "dark": "rgb(52, 199, 89)"
+  },
+  "action-primary": {
+   "light": "rgb(121, 221, 232)",
+   "dark": "rgb(121, 221, 232)"
+  },
+  "line": {
+   "light": "rgba(0, 0, 0, 0.1)",
+   "dark": "rgba(255, 255, 255, 0.1)"
+  },
+  "line-strong": {
+   "light": "rgba(0, 0, 0, 0.16)",
+   "dark": "rgba(255, 255, 255, 0.16)"
+  },
+  "state-hover": {
+   "light": "rgba(0, 0, 0, 0.055)",
+   "dark": "rgba(255, 255, 255, 0.08)"
+  },
+  "state-selected": {
+   "light": "rgba(0, 0, 0, 0.15)",
+   "dark": "rgba(0, 0, 0, 0.15)"
+  },
+  "surface-inset": {
+   "light": "rgba(0, 0, 0, 0.05)",
+   "dark": "rgba(255, 255, 255, 0.06)"
+  }
+ },
+ "textStyles": [
+  {
+   "name": "band.readout",
+   "fontSize": "11px",
+   "fontWeight": "400"
+  },
+  {
+   "name": "band.record",
+   "fontSize": "11px",
+   "fontWeight": "400"
+  },
+  {
+   "name": "band.label",
+   "fontSize": "10px",
+   "fontWeight": "600"
+  },
+  {
+   "name": "status.badge",
+   "fontSize": "10px",
+   "fontWeight": "500"
+  },
+  {
+   "name": "status.lead",
+   "fontSize": "11px",
+   "fontWeight": "400"
+  },
+  {
+   "name": "heading.large",
+   "fontSize": "17px",
+   "fontWeight": "600"
+  },
+  {
+   "name": "heading.medium",
+   "fontSize": "13px",
+   "fontWeight": "600"
+  },
+  {
+   "name": "heading.small",
+   "fontSize": "13px",
+   "fontWeight": "600"
+  },
+  {
+   "name": "body.large",
+   "fontSize": "13px",
+   "fontWeight": "400"
+  },
+  {
+   "name": "body.medium",
+   "fontSize": "12px",
+   "fontWeight": "400"
+  },
+  {
+   "name": "body.small",
+   "fontSize": "11px",
+   "fontWeight": "400"
+  },
+  {
+   "name": "button",
+   "fontSize": "12px",
+   "fontWeight": "500"
+  },
+  {
+   "name": "button.segment",
+   "fontSize": "12px",
+   "fontWeight": "500"
+  },
+  {
+   "name": "label",
+   "fontSize": "10px",
+   "fontWeight": "600"
+  },
+  {
+   "name": "accountName",
+   "fontSize": "16px",
+   "fontWeight": "600"
+  },
+  {
+   "name": "accountEmail",
+   "fontSize": "11px",
+   "fontWeight": "300"
+  },
+  {
+   "name": "saveState",
+   "fontSize": "11px",
+   "fontWeight": "600"
+  },
+  {
+   "name": "nano",
+   "fontSize": "9px",
+   "fontWeight": "400"
+  }
+ ]
+}
