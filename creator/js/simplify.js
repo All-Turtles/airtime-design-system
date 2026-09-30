@@ -73,7 +73,6 @@ const PK = ["P0", "P1", "P2r", "P2", "P3"];
   // sidebar parity
   const q = D.qa;
   const stateRows = q?.rows ? q.rows.map((r) => `<tr><td>${r.mode}</td><td>${r.state}</td><td>${r.theme}</td><td>${pc(r.before, 2)}</td>${Object.keys(q.variants).map((v) => `<td>${pc(r.v[v]?.proto, 2)} <span class="muted">(${r.v[v]?.tierA ?? "?"}A, Δpx ${pc(r.v[v]?.diff, 2)})</span></td>`).join("")}</tr>`).join("") : "";
-  const shots = (D.shots ?? []).map((s) => `<figure style="margin:0 0 20px"><figcaption class="muted" style="font-size:11px;margin-bottom:4px"><b>${esc(s.title)}</b> ${s.mismatchPct != null ? `pixel diff ${pc(s.mismatchPct, 3)}, max channel diff ${s.maxChannelDiff}` : ""} (before | after | amplified difference x12)</figcaption><img src="${esc(s.src)}" alt="${esc(s.title)}" loading="lazy" style="max-width:100%;border:0.5px solid var(--cr-color-line-strong);border-radius:6px"></figure>`).join("");
 
   root.innerHTML = `<section id="simplify"><h2>Simplification: colour, type, spacing and radii toward the org breadth</h2>
   <p class="lede">Experiment on branch <code>${esc(D.branch)}</code> (${esc(D.base)}, never pushed): the Creator's definitions reduced by clustering every colour, type, spacing and radius value the crawled app actually renders, snapping to the nearest org value inside a stated tolerance and merging the rest into a minimal Creator set. The reduced set is applied in the theme layer of the app and <b>measured</b> against the unchanged build: per-declaration deltaE2000 and pixel deltas across ${D.crawl.states} crawled states (light and dark), element boxes, the QA pixel-diff pipeline, and WCAG contrast. Full write-up, mapping and rollout plan: <code>docs/creator-sidebar/css-audit/TOKEN-SIMPLIFICATION.md</code>.</p>
@@ -93,6 +92,5 @@ const PK = ["P0", "P1", "P2r", "P2", "P3"];
   <h3>Mapping: colours (${PN.P2r}, P2r)</h3><p class="lede">Each representative keeps its value (or takes the org value where marked); every absorbed token now aliases it. Swatches are light then dark, translucent colours over a checker.</p>${colorTables}
   <h3>Mapping: spacing, radii, type</h3><div class="cells-flex">${scaleMap("spacing", "Spacing (optional P2: +-1 px)", "px", "P2")}${scaleMap("radius", "Radius")}${scaleMap("fontSize", "Font size")}${scaleMap("lineHeight", "Line height")}</div>
   <h4>Text styles</h4><table class="spec" style="max-width:760px"><tr><th>Style</th><th>Before (size / line / weight)</th><th>After</th><th></th></tr>${tsRows}</table>
-  <h3>Screenshots: before | after | difference</h3>${shots}
   </section>`;
 }
