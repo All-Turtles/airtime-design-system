@@ -1,6 +1,6 @@
 # Airtime Design System
 
-Technical, clean design system with teal accent, extracted from Airtime's Figma file. Dark theme default, SF Pro system font stack, 128+ tokens across 9 categories, 94 component variants across 7 categories, 768 icon variants. Designed for AI-native workflows in Claude Code.
+Technical, clean design system with teal accent, extracted from Airtime's Figma file. Dark theme default, SF Pro system font stack, 128+ tokens across 9 categories, 94 component variants across 7 categories, 799 icon variants. Designed for AI-native workflows in Claude Code.
 
 ## Two Modes
 
@@ -317,7 +317,7 @@ airtime-design-system/
   README.md                  # Project documentation
   generated/
     tokens.css               # Compiled CSS custom properties
-    icons.js                 # 768 SVG icon functions (AppIcons object)
+    icons.js                 # 799 SVG icon functions (AppIcons object)
     .design-rules.json       # Anti-pattern rules for AI generation
   components/
     button.css               # 6 variants (primary, secondary, destructive, modeless, outline, icon-only)
