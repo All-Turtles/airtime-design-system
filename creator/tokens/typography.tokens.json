@@ -1,6 +1,6 @@
 {
   "$name": "Creator - typography",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "font-family": {
     "body": {
       "$value": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
@@ -10,12 +10,6 @@
           "css": "--cr-font-family-body",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 12,
-            "export": "fonts",
-            "path": "body"
-          },
           "rendered": {
             "light": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif",
             "dark": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
@@ -38,12 +32,6 @@
           "css": "--cr-font-family-heading",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 13,
-            "export": "fonts",
-            "path": "heading"
-          },
           "rendered": {
             "light": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif",
             "dark": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
@@ -66,12 +54,6 @@
           "css": "--cr-font-family-mono",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 14,
-            "export": "fonts",
-            "path": "mono"
-          },
           "rendered": {
             "light": "ui-monospace,'SF Mono',Menlo,monospace",
             "dark": "ui-monospace,'SF Mono',Menlo,monospace"
@@ -95,12 +77,6 @@
           "css": "--cr-font-size-3xs",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 19,
-            "export": "fontSizes",
-            "path": "3xs"
-          },
           "rendered": {
             "light": "9px",
             "dark": "9px"
@@ -124,12 +100,6 @@
           "css": "--cr-font-size-2xs",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 20,
-            "export": "fontSizes",
-            "path": "2xs"
-          },
           "rendered": {
             "light": "10px",
             "dark": "10px"
@@ -153,12 +123,6 @@
           "css": "--cr-font-size-xs",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 21,
-            "export": "fontSizes",
-            "path": "xs"
-          },
           "rendered": {
             "light": "11px",
             "dark": "11px"
@@ -183,12 +147,6 @@
           "css": "--cr-font-size-sm",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 22,
-            "export": "fontSizes",
-            "path": "sm"
-          },
           "rendered": {
             "light": "12px",
             "dark": "12px"
@@ -213,12 +171,6 @@
           "css": "--cr-font-size-md",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 23,
-            "export": "fontSizes",
-            "path": "md"
-          },
           "rendered": {
             "light": "13px",
             "dark": "13px"
@@ -242,12 +194,6 @@
           "css": "--cr-font-size-lg",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 24,
-            "export": "fontSizes",
-            "path": "lg"
-          },
           "rendered": {
             "light": "17px",
             "dark": "17px"
@@ -273,12 +219,6 @@
           "css": "--cr-line-height-selection",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 173,
-            "export": "lineHeights",
-            "path": "selection"
-          },
           "rendered": {
             "light": "1.15",
             "dark": "1.15"
@@ -302,12 +242,6 @@
           "css": "--cr-letter-spacing-label",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 30,
-            "export": "letterSpacings",
-            "path": "label"
-          },
           "rendered": {
             "light": "0.055em",
             "dark": "0.055em"
@@ -331,12 +265,6 @@
           "css": "--cr-letter-spacing-selection-label",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 29,
-            "export": "letterSpacings",
-            "path": "selectionLabel"
-          },
           "rendered": {
             "light": "0.04em",
             "dark": "0.04em"
@@ -362,12 +290,6 @@
           "css": "--cr-font-weight-bold",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "bold"
-          },
           "rendered": {
             "light": "700",
             "dark": "700"
@@ -392,12 +314,6 @@
           "css": "--cr-font-weight-medium",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "medium"
-          },
           "rendered": {
             "light": "500",
             "dark": "500"
@@ -422,12 +338,6 @@
           "css": "--cr-font-weight-normal",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "normal"
-          },
           "rendered": {
             "light": "400",
             "dark": "400"
@@ -452,12 +362,6 @@
           "css": "--cr-font-weight-semibold",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "semibold"
-          },
           "rendered": {
             "light": "600",
             "dark": "600"

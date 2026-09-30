@@ -1,49 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" data-view="overview">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
 <title>Creator Design System</title>
-<script>
-/* choose the view before first paint: ?view=eng|overview, else the remembered choice, else Overview */
-(function () {
-  var v = "overview";
-  try { var q = new URLSearchParams(location.search).get("view"); var s = null; try { s = localStorage.getItem("creator-ds-view"); } catch (e) {}
-    if (q === "eng" || q === "overview") v = q; else if (s === "eng" || s === "overview") v = s;
-    /* an old deep link such as #audit or #sb-row points into the Engineering view */
-    if (!q && location.hash && location.hash.indexOf("#h-") !== 0) v = "eng";
-  } catch (e) {}
-  document.documentElement.setAttribute("data-view", v);
-})();
-</script>
-<!-- org layer first (copies of airtime-design-system tokens, see tools/sync-org.mjs), then Creator tokens that alias it -->
+<!-- org layer first (copies of airtime-design-system tokens), then Creator tokens that alias it -->
 <link rel="stylesheet" href="tokens/org/tokens.css">
 <link rel="stylesheet" href="tokens/org/org-theme.css">
 <link rel="stylesheet" href="tokens/tokens.css">
 <link rel="stylesheet" href="tokens/text-styles.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/sidebar.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/tray.css">
-<link rel="stylesheet" href="css/stage.css">
-<link rel="stylesheet" href="css/aux.css">
 <link rel="stylesheet" href="css/human.css">
-<!-- Icons: byte-identical copy of apps/airtime-creator/teleport/icons.js (AppIcons) and the Mask* paths from packages/mmhmm-icons -->
-<script src="assets/icons.js"></script>
-<script src="assets/mask-icons.js"></script>
 </head>
 <body>
 <header class="viewbar">
-  <a class="viewbar-title" href="?view=overview" data-view-link="overview">Creator design system</a>
-  <div class="viewswitch" role="group" aria-label="Page view">
-    <button type="button" data-set-view="overview" aria-pressed="true">Overview</button>
-    <button type="button" data-set-view="eng" aria-pressed="false">Engineering</button>
-  </div>
+  <a class="viewbar-title" href="./">Creator design system</a>
   <button type="button" class="viewbar-theme" id="viewtheme" aria-label="Toggle light and dark">Light / Dark</button>
 </header>
 <div class="doc">
-  <nav class="doc-nav" id="nav"></nav>
-  <main class="doc-main" id="main"></main>
   <nav class="hv-nav" id="hnav" aria-label="Sections"></nav>
   <main class="hv-main" id="human"></main>
 </div>

@@ -1,4 +1,4 @@
 {
   "$name": "Creator - opacity",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation."
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system."
 }

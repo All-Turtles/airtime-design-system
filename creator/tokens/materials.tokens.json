@@ -1,6 +1,6 @@
 {
   "$name": "Creator - materials",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "blur": {
     "selectionBar": {
       "$value": "28px",
@@ -10,12 +10,6 @@
           "css": "--cr-blur-selection-bar",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 135,
-            "export": "blurs",
-            "path": "selectionBar"
-          },
           "rendered": {
             "light": "28px",
             "dark": "28px"
@@ -37,12 +31,6 @@
           "css": "--cr-blur-selection-menu",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 136,
-            "export": "blurs",
-            "path": "selectionMenu"
-          },
           "rendered": {
             "light": "34px",
             "dark": "34px"
@@ -66,12 +54,6 @@
           "css": "--cr-gradient-window",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 476,
-            "export": "semanticGradients",
-            "path": "window"
-          },
           "rendered": {
             "light": "linear-gradient(180deg, color-mix(in srgb, #E9E9EC 88%, #000000) 0%, #E9E9EC 34%, color-mix(in srgb, #E9E9EC 96%, #000000) 100%)",
             "dark": "linear-gradient(180deg, color-mix(in srgb, #131315 88%, #FFFFFF) 0%, #131315 34%, color-mix(in srgb, #131315 96%, #FFFFFF) 100%)"

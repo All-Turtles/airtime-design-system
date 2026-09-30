@@ -1,6 +1,6 @@
 {
   "$name": "Creator - sizing",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "size": {
     "0": {
       "5": {
@@ -11,12 +11,6 @@
             "css": "--cr-size-0-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "0.5"
-            },
             "rendered": {
               "light": "2px",
               "dark": "2px"
@@ -43,12 +37,6 @@
             "css": "--cr-size-1-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "1.5"
-            },
             "rendered": {
               "light": "6px",
               "dark": "6px"
@@ -72,12 +60,6 @@
           "css": "--cr-size-1",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "1"
-          },
           "rendered": {
             "light": "4px",
             "dark": "4px"
@@ -103,12 +85,6 @@
             "css": "--cr-size-2-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "2.5"
-            },
             "rendered": {
               "light": "10px",
               "dark": "10px"
@@ -131,12 +107,6 @@
           "css": "--cr-size-2",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "2"
-          },
           "rendered": {
             "light": "8px",
             "dark": "8px"
@@ -162,12 +132,6 @@
             "css": "--cr-size-3-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "3.5"
-            },
             "rendered": {
               "light": "14px",
               "dark": "14px"
@@ -190,12 +154,6 @@
           "css": "--cr-size-3",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "3"
-          },
           "rendered": {
             "light": "12px",
             "dark": "12px"
@@ -221,12 +179,6 @@
             "css": "--cr-size-4-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "4.5"
-            },
             "rendered": {
               "light": "18px",
               "dark": "18px"
@@ -249,12 +201,6 @@
           "css": "--cr-size-4",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "4"
-          },
           "rendered": {
             "light": "16px",
             "dark": "16px"
@@ -279,12 +225,6 @@
           "css": "--cr-size-5",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "5"
-          },
           "rendered": {
             "light": "20px",
             "dark": "20px"
@@ -309,12 +249,6 @@
           "css": "--cr-size-6",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "6"
-          },
           "rendered": {
             "light": "24px",
             "dark": "24px"
@@ -339,12 +273,6 @@
           "css": "--cr-size-7",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "7"
-          },
           "rendered": {
             "light": "28px",
             "dark": "28px"
@@ -369,12 +297,6 @@
           "css": "--cr-size-8",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "8"
-          },
           "rendered": {
             "light": "32px",
             "dark": "32px"
@@ -399,12 +321,6 @@
           "css": "--cr-size-9",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "9"
-          },
           "rendered": {
             "light": "36px",
             "dark": "36px"
@@ -428,12 +344,6 @@
           "css": "--cr-size-10",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "10"
-          },
           "rendered": {
             "light": "40px",
             "dark": "40px"
@@ -458,12 +368,6 @@
           "css": "--cr-size-11",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "11"
-          },
           "rendered": {
             "light": "44px",
             "dark": "44px"
@@ -487,12 +391,6 @@
           "css": "--cr-size-12",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "12"
-          },
           "rendered": {
             "light": "48px",
             "dark": "48px"
@@ -517,12 +415,6 @@
           "css": "--cr-size-14",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "14"
-          },
           "rendered": {
             "light": "56px",
             "dark": "56px"
@@ -547,12 +439,6 @@
           "css": "--cr-size-16",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "16"
-          },
           "rendered": {
             "light": "64px",
             "dark": "64px"
@@ -577,12 +463,6 @@
           "css": "--cr-size-20",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "20"
-          },
           "rendered": {
             "light": "80px",
             "dark": "80px"
@@ -607,12 +487,6 @@
           "css": "--cr-size-24",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "24"
-          },
           "rendered": {
             "light": "96px",
             "dark": "96px"
@@ -636,12 +510,6 @@
           "css": "--cr-size-28",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "28"
-          },
           "rendered": {
             "light": "112px",
             "dark": "112px"
@@ -665,12 +533,6 @@
           "css": "--cr-size-32",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "32"
-          },
           "rendered": {
             "light": "128px",
             "dark": "128px"
@@ -694,12 +556,6 @@
           "css": "--cr-size-36",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "36"
-          },
           "rendered": {
             "light": "144px",
             "dark": "144px"
@@ -723,12 +579,6 @@
           "css": "--cr-size-40",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "40"
-          },
           "rendered": {
             "light": "160px",
             "dark": "160px"
@@ -752,12 +602,6 @@
           "css": "--cr-size-44",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "44"
-          },
           "rendered": {
             "light": "176px",
             "dark": "176px"
@@ -781,12 +625,6 @@
           "css": "--cr-size-48",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "48"
-          },
           "rendered": {
             "light": "192px",
             "dark": "192px"
@@ -810,12 +648,6 @@
           "css": "--cr-size-52",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "52"
-          },
           "rendered": {
             "light": "208px",
             "dark": "208px"
@@ -839,12 +671,6 @@
           "css": "--cr-size-56",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "56"
-          },
           "rendered": {
             "light": "224px",
             "dark": "224px"
@@ -868,12 +694,6 @@
           "css": "--cr-size-60",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "60"
-          },
           "rendered": {
             "light": "240px",
             "dark": "240px"
@@ -897,12 +717,6 @@
           "css": "--cr-size-64",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "64"
-          },
           "rendered": {
             "light": "256px",
             "dark": "256px"
@@ -927,12 +741,6 @@
             "css": "--cr-size-creator-selection-menu-min",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 54,
-              "export": "sizes",
-              "path": "creator.selectionMenuMin"
-            },
             "rendered": {
               "light": "220px",
               "dark": "220px"
@@ -956,12 +764,6 @@
             "css": "--cr-size-creator-selection-menu-max",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 55,
-              "export": "sizes",
-              "path": "creator.selectionMenuMax"
-            },
             "rendered": {
               "light": "328px",
               "dark": "328px"
@@ -985,12 +787,6 @@
             "css": "--cr-size-creator-typography-menu-width",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 56,
-              "export": "sizes",
-              "path": "creator.typographyMenuWidth"
-            },
             "rendered": {
               "light": "368px",
               "dark": "368px"
@@ -1014,12 +810,6 @@
             "css": "--cr-size-creator-top-bar",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 57,
-              "export": "sizes",
-              "path": "creator.topBar"
-            },
             "rendered": {
               "light": "52px",
               "dark": "52px"
@@ -1043,12 +833,6 @@
             "css": "--cr-size-creator-account-header",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 58,
-              "export": "sizes",
-              "path": "creator.accountHeader"
-            },
             "rendered": {
               "light": "260px",
               "dark": "260px"
@@ -1072,12 +856,6 @@
             "css": "--cr-size-creator-title",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 59,
-              "export": "sizes",
-              "path": "creator.title"
-            },
             "rendered": {
               "light": "280px",
               "dark": "280px"
@@ -1101,12 +879,6 @@
             "css": "--cr-size-creator-title-compact",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 60,
-              "export": "sizes",
-              "path": "creator.titleCompact"
-            },
             "rendered": {
               "light": "180px",
               "dark": "180px"
@@ -1130,12 +902,6 @@
             "css": "--cr-size-creator-title-glyph",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 61,
-              "export": "sizes",
-              "path": "creator.titleGlyph"
-            },
             "rendered": {
               "light": "15px",
               "dark": "15px"
@@ -1159,12 +925,6 @@
             "css": "--cr-size-creator-title-chevron",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 62,
-              "export": "sizes",
-              "path": "creator.titleChevron"
-            },
             "rendered": {
               "light": "22px",
               "dark": "22px"
@@ -1188,12 +948,6 @@
             "css": "--cr-size-creator-hairline",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 63,
-              "export": "sizes",
-              "path": "creator.hairline"
-            },
             "rendered": {
               "light": "0.5px",
               "dark": "0.5px"
@@ -1217,12 +971,6 @@
             "css": "--cr-size-creator-stage-band",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 64,
-              "export": "sizes",
-              "path": "creator.stageBand"
-            },
             "rendered": {
               "light": "46px",
               "dark": "46px"
@@ -1246,12 +994,6 @@
             "css": "--cr-size-creator-stage-band-narrow",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 65,
-              "export": "sizes",
-              "path": "creator.stageBandNarrow"
-            },
             "rendered": {
               "light": "88px",
               "dark": "88px"
@@ -1275,12 +1017,6 @@
             "css": "--cr-size-creator-band-row",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 66,
-              "export": "sizes",
-              "path": "creator.bandRow"
-            },
             "rendered": {
               "light": "38px",
               "dark": "38px"
@@ -1304,12 +1040,6 @@
             "css": "--cr-size-creator-device-name",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 67,
-              "export": "sizes",
-              "path": "creator.deviceName"
-            },
             "rendered": {
               "light": "88px",
               "dark": "88px"
@@ -1333,12 +1063,6 @@
             "css": "--cr-size-creator-device-popover",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 68,
-              "export": "sizes",
-              "path": "creator.devicePopover"
-            },
             "rendered": {
               "light": "258px",
               "dark": "258px"
@@ -1362,12 +1086,6 @@
             "css": "--cr-size-creator-device-chevron",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 69,
-              "export": "sizes",
-              "path": "creator.deviceChevron"
-            },
             "rendered": {
               "light": "9px",
               "dark": "9px"
@@ -1391,12 +1109,6 @@
             "css": "--cr-size-creator-status-dot",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 70,
-              "export": "sizes",
-              "path": "creator.statusDot"
-            },
             "rendered": {
               "light": "7px",
               "dark": "7px"
@@ -1420,12 +1132,6 @@
             "css": "--cr-size-creator-status-badge-dot",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 71,
-              "export": "sizes",
-              "path": "creator.statusBadgeDot"
-            },
             "rendered": {
               "light": "5px",
               "dark": "5px"
@@ -1449,12 +1155,6 @@
             "css": "--cr-size-creator-record-min",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 72,
-              "export": "sizes",
-              "path": "creator.recordMin"
-            },
             "rendered": {
               "light": "93px",
               "dark": "93px"
@@ -1478,12 +1178,6 @@
             "css": "--cr-size-creator-record-label",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 73,
-              "export": "sizes",
-              "path": "creator.recordLabel"
-            },
             "rendered": {
               "light": "37px",
               "dark": "37px"
@@ -1507,12 +1201,6 @@
             "css": "--cr-size-creator-camera-popover",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 74,
-              "export": "sizes",
-              "path": "creator.cameraPopover"
-            },
             "rendered": {
               "light": "360px",
               "dark": "360px"
@@ -1536,12 +1224,6 @@
             "css": "--cr-size-creator-tray",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 75,
-              "export": "sizes",
-              "path": "creator.tray"
-            },
             "rendered": {
               "light": "116px",
               "dark": "116px"
@@ -1565,12 +1247,6 @@
             "css": "--cr-size-creator-slide-thumbnail",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 76,
-              "export": "sizes",
-              "path": "creator.slideThumbnail"
-            },
             "rendered": {
               "light": "78px",
               "dark": "78px"
@@ -1594,12 +1270,6 @@
             "css": "--cr-size-creator-room-tile",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 77,
-              "export": "sizes",
-              "path": "creator.roomTile"
-            },
             "rendered": {
               "light": "76px",
               "dark": "76px"
@@ -1623,12 +1293,6 @@
             "css": "--cr-size-creator-slide-lane",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 78,
-              "export": "sizes",
-              "path": "creator.slideLane"
-            },
             "rendered": {
               "light": "84px",
               "dark": "84px"
@@ -1652,12 +1316,6 @@
             "css": "--cr-size-creator-overlay-lane",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 79,
-              "export": "sizes",
-              "path": "creator.overlayLane"
-            },
             "rendered": {
               "light": "28px",
               "dark": "28px"
@@ -1682,12 +1340,6 @@
             "css": "--cr-size-creator-slide-popover",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 53,
-              "export": "sizes",
-              "path": "creator.slidePopover"
-            },
             "rendered": {
               "light": "324px",
               "dark": "324px"
@@ -1711,12 +1363,6 @@
             "css": "--cr-size-creator-sidebar",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 80,
-              "export": "sizes",
-              "path": "creator.sidebar"
-            },
             "rendered": {
               "light": "296px",
               "dark": "296px"
@@ -1740,12 +1386,6 @@
             "css": "--cr-size-creator-sidebar-row",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 81,
-              "export": "sizes",
-              "path": "creator.sidebarRow"
-            },
             "rendered": {
               "light": "30px",
               "dark": "30px"
@@ -1769,12 +1409,6 @@
             "css": "--cr-size-creator-sidebar-control",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 82,
-              "export": "sizes",
-              "path": "creator.sidebarControl"
-            },
             "rendered": {
               "light": "24px",
               "dark": "24px"
@@ -1799,12 +1433,6 @@
             "css": "--cr-size-creator-slide-counter",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 83,
-              "export": "sizes",
-              "path": "creator.slideCounter"
-            },
             "rendered": {
               "light": "46px",
               "dark": "46px"
@@ -1828,12 +1456,6 @@
             "css": "--cr-size-creator-slides-info",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 84,
-              "export": "sizes",
-              "path": "creator.slidesInfo"
-            },
             "rendered": {
               "light": "320px",
               "dark": "320px"
@@ -1857,12 +1479,6 @@
             "css": "--cr-size-creator-layout-picker",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 86,
-              "export": "sizes",
-              "path": "creator.layoutPicker"
-            },
             "rendered": {
               "light": "470px",
               "dark": "470px"
@@ -1886,12 +1502,6 @@
             "css": "--cr-size-creator-layout-grid",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 87,
-              "export": "sizes",
-              "path": "creator.layoutGrid"
-            },
             "rendered": {
               "light": "300px",
               "dark": "300px"
@@ -1915,12 +1525,6 @@
             "css": "--cr-size-creator-video-library",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 88,
-              "export": "sizes",
-              "path": "creator.videoLibrary"
-            },
             "rendered": {
               "light": "280px",
               "dark": "280px"
@@ -1944,12 +1548,6 @@
             "css": "--cr-size-creator-video-details",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 89,
-              "export": "sizes",
-              "path": "creator.videoDetails"
-            },
             "rendered": {
               "light": "240px",
               "dark": "240px"
@@ -1973,12 +1571,6 @@
             "css": "--cr-size-creator-video-timeline",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 90,
-              "export": "sizes",
-              "path": "creator.videoTimeline"
-            },
             "rendered": {
               "light": "144px",
               "dark": "144px"
@@ -2002,12 +1594,6 @@
             "css": "--cr-size-creator-share-dialog",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 91,
-              "export": "sizes",
-              "path": "creator.shareDialog"
-            },
             "rendered": {
               "light": "460px",
               "dark": "460px"
@@ -2031,12 +1617,6 @@
             "css": "--cr-size-creator-share-suggestions",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 92,
-              "export": "sizes",
-              "path": "creator.shareSuggestions"
-            },
             "rendered": {
               "light": "232px",
               "dark": "232px"
@@ -2062,12 +1642,6 @@
             "css": "--cr-size-sheet-width",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 95,
-              "export": "sizes",
-              "path": "sheet.width"
-            },
             "rendered": {
               "light": "800px",
               "dark": "800px"
@@ -2091,12 +1665,6 @@
             "css": "--cr-size-sheet-height",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 96,
-              "export": "sizes",
-              "path": "sheet.height"
-            },
             "rendered": {
               "light": "642px",
               "dark": "642px"
@@ -2120,12 +1688,6 @@
             "css": "--cr-size-sheet-max-width",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 97,
-              "export": "sizes",
-              "path": "sheet.maxWidth"
-            },
             "rendered": {
               "light": "calc(100vw - 48px)",
               "dark": "calc(100vw - 48px)"
@@ -2149,12 +1711,6 @@
             "css": "--cr-size-sheet-max-height",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 98,
-              "export": "sizes",
-              "path": "sheet.maxHeight"
-            },
             "rendered": {
               "light": "calc(100vh - 48px)",
               "dark": "calc(100vh - 48px)"
@@ -2180,12 +1736,6 @@
             "css": "--cr-size-background-browser-width",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 101,
-              "export": "sizes",
-              "path": "backgroundBrowser.width"
-            },
             "rendered": {
               "light": "min(85vw, 800px)",
               "dark": "min(85vw, 800px)"
@@ -2209,12 +1759,6 @@
             "css": "--cr-size-background-browser-height",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 102,
-              "export": "sizes",
-              "path": "backgroundBrowser.height"
-            },
             "rendered": {
               "light": "min(100vh, 640px)",
               "dark": "min(100vh, 640px)"
@@ -2238,12 +1782,6 @@
             "css": "--cr-size-background-browser-sidebar",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 103,
-              "export": "sizes",
-              "path": "backgroundBrowser.sidebar"
-            },
             "rendered": {
               "light": "160px",
               "dark": "160px"
@@ -2267,12 +1805,6 @@
             "css": "--cr-size-background-browser-row",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 104,
-              "export": "sizes",
-              "path": "backgroundBrowser.row"
-            },
             "rendered": {
               "light": "190px",
               "dark": "190px"
@@ -2298,12 +1830,6 @@
             "css": "--cr-size-split-picker-sidebar",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 107,
-              "export": "sizes",
-              "path": "splitPicker.sidebar"
-            },
             "rendered": {
               "light": "208px",
               "dark": "208px"
@@ -2327,12 +1853,6 @@
             "css": "--cr-size-split-picker-pane-header",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 108,
-              "export": "sizes",
-              "path": "splitPicker.paneHeader"
-            },
             "rendered": {
               "light": "56px",
               "dark": "56px"
@@ -2357,12 +1877,6 @@
             "css": "--cr-size-split-picker-input-wrapper",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 109,
-              "export": "sizes",
-              "path": "splitPicker.inputWrapper"
-            },
             "rendered": {
               "light": "30px",
               "dark": "30px"
@@ -2386,12 +1900,6 @@
             "css": "--cr-size-split-picker-details",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 110,
-              "export": "sizes",
-              "path": "splitPicker.details"
-            },
             "rendered": {
               "light": "208px",
               "dark": "208px"
@@ -2416,12 +1924,6 @@
           "css": "--cr-size-segment",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 112,
-            "export": "sizes",
-            "path": "segment"
-          },
           "rendered": {
             "light": "26px",
             "dark": "26px"
@@ -2447,12 +1949,6 @@
           "css": "--cr-aspect-camera-demo",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 124,
-            "export": "aspectRatios",
-            "path": "cameraDemo"
-          },
           "rendered": {
             "light": "736/414",
             "dark": "736/414"

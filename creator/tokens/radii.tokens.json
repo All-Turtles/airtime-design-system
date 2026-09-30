@@ -1,6 +1,6 @@
 {
   "$name": "Creator - radii",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "radius": {
     "stage": {
       "$value": "8px",
@@ -10,12 +10,6 @@
           "css": "--cr-radius-stage",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 36,
-            "export": "radii",
-            "path": "stage"
-          },
           "rendered": {
             "light": "8px",
             "dark": "8px"
@@ -40,12 +34,6 @@
           "css": "--cr-radius-selection-track",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 37,
-            "export": "radii",
-            "path": "selectionTrack"
-          },
           "rendered": {
             "light": "9px",
             "dark": "9px"
@@ -69,12 +57,6 @@
           "css": "--cr-radius-room-tile",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 38,
-            "export": "radii",
-            "path": "roomTile"
-          },
           "rendered": {
             "light": "6px",
             "dark": "6px"
@@ -99,12 +81,6 @@
           "css": "--cr-radius-title-label",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 39,
-            "export": "radii",
-            "path": "titleLabel"
-          },
           "rendered": {
             "light": "4px",
             "dark": "4px"
@@ -129,12 +105,6 @@
           "css": "--cr-radius-xs",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 40,
-            "export": "radii",
-            "path": "xs"
-          },
           "rendered": {
             "light": "3px",
             "dark": "3px"
@@ -158,12 +128,6 @@
           "css": "--cr-radius-sm",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 41,
-            "export": "radii",
-            "path": "sm"
-          },
           "rendered": {
             "light": "5px",
             "dark": "5px"
@@ -187,12 +151,6 @@
           "css": "--cr-radius-md",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 42,
-            "export": "radii",
-            "path": "md"
-          },
           "rendered": {
             "light": "7px",
             "dark": "7px"
@@ -216,12 +174,6 @@
           "css": "--cr-radius-lg",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 43,
-            "export": "radii",
-            "path": "lg"
-          },
           "rendered": {
             "light": "10px",
             "dark": "10px"
@@ -246,12 +198,6 @@
           "css": "--cr-radius-xl",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 44,
-            "export": "radii",
-            "path": "xl"
-          },
           "rendered": {
             "light": "13px",
             "dark": "13px"
@@ -275,12 +221,6 @@
           "css": "--cr-radius-2xl",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 45,
-            "export": "radii",
-            "path": "2xl"
-          },
           "rendered": {
             "light": "14px",
             "dark": "14px"
@@ -305,12 +245,6 @@
           "css": "--cr-radius-3xl",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 46,
-            "export": "radii",
-            "path": "3xl"
-          },
           "rendered": {
             "light": "16px",
             "dark": "16px"
@@ -335,12 +269,6 @@
           "css": "--cr-radius-4xl",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 47,
-            "export": "radii",
-            "path": "4xl"
-          },
           "rendered": {
             "light": "22px",
             "dark": "22px"
@@ -364,12 +292,6 @@
           "css": "--cr-radius-5xl",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 48,
-            "export": "radii",
-            "path": "5xl"
-          },
           "rendered": {
             "light": "24px",
             "dark": "24px"
@@ -394,12 +316,6 @@
           "css": "--cr-radius-full",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 49,
-            "export": "radii",
-            "path": "full"
-          },
           "rendered": {
             "light": "9999px",
             "dark": "9999px"

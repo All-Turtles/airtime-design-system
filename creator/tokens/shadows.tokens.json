@@ -1,6 +1,6 @@
 {
   "$name": "Creator - shadows",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "shadow": {
     "selectionSwatch": {
       "$value": "inset 0 0 0 1px rgba(255,255,255,0.18)",
@@ -10,12 +10,6 @@
           "css": "--cr-shadow-selection-swatch",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 402,
-            "export": "semanticShadows",
-            "path": "selectionSwatch"
-          },
           "rendered": {
             "light": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset",
             "dark": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset"
@@ -40,12 +34,6 @@
           "css": "--cr-shadow-selection-swatch-selected",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 402,
-            "export": "semanticShadows",
-            "path": "selectionSwatchSelected"
-          },
           "rendered": {
             "light": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.6) 0px 0px 0px 2px",
             "dark": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.6) 0px 0px 0px 2px"
@@ -70,12 +58,6 @@
           "css": "--cr-shadow-selection-bar",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 403,
-            "export": "semanticShadows",
-            "path": "selectionBar"
-          },
           "rendered": {
             "light": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 4px 10px 0px, rgba(0, 0, 0, 0.34) 0px 14px 36px 0px",
             "dark": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 4px 10px 0px, rgba(0, 0, 0, 0.34) 0px 14px 36px 0px"
@@ -100,12 +82,6 @@
           "css": "--cr-shadow-selection-menu",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 407,
-            "export": "semanticShadows",
-            "path": "selectionMenu"
-          },
           "rendered": {
             "light": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 6px 16px 0px, rgba(0, 0, 0, 0.34) 0px 22px 56px 0px",
             "dark": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 6px 16px 0px, rgba(0, 0, 0, 0.34) 0px 22px 56px 0px"
@@ -130,12 +106,6 @@
           "css": "--cr-shadow-tray-console",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 411,
-            "export": "semanticShadows",
-            "path": "trayConsole"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, color(srgb 0 0 0 / 0.12) 0px 2px 5px 0px",
             "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, color(srgb 1 1 1 / 0.12) 0px 2px 5px 0px"
@@ -160,12 +130,6 @@
           "css": "--cr-shadow-band-pill",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 415,
-            "export": "semanticShadows",
-            "path": "bandPill"
-          },
           "rendered": {
             "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px -2px 6px 0px, rgba(0, 0, 0, 0.16) 0px -14px 40px 0px",
             "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.34) 0px -2px 8px 0px, rgba(0, 0, 0, 0.5) 0px -16px 46px 0px"
@@ -190,12 +154,6 @@
           "css": "--cr-shadow-placeholder",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 416,
-            "export": "semanticShadows",
-            "path": "placeholder"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset",
             "dark": "rgba(255, 255, 255, 0.1) 0px 0px 0px 0.5px inset"
@@ -220,12 +178,6 @@
           "css": "--cr-shadow-caption",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 417,
-            "export": "semanticShadows",
-            "path": "caption"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.1) 0px 0.5px 0px 0px inset",
             "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset"
@@ -250,12 +202,6 @@
           "css": "--cr-shadow-sidebar",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 418,
-            "export": "semanticShadows",
-            "path": "sidebar"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.1) -1px 0px 0px 0px inset",
             "dark": "rgba(255, 255, 255, 0.1) -1px 0px 0px 0px inset"
@@ -280,12 +226,6 @@
           "css": "--cr-shadow-input-wrapper",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 419,
-            "export": "semanticShadows",
-            "path": "inputWrapper"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px inset, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset",
             "dark": "rgba(255, 255, 255, 0.16) 0px 0px 0px 0.5px inset, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset"
@@ -310,12 +250,6 @@
           "css": "--cr-shadow-top-bar",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 422,
-            "export": "semanticShadows",
-            "path": "topBar"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.1) 0px 0.5px 0px 0px",
             "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px"
@@ -340,12 +274,6 @@
           "css": "--cr-shadow-avatar",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 423,
-            "export": "semanticShadows",
-            "path": "avatar"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px",
             "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px"
@@ -372,12 +300,6 @@
             "css": "--cr-shadow-avatar-hover",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 424,
-              "export": "semanticShadows",
-              "path": "avatarHover"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.3) 0px 0px 0px 0.5px",
               "dark": "rgba(0, 0, 0, 0.78) 0px 0px 0px 0.5px"
@@ -403,12 +325,6 @@
             "css": "--cr-shadow-avatar-hover",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 424,
-              "export": "semanticShadows",
-              "path": "avatarHover"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.3) 0px 0px 0px 0.5px",
               "dark": "rgba(0, 0, 0, 0.78) 0px 0px 0px 0.5px"
@@ -434,12 +350,6 @@
           "css": "--cr-shadow-segment-track",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 425,
-            "export": "semanticShadows",
-            "path": "segmentTrack"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.06) 0px 0.5px 1px 0px inset",
             "dark": "rgba(0, 0, 0, 0.06) 0px 0.5px 1px 0px inset"
@@ -464,12 +374,6 @@
           "css": "--cr-shadow-segment-thumb",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 426,
-            "export": "semanticShadows",
-            "path": "segmentThumb"
-          },
           "rendered": {
             "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px",
             "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px"
@@ -496,12 +400,6 @@
             "css": "--cr-shadow-sm",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 430,
-              "export": "semanticShadows",
-              "path": "sm"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
               "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px"
@@ -528,12 +426,6 @@
             "css": "--cr-shadow-sm",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 430,
-              "export": "semanticShadows",
-              "path": "sm"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
               "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px"
@@ -562,12 +454,6 @@
             "css": "--cr-shadow-md",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 434,
-              "export": "semanticShadows",
-              "path": "md"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 8px 22px 0px",
               "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 2px 6px 0px, rgba(0, 0, 0, 0.48) 0px 10px 28px 0px"
@@ -594,12 +480,6 @@
             "css": "--cr-shadow-md",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 434,
-              "export": "semanticShadows",
-              "path": "md"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 8px 22px 0px",
               "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 2px 6px 0px, rgba(0, 0, 0, 0.48) 0px 10px 28px 0px"
@@ -628,12 +508,6 @@
             "css": "--cr-shadow-lg",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 438,
-              "export": "semanticShadows",
-              "path": "lg"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px",
               "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
@@ -660,12 +534,6 @@
             "css": "--cr-shadow-lg",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 438,
-              "export": "semanticShadows",
-              "path": "lg"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px",
               "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
@@ -694,12 +562,6 @@
             "css": "--cr-shadow-up",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 443,
-              "export": "semanticShadows",
-              "path": "up"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px -2px 6px 0px, rgba(0, 0, 0, 0.16) 0px -14px 40px 0px",
               "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.34) 0px -2px 8px 0px, rgba(0, 0, 0, 0.5) 0px -16px 46px 0px"
@@ -725,12 +587,6 @@
             "css": "--cr-shadow-up",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 443,
-              "export": "semanticShadows",
-              "path": "up"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px -2px 6px 0px, rgba(0, 0, 0, 0.16) 0px -14px 40px 0px",
               "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.34) 0px -2px 8px 0px, rgba(0, 0, 0, 0.5) 0px -16px 46px 0px"
@@ -756,12 +612,6 @@
           "css": "--cr-shadow-edge",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 448,
-            "export": "semanticShadows",
-            "path": "edge"
-          },
           "rendered": {
             "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset",
             "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset"
@@ -788,12 +638,6 @@
             "css": "--cr-shadow-menu",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 450,
-              "export": "semanticShadows",
-              "path": "menu"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px",
               "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
@@ -819,12 +663,6 @@
             "css": "--cr-shadow-menu",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 450,
-              "export": "semanticShadows",
-              "path": "menu"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px",
               "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
@@ -850,12 +688,6 @@
           "css": "--cr-shadow-sheet",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 455,
-            "export": "semanticShadows",
-            "path": "sheet"
-          },
           "rendered": {
             "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px, rgba(0, 0, 0, 0.34) 0px 40px 100px 0px",
             "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px, rgba(0, 0, 0, 0.34) 0px 40px 100px 0px"
@@ -882,12 +714,6 @@
             "css": "--cr-shadow-tooltip",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 459,
-              "export": "semanticShadows",
-              "path": "tooltip"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 8px 16px 0px",
               "dark": "rgba(0, 0, 0, 0.55) 0px 8px 16px 0px"
@@ -913,12 +739,6 @@
             "css": "--cr-shadow-tooltip",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 459,
-              "export": "semanticShadows",
-              "path": "tooltip"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16) 0px 8px 16px 0px",
               "dark": "rgba(0, 0, 0, 0.55) 0px 8px 16px 0px"
@@ -944,12 +764,6 @@
           "css": "--cr-shadow-focus",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 461,
-            "export": "semanticShadows",
-            "path": "focus"
-          },
           "rendered": {
             "light": "rgb(0, 105, 217) 0px 0px 0px 1px, color(srgb 0 0.411765 0.85098 / 0.34) 0px 0px 0px 4px",
             "dark": "rgb(59, 155, 255) 0px 0px 0px 1px, color(srgb 0.231373 0.607843 1 / 0.34) 0px 0px 0px 4px"
@@ -974,12 +788,6 @@
           "css": "--cr-shadow-focus-inset",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 466,
-            "export": "semanticShadows",
-            "path": "focusInset"
-          },
           "rendered": {
             "light": "rgb(0, 105, 217) 0px 0px 0px 2px inset",
             "dark": "rgb(59, 155, 255) 0px 0px 0px 2px inset"
@@ -1004,12 +812,6 @@
           "css": "--cr-shadow-button-solid",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 468,
-            "export": "semanticShadows",
-            "path": "buttonSolid"
-          },
           "rendered": {
             "light": "rgba(255, 255, 255, 0.22) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 1px 2px 0px",
             "dark": "rgba(255, 255, 255, 0.22) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 1px 2px 0px"
@@ -1034,12 +836,6 @@
           "css": "--cr-shadow-button-secondary",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 471,
-            "export": "semanticShadows",
-            "path": "buttonSecondary"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
             "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px"

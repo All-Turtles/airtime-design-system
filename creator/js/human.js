@@ -1,7 +1,7 @@
 import { S, esc, si, card } from "./lib.js";
-import { iconToggle, row, action, actions, seg, valueField, pill, sw, sw34, head, thumbRow, layerToggles, PALETTE } from "./sidebar.js";
+import { iconToggle, row, action, actions, seg, valueField, pill, sw, sw34, head, thumbRow, layerToggles, PALETTE } from "./components.js";
 
-/* Overview: the short, human-readable page. Live components from the same builders and CSS as the Engineering view. */
+/* Overview: the short, human-readable page. Live components built from the same CSS as the app. */
 const nf = (n) => new Intl.NumberFormat().format(n);
 
 /* "rgb(0, 105, 217)" / "rgba(0,0,0,.5)" / "color(srgb r g b / a)" -> "#0069D9" or "#000000 50%" */
@@ -23,9 +23,9 @@ const GROUPS = [
 ];
 
 const swatch = ([label, key]) => {
-  const t = S.tokens.get("--cr-color-" + key); if (!t) return "";
+  const t = S.data.swatches[key]; if (!t) return "";
   const half = (th) => `<span class="hs-half is-${th}" data-theme="${th}" style="--c:var(--cr-color-${key})"></span>`;
-  return `<figure class="hs"><div class="hs-pair">${half("light")}${half("dark")}</div><figcaption><b>${label}</b><span>${fmt(t.rendered.light)}</span><span>${fmt(t.rendered.dark)}</span></figcaption></figure>`;
+  return `<figure class="hs"><div class="hs-pair">${half("light")}${half("dark")}</div><figcaption><b>${label}</b><span>${fmt(t.light)}</span><span>${fmt(t.dark)}</span></figcaption></figure>`;
 };
 
 const SAMPLE = { "heading.large": "Presenter", "heading.medium": "Background", "heading.small": "Layout", "body.large": "Fit to slide", "body.medium": "Applies to all slides", "body.small": "7 layers", button: "Duplicate", "button.segment": "Blurred", label: "APPEARANCE", accountName: "Your name", accountEmail: "you@example.com", saveState: "Saved", nano: "12 / 40", "band.readout": "00:42", "band.record": "REC 00:42", "band.label": "SLIDES", "status.badge": "LIVE", "status.lead": "Camera is on" };
@@ -53,12 +53,10 @@ function components() {
 }
 
 function scales(D) {
-  const sp = [...new Set(D.mappings.P2r.scales.spacing.rows.map((r) => r.to))].sort((a, b) => a - b);
-  const orgSp = new Set(D.mappings.P2r.scales.spacing.org);
-  const rad = [...new Set(D.mappings.P2r.scales.radius.rows.map((r) => r.to))].sort((a, b) => a - b);
-  const spHtml = sp.map((v) => `<div class="hv-sp"><i class="${orgSp.has(v) ? "" : "is-own"}" style="width:${v * 3}px"></i><b>${v}</b></div>`).join("");
-  const radHtml = rad.map((v) => `<div class="hv-rad"><i style="border-radius:${v === 9999 ? "50%" : v + "px"}"></i><b>${v === 9999 ? "round" : v}</b></div>`).join("");
-  return { spHtml, radHtml, n: { sp: sp.length, rad: rad.length } };
+  const orgSp = new Set(D.spacingOrg);
+  const spHtml = D.spacingSteps.map((v) => `<div class="hv-sp"><i class="${orgSp.has(v) ? "" : "is-own"}" style="width:${v * 3}px"></i><b>${v}</b></div>`).join("");
+  const radHtml = D.radiusSteps.map((v) => `<div class="hv-rad"><i style="border-radius:${v === 9999 ? "50%" : v + "px"}"></i><b>${v === 9999 ? "round" : v}</b></div>`).join("");
+  return { spHtml, radHtml, n: { sp: D.spacingSteps.length, rad: D.radiusSteps.length } };
 }
 
 function motion() {
@@ -67,22 +65,20 @@ function motion() {
 }
 
 export async function human(root) {
-  const D = await (await fetch("data/simplification.json")).json();
-  const P = D.profiles.P2r, B = D.before, O = D.org;
-  const T = S.index.tokens;
-  const aliases = T.filter((t) => t.alias).length;
+  const D = S.data, C = D.counts;
+  const aliases = D.sharedWithOrg;
   const sc = scales(D);
-  const pct = (D.measured?.p2r?.delta?.colors?.pctUnder2 ?? 99.5).toFixed(1);
+  const pct = D.colorsUnder2Pct.toFixed(1);
   const rec = (n, cls = "") => `<b class="${cls}">${nf(n)}</b>`;
   const famRows = [
-    ["Colours", B.colors.tokens, P.colors.tokensAfter, O.colors.tokens, `${P.colors.referencedAfter} are actually used on screen`],
-    ["Text styles", B.type.textStyles, P.textStyles.after, O.type.styles, "one family, a handful of sizes"],
-    ["Font sizes", B.type.renderedSizes.light, P.fontSize.after, O.type.fontSizes, "in px"],
-    ["Corner radii", P.radius.before, P.radius.after, O.radii, "the org has more, in even steps"],
-    ["Spacing steps", P.spacing.before, P.spacing.after, O.spacing.space, "snapping them is a separate, optional step"],
+    ["Colours", C.colors, `${C.colors.used} are actually used on screen`],
+    ["Text styles", C.textStyles, "one family, a handful of sizes"],
+    ["Font sizes", C.fontSizes, "in px"],
+    ["Corner radii", C.radii, "the org has more, in even steps"],
+    ["Spacing steps", C.spacing, "snapping them is a separate, optional step"],
   ];
-  const fam = famRows.map(([n, a, b, c, note]) => `<tr><td>${n}<span>${note}</span></td><td>${nf(a)}</td><td>${rec(b, "is-new")}</td><td>${nf(c)}</td></tr>`).join("");
-  const styles = S.index.textStyles.map((s) => `<div class="hv-ts"><span class="cr-text-${s.name.replace(/\./g, "-")}" style="${s.css ? "" : ""}">${esc(SAMPLE[s.name] ?? s.name)}</span><small>${esc(s.name)} · ${s.value.fontSize} / ${s.value.fontWeight ?? 400}</small></div>`).join("");
+  const fam = famRows.map(([n, c, note]) => `<tr><td>${n}<span>${note}</span></td><td>${nf(c.today)}</td><td>${rec(c.simplified, "is-new")}</td><td>${nf(c.org)}</td></tr>`).join("");
+  const styles = D.textStyles.map((s) => `<div class="hv-ts"><span class="cr-text-${s.name.replace(/\./g, "-")}">${esc(SAMPLE[s.name] ?? s.name)}</span><small>${esc(s.name)} · ${s.fontSize} / ${s.fontWeight}</small></div>`).join("");
   const deviations = [
     ["Two blues.", "The app shell uses system blue for selected and focused things. The stage frame and handles still use the older Airtime teal."],
     ["Some type sizes do not do what the code says.", "The Record button and the stage pill buttons are written as 11 and 13 px but render at 13 and 16, because a browser reset wins. This page shows what actually renders."],
@@ -92,15 +88,13 @@ export async function human(root) {
     ["Not the org system's child.", `Only ${aliases} values are exactly the org's, mostly spacing, radii and type. No colour, shadow or material matches, so they are Creator's own.`],
     ["No toast.", "The session banner is the only transient message. There is no toast component."],
   ].map(([a, b]) => `<li><b>${a}</b> ${b}</li>`).join("");
-  const icons = ["cam", "media", "crop", "duplicate", "trash", "expand", "copy", "paste", "eye", "noEye", "lock", "lockOpen", "opacity", "shadow", "border", "rotate", "enhance", "padding", "stackFront", "stackBack", "alignLeft", "alignHCenter", "alignRight", "textList", "maskRectangle", "maskCircle", "maskHexagon", "more"].map((n) => `<span class="hv-icon" title="${n}">${si(n)}</span>`).join("");
-
   root.innerHTML = `
   <section id="h-start" class="hv-hero">
     <h1>Creator design system</h1>
     <p class="hv-lede">The look of the Creator app: colour, type, shape and the components you see in its sidebar, top bar and slide tray. It sits on top of the <b>Airtime design system</b> tokens, and adds what Creator needs that the org system does not have: a blue accent, frosted glass, and translucent ink that works in light and dark.</p>
-    <div class="hv-chips"><span><b>${P.colors.tokensAfter}</b> colours</span><span><b>${P.textStyles.after}</b> text styles</span><span><b>${sc.n.rad}</b> radii</span><span><b>${sc.n.sp}</b> spacing steps</span><span><b>${aliases}</b> shared with the org</span></div>
+    <div class="hv-chips"><span><b>${C.colors.simplified}</b> colours</span><span><b>${C.textStyles.simplified}</b> text styles</span><span><b>${sc.n.rad}</b> radii</span><span><b>${sc.n.sp}</b> spacing steps</span><span><b>${aliases}</b> shared with the org</span></div>
     <div class="hv-showcase">${inSide(head("Appearance", { icon: "effects" }) + row("border", "Border", { trailing: `<span class="cr-dot" style="background:#3D7BFF"></span>` }) + seg("segmented", [{ text: "Visible" }, { text: "Blurred" }, { text: "Hidden" }], { on: 0 }) + `<div style="height:8px"></div>` + actions(2, [action("duplicate", "Duplicate"), action("trash", "Delete", { destructive: true })]))}
-      <div class="hv-showcase-note"><p>These are the real components, the same markup and CSS as the Engineering view. Use the light and dark toggle at the top to flip the whole page.</p><p class="muted">Looking for values, source lines or the audit? Switch to <a href="?view=eng" data-view-link="eng">Engineering</a>.</p></div></div>
+      <div class="hv-showcase-note"><p>These are live components built from the same CSS as the app. Use the light and dark toggle at the top to flip the whole page.</p></div></div>
   </section>
 
   <section id="h-tokens"><h2>How many tokens</h2>
@@ -119,12 +113,9 @@ export async function human(root) {
     <div class="hv-sps">${sc.spHtml}</div><h3>Corner radius</h3><div class="hv-rads">${sc.radHtml}</div>
     <h3>Motion</h3><p class="hv-sub">Click to replay. Everything eases out; the panel and stage use a soft settle.</p><div class="hv-motions">${motion()}</div></section>
 
-  <section id="h-components"><h2>Components</h2><p class="hv-sub">The sidebar patterns, live. Each one is a real control from the app.</p><div class="hv-grid">${components()}</div>
-    <h3>Icons in use</h3><div class="hv-icons">${icons}</div></section>
+  <section id="h-components"><h2>Components</h2><p class="hv-sub">The sidebar patterns, live. Each one is a real control from the app.</p><div class="hv-grid">${components()}</div></section>
 
-  <section id="h-deviations"><h2>Where Creator differs from what you might expect</h2><p class="hv-sub">Honest notes on the places where the app, the code and the org system disagree.</p><ul class="hv-dev">${deviations}</ul></section>
-
-  <section id="h-more"><h2>More</h2><p class="hv-sub">The Engineering view has every token with its resolved value, where it is used and where it comes from, every pattern in light and dark with its states, the org relationship and the audit. It is the same page, in full.</p><p><a class="hv-btn" href="?view=eng" data-view-link="eng">Open the Engineering view</a></p></section>`;
+  <section id="h-deviations"><h2>Where Creator differs from what you might expect</h2><p class="hv-sub">Honest notes on the places where the app, the code and the org system disagree.</p><ul class="hv-dev">${deviations}</ul></section>`;
 
   root.querySelectorAll(".hv-motion").forEach((b) => b.addEventListener("click", () => {
     const i = b.querySelector("i"); i.style.transition = "none"; i.style.transform = "translateX(0)"; void i.offsetWidth;

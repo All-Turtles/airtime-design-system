@@ -1,6 +1,6 @@
 {
   "$name": "Creator - z-index",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "z": {
     "stage": {
       "$value": "1",
@@ -10,12 +10,6 @@
           "css": "--cr-z-stage",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 127,
-            "export": "zIndex",
-            "path": "stage"
-          },
           "rendered": {
             "light": "1",
             "dark": "1"
@@ -39,12 +33,6 @@
           "css": "--cr-z-stage-band",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 128,
-            "export": "zIndex",
-            "path": "stageBand"
-          },
           "rendered": {
             "light": "12",
             "dark": "12"
@@ -68,12 +56,6 @@
           "css": "--cr-z-stage-controls",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 129,
-            "export": "zIndex",
-            "path": "stageControls"
-          },
           "rendered": {
             "light": "13",
             "dark": "13"
@@ -97,12 +79,6 @@
           "css": "--cr-z-tray",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 130,
-            "export": "zIndex",
-            "path": "tray"
-          },
           "rendered": {
             "light": "15",
             "dark": "15"
@@ -126,12 +102,6 @@
           "css": "--cr-z-top-bar",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 131,
-            "export": "zIndex",
-            "path": "topBar"
-          },
           "rendered": {
             "light": "20",
             "dark": "20"

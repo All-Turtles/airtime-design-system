@@ -1,6 +1,6 @@
 {
   "$name": "Creator - spacing",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "space": {
     "0": {
       "5": {
@@ -11,12 +11,6 @@
             "css": "--cr-space-0-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "0.5"
-            },
             "rendered": {
               "light": "2px",
               "dark": "2px"
@@ -41,12 +35,6 @@
             "css": "--cr-space-0-75",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 115,
-              "export": "spacing",
-              "path": "0.75"
-            },
             "rendered": {
               "light": "3px",
               "dark": "3px"
@@ -72,12 +60,6 @@
             "css": "--cr-space-1-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "1.5"
-            },
             "rendered": {
               "light": "6px",
               "dark": "6px"
@@ -101,12 +83,6 @@
           "css": "--cr-space-1",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "1"
-          },
           "rendered": {
             "light": "4px",
             "dark": "4px"
@@ -132,12 +108,6 @@
             "css": "--cr-space-2-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "2.5"
-            },
             "rendered": {
               "light": "10px",
               "dark": "10px"
@@ -160,12 +130,6 @@
           "css": "--cr-space-2",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "2"
-          },
           "rendered": {
             "light": "8px",
             "dark": "8px"
@@ -191,12 +155,6 @@
             "css": "--cr-space-3-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "3.5"
-            },
             "rendered": {
               "light": "14px",
               "dark": "14px"
@@ -219,12 +177,6 @@
           "css": "--cr-space-3",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "3"
-          },
           "rendered": {
             "light": "12px",
             "dark": "12px"
@@ -250,12 +202,6 @@
             "css": "--cr-space-4-5",
             "kind": "primitive",
             "status": "chakra-default",
-            "source": {
-              "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-              "line": null,
-              "export": "defaultThemeConfig",
-              "path": "4.5"
-            },
             "rendered": {
               "light": "18px",
               "dark": "18px"
@@ -278,12 +224,6 @@
           "css": "--cr-space-4",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "4"
-          },
           "rendered": {
             "light": "16px",
             "dark": "16px"
@@ -308,12 +248,6 @@
           "css": "--cr-space-5",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "5"
-          },
           "rendered": {
             "light": "20px",
             "dark": "20px"
@@ -337,12 +271,6 @@
           "css": "--cr-space-6",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "6"
-          },
           "rendered": {
             "light": "24px",
             "dark": "24px"
@@ -367,12 +295,6 @@
           "css": "--cr-space-7",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "7"
-          },
           "rendered": {
             "light": "28px",
             "dark": "28px"
@@ -396,12 +318,6 @@
           "css": "--cr-space-8",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "8"
-          },
           "rendered": {
             "light": "32px",
             "dark": "32px"
@@ -426,12 +342,6 @@
           "css": "--cr-space-9",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "9"
-          },
           "rendered": {
             "light": "36px",
             "dark": "36px"
@@ -455,12 +365,6 @@
           "css": "--cr-space-10",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "10"
-          },
           "rendered": {
             "light": "40px",
             "dark": "40px"
@@ -485,12 +389,6 @@
           "css": "--cr-space-11",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "11"
-          },
           "rendered": {
             "light": "44px",
             "dark": "44px"
@@ -514,12 +412,6 @@
           "css": "--cr-space-12",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "12"
-          },
           "rendered": {
             "light": "48px",
             "dark": "48px"
@@ -543,12 +435,6 @@
           "css": "--cr-space-14",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "14"
-          },
           "rendered": {
             "light": "56px",
             "dark": "56px"
@@ -572,12 +458,6 @@
           "css": "--cr-space-16",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "16"
-          },
           "rendered": {
             "light": "64px",
             "dark": "64px"
@@ -601,12 +481,6 @@
           "css": "--cr-space-20",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "20"
-          },
           "rendered": {
             "light": "80px",
             "dark": "80px"
@@ -630,12 +504,6 @@
           "css": "--cr-space-24",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "24"
-          },
           "rendered": {
             "light": "96px",
             "dark": "96px"
@@ -659,12 +527,6 @@
           "css": "--cr-space-28",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "28"
-          },
           "rendered": {
             "light": "112px",
             "dark": "112px"
@@ -688,12 +550,6 @@
           "css": "--cr-space-32",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "32"
-          },
           "rendered": {
             "light": "128px",
             "dark": "128px"
@@ -717,12 +573,6 @@
           "css": "--cr-space-36",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "36"
-          },
           "rendered": {
             "light": "144px",
             "dark": "144px"
@@ -746,12 +596,6 @@
           "css": "--cr-space-40",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "40"
-          },
           "rendered": {
             "light": "160px",
             "dark": "160px"
@@ -775,12 +619,6 @@
           "css": "--cr-space-44",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "44"
-          },
           "rendered": {
             "light": "176px",
             "dark": "176px"
@@ -804,12 +642,6 @@
           "css": "--cr-space-48",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "48"
-          },
           "rendered": {
             "light": "192px",
             "dark": "192px"
@@ -833,12 +665,6 @@
           "css": "--cr-space-52",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "52"
-          },
           "rendered": {
             "light": "208px",
             "dark": "208px"
@@ -862,12 +688,6 @@
           "css": "--cr-space-56",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "56"
-          },
           "rendered": {
             "light": "224px",
             "dark": "224px"
@@ -891,12 +711,6 @@
           "css": "--cr-space-60",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "60"
-          },
           "rendered": {
             "light": "240px",
             "dark": "240px"
@@ -920,12 +734,6 @@
           "css": "--cr-space-64",
           "kind": "primitive",
           "status": "chakra-default",
-          "source": {
-            "file": "@chakra-ui/react default theme (not overridden by tokens.ts)",
-            "line": null,
-            "export": "defaultThemeConfig",
-            "path": "64"
-          },
           "rendered": {
             "light": "256px",
             "dark": "256px"
@@ -949,12 +757,6 @@
           "css": "--cr-space-gutter",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 117,
-            "export": "spacing",
-            "path": "gutter"
-          },
           "rendered": {
             "light": "16px",
             "dark": "16px"

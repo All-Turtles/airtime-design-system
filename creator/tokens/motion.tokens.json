@@ -1,6 +1,6 @@
 {
   "$name": "Creator - motion",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "duration": {
     "insert": {
       "$value": "120ms",
@@ -10,12 +10,6 @@
           "css": "--cr-duration-insert",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 147,
-            "export": "durations",
-            "path": "insert"
-          },
           "rendered": {
             "light": "120ms",
             "dark": "120ms"
@@ -39,12 +33,6 @@
           "css": "--cr-duration-fired",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 148,
-            "export": "durations",
-            "path": "fired"
-          },
           "rendered": {
             "light": "260ms",
             "dark": "260ms"
@@ -68,12 +56,6 @@
           "css": "--cr-duration-fast",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 149,
-            "export": "durations",
-            "path": "fast"
-          },
           "rendered": {
             "light": "160ms",
             "dark": "160ms"
@@ -97,12 +79,6 @@
           "css": "--cr-duration-history",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 150,
-            "export": "durations",
-            "path": "history"
-          },
           "rendered": {
             "light": "150ms",
             "dark": "150ms"
@@ -127,12 +103,6 @@
           "css": "--cr-duration-title-dwell",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 151,
-            "export": "durations",
-            "path": "titleDwell"
-          },
           "rendered": {
             "light": "200ms",
             "dark": "200ms"
@@ -156,12 +126,6 @@
           "css": "--cr-duration-normal",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 152,
-            "export": "durations",
-            "path": "normal"
-          },
           "rendered": {
             "light": "240ms",
             "dark": "240ms"
@@ -185,12 +149,6 @@
           "css": "--cr-duration-slow",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 153,
-            "export": "durations",
-            "path": "slow"
-          },
           "rendered": {
             "light": "420ms",
             "dark": "420ms"
@@ -214,12 +172,6 @@
           "css": "--cr-duration-settle",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 154,
-            "export": "durations",
-            "path": "settle"
-          },
           "rendered": {
             "light": "300ms",
             "dark": "300ms"
@@ -244,12 +196,6 @@
           "css": "--cr-duration-stage",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 155,
-            "export": "durations",
-            "path": "stage"
-          },
           "rendered": {
             "light": "420ms",
             "dark": "420ms"
@@ -273,12 +219,6 @@
           "css": "--cr-duration-panel",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 156,
-            "export": "durations",
-            "path": "panel"
-          },
           "rendered": {
             "light": "280ms",
             "dark": "280ms"
@@ -304,12 +244,6 @@
           "css": "--cr-easing-out",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 160,
-            "export": "easings",
-            "path": "out"
-          },
           "rendered": {
             "light": "ease-out",
             "dark": "ease-out"
@@ -332,12 +266,6 @@
           "css": "--cr-easing-settle",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 162,
-            "export": "easings",
-            "path": "settle"
-          },
           "rendered": {
             "light": "cubic-bezier(.32, .72, 0, 1)",
             "dark": "cubic-bezier(.32, .72, 0, 1)"
@@ -359,12 +287,6 @@
           "css": "--cr-easing-standard",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 163,
-            "export": "easings",
-            "path": "standard"
-          },
           "rendered": {
             "light": "ease-in-out",
             "dark": "ease-in-out"
@@ -387,12 +309,6 @@
           "css": "--cr-easing-spring",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 164,
-            "export": "easings",
-            "path": "spring"
-          },
           "rendered": {
             "light": "cubic-bezier(.34, 1.4, .5, 1)",
             "dark": "cubic-bezier(.34, 1.4, .5, 1)"
@@ -414,12 +330,6 @@
           "css": "--cr-easing-flow",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 166,
-            "export": "easings",
-            "path": "flow"
-          },
           "rendered": {
             "light": "cubic-bezier(.25, .46, .2, .99)",
             "dark": "cubic-bezier(.25, .46, .2, .99)"

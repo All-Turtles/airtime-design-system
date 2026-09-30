@@ -1,6 +1,6 @@
 {
   "$name": "Creator - borders",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "border-width": {
     "hair": {
       "$value": "0.5px",
@@ -10,12 +10,6 @@
           "css": "--cr-border-width-hair",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 141,
-            "export": "borderWidths",
-            "path": "hair"
-          },
           "rendered": {
             "light": "0.5px",
             "dark": "0.5px"
@@ -37,12 +31,6 @@
           "css": "--cr-border-width-thin",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 142,
-            "export": "borderWidths",
-            "path": "thin"
-          },
           "rendered": {
             "light": "1px",
             "dark": "1px"
@@ -65,12 +53,6 @@
           "css": "--cr-border-width-medium",
           "kind": "primitive",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 143,
-            "export": "borderWidths",
-            "path": "medium"
-          },
           "rendered": {
             "light": "2px",
             "dark": "2px"

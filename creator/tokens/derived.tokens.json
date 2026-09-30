@@ -8,11 +8,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-opacity-disabled",
-          "source": {
-            "file": "ui/recipes/sidebarRowRecipe.ts",
-            "line": 32,
-            "find": "_disabled: { opacity: 0.4"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -28,11 +23,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-opacity-dimmed",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "opacity={dimmed ? 0.45 : 1}"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -48,11 +38,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-opacity-locked-grip",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "opacity={locked ? 0.3 : 1}"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -68,11 +53,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-opacity-disabled-button",
-          "source": {
-            "file": "ui/recipes/buttonRecipe.ts",
-            "line": 42,
-            "find": "_disabled: { opacity: 0.45"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -88,11 +68,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-opacity-disabled-icon",
-          "source": {
-            "file": "ui/recipes/buttonRecipe.ts",
-            "line": 53,
-            "find": "opacity: 0.3, cursor"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -108,11 +83,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-opacity-disabled-split",
-          "source": {
-            "file": "ui/recipes/splitButtonSlotRecipe.ts",
-            "line": 55,
-            "find": "opacity: 0.2"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -128,11 +98,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-opacity-status-dot",
-          "source": {
-            "file": "ui/recipes/statusChipSlotRecipe.ts",
-            "line": 33,
-            "find": "opacity: 0.55"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -150,11 +115,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-font-size-sidebar",
-          "source": {
-            "file": "creator/sidebar/Sidebar.tsx",
-            "line": 34,
-            "find": "fontSize=\"12px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -172,11 +132,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-line-height-sidebar",
-          "source": {
-            "file": "creator/sidebar/Sidebar.tsx",
-            "line": 36,
-            "find": "lineHeight=\"15px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -194,11 +149,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-letter-spacing-sidebar",
-          "source": {
-            "file": "creator/sidebar/Sidebar.tsx",
-            "line": 37,
-            "find": "letterSpacing=\"-0.036px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -216,11 +166,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-pill-fill",
-          "source": {
-            "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 76,
-            "find": "bg: \"rgba(255, 255, 255, 0.12)\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -236,11 +181,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-swatch-ring-dot",
-          "source": {
-            "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 176,
-            "find": "\"inset 0 0 0 1px rgba(255, 255, 255, 0.24)\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -256,11 +196,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-swatch-ring-tile",
-          "source": {
-            "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 177,
-            "find": "\"0 0 0 1px rgba(255, 255, 255, 0.16)\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -276,11 +211,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-swatch-none-slash",
-          "source": {
-            "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": null,
-            "find": "rgb(255, 69, 58)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -296,11 +226,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-swatch-none-fill",
-          "source": {
-            "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": null,
-            "find": "bgColor: \"rgba(255, 255, 255, 0.08)\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -316,11 +241,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-chip-ground",
-          "source": {
-            "file": "creator/sidebar/primitives/Dropdown.tsx",
-            "line": 175,
-            "find": "bg=\"#E6E6EC\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -336,11 +256,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-checker-a",
-          "source": {
-            "file": "creator/sidebar/primitives/TransparencyChecker.tsx",
-            "line": 22,
-            "find": "#FFFFFF 0% 25%"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -356,11 +271,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-checker-b",
-          "source": {
-            "file": "creator/sidebar/primitives/TransparencyChecker.tsx",
-            "line": 22,
-            "find": "#D4D4DA 0% 50%"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -376,11 +286,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-thumb-selected-fill",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "rgba(255, 255, 255, 0.18)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -396,11 +301,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-thumb-selected-ring",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "rgba(255, 255, 255, 0.3)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -416,11 +316,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-knob",
-          "source": {
-            "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 21,
-            "find": "bg: \"white\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -436,11 +331,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-stage-frame",
-          "source": {
-            "file": "../teleport/stage/objects/overlay.css",
-            "line": 6,
-            "find": "--frame-color: var(--action-hover)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -456,11 +346,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-stage-guide-hit",
-          "source": {
-            "file": "../teleport/stage/objects/alignment_grid.js",
-            "line": 556,
-            "find": "color = \"#E55242\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -476,11 +361,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-stage-guide",
-          "source": {
-            "file": "../teleport/stage/objects/alignment_grid.js",
-            "line": 560,
-            "find": "color = \"white\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -496,11 +376,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-stage-grid-fill",
-          "source": {
-            "file": "../teleport/stage/objects/alignment_grid.js",
-            "line": 314,
-            "find": "rgba(127, 127, 127, 0.65)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -516,11 +391,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-handle-fill",
-          "source": {
-            "file": "../teleport/stage/objects/overlay.css",
-            "line": 155,
-            "find": "background: #ffffff"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -536,11 +406,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-color-on-badge",
-          "source": {
-            "file": "ui/recipes/slideTileSlotRecipe.ts",
-            "line": 17,
-            "find": "color: \"rgba(255, 255, 255, 0.96)\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -558,11 +423,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-sidebar-card",
-          "source": {
-            "file": "creator/sidebar/Sidebar.tsx",
-            "line": null,
-            "find": "0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 40px"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -578,11 +438,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-action-button",
-          "source": {
-            "file": "ui/recipes/sidebarRowRecipe.ts",
-            "line": 66,
-            "find": "boxShadow: \"inset 0 0.5px 0 0 {colors.edge.in}, 0 1px 2px rgba(0, 0, 0, 0.2)\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -598,11 +453,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-pill",
-          "source": {
-            "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 77,
-            "find": "boxShadow: \"inset 0 0.5px 0 0 rgba(255, 255, 255, 0.16), 0 1px 2px"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -618,11 +468,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-field-well",
-          "source": {
-            "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 22,
-            "find": "boxShadow: \"inset 0 0 0 0.5px {colors.line}\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -638,11 +483,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-field-well-hover",
-          "source": {
-            "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 23,
-            "find": "_hover: { boxShadow: \"inset 0 0 0 0.5px {colors.line.strong}\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -658,11 +498,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-field-focus",
-          "source": {
-            "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 7,
-            "find": "const focusRing ="
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -678,11 +513,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-segment-track-sidebar",
-          "source": {
-            "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-            "line": null,
-            "find": "const track ="
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -698,11 +528,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-popover",
-          "source": {
-            "file": "creator/sidebar/primitives/Dropdown.tsx",
-            "line": 115,
-            "find": "boxShadow=\"0 0 0 0.5px {colors.edge.out}, 0 8px 24px rgba(0, 0, 0, 0.45)\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -718,11 +543,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-popover-range",
-          "source": {
-            "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 135,
-            "find": "0 8px 20px rgba(0, 0, 0, 0.45)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -738,11 +558,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-swatch-selected-tile",
-          "source": {
-            "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 130,
-            "find": "boxShadow: circle"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -758,11 +573,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-swatch-selected-dot",
-          "source": {
-            "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 131,
-            "find": "0 0 0 2.5px {colors.accent.solid}"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -778,11 +588,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-range-track",
-          "source": {
-            "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 15,
-            "find": "inset 0 1px 1.5px rgba(0, 0, 0, 0.3)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -798,11 +603,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-range-thumb",
-          "source": {
-            "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 22,
-            "find": "0 0 0 0.5px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.38)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -818,11 +618,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-switch-track",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "inset 0 1px 2px rgba(0, 0, 0, 0.1)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -838,11 +633,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-switch-knob",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -858,11 +648,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-thumb-ring",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbFrame.tsx",
-            "line": 19,
-            "find": "inset 0 0 0 0.5px {colors.line.strong}"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -878,11 +663,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-drop-before",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "inset 0 2px 0 {colors.state.dropIndicator}"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -898,11 +678,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-handle",
-          "source": {
-            "file": "../teleport/stage/objects/overlay.css",
-            "line": 162,
-            "find": "box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.18)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -918,11 +693,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-tile-action",
-          "source": {
-            "file": "ui/recipes/slideTileSlotRecipe.ts",
-            "line": null,
-            "find": "0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -940,11 +710,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-row",
-          "source": {
-            "file": "ui/recipes/sidebarRowRecipe.ts",
-            "line": 24,
-            "find": "minH: \"creator.sidebarRow\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "Org rows are 32px/40px (rows.css)."
@@ -960,11 +725,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-control",
-          "source": {
-            "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-            "line": null,
-            "find": "h: \"creator.sidebarControl\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -980,11 +740,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-icon-row",
-          "source": {
-            "file": "ui/recipes/sidebarRowRecipe.ts",
-            "line": 13,
-            "find": "\"& svg\": { boxSize: \"5\" }"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1000,11 +755,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-icon-action",
-          "source": {
-            "file": "creator/sidebar/primitives/Actions.tsx",
-            "line": 61,
-            "find": "boxSize=\"4.5\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1020,11 +770,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-icon-header",
-          "source": {
-            "file": "creator/sidebar/primitives/IconToggle.tsx",
-            "line": 44,
-            "find": "size === \"back\" ? \"5\" : \"4\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1040,11 +785,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-icon-inline",
-          "source": {
-            "file": "creator/sidebar/primitives/IconToggle.tsx",
-            "line": 44,
-            "find": "inline ? \"3.5\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1060,11 +800,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-icon-shape",
-          "source": {
-            "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-            "line": null,
-            "find": "\"& svg\": { boxSize: \"22px\" }"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1080,11 +815,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-icon-chevron",
-          "source": {
-            "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 82,
-            "find": "\"& svg\": { boxSize: \"9px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1100,11 +830,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-hit-header",
-          "source": {
-            "file": "creator/sidebar/primitives/IconToggle.tsx",
-            "line": 32,
-            "find": "boxSize={inline ? \"22px\" : \"26px\"}"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1120,11 +845,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-hit-inline",
-          "source": {
-            "file": "creator/sidebar/primitives/IconToggle.tsx",
-            "line": 32,
-            "find": "boxSize={inline ? \"22px\" : \"26px\"}"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1140,11 +860,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-pane-header",
-          "source": {
-            "file": "ui/recipes/sidebarSectionSlotRecipe.ts",
-            "line": 121,
-            "find": "h: \"11\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1160,11 +875,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-thumb-row",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 29,
-            "find": "minH=\"9\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1180,11 +890,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-thumb-w",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 46,
-            "find": "w=\"12\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1200,11 +905,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-thumb-h",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": 47,
-            "find": "h=\"7\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1220,11 +920,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-color-dot",
-          "source": {
-            "file": "creator/sidebar/primitives/ColorWellRow.tsx",
-            "line": 53,
-            "find": "boxSize=\"5\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1240,11 +935,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-tint-dot",
-          "source": {
-            "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 113,
-            "find": "w={circle ? \"6\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1260,11 +950,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-switch-w",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "w=\"30px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1280,11 +965,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-switch-h",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "h=\"18px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1300,11 +980,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-switch-knob",
-          "source": {
-            "file": "creator/sidebar/primitives/ThumbRow.tsx",
-            "line": null,
-            "find": "boxSize=\"14px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1320,11 +995,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-range-thumb",
-          "source": {
-            "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 19,
-            "find": "boxSize: \"15px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1340,11 +1010,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-range-track",
-          "source": {
-            "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 12,
-            "find": "height: \"4px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1360,11 +1025,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-popup-range-w",
-          "source": {
-            "file": "creator/sidebar/primitives/SliderRow.tsx",
-            "line": 125,
-            "find": "w=\"250px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1380,11 +1040,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-popup-color-w",
-          "source": {
-            "file": "creator/sidebar/primitives/ColorWellRow.tsx",
-            "line": 65,
-            "find": "w=\"60\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1400,11 +1055,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-popup-grid-col",
-          "source": {
-            "file": "creator/sidebar/primitives/Dropdown.tsx",
-            "line": 125,
-            "find": "repeat(3, 56px)"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1420,11 +1070,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-popup-gutter",
-          "source": {
-            "file": "creator/sidebar/primitives/popupPlacement.ts",
-            "line": 50,
-            "find": "gutter: 4"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1440,11 +1085,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-popup-edge",
-          "source": {
-            "file": "creator/sidebar/primitives/popupPlacement.ts",
-            "line": 53,
-            "find": "overflowPadding: 16"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1460,11 +1100,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-field-value-w",
-          "source": {
-            "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 47,
-            "find": "w: \"54px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1480,11 +1115,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-field-wide-w",
-          "source": {
-            "file": "ui/recipes/sidebarFieldRecipe.ts",
-            "line": 57,
-            "find": "w: \"112px\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1500,11 +1130,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-handle",
-          "source": {
-            "file": "../teleport/stage/objects/overlay.css",
-            "line": 158,
-            "find": "--knob-diameter: 10px"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1520,11 +1145,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-size-frame-width",
-          "source": {
-            "file": "../teleport/stage/objects/overlay.css",
-            "line": 7,
-            "find": "--frame-width: 2px"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1542,11 +1162,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-transition-control",
-          "source": {
-            "file": "ui/recipes/sidebarSegmentSlotRecipe.ts",
-            "line": null,
-            "find": "transitionProperty: \"background, color\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1562,11 +1177,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-transition-swatch",
-          "source": {
-            "file": "creator/sidebar/primitives/Swatches.tsx",
-            "line": 116,
-            "find": "transitionTimingFunction=\"spring\""
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."
@@ -1584,11 +1194,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-radius-handle",
-          "source": {
-            "file": "../teleport/stage/objects/overlay.css",
-            "line": 163,
-            "find": "border-radius: 2px"
-          },
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."

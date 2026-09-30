@@ -1,6 +1,6 @@
 {
   "$name": "Creator - color",
-  "$description": "Extracted from the rendered Creator app (localhost:3000/creator); see each token's $extensions.creator for source and org relation.",
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "color": {
     "selection": {
       "destructive": {
@@ -11,12 +11,6 @@
             "css": "--cr-color-selection-destructive",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 174,
-              "export": "colors",
-              "path": "selection.destructive"
-            },
             "rendered": {
               "light": "rgb(255, 92, 92)",
               "dark": "rgb(255, 92, 92)"
@@ -41,12 +35,6 @@
             "css": "--cr-color-selection-destructive-hover",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 175,
-              "export": "colors",
-              "path": "selection.destructiveHover"
-            },
             "rendered": {
               "light": "rgba(255, 92, 92, 0.14)",
               "dark": "rgba(255, 92, 92, 0.14)"
@@ -71,12 +59,6 @@
             "css": "--cr-color-selection-destructive-active",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 176,
-              "export": "colors",
-              "path": "selection.destructiveActive"
-            },
             "rendered": {
               "light": "rgba(255, 92, 92, 0.24)",
               "dark": "rgba(255, 92, 92, 0.24)"
@@ -101,12 +83,6 @@
             "css": "--cr-color-selection-muted",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 177,
-              "export": "colors",
-              "path": "selection.muted"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.6)",
               "dark": "rgba(255, 255, 255, 0.6)"
@@ -131,12 +107,6 @@
             "css": "--cr-color-selection-track",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 178,
-              "export": "colors",
-              "path": "selection.track"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.08)",
               "dark": "rgba(255, 255, 255, 0.08)"
@@ -161,12 +131,6 @@
             "css": "--cr-color-selection-swatch",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 179,
-              "export": "colors",
-              "path": "selection.swatch"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.16)",
               "dark": "rgba(255, 255, 255, 0.16)"
@@ -191,12 +155,6 @@
             "css": "--cr-color-selection-material",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 180,
-              "export": "colors",
-              "path": "selection.material"
-            },
             "rendered": {
               "light": "rgba(26, 26, 29, 0.66)",
               "dark": "rgba(26, 26, 29, 0.66)"
@@ -221,12 +179,6 @@
             "css": "--cr-color-selection-text",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 181,
-              "export": "colors",
-              "path": "selection.text"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.96)",
               "dark": "rgba(255, 255, 255, 0.96)"
@@ -251,12 +203,6 @@
             "css": "--cr-color-selection-disabled",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 182,
-              "export": "colors",
-              "path": "selection.disabled"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.4)",
               "dark": "rgba(255, 255, 255, 0.4)"
@@ -281,12 +227,6 @@
             "css": "--cr-color-selection-hover",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 183,
-              "export": "colors",
-              "path": "selection.hover"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.11)",
               "dark": "rgba(255, 255, 255, 0.11)"
@@ -311,12 +251,6 @@
             "css": "--cr-color-selection-active",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 184,
-              "export": "colors",
-              "path": "selection.active"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.2)",
               "dark": "rgba(255, 255, 255, 0.2)"
@@ -341,12 +275,6 @@
             "css": "--cr-color-selection-line",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 185,
-              "export": "colors",
-              "path": "selection.line"
-            },
             "rendered": {
               "light": "rgba(255, 255, 255, 0.13)",
               "dark": "rgba(255, 255, 255, 0.13)"
@@ -373,12 +301,6 @@
             "css": "--cr-color-system-blue-light",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 188,
-              "export": "colors",
-              "path": "systemBlue.light"
-            },
             "rendered": {
               "light": "rgb(0, 105, 217)",
               "dark": "rgb(0, 105, 217)"
@@ -403,12 +325,6 @@
             "css": "--cr-color-system-blue-light-hover",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 189,
-              "export": "colors",
-              "path": "systemBlue.lightHover"
-            },
             "rendered": {
               "light": "rgb(0, 89, 184)",
               "dark": "rgb(0, 89, 184)"
@@ -433,12 +349,6 @@
             "css": "--cr-color-system-blue-dark",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 190,
-              "export": "colors",
-              "path": "systemBlue.dark"
-            },
             "rendered": {
               "light": "rgb(59, 155, 255)",
               "dark": "rgb(59, 155, 255)"
@@ -463,12 +373,6 @@
             "css": "--cr-color-system-blue-dark-hover",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 191,
-              "export": "colors",
-              "path": "systemBlue.darkHover"
-            },
             "rendered": {
               "light": "rgb(87, 172, 255)",
               "dark": "rgb(87, 172, 255)"
@@ -493,12 +397,6 @@
             "css": "--cr-color-system-blue-on-light",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 192,
-              "export": "colors",
-              "path": "systemBlue.onLight"
-            },
             "rendered": {
               "light": "rgb(255, 255, 255)",
               "dark": "rgb(255, 255, 255)"
@@ -523,12 +421,6 @@
             "css": "--cr-color-system-blue-on-dark",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 193,
-              "export": "colors",
-              "path": "systemBlue.onDark"
-            },
             "rendered": {
               "light": "rgb(8, 18, 28)",
               "dark": "rgb(8, 18, 28)"
@@ -555,12 +447,6 @@
             "css": "--cr-color-system-red-light",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 196,
-              "export": "colors",
-              "path": "systemRed.light"
-            },
             "rendered": {
               "light": "rgb(215, 0, 21)",
               "dark": "rgb(215, 0, 21)"
@@ -585,12 +471,6 @@
             "css": "--cr-color-system-red-dark",
             "kind": "primitive",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 197,
-              "export": "colors",
-              "path": "systemRed.dark"
-            },
             "rendered": {
               "light": "rgb(255, 79, 66)",
               "dark": "rgb(255, 79, 66)"
@@ -618,12 +498,6 @@
               "css": "--cr-color-ground-light-window",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 201,
-                "export": "colors",
-                "path": "ground.light.window"
-              },
               "rendered": {
                 "light": "rgb(233, 233, 236)",
                 "dark": "rgb(233, 233, 236)"
@@ -648,12 +522,6 @@
               "css": "--cr-color-ground-light-surface",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 202,
-                "export": "colors",
-                "path": "ground.light.surface"
-              },
               "rendered": {
                 "light": "rgb(255, 255, 255)",
                 "dark": "rgb(255, 255, 255)"
@@ -678,12 +546,6 @@
               "css": "--cr-color-ground-light-recessed",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 203,
-                "export": "colors",
-                "path": "ground.light.recessed"
-              },
               "rendered": {
                 "light": "rgb(241, 241, 244)",
                 "dark": "rgb(241, 241, 244)"
@@ -710,12 +572,6 @@
               "css": "--cr-color-ground-dark-window",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 206,
-                "export": "colors",
-                "path": "ground.dark.window"
-              },
               "rendered": {
                 "light": "rgb(19, 19, 21)",
                 "dark": "rgb(19, 19, 21)"
@@ -740,12 +596,6 @@
               "css": "--cr-color-ground-dark-surface",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 207,
-                "export": "colors",
-                "path": "ground.dark.surface"
-              },
               "rendered": {
                 "light": "rgb(30, 30, 32)",
                 "dark": "rgb(30, 30, 32)"
@@ -770,12 +620,6 @@
               "css": "--cr-color-ground-dark-recessed",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 208,
-                "export": "colors",
-                "path": "ground.dark.recessed"
-              },
               "rendered": {
                 "light": "rgb(37, 37, 40)",
                 "dark": "rgb(37, 37, 40)"
@@ -804,12 +648,6 @@
               "css": "--cr-color-ink-light-primary",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 213,
-                "export": "colors",
-                "path": "ink.light.primary"
-              },
               "rendered": {
                 "light": "rgb(0, 0, 0)",
                 "dark": "rgb(0, 0, 0)"
@@ -834,12 +672,6 @@
               "css": "--cr-color-ink-light-secondary",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 214,
-                "export": "colors",
-                "path": "ink.light.secondary"
-              },
               "rendered": {
                 "light": "rgb(60, 60, 67)",
                 "dark": "rgb(60, 60, 67)"
@@ -864,12 +696,6 @@
               "css": "--cr-color-ink-light-tertiary",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 215,
-                "export": "colors",
-                "path": "ink.light.tertiary"
-              },
               "rendered": {
                 "light": "rgb(110, 110, 115)",
                 "dark": "rgb(110, 110, 115)"
@@ -896,12 +722,6 @@
               "css": "--cr-color-ink-dark-primary",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 218,
-                "export": "colors",
-                "path": "ink.dark.primary"
-              },
               "rendered": {
                 "light": "rgb(255, 255, 255)",
                 "dark": "rgb(255, 255, 255)"
@@ -926,12 +746,6 @@
               "css": "--cr-color-ink-dark-secondary",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 219,
-                "export": "colors",
-                "path": "ink.dark.secondary"
-              },
               "rendered": {
                 "light": "rgb(235, 235, 245)",
                 "dark": "rgb(235, 235, 245)"
@@ -956,12 +770,6 @@
               "css": "--cr-color-ink-dark-tertiary",
               "kind": "primitive",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 220,
-                "export": "colors",
-                "path": "ink.dark.tertiary"
-              },
               "rendered": {
                 "light": "rgb(171, 171, 178)",
                 "dark": "rgb(171, 171, 178)"
@@ -991,12 +799,6 @@
               "css": "--cr-color-background-primary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 229,
-                "export": "semanticColors",
-                "path": "background.primary"
-              },
               "rendered": {
                 "light": "rgb(255, 255, 255)",
                 "dark": "rgb(10, 10, 14)"
@@ -1023,12 +825,6 @@
               "css": "--cr-color-background-primary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 229,
-                "export": "semanticColors",
-                "path": "background.primary"
-              },
               "rendered": {
                 "light": "rgb(255, 255, 255)",
                 "dark": "rgb(10, 10, 14)"
@@ -1057,12 +853,6 @@
               "css": "--cr-color-background-tertiary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 230,
-                "export": "semanticColors",
-                "path": "background.tertiary"
-              },
               "rendered": {
                 "light": "rgb(235, 235, 235)",
                 "dark": "rgb(33, 33, 39)"
@@ -1089,12 +879,6 @@
               "css": "--cr-color-background-tertiary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 230,
-                "export": "semanticColors",
-                "path": "background.tertiary"
-              },
               "rendered": {
                 "light": "rgb(235, 235, 235)",
                 "dark": "rgb(33, 33, 39)"
@@ -1123,12 +907,6 @@
             "css": "--cr-color-action-primary",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 233,
-              "export": "semanticColors",
-              "path": "action.primary"
-            },
             "rendered": {
               "light": "rgb(121, 221, 232)",
               "dark": "rgb(121, 221, 232)"
@@ -1154,12 +932,6 @@
             "css": "--cr-color-action-secondary",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 234,
-              "export": "semanticColors",
-              "path": "action.secondary"
-            },
             "rendered": {
               "light": "rgb(26, 117, 128)",
               "dark": "rgb(26, 117, 128)"
@@ -1187,12 +959,6 @@
               "css": "--cr-color-action-destructive",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 235,
-                "export": "semanticColors",
-                "path": "action.destructive"
-              },
               "rendered": {
                 "light": "rgb(255, 113, 92)",
                 "dark": "rgb(255, 118, 97)"
@@ -1219,12 +985,6 @@
               "css": "--cr-color-action-destructive",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 235,
-                "export": "semanticColors",
-                "path": "action.destructive"
-              },
               "rendered": {
                 "light": "rgb(255, 113, 92)",
                 "dark": "rgb(255, 118, 97)"
@@ -1253,12 +1013,6 @@
             "css": "--cr-color-slide-badge",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 238,
-              "export": "semanticColors",
-              "path": "slide.badge"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.8)",
               "dark": "rgba(0, 0, 0, 0.8)"
@@ -1285,12 +1039,6 @@
             "css": "--cr-color-device-off",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 240,
-              "export": "semanticColors",
-              "path": "device.off"
-            },
             "rendered": {
               "light": "rgb(246, 95, 76)",
               "dark": "rgb(246, 95, 76)"
@@ -1317,12 +1065,6 @@
             "css": "--cr-color-status-live",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 242,
-              "export": "semanticColors",
-              "path": "status.live"
-            },
             "rendered": {
               "light": "rgb(52, 199, 89)",
               "dark": "rgb(52, 199, 89)"
@@ -1349,12 +1091,6 @@
               "css": "--cr-color-status-live-text",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 243,
-                "export": "semanticColors",
-                "path": "status.liveText"
-              },
               "rendered": {
                 "light": "rgb(47, 168, 79)",
                 "dark": "rgb(76, 212, 112)"
@@ -1380,12 +1116,6 @@
               "css": "--cr-color-status-live-text",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 243,
-                "export": "semanticColors",
-                "path": "status.liveText"
-              },
               "rendered": {
                 "light": "rgb(47, 168, 79)",
                 "dark": "rgb(76, 212, 112)"
@@ -1411,12 +1141,6 @@
             "css": "--cr-color-status-live-fill",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 244,
-              "export": "semanticColors",
-              "path": "status.liveFill"
-            },
             "rendered": {
               "light": "color(srgb 0.203922 0.780392 0.34902 / 0.16)",
               "dark": "color(srgb 0.203922 0.780392 0.34902 / 0.16)"
@@ -1443,12 +1167,6 @@
             "css": "--cr-color-header-ground",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 248,
-              "export": "semanticColors",
-              "path": "header.ground"
-            },
             "rendered": {
               "light": "color(srgb 0.968627 0.968627 0.980392 / 0.905569)",
               "dark": "color(srgb 0.14902 0.14902 0.164706 / 0.905569)"
@@ -1475,12 +1193,6 @@
               "css": "--cr-color-header-title-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 249,
-                "export": "semanticColors",
-                "path": "header.titleHover"
-              },
               "rendered": {
                 "light": "rgb(235, 235, 235)",
                 "dark": "rgb(47, 47, 50)"
@@ -1506,12 +1218,6 @@
               "css": "--cr-color-header-title-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 249,
-                "export": "semanticColors",
-                "path": "header.titleHover"
-              },
               "rendered": {
                 "light": "rgb(235, 235, 235)",
                 "dark": "rgb(47, 47, 50)"
@@ -1539,12 +1245,6 @@
               "css": "--cr-color-header-title-border",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 250,
-                "export": "semanticColors",
-                "path": "header.titleBorder"
-              },
               "rendered": {
                 "light": "rgb(224, 224, 224)",
                 "dark": "rgb(47, 47, 50)"
@@ -1570,12 +1270,6 @@
               "css": "--cr-color-header-title-border",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 250,
-                "export": "semanticColors",
-                "path": "header.titleBorder"
-              },
               "rendered": {
                 "light": "rgb(224, 224, 224)",
                 "dark": "rgb(47, 47, 50)"
@@ -1603,12 +1297,6 @@
               "css": "--cr-color-header-history-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 251,
-                "export": "semanticColors",
-                "path": "header.historyHover"
-              },
               "rendered": {
                 "light": "rgb(245, 245, 245)",
                 "dark": "rgb(33, 33, 39)"
@@ -1634,12 +1322,6 @@
               "css": "--cr-color-header-history-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 251,
-                "export": "semanticColors",
-                "path": "header.historyHover"
-              },
               "rendered": {
                 "light": "rgb(245, 245, 245)",
                 "dark": "rgb(33, 33, 39)"
@@ -1667,12 +1349,6 @@
             "css": "--cr-color-split-picker-content",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 254,
-              "export": "semanticColors",
-              "path": "splitPicker.content"
-            },
             "rendered": {
               "light": "color(srgb 1 1 1 / 0.62)",
               "dark": "color(srgb 0.117647 0.117647 0.12549 / 0.62)"
@@ -1697,12 +1373,6 @@
             "css": "--cr-color-split-picker-footer",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 255,
-              "export": "semanticColors",
-              "path": "splitPicker.footer"
-            },
             "rendered": {
               "light": "color(srgb 1 1 1 / 0.4)",
               "dark": "color(srgb 0.117647 0.117647 0.12549 / 0.4)"
@@ -1730,12 +1400,6 @@
             "css": "--cr-color-bg",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 259,
-              "export": "semanticColors",
-              "path": "bg.DEFAULT"
-            },
             "rendered": {
               "light": "rgb(233, 233, 236)",
               "dark": "rgb(19, 19, 21)"
@@ -1762,12 +1426,6 @@
             "css": "--cr-color-bg",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 259,
-              "export": "semanticColors",
-              "path": "bg.DEFAULT"
-            },
             "rendered": {
               "light": "rgb(233, 233, 236)",
               "dark": "rgb(19, 19, 21)"
@@ -1795,12 +1453,6 @@
               "css": "--cr-color-bg-panel",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 260,
-                "export": "semanticColors",
-                "path": "bg.panel"
-              },
               "rendered": {
                 "light": "rgb(255, 255, 255)",
                 "dark": "rgb(30, 30, 32)"
@@ -1827,12 +1479,6 @@
               "css": "--cr-color-bg-panel",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 260,
-                "export": "semanticColors",
-                "path": "bg.panel"
-              },
               "rendered": {
                 "light": "rgb(255, 255, 255)",
                 "dark": "rgb(30, 30, 32)"
@@ -1861,12 +1507,6 @@
               "css": "--cr-color-bg-subtle",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 261,
-                "export": "semanticColors",
-                "path": "bg.subtle"
-              },
               "rendered": {
                 "light": "rgb(241, 241, 244)",
                 "dark": "rgb(37, 37, 40)"
@@ -1893,12 +1533,6 @@
               "css": "--cr-color-bg-subtle",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 261,
-                "export": "semanticColors",
-                "path": "bg.subtle"
-              },
               "rendered": {
                 "light": "rgb(241, 241, 244)",
                 "dark": "rgb(37, 37, 40)"
@@ -1927,12 +1561,6 @@
               "css": "--cr-color-bg-muted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 262,
-                "export": "semanticColors",
-                "path": "bg.muted"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.05)",
                 "dark": "rgba(255, 255, 255, 0.06)"
@@ -1958,12 +1586,6 @@
               "css": "--cr-color-bg-muted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 262,
-                "export": "semanticColors",
-                "path": "bg.muted"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.05)",
                 "dark": "rgba(255, 255, 255, 0.06)"
@@ -1991,12 +1613,6 @@
               "css": "--cr-color-bg-emphasized",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 263,
-                "export": "semanticColors",
-                "path": "bg.emphasized"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.1)",
                 "dark": "rgba(255, 255, 255, 0.13)"
@@ -2022,12 +1638,6 @@
               "css": "--cr-color-bg-emphasized",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 263,
-                "export": "semanticColors",
-                "path": "bg.emphasized"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.1)",
                 "dark": "rgba(255, 255, 255, 0.13)"
@@ -2055,12 +1665,6 @@
               "css": "--cr-color-bg-inverted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 264,
-                "export": "semanticColors",
-                "path": "bg.inverted"
-              },
               "rendered": {
                 "light": "rgb(19, 19, 21)",
                 "dark": "rgb(233, 233, 236)"
@@ -2086,12 +1690,6 @@
               "css": "--cr-color-bg-inverted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 264,
-                "export": "semanticColors",
-                "path": "bg.inverted"
-              },
               "rendered": {
                 "light": "rgb(19, 19, 21)",
                 "dark": "rgb(233, 233, 236)"
@@ -2119,12 +1717,6 @@
             "css": "--cr-color-content-accent",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 268,
-              "export": "semanticColors",
-              "path": "content.accent"
-            },
             "rendered": {
               "light": "rgb(249, 223, 116)",
               "dark": "rgb(249, 223, 116)"
@@ -2151,12 +1743,6 @@
               "css": "--cr-color-content-primary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 269,
-                "export": "semanticColors",
-                "path": "content.primary"
-              },
               "rendered": {
                 "light": "rgb(0, 0, 0)",
                 "dark": "rgb(255, 255, 255)"
@@ -2183,12 +1769,6 @@
               "css": "--cr-color-content-primary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 269,
-                "export": "semanticColors",
-                "path": "content.primary"
-              },
               "rendered": {
                 "light": "rgb(0, 0, 0)",
                 "dark": "rgb(255, 255, 255)"
@@ -2217,12 +1797,6 @@
               "css": "--cr-color-content-secondary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 270,
-                "export": "semanticColors",
-                "path": "content.secondary"
-              },
               "rendered": {
                 "light": "rgb(60, 60, 67)",
                 "dark": "rgb(235, 235, 245)"
@@ -2249,12 +1823,6 @@
               "css": "--cr-color-content-secondary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 270,
-                "export": "semanticColors",
-                "path": "content.secondary"
-              },
               "rendered": {
                 "light": "rgb(60, 60, 67)",
                 "dark": "rgb(235, 235, 245)"
@@ -2283,12 +1851,6 @@
               "css": "--cr-color-content-tertiary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 271,
-                "export": "semanticColors",
-                "path": "content.tertiary"
-              },
               "rendered": {
                 "light": "rgb(110, 110, 115)",
                 "dark": "rgb(171, 171, 178)"
@@ -2315,12 +1877,6 @@
               "css": "--cr-color-content-tertiary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 271,
-                "export": "semanticColors",
-                "path": "content.tertiary"
-              },
               "rendered": {
                 "light": "rgb(110, 110, 115)",
                 "dark": "rgb(171, 171, 178)"
@@ -2351,12 +1907,6 @@
               "css": "--cr-color-text-1",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 275,
-                "export": "semanticColors",
-                "path": "text.1"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.92)",
                 "dark": "rgba(255, 255, 255, 0.96)"
@@ -2382,12 +1932,6 @@
               "css": "--cr-color-text-1",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 275,
-                "export": "semanticColors",
-                "path": "text.1"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.92)",
                 "dark": "rgba(255, 255, 255, 0.96)"
@@ -2415,12 +1959,6 @@
               "css": "--cr-color-text-2",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 276,
-                "export": "semanticColors",
-                "path": "text.2"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.8)",
                 "dark": "rgba(255, 255, 255, 0.84)"
@@ -2446,12 +1984,6 @@
               "css": "--cr-color-text-2",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 276,
-                "export": "semanticColors",
-                "path": "text.2"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.8)",
                 "dark": "rgba(255, 255, 255, 0.84)"
@@ -2479,12 +2011,6 @@
               "css": "--cr-color-text-3",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 277,
-                "export": "semanticColors",
-                "path": "text.3"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.64)",
                 "dark": "rgba(255, 255, 255, 0.68)"
@@ -2510,12 +2036,6 @@
               "css": "--cr-color-text-3",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 277,
-                "export": "semanticColors",
-                "path": "text.3"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.64)",
                 "dark": "rgba(255, 255, 255, 0.68)"
@@ -2543,12 +2063,6 @@
               "css": "--cr-color-text-4",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 278,
-                "export": "semanticColors",
-                "path": "text.4"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.5)",
                 "dark": "rgba(255, 255, 255, 0.54)"
@@ -2574,12 +2088,6 @@
               "css": "--cr-color-text-4",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 278,
-                "export": "semanticColors",
-                "path": "text.4"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.5)",
                 "dark": "rgba(255, 255, 255, 0.54)"
@@ -2607,12 +2115,6 @@
               "css": "--cr-color-text-5",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 279,
-                "export": "semanticColors",
-                "path": "text.5"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.38)",
                 "dark": "rgba(255, 255, 255, 0.4)"
@@ -2638,12 +2140,6 @@
               "css": "--cr-color-text-5",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 279,
-                "export": "semanticColors",
-                "path": "text.5"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.38)",
                 "dark": "rgba(255, 255, 255, 0.4)"
@@ -2671,12 +2167,6 @@
               "css": "--cr-color-text-6",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 280,
-                "export": "semanticColors",
-                "path": "text.6"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.26)",
                 "dark": "rgba(255, 255, 255, 0.28)"
@@ -2702,12 +2192,6 @@
               "css": "--cr-color-text-6",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 280,
-                "export": "semanticColors",
-                "path": "text.6"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.26)",
                 "dark": "rgba(255, 255, 255, 0.28)"
@@ -2734,12 +2218,6 @@
           "css": "--cr-color-fg",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 283,
-            "export": "semanticColors",
-            "path": "fg.DEFAULT"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.92)",
             "dark": "rgba(255, 255, 255, 0.96)"
@@ -2763,12 +2241,6 @@
             "css": "--cr-color-fg-muted",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 284,
-              "export": "semanticColors",
-              "path": "fg.muted"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.64)",
               "dark": "rgba(255, 255, 255, 0.68)"
@@ -2793,12 +2265,6 @@
             "css": "--cr-color-fg-subtle",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 285,
-              "export": "semanticColors",
-              "path": "fg.subtle"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.5)",
               "dark": "rgba(255, 255, 255, 0.54)"
@@ -2825,12 +2291,6 @@
               "css": "--cr-color-fg-inverted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 286,
-                "export": "semanticColors",
-                "path": "fg.inverted"
-              },
               "rendered": {
                 "light": "rgba(255, 255, 255, 0.96)",
                 "dark": "rgba(0, 0, 0, 0.92)"
@@ -2856,12 +2316,6 @@
               "css": "--cr-color-fg-inverted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 286,
-                "export": "semanticColors",
-                "path": "fg.inverted"
-              },
               "rendered": {
                 "light": "rgba(255, 255, 255, 0.96)",
                 "dark": "rgba(0, 0, 0, 0.92)"
@@ -2890,12 +2344,6 @@
             "css": "--cr-color-line",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 290,
-              "export": "semanticColors",
-              "path": "line.DEFAULT"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.1)",
               "dark": "rgba(255, 255, 255, 0.1)"
@@ -2921,12 +2369,6 @@
             "css": "--cr-color-line",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 290,
-              "export": "semanticColors",
-              "path": "line.DEFAULT"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.1)",
               "dark": "rgba(255, 255, 255, 0.1)"
@@ -2953,12 +2395,6 @@
               "css": "--cr-color-line-strong",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 291,
-                "export": "semanticColors",
-                "path": "line.strong"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.16)",
                 "dark": "rgba(255, 255, 255, 0.16)"
@@ -2984,12 +2420,6 @@
               "css": "--cr-color-line-strong",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 291,
-                "export": "semanticColors",
-                "path": "line.strong"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.16)",
                 "dark": "rgba(255, 255, 255, 0.16)"
@@ -3017,12 +2447,6 @@
               "css": "--cr-color-line-strongest",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 292,
-                "export": "semanticColors",
-                "path": "line.strongest"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.3)",
                 "dark": "rgba(255, 255, 255, 0.3)"
@@ -3048,12 +2472,6 @@
               "css": "--cr-color-line-strongest",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 292,
-                "export": "semanticColors",
-                "path": "line.strongest"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.3)",
                 "dark": "rgba(255, 255, 255, 0.3)"
@@ -3080,12 +2498,6 @@
           "css": "--cr-color-border",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 295,
-            "export": "semanticColors",
-            "path": "border.DEFAULT"
-          },
           "rendered": {
             "light": "rgba(0, 0, 0, 0.1)",
             "dark": "rgba(255, 255, 255, 0.1)"
@@ -3109,12 +2521,6 @@
             "css": "--cr-color-border-muted",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 296,
-              "export": "semanticColors",
-              "path": "border.muted"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.1)",
               "dark": "rgba(255, 255, 255, 0.1)"
@@ -3139,12 +2545,6 @@
             "css": "--cr-color-border-subtle",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 297,
-              "export": "semanticColors",
-              "path": "border.subtle"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.1)",
               "dark": "rgba(255, 255, 255, 0.1)"
@@ -3169,12 +2569,6 @@
             "css": "--cr-color-border-emphasized",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 298,
-              "export": "semanticColors",
-              "path": "border.emphasized"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.16)",
               "dark": "rgba(255, 255, 255, 0.16)"
@@ -3201,12 +2595,6 @@
               "css": "--cr-color-border-inverted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 299,
-                "export": "semanticColors",
-                "path": "border.inverted"
-              },
               "rendered": {
                 "light": "rgba(255, 255, 255, 0.1)",
                 "dark": "rgba(0, 0, 0, 0.1)"
@@ -3232,12 +2620,6 @@
               "css": "--cr-color-border-inverted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 299,
-                "export": "semanticColors",
-                "path": "border.inverted"
-              },
               "rendered": {
                 "light": "rgba(255, 255, 255, 0.1)",
                 "dark": "rgba(0, 0, 0, 0.1)"
@@ -3265,12 +2647,6 @@
             "css": "--cr-color-state-drop-indicator",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 302,
-              "export": "semanticColors",
-              "path": "state.dropIndicator"
-            },
             "rendered": {
               "light": "rgb(0, 105, 217)",
               "dark": "rgb(59, 155, 255)"
@@ -3297,12 +2673,6 @@
               "css": "--cr-color-state-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 303,
-                "export": "semanticColors",
-                "path": "state.hover"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.055)",
                 "dark": "rgba(255, 255, 255, 0.08)"
@@ -3329,12 +2699,6 @@
               "css": "--cr-color-state-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 303,
-                "export": "semanticColors",
-                "path": "state.hover"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.055)",
                 "dark": "rgba(255, 255, 255, 0.08)"
@@ -3363,12 +2727,6 @@
               "css": "--cr-color-state-active",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 304,
-                "export": "semanticColors",
-                "path": "state.active"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.1)",
                 "dark": "rgba(255, 255, 255, 0.13)"
@@ -3395,12 +2753,6 @@
               "css": "--cr-color-state-active",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 304,
-                "export": "semanticColors",
-                "path": "state.active"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.1)",
                 "dark": "rgba(255, 255, 255, 0.13)"
@@ -3429,12 +2781,6 @@
               "css": "--cr-color-state-active-strong",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 305,
-                "export": "semanticColors",
-                "path": "state.activeStrong"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.15)",
                 "dark": "rgba(255, 255, 255, 0.18)"
@@ -3460,12 +2806,6 @@
               "css": "--cr-color-state-active-strong",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 305,
-                "export": "semanticColors",
-                "path": "state.activeStrong"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.15)",
                 "dark": "rgba(255, 255, 255, 0.18)"
@@ -3493,12 +2833,6 @@
               "css": "--cr-color-state-selected",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 308,
-                "export": "semanticColors",
-                "path": "state.selected"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.15)",
                 "dark": "rgba(0, 0, 0, 0.15)"
@@ -3524,12 +2858,6 @@
               "css": "--cr-color-state-selected",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 308,
-                "export": "semanticColors",
-                "path": "state.selected"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.15)",
                 "dark": "rgba(0, 0, 0, 0.15)"
@@ -3558,12 +2886,6 @@
             "css": "--cr-color-dash",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 310,
-              "export": "semanticColors",
-              "path": "dash"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.28)",
               "dark": "rgba(255, 255, 255, 0.3)"
@@ -3589,12 +2911,6 @@
             "css": "--cr-color-dash",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 310,
-              "export": "semanticColors",
-              "path": "dash"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.28)",
               "dark": "rgba(255, 255, 255, 0.3)"
@@ -3623,12 +2939,6 @@
               "css": "--cr-color-highlight-primary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 312,
-                "export": "semanticColors",
-                "path": "highlight.primary"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.07)",
                 "dark": "rgba(255, 255, 255, 0.08)"
@@ -3655,12 +2965,6 @@
               "css": "--cr-color-highlight-primary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 312,
-                "export": "semanticColors",
-                "path": "highlight.primary"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.07)",
                 "dark": "rgba(255, 255, 255, 0.08)"
@@ -3689,12 +2993,6 @@
               "css": "--cr-color-highlight-secondary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 313,
-                "export": "semanticColors",
-                "path": "highlight.secondary"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.04)",
                 "dark": "rgba(255, 255, 255, 0.04)"
@@ -3721,12 +3019,6 @@
               "css": "--cr-color-highlight-secondary",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 313,
-                "export": "semanticColors",
-                "path": "highlight.secondary"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.04)",
                 "dark": "rgba(255, 255, 255, 0.04)"
@@ -3757,12 +3049,6 @@
               "css": "--cr-color-edge-out",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 317,
-                "export": "semanticColors",
-                "path": "edge.out"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.16)",
                 "dark": "rgba(0, 0, 0, 0.62)"
@@ -3788,12 +3074,6 @@
               "css": "--cr-color-edge-out",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 317,
-                "export": "semanticColors",
-                "path": "edge.out"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.16)",
                 "dark": "rgba(0, 0, 0, 0.62)"
@@ -3821,12 +3101,6 @@
               "css": "--cr-color-edge-in",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 318,
-                "export": "semanticColors",
-                "path": "edge.in"
-              },
               "rendered": {
                 "light": "rgba(255, 255, 255, 0.75)",
                 "dark": "rgba(255, 255, 255, 0.1)"
@@ -3852,12 +3126,6 @@
               "css": "--cr-color-edge-in",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 318,
-                "export": "semanticColors",
-                "path": "edge.in"
-              },
               "rendered": {
                 "light": "rgba(255, 255, 255, 0.75)",
                 "dark": "rgba(255, 255, 255, 0.1)"
@@ -3887,12 +3155,6 @@
               "css": "--cr-color-mat-menu",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 322,
-                "export": "semanticColors",
-                "path": "mat.menu"
-              },
               "rendered": {
                 "light": "rgba(250, 250, 252, 0.86)",
                 "dark": "rgba(44, 44, 48, 0.88)"
@@ -3918,12 +3180,6 @@
               "css": "--cr-color-mat-menu",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 322,
-                "export": "semanticColors",
-                "path": "mat.menu"
-              },
               "rendered": {
                 "light": "rgba(250, 250, 252, 0.86)",
                 "dark": "rgba(44, 44, 48, 0.88)"
@@ -3951,12 +3207,6 @@
               "css": "--cr-color-mat-menu-solid",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 323,
-                "export": "semanticColors",
-                "path": "mat.menuSolid"
-              },
               "rendered": {
                 "light": "rgba(250, 250, 252, 0.98)",
                 "dark": "rgba(44, 44, 48, 0.97)"
@@ -3982,12 +3232,6 @@
               "css": "--cr-color-mat-menu-solid",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 323,
-                "export": "semanticColors",
-                "path": "mat.menuSolid"
-              },
               "rendered": {
                 "light": "rgba(250, 250, 252, 0.98)",
                 "dark": "rgba(44, 44, 48, 0.97)"
@@ -4015,12 +3259,6 @@
               "css": "--cr-color-mat-hud",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 324,
-                "export": "semanticColors",
-                "path": "mat.hud"
-              },
               "rendered": {
                 "light": "rgba(247, 247, 250, 0.984)",
                 "dark": "rgba(38, 38, 42, 0.984)"
@@ -4046,12 +3284,6 @@
               "css": "--cr-color-mat-hud",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 324,
-                "export": "semanticColors",
-                "path": "mat.hud"
-              },
               "rendered": {
                 "light": "rgba(247, 247, 250, 0.984)",
                 "dark": "rgba(38, 38, 42, 0.984)"
@@ -4079,12 +3311,6 @@
               "css": "--cr-color-mat-sheet",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 325,
-                "export": "semanticColors",
-                "path": "mat.sheet"
-              },
               "rendered": {
                 "light": "rgba(242, 242, 245, 0.99)",
                 "dark": "rgba(34, 34, 38, 0.99)"
@@ -4110,12 +3336,6 @@
               "css": "--cr-color-mat-sheet",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 325,
-                "export": "semanticColors",
-                "path": "mat.sheet"
-              },
               "rendered": {
                 "light": "rgba(242, 242, 245, 0.99)",
                 "dark": "rgba(34, 34, 38, 0.99)"
@@ -4143,12 +3363,6 @@
               "css": "--cr-color-mat-sidebar",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 326,
-                "export": "semanticColors",
-                "path": "mat.sidebar"
-              },
               "rendered": {
                 "light": "rgba(239, 239, 243, 0.984)",
                 "dark": "rgba(28, 28, 32, 0.984)"
@@ -4174,12 +3388,6 @@
               "css": "--cr-color-mat-sidebar",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 326,
-                "export": "semanticColors",
-                "path": "mat.sidebar"
-              },
               "rendered": {
                 "light": "rgba(239, 239, 243, 0.984)",
                 "dark": "rgba(28, 28, 32, 0.984)"
@@ -4208,12 +3416,6 @@
             "css": "--cr-color-scrim",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 329,
-              "export": "semanticColors",
-              "path": "scrim.DEFAULT"
-            },
             "rendered": {
               "light": "rgba(250, 250, 252, 0.86)",
               "dark": "rgba(30, 30, 34, 0.88)"
@@ -4239,12 +3441,6 @@
             "css": "--cr-color-scrim",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 329,
-              "export": "semanticColors",
-              "path": "scrim.DEFAULT"
-            },
             "rendered": {
               "light": "rgba(250, 250, 252, 0.86)",
               "dark": "rgba(30, 30, 34, 0.88)"
@@ -4271,12 +3467,6 @@
               "css": "--cr-color-scrim-modal",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 331,
-                "export": "semanticColors",
-                "path": "scrim.modal"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.6)",
                 "dark": "rgba(0, 0, 0, 0.6)"
@@ -4302,12 +3492,6 @@
               "css": "--cr-color-scrim-modal",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 331,
-                "export": "semanticColors",
-                "path": "scrim.modal"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.6)",
                 "dark": "rgba(0, 0, 0, 0.6)"
@@ -4336,12 +3520,6 @@
             "css": "--cr-color-overlay",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 333,
-              "export": "semanticColors",
-              "path": "overlay"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.45)",
               "dark": "rgba(0, 0, 0, 0.62)"
@@ -4367,12 +3545,6 @@
             "css": "--cr-color-overlay",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 333,
-              "export": "semanticColors",
-              "path": "overlay"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.45)",
               "dark": "rgba(0, 0, 0, 0.62)"
@@ -4399,12 +3571,6 @@
             "css": "--cr-color-surface-raised",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 335,
-              "export": "semanticColors",
-              "path": "surface.raised"
-            },
             "rendered": {
               "light": "rgba(250, 250, 252, 0.86)",
               "dark": "rgba(44, 44, 48, 0.88)"
@@ -4431,12 +3597,6 @@
               "css": "--cr-color-surface-inset",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 336,
-                "export": "semanticColors",
-                "path": "surface.inset"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.05)",
                 "dark": "rgba(255, 255, 255, 0.06)"
@@ -4462,12 +3622,6 @@
               "css": "--cr-color-surface-inset",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 336,
-                "export": "semanticColors",
-                "path": "surface.inset"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.05)",
                 "dark": "rgba(255, 255, 255, 0.06)"
@@ -4497,12 +3651,6 @@
               "css": "--cr-color-wire-1",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 340,
-                "export": "semanticColors",
-                "path": "wire.1"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.09)",
                 "dark": "rgba(255, 255, 255, 0.1)"
@@ -4528,12 +3676,6 @@
               "css": "--cr-color-wire-1",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 340,
-                "export": "semanticColors",
-                "path": "wire.1"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.09)",
                 "dark": "rgba(255, 255, 255, 0.1)"
@@ -4561,12 +3703,6 @@
               "css": "--cr-color-wire-2",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 341,
-                "export": "semanticColors",
-                "path": "wire.2"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.2)",
                 "dark": "rgba(255, 255, 255, 0.22)"
@@ -4592,12 +3728,6 @@
               "css": "--cr-color-wire-2",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 341,
-                "export": "semanticColors",
-                "path": "wire.2"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.2)",
                 "dark": "rgba(255, 255, 255, 0.22)"
@@ -4625,12 +3755,6 @@
               "css": "--cr-color-wire-3",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 342,
-                "export": "semanticColors",
-                "path": "wire.3"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.34)",
                 "dark": "rgba(255, 255, 255, 0.38)"
@@ -4656,12 +3780,6 @@
               "css": "--cr-color-wire-3",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 342,
-                "export": "semanticColors",
-                "path": "wire.3"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.34)",
                 "dark": "rgba(255, 255, 255, 0.38)"
@@ -4689,12 +3807,6 @@
               "css": "--cr-color-wire-void",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 343,
-                "export": "semanticColors",
-                "path": "wire.void"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.043)",
                 "dark": "rgba(255, 255, 255, 0.05)"
@@ -4720,12 +3832,6 @@
               "css": "--cr-color-wire-void",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 343,
-                "export": "semanticColors",
-                "path": "wire.void"
-              },
               "rendered": {
                 "light": "rgba(0, 0, 0, 0.043)",
                 "dark": "rgba(255, 255, 255, 0.05)"
@@ -4755,12 +3861,6 @@
               "css": "--cr-color-accent-solid",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 347,
-                "export": "semanticColors",
-                "path": "accent.solid"
-              },
               "rendered": {
                 "light": "rgb(0, 105, 217)",
                 "dark": "rgb(59, 155, 255)"
@@ -4786,12 +3886,6 @@
               "css": "--cr-color-accent-solid",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 347,
-                "export": "semanticColors",
-                "path": "accent.solid"
-              },
               "rendered": {
                 "light": "rgb(0, 105, 217)",
                 "dark": "rgb(59, 155, 255)"
@@ -4819,12 +3913,6 @@
               "css": "--cr-color-accent-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 303,
-                "export": "semanticColors",
-                "path": "accent.hover"
-              },
               "rendered": {
                 "light": "rgb(0, 89, 184)",
                 "dark": "rgb(87, 172, 255)"
@@ -4850,12 +3938,6 @@
               "css": "--cr-color-accent-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 303,
-                "export": "semanticColors",
-                "path": "accent.hover"
-              },
               "rendered": {
                 "light": "rgb(0, 89, 184)",
                 "dark": "rgb(87, 172, 255)"
@@ -4883,12 +3965,6 @@
               "css": "--cr-color-accent-contrast",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 349,
-                "export": "semanticColors",
-                "path": "accent.contrast"
-              },
               "rendered": {
                 "light": "rgb(255, 255, 255)",
                 "dark": "rgb(8, 18, 28)"
@@ -4914,12 +3990,6 @@
               "css": "--cr-color-accent-contrast",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 349,
-                "export": "semanticColors",
-                "path": "accent.contrast"
-              },
               "rendered": {
                 "light": "rgb(255, 255, 255)",
                 "dark": "rgb(8, 18, 28)"
@@ -4947,12 +4017,6 @@
               "css": "--cr-color-accent-fg",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 282,
-                "export": "semanticColors",
-                "path": "accent.fg"
-              },
               "rendered": {
                 "light": "rgb(0, 105, 217)",
                 "dark": "rgb(59, 155, 255)"
@@ -4978,12 +4042,6 @@
               "css": "--cr-color-accent-fg",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 282,
-                "export": "semanticColors",
-                "path": "accent.fg"
-              },
               "rendered": {
                 "light": "rgb(0, 105, 217)",
                 "dark": "rgb(59, 155, 255)"
@@ -5011,12 +4069,6 @@
               "css": "--cr-color-accent-subtle",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 285,
-                "export": "semanticColors",
-                "path": "accent.subtle"
-              },
               "rendered": {
                 "light": "color(srgb 0 0.411765 0.85098 / 0.12)",
                 "dark": "color(srgb 0.231373 0.607843 1 / 0.14)"
@@ -5042,12 +4094,6 @@
               "css": "--cr-color-accent-subtle",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 285,
-                "export": "semanticColors",
-                "path": "accent.subtle"
-              },
               "rendered": {
                 "light": "color(srgb 0 0.411765 0.85098 / 0.12)",
                 "dark": "color(srgb 0.231373 0.607843 1 / 0.14)"
@@ -5075,12 +4121,6 @@
               "css": "--cr-color-accent-muted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 284,
-                "export": "semanticColors",
-                "path": "accent.muted"
-              },
               "rendered": {
                 "light": "color(srgb 0 0.411765 0.85098 / 0.22)",
                 "dark": "color(srgb 0.231373 0.607843 1 / 0.26)"
@@ -5106,12 +4146,6 @@
               "css": "--cr-color-accent-muted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 284,
-                "export": "semanticColors",
-                "path": "accent.muted"
-              },
               "rendered": {
                 "light": "color(srgb 0 0.411765 0.85098 / 0.22)",
                 "dark": "color(srgb 0.231373 0.607843 1 / 0.26)"
@@ -5139,12 +4173,6 @@
               "css": "--cr-color-accent-emphasized",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 298,
-                "export": "semanticColors",
-                "path": "accent.emphasized"
-              },
               "rendered": {
                 "light": "rgb(0, 89, 184)",
                 "dark": "rgb(87, 172, 255)"
@@ -5170,12 +4198,6 @@
               "css": "--cr-color-accent-emphasized",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 298,
-                "export": "semanticColors",
-                "path": "accent.emphasized"
-              },
               "rendered": {
                 "light": "rgb(0, 89, 184)",
                 "dark": "rgb(87, 172, 255)"
@@ -5203,12 +4225,6 @@
               "css": "--cr-color-accent-focus-ring",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 360,
-                "export": "semanticColors",
-                "path": "accent.focusRing"
-              },
               "rendered": {
                 "light": "rgb(0, 105, 217)",
                 "dark": "rgb(59, 155, 255)"
@@ -5234,12 +4250,6 @@
               "css": "--cr-color-accent-focus-ring",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 360,
-                "export": "semanticColors",
-                "path": "accent.focusRing"
-              },
               "rendered": {
                 "light": "rgb(0, 105, 217)",
                 "dark": "rgb(59, 155, 255)"
@@ -5269,12 +4279,6 @@
               "css": "--cr-color-danger-solid",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 364,
-                "export": "semanticColors",
-                "path": "danger.solid"
-              },
               "rendered": {
                 "light": "rgb(215, 0, 21)",
                 "dark": "rgb(255, 79, 66)"
@@ -5301,12 +4305,6 @@
               "css": "--cr-color-danger-solid",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 364,
-                "export": "semanticColors",
-                "path": "danger.solid"
-              },
               "rendered": {
                 "light": "rgb(215, 0, 21)",
                 "dark": "rgb(255, 79, 66)"
@@ -5335,12 +4333,6 @@
               "css": "--cr-color-danger-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 365,
-                "export": "semanticColors",
-                "path": "danger.hover"
-              },
               "rendered": {
                 "light": "color(srgb 0.741961 0 0.0724706)",
                 "dark": "color(srgb 1 0.392627 0.347765)"
@@ -5366,12 +4358,6 @@
               "css": "--cr-color-danger-hover",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 365,
-                "export": "semanticColors",
-                "path": "danger.hover"
-              },
               "rendered": {
                 "light": "color(srgb 0.741961 0 0.0724706)",
                 "dark": "color(srgb 1 0.392627 0.347765)"
@@ -5397,12 +4383,6 @@
             "css": "--cr-color-danger-contrast",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 369,
-              "export": "semanticColors",
-              "path": "danger.contrast"
-            },
             "rendered": {
               "light": "rgb(255, 255, 255)",
               "dark": "rgb(255, 255, 255)"
@@ -5429,12 +4409,6 @@
               "css": "--cr-color-danger-fg",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 370,
-                "export": "semanticColors",
-                "path": "danger.fg"
-              },
               "rendered": {
                 "light": "rgb(215, 0, 21)",
                 "dark": "rgb(255, 79, 66)"
@@ -5460,12 +4434,6 @@
               "css": "--cr-color-danger-fg",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 370,
-                "export": "semanticColors",
-                "path": "danger.fg"
-              },
               "rendered": {
                 "light": "rgb(215, 0, 21)",
                 "dark": "rgb(255, 79, 66)"
@@ -5493,12 +4461,6 @@
               "css": "--cr-color-danger-subtle",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 371,
-                "export": "semanticColors",
-                "path": "danger.subtle"
-              },
               "rendered": {
                 "light": "color(srgb 0.843137 0 0.0823529 / 0.12)",
                 "dark": "color(srgb 1 0.309804 0.258824 / 0.14)"
@@ -5524,12 +4486,6 @@
               "css": "--cr-color-danger-subtle",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 371,
-                "export": "semanticColors",
-                "path": "danger.subtle"
-              },
               "rendered": {
                 "light": "color(srgb 0.843137 0 0.0823529 / 0.12)",
                 "dark": "color(srgb 1 0.309804 0.258824 / 0.14)"
@@ -5557,12 +4513,6 @@
               "css": "--cr-color-danger-muted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 375,
-                "export": "semanticColors",
-                "path": "danger.muted"
-              },
               "rendered": {
                 "light": "color(srgb 0.843137 0 0.0823529 / 0.22)",
                 "dark": "color(srgb 1 0.309804 0.258824 / 0.26)"
@@ -5588,12 +4538,6 @@
               "css": "--cr-color-danger-muted",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 375,
-                "export": "semanticColors",
-                "path": "danger.muted"
-              },
               "rendered": {
                 "light": "color(srgb 0.843137 0 0.0823529 / 0.22)",
                 "dark": "color(srgb 1 0.309804 0.258824 / 0.26)"
@@ -5621,12 +4565,6 @@
               "css": "--cr-color-danger-emphasized",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 379,
-                "export": "semanticColors",
-                "path": "danger.emphasized"
-              },
               "rendered": {
                 "light": "color(srgb 0.741961 0 0.0724706)",
                 "dark": "color(srgb 1 0.392627 0.347765)"
@@ -5652,12 +4590,6 @@
               "css": "--cr-color-danger-emphasized",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 379,
-                "export": "semanticColors",
-                "path": "danger.emphasized"
-              },
               "rendered": {
                 "light": "color(srgb 0.741961 0 0.0724706)",
                 "dark": "color(srgb 1 0.392627 0.347765)"
@@ -5685,12 +4617,6 @@
               "css": "--cr-color-danger-focus-ring",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 383,
-                "export": "semanticColors",
-                "path": "danger.focusRing"
-              },
               "rendered": {
                 "light": "rgb(215, 0, 21)",
                 "dark": "rgb(255, 79, 66)"
@@ -5716,12 +4642,6 @@
               "css": "--cr-color-danger-focus-ring",
               "kind": "semantic",
               "status": "declared",
-              "source": {
-                "file": "apps/airtime-creator/src/ui/tokens.ts",
-                "line": 383,
-                "export": "semanticColors",
-                "path": "danger.focusRing"
-              },
               "rendered": {
                 "light": "rgb(215, 0, 21)",
                 "dark": "rgb(255, 79, 66)"
@@ -5749,12 +4669,6 @@
             "css": "--cr-color-gray-solid",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 388,
-              "export": "semanticColors",
-              "path": "gray.solid"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.92)",
               "dark": "rgba(255, 255, 255, 0.96)"
@@ -5779,12 +4693,6 @@
             "css": "--cr-color-gray-hover",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 389,
-              "export": "semanticColors",
-              "path": "gray.hover"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.8)",
               "dark": "rgba(255, 255, 255, 0.84)"
@@ -5809,12 +4717,6 @@
             "css": "--cr-color-gray-contrast",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 390,
-              "export": "semanticColors",
-              "path": "gray.contrast"
-            },
             "rendered": {
               "light": "rgb(255, 255, 255)",
               "dark": "rgb(30, 30, 32)"
@@ -5839,12 +4741,6 @@
             "css": "--cr-color-gray-fg",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 391,
-              "export": "semanticColors",
-              "path": "gray.fg"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.92)",
               "dark": "rgba(255, 255, 255, 0.96)"
@@ -5869,12 +4765,6 @@
             "css": "--cr-color-gray-subtle",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 392,
-              "export": "semanticColors",
-              "path": "gray.subtle"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.055)",
               "dark": "rgba(255, 255, 255, 0.08)"
@@ -5899,12 +4789,6 @@
             "css": "--cr-color-gray-muted",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 393,
-              "export": "semanticColors",
-              "path": "gray.muted"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.1)",
               "dark": "rgba(255, 255, 255, 0.13)"
@@ -5929,12 +4813,6 @@
             "css": "--cr-color-gray-emphasized",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 394,
-              "export": "semanticColors",
-              "path": "gray.emphasized"
-            },
             "rendered": {
               "light": "rgba(0, 0, 0, 0.15)",
               "dark": "rgba(255, 255, 255, 0.18)"
@@ -5959,12 +4837,6 @@
             "css": "--cr-color-gray-focus-ring",
             "kind": "semantic",
             "status": "declared",
-            "source": {
-              "file": "apps/airtime-creator/src/ui/tokens.ts",
-              "line": 395,
-              "export": "semanticColors",
-              "path": "gray.focusRing"
-            },
             "rendered": {
               "light": "rgb(0, 105, 217)",
               "dark": "rgb(59, 155, 255)"
@@ -5990,12 +4862,6 @@
           "css": "--cr-color-focus-ring",
           "kind": "semantic",
           "status": "declared",
-          "source": {
-            "file": "apps/airtime-creator/src/ui/tokens.ts",
-            "line": 360,
-            "export": "semanticColors",
-            "path": "focusRing"
-          },
           "rendered": {
             "light": "rgb(0, 105, 217)",
             "dark": "rgb(59, 155, 255)"
