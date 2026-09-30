@@ -22,7 +22,7 @@ function fmt(v) {
 const GROUPS = [
   ["Surfaces", "The window behind everything, the panels on top of it, and the frosted glass the sidebar is made of.", [["Window", "bg"], ["Panel", "bg-panel"], ["Raised", "bg-subtle"], ["Inverted", "bg-inverted"], ["Sidebar glass", "mat-hud"]]],
   ["Text", "One ink, stepped down in strength. Text 1 for what you read, 4 for hints.", [["Text 1", "text-1"], ["Text 2", "text-2"], ["Text 3", "text-3"], ["Text 4", "text-4"], ["Text 5", "text-5"]]],
-  ["Accent and status", "System blue means selected or focused. Red means destructive. Green means live.", [["Accent", "accent-solid"], ["Accent wash", "accent-subtle"], ["Danger", "danger-solid"], ["Live", "status-live"], ["Stage teal", "action-primary"]]],
+  ["Accent and status", "System blue means selected or focused. Red means destructive. Green means live.", [["Accent", "accent-solid"], ["Accent wash", "accent-subtle"], ["Danger", "danger-solid"], ["Live", "status-live"]]],
   ["Controls and lines", "Hairlines, hover and selected washes, and the sunken well behind number fields.", [["Line", "line"], ["Line, strong", "line-strong"], ["Hover", "state-hover"], ["Selected", "state-selected"], ["Field well", "surface-inset"]]],
 ];
 const swatch = ([label, key]) => {
@@ -69,7 +69,6 @@ export async function human(root) {
   const fam = famRows.map(([n, c, note]) => `<tr><td>${n}<span>${note}</span></td><td>${nf(c.today)}</td><td>${rec(c.simplified, "is-new")}</td><td>${nf(c.org)}</td></tr>`).join("");
   const styles = D.textStyles.map((s) => `<div class="hv-ts"><span class="cr-text-${s.name.replace(/\./g, "-")}">${esc(SAMPLE[s.name] ?? s.name)}</span><small>${esc(s.name)} · ${s.fontSize} / ${s.lineHeight ?? "auto"} / ${s.fontWeight}</small></div>`).join("");
   const deviations = [
-    ["Two blues.", "The app shell uses system blue for selected and focused things. The stage frame and handles still use the older Airtime teal."],
     ["Some type sizes render larger than written.", "The Record button and the stage pill buttons are written as 11 and 13 px but render at 13 and 16. This page shows what renders."],
     ["Four different disabled fades.", "40, 45, 30 and 20 percent, depending on the control."],
     ["Pointers differ by area.", "The sidebar keeps the arrow cursor. The top bar, tray and stage buttons show a pointing hand."],

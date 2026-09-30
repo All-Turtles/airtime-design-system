@@ -1,8 +1,8 @@
 {
  "counts": {
   "colors": {
-   "today": 142,
-   "simplified": 94,
+   "today": 141,
+   "simplified": 93,
    "org": 21,
    "used": 54
   },
@@ -130,10 +130,6 @@
   "status-live": {
    "light": "rgb(52, 199, 89)",
    "dark": "rgb(52, 199, 89)"
-  },
-  "action-primary": {
-   "light": "rgb(121, 221, 232)",
-   "dark": "rgb(121, 221, 232)"
   },
   "line": {
    "light": "rgba(0, 0, 0, 0.1)",

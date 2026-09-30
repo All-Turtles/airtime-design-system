@@ -899,31 +899,6 @@
       }
     },
     "action": {
-      "primary": {
-        "$value": "#79DDE8",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-action-primary",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(121, 221, 232)",
-              "dark": "rgb(121, 221, 232)"
-            },
-            "org": {
-              "relation": "differs",
-              "org": "--color-accent-teal",
-              "note": "legacy Airtime teal action (light org value is the darker #1A7580, which creator keeps as action.secondary) (creator rgb(121, 221, 232); org #1A7580 / #79DDE8)"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
       "secondary": {
         "$value": "#1A7580",
         "$type": "color",

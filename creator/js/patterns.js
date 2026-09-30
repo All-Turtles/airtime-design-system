@@ -41,9 +41,24 @@ add("pt-swatches", "Swatches and backgrounds", "Choose a color or a background. 
   tokens: ["swatch-ring-dot", "swatch-ring-tile", "shadow-swatch-selected-dot", "shadow-swatch-selected-tile", "size-tint-dot"], classes: ["cr-swatches", "is-circle", "is-square", "cr-swatch", "cr-none-tile", "cr-bggrid"], states: ["default", "hover", "selected", "none"],
   html: inSide(`<div class="cr-swatches is-circle" style="--cols:7" role="radiogroup">${PALETTE.slice(2, 9).map((c, i) => sw(c, { sel: i === 3 })).join("")}</div>${gap(6)}<div class="cr-swatches is-square" style="--cols:3" role="radiogroup">${sw("", { none: 1, cap: "None" })}${sw("#3D7BFF", { sel: 1, cap: "Blue" })}${sw("#FF4B3E", { cap: "Red" })}</div>`),
 });
+const lr = (o) => thumbRow({ trailing: layerToggles(!!o.hidden, !!o.locked), ...o });
+const lrCell = (cap, ...rows) => [cap, inSide(rows.join(""))];
 add("pt-layers", "Layer row", "A thing you can select, hide, lock and reorder. Hover shows the toggles.", {
-  tokens: ["size-thumb-row", "accent-solid", "accent-contrast", "state-hover", "state-drop-indicator", "opacity-dimmed"], classes: ["cr-thumbrow", "is-selected", "is-drop-before", "is-drop-after", "cr-thumb", "cr-grip", "cr-thumb-text"], states: ["default", "hover", "selected", "dimmed", "drop"],
-  html: inSide(thumbRow({ name: "Presenter", trailing: layerToggles(false, false) }) + thumbRow({ name: "Image 1", sel: 1, trailing: layerToggles(false, false) }) + thumbRow({ name: "Logo", cls: "is-hover", hidden: true, trailing: layerToggles(true, false) }) + thumbRow({ name: "Text", locked: true, trailing: layerToggles(false, true), drop: "before" })),
+  note: "Drop indicator: straight line, never a border on a rounded row.",
+  both: 1, min: 250,
+  tokens: ["size-thumb-row", "accent-solid", "accent-contrast", "state-hover", "state-drop-indicator", "size-0-5", "opacity-dimmed", "radius-md"], classes: ["cr-thumbrow", "is-hover", "is-selected", "is-dragging", "is-drop-above", "is-drop-below", "cr-thumb", "is-dimmed", "cr-grip", "is-locked", "cr-thumb-text"], states: ["default", "hover", "selected", "dragging", "drop-above", "drop-between", "drop-below-last", "hidden", "locked"],
+  cells: [
+    lrCell("default", lr({ name: "Presenter" })),
+    lrCell("hover", lr({ name: "Presenter", cls: "is-hover" })),
+    lrCell("selected", lr({ name: "Presenter", sel: 1 })),
+    lrCell("dragging", lr({ name: "Presenter", dragging: 1 })),
+    lrCell("drop-above", lr({ name: "Image 1", drop: "above" }), lr({ name: "Logo" })),
+    lrCell("drop-between", lr({ name: "Image 1" }), lr({ name: "Logo", drop: "above" }), lr({ name: "Text" })),
+    lrCell("drop-below-last", lr({ name: "Logo" }), lr({ name: "Text", drop: "below" })),
+    lrCell("hidden", lr({ name: "Logo", hidden: 1 })),
+    lrCell("locked", lr({ name: "Text", locked: 1 })),
+    lrCell("selected, hover", lr({ name: "Image 1", sel: 1, cls: "is-hover" })),
+  ],
 });
 add("pt-switch", "Switch row", "A row with a name, a value and a switch.", {
   tokens: ["text-5", "accent-solid", "size-switch-w", "size-switch-h"], classes: ["cr-switch", "cr-logo-text", "cr-logo-name", "cr-logo-value", "cr-thumbrow"], states: ["off", "on"],

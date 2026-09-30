@@ -325,9 +325,9 @@
       }
     },
     "stage-frame": {
-      "$value": "#99E5EE",
+      "$value": "var(--cr-color-accent-solid)",
       "$type": "color",
-      "$description": "Selection frame and handle border: legacy Airtime teal (--action-hover), not Creator's accent blue.",
+      "$description": "Selection frame and handle border: the accent color (system blue), same as selection everywhere else.",
       "$extensions": {
         "creator": {
           "css": "--cr-color-stage-frame",
@@ -648,21 +648,6 @@
       "$extensions": {
         "creator": {
           "css": "--cr-shadow-thumb-ring",
-          "org": {
-            "relation": "creator-only",
-            "note": "A literal in Creator recipes with no org token."
-          },
-          "status": "derived"
-        }
-      }
-    },
-    "drop-before": {
-      "$value": "inset 0 2px 0 var(--cr-color-state-drop-indicator)",
-      "$type": "shadow",
-      "$description": "Layer drag: insertion line on a row's top edge (bottom: inset 0 -2px).",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-drop-before",
           "org": {
             "relation": "creator-only",
             "note": "A literal in Creator recipes with no org token."

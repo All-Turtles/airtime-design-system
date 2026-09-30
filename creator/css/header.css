@@ -58,7 +58,7 @@
 .cr-insert:is(:hover, .is-hover), .cr-insert[aria-expanded="true"] { background: var(--cr-color-background-tertiary); color: var(--cr-color-content-primary); }
 .cr-insert:is(:active, .is-pressed) { transform: scale(0.94); }
 .cr-insert[data-fired], .cr-insert.is-fired { background: var(--cr-color-content-accent); color: var(--cr-color-background-primary); }
-.cr-insert:is([aria-pressed="true"], .is-selected) { background: var(--cr-color-action-primary); color: var(--cr-color-background-primary); }
+.cr-insert:is([aria-pressed="true"], .is-selected) { background: var(--cr-color-accent-solid); color: var(--cr-color-accent-contrast); }
 .cr-insert:is(:focus-visible, .is-focus) { outline: none; box-shadow: var(--cr-shadow-focus); }
 .cr-insert:is(:disabled, .is-disabled) { opacity: var(--cr-opacity-disabled-button); cursor: default; transform: none; }
 /* device split button */

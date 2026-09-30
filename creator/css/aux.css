@@ -46,4 +46,4 @@
 .cr-toast { display: inline-flex; align-items: center; gap: var(--cr-space-3); padding: var(--cr-space-2-5) var(--cr-space-4); border-radius: var(--cr-radius-full); background: var(--cr-color-mat-menu-solid); color: var(--cr-color-text-1); box-shadow: var(--cr-shadow-menu); font-family: var(--cr-font-family-body); font-size: 13px; line-height: 17px; }
 .cr-stage-note { display: grid; justify-items: center; gap: var(--cr-space-1-5); width: 220px; padding: var(--cr-space-5) var(--cr-space-4); border-radius: var(--cr-radius-2xl); background: var(--cr-color-ground-dark-window); color: var(--cr-color-ink-dark-primary); font-size: 13px; line-height: 17px; text-align: center; }
 .cr-stage-note .cr-icon { width: var(--cr-size-6); height: var(--cr-size-6); color: var(--cr-color-ink-dark-tertiary); }
-.cr-stage-note a { color: var(--cr-color-action-primary); }
+.cr-stage-note a { color: var(--cr-color-system-blue-dark); }

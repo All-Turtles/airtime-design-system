@@ -190,8 +190,13 @@ button.cr-row { line-height: normal; letter-spacing: normal; text-align: left; }
 .cr-thumbrow:is(:hover, .is-hover):not(.is-selected) { background: var(--cr-color-state-hover); }
 .cr-thumbrow:is(:focus-visible, .is-focus) { outline: none; box-shadow: var(--cr-shadow-focus); }
 .cr-thumbrow.is-selected { background: var(--cr-color-accent-solid); color: var(--cr-color-accent-contrast); }
-.cr-thumbrow.is-drop-before { box-shadow: var(--cr-shadow-drop-before); }
-.cr-thumbrow.is-drop-after { box-shadow: inset 0 -2px 0 var(--cr-color-state-drop-indicator); }
+.cr-thumbrow { position: relative; }
+.cr-thumbrow.is-dragging { opacity: 0.5; }
+/* Drop indicator: a straight 2px line on the row's top or bottom edge, full width, square ends.
+   Never a border or inset shadow on the rounded row (that draws a curved arc with hooked ends). */
+.cr-thumbrow:is(.is-drop-above, .is-drop-below)::before { content: ""; position: absolute; inset-inline: 0; height: var(--cr-size-0-5); background: var(--cr-color-state-drop-indicator); border-radius: 0; pointer-events: none; }
+.cr-thumbrow.is-drop-above::before { top: 0; }
+.cr-thumbrow.is-drop-below::before { bottom: 0; }
 .cr-thumbrow > .cr-grip { display: flex; width: var(--cr-size-1-5); justify-content: center; flex: 0 0 auto; }
 .cr-grip > span { color: var(--cr-color-text-6); font-size: var(--cr-font-size-2xs); line-height: 15px; letter-spacing: -1px; cursor: grab; }
 .cr-grip.is-locked > span { opacity: var(--cr-opacity-locked-grip); cursor: default; }
