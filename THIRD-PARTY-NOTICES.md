@@ -5,11 +5,11 @@
 The following icons use path geometry from Lucide (lucide-static 1.21.0), stroke width reduced
 from 2 to 1.5, and, for the 16px files, scaled by 2/3:
 
-- `Keyboard_Stroke_16/24.svg` (keyboard)
-- `Paste_Stroke_16/24.svg` (clipboard-paste)
-- `SidebarRight_Stroke_16/24.svg` (panel-right)
-- `SignOut_Stroke_16/24.svg` (log-out)
-- `Underline_Stroke_16/24.svg` (underline)
+- `Keyboard_Stroke_*.svg`, `Keyboard_Fill_*.svg` (keyboard; Keyboard_Fill is an inverted redraw of the same outline)
+- `Paste_Stroke_*.svg`, `Paste_Fill_*.svg` (clipboard-paste)
+- `SidebarRight_Stroke_*.svg`, `SidebarRight_Fill_*.svg` (panel-right)
+- `SignOut_Stroke_*.svg`, `SignOut_Fill_*.svg` (log-out)
+- `Underline_Stroke_*.svg`, `Underline_Fill_*.svg` (underline)
 
 ISC License
 
