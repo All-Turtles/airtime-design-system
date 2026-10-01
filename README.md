@@ -1,10 +1,10 @@
 # Airtime Design System
 
-> A complete, AI-native design system for Claude Code -- 128+ tokens, 94 components, 742 icons, dark/light themes.
+> A complete, AI-native design system for Claude Code -- 128+ tokens, 94 components, 744 icons, dark/light themes.
 
 ![Tokens](https://img.shields.io/badge/tokens-128%2B-79DDE8)
 ![Components](https://img.shields.io/badge/components-94-79DDE8)
-![Icons](https://img.shields.io/badge/icons-742-79DDE8)
+![Icons](https://img.shields.io/badge/icons-744-79DDE8)
 ![Themes](https://img.shields.io/badge/themes-dark%20%2F%20light-79DDE8)
 
 **[View the Live Contact Sheet](https://all-turtles.github.io/airtime-design-system/)** -- all tokens, components, and icons in one interactive page.
@@ -86,7 +86,7 @@ Load `CLAUDE.md` from that repo for token values, anti-patterns, and component i
 | `CLAUDE.md` | AI instructions — token reference, anti-patterns, component inventory |
 | `generated/tokens.css` | CSS custom properties — link this in your HTML |
 | `components/*.css` | Component styles — import the ones you need |
-| `generated/icons.js` | 742 SVG icons via `AppIcons` object |
+| `generated/icons.js` | 744 SVG icons via `AppIcons` object |
 | `generated/.design-rules.json` | Machine-readable anti-pattern rules |
 
 #### Using the CSS
@@ -112,7 +112,7 @@ Then use any of the 7 skills:
 
 - **128+ design tokens** across 9 categories -- colors, typography, spacing, sizing, radii, shadows, borders, opacity, transitions
 - **94 component variants** across 7 categories -- buttons, inputs, controls, rows, menus, education, others
-- **742 icon variants** (221 unique icons) -- Fill/Stroke styles at 16px/24px, loaded via `AppIcons` JS module
+- **744 icon variants** (223 unique icons) -- Fill/Stroke styles at 16px/24px, loaded via `AppIcons` JS module
 - **7 Claude Code skills** -- apply, generate, audit, convert
 - **Dark/light theme** support with `localStorage` persistence and CSS custom property switching
 - **OKLCH color space** support via `--oklch` flag for modern browsers
@@ -188,7 +188,7 @@ airtime-design-system/
   README.md               # This file
   generated/
     tokens.css             # Compiled CSS custom properties
-    icons.js               # 742 SVG icon functions
+    icons.js               # 744 SVG icon functions
     .design-rules.json     # Anti-pattern rules for AI generation
   components/
     button.css             # Buttons (6 variants)
