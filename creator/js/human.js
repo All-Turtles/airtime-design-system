@@ -5,7 +5,8 @@ import { PATTERNS } from "./patterns.js";
 import { AREAS } from "./areas.js";
 import { cardHtml, iconGaps } from "./view.js";
 import { colorChip, countsTable } from "./states.js";
-import { analyze, counts, colorBlocks, summary, whyMore, consolidation } from "./colors.js";
+import { analyze, counts, colorBlocks, summary, whyMore } from "./colors.js";
+import { colorSystem, scales as newScales, rules, changelog } from "./system.js";
 
 /* Overview: the short, human-readable page. Live components built from the same CSS as the app. */
 const nf = (n) => new Intl.NumberFormat().format(n);
@@ -60,11 +61,6 @@ function scales(N, T) {
   const radHtml = N.radii.map((v) => `<div class="hv-rad"><i class="${orgRad.has(v) ? "" : "is-own"}" style="border-radius:${v === 9999 ? "50%" : v + "px"}"></i><b>${v === 9999 ? "round" : v}</b></div>`).join("");
   return { spHtml, radHtml, n: { sp: N.spacing.length, rad: N.radii.length } };
 }
-function motion() {
-  const ms = [["Quick", "--cr-duration-insert", 120], ["Fast", "--cr-duration-fast", 160], ["Normal", "--cr-duration-normal", 240], ["Slow", "--cr-duration-slow", 420]];
-  return ms.map(([n, v, d]) => `<button type="button" class="hv-motion" data-dur="var(${v})"><span class="hv-track"><i></i></span><b>${n}</b><span>${d} ms</span></button>`).join("");
-}
-
 export async function human(root) {
   const T = S.tokens, CA = analyze(T), N = counts(T, CA), aliases = N.sharedWithOrg, sc = scales(N, T), RW = N.rows, cs = CA.stats;
   const styles = T.textStyles.map((s) => `<div class="hv-ts"><span class="cr-text-${s.name.replace(/\./g, "-")}">${esc(SAMPLE[s.name] ?? s.name)}</span><small>${esc(s.name)} · ${s.fontSize} / ${s.lineHeight ?? "auto"} / ${s.fontWeight}</small></div>`).join("");
@@ -93,29 +89,28 @@ export async function human(root) {
     ${countsTable(T)}
     <p class="hv-foot">The org has fewer colors because Creator draws things it has no words for: a blue accent, stage glass, translucent ink and materials. <a href="#h-colors-all">See every color</a> for the full list and the plain-language reasons.</p></section>
 
-  <section id="h-color" data-group="foundations"><h2>Key colors</h2><p class="hv-sub">A hand-picked set. Every swatch shows light on the left and dark on the right. Checkerboard means the color is see-through.</p>
-    ${GROUPS.map(([t, d, sws]) => `<h3>${t}</h3><p class="hv-sub">${d}</p><div class="hv-swatches">${sws.map(swatch).join("")}</div>`).join("")}</section>
+  ${colorSystem(T)}
+  ${newScales(T)}
+  ${rules()}
 
-  <section id="h-colors-all" data-group="foundations"><h2>Every color in the app</h2>
+  <section id="h-colors-all" data-group="foundations"><h2>Every color on dev today</h2>
     <p class="hv-sub">All ${nf(cs.total)} color tokens, generated from the data file. Each card is one distinct light and dark pair, with every token name that shares it. Checkerboard means see-through. Flags: DUPLICATE OF (same light and dark values as another token), NEAR (within deltaE 3 of another value), ORG (closest org color: EXACT, NEAR, ROLE-ONLY when the org has a color for the role but not this one, or NONE), and what the proposal does with it. The cards group every definition, raw swatches included, so there can be more cards than the distinct values counted in the pair below, which cover the semantic colors only.</p>
     ${summary(CA)}${whyMore(CA)}${colorBlocks(CA)}</section>
-
-  <section id="h-consolidation" data-group="foundations"><h2>Further color reductions</h2>
-    <p class="hv-sub">The first round of consolidation has landed on dev; the counts above are after it. What follows are the ranked further reductions, computed from the same data. They are not applied.</p>${consolidation(CA)}</section>
 
   <section id="h-type" data-group="foundations"><h2>Type</h2><p class="hv-sub">One system font stack: SF Pro on Apple devices, then Helvetica Neue and Arial. Weights 400, 500 and 600, plus one 300 for a caption. Each style shows size / line height / weight.</p>
     <div class="hv-fonts"><div class="hv-font"><span style="font-size:44px;line-height:1;font-weight:600;letter-spacing:-0.02em">Aa</span><small>Interface text</small></div><div class="hv-font"><span class="mono" style="font-size:36px;line-height:1.1;font-family:var(--cr-font-family-mono)">Aa 01</span><small>Numbers and code</small></div></div>
     <div class="hv-ts-grid">${styles}</div></section>
 
-  <section id="h-shape" data-group="foundations"><h2>Space and shape</h2><p class="hv-sub">Gaps come from one short scale. Filled bars are steps the org system shares; outlined ones are Creator's own.</p>
-    <div class="hv-sps">${sc.spHtml}</div><h3>Corner radius</h3><div class="hv-rads">${sc.radHtml}</div>
-    <h3>Motion</h3><p class="hv-sub">Click to replay. Everything eases out; the panel and stage use a soft settle.</p><div class="hv-motions">${motion()}</div></section>
+  <section id="h-shape" data-group="foundations"><h2>Spacing</h2><p class="hv-sub">Gaps come from one short scale. Filled bars are steps the org system shares; outlined ones are Creator's own.</p>
+    <div class="hv-sps">${sc.spHtml}</div></section>
 
   ${[...A].map(([cat, items]) => section("atoms", cat, items, cat === "Icons" ? iconGaps() : "")).join("")}
   ${[...P].map(([cat, items]) => section("patterns", cat, items)).join("")}
   ${[...R].map(([cat, items]) => section("areas", cat, items)).join("")}
 
-  <section id="h-deviations" data-group="more"><h2>Where Creator differs</h2><p class="hv-sub">Where the app, the code and the org system disagree.</p><ul class="hv-dev">${deviations}</ul></section>`;
+  <section id="h-deviations" data-group="more"><h2>Where Creator differs</h2><p class="hv-sub">Where the app, the code and the org system disagree.</p><ul class="hv-dev">${deviations}</ul></section>
+
+  ${changelog(T)}`;
 
   root.querySelectorAll(".hv-motion").forEach((b) => b.addEventListener("click", () => {
     const i = b.querySelector("i"); i.style.transition = "none"; i.style.transform = "translateX(0)"; void i.offsetWidth;
