@@ -25,11 +25,10 @@
 .cr-button.is-ghost:is(:active, .is-pressed, [aria-expanded="true"], .is-open), .cr-button.is-plain:is(:active, .is-pressed, [aria-expanded="true"], .is-open) { background-image: var(--cr-layer-2); }
 .cr-button.is-ghost.is-destructive { color: var(--cr-color-accent-destructive); }
 
-/* ── menus: background.tertiary glass, 16px radius, 24px rows at radius 6. One 16px icon slot, a right-aligned check,
- *    optional second line of detail. A menu is as wide as its longest row (the stage menu holds 260, the device popover 298).
- *    The menu recipe asks for 8px padding and a 230px minimum, but the size variant of the library menu wins in the running app,
- *    so a menu renders with 6px padding and no minimum. ─────── */
-.cr-menu { width: max-content; max-width: 100%; padding: var(--cr-space-1-5); border-radius: var(--cr-radius-xl); background: var(--cr-color-background-tertiary); color: var(--cr-color-content-secondary); box-shadow: var(--cr-shadow-menu); -webkit-backdrop-filter: blur(var(--cr-blur-large)); backdrop-filter: blur(var(--cr-blur-large)); font-family: var(--cr-font-family-body); isolation: isolate; }
+/* ── menus: background.tertiary glass, 16px radius, 8px padding, 230px minimum, 24px rows at radius 6. One 16px icon slot,
+ *    a right-aligned check, optional second line of detail. A menu is at least 230 wide and grows to its longest row
+ *    (the stage menu holds 260, the device popover 298). ─────── */
+.cr-menu { box-sizing: border-box; width: max-content; min-width: 230px; max-width: 100%; padding: var(--cr-space-2); border-radius: var(--cr-radius-xl); background: var(--cr-color-background-tertiary); color: var(--cr-color-content-secondary); box-shadow: var(--cr-shadow-menu); -webkit-backdrop-filter: blur(var(--cr-blur-large)); backdrop-filter: blur(var(--cr-blur-large)); font-family: var(--cr-font-family-body); isolation: isolate; }
 .cr-menu.is-device { min-width: var(--cr-size-layout-device-popover); }
 .cr-menu-item { display: flex; align-items: center; gap: var(--cr-space-2); width: 100%; min-height: var(--cr-size-control-sm); padding: 0 var(--cr-space-1-5); border-radius: var(--cr-radius-sm); background: transparent; color: var(--cr-color-content-primary); font-size: var(--cr-font-size-md); line-height: 17px; font-weight: 400; text-align: left; cursor: default; border: 0; }
 .cr-menu-item:has(.det) { padding-block: var(--cr-space-1); }
