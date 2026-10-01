@@ -10,7 +10,7 @@ export const row = (ic, text, { cls = "", trailing = "", menuItem, tag = "button
 export const action = (ic, text, { cls = "", destructive, dis: d } = {}) => `<button type="button" class="cr-btn0 cr-action ${cls}" ${destructive ? "data-destructive" : ""} ${d ? "disabled" : ""}>${ic ? si(ic) : ""}${text}</button>`;
 export const actions = (n, items, cls = "") => `<div class="cr-actions is-${n} ${cls}">${items.join("")}</div>`;
 const segItem = (o, kind, on) => `<button type="button" class="cr-btn0 cr-seg-item ${o.cls ?? ""}" ${kind === "radio" ? `role="radio" aria-checked="${!!on}"` : kind === "toggle" ? `aria-pressed="${!!on}"` : ""} ${o.dis ? "disabled" : ""} ${o.label && o.icon && !o.text ? `aria-label="${o.label}" title="${o.label}"` : ""}>${o.icon ? si(o.icon) : ""}${o.text ?? ""}</button>`;
-export const seg = (variant, opts, { mode = "radio", on = 0, fill } = {}) => `<div class="cr-seg is-${variant} ${fill ? "is-fill" : ""}" role="${mode === "radio" ? "radiogroup" : "group"}" aria-label="demo">${opts.map((o, i) => (o.sep ? `<span class="cr-seg-sep" role="separator"></span>` : "") + segItem(o, o.mode ?? mode, Array.isArray(on) ? on.includes(i) : on === i)).join("")}</div>`;
+export const seg = (variant, opts, { mode = "radio", on = 0, fill, look } = {}) => `<div class="cr-seg is-${variant} ${fill ? "is-fill" : ""} ${look ? "is-" + look : ""}" role="${mode === "radio" ? "radiogroup" : "group"}" aria-label="demo">${opts.map((o, i) => (o.sep ? `<span class="cr-seg-sep" role="separator"></span>` : "") + segItem(o, o.mode ?? mode, Array.isArray(on) ? on.includes(i) : on === i)).join("")}</div>`;
 export const valueField = (v, cls = "is-value", extra = "", d = "") => `<label class="cr-field ${cls} ${extra}"><input value="${v}" aria-label="value" ${d}></label>`;
 export const geo = (axis, v, extra = "", d = "") => `<label class="cr-field is-geo ${extra}"><span data-affix>${axis}</span><input value="${v}" aria-label="${axis}" ${d}><span data-affix>%</span></label>`;
 export const pill = (text, extra = "") => `<span class="cr-field is-pill ${extra}">${text}${si("chevronDown")}</span>`;
@@ -35,5 +35,9 @@ export const textInput = (v, { ph = "", cls = "", d = "" } = {}) => `<label clas
 export const check = (state, checked, d) => `<button type="button" class="cr-btn0 cr-check ${state ?? ""}" role="checkbox" aria-checked="${checked}" aria-label="Option" ${d ?? ""}>${si("check")}</button>`;
 export const radio = (state, on, d) => `<button type="button" class="cr-btn0 cr-radio ${state ?? ""}" role="radio" aria-checked="${!!on}" aria-label="Option" ${d ?? ""}></button>`;
 export const tag = (text, cls = "", attrs = "", x) => `<button type="button" class="cr-btn0 cr-tag ${cls}" ${attrs}>${text}${x ? si("xmark") : ""}</button>`;
-export const menuItem = (ic, text, cls = "", attrs = "", trail = "") => `<button type="button" class="cr-btn0 cr-menu-item ${cls}" ${attrs}>${ic ? si(ic) : ""}<span class="txt">${text}</span>${trail}</button>`;
-export const menu = (inner, w = 230) => `<div class="cr-menu" style="width:${w}px">${inner}</div>`;
+export const menuItem = (ic, text, cls = "", attrs = "", trail = "", detail = "") => `<button type="button" class="cr-btn0 cr-menu-item ${cls}" ${attrs}>${ic ? si(ic) : ""}<span class="txt">${text}${detail ? `<span class="det">${detail}</span>` : ""}</span>${trail}</button>`;
+/* the one check slot: trailing the row, the accent at rest and white when the row is highlighted */
+export const menuCheck = () => `<span class="chk">${si("check")}</span>`;
+export const menu = (inner, { cls = "", w } = {}) => `<div class="cr-menu ${cls}" ${w ? `style="width:${w}px"` : ""}>${inner}</div>`;
+/* Note: an info glyph and quiet text, no fill. Used in the sign-in dialog. */
+export const note = (text) => `<div class="cr-note" role="note">${si("info")}<span>${text}</span></div>`;

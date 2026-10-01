@@ -38,18 +38,11 @@ export function colorSystem(T) {
   </section>`;
 }
 
-/* The page resolves a shadow's color references to the nearest page color so the demo is live in both themes. */
-const REF = { "colors.shadow.small": "var(--sy-shadow-s)", "colors.shadow.medium": "var(--sy-shadow-m)", "colors.shadow.large": "var(--sy-shadow-l)", "colors.lighting.shade": "var(--sy-shade)", "colors.lighting.highlightPrimary": "var(--sy-hi1)", "colors.lighting.highlightSecondary": "var(--sy-hi2)", "colors.content.primary": "var(--sy-ink)", "colors.accent.teal": "var(--sy-teal)", "colors.modeless.white24": "rgba(255,255,255,.24)", "colors.modeless.white8": "rgba(255,255,255,.08)", "colors.modeless.black24": "rgba(0,0,0,.24)", "colors.modeless.black": "#000", "colors.modeless.tealOnDark": "#3B9BFF" };
-function shadowCss(v, depth = 0) {
-  let out = v.replace(/\{([\w.]+)\}/g, (m, k) => (k.startsWith("shadows.") ? "@" + k.slice(8) + "@" : REF[k] ?? "currentColor"));
-  return out;
-}
-let shadowMap = {};
-const resolveShadows = (list) => { shadowMap = Object.fromEntries(list.map((s) => [s.name, s.value])); const go = (v, d = 0) => shadowCss(v).replace(/@(\w+)@/g, (m, n) => (d < 3 ? go(shadowMap[n], d + 1) : "0 0 0 0 transparent")); return go; };
+const kebab = (n) => n.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 
 export function scales(T) {
-  const Y = T.system, go = resolveShadows(Y.shadows);
-  const shadows = Y.shadows.map((s) => `<div class="sy-sh"><span class="sy-sh-box${/^glass/.test(s.name) ? " is-glass" : ""}" style="box-shadow:${esc(go(s.value))}"></span><div><code>${esc(s.name)}</code><small>${esc(s.use)}</small></div></div>`).join("");
+  const Y = T.system;
+  const shadows = Y.shadows.map((s) => `<div class="sy-sh"><span class="sy-sh-box${/^glass/.test(s.name) ? " is-glass" : ""}" style="box-shadow:var(--cr-shadow-${kebab(s.name)})"></span><div><code>${esc(s.name)}</code><small>${esc(s.use)}</small></div></div>`).join("");
   const radii = Y.radii.map((r) => `<div class="sy-rad"><i style="border-radius:${esc(r.value)}"></i><code>${esc(r.name)}</code><b>${r.name === "full" ? "pill" : esc(r.value)}</b><small>${esc(r.use)}</small></div>`).join("");
   const dur = Y.durations.map((d) => `<button type="button" class="hv-motion" data-dur="${esc(d.value)}"><span class="hv-track"><i></i></span><b>${esc(d.name)}</b><span>${esc(d.value)} &middot; ${esc(d.use)}</span></button>`).join("");
   const ctl = Y.controls.map((c) => `<div class="sy-ctl"><span class="sy-ctl-box" style="height:${esc(c.value)}"></span><code>${esc(c.name)}</code><b>${esc(c.value)}</b><small>${esc(c.use)}</small></div>`).join("");
@@ -87,6 +80,8 @@ export function changelog(T) {
   const items = [
     [d, "Colors reduced to the 23 Figma Colors variables, named as in Figma, plus a quarantined group of 10 colors awaiting Figma.", "Target"],
     [d, "Radius, duration, control height and shadow scales documented with their named steps.", "Target"],
+    [d, "tokens.css now defines only the Figma colors, the pending group and the short scales; the old custom properties are gone, and every specimen on this page draws from the new names.", "Target"],
+    [d, "Specimens redrawn to match the app: 32px buttons with a tone and raised depth, glass menus with one icon slot and right-aligned checks, opaque panels for the sidebar, tray and dialogs, 40px sidebar rows, the Note, and the slide tile menu.", "Target"],
     [d, "Direct color literals in components cut from 36 to 1, and distinct colors from 42 to 39.", "In review"],
     [d, "SidebarPanel and NoSidebarPanel icons added.", "Shipped"],
   ];

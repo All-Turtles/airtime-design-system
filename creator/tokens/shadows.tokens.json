@@ -2,762 +2,399 @@
   "$name": "Creator - shadows",
   "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "shadow": {
-    "selectionSwatch": {
-      "$value": "inset 0 0 0 1px rgba(255,255,255,0.18)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-selection-swatch",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset",
-            "dark": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 0,
-            "dark": 0
-          }
-        }
-      }
-    },
-    "selectionSwatchSelected": {
-      "$value": "inset 0 0 0 1px rgba(255,255,255,0.18), 0 0 0 2px rgba(255,255,255,0.60)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-selection-swatch-selected",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.6) 0px 0px 0px 2px",
-            "dark": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.6) 0px 0px 0px 2px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 0,
-            "dark": 0
-          }
-        }
-      }
-    },
-    "selectionBar": {
-      "$value": "inset 0 0.5px 0 0 rgba(255,255,255,0.18), 0 0 0 0.5px rgba(0,0,0,0.34), 0 4px 10px rgba(0,0,0,0.22), 0 14px 36px rgba(0,0,0,0.34)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-selection-bar",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 4px 10px 0px, rgba(0, 0, 0, 0.34) 0px 14px 36px 0px",
-            "dark": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 4px 10px 0px, rgba(0, 0, 0, 0.34) 0px 14px 36px 0px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 2,
-            "dark": 2
-          }
-        }
-      }
-    },
-    "selectionMenu": {
-      "$value": "inset 0 0.5px 0 0 rgba(255,255,255,0.18), 0 0 0 0.5px rgba(0,0,0,0.34), 0 6px 16px rgba(0,0,0,0.22), 0 22px 56px rgba(0,0,0,0.34)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-selection-menu",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 6px 16px 0px, rgba(0, 0, 0, 0.34) 0px 22px 56px 0px",
-            "dark": "rgba(255, 255, 255, 0.18) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.34) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.22) 0px 6px 16px 0px, rgba(0, 0, 0, 0.34) 0px 22px 56px 0px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 0,
-            "dark": 0
-          }
-        }
-      }
-    },
-    "trayConsole": {
-      "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 2px 5px color-mix(in srgb, var(--cr-color-content-primary) 12%, transparent)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-tray-console",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, color(srgb 0 0 0 / 0.12) 0px 2px 5px 0px",
-            "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, color(srgb 1 1 1 / 0.12) 0px 2px 5px 0px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 4,
-            "dark": 4
-          }
-        }
-      }
-    },
-    "bandPill": {
-      "$value": "var(--cr-shadow-edge), var(--cr-shadow-up)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-band-pill",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px -2px 6px 0px, rgba(0, 0, 0, 0.16) 0px -14px 40px 0px",
-            "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.34) 0px -2px 8px 0px, rgba(0, 0, 0, 0.5) 0px -16px 46px 0px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 20,
-            "dark": 20
-          }
-        }
-      }
-    },
-    "placeholder": {
-      "$value": "inset 0 0 0 0.5px var(--cr-color-line)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-placeholder",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset",
-            "dark": "rgba(255, 255, 255, 0.1) 0px 0px 0px 0.5px inset"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 18,
-            "dark": 18
-          }
-        }
-      }
-    },
-    "caption": {
-      "$value": "inset 0 0.5px 0 0 var(--cr-color-line)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-caption",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.1) 0px 0.5px 0px 0px inset",
-            "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 0,
-            "dark": 0
-          }
-        }
-      }
-    },
-    "sidebar": {
-      "$value": "inset -1px 0 0 0 var(--cr-color-line)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-sidebar",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.1) -1px 0px 0px 0px inset",
-            "dark": "rgba(255, 255, 255, 0.1) -1px 0px 0px 0px inset"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 0,
-            "dark": 0
-          }
-        }
-      }
-    },
-    "inputWrapper": {
-      "$value": "inset 0 0 0 0.5px var(--cr-color-line-strong), inset 0 1px 2px rgba(0, 0, 0, 0.06)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-input-wrapper",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px inset, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset",
-            "dark": "rgba(255, 255, 255, 0.16) 0px 0px 0px 0.5px inset, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 0,
-            "dark": 0
-          }
-        }
-      }
-    },
-    "topBar": {
-      "$value": "0 0.5px 0 0 var(--cr-color-line)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-top-bar",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.1) 0px 0.5px 0px 0px",
-            "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 4,
-            "dark": 4
-          }
-        }
-      }
-    },
-    "avatar": {
-      "$value": "0 0 0 0.5px var(--cr-color-edge-out)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-avatar",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px",
-            "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 4,
-            "dark": 4
-          }
-        }
-      }
-    },
-    "avatarHover": {
-      "light": {
-        "$value": "0 0 0 0.5px rgba(0, 0, 0, 0.30)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-shadow-avatar-hover",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.3) 0px 0px 0px 0.5px",
-              "dark": "rgba(0, 0, 0, 0.78) 0px 0px 0px 0.5px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "0 0 0 0.5px rgba(0, 0, 0, 0.78)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-shadow-avatar-hover",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.3) 0px 0px 0px 0.5px",
-              "dark": "rgba(0, 0, 0, 0.78) 0px 0px 0px 0.5px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      }
-    },
-    "segmentTrack": {
-      "$value": "inset 0 0.5px 1px 0 rgba(0, 0, 0, 0.06)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-segment-track",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.06) 0px 0.5px 1px 0px inset",
-            "dark": "rgba(0, 0, 0, 0.06) 0px 0.5px 1px 0px inset"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 4,
-            "dark": 4
-          }
-        }
-      }
-    },
-    "segmentThumb": {
-      "$value": "inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 1px 3px rgba(0, 0, 0, 0.12)",
-      "$type": "shadow",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-shadow-segment-thumb",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px",
-            "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 4,
-            "dark": 4
-          }
-        }
-      }
-    },
     "sm": {
-      "light": {
-        "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 1px 2px rgba(0, 0, 0, 0.10)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-shadow-sm",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
-              "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px"
-            },
-            "org": {
-              "relation": "differs",
-              "org": "--shadow-small",
-              "note": "small elevation; creator adds a 0.5px edge hairline (creator rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px / rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px; org 0px 1px 3px 0px #00000014 / 0px 1px 3px 0px #0000003D)"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 1px 3px rgba(0, 0, 0, 0.40)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-shadow-sm",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
-              "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px"
-            },
-            "org": {
-              "relation": "differs",
-              "org": "--shadow-small",
-              "note": "small elevation; creator adds a 0.5px edge hairline (creator rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px / rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px; org 0px 1px 3px 0px #00000014 / 0px 1px 3px 0px #0000003D)"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
+      "$value": "0 1px 2px 0 {colors.shadow.small}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-sm",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 1px 2px 0 rgba(0, 0, 0, 0.08)",
+            "dark": "0 1px 2px 0 rgba(0, 0, 0, 0.24)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          },
+          "use": "Small controls: a 1px contact shadow."
         }
       }
     },
     "md": {
-      "light": {
-        "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 2px 5px rgba(0, 0, 0, 0.08), 0 8px 22px rgba(0, 0, 0, 0.12)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-shadow-md",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 8px 22px 0px",
-              "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 2px 6px 0px, rgba(0, 0, 0, 0.48) 0px 10px 28px 0px"
-            },
-            "org": {
-              "relation": "differs",
-              "org": "--shadow-medium",
-              "note": "medium elevation (creator rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 8px 22px 0px / rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 2px 6px 0px, rgba(0, 0, 0, 0.48) 0px 10px 28px 0px; org 0px 4px 12px 0px #00000029 / 0px 4px 12px 0px #0000007A)"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 2px 6px rgba(0, 0, 0, 0.40), 0 10px 28px rgba(0, 0, 0, 0.48)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-shadow-md",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 8px 22px 0px",
-              "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 2px 6px 0px, rgba(0, 0, 0, 0.48) 0px 10px 28px 0px"
-            },
-            "org": {
-              "relation": "differs",
-              "org": "--shadow-medium",
-              "note": "medium elevation (creator rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 8px 22px 0px / rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.4) 0px 2px 6px 0px, rgba(0, 0, 0, 0.48) 0px 10px 28px 0px; org 0px 4px 12px 0px #00000029 / 0px 4px 12px 0px #0000007A)"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
+      "$value": "0 8px 16px 0 {colors.shadow.medium}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-md",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 8px 16px 0 rgba(0, 0, 0, 0.16)",
+            "dark": "0 8px 16px 0 rgba(0, 0, 0, 0.48)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 3
+          },
+          "use": "Floating bars and stage glass."
         }
       }
     },
     "lg": {
-      "light": {
-        "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 4px 10px rgba(0, 0, 0, 0.10), 0 18px 48px rgba(0, 0, 0, 0.20)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-shadow-lg",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px",
-              "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
-            },
-            "org": {
-              "relation": "differs",
-              "org": "--shadow-large",
-              "note": "large elevation (creator rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px / rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px; org 0px 8px 24px 0px #0000003D / 0px 8px 24px 0px #000000B8)"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 4px 12px rgba(0, 0, 0, 0.44), 0 22px 60px rgba(0, 0, 0, 0.60)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-shadow-lg",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px",
-              "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
-            },
-            "org": {
-              "relation": "differs",
-              "org": "--shadow-large",
-              "note": "large elevation (creator rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px / rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px; org 0px 8px 24px 0px #0000003D / 0px 8px 24px 0px #000000B8)"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
+      "$value": "0 16px 32px 0 {colors.shadow.large}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-lg",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 16px 32px 0 rgba(0, 0, 0, 0.24)",
+            "dark": "0 16px 32px 0 rgba(0, 0, 0, 0.72)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          },
+          "use": "The deepest drop; menus and sheets."
         }
       }
     },
     "up": {
-      "light": {
-        "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 -2px 6px rgba(0, 0, 0, 0.06), 0 -14px 40px rgba(0, 0, 0, 0.16)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-shadow-up",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px -2px 6px 0px, rgba(0, 0, 0, 0.16) 0px -14px 40px 0px",
-              "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.34) 0px -2px 8px 0px, rgba(0, 0, 0, 0.5) 0px -16px 46px 0px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 -2px 8px rgba(0, 0, 0, 0.34), 0 -16px 46px rgba(0, 0, 0, 0.50)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-shadow-up",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px -2px 6px 0px, rgba(0, 0, 0, 0.16) 0px -14px 40px 0px",
-              "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.34) 0px -2px 8px 0px, rgba(0, 0, 0, 0.5) 0px -16px 46px 0px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      }
-    },
-    "edge": {
-      "$value": "inset 0 0.5px 0 0 var(--cr-color-edge-in)",
+      "$value": "0 -8px 16px 0 {colors.shadow.medium}",
       "$type": "shadow",
       "$extensions": {
         "creator": {
-          "css": "--cr-shadow-edge",
+          "css": "--cr-shadow-up",
           "kind": "semantic",
           "status": "declared",
           "rendered": {
-            "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset",
-            "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset"
+            "light": "0 -8px 16px 0 rgba(0, 0, 0, 0.16)",
+            "dark": "0 -8px 16px 0 rgba(0, 0, 0, 0.48)"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "light": 0,
-            "dark": 0
-          }
+            "all": 0
+          },
+          "use": "A surface rising from the bottom edge."
+        }
+      }
+    },
+    "raised": {
+      "$value": "inset 0 0.5px 0 0 {colors.lighting.highlightPrimary}, 0 0 0 0.5px {colors.shadow.medium}, 0 1px 2px 0 {colors.shadow.small}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-raised",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.92), 0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 1px 2px 0 rgba(0, 0, 0, 0.08)",
+            "dark": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.08), 0 0 0 0.5px rgba(0, 0, 0, 0.48), 0 1px 2px 0 rgba(0, 0, 0, 0.24)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 7
+          },
+          "use": "Secondary buttons, segment thumbs and chips."
+        }
+      }
+    },
+    "raisedPressed": {
+      "$value": "0 0 0 0.5px {colors.shadow.medium}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-raised-pressed",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 0 0 0.5px rgba(0, 0, 0, 0.16)",
+            "dark": "0 0 0 0.5px rgba(0, 0, 0, 0.48)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 5
+          },
+          "use": "The same face hovered, pressed or open."
+        }
+      }
+    },
+    "filled": {
+      "$value": "inset 0 0.5px 0 0 {colors.modeless.white24}, 0 1px 2px 0 {colors.shadow.small}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-filled",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.08)",
+            "dark": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.24)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 2
+          },
+          "use": "Filled accent and destructive buttons."
+        }
+      }
+    },
+    "card": {
+      "$value": "inset 0 0 0 0.5px {colors.lighting.highlightPrimary}, 0 4px 16px 1px {colors.shadow.small}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-card",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "inset 0 0 0 0.5px rgba(255, 255, 255, 0.92), 0 4px 16px 1px rgba(0, 0, 0, 0.08)",
+            "dark": "inset 0 0 0 0.5px rgba(255, 255, 255, 0.08), 0 4px 16px 1px rgba(0, 0, 0, 0.24)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 5
+          },
+          "use": "Toolbar pills, the tray and the sidebar card."
         }
       }
     },
     "menu": {
-      "light": {
-        "$value": "inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 4px 10px rgba(0, 0, 0, 0.10), 0 18px 48px rgba(0, 0, 0, 0.20)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-shadow-menu",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px",
-              "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 4px 12px rgba(0, 0, 0, 0.44), 0 22px 60px rgba(0, 0, 0, 0.60)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-shadow-menu",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px, rgba(0, 0, 0, 0.2) 0px 18px 48px 0px",
-              "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.44) 0px 4px 12px 0px, rgba(0, 0, 0, 0.6) 0px 22px 60px 0px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      }
-    },
-    "sheet": {
-      "$value": "inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 8px 16px rgba(0, 0, 0, 0.10), 0 40px 100px rgba(0, 0, 0, 0.34)",
+      "$value": "inset 0 0 0 0.5px {colors.lighting.highlightSecondary}, {shadows.lg}",
       "$type": "shadow",
       "$extensions": {
         "creator": {
-          "css": "--cr-shadow-sheet",
+          "css": "--cr-shadow-menu",
           "kind": "semantic",
           "status": "declared",
           "rendered": {
-            "light": "rgba(255, 255, 255, 0.75) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px, rgba(0, 0, 0, 0.34) 0px 40px 100px 0px",
-            "dark": "rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px, rgba(0, 0, 0, 0.34) 0px 40px 100px 0px"
+            "light": "inset 0 0 0 0.5px rgba(255, 255, 255, 0.64), 0 16px 32px 0 rgba(0, 0, 0, 0.24)",
+            "dark": "inset 0 0 0 0.5px rgba(255, 255, 255, 0.08), 0 16px 32px 0 rgba(0, 0, 0, 0.72)"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "light": 0,
-            "dark": 0
-          }
+            "all": 3
+          },
+          "use": "Menus, popovers, tooltips and sheets."
         }
       }
     },
-    "tooltip": {
-      "light": {
-        "$value": "0 8px 16px rgba(0, 0, 0, 0.16)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-shadow-tooltip",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 8px 16px 0px",
-              "dark": "rgba(0, 0, 0, 0.55) 0px 8px 16px 0px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
+    "inset": {
+      "$value": "inset 0 0 0 0.5px {colors.lighting.shade}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-inset",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "inset 0 0 0 0.5px rgba(0, 0, 0, 0.08)",
+            "dark": "inset 0 0 0 0.5px rgba(255, 255, 255, 0.08)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 7
+          },
+          "use": "Inputs and recessed wells."
         }
-      },
-      "dark": {
-        "$value": "0 8px 16px rgba(0, 0, 0, 0.55)",
-        "$type": "shadow",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-shadow-tooltip",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.16) 0px 8px 16px 0px",
-              "dark": "rgba(0, 0, 0, 0.55) 0px 8px 16px 0px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
+      }
+    },
+    "ruleTop": {
+      "$value": "inset 0 0.5px 0 0 {colors.lighting.shade}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-rule-top",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "inset 0 0.5px 0 0 rgba(0, 0, 0, 0.08)",
+            "dark": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.08)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          },
+          "use": "A hairline along the top edge."
+        }
+      }
+    },
+    "ruleBottom": {
+      "$value": "0 0.5px 0 0 {colors.lighting.shade}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-rule-bottom",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 0.5px 0 0 rgba(0, 0, 0, 0.08)",
+            "dark": "0 0.5px 0 0 rgba(255, 255, 255, 0.08)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 1
+          },
+          "use": "A hairline along the bottom edge."
+        }
+      }
+    },
+    "ruleEnd": {
+      "$value": "inset -1px 0 0 0 {colors.lighting.shade}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-rule-end",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "inset -1px 0 0 0 rgba(0, 0, 0, 0.08)",
+            "dark": "inset -1px 0 0 0 rgba(255, 255, 255, 0.08)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          },
+          "use": "A hairline along the trailing edge."
+        }
+      }
+    },
+    "ring": {
+      "$value": "0 0 0 0.5px {colors.lighting.shade}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-ring",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 0 0 0.5px rgba(0, 0, 0, 0.08)",
+            "dark": "0 0 0 0.5px rgba(255, 255, 255, 0.08)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 1
+          },
+          "use": "The account button ring."
+        }
+      }
+    },
+    "ringHover": {
+      "$value": "0 0 0 0.5px color-mix(in srgb, {colors.content.primary} 32%, transparent)",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-ring-hover",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 0 0 0.5px color-mix(in srgb, rgba(0, 0, 0, 0.92) 32%, transparent)",
+            "dark": "0 0 0 0.5px color-mix(in srgb, rgba(255, 255, 255, 0.92) 32%, transparent)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 1
+          },
+          "use": "The same ring on hover."
+        }
+      }
+    },
+    "knob": {
+      "$value": "0 0 0 0.5px {colors.shadow.medium}, 0 1px 2px {colors.modeless.black24}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-knob",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.24)",
+            "dark": "0 0 0 0.5px rgba(0, 0, 0, 0.48), 0 1px 2px rgba(0, 0, 0, 0.24)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 4
+          },
+          "use": "The knob of the switch and range slider."
+        }
+      }
+    },
+    "selectionRing": {
+      "$value": "0 0 0 2px {colors.modeless.tealOnDark}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-selection-ring",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 0 0 2px #3B9BFF",
+            "dark": "0 0 0 2px #3B9BFF"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 1
+          },
+          "use": "The selected ring on a tile or preview."
         }
       }
     },
     "focus": {
-      "$value": "0 0 0 1px var(--cr-color-accent-solid), 0 0 0 4px color-mix(in srgb, var(--cr-color-accent-solid) 34%, transparent)",
+      "$value": "0 0 0 1px {colors.accent.teal}, 0 0 0 4px color-mix(in srgb, {colors.accent.teal} 34%, transparent)",
       "$type": "shadow",
       "$extensions": {
         "creator": {
@@ -765,23 +402,22 @@
           "kind": "semantic",
           "status": "declared",
           "rendered": {
-            "light": "rgb(0, 105, 217) 0px 0px 0px 1px, color(srgb 0 0.411765 0.85098 / 0.34) 0px 0px 0px 4px",
-            "dark": "rgb(59, 155, 255) 0px 0px 0px 1px, color(srgb 0.231373 0.607843 1 / 0.34) 0px 0px 0px 4px"
+            "light": "0 0 0 1px #0069D9, 0 0 0 4px color-mix(in srgb, #0069D9 34%, transparent)",
+            "dark": "0 0 0 1px #3B9BFF, 0 0 0 4px color-mix(in srgb, #3B9BFF 34%, transparent)"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "light": 0,
-            "dark": 0
-          }
+            "all": 32
+          },
+          "use": "The keyboard focus ring."
         }
       }
     },
     "focusInset": {
-      "$value": "inset 0 0 0 2px var(--cr-color-accent-solid)",
+      "$value": "inset 0 0 0 2px {colors.accent.teal}",
       "$type": "shadow",
       "$extensions": {
         "creator": {
@@ -789,66 +425,109 @@
           "kind": "semantic",
           "status": "declared",
           "rendered": {
-            "light": "rgb(0, 105, 217) 0px 0px 0px 2px inset",
-            "dark": "rgb(59, 155, 255) 0px 0px 0px 2px inset"
+            "light": "inset 0 0 0 2px #0069D9",
+            "dark": "inset 0 0 0 2px #3B9BFF"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "light": 0,
-            "dark": 0
-          }
+            "all": 1
+          },
+          "use": "Focus for a control clipped by its container."
         }
       }
     },
-    "buttonSolid": {
-      "$value": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.22), 0 1px 2px rgba(0, 0, 0, 0.16)",
+    "glass": {
+      "$value": "inset 0 0.5px 0 0 {colors.modeless.white24}, inset 0 0 0 0.5px {colors.modeless.black24}, {shadows.md}",
       "$type": "shadow",
       "$extensions": {
         "creator": {
-          "css": "--cr-shadow-button-solid",
+          "css": "--cr-shadow-glass",
           "kind": "semantic",
           "status": "declared",
           "rendered": {
-            "light": "rgba(255, 255, 255, 0.22) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 1px 2px 0px",
-            "dark": "rgba(255, 255, 255, 0.22) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.16) 0px 1px 2px 0px"
+            "light": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.24), inset 0 0 0 0.5px rgba(0, 0, 0, 0.24), 0 8px 16px 0 rgba(0, 0, 0, 0.16)",
+            "dark": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.24), inset 0 0 0 0.5px rgba(0, 0, 0, 0.24), 0 8px 16px 0 rgba(0, 0, 0, 0.48)"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "light": 0,
-            "dark": 0
-          }
+            "all": 1
+          },
+          "use": "Dark stage glass."
         }
       }
     },
-    "buttonSecondary": {
-      "$value": "0 0 0 0.5px var(--cr-color-edge-out), 0 1px 2px rgba(0, 0, 0, 0.10)",
+    "glassMenu": {
+      "$value": "inset 0 0.5px 0 0 {colors.modeless.white24}, inset 0 0 0 0.5px {colors.modeless.black24}, {shadows.lg}",
       "$type": "shadow",
       "$extensions": {
         "creator": {
-          "css": "--cr-shadow-button-secondary",
+          "css": "--cr-shadow-glass-menu",
           "kind": "semantic",
           "status": "declared",
           "rendered": {
-            "light": "rgba(0, 0, 0, 0.16) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
-            "dark": "rgba(0, 0, 0, 0.62) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px"
+            "light": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.24), inset 0 0 0 0.5px rgba(0, 0, 0, 0.24), 0 16px 32px 0 rgba(0, 0, 0, 0.24)",
+            "dark": "inset 0 0.5px 0 0 rgba(255, 255, 255, 0.24), inset 0 0 0 0.5px rgba(0, 0, 0, 0.24), 0 16px 32px 0 rgba(0, 0, 0, 0.72)"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "light": 0,
-            "dark": 0
-          }
+            "all": 1
+          },
+          "use": "Menus on dark stage glass."
+        }
+      }
+    },
+    "glassField": {
+      "$value": "inset 0 0 0 1px {colors.modeless.white8}",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-glass-field",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "inset 0 0 0 1px rgba(255, 255, 255, 0.08)",
+            "dark": "inset 0 0 0 1px rgba(255, 255, 255, 0.08)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 1
+          },
+          "use": "A field on dark stage glass."
+        }
+      }
+    },
+    "glassFocus": {
+      "$value": "0 0 0 1px {colors.modeless.tealOnDark}, 0 0 0 4px color-mix(in srgb, {colors.modeless.tealOnDark} 34%, transparent)",
+      "$type": "shadow",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-shadow-glass-focus",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "0 0 0 1px #3B9BFF, 0 0 0 4px color-mix(in srgb, #3B9BFF 34%, transparent)",
+            "dark": "0 0 0 1px #3B9BFF, 0 0 0 4px color-mix(in srgb, #3B9BFF 34%, transparent)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 3
+          },
+          "use": "Focus ring on dark stage glass."
         }
       }
     }

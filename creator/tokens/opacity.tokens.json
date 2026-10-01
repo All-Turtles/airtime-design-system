@@ -1,4 +1,50 @@
 {
   "$name": "Creator - opacity",
-  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system."
+  "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
+  "opacity": {
+    "disabled": {
+      "$value": "0.4",
+      "$type": "number",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-opacity-disabled",
+          "kind": "derived",
+          "status": "declared",
+          "rendered": {
+            "light": "0.4",
+            "dark": "0.4"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 29
+          }
+        }
+      }
+    },
+    "placeholder": {
+      "$value": "0.7",
+      "$type": "number",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-opacity-placeholder",
+          "kind": "derived",
+          "status": "declared",
+          "rendered": {
+            "light": "0.7",
+            "dark": "0.7"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 1
+          }
+        }
+      }
+    }
+  }
 }

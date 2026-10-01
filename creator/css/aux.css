@@ -1,49 +1,79 @@
-/* aux.css - Creator design system: buttons, menus, context menus, tooltips, dialogs, banner.
- * Buttons, menus, tooltip, dialog and the session banner. */
-.cr-button { display: inline-flex; align-items: center; justify-content: center; gap: var(--cr-space-1); height: var(--cr-size-7); min-width: var(--cr-size-7); padding: 0 var(--cr-space-3); border-radius: var(--cr-radius-md); font-family: var(--cr-font-family-body); font-size: 12px; font-weight: 500; line-height: 16px; cursor: pointer; border: 0; transition: background var(--cr-duration-fast) var(--cr-easing-settle), color var(--cr-duration-fast) var(--cr-easing-settle), transform var(--cr-duration-fast) var(--cr-easing-settle), box-shadow var(--cr-duration-fast) var(--cr-easing-settle); }
-.cr-button.is-md { font-size: 13px; height: var(--cr-size-8); min-width: var(--cr-size-8); padding: 0 var(--cr-space-3-5); gap: var(--cr-space-1-5); }
+/* aux.css - Creator design system: buttons, menus, popovers, tooltips, dialogs, banner, toast.
+ * Mirrors the app's button, menu, dialog and tooltip recipes as they render. Requires css/sidebar.css (state layers). */
+
+/* ── buttons: 32px by default, 24px (.is-sm) for dense bars ─────────────────────────────────────────── */
+.cr-button { display: inline-flex; align-items: center; justify-content: center; gap: var(--cr-space-1-5); height: var(--cr-size-control-md); min-width: var(--cr-size-control-md); padding: 0 var(--cr-space-3-5); border-radius: var(--cr-radius-sm); font-family: var(--cr-font-family-body); font-size: 12px; font-weight: 500; line-height: 15px; cursor: default; border: 0; transition: background var(--cr-duration-base) var(--cr-easing-settle), color var(--cr-duration-base) var(--cr-easing-settle), transform var(--cr-duration-base) var(--cr-easing-settle), box-shadow var(--cr-duration-base) var(--cr-easing-settle); }
+.cr-button.is-sm { height: var(--cr-size-control-sm); min-width: var(--cr-size-control-sm); padding: 0 var(--cr-space-2); gap: var(--cr-space-1); }
+.cr-button .cr-icon { width: var(--cr-size-icon); height: var(--cr-size-icon); }
 .cr-button:is(:active, .is-pressed) { transform: scale(0.97); }
 .cr-button:is(:focus-visible, .is-focus) { outline: none; box-shadow: var(--cr-shadow-focus); }
-.cr-button:is(:disabled, .is-disabled) { opacity: var(--cr-opacity-disabled-button); cursor: default; transform: none; }
-.cr-button.is-solid { background: var(--cr-color-accent-solid); color: var(--cr-color-accent-contrast); box-shadow: var(--cr-shadow-button-solid); }
-.cr-button.is-solid:is(:hover, .is-hover, [aria-expanded="true"]) { background: var(--cr-color-accent-hover); }
-.cr-button.is-solid.is-danger { background: var(--cr-color-danger-solid); color: var(--cr-color-danger-contrast); }
-.cr-button.is-solid.is-danger:is(:hover, .is-hover) { background: var(--cr-color-danger-hover); }
-.cr-button.is-surface { background: var(--cr-color-bg-panel); color: var(--cr-color-text-1); box-shadow: var(--cr-shadow-button-secondary); }
-.cr-button.is-surface:is(:hover, .is-hover, [aria-expanded="true"]) { background: var(--cr-color-bg-subtle); }
-.cr-button.is-ghost { background: transparent; color: var(--cr-color-text-2); }
-.cr-button.is-ghost:is(:hover, .is-hover) { background: var(--cr-color-state-hover); color: var(--cr-color-text-1); }
-.cr-button.is-ghost[aria-expanded="true"], .cr-button.is-ghost.is-open { background: var(--cr-color-state-active); color: var(--cr-color-text-1); }
-/* menus */
-.cr-menu { min-width: 0; padding: var(--cr-space-1-5); border-radius: var(--cr-radius-2xl); background: var(--cr-color-mat-menu-solid); color: var(--cr-color-text-2); box-shadow: var(--cr-shadow-menu); font-family: var(--cr-font-family-body); }
-.cr-menu-item { display: flex; align-items: center; gap: var(--cr-space-2); width: 100%; padding: var(--cr-space-1-5) var(--cr-space-2); border-radius: var(--cr-radius-md); background: transparent; color: var(--cr-color-text-2); font-size: 13px; line-height: 17px; font-weight: 400; text-align: left; cursor: default; border: 0; }
-.cr-menu-item > .txt { flex: 1; }
-.cr-menu-item .cr-icon { width: var(--cr-size-4); height: var(--cr-size-4); }
-.cr-menu-item .ind { display: inline-flex; color: var(--cr-color-text-4); }
-.cr-menu-item:is(:hover, .is-hover, [data-highlighted]) { background: var(--cr-color-accent-solid); color: var(--cr-color-accent-contrast); }
-.cr-menu-item:is(:hover, .is-hover, [data-highlighted]) .ind { color: var(--cr-color-accent-contrast); }
-.cr-menu-item:is(:disabled, .is-disabled) { opacity: var(--cr-opacity-disabled-button); }
-.cr-menu-item:is(:disabled, .is-disabled):hover { background: transparent; color: var(--cr-color-text-2); }
-.cr-menu-item[data-destructive] { color: var(--cr-color-danger-fg); }
-.cr-menu-item[data-destructive]:is(:hover, .is-hover, [data-highlighted]) { background: var(--cr-color-danger-solid); color: var(--cr-color-danger-contrast); }
-.cr-menu-sep { height: 1px; margin: var(--cr-space-1) 0; background: var(--cr-color-line); }
-.cr-menu-label { padding: var(--cr-space-2) var(--cr-space-2) var(--cr-space-1); font-size: 10px; line-height: 12px; font-weight: 600; letter-spacing: 0.055em; text-transform: uppercase; color: var(--cr-color-text-4); }
-/* tooltip */
-.cr-tooltip { display: inline-block; padding: var(--cr-space-1-5) var(--cr-space-3); border: var(--cr-border-width-thin) solid var(--cr-color-highlight-primary); border-radius: var(--cr-radius-sm); background: var(--cr-color-bg-panel); color: var(--cr-color-content-primary); box-shadow: var(--cr-shadow-tooltip); font-size: 12px; line-height: 15px; font-weight: 400; white-space: nowrap; }
-/* dialog */
-.cr-scrim { padding: 28px; background: var(--cr-color-scrim-modal); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
-.cr-dialog { background: var(--cr-color-mat-sheet); color: var(--cr-color-text-1); border-radius: var(--cr-radius-3xl); box-shadow: var(--cr-shadow-sheet); isolation: isolate; font-size: 13px; line-height: 17px; min-width: 320px; max-width: 420px; width: 100%; }
-.cr-dialog .header { padding: var(--cr-space-5) var(--cr-space-5) var(--cr-space-2); }
-.cr-dialog .title { margin: 0; font-size: 13px; line-height: 16px; font-weight: 600; color: var(--cr-color-text-1); }
-.cr-dialog .body { padding: 0 var(--cr-space-5); color: var(--cr-color-text-2); white-space: pre-wrap; }
-.cr-dialog .footer { display: flex; justify-content: flex-end; gap: var(--cr-space-2); padding: var(--cr-space-4) var(--cr-space-5) var(--cr-space-5); }
+.cr-button:is(:disabled, .is-disabled) { opacity: var(--cr-opacity-disabled); cursor: default; transform: none; }
+/* solid: the filled primary. Tone picks the fill: accent is modeless.teal, destructive is modeless.destructive */
+.cr-button.is-solid { background-color: var(--cr-color-modeless-teal); color: var(--cr-color-modeless-white); box-shadow: var(--cr-shadow-filled); }
+.cr-button.is-solid.is-destructive, .cr-button.is-solid.is-danger { background-color: var(--cr-color-modeless-destructive); }
+.cr-button.is-solid:is(:hover, .is-hover) { background-image: var(--cr-layer); }
+.cr-button.is-solid:is(:active, .is-pressed, [aria-expanded="true"], .is-open) { background-image: var(--cr-layer-2); }
+.cr-button.is-solid:is(:focus-visible, .is-focus) { box-shadow: var(--cr-shadow-focus); }
+/* surface: Figma's secondary button, a highlight face with a raised edge. Hover lays a shade layer, press two */
+.cr-button.is-surface { background-color: var(--cr-color-lighting-highlight-secondary); color: var(--cr-color-content-primary); box-shadow: var(--cr-shadow-raised); }
+.cr-button.is-surface:is(:hover, .is-hover) { background-image: var(--cr-layer); box-shadow: var(--cr-shadow-raised-pressed); }
+.cr-button.is-surface:is(:active, .is-pressed, [aria-expanded="true"], .is-open) { background-image: var(--cr-layer-2); box-shadow: var(--cr-shadow-raised-pressed); }
+.cr-button.is-surface:is(:focus-visible, .is-focus) { box-shadow: var(--cr-shadow-focus); }
+/* ghost and plain: a bare label that fills on hover */
+.cr-button.is-ghost, .cr-button.is-plain { background-color: transparent; color: var(--cr-color-content-primary); }
+.cr-button.is-ghost:is(:hover, .is-hover), .cr-button.is-plain:is(:hover, .is-hover) { background-image: var(--cr-layer); }
+.cr-button.is-ghost:is(:active, .is-pressed, [aria-expanded="true"], .is-open), .cr-button.is-plain:is(:active, .is-pressed, [aria-expanded="true"], .is-open) { background-image: var(--cr-layer-2); }
+.cr-button.is-ghost.is-destructive { color: var(--cr-color-accent-destructive); }
+
+/* ── menus: background.tertiary glass, 16px radius, 24px rows at radius 6. One 16px icon slot, a right-aligned check,
+ *    optional second line of detail. A menu is as wide as its longest row (the stage menu holds 260, the device popover 298).
+ *    The menu recipe asks for 8px padding and a 230px minimum, but the size variant of the library menu wins in the running app,
+ *    so a menu renders with 6px padding and no minimum. ─────── */
+.cr-menu { width: max-content; max-width: 100%; padding: var(--cr-space-1-5); border-radius: var(--cr-radius-xl); background: var(--cr-color-background-tertiary); color: var(--cr-color-content-secondary); box-shadow: var(--cr-shadow-menu); -webkit-backdrop-filter: blur(var(--cr-blur-large)); backdrop-filter: blur(var(--cr-blur-large)); font-family: var(--cr-font-family-body); isolation: isolate; }
+.cr-menu.is-device { min-width: var(--cr-size-layout-device-popover); }
+.cr-menu-item { display: flex; align-items: center; gap: var(--cr-space-2); width: 100%; min-height: var(--cr-size-control-sm); padding: 0 var(--cr-space-1-5); border-radius: var(--cr-radius-sm); background: transparent; color: var(--cr-color-content-primary); font-size: var(--cr-font-size-md); line-height: 17px; font-weight: 400; text-align: left; cursor: default; border: 0; }
+.cr-menu-item:has(.det) { padding-block: var(--cr-space-1); }
+.cr-menu-item > .txt { flex: 1; min-width: 0; }
+.cr-menu-item .det { display: block; color: var(--cr-color-content-tertiary); font-size: var(--cr-font-size-xs); line-height: 15px; }
+.cr-menu-item > .cr-icon { width: var(--cr-size-icon); height: var(--cr-size-icon); }
+.cr-menu-item .ind { display: inline-flex; margin-left: auto; flex: 0 0 auto; width: var(--cr-size-icon); height: var(--cr-size-icon); align-items: center; justify-content: center; color: var(--cr-color-content-tertiary); }
+.cr-menu-item .chk { display: inline-flex; margin-left: auto; flex: 0 0 auto; width: var(--cr-size-icon); height: var(--cr-size-icon); align-items: center; justify-content: center; color: var(--cr-color-accent-teal); }
+.cr-menu-item .cmd { margin-left: auto; color: var(--cr-color-content-tertiary); font-size: var(--cr-font-size-xs); }
+.cr-menu-item:is(:hover, .is-hover, [data-highlighted]) { background: var(--cr-color-modeless-teal); color: var(--cr-color-modeless-white); }
+.cr-menu-item:is(:hover, .is-hover, [data-highlighted]) * { color: currentColor; }
+.cr-menu-item:is(:disabled, .is-disabled) { opacity: var(--cr-opacity-disabled); }
+.cr-menu-item:is(:disabled, .is-disabled):hover { background: transparent; color: var(--cr-color-content-primary); }
+.cr-menu-item[data-destructive] { color: var(--cr-color-accent-destructive); }
+.cr-menu-item[data-destructive]:is(:hover, .is-hover, [data-highlighted]) { background: var(--cr-color-accent-destructive); color: var(--cr-color-modeless-white); }
+.cr-menu-sep { height: 1px; margin: var(--cr-space-1) var(--cr-space-2); background: var(--cr-color-lighting-shade); }
+.cr-menu-label { padding: var(--cr-space-2) var(--cr-space-2) var(--cr-space-1); font-size: var(--cr-font-size-2xs); line-height: 12px; font-weight: 600; letter-spacing: var(--cr-letter-spacing-label); text-transform: uppercase; color: var(--cr-color-content-tertiary); }
+/* popover: the same surface, but opaque background.secondary in light (glass washes out over a dark camera feed) and glass in dark */
+.cr-popover { background: var(--cr-color-background-secondary); }
+[data-theme="dark"] .cr-popover, [data-theme="dark"].cr-popover { background: var(--cr-color-background-tertiary); }
+
+/* ── tooltip: a small raised surface, the same in both themes ── */
+.cr-tooltip { display: inline-block; padding: var(--cr-space-1-5) var(--cr-space-3); border: var(--cr-border-width-thin) solid var(--cr-color-lighting-shade); border-radius: var(--cr-radius-sm); background: var(--cr-color-background-secondary); color: var(--cr-color-content-primary); box-shadow: var(--cr-shadow-md); font-size: 12px; line-height: 15px; font-weight: 400; white-space: nowrap; }
+
+/* ── dialog: opaque background.secondary at the large radius, the menu shadow, over the modeless overlay ── */
+.cr-scrim { padding: 28px; background: var(--cr-color-modeless-overlay); border-radius: var(--cr-radius-lg); display: flex; align-items: center; justify-content: center; }
+.cr-dialog { position: relative; background: var(--cr-color-background-secondary); color: var(--cr-color-content-primary); border-radius: var(--cr-radius-xl); box-shadow: var(--cr-shadow-menu); isolation: isolate; font-size: var(--cr-font-size-md); line-height: 17px; min-width: 320px; max-width: 420px; width: 100%; }
+.cr-dialog .header { padding: var(--cr-space-4) var(--cr-space-4) var(--cr-space-2); }
+.cr-dialog .title { margin: 0; font-size: 16px; line-height: 22px; font-weight: 600; letter-spacing: -0.01em; color: var(--cr-color-content-primary); }
+.cr-dialog .body { display: grid; gap: var(--cr-space-3); padding: 0 var(--cr-space-4); color: var(--cr-color-content-secondary); white-space: pre-wrap; }
+.cr-dialog .footer { display: flex; justify-content: flex-end; gap: var(--cr-space-2); padding: var(--cr-space-4); }
+.cr-dialog .close { position: absolute; top: var(--cr-space-2); right: var(--cr-space-2); display: inline-flex; align-items: center; justify-content: center; width: var(--cr-space-6); height: var(--cr-space-6); border-radius: var(--cr-radius-sm); color: var(--cr-color-content-tertiary); }
+.cr-dialog .close:is(:hover, .is-hover) { background-image: var(--cr-layer); color: var(--cr-color-content-primary); }
 .cr-dialog.is-sheet { width: 100%; max-width: none; height: 220px; min-width: 0; padding: 0; overflow: hidden; display: flex; flex-direction: column; }
-.cr-dialog.is-sheet .body { flex: 1; padding: var(--cr-space-5); }
-.cr-dialog.is-sheet .footer { height: var(--cr-size-16); flex-shrink: 0; padding: 0 var(--cr-space-4); align-items: center; border-top: var(--cr-border-width-thin) solid var(--cr-color-line); background: var(--cr-color-split-picker-footer); }
-/* banner: SessionNotice */
-.cr-notice { display: flex; align-items: center; justify-content: center; gap: var(--cr-space-3); padding: var(--cr-space-2) var(--cr-space-6); background: var(--cr-color-danger-subtle); color: var(--cr-color-danger-fg); font-size: 11px; line-height: 14px; }
-/* toast: the transient pill (message and one action) */
-.cr-toast { display: inline-flex; align-items: center; gap: var(--cr-space-3); padding: var(--cr-space-2-5) var(--cr-space-4); border-radius: var(--cr-radius-full); background: var(--cr-color-mat-menu-solid); color: var(--cr-color-text-1); box-shadow: var(--cr-shadow-menu); font-family: var(--cr-font-family-body); font-size: 13px; line-height: 17px; }
-.cr-stage-note { display: grid; justify-items: center; gap: var(--cr-space-1-5); width: 220px; padding: var(--cr-space-5) var(--cr-space-4); border-radius: var(--cr-radius-2xl); background: var(--cr-color-ground-dark-window); color: var(--cr-color-ink-dark-primary); font-size: 13px; line-height: 17px; text-align: center; }
-.cr-stage-note .cr-icon { width: var(--cr-size-6); height: var(--cr-size-6); color: var(--cr-color-ink-dark-tertiary); }
-.cr-stage-note a { color: var(--cr-color-system-blue-dark); }
+.cr-dialog.is-sheet .body { flex: 1; padding: var(--cr-space-4); }
+.cr-dialog.is-sheet .footer { height: var(--cr-space-16); flex-shrink: 0; padding: 0 var(--cr-space-4); align-items: center; border-top: var(--cr-border-width-thin) solid var(--cr-color-lighting-shade); background: color-mix(in srgb, var(--cr-color-background-secondary) 40%, transparent); }
+
+/* ── banner: SessionNotice, the accent.destructive wash at 12% ── */
+.cr-notice { display: flex; align-items: center; justify-content: center; gap: var(--cr-space-3); padding: var(--cr-space-2) var(--cr-space-6); background: color-mix(in srgb, var(--cr-color-accent-destructive) 12%, transparent); color: var(--cr-color-accent-destructive); font-size: var(--cr-font-size-xs); line-height: 15px; }
+
+/* ── toast: the transient pill, a glass surface with the menu shadow ── */
+.cr-toast { display: inline-flex; align-items: center; gap: var(--cr-space-3); padding: var(--cr-space-2) var(--cr-space-4); border-radius: var(--cr-radius-full); background: var(--cr-color-background-tertiary); color: var(--cr-color-content-primary); box-shadow: var(--cr-shadow-menu); -webkit-backdrop-filter: blur(var(--cr-blur-large)); backdrop-filter: blur(var(--cr-blur-large)); font-family: var(--cr-font-family-body); font-size: var(--cr-font-size-md); line-height: 17px; }
+.cr-toast.is-error { border: 1px solid color-mix(in srgb, var(--cr-color-accent-destructive) 24%, transparent); font-size: var(--cr-font-size-xs); line-height: 15px; }
+.cr-toast.is-error > .cr-icon { color: var(--cr-color-accent-destructive); }
+.cr-stage-note { display: grid; justify-items: center; gap: var(--cr-space-1-5); width: 220px; padding: var(--cr-space-5) var(--cr-space-4); border-radius: var(--cr-radius-xl); background: var(--cr-color-modeless-overlay); color: var(--cr-color-modeless-white); font-size: var(--cr-font-size-md); line-height: 17px; text-align: center; }
+.cr-stage-note .cr-icon { width: var(--cr-space-6); height: var(--cr-space-6); color: color-mix(in srgb, var(--cr-color-modeless-white) 64%, transparent); }
+.cr-stage-note a { color: var(--cr-color-modeless-teal-on-dark); }
