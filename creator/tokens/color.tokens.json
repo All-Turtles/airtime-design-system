@@ -2,4853 +2,872 @@
   "$name": "Creator - color",
   "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "color": {
-    "selection": {
+    "background": {
+      "primary": {
+        "$value": {
+          "light": "#DCDCE0",
+          "dark": "#0A0D0E"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-background-primary",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "#DCDCE0",
+              "dark": "#0A0D0E"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 15
+            },
+            "group": "background",
+            "use": "The window behind everything. The lowest layer."
+          }
+        }
+      },
+      "secondary": {
+        "$value": {
+          "light": "#F2F2F4",
+          "dark": "#1E1E20"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-background-secondary",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "#F2F2F4",
+              "dark": "#1E1E20"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 24
+            },
+            "group": "background",
+            "use": "Panels and cards that sit on the window; popovers in light."
+          }
+        }
+      },
+      "tertiary": {
+        "$value": {
+          "light": "rgba(255, 255, 255, 0.80)",
+          "dark": "rgba(27, 35, 38, 0.80)"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-background-tertiary",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "rgba(255, 255, 255, 0.80)",
+              "dark": "rgba(27, 35, 38, 0.80)"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 4
+            },
+            "group": "background",
+            "use": "Translucent glass for the sidebar and floating bars; popovers in dark."
+          }
+        }
+      }
+    },
+    "content": {
+      "primary": {
+        "$value": {
+          "light": "rgba(0, 0, 0, 0.92)",
+          "dark": "rgba(255, 255, 255, 0.92)"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-content-primary",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "rgba(0, 0, 0, 0.92)",
+              "dark": "rgba(255, 255, 255, 0.92)"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 75
+            },
+            "group": "content",
+            "use": "Text and icons you read: titles, values, active controls."
+          }
+        }
+      },
+      "secondary": {
+        "$value": {
+          "light": "rgba(0, 0, 0, 0.80)",
+          "dark": "rgba(255, 255, 255, 0.80)"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-content-secondary",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "rgba(0, 0, 0, 0.80)",
+              "dark": "rgba(255, 255, 255, 0.80)"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 34
+            },
+            "group": "content",
+            "use": "Body text and icons at rest."
+          }
+        }
+      },
+      "tertiary": {
+        "$value": {
+          "light": "rgba(0, 0, 0, 0.64)",
+          "dark": "rgba(255, 255, 255, 0.64)"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-content-tertiary",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "rgba(0, 0, 0, 0.64)",
+              "dark": "rgba(255, 255, 255, 0.64)"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 106
+            },
+            "group": "content",
+            "use": "Hints, captions and disabled-looking labels. Do not use for essential text."
+          }
+        }
+      }
+    },
+    "lighting": {
+      "shade": {
+        "$value": {
+          "light": "rgba(0, 0, 0, 0.08)",
+          "dark": "rgba(255, 255, 255, 0.08)"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-lighting-shade",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "rgba(0, 0, 0, 0.08)",
+              "dark": "rgba(255, 255, 255, 0.08)"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 96
+            },
+            "group": "lighting",
+            "use": "Hairlines, dividers and the faint inner edge of inputs."
+          }
+        }
+      },
+      "highlightPrimary": {
+        "$value": {
+          "light": "rgba(255, 255, 255, 0.92)",
+          "dark": "rgba(255, 255, 255, 0.08)"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-lighting-highlight-primary",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "rgba(255, 255, 255, 0.92)",
+              "dark": "rgba(255, 255, 255, 0.08)"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 1
+            },
+            "group": "lighting",
+            "use": "The bright top catch on raised faces and the edge of cards."
+          }
+        }
+      },
+      "highlightSecondary": {
+        "$value": {
+          "light": "rgba(255, 255, 255, 0.64)",
+          "dark": "rgba(255, 255, 255, 0.08)"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-lighting-highlight-secondary",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "rgba(255, 255, 255, 0.64)",
+              "dark": "rgba(255, 255, 255, 0.08)"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 6
+            },
+            "group": "lighting",
+            "use": "A softer catch for menus and popovers."
+          }
+        }
+      }
+    },
+    "small": {
+      "$value": {
+        "light": "rgba(0, 0, 0, 0.08)",
+        "dark": "rgba(0, 0, 0, 0.24)"
+      },
+      "$type": "color",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-shadow-small",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "rgba(0, 0, 0, 0.08)",
+            "dark": "rgba(0, 0, 0, 0.24)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 3
+          },
+          "group": "shadow",
+          "use": "A 1px contact shadow under small controls."
+        }
+      }
+    },
+    "medium": {
+      "$value": {
+        "light": "rgba(0, 0, 0, 0.16)",
+        "dark": "rgba(0, 0, 0, 0.48)"
+      },
+      "$type": "color",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-shadow-medium",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "rgba(0, 0, 0, 0.16)",
+            "dark": "rgba(0, 0, 0, 0.48)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 1
+          },
+          "group": "shadow",
+          "use": "Hairline outlines and the shadow of floating surfaces."
+        }
+      }
+    },
+    "large": {
+      "$value": {
+        "light": "rgba(0, 0, 0, 0.24)",
+        "dark": "rgba(0, 0, 0, 0.72)"
+      },
+      "$type": "color",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-color-shadow-large",
+          "kind": "semantic",
+          "status": "declared",
+          "rendered": {
+            "light": "rgba(0, 0, 0, 0.24)",
+            "dark": "rgba(0, 0, 0, 0.72)"
+          },
+          "org": {
+            "relation": "creator-only"
+          },
+          "alias": null,
+          "used": {
+            "all": 0
+          },
+          "group": "shadow",
+          "use": "The deepest drop, for menus and sheets."
+        }
+      }
+    },
+    "accent": {
+      "teal": {
+        "$value": {
+          "light": "#0069D9",
+          "dark": "#3B9BFF"
+        },
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-accent-teal",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "#0069D9",
+              "dark": "#3B9BFF"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 38
+            },
+            "group": "accent",
+            "use": "Selection, focus and links. The one interactive color; lighter in dark."
+          }
+        }
+      },
       "destructive": {
-        "$value": "rgb(255,92,92)",
+        "$value": {
+          "light": "#D6402F",
+          "dark": "#FF6D4C"
+        },
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-selection-destructive",
-            "kind": "primitive",
+            "css": "--cr-color-accent-destructive",
+            "kind": "semantic",
             "status": "declared",
             "rendered": {
-              "light": "rgb(255, 92, 92)",
-              "dark": "rgb(255, 92, 92)"
+              "light": "#D6402F",
+              "dark": "#FF6D4C"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 0,
-              "dark": 0
-            }
+              "all": 23
+            },
+            "group": "accent",
+            "use": "Delete, discard and error. Pairs with a destructive button tone."
           }
         }
-      },
-      "destructiveHover": {
-        "$value": "rgba(255,92,92,0.14)",
+      }
+    },
+    "modeless": {
+      "white": {
+        "$value": "#FFFFFF",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-selection-destructive-hover",
-            "kind": "primitive",
+            "css": "--cr-color-modeless-white",
+            "kind": "semantic",
             "status": "declared",
             "rendered": {
-              "light": "rgba(255, 92, 92, 0.14)",
-              "dark": "rgba(255, 92, 92, 0.14)"
+              "light": "#FFFFFF",
+              "dark": "#FFFFFF"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 0,
-              "dark": 0
-            }
+              "all": 42
+            },
+            "group": "modeless",
+            "use": "White that stays white, for ink on the stage or on a picture."
           }
         }
       },
-      "destructiveActive": {
-        "$value": "rgba(255,92,92,0.24)",
+      "white8": {
+        "$value": "rgba(255, 255, 255, 0.08)",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-selection-destructive-active",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 92, 92, 0.24)",
-              "dark": "rgba(255, 92, 92, 0.24)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "muted": {
-        "$value": "rgba(255,255,255,0.60)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-selection-muted",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 255, 255, 0.6)",
-              "dark": "rgba(255, 255, 255, 0.6)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "track": {
-        "$value": "rgba(255,255,255,0.08)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-selection-track",
-            "kind": "primitive",
+            "css": "--cr-color-modeless-white8",
+            "kind": "semantic",
             "status": "declared",
             "rendered": {
               "light": "rgba(255, 255, 255, 0.08)",
               "dark": "rgba(255, 255, 255, 0.08)"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 6,
-              "dark": 21
-            }
+              "all": 11
+            },
+            "group": "modeless",
+            "use": "A faint white wash on dark stage glass."
           }
         }
       },
-      "swatch": {
-        "$value": "rgba(255,255,255,0.16)",
+      "white24": {
+        "$value": "rgba(255, 255, 255, 0.24)",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-selection-swatch",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 255, 255, 0.16)",
-              "dark": "rgba(255, 255, 255, 0.16)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 8
-            }
-          }
-        }
-      },
-      "material": {
-        "$value": "rgba(26,26,29,0.66)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-selection-material",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(26, 26, 29, 0.66)",
-              "dark": "rgba(26, 26, 29, 0.66)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 2,
-              "dark": 2
-            }
-          }
-        }
-      },
-      "text": {
-        "$value": "rgba(255,255,255,0.96)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-selection-text",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 255, 255, 0.96)",
-              "dark": "rgba(255, 255, 255, 0.96)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 172,
-              "dark": 1140
-            }
-          }
-        }
-      },
-      "disabled": {
-        "$value": "rgba(255,255,255,0.40)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-selection-disabled",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 255, 255, 0.4)",
-              "dark": "rgba(255, 255, 255, 0.4)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 109
-            }
-          }
-        }
-      },
-      "hover": {
-        "$value": "rgba(255,255,255,0.11)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-selection-hover",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 255, 255, 0.11)",
-              "dark": "rgba(255, 255, 255, 0.11)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "active": {
-        "$value": "rgba(255,255,255,0.20)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-selection-active",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 255, 255, 0.2)",
-              "dark": "rgba(255, 255, 255, 0.2)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "line": {
-        "$value": "rgba(255,255,255,0.13)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-selection-line",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(255, 255, 255, 0.13)",
-              "dark": "rgba(255, 255, 255, 0.13)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 1,
-              "dark": 9
-            }
-          }
-        }
-      }
-    },
-    "systemBlue": {
-      "light": {
-        "$value": "#0069D9",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-system-blue-light",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(0, 105, 217)",
-              "dark": "rgb(0, 105, 217)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 15,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "lightHover": {
-        "$value": "#0059B8",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-system-blue-light-hover",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(0, 89, 184)",
-              "dark": "rgb(0, 89, 184)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "#3B9BFF",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-system-blue-dark",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(59, 155, 255)",
-              "dark": "rgb(59, 155, 255)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 15
-            }
-          }
-        }
-      },
-      "darkHover": {
-        "$value": "#57ACFF",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-system-blue-dark-hover",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(87, 172, 255)",
-              "dark": "rgb(87, 172, 255)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "onLight": {
-        "$value": "#FFFFFF",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-system-blue-on-light",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(255, 255, 255)",
-              "dark": "rgb(255, 255, 255)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 57,
-              "dark": 281
-            }
-          }
-        }
-      },
-      "onDark": {
-        "$value": "#08121C",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-system-blue-on-dark",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(8, 18, 28)",
-              "dark": "rgb(8, 18, 28)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 28
-            }
-          }
-        }
-      }
-    },
-    "systemRed": {
-      "light": {
-        "$value": "#D70015",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-system-red-light",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(215, 0, 21)",
-              "dark": "rgb(215, 0, 21)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 32,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "#FF4F42",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-system-red-dark",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(255, 79, 66)",
-              "dark": "rgb(255, 79, 66)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 32
-            }
-          }
-        }
-      }
-    },
-    "ground": {
-      "light": {
-        "window": {
-          "$value": "#E9E9EC",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ground-light-window",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(233, 233, 236)",
-                "dark": "rgb(233, 233, 236)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "surface": {
-          "$value": "#FFFFFF",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ground-light-surface",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 255, 255)",
-                "dark": "rgb(255, 255, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 57,
-                "dark": 281
-              }
-            }
-          }
-        },
-        "recessed": {
-          "$value": "#F1F1F4",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ground-light-recessed",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(241, 241, 244)",
-                "dark": "rgb(241, 241, 244)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "dark": {
-        "window": {
-          "$value": "#131315",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ground-dark-window",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(19, 19, 21)",
-                "dark": "rgb(19, 19, 21)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 4
-              }
-            }
-          }
-        },
-        "surface": {
-          "$value": "#1E1E20",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ground-dark-surface",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(30, 30, 32)",
-                "dark": "rgb(30, 30, 32)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 4
-              }
-            }
-          }
-        },
-        "recessed": {
-          "$value": "#252528",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ground-dark-recessed",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(37, 37, 40)",
-                "dark": "rgb(37, 37, 40)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "ink": {
-      "light": {
-        "primary": {
-          "$value": "#000000",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ink-light-primary",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 0, 0)",
-                "dark": "rgb(0, 0, 0)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 262,
-                "dark": 6
-              }
-            }
-          }
-        },
-        "secondary": {
-          "$value": "#3C3C43",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ink-light-secondary",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(60, 60, 67)",
-                "dark": "rgb(60, 60, 67)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 56,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "tertiary": {
-          "$value": "#6E6E73",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ink-light-tertiary",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(110, 110, 115)",
-                "dark": "rgb(110, 110, 115)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 78,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "dark": {
-        "primary": {
-          "$value": "#FFFFFF",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ink-dark-primary",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 255, 255)",
-                "dark": "rgb(255, 255, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 57,
-                "dark": 281
-              }
-            }
-          }
-        },
-        "secondary": {
-          "$value": "#EBEBF5",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ink-dark-secondary",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(235, 235, 245)",
-                "dark": "rgb(235, 235, 245)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 56
-              }
-            }
-          }
-        },
-        "tertiary": {
-          "$value": "#ABABB2",
-          "$type": "color",
-          "$extensions": {
-            "creator": {
-              "css": "--cr-color-ink-dark-tertiary",
-              "kind": "primitive",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(171, 171, 178)",
-                "dark": "rgb(171, 171, 178)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 78
-              }
-            }
-          }
-        }
-      }
-    },
-    "background": {
-      "primary": {
-        "light": {
-          "$value": "#ffffff",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-background-primary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 255, 255)",
-                "dark": "rgb(10, 10, 14)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-background-primary",
-                "note": "legacy chrome ground (header, stage) still on the org-era values (creator rgb(255, 255, 255) / rgb(10, 10, 14); org #F5F5F5 / #0A0D0E)"
-              },
-              "alias": null,
-              "used": {
-                "light": 57,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "#0a0a0e",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-background-primary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 255, 255)",
-                "dark": "rgb(10, 10, 14)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-background-primary",
-                "note": "legacy chrome ground (header, stage) still on the org-era values (creator rgb(255, 255, 255) / rgb(10, 10, 14); org #F5F5F5 / #0A0D0E)"
-              },
-              "alias": null,
-              "used": {
-                "light": 57,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "tertiary": {
-        "light": {
-          "$value": "#ebebeb",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-background-tertiary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(235, 235, 235)",
-                "dark": "rgb(33, 33, 39)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-background-tertiary",
-                "note": "legacy chrome tertiary (creator rgb(235, 235, 235) / rgb(33, 33, 39); org #EBEBEB / #1B2326)"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "#212127",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-background-tertiary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(235, 235, 235)",
-                "dark": "rgb(33, 33, 39)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-background-tertiary",
-                "note": "legacy chrome tertiary (creator rgb(235, 235, 235) / rgb(33, 33, 39); org #EBEBEB / #1B2326)"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "action": {
-      "secondary": {
-        "$value": "#1A7580",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-action-secondary",
+            "css": "--cr-color-modeless-white24",
             "kind": "semantic",
             "status": "declared",
             "rendered": {
-              "light": "rgb(26, 117, 128)",
-              "dark": "rgb(26, 117, 128)"
+              "light": "rgba(255, 255, 255, 0.24)",
+              "dark": "rgba(255, 255, 255, 0.24)"
             },
             "org": {
-              "relation": "differs",
-              "org": "--color-accent-teal",
-              "note": "teal, light-theme variant of the org accent (creator rgb(26, 117, 128); org #1A7580 / #79DDE8)"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 0,
-              "dark": 0
-            }
+              "all": 7
+            },
+            "group": "modeless",
+            "use": "A stronger white edge on stage glass and filled buttons."
+          }
+        }
+      },
+      "black": {
+        "$value": "#000000",
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-modeless-black",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "#000000",
+              "dark": "#000000"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 1
+            },
+            "group": "modeless",
+            "use": "Black that stays black, for ink over light pictures."
+          }
+        }
+      },
+      "black24": {
+        "$value": "rgba(0, 0, 0, 0.24)",
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-modeless-black24",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "rgba(0, 0, 0, 0.24)",
+              "dark": "rgba(0, 0, 0, 0.24)"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 2
+            },
+            "group": "modeless",
+            "use": "A dark hairline and the shadow of the switch knob."
+          }
+        }
+      },
+      "overlay": {
+        "$value": "rgba(0, 0, 0, 0.5)",
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-modeless-overlay",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "rgba(0, 0, 0, 0.5)",
+              "dark": "rgba(0, 0, 0, 0.5)"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 14
+            },
+            "group": "modeless",
+            "use": "The scrim behind a modal."
           }
         }
       },
       "destructive": {
-        "light": {
-          "$value": "#ff715c",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-action-destructive",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 113, 92)",
-                "dark": "rgb(255, 118, 97)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-accent-destructive",
-                "note": "destructive red; creator uses #ff715c/#ff7661, org #D6402F/#FF6D4C (creator rgb(255, 113, 92) / rgb(255, 118, 97); org #D6402F / #FF6D4C)"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "#ff7661",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-action-destructive",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 113, 92)",
-                "dark": "rgb(255, 118, 97)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-accent-destructive",
-                "note": "destructive red; creator uses #ff715c/#ff7661, org #D6402F/#FF6D4C (creator rgb(255, 113, 92) / rgb(255, 118, 97); org #D6402F / #FF6D4C)"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "slide": {
-      "badge": {
-        "$value": "rgba(0, 0, 0, 0.8)",
+        "$value": "#D6402F",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-slide-badge",
+            "css": "--cr-color-modeless-destructive",
             "kind": "semantic",
             "status": "declared",
             "rendered": {
-              "light": "rgba(0, 0, 0, 0.8)",
-              "dark": "rgba(0, 0, 0, 0.8)"
+              "light": "#D6402F",
+              "dark": "#D6402F"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 646,
-              "dark": 12
-            }
+              "all": 5
+            },
+            "group": "modeless",
+            "use": "Destructive red that does not change with the theme."
           }
         }
-      }
-    },
-    "device": {
-      "off": {
-        "$value": "#F65F4C",
+      },
+      "teal": {
+        "$value": "#0069D9",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-device-off",
+            "css": "--cr-color-modeless-teal",
             "kind": "semantic",
             "status": "declared",
             "rendered": {
-              "light": "rgb(246, 95, 76)",
-              "dark": "rgb(246, 95, 76)"
+              "light": "#0069D9",
+              "dark": "#0069D9"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 0,
-              "dark": 0
-            }
+              "all": 7
+            },
+            "group": "modeless",
+            "use": "Accent blue that does not change with the theme."
+          }
+        }
+      },
+      "tealOnDark": {
+        "$value": "#3B9BFF",
+        "$type": "color",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-color-modeless-teal-on-dark",
+            "kind": "semantic",
+            "status": "declared",
+            "rendered": {
+              "light": "#3B9BFF",
+              "dark": "#3B9BFF"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 9
+            },
+            "group": "modeless",
+            "use": "The lighter accent for the dark stage and selection rings."
           }
         }
       }
     },
-    "status": {
+    "pending": {
       "live": {
         "$value": "#34C759",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-status-live",
-            "kind": "semantic",
+            "css": "--cr-color-pending-live",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "rgb(52, 199, 89)",
-              "dark": "rgb(52, 199, 89)"
+              "light": "#34C759",
+              "dark": "#34C759"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 0,
-              "dark": 0
-            }
+              "all": 4
+            },
+            "group": "pending",
+            "use": "The green recording and live dot."
           }
         }
       },
       "liveText": {
-        "light": {
-          "$value": "#2FA84F",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-status-live-text",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(47, 168, 79)",
-                "dark": "rgb(76, 212, 112)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
+        "$value": {
+          "light": "#2FA84F",
+          "dark": "#4CD470"
         },
-        "dark": {
-          "$value": "#4CD470",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-status-live-text",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(47, 168, 79)",
-                "dark": "rgb(76, 212, 112)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "liveFill": {
-        "$value": "color-mix(in srgb, var(--cr-color-status-live) 16%, transparent)",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-status-live-fill",
-            "kind": "semantic",
+            "css": "--cr-color-pending-live-text",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "color(srgb 0.203922 0.780392 0.34902 / 0.16)",
-              "dark": "color(srgb 0.203922 0.780392 0.34902 / 0.16)"
+              "light": "#2FA84F",
+              "dark": "#4CD470"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      }
-    },
-    "header": {
-      "ground": {
-        "$value": "color-mix(in srgb, var(--cr-color-mat-hud) 92%, transparent)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-header-ground",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "color(srgb 0.968627 0.968627 0.980392 / 0.905569)",
-              "dark": "color(srgb 0.14902 0.14902 0.164706 / 0.905569)"
+              "all": 2
             },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 4,
-              "dark": 4
-            }
+            "group": "pending",
+            "use": "Live status text."
           }
         }
       },
-      "titleHover": {
-        "light": {
-          "$value": "#ebebeb",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-header-title-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(235, 235, 235)",
-                "dark": "rgb(47, 47, 50)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "#2f2f32",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-header-title-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(235, 235, 235)",
-                "dark": "rgb(47, 47, 50)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "titleBorder": {
-        "light": {
-          "$value": "#e0e0e0",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-header-title-border",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(224, 224, 224)",
-                "dark": "rgb(47, 47, 50)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "#2f2f32",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-header-title-border",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(224, 224, 224)",
-                "dark": "rgb(47, 47, 50)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "historyHover": {
-        "light": {
-          "$value": "#f5f5f5",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-header-history-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(245, 245, 245)",
-                "dark": "rgb(33, 33, 39)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "#212127",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-header-history-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(245, 245, 245)",
-                "dark": "rgb(33, 33, 39)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "splitPicker": {
-      "content": {
-        "$value": "color-mix(in srgb, var(--cr-color-bg-panel) 62%, transparent)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-split-picker-content",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "color(srgb 1 1 1 / 0.62)",
-              "dark": "color(srgb 0.117647 0.117647 0.12549 / 0.62)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "footer": {
-        "$value": "color-mix(in srgb, var(--cr-color-bg-panel) 40%, transparent)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-split-picker-footer",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "color(srgb 1 1 1 / 0.4)",
-              "dark": "color(srgb 0.117647 0.117647 0.12549 / 0.4)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      }
-    },
-    "bg": {
-      "light": {
-        "$value": "var(--cr-color-ground-light-window)",
-        "$type": "color",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-color-bg",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(233, 233, 236)",
-              "dark": "rgb(19, 19, 21)"
-            },
-            "org": {
-              "relation": "differs",
-              "org": "--color-background-primary",
-              "note": "window ground; org is a teal-tinted near-black/#F5F5F5, creator is neutral macOS gray (creator rgb(233, 233, 236) / rgb(19, 19, 21); org #F5F5F5 / #0A0D0E)"
-            },
-            "alias": null,
-            "used": {
-              "light": 4,
-              "dark": 4
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "var(--cr-color-ground-dark-window)",
-        "$type": "color",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-color-bg",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(233, 233, 236)",
-              "dark": "rgb(19, 19, 21)"
-            },
-            "org": {
-              "relation": "differs",
-              "org": "--color-background-primary",
-              "note": "window ground; org is a teal-tinted near-black/#F5F5F5, creator is neutral macOS gray (creator rgb(233, 233, 236) / rgb(19, 19, 21); org #F5F5F5 / #0A0D0E)"
-            },
-            "alias": null,
-            "used": {
-              "light": 4,
-              "dark": 4
-            }
-          }
-        }
-      },
-      "panel": {
-        "light": {
-          "$value": "var(--cr-color-ground-light-surface)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-bg-panel",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 255, 255)",
-                "dark": "rgb(30, 30, 32)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-background-secondary",
-                "note": "content surface (creator rgb(255, 255, 255) / rgb(30, 30, 32); org #FFFFFF / #12181A)"
-              },
-              "alias": null,
-              "used": {
-                "light": 57,
-                "dark": 4
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-ground-dark-surface)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-bg-panel",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 255, 255)",
-                "dark": "rgb(30, 30, 32)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-background-secondary",
-                "note": "content surface (creator rgb(255, 255, 255) / rgb(30, 30, 32); org #FFFFFF / #12181A)"
-              },
-              "alias": null,
-              "used": {
-                "light": 57,
-                "dark": 4
-              }
-            }
-          }
-        }
-      },
-      "subtle": {
-        "light": {
-          "$value": "var(--cr-color-ground-light-recessed)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-bg-subtle",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(241, 241, 244)",
-                "dark": "rgb(37, 37, 40)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-background-tertiary",
-                "note": "recessed well (creator rgb(241, 241, 244) / rgb(37, 37, 40); org #EBEBEB / #1B2326)"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-ground-dark-recessed)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-bg-subtle",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(241, 241, 244)",
-                "dark": "rgb(37, 37, 40)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-background-tertiary",
-                "note": "recessed well (creator rgb(241, 241, 244) / rgb(37, 37, 40); org #EBEBEB / #1B2326)"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "muted": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.05)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-bg-muted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.05)",
-                "dark": "rgba(255, 255, 255, 0.06)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 33,
-                "dark": 18
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.06)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-bg-muted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.05)",
-                "dark": "rgba(255, 255, 255, 0.06)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 33,
-                "dark": 18
-              }
-            }
-          }
-        }
-      },
-      "emphasized": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.10)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-bg-emphasized",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.1)",
-                "dark": "rgba(255, 255, 255, 0.13)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 1375,
-                "dark": 9
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.13)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-bg-emphasized",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.1)",
-                "dark": "rgba(255, 255, 255, 0.13)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 1375,
-                "dark": 9
-              }
-            }
-          }
-        }
-      },
-      "inverted": {
-        "light": {
-          "$value": "var(--cr-color-ground-dark-window)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-bg-inverted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(19, 19, 21)",
-                "dark": "rgb(233, 233, 236)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-ground-light-window)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-bg-inverted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(19, 19, 21)",
-                "dark": "rgb(233, 233, 236)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "content": {
-      "accent": {
+      "highlight": {
         "$value": "#f9df74",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-content-accent",
-            "kind": "semantic",
+            "css": "--cr-color-pending-highlight",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "rgb(249, 223, 116)",
-              "dark": "rgb(249, 223, 116)"
+              "light": "#f9df74",
+              "dark": "#f9df74"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 0,
-              "dark": 0
-            }
+              "all": 1
+            },
+            "group": "pending",
+            "use": "The yellow highlight on a found match."
           }
         }
       },
-      "primary": {
-        "light": {
-          "$value": "var(--cr-color-ink-light-primary)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-content-primary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 0, 0)",
-                "dark": "rgb(255, 255, 255)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-content-primary",
-                "note": "primary ink; creator is pure black/white, org is #000E14 / white (creator rgb(0, 0, 0) / rgb(255, 255, 255); org #000E14 / #FFFFFF)"
-              },
-              "alias": null,
-              "used": {
-                "light": 262,
-                "dark": 281
-              }
-            }
-          }
+      "wireframeTileTop": {
+        "$value": {
+          "light": "#E3E3E3",
+          "dark": "#1C1C1C"
         },
-        "dark": {
-          "$value": "var(--cr-color-ink-dark-primary)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-content-primary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 0, 0)",
-                "dark": "rgb(255, 255, 255)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-content-primary",
-                "note": "primary ink; creator is pure black/white, org is #000E14 / white (creator rgb(0, 0, 0) / rgb(255, 255, 255); org #000E14 / #FFFFFF)"
-              },
-              "alias": null,
-              "used": {
-                "light": 262,
-                "dark": 281
-              }
-            }
-          }
-        }
-      },
-      "secondary": {
-        "light": {
-          "$value": "var(--cr-color-ink-light-secondary)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-content-secondary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(60, 60, 67)",
-                "dark": "rgb(235, 235, 245)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-content-secondary",
-                "note": "secondary ink (creator rgb(60, 60, 67) / rgb(235, 235, 245); org #383D3D / #D2D5D6)"
-              },
-              "alias": null,
-              "used": {
-                "light": 56,
-                "dark": 56
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-ink-dark-secondary)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-content-secondary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(60, 60, 67)",
-                "dark": "rgb(235, 235, 245)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-content-secondary",
-                "note": "secondary ink (creator rgb(60, 60, 67) / rgb(235, 235, 245); org #383D3D / #D2D5D6)"
-              },
-              "alias": null,
-              "used": {
-                "light": 56,
-                "dark": 56
-              }
-            }
-          }
-        }
-      },
-      "tertiary": {
-        "light": {
-          "$value": "var(--cr-color-ink-light-tertiary)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-content-tertiary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(110, 110, 115)",
-                "dark": "rgb(171, 171, 178)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-content-tertiary",
-                "note": "tertiary ink (creator rgb(110, 110, 115) / rgb(171, 171, 178); org #646666 / #B0B1B2)"
-              },
-              "alias": null,
-              "used": {
-                "light": 78,
-                "dark": 78
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-ink-dark-tertiary)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-content-tertiary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(110, 110, 115)",
-                "dark": "rgb(171, 171, 178)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-content-tertiary",
-                "note": "tertiary ink (creator rgb(110, 110, 115) / rgb(171, 171, 178); org #646666 / #B0B1B2)"
-              },
-              "alias": null,
-              "used": {
-                "light": 78,
-                "dark": 78
-              }
-            }
-          }
-        }
-      }
-    },
-    "text": {
-      "1": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.92)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-text-1",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.92)",
-                "dark": "rgba(255, 255, 255, 0.96)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 968,
-                "dark": 1140
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.96)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-text-1",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.92)",
-                "dark": "rgba(255, 255, 255, 0.96)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 968,
-                "dark": 1140
-              }
-            }
-          }
-        }
-      },
-      "2": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.80)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-text-2",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.8)",
-                "dark": "rgba(255, 255, 255, 0.84)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 646,
-                "dark": 634
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.84)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-text-2",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.8)",
-                "dark": "rgba(255, 255, 255, 0.84)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 646,
-                "dark": 634
-              }
-            }
-          }
-        }
-      },
-      "3": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.64)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-text-3",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.64)",
-                "dark": "rgba(255, 255, 255, 0.68)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 440,
-                "dark": 440
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.68)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-text-3",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.64)",
-                "dark": "rgba(255, 255, 255, 0.68)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 440,
-                "dark": 440
-              }
-            }
-          }
-        }
-      },
-      "4": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.50)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-text-4",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.5)",
-                "dark": "rgba(255, 255, 255, 0.54)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 88,
-                "dark": 88
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.54)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-text-4",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.5)",
-                "dark": "rgba(255, 255, 255, 0.54)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 88,
-                "dark": 88
-              }
-            }
-          }
-        }
-      },
-      "5": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.38)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-text-5",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.38)",
-                "dark": "rgba(255, 255, 255, 0.4)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 109,
-                "dark": 109
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.40)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-text-5",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.38)",
-                "dark": "rgba(255, 255, 255, 0.4)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 109,
-                "dark": 109
-              }
-            }
-          }
-        }
-      },
-      "6": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.26)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-text-6",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.26)",
-                "dark": "rgba(255, 255, 255, 0.28)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 2,
-                "dark": 2
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.28)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-text-6",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.26)",
-                "dark": "rgba(255, 255, 255, 0.28)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 2,
-                "dark": 2
-              }
-            }
-          }
-        }
-      }
-    },
-    "fg": {
-      "$value": "var(--cr-color-text-1)",
-      "$type": "color",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-color-fg",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.92)",
-            "dark": "rgba(255, 255, 255, 0.96)"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 968,
-            "dark": 1140
-          }
-        }
-      },
-      "muted": {
-        "$value": "var(--cr-color-text-3)",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-fg-muted",
-            "kind": "semantic",
+            "css": "--cr-color-pending-wireframe-tile-top",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "rgba(0, 0, 0, 0.64)",
-              "dark": "rgba(255, 255, 255, 0.68)"
+              "light": "#E3E3E3",
+              "dark": "#1C1C1C"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 440,
-              "dark": 440
-            }
+              "all": 0
+            },
+            "group": "pending",
+            "use": "A gray in the layout wireframe drawings."
           }
         }
       },
-      "subtle": {
-        "$value": "var(--cr-color-text-4)",
+      "wireframeTileBottom": {
+        "$value": {
+          "light": "#C1C1C1",
+          "dark": "#3E3E3E"
+        },
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-fg-subtle",
-            "kind": "semantic",
+            "css": "--cr-color-pending-wireframe-tile-bottom",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "rgba(0, 0, 0, 0.5)",
-              "dark": "rgba(255, 255, 255, 0.54)"
+              "light": "#C1C1C1",
+              "dark": "#3E3E3E"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 88,
-              "dark": 88
-            }
+              "all": 0
+            },
+            "group": "pending",
+            "use": "A gray in the layout wireframe drawings."
           }
         }
       },
-      "inverted": {
-        "light": {
-          "$value": "rgba(255, 255, 255, 0.96)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-fg-inverted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(255, 255, 255, 0.96)",
-                "dark": "rgba(0, 0, 0, 0.92)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 172,
-                "dark": 0
-              }
-            }
-          }
+      "wireframeFillTop": {
+        "$value": {
+          "light": "#A5A5A5",
+          "dark": "#5A5A5A"
         },
-        "dark": {
-          "$value": "rgba(0, 0, 0, 0.92)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-fg-inverted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(255, 255, 255, 0.96)",
-                "dark": "rgba(0, 0, 0, 0.92)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 172,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "line": {
-      "light": {
-        "$value": "rgba(0, 0, 0, 0.10)",
-        "$type": "color",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-color-line",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.1)",
-              "dark": "rgba(255, 255, 255, 0.1)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 1375,
-              "dark": 1371
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "rgba(255, 255, 255, 0.10)",
-        "$type": "color",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-color-line",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.1)",
-              "dark": "rgba(255, 255, 255, 0.1)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 1375,
-              "dark": 1371
-            }
-          }
-        }
-      },
-      "strong": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.16)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-line-strong",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.16)",
-                "dark": "rgba(255, 255, 255, 0.16)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 8,
-                "dark": 8
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.16)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-line-strong",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.16)",
-                "dark": "rgba(255, 255, 255, 0.16)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 8,
-                "dark": 8
-              }
-            }
-          }
-        }
-      },
-      "strongest": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.30)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-line-strongest",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.3)",
-                "dark": "rgba(255, 255, 255, 0.3)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 1
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.30)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-line-strongest",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.3)",
-                "dark": "rgba(255, 255, 255, 0.3)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "border": {
-      "$value": "var(--cr-color-line)",
-      "$type": "color",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-color-border",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgba(0, 0, 0, 0.1)",
-            "dark": "rgba(255, 255, 255, 0.1)"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "light": 1375,
-            "dark": 1371
-          }
-        }
-      },
-      "muted": {
-        "$value": "var(--cr-color-line)",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-border-muted",
-            "kind": "semantic",
+            "css": "--cr-color-pending-wireframe-fill-top",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "rgba(0, 0, 0, 0.1)",
-              "dark": "rgba(255, 255, 255, 0.1)"
+              "light": "#A5A5A5",
+              "dark": "#5A5A5A"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 1375,
-              "dark": 1371
-            }
+              "all": 0
+            },
+            "group": "pending",
+            "use": "A gray in the layout wireframe drawings."
           }
         }
       },
-      "subtle": {
-        "$value": "var(--cr-color-line)",
+      "wireframeFillBottom": {
+        "$value": {
+          "light": "#BDBDBD",
+          "dark": "#424242"
+        },
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-border-subtle",
-            "kind": "semantic",
+            "css": "--cr-color-pending-wireframe-fill-bottom",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "rgba(0, 0, 0, 0.1)",
-              "dark": "rgba(255, 255, 255, 0.1)"
+              "light": "#BDBDBD",
+              "dark": "#424242"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 1375,
-              "dark": 1371
-            }
+              "all": 0
+            },
+            "group": "pending",
+            "use": "A gray in the layout wireframe drawings."
           }
         }
       },
-      "emphasized": {
-        "$value": "var(--cr-color-line-strong)",
+      "wireframeStrokeTop": {
+        "$value": {
+          "light": "#4D4D4D",
+          "dark": "#B2B2B2"
+        },
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-border-emphasized",
-            "kind": "semantic",
+            "css": "--cr-color-pending-wireframe-stroke-top",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "rgba(0, 0, 0, 0.16)",
-              "dark": "rgba(255, 255, 255, 0.16)"
+              "light": "#4D4D4D",
+              "dark": "#B2B2B2"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 8,
-              "dark": 8
-            }
+              "all": 0
+            },
+            "group": "pending",
+            "use": "A gray in the layout wireframe drawings."
           }
         }
       },
-      "inverted": {
-        "light": {
-          "$value": "rgba(255, 255, 255, 0.10)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-border-inverted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(255, 255, 255, 0.1)",
-                "dark": "rgba(0, 0, 0, 0.1)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
+      "wireframeStrokeBottom": {
+        "$value": {
+          "light": "#ABABAB",
+          "dark": "#545454"
         },
-        "dark": {
-          "$value": "rgba(0, 0, 0, 0.10)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-border-inverted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(255, 255, 255, 0.1)",
-                "dark": "rgba(0, 0, 0, 0.1)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "state": {
-      "dropIndicator": {
-        "$value": "var(--cr-color-accent-solid)",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-state-drop-indicator",
-            "kind": "semantic",
+            "css": "--cr-color-pending-wireframe-stroke-bottom",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "rgb(0, 105, 217)",
-              "dark": "rgb(59, 155, 255)"
+              "light": "#ABABAB",
+              "dark": "#545454"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 15,
-              "dark": 15
-            }
-          }
-        }
-      },
-      "hover": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.055)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-state-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.055)",
-                "dark": "rgba(255, 255, 255, 0.08)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-highlight-secondary",
-                "note": "hover wash; creator 5.5%/8%, org 4%/16% (creator rgba(0, 0, 0, 0.055) / rgba(255, 255, 255, 0.08); org #0000000A / #FFFFFF29)"
-              },
-              "alias": null,
-              "used": {
-                "light": 33,
-                "dark": 21
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.08)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-state-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.055)",
-                "dark": "rgba(255, 255, 255, 0.08)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-highlight-secondary",
-                "note": "hover wash; creator 5.5%/8%, org 4%/16% (creator rgba(0, 0, 0, 0.055) / rgba(255, 255, 255, 0.08); org #0000000A / #FFFFFF29)"
-              },
-              "alias": null,
-              "used": {
-                "light": 33,
-                "dark": 21
-              }
-            }
-          }
-        }
-      },
-      "active": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.10)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-state-active",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.1)",
-                "dark": "rgba(255, 255, 255, 0.13)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-highlight-primary",
-                "note": "active wash; creator 10%/13%, org 8%/8% (creator rgba(0, 0, 0, 0.1) / rgba(255, 255, 255, 0.13); org #00000014 / #FFFFFF14)"
-              },
-              "alias": null,
-              "used": {
-                "light": 1375,
-                "dark": 9
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.13)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-state-active",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.1)",
-                "dark": "rgba(255, 255, 255, 0.13)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-highlight-primary",
-                "note": "active wash; creator 10%/13%, org 8%/8% (creator rgba(0, 0, 0, 0.1) / rgba(255, 255, 255, 0.13); org #00000014 / #FFFFFF14)"
-              },
-              "alias": null,
-              "used": {
-                "light": 1375,
-                "dark": 9
-              }
-            }
-          }
-        }
-      },
-      "activeStrong": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.15)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-state-active-strong",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.15)",
-                "dark": "rgba(255, 255, 255, 0.18)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.18)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-state-active-strong",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.15)",
-                "dark": "rgba(255, 255, 255, 0.18)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "selected": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.15)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-state-selected",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.15)",
-                "dark": "rgba(0, 0, 0, 0.15)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 4
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(0, 0, 0, 0.15)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-state-selected",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.15)",
-                "dark": "rgba(0, 0, 0, 0.15)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 4
-              }
-            }
-          }
-        }
-      }
-    },
-    "dash": {
-      "light": {
-        "$value": "rgba(0, 0, 0, 0.28)",
-        "$type": "color",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-color-dash",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.28)",
-              "dark": "rgba(255, 255, 255, 0.3)"
+              "all": 0
             },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 1,
-              "dark": 1
-            }
+            "group": "pending",
+            "use": "A gray in the layout wireframe drawings."
           }
         }
       },
-      "dark": {
-        "$value": "rgba(255, 255, 255, 0.30)",
-        "$type": "color",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-color-dash",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.28)",
-              "dark": "rgba(255, 255, 255, 0.3)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 1,
-              "dark": 1
-            }
-          }
-        }
-      }
-    },
-    "highlight": {
-      "primary": {
-        "light": {
-          "$value": "#00000012",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-highlight-primary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.07)",
-                "dark": "rgba(255, 255, 255, 0.08)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-highlight-primary",
-                "note": "legacy highlight token (creator rgba(0, 0, 0, 0.07) / rgba(255, 255, 255, 0.08); org #00000014 / #FFFFFF14)"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 21
-              }
-            }
-          }
+      "wireframeLine": {
+        "$value": {
+          "light": "#717171",
+          "dark": "#8E8E8E"
         },
-        "dark": {
-          "$value": "#FFFFFF14",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-highlight-primary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.07)",
-                "dark": "rgba(255, 255, 255, 0.08)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-highlight-primary",
-                "note": "legacy highlight token (creator rgba(0, 0, 0, 0.07) / rgba(255, 255, 255, 0.08); org #00000014 / #FFFFFF14)"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 21
-              }
-            }
-          }
-        }
-      },
-      "secondary": {
-        "light": {
-          "$value": "#0000000A",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-highlight-secondary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.04)",
-                "dark": "rgba(255, 255, 255, 0.04)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-highlight-secondary",
-                "note": "legacy highlight token (creator rgba(0, 0, 0, 0.04) / rgba(255, 255, 255, 0.04); org #0000000A / #FFFFFF29)"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "#FFFFFF0A",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-highlight-secondary",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.04)",
-                "dark": "rgba(255, 255, 255, 0.04)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-highlight-secondary",
-                "note": "legacy highlight token (creator rgba(0, 0, 0, 0.04) / rgba(255, 255, 255, 0.04); org #0000000A / #FFFFFF29)"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "edge": {
-      "out": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.16)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-edge-out",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.16)",
-                "dark": "rgba(0, 0, 0, 0.62)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 8,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(0, 0, 0, 0.62)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-edge-out",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.16)",
-                "dark": "rgba(0, 0, 0, 0.62)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 8,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "in": {
-        "light": {
-          "$value": "rgba(255, 255, 255, 0.75)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-edge-in",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(255, 255, 255, 0.75)",
-                "dark": "rgba(255, 255, 255, 0.1)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 1371
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.10)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-edge-in",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(255, 255, 255, 0.75)",
-                "dark": "rgba(255, 255, 255, 0.1)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 1371
-              }
-            }
-          }
-        }
-      }
-    },
-    "mat": {
-      "menu": {
-        "light": {
-          "$value": "rgba(250, 250, 252, 0.86)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-mat-menu",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(250, 250, 252, 0.86)",
-                "dark": "rgba(44, 44, 48, 0.88)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(44, 44, 48, 0.88)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-mat-menu",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(250, 250, 252, 0.86)",
-                "dark": "rgba(44, 44, 48, 0.88)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "menuSolid": {
-        "light": {
-          "$value": "rgba(250, 250, 252, 0.98)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-mat-menu-solid",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(250, 250, 252, 0.98)",
-                "dark": "rgba(44, 44, 48, 0.97)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(44, 44, 48, 0.97)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-mat-menu-solid",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(250, 250, 252, 0.98)",
-                "dark": "rgba(44, 44, 48, 0.97)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "hud": {
-        "light": {
-          "$value": "rgba(247, 247, 250, 0.985)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-mat-hud",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(247, 247, 250, 0.984)",
-                "dark": "rgba(38, 38, 42, 0.984)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 24,
-                "dark": 24
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(38, 38, 42, 0.985)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-mat-hud",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(247, 247, 250, 0.984)",
-                "dark": "rgba(38, 38, 42, 0.984)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 24,
-                "dark": 24
-              }
-            }
-          }
-        }
-      },
-      "sheet": {
-        "light": {
-          "$value": "rgba(242, 242, 245, 0.99)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-mat-sheet",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(242, 242, 245, 0.99)",
-                "dark": "rgba(34, 34, 38, 0.99)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(34, 34, 38, 0.99)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-mat-sheet",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(242, 242, 245, 0.99)",
-                "dark": "rgba(34, 34, 38, 0.99)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "sidebar": {
-        "light": {
-          "$value": "rgba(239, 239, 243, 0.985)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-mat-sidebar",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(239, 239, 243, 0.984)",
-                "dark": "rgba(28, 28, 32, 0.984)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(28, 28, 32, 0.985)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-mat-sidebar",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(239, 239, 243, 0.984)",
-                "dark": "rgba(28, 28, 32, 0.984)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "scrim": {
-      "light": {
-        "$value": "rgba(250, 250, 252, 0.86)",
-        "$type": "color",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-color-scrim",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(250, 250, 252, 0.86)",
-              "dark": "rgba(30, 30, 34, 0.88)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "rgba(30, 30, 34, 0.88)",
-        "$type": "color",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-color-scrim",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(250, 250, 252, 0.86)",
-              "dark": "rgba(30, 30, 34, 0.88)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "modal": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.60)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-scrim-modal",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.6)",
-                "dark": "rgba(0, 0, 0, 0.6)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(0, 0, 0, 0.60)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-scrim-modal",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.6)",
-                "dark": "rgba(0, 0, 0, 0.6)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      }
-    },
-    "overlay": {
-      "light": {
-        "$value": "#00000073",
-        "$type": "color",
-        "$extensions": {
-          "mode": "light",
-          "creator": {
-            "css": "--cr-color-overlay",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.45)",
-              "dark": "rgba(0, 0, 0, 0.62)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "dark": {
-        "$value": "rgba(0, 0, 0, 0.62)",
-        "$type": "color",
-        "$extensions": {
-          "mode": "dark",
-          "creator": {
-            "css": "--cr-color-overlay",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.45)",
-              "dark": "rgba(0, 0, 0, 0.62)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      }
-    },
-    "surface": {
-      "raised": {
-        "$value": "var(--cr-color-mat-menu)",
         "$type": "color",
         "$extensions": {
           "creator": {
-            "css": "--cr-color-surface-raised",
-            "kind": "semantic",
+            "css": "--cr-color-pending-wireframe-line",
+            "kind": "pending",
             "status": "declared",
             "rendered": {
-              "light": "rgba(250, 250, 252, 0.86)",
-              "dark": "rgba(44, 44, 48, 0.88)"
+              "light": "#717171",
+              "dark": "#8E8E8E"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
-              "light": 0,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "inset": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.05)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-surface-inset",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.05)",
-                "dark": "rgba(255, 255, 255, 0.06)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 33,
-                "dark": 18
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.06)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-surface-inset",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.05)",
-                "dark": "rgba(255, 255, 255, 0.06)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 33,
-                "dark": 18
-              }
-            }
-          }
-        }
-      }
-    },
-    "wire": {
-      "1": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.09)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-wire-1",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.09)",
-                "dark": "rgba(255, 255, 255, 0.1)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 1371
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.10)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-wire-1",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.09)",
-                "dark": "rgba(255, 255, 255, 0.1)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 1371
-              }
-            }
-          }
-        }
-      },
-      "2": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.20)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-wire-2",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.2)",
-                "dark": "rgba(255, 255, 255, 0.22)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.22)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-wire-2",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.2)",
-                "dark": "rgba(255, 255, 255, 0.22)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "3": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.34)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-wire-3",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.34)",
-                "dark": "rgba(255, 255, 255, 0.38)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.38)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-wire-3",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.34)",
-                "dark": "rgba(255, 255, 255, 0.38)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "void": {
-        "light": {
-          "$value": "rgba(0, 0, 0, 0.045)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-wire-void",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.043)",
-                "dark": "rgba(255, 255, 255, 0.05)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 4
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "rgba(255, 255, 255, 0.05)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-wire-void",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgba(0, 0, 0, 0.043)",
-                "dark": "rgba(255, 255, 255, 0.05)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 4,
-                "dark": 4
-              }
-            }
-          }
-        }
-      }
-    },
-    "accent": {
-      "solid": {
-        "light": {
-          "$value": "var(--cr-color-system-blue-light)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-accent-solid",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 105, 217)",
-                "dark": "rgb(59, 155, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "org accent is teal (#79DDE8 / #1A7580); creator's selection accent is macOS system blue, spent only on selection, focus and on"
-              },
-              "alias": null,
-              "used": {
-                "light": 15,
-                "dark": 15
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-system-blue-dark)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-accent-solid",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 105, 217)",
-                "dark": "rgb(59, 155, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "org accent is teal (#79DDE8 / #1A7580); creator's selection accent is macOS system blue, spent only on selection, focus and on"
-              },
-              "alias": null,
-              "used": {
-                "light": 15,
-                "dark": 15
-              }
-            }
-          }
-        }
-      },
-      "hover": {
-        "light": {
-          "$value": "var(--cr-color-system-blue-light-hover)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-accent-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 89, 184)",
-                "dark": "rgb(87, 172, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-system-blue-dark-hover)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-accent-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 89, 184)",
-                "dark": "rgb(87, 172, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "contrast": {
-        "light": {
-          "$value": "var(--cr-color-system-blue-on-light)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-accent-contrast",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 255, 255)",
-                "dark": "rgb(8, 18, 28)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 57,
-                "dark": 28
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-system-blue-on-dark)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-accent-contrast",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(255, 255, 255)",
-                "dark": "rgb(8, 18, 28)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 57,
-                "dark": 28
-              }
-            }
-          }
-        }
-      },
-      "fg": {
-        "light": {
-          "$value": "var(--cr-color-system-blue-light)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-accent-fg",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 105, 217)",
-                "dark": "rgb(59, 155, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 15,
-                "dark": 15
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-system-blue-dark)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-accent-fg",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 105, 217)",
-                "dark": "rgb(59, 155, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 15,
-                "dark": 15
-              }
-            }
-          }
-        }
-      },
-      "subtle": {
-        "light": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-blue-light) 12%, transparent)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-accent-subtle",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0 0.411765 0.85098 / 0.12)",
-                "dark": "color(srgb 0.231373 0.607843 1 / 0.14)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-blue-dark) 14%, transparent)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-accent-subtle",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0 0.411765 0.85098 / 0.12)",
-                "dark": "color(srgb 0.231373 0.607843 1 / 0.14)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "muted": {
-        "light": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-blue-light) 22%, transparent)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-accent-muted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0 0.411765 0.85098 / 0.22)",
-                "dark": "color(srgb 0.231373 0.607843 1 / 0.26)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-blue-dark) 26%, transparent)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-accent-muted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0 0.411765 0.85098 / 0.22)",
-                "dark": "color(srgb 0.231373 0.607843 1 / 0.26)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "emphasized": {
-        "light": {
-          "$value": "var(--cr-color-system-blue-light-hover)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-accent-emphasized",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 89, 184)",
-                "dark": "rgb(87, 172, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-system-blue-dark-hover)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-accent-emphasized",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 89, 184)",
-                "dark": "rgb(87, 172, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "focusRing": {
-        "light": {
-          "$value": "var(--cr-color-system-blue-light)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-accent-focus-ring",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 105, 217)",
-                "dark": "rgb(59, 155, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 15,
-                "dark": 15
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-system-blue-dark)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-accent-focus-ring",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(0, 105, 217)",
-                "dark": "rgb(59, 155, 255)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 15,
-                "dark": 15
-              }
-            }
-          }
-        }
-      }
-    },
-    "danger": {
-      "solid": {
-        "light": {
-          "$value": "var(--cr-color-system-red-light)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-danger-solid",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(215, 0, 21)",
-                "dark": "rgb(255, 79, 66)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-accent-destructive",
-                "note": "system red for recording/destruction; org destructive is warmer (creator rgb(215, 0, 21) / rgb(255, 79, 66); org #D6402F / #FF6D4C)"
-              },
-              "alias": null,
-              "used": {
-                "light": 32,
-                "dark": 32
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-system-red-dark)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-danger-solid",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(215, 0, 21)",
-                "dark": "rgb(255, 79, 66)"
-              },
-              "org": {
-                "relation": "differs",
-                "org": "--color-accent-destructive",
-                "note": "system red for recording/destruction; org destructive is warmer (creator rgb(215, 0, 21) / rgb(255, 79, 66); org #D6402F / #FF6D4C)"
-              },
-              "alias": null,
-              "used": {
-                "light": 32,
-                "dark": 32
-              }
-            }
-          }
-        }
-      },
-      "hover": {
-        "light": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-red-light) 88%, black)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-danger-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0.741961 0 0.0724706)",
-                "dark": "color(srgb 1 0.392627 0.347765)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-red-dark) 88%, white)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-danger-hover",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0.741961 0 0.0724706)",
-                "dark": "color(srgb 1 0.392627 0.347765)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "contrast": {
-        "$value": "#FFFFFF",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-danger-contrast",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(255, 255, 255)",
-              "dark": "rgb(255, 255, 255)"
+              "all": 0
             },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 57,
-              "dark": 281
-            }
-          }
-        }
-      },
-      "fg": {
-        "light": {
-          "$value": "var(--cr-color-system-red-light)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-danger-fg",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(215, 0, 21)",
-                "dark": "rgb(255, 79, 66)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 32,
-                "dark": 32
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-system-red-dark)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-danger-fg",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(215, 0, 21)",
-                "dark": "rgb(255, 79, 66)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 32,
-                "dark": 32
-              }
-            }
-          }
-        }
-      },
-      "subtle": {
-        "light": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-red-light) 12%, transparent)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-danger-subtle",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0.843137 0 0.0823529 / 0.12)",
-                "dark": "color(srgb 1 0.309804 0.258824 / 0.14)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-red-dark) 14%, transparent)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-danger-subtle",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0.843137 0 0.0823529 / 0.12)",
-                "dark": "color(srgb 1 0.309804 0.258824 / 0.14)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "muted": {
-        "light": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-red-light) 22%, transparent)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-danger-muted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0.843137 0 0.0823529 / 0.22)",
-                "dark": "color(srgb 1 0.309804 0.258824 / 0.26)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-red-dark) 26%, transparent)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-danger-muted",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0.843137 0 0.0823529 / 0.22)",
-                "dark": "color(srgb 1 0.309804 0.258824 / 0.26)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "emphasized": {
-        "light": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-red-light) 88%, black)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-danger-emphasized",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0.741961 0 0.0724706)",
-                "dark": "color(srgb 1 0.392627 0.347765)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "color-mix(in srgb, var(--cr-color-system-red-dark) 88%, white)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-danger-emphasized",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "color(srgb 0.741961 0 0.0724706)",
-                "dark": "color(srgb 1 0.392627 0.347765)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 0,
-                "dark": 0
-              }
-            }
-          }
-        }
-      },
-      "focusRing": {
-        "light": {
-          "$value": "var(--cr-color-system-red-light)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "light",
-            "creator": {
-              "css": "--cr-color-danger-focus-ring",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(215, 0, 21)",
-                "dark": "rgb(255, 79, 66)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 32,
-                "dark": 32
-              }
-            }
-          }
-        },
-        "dark": {
-          "$value": "var(--cr-color-system-red-dark)",
-          "$type": "color",
-          "$extensions": {
-            "mode": "dark",
-            "creator": {
-              "css": "--cr-color-danger-focus-ring",
-              "kind": "semantic",
-              "status": "declared",
-              "rendered": {
-                "light": "rgb(215, 0, 21)",
-                "dark": "rgb(255, 79, 66)"
-              },
-              "org": {
-                "relation": "creator-only",
-                "note": "no counterpart in airtime-design-system tokens"
-              },
-              "alias": null,
-              "used": {
-                "light": 32,
-                "dark": 32
-              }
-            }
-          }
-        }
-      }
-    },
-    "gray": {
-      "solid": {
-        "$value": "var(--cr-color-text-1)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-gray-solid",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.92)",
-              "dark": "rgba(255, 255, 255, 0.96)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 968,
-              "dark": 1140
-            }
-          }
-        }
-      },
-      "hover": {
-        "$value": "var(--cr-color-text-2)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-gray-hover",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.8)",
-              "dark": "rgba(255, 255, 255, 0.84)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 646,
-              "dark": 634
-            }
-          }
-        }
-      },
-      "contrast": {
-        "$value": "var(--cr-color-bg-panel)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-gray-contrast",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(255, 255, 255)",
-              "dark": "rgb(30, 30, 32)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 57,
-              "dark": 4
-            }
-          }
-        }
-      },
-      "fg": {
-        "$value": "var(--cr-color-text-1)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-gray-fg",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.92)",
-              "dark": "rgba(255, 255, 255, 0.96)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 968,
-              "dark": 1140
-            }
-          }
-        }
-      },
-      "subtle": {
-        "$value": "var(--cr-color-state-hover)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-gray-subtle",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.055)",
-              "dark": "rgba(255, 255, 255, 0.08)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 33,
-              "dark": 21
-            }
-          }
-        }
-      },
-      "muted": {
-        "$value": "var(--cr-color-state-active)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-gray-muted",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.1)",
-              "dark": "rgba(255, 255, 255, 0.13)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 1375,
-              "dark": 9
-            }
-          }
-        }
-      },
-      "emphasized": {
-        "$value": "var(--cr-color-state-active-strong)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-gray-emphasized",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgba(0, 0, 0, 0.15)",
-              "dark": "rgba(255, 255, 255, 0.18)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 4,
-              "dark": 0
-            }
-          }
-        }
-      },
-      "focusRing": {
-        "$value": "var(--cr-color-accent-solid)",
-        "$type": "color",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-color-gray-focus-ring",
-            "kind": "semantic",
-            "status": "declared",
-            "rendered": {
-              "light": "rgb(0, 105, 217)",
-              "dark": "rgb(59, 155, 255)"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no counterpart in airtime-design-system tokens"
-            },
-            "alias": null,
-            "used": {
-              "light": 15,
-              "dark": 15
-            }
-          }
-        }
-      }
-    },
-    "focusRing": {
-      "$value": "var(--cr-color-accent-solid)",
-      "$type": "color",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-color-focus-ring",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "rgb(0, 105, 217)",
-            "dark": "rgb(59, 155, 255)"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "org has no focus-ring color token"
-          },
-          "alias": null,
-          "used": {
-            "light": 15,
-            "dark": 15
+            "group": "pending",
+            "use": "A gray in the layout wireframe drawings."
           }
         }
       }

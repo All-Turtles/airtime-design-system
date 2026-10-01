@@ -25,9 +25,7 @@ export function valTip(c) {
   return `<div class="cs-tip-h">${nf(c.distinct)} distinct values</div><p class="cs-tip-s">${rule()}</p><p class="cs-tip-s">Each row is one light and dark value (left half light, right half dark) and the color names that share it. Aliases count as the color they point to.</p>
   <ul class="cs-groups">${c.groups.map((g) => `<li>${pairSw(g)}<span class="cs-gv">${esc(K.hex(g.light))}${g.light === g.dark ? "" : " / " + esc(K.hex(g.dark))}</span><span class="cs-gn">${g.names.map(code).join(" ")}</span></li>`).join("")}</ul>`;
 }
-let cardN = null;
-export const setCards = (n) => { cardN = n; };
-const rule = () => `Definitions count every raw and semantic token; distinct values count unique light and dark pairs among semantic tokens; the audit cards below group raw swatches too${cardN ? ` (${nf(cardN)})` : ""}.`;
+const rule = () => `Definitions count every raw and semantic token; distinct values count unique light and dark pairs among semantic tokens, with aliases resolved.`;
 export const hasLists = (c) => !!c && Array.isArray(c.raw) && Array.isArray(c.groups);
 
 /* one big number, optionally with its list */
@@ -36,7 +34,7 @@ export const valNum = (c) => (hasLists(c) ? tipWrap(`<b>${nf(c.distinct)}</b>`, 
 
 /* the pair, always together: two lines */
 export const pair = (c, { small = true } = {}) => `<span class="cs-line">${defNum(c)} definitions</span><span class="cs-line cs-2nd">${valNum(c)} distinct values</span>${small && hasLists(c) ? `<span class="cs-line cs-bd">${breakdownText(c)}</span>` : ""}`;
-/* the pair on one line, for the audit strip */
+/* the pair on one line */
 export const inline = (c) => `${defNum(c)} definitions, ${valNum(c)} distinct values`;
 
 export const state = (T, k) => T.states?.[k] ?? null;
@@ -63,11 +61,4 @@ export function colorChip(T) {
   const c = T.states.dev.colors, t = T.states.target?.colors;
   const atTarget = t && t.definitions === c.definitions && t.distinct === c.distinct;
   return `<span class="cs-chip">${pair(c, { small: false })}${t ? `<small class="cs-line">${atTarget ? "at its target" : `target ${nf(t.distinct)} colors`}</small>` : ""}</span>`;
-}
-/* the today / proposed pair for the audit strip and the consolidation section */
-export function todayProposed(T) {
-  const a = T.states.dev.colors, b = T.states.target?.colors;
-  const box = (label, c, cls) => `<div class="cs-box ${cls}"><em>${label}</em>${pair(c)}</div>`;
-  const same = b && b.definitions === a.definitions && b.distinct === a.distinct;
-  return `<div class="cs-pairs">${box("On dev today", a, "")}${b && !same ? box("Next proposed step", b, "is-target") : ""}</div>`;
 }

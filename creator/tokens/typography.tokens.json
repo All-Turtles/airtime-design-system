@@ -11,16 +11,16 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "dark": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+            "light": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            "dark": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif"
           },
           "org": {
-            "relation": "differs",
-            "org": "--font-family-primary",
-            "note": "system stack; creator puts SF Pro Text/Display before Helvetica, org starts with -apple-system, 'SF Pro', 'Segoe UI', Roboto (creator -apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif; org -apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif)"
+            "relation": "differs"
           },
           "alias": null,
-          "used": null
+          "used": {
+            "all": 20
+          }
         }
       }
     },
@@ -33,16 +33,16 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "dark": "-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+            "light": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            "dark": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif"
           },
           "org": {
-            "relation": "differs",
-            "org": "--font-family-primary",
-            "note": "same stack as body (creator -apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif; org -apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif)"
+            "relation": "differs"
           },
           "alias": null,
-          "used": null
+          "used": {
+            "all": 0
+          }
         }
       }
     },
@@ -55,15 +55,16 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "ui-monospace,'SF Mono',Menlo,monospace",
-            "dark": "ui-monospace,'SF Mono',Menlo,monospace"
+            "light": "ui-monospace, 'SF Mono', Menlo, monospace",
+            "dark": "ui-monospace, 'SF Mono', Menlo, monospace"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
-          "used": null
+          "used": {
+            "all": 9
+          }
         }
       }
     }
@@ -82,12 +83,11 @@
             "dark": "9px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org font-size token has value 9px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 10
+            "all": 1
           }
         }
       }
@@ -105,12 +105,11 @@
             "dark": "10px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org font-size token has value 10px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 92
+            "all": 13
           }
         }
       }
@@ -128,13 +127,11 @@
             "dark": "11px"
           },
           "org": {
-            "relation": "same",
-            "org": "--font-size-body-small",
-            "note": "value 11px equals org --font-size-body-small"
+            "relation": "same"
           },
           "alias": "--font-size-body-small",
           "used": {
-            "all": 80
+            "all": 17
           }
         }
       }
@@ -152,13 +149,11 @@
             "dark": "12px"
           },
           "org": {
-            "relation": "same",
-            "org": "--font-size-heading-small",
-            "note": "value 12px equals org --font-size-heading-small"
+            "relation": "same"
           },
           "alias": "--font-size-heading-small",
           "used": {
-            "all": 1194
+            "all": 0
           }
         }
       }
@@ -176,18 +171,17 @@
             "dark": "13px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org font-size token has value 13px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 1304
+            "all": 24
           }
         }
       }
     },
     "lg": {
-      "$value": "17px",
+      "$value": "16px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
@@ -195,14 +189,81 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "17px",
-            "dark": "17px"
+            "light": "16px",
+            "dark": "16px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org font-size token has value 17px"
+            "relation": "creator-only"
           },
           "alias": null,
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    }
+  },
+  "font-weight": {
+    "medium": {
+      "$value": "500",
+      "$type": "fontWeight",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-font-weight-medium",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "500",
+            "dark": "500"
+          },
+          "org": {
+            "relation": "same"
+          },
+          "alias": "--font-weight-medium",
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "normal": {
+      "$value": "400",
+      "$type": "fontWeight",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-font-weight-normal",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "400",
+            "dark": "400"
+          },
+          "org": {
+            "relation": "same"
+          },
+          "alias": "--font-weight-regular",
+          "used": {
+            "all": 0
+          }
+        }
+      }
+    },
+    "semibold": {
+      "$value": "600",
+      "$type": "fontWeight",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-font-weight-semibold",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "600",
+            "dark": "600"
+          },
+          "org": {
+            "relation": "same"
+          },
+          "alias": "--font-weight-semibold",
           "used": {
             "all": 0
           }
@@ -224,11 +285,12 @@
             "dark": "1.15"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
-          "used": null
+          "used": {
+            "all": 3
+          }
         }
       }
     }
@@ -247,133 +309,11 @@
             "dark": "0.055em"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "selectionLabel": {
-      "$value": "0.04em",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-letter-spacing-selection-label",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "0.04em",
-            "dark": "0.04em"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    }
-  },
-  "font-weight": {
-    "bold": {
-      "$value": "700",
-      "$type": "fontWeight",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-font-weight-bold",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "700",
-            "dark": "700"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--font-weight-bold",
-            "note": "value 700 equals org --font-weight-bold"
-          },
-          "alias": "--font-weight-bold",
-          "used": {
-            "all": 2
-          }
-        }
-      }
-    },
-    "medium": {
-      "$value": "500",
-      "$type": "fontWeight",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-font-weight-medium",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "500",
-            "dark": "500"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--font-weight-medium",
-            "note": "value 500 equals org --font-weight-medium"
-          },
-          "alias": "--font-weight-medium",
-          "used": {
-            "all": 588
-          }
-        }
-      }
-    },
-    "normal": {
-      "$value": "400",
-      "$type": "fontWeight",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-font-weight-normal",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "400",
-            "dark": "400"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--font-weight-regular",
-            "note": "value 400 equals org --font-weight-regular"
-          },
-          "alias": "--font-weight-regular",
-          "used": {
-            "all": 2356
-          }
-        }
-      }
-    },
-    "semibold": {
-      "$value": "600",
-      "$type": "fontWeight",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-font-weight-semibold",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "600",
-            "dark": "600"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--font-weight-semibold",
-            "note": "value 600 equals org --font-weight-semibold"
-          },
-          "alias": "--font-weight-semibold",
-          "used": {
-            "all": 46
+            "all": 4
           }
         }
       }

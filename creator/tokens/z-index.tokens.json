@@ -3,7 +3,7 @@
   "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "z": {
     "stage": {
-      "$value": "1",
+      "$value": 1,
       "$type": "number",
       "$extensions": {
         "creator": {
@@ -15,18 +15,17 @@
             "dark": "1"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org z token has value 1"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 68
+            "all": 0
           }
         }
       }
     },
     "stageBand": {
-      "$value": "12",
+      "$value": 12,
       "$type": "number",
       "$extensions": {
         "creator": {
@@ -38,18 +37,17 @@
             "dark": "12"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org z token has value 12"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 8
+            "all": 0
           }
         }
       }
     },
     "stageControls": {
-      "$value": "13",
+      "$value": 13,
       "$type": "number",
       "$extensions": {
         "creator": {
@@ -61,18 +59,17 @@
             "dark": "13"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org z token has value 13"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 8
+            "all": 0
           }
         }
       }
     },
     "tray": {
-      "$value": "15",
+      "$value": 15,
       "$type": "number",
       "$extensions": {
         "creator": {
@@ -84,18 +81,17 @@
             "dark": "15"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org z token has value 15"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 8
+            "all": 0
           }
         }
       }
     },
     "topBar": {
-      "$value": "20",
+      "$value": 20,
       "$type": "number",
       "$extensions": {
         "creator": {
@@ -107,12 +103,11 @@
             "dark": "20"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org z token has value 20"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 8
+            "all": 1
           }
         }
       }

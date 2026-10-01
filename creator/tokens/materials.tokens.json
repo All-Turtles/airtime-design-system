@@ -2,68 +2,47 @@
   "$name": "Creator - materials",
   "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "blur": {
-    "selectionBar": {
-      "$value": "28px",
+    "small": {
+      "$value": "8px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
-          "css": "--cr-blur-selection-bar",
+          "css": "--cr-blur-small",
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "28px",
-            "dark": "28px"
+            "light": "8px",
+            "dark": "8px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
-          "used": null
+          "used": {
+            "all": 6
+          }
         }
       }
     },
-    "selectionMenu": {
-      "$value": "34px",
+    "large": {
+      "$value": "32px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
-          "css": "--cr-blur-selection-menu",
+          "css": "--cr-blur-large",
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "34px",
-            "dark": "34px"
+            "light": "32px",
+            "dark": "32px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
+            "relation": "creator-only"
           },
           "alias": null,
-          "used": null
-        }
-      }
-    }
-  },
-  "gradient": {
-    "window": {
-      "$value": "linear-gradient(180deg, color-mix(in srgb, var(--cr-color-bg) 88%, var(--cr-color-content-primary)) 0%, var(--cr-color-bg) 34%, color-mix(in srgb, var(--cr-color-bg) 96%, var(--cr-color-content-primary)) 100%)",
-      "$type": "gradient",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-gradient-window",
-          "kind": "semantic",
-          "status": "declared",
-          "rendered": {
-            "light": "linear-gradient(180deg, color-mix(in srgb, #E9E9EC 88%, #000000) 0%, #E9E9EC 34%, color-mix(in srgb, #E9E9EC 96%, #000000) 100%)",
-            "dark": "linear-gradient(180deg, color-mix(in srgb, #131315 88%, #FFFFFF) 0%, #131315 34%, color-mix(in srgb, #131315 96%, #FFFFFF) 100%)"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no counterpart in airtime-design-system tokens"
-          },
-          "alias": null,
-          "used": null
+          "used": {
+            "all": 8
+          }
         }
       }
     }

@@ -2,6 +2,28 @@
   "$name": "Creator - spacing",
   "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "space": {
+    "gutter": {
+      "$value": "16px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-space-gutter",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "16px",
+            "dark": "16px"
+          },
+          "org": {
+            "relation": "same"
+          },
+          "alias": null,
+          "used": {
+            "all": 2
+          }
+        }
+      }
+    },
     "0": {
       "5": {
         "$value": "2px",
@@ -10,48 +32,43 @@
           "creator": {
             "css": "--cr-space-0-5",
             "kind": "primitive",
-            "status": "default",
+            "status": "declared",
             "rendered": {
               "light": "2px",
               "dark": "2px"
             },
             "org": {
-              "relation": "same",
-              "org": "--space-05",
-              "note": "value 2px equals org --space-05"
-            },
-            "alias": "--space-05",
-            "used": {
-              "all": 166
-            }
-          }
-        }
-      },
-      "75": {
-        "$value": "3px",
-        "$type": "dimension",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-space-0-75",
-            "kind": "primitive",
-            "status": "declared",
-            "rendered": {
-              "light": "3px",
-              "dark": "3px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no org space token has value 3px"
+              "relation": "same"
             },
             "alias": null,
             "used": {
-              "all": 72
+              "all": 21
             }
           }
         }
       }
     },
     "1": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-space-1",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "4px",
+            "dark": "4px"
+          },
+          "org": {
+            "relation": "same"
+          },
+          "alias": null,
+          "used": {
+            "all": 57
+          }
+        }
+      },
       "5": {
         "$value": "6px",
         "$type": "dimension",
@@ -59,47 +76,43 @@
           "creator": {
             "css": "--cr-space-1-5",
             "kind": "primitive",
-            "status": "default",
+            "status": "declared",
             "rendered": {
               "light": "6px",
               "dark": "6px"
             },
             "org": {
-              "relation": "same",
-              "org": "--space-15",
-              "note": "value 6px equals org --space-15"
+              "relation": "same"
             },
-            "alias": "--space-15",
+            "alias": null,
             "used": {
-              "all": 414
+              "all": 43
             }
-          }
-        }
-      },
-      "$value": "4px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-1",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "4px",
-            "dark": "4px"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--space-10",
-            "note": "value 4px equals org --space-10"
-          },
-          "alias": "--space-10",
-          "used": {
-            "all": 368
           }
         }
       }
     },
     "2": {
+      "$value": "8px",
+      "$type": "dimension",
+      "$extensions": {
+        "creator": {
+          "css": "--cr-space-2",
+          "kind": "primitive",
+          "status": "declared",
+          "rendered": {
+            "light": "8px",
+            "dark": "8px"
+          },
+          "org": {
+            "relation": "same"
+          },
+          "alias": null,
+          "used": {
+            "all": 54
+          }
+        }
+      },
       "5": {
         "$value": "10px",
         "$type": "dimension",
@@ -107,61 +120,13 @@
           "creator": {
             "css": "--cr-space-2-5",
             "kind": "primitive",
-            "status": "default",
+            "status": "declared",
             "rendered": {
               "light": "10px",
               "dark": "10px"
             },
             "org": {
-              "relation": "creator-only",
-              "note": "no org space token has value 10px"
-            },
-            "alias": null,
-            "used": {
-              "all": 30
-            }
-          }
-        }
-      },
-      "$value": "8px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-2",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "8px",
-            "dark": "8px"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--space-20",
-            "note": "value 8px equals org --space-20"
-          },
-          "alias": "--space-20",
-          "used": {
-            "all": 346
-          }
-        }
-      }
-    },
-    "3": {
-      "5": {
-        "$value": "14px",
-        "$type": "dimension",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-space-3-5",
-            "kind": "primitive",
-            "status": "default",
-            "rendered": {
-              "light": "14px",
-              "dark": "14px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no org space token has value 14px"
+              "relation": "creator-only"
             },
             "alias": null,
             "used": {
@@ -169,73 +134,70 @@
             }
           }
         }
-      },
+      }
+    },
+    "3": {
       "$value": "12px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
           "css": "--cr-space-3",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "12px",
             "dark": "12px"
           },
           "org": {
-            "relation": "same",
-            "org": "--space-30",
-            "note": "value 12px equals org --space-30"
+            "relation": "same"
           },
-          "alias": "--space-30",
+          "alias": null,
           "used": {
-            "all": 126
+            "all": 24
+          }
+        }
+      },
+      "5": {
+        "$value": "14px",
+        "$type": "dimension",
+        "$extensions": {
+          "creator": {
+            "css": "--cr-space-3-5",
+            "kind": "primitive",
+            "status": "declared",
+            "rendered": {
+              "light": "14px",
+              "dark": "14px"
+            },
+            "org": {
+              "relation": "creator-only"
+            },
+            "alias": null,
+            "used": {
+              "all": 4
+            }
           }
         }
       }
     },
     "4": {
-      "5": {
-        "$value": "18px",
-        "$type": "dimension",
-        "$extensions": {
-          "creator": {
-            "css": "--cr-space-4-5",
-            "kind": "primitive",
-            "status": "default",
-            "rendered": {
-              "light": "18px",
-              "dark": "18px"
-            },
-            "org": {
-              "relation": "creator-only",
-              "note": "no org space token has value 18px"
-            },
-            "alias": null,
-            "used": {
-              "all": 6
-            }
-          }
-        }
-      },
       "$value": "16px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
           "css": "--cr-space-4",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "16px",
             "dark": "16px"
           },
           "org": {
-            "relation": "same",
-            "org": "--space-40",
-            "note": "value 16px equals org --space-40"
+            "relation": "same"
           },
-          "alias": "--space-40",
+          "alias": null,
           "used": {
-            "all": 154
+            "all": 22
           }
         }
       }
@@ -247,18 +209,17 @@
         "creator": {
           "css": "--cr-space-5",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "20px",
             "dark": "20px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 20px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 8
+            "all": 10
           }
         }
       }
@@ -270,19 +231,17 @@
         "creator": {
           "css": "--cr-space-6",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "24px",
             "dark": "24px"
           },
           "org": {
-            "relation": "same",
-            "org": "--space-60",
-            "note": "value 24px equals org --space-60"
+            "relation": "same"
           },
-          "alias": "--space-60",
+          "alias": null,
           "used": {
-            "all": 0
+            "all": 11
           }
         }
       }
@@ -294,18 +253,17 @@
         "creator": {
           "css": "--cr-space-7",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "28px",
             "dark": "28px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 28px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 0
+            "all": 1
           }
         }
       }
@@ -317,19 +275,17 @@
         "creator": {
           "css": "--cr-space-8",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "32px",
             "dark": "32px"
           },
           "org": {
-            "relation": "same",
-            "org": "--space-80",
-            "note": "value 32px equals org --space-80"
+            "relation": "same"
           },
-          "alias": "--space-80",
+          "alias": null,
           "used": {
-            "all": 16
+            "all": 1
           }
         }
       }
@@ -341,14 +297,13 @@
         "creator": {
           "css": "--cr-space-9",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "36px",
             "dark": "36px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 36px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
@@ -364,19 +319,17 @@
         "creator": {
           "css": "--cr-space-10",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "40px",
             "dark": "40px"
           },
           "org": {
-            "relation": "same",
-            "org": "--space-100",
-            "note": "value 40px equals org --space-100"
+            "relation": "same"
           },
-          "alias": "--space-100",
+          "alias": null,
           "used": {
-            "all": 16
+            "all": 2
           }
         }
       }
@@ -388,18 +341,17 @@
         "creator": {
           "css": "--cr-space-11",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "44px",
             "dark": "44px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 44px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 0
+            "all": 1
           }
         }
       }
@@ -411,18 +363,17 @@
         "creator": {
           "css": "--cr-space-12",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "48px",
             "dark": "48px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 48px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 8
+            "all": 1
           }
         }
       }
@@ -434,18 +385,17 @@
         "creator": {
           "css": "--cr-space-14",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "56px",
             "dark": "56px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 56px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 0
+            "all": 3
           }
         }
       }
@@ -457,318 +407,17 @@
         "creator": {
           "css": "--cr-space-16",
           "kind": "primitive",
-          "status": "default",
+          "status": "declared",
           "rendered": {
             "light": "64px",
             "dark": "64px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 64px"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "20": {
-      "$value": "80px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-20",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "80px",
-            "dark": "80px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 80px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "24": {
-      "$value": "96px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-24",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "96px",
-            "dark": "96px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 96px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "28": {
-      "$value": "112px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-28",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "112px",
-            "dark": "112px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 112px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "32": {
-      "$value": "128px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-32",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "128px",
-            "dark": "128px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 128px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "36": {
-      "$value": "144px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-36",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "144px",
-            "dark": "144px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 144px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "40": {
-      "$value": "160px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-40",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "160px",
-            "dark": "160px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 160px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "44": {
-      "$value": "176px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-44",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "176px",
-            "dark": "176px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 176px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "48": {
-      "$value": "192px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-48",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "192px",
-            "dark": "192px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 192px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "52": {
-      "$value": "208px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-52",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "208px",
-            "dark": "208px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 208px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "56": {
-      "$value": "224px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-56",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "224px",
-            "dark": "224px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 224px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "60": {
-      "$value": "240px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-60",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "240px",
-            "dark": "240px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 240px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "64": {
-      "$value": "256px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-64",
-          "kind": "primitive",
-          "status": "default",
-          "rendered": {
-            "light": "256px",
-            "dark": "256px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org space token has value 256px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "gutter": {
-      "$value": "16px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-space-gutter",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "16px",
-            "dark": "16px"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--space-40",
-            "note": "value 16px equals org --space-40"
-          },
-          "alias": "--space-40",
-          "used": {
-            "all": 154
+            "all": 1
           }
         }
       }

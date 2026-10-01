@@ -2,12 +2,12 @@
   "$name": "Creator - motion",
   "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "duration": {
-    "insert": {
+    "snap": {
       "$value": "120ms",
       "$type": "duration",
       "$extensions": {
         "creator": {
-          "css": "--cr-duration-insert",
+          "css": "--cr-duration-snap",
           "kind": "primitive",
           "status": "declared",
           "rendered": {
@@ -15,92 +15,21 @@
             "dark": "120ms"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org duration token has value 120ms"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 0
+            "all": 4
           }
         }
       }
     },
-    "fired": {
-      "$value": "260ms",
-      "$type": "duration",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-duration-fired",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "260ms",
-            "dark": "260ms"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org duration token has value 260ms"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "fast": {
-      "$value": "160ms",
-      "$type": "duration",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-duration-fast",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "160ms",
-            "dark": "160ms"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org duration token has value 160ms"
-          },
-          "alias": null,
-          "used": {
-            "all": 150
-          }
-        }
-      }
-    },
-    "history": {
-      "$value": "150ms",
-      "$type": "duration",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-duration-history",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "150ms",
-            "dark": "150ms"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--duration-fast",
-            "note": "value 150ms equals org --duration-fast"
-          },
-          "alias": "--duration-fast",
-          "used": {
-            "all": 404
-          }
-        }
-      }
-    },
-    "titleDwell": {
+    "base": {
       "$value": "200ms",
       "$type": "duration",
       "$extensions": {
         "creator": {
-          "css": "--cr-duration-title-dwell",
+          "css": "--cr-duration-base",
           "kind": "primitive",
           "status": "declared",
           "rendered": {
@@ -108,68 +37,21 @@
             "dark": "200ms"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org duration token has value 200ms"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
-            "all": 0
+            "all": 49
           }
         }
       }
     },
-    "normal": {
-      "$value": "240ms",
-      "$type": "duration",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-duration-normal",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "240ms",
-            "dark": "240ms"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org duration token has value 240ms"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "slow": {
-      "$value": "420ms",
-      "$type": "duration",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-duration-slow",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "420ms",
-            "dark": "420ms"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org duration token has value 420ms"
-          },
-          "alias": null,
-          "used": {
-            "all": 8
-          }
-        }
-      }
-    },
-    "settle": {
+    "long": {
       "$value": "300ms",
       "$type": "duration",
       "$extensions": {
         "creator": {
-          "css": "--cr-duration-settle",
+          "css": "--cr-duration-long",
           "kind": "primitive",
           "status": "declared",
           "rendered": {
@@ -177,23 +59,21 @@
             "dark": "300ms"
           },
           "org": {
-            "relation": "same",
-            "org": "--duration-normal",
-            "note": "value 300ms equals org --duration-normal"
+            "relation": "creator-only"
           },
-          "alias": "--duration-normal",
+          "alias": null,
           "used": {
-            "all": 8
+            "all": 0
           }
         }
       }
     },
-    "stage": {
+    "extra": {
       "$value": "420ms",
       "$type": "duration",
       "$extensions": {
         "creator": {
-          "css": "--cr-duration-stage",
+          "css": "--cr-duration-extra",
           "kind": "primitive",
           "status": "declared",
           "rendered": {
@@ -201,31 +81,7 @@
             "dark": "420ms"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org duration token has value 420ms"
-          },
-          "alias": null,
-          "used": {
-            "all": 8
-          }
-        }
-      }
-    },
-    "panel": {
-      "$value": "280ms",
-      "$type": "duration",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-duration-panel",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "280ms",
-            "dark": "280ms"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org duration token has value 280ms"
+            "relation": "creator-only"
           },
           "alias": null,
           "used": {
@@ -249,12 +105,12 @@
             "dark": "ease-out"
           },
           "org": {
-            "relation": "same",
-            "org": "--easing-default",
-            "note": "value ease-out equals org --easing-default"
+            "relation": "creator-only"
           },
-          "alias": "--easing-default",
-          "used": null
+          "alias": null,
+          "used": {
+            "all": 3
+          }
         }
       }
     },
@@ -271,11 +127,12 @@
             "dark": "cubic-bezier(.32, .72, 0, 1)"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org easing token has value cubic-bezier(.32, .72, 0, 1)"
+            "relation": "creator-only"
           },
           "alias": null,
-          "used": null
+          "used": {
+            "all": 43
+          }
         }
       }
     },
@@ -292,12 +149,12 @@
             "dark": "ease-in-out"
           },
           "org": {
-            "relation": "same",
-            "org": "--easing-in-out",
-            "note": "value ease-in-out equals org --easing-in-out"
+            "relation": "creator-only"
           },
-          "alias": "--easing-in-out",
-          "used": null
+          "alias": null,
+          "used": {
+            "all": 0
+          }
         }
       }
     },
@@ -314,11 +171,12 @@
             "dark": "cubic-bezier(.34, 1.4, .5, 1)"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org easing token has value cubic-bezier(.34, 1.4, .5, 1)"
+            "relation": "creator-only"
           },
           "alias": null,
-          "used": null
+          "used": {
+            "all": 2
+          }
         }
       }
     },
@@ -335,11 +193,12 @@
             "dark": "cubic-bezier(.25, .46, .2, .99)"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org easing token has value cubic-bezier(.25, .46, .2, .99)"
+            "relation": "creator-only"
           },
           "alias": null,
-          "used": null
+          "used": {
+            "all": 0
+          }
         }
       }
     }

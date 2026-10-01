@@ -5,34 +5,11 @@ import { PATTERNS } from "./patterns.js";
 import { AREAS } from "./areas.js";
 import { cardHtml, iconGaps } from "./view.js";
 import { colorChip, countsTable } from "./states.js";
-import { analyze, counts, colorBlocks, summary, whyMore } from "./colors.js";
+import { counts } from "./colors.js";
 import { colorSystem, scales as newScales, rules, changelog } from "./system.js";
 
 /* Overview: the short, human-readable page. Live components built from the same CSS as the app. */
 const nf = (n) => new Intl.NumberFormat().format(n);
-
-/* "rgb(0, 105, 217)" / "rgba(0,0,0,.5)" / "color(srgb r g b / a)" -> "#0069D9" or "#000000 50%" */
-function fmt(v) {
-  if (!v) return "";
-  let r, g, b, a = 1, m;
-  if ((m = v.match(/^rgba?\(([^)]+)\)$/))) { const p = m[1].split(/[ ,\/]+/).map(Number); [r, g, b] = p; if (p.length > 3) a = p[3]; }
-  else if ((m = v.match(/^color\(srgb ([^)]+)\)$/))) { const p = m[1].split(/[ \/]+/).map(Number); r = p[0] * 255; g = p[1] * 255; b = p[2] * 255; if (p.length > 3) a = p[3]; }
-  else return v;
-  const h = "#" + [r, g, b].map((x) => Math.round(x).toString(16).padStart(2, "0")).join("").toUpperCase();
-  return a < 1 ? `${h} ${Math.round(a * 100)}%` : h;
-}
-
-const GROUPS = [
-  ["Surfaces", "The window behind everything, the panels on top of it, and the frosted glass the sidebar is made of.", [["Window", "bg"], ["Panel", "bg-panel"], ["Raised", "bg-subtle"], ["Inverted", "bg-inverted"], ["Sidebar glass", "mat-hud"]]],
-  ["Text", "One ink, stepped down in strength. Text 1 for what you read, 4 for hints.", [["Text 1", "text-1"], ["Text 2", "text-2"], ["Text 3", "text-3"], ["Text 4", "text-4"], ["Text 5", "text-5"]]],
-  ["Accent and status", "System blue means selected or focused. Red means destructive. Green means live.", [["Accent", "accent-solid"], ["Accent wash", "accent-subtle"], ["Danger", "danger-solid"], ["Live", "status-live"]]],
-  ["Controls and lines", "Hairlines, hover and selected washes, and the sunken well behind number fields.", [["Line", "line"], ["Line, strong", "line-strong"], ["Hover", "state-hover"], ["Selected", "state-selected"], ["Field well", "surface-inset"]]],
-];
-const swatch = ([label, key]) => {
-  const t = S.tokens.tokens.find((x) => x.css === `--cr-color-${key}`); if (!t) return "";
-  const half = (th) => `<span class="hs-half is-${th}" data-theme="${th}" style="--c:var(--cr-color-${key})"></span>`;
-  return `<figure class="hs"><div class="hs-pair">${half("light")}${half("dark")}</div><figcaption><b>${label}</b><span>${fmt(t.light)}</span><span>${fmt(t.dark)}</span></figcaption></figure>`;
-};
 
 const SAMPLE = { "heading.large": "Presenter", "heading.medium": "Background", "heading.small": "Layout", "body.large": "Fit to slide", "body.medium": "Applies to all slides", "body.small": "7 layers", button: "Duplicate", "button.segment": "Blurred", label: "APPEARANCE", accountName: "Your name", accountEmail: "you@example.com", saveState: "Saved", nano: "12 / 40", "band.readout": "00:42", "band.record": "REC 00:42", "band.label": "SLIDES", "status.badge": "LIVE", "status.lead": "Camera is on" };
 
@@ -62,15 +39,14 @@ function scales(N, T) {
   return { spHtml, radHtml, n: { sp: N.spacing.length, rad: N.radii.length } };
 }
 export async function human(root) {
-  const T = S.tokens, CA = analyze(T), N = counts(T, CA), aliases = N.sharedWithOrg, sc = scales(N, T), RW = N.rows, cs = CA.stats;
+  const T = S.tokens, N = counts(T), aliases = N.sharedWithOrg, sc = scales(N, T), RW = N.rows;
   const styles = T.textStyles.map((s) => `<div class="hv-ts"><span class="cr-text-${s.name.replace(/\./g, "-")}">${esc(SAMPLE[s.name] ?? s.name)}</span><small>${esc(s.name)} · ${s.fontSize} / ${s.lineHeight ?? "auto"} / ${s.fontWeight}</small></div>`).join("");
   const deviations = [
-    ["Some type sizes render larger than written.", "The Record button and the stage pill buttons are written as 11 and 13 px but render at 13 and 16. This page shows what renders."],
-    ["Four different disabled fades.", "40, 45, 30 and 20 percent, depending on the control."],
-    ["Pointers differ by area.", "The sidebar, the crop button bar on the stage and the older hidden-presenter microphone button keep the arrow cursor. The top bar, tray and the other stage buttons show a pointing hand."],
-    ["Sidebar icons are smaller than in the prototype.", "Action button icons are 16 px and dropdown chevrons are 12 px. The prototype draws them at 18 and 9. These sizes are approved and deliberate."],
-    ["Some tokens are only used in hover and popup states.", "A few sidebar shadow and material tokens are declared but not visible at rest."],
-    ["Mostly its own values.", `Only ${aliases} tokens are exactly the org's, mostly spacing, radii and type. Of ${cs.total} colors, ${cs.cls.exact} match an org color exactly and ${cs.cls.near} more are within deltaE 5, so nearly all are Creator's own.`],
+    ["One disabled fade.", "A disabled control is the whole control at 40 percent. A field's placeholder is its own ink at 70 percent."],
+    ["Pointers differ by area.", "Most controls keep the arrow cursor. The device buttons, status chip, slide tiles and the stage buttons show a pointing hand."],
+    ["Icons are 16 px in rows, menus and fields.", "The top bar and the tray draw 20 px icons. The sidebar toggle draws its 24 px artwork at 16 or 20."],
+    ["The stage overlay is not part of the token system.", "The selection frame, its handles and the alignment guides are drawn by the stage itself. Their sizes are shown here as they render; only the glass around them uses the modeless colors."],
+    ["Colors are Figma's, not the org's.", `Creator's 23 colors carry the Figma Colors names and values, so they are not aliases of the org colors. ${aliases} other tokens are exactly the org's, mostly spacing, radii and type.`],
     ["Two kinds of message.", "A full-width banner under the top bar for session problems, and a floating toast for short notices with one action."],
   ].map(([a, b]) => `<li><b>${a}</b> ${b}</li>`).join("");
   const A = cats(ATOMS), P = cats(PATTERNS), R = cats(AREAS);
@@ -87,15 +63,11 @@ export async function human(root) {
   <section id="h-tokens" data-group="foundations"><h2>How many tokens</h2>
     <p class="hv-sub">Creator grew its own token set. Each family is counted in three states: what is on the main development branch, what is in open changes that are not merged yet, and the target for the simplification. Every number on this page is counted from one data file when the page loads. Hover, focus or tap a color number to list what it counts.</p>
     ${countsTable(T)}
-    <p class="hv-foot">The org has fewer colors because Creator draws things it has no words for: a blue accent, stage glass, translucent ink and materials. <a href="#h-colors-all">See every color</a> for the full list and the plain-language reasons.</p></section>
+    <p class="hv-foot">The org has fewer colors because Creator draws things it has no words for: a blue accent, stage glass, translucent ink and materials. <a href="#h-system">The color system</a> lists every color with its light and dark value.</p></section>
 
   ${colorSystem(T)}
   ${newScales(T)}
   ${rules()}
-
-  <section id="h-colors-all" data-group="foundations"><h2>Every color on dev today</h2>
-    <p class="hv-sub">All ${nf(cs.total)} color tokens, generated from the data file. Each card is one distinct light and dark pair, with every token name that shares it. Checkerboard means see-through. Flags: DUPLICATE OF (same light and dark values as another token), NEAR (within deltaE 3 of another value), ORG (closest org color: EXACT, NEAR, ROLE-ONLY when the org has a color for the role but not this one, or NONE), and what the proposal does with it. The cards group every definition, raw swatches included, so there can be more cards than the distinct values counted in the pair below, which cover the semantic colors only.</p>
-    ${summary(CA)}${whyMore(CA)}${colorBlocks(CA)}</section>
 
   <section id="h-type" data-group="foundations"><h2>Type</h2><p class="hv-sub">One system font stack: SF Pro on Apple devices, then Helvetica Neue and Arial. Weights 400, 500 and 600, plus one 300 for a caption. Each style shows size / line height / weight.</p>
     <div class="hv-fonts"><div class="hv-font"><span style="font-size:44px;line-height:1;font-weight:600;letter-spacing:-0.02em">Aa</span><small>Interface text</small></div><div class="hv-font"><span class="mono" style="font-size:36px;line-height:1.1;font-family:var(--cr-font-family-mono)">Aa 01</span><small>Numbers and code</small></div></div>

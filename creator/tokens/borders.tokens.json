@@ -15,11 +15,12 @@
             "dark": "0.5px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org border-width token has value 0.5px"
+            "relation": "creator-only"
           },
           "alias": null,
-          "used": null
+          "used": {
+            "all": 5
+          }
         }
       }
     },
@@ -36,12 +37,12 @@
             "dark": "1px"
           },
           "org": {
-            "relation": "same",
-            "org": "--border-width-thin",
-            "note": "value 1px equals org --border-width-thin"
+            "relation": "same"
           },
           "alias": "--border-width-thin",
-          "used": null
+          "used": {
+            "all": 4
+          }
         }
       }
     },
@@ -58,12 +59,12 @@
             "dark": "2px"
           },
           "org": {
-            "relation": "same",
-            "org": "--border-width-medium",
-            "note": "value 2px equals org --border-width-medium"
+            "relation": "same"
           },
           "alias": "--border-width-medium",
-          "used": null
+          "used": {
+            "all": 0
+          }
         }
       }
     }

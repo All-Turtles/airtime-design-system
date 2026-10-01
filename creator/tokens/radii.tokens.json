@@ -2,103 +2,8 @@
   "$name": "Creator - radii",
   "$description": "Design tokens for the Creator app. Each token's $extensions.creator records its CSS variable, kind, rendered value in light and dark, and its relation to the Airtime design system.",
   "radius": {
-    "stage": {
-      "$value": "8px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-radius-stage",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "8px",
-            "dark": "8px"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--radius-20",
-            "note": "value 8px equals org --radius-20"
-          },
-          "alias": "--radius-20",
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "selectionTrack": {
-      "$value": "9px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-radius-selection-track",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "9px",
-            "dark": "9px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org radius token has value 9px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "roomTile": {
-      "$value": "6px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-radius-room-tile",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "6px",
-            "dark": "6px"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--radius-15",
-            "note": "value 6px equals org --radius-15"
-          },
-          "alias": "--radius-15",
-          "used": {
-            "all": 16
-          }
-        }
-      }
-    },
-    "titleLabel": {
-      "$value": "4px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-radius-title-label",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "4px",
-            "dark": "4px"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--radius-10",
-            "note": "value 4px equals org --radius-10"
-          },
-          "alias": "--radius-10",
-          "used": {
-            "all": 8
-          }
-        }
-      }
-    },
     "xs": {
-      "$value": "3px",
+      "$value": "4px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
@@ -106,22 +11,21 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "3px",
-            "dark": "3px"
+            "light": "4px",
+            "dark": "4px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org radius token has value 3px"
+            "relation": "same"
           },
           "alias": null,
           "used": {
-            "all": 22
+            "all": 8
           }
         }
       }
     },
     "sm": {
-      "$value": "5px",
+      "$value": "6px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
@@ -129,22 +33,21 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "5px",
-            "dark": "5px"
+            "light": "6px",
+            "dark": "6px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org radius token has value 5px"
+            "relation": "same"
           },
           "alias": null,
           "used": {
-            "all": 24
+            "all": 21
           }
         }
       }
     },
     "md": {
-      "$value": "7px",
+      "$value": "8px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
@@ -152,22 +55,21 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "7px",
-            "dark": "7px"
+            "light": "8px",
+            "dark": "8px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org radius token has value 7px"
+            "relation": "same"
           },
           "alias": null,
           "used": {
-            "all": 280
+            "all": 11
           }
         }
       }
     },
     "lg": {
-      "$value": "10px",
+      "$value": "12px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
@@ -175,23 +77,21 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "10px",
-            "dark": "10px"
+            "light": "12px",
+            "dark": "12px"
           },
           "org": {
-            "relation": "same",
-            "org": "--radius-25",
-            "note": "value 10px equals org --radius-25"
+            "relation": "same"
           },
-          "alias": "--radius-25",
+          "alias": null,
           "used": {
-            "all": 140
+            "all": 12
           }
         }
       }
     },
     "xl": {
-      "$value": "13px",
+      "$value": "16px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
@@ -199,22 +99,21 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "13px",
-            "dark": "13px"
+            "light": "16px",
+            "dark": "16px"
           },
           "org": {
-            "relation": "creator-only",
-            "note": "no org radius token has value 13px"
+            "relation": "same"
           },
           "alias": null,
           "used": {
-            "all": 52
+            "all": 8
           }
         }
       }
     },
     "2xl": {
-      "$value": "14px",
+      "$value": "24px",
       "$type": "dimension",
       "$extensions": {
         "creator": {
@@ -222,86 +121,13 @@
           "kind": "primitive",
           "status": "declared",
           "rendered": {
-            "light": "14px",
-            "dark": "14px"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--radius-35",
-            "note": "value 14px equals org --radius-35"
-          },
-          "alias": "--radius-35",
-          "used": {
-            "all": 16
-          }
-        }
-      }
-    },
-    "3xl": {
-      "$value": "16px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-radius-3xl",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "16px",
-            "dark": "16px"
-          },
-          "org": {
-            "relation": "same",
-            "org": "--radius-40",
-            "note": "value 16px equals org --radius-40"
-          },
-          "alias": "--radius-40",
-          "used": {
-            "all": 8
-          }
-        }
-      }
-    },
-    "4xl": {
-      "$value": "22px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-radius-4xl",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
-            "light": "22px",
-            "dark": "22px"
-          },
-          "org": {
-            "relation": "creator-only",
-            "note": "no org radius token has value 22px"
-          },
-          "alias": null,
-          "used": {
-            "all": 0
-          }
-        }
-      }
-    },
-    "5xl": {
-      "$value": "24px",
-      "$type": "dimension",
-      "$extensions": {
-        "creator": {
-          "css": "--cr-radius-5xl",
-          "kind": "primitive",
-          "status": "declared",
-          "rendered": {
             "light": "24px",
             "dark": "24px"
           },
           "org": {
-            "relation": "same",
-            "org": "--radius-60",
-            "note": "value 24px equals org --radius-60"
+            "relation": "same"
           },
-          "alias": "--radius-60",
+          "alias": null,
           "used": {
             "all": 0
           }
@@ -321,13 +147,11 @@
             "dark": "9999px"
           },
           "org": {
-            "relation": "same",
-            "org": "--radius-9999",
-            "note": "value 9999px equals org --radius-9999"
+            "relation": "same"
           },
-          "alias": "--radius-9999",
+          "alias": null,
           "used": {
-            "all": 62
+            "all": 17
           }
         }
       }

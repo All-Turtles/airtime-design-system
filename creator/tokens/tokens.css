@@ -1,244 +1,102 @@
-/* tokens.css - Creator design system. Generated. Do not edit.
+/* tokens.css - Creator design system. Do not edit by hand: the values are mirrored from the app's token file.
  * Prefix --cr- keeps these apart from airtime-design-system's tokens.
- * ALIAS LAYER: tokens whose value equals an airtime-design-system token are declared as var(--org-token); load tokens/org/tokens.css and
- * tokens/org/org-theme.css (copies of the org system) BEFORE this file.
+ * Colors are the 23 Colors variables of the Figma Creator file, under their Figma names, plus a quarantined
+ * pending group for colors the design uses and Figma does not define yet.
  * Themes: [data-theme="light"] (default) and [data-theme="dark"]; any element can set it, so light and dark can sit side by side.
- * Every semantic token is declared inside both theme blocks: a var() alias declared once at :root would resolve there
- * and pin the light value under a dark subtree. */
+ * Every color and shadow is declared inside both theme blocks: a var() reference declared once at :root would resolve there
+ * and pin the light value under a dark subtree. Load tokens/org/tokens.css and tokens/org/org-theme.css first (font weights and
+ * a few type sizes alias them). */
 
 :root {
 
-  /* aspect-ratios (primitive) */
-  --cr-aspect-camera-demo: 736 / 414;
+  /* radii */
+  --cr-radius-xs: 4px;
+  --cr-radius-sm: 6px;
+  --cr-radius-md: 8px;
+  --cr-radius-lg: 12px;
+  --cr-radius-xl: 16px;
+  --cr-radius-2xl: 24px;
+  --cr-radius-full: 9999px;
 
-  /* blurs (primitive) */
-  --cr-blur-selection-bar: 28px;
-  --cr-blur-selection-menu: 34px;
+  /* control heights, one ladder */
+  --cr-size-control-sm: 24px;
+  --cr-size-control-md: 32px;
+  --cr-size-control-lg: 40px;
+  --cr-size-row: 40px;
+  --cr-size-icon: 16px;
 
-  /* border-widths (primitive) */
-  --cr-border-width-hair: 0.5px;
-  --cr-border-width-thin: var(--border-width-thin);
-  --cr-border-width-medium: var(--border-width-medium);
+  /* layout sizes shared by two or more places */
+  --cr-size-layout-sidebar: 296px;
+  --cr-size-layout-selection-menu-min: 220px;
+  --cr-size-layout-device-popover: 298px;
+  --cr-size-layout-record-min: 93px;
+  --cr-size-layout-slide-lane: 84px;
+  --cr-size-layout-slide-thumbnail: 78px;
+  --cr-size-layout-share-dialog: 460px;
+  --cr-size-layout-video-library: 280px;
+  --cr-size-layout-video-details: 240px;
+  --cr-size-layout-video-timeline: 144px;
+  --cr-size-sheet-width: 800px;
+  --cr-size-sheet-height: 642px;
 
-  /* colors (primitive) */
-  --cr-color-selection-destructive: rgb(255,92,92);
-  --cr-color-selection-destructive-hover: rgba(255,92,92,0.14);
-  --cr-color-selection-destructive-active: rgba(255,92,92,0.24);
-  --cr-color-selection-muted: rgba(255,255,255,0.60);
-  --cr-color-selection-track: rgba(255,255,255,0.08);
-  --cr-color-selection-swatch: rgba(255,255,255,0.16);
-  --cr-color-selection-material: rgba(26,26,29,0.66);
-  --cr-color-selection-text: rgba(255,255,255,0.96);
-  --cr-color-selection-disabled: rgba(255,255,255,0.40);
-  --cr-color-selection-hover: rgba(255,255,255,0.11);
-  --cr-color-selection-active: rgba(255,255,255,0.20);
-  --cr-color-selection-line: rgba(255,255,255,0.13);
-  --cr-color-system-blue-light: #0069D9;
-  --cr-color-system-blue-light-hover: #0059B8;
-  --cr-color-system-blue-dark: #3B9BFF;
-  --cr-color-system-blue-dark-hover: #57ACFF;
-  --cr-color-system-blue-on-light: #FFFFFF;
-  --cr-color-system-blue-on-dark: #08121C;
-  --cr-color-system-red-light: #D70015;
-  --cr-color-system-red-dark: #FF4F42;
-  --cr-color-ground-light-window: #E9E9EC;
-  --cr-color-ground-light-surface: #FFFFFF;
-  --cr-color-ground-light-recessed: #F1F1F4;
-  --cr-color-ground-dark-window: #131315;
-  --cr-color-ground-dark-surface: #1E1E20;
-  --cr-color-ground-dark-recessed: #252528;
-  --cr-color-ink-light-primary: #000000;
-  --cr-color-ink-light-secondary: #3C3C43;
-  --cr-color-ink-light-tertiary: #6E6E73;
-  --cr-color-ink-dark-primary: #FFFFFF;
-  --cr-color-ink-dark-secondary: #EBEBF5;
-  --cr-color-ink-dark-tertiary: #ABABB2;
+  /* spacing: the 4px scale, and the one gutter around the stage, tray and sidebar */
+  --cr-space-gutter: 16px;
+  --cr-space-0-5: 2px;
+  --cr-space-1: 4px;
+  --cr-space-1-5: 6px;
+  --cr-space-2: 8px;
+  --cr-space-2-5: 10px;
+  --cr-space-3: 12px;
+  --cr-space-3-5: 14px;
+  --cr-space-4: 16px;
+  --cr-space-5: 20px;
+  --cr-space-6: 24px;
+  --cr-space-7: 28px;
+  --cr-space-8: 32px;
+  --cr-space-9: 36px;
+  --cr-space-10: 40px;
+  --cr-space-11: 44px;
+  --cr-space-12: 48px;
+  --cr-space-14: 56px;
+  --cr-space-16: 64px;
 
-  /* durations (primitive) */
-  --cr-duration-insert: 120ms;
-  --cr-duration-fired: 260ms;
-  --cr-duration-fast: 160ms;
-  --cr-duration-history: var(--duration-fast);
-  --cr-duration-title-dwell: 200ms;
-  --cr-duration-normal: 240ms;
-  --cr-duration-slow: 420ms;
-  --cr-duration-settle: var(--duration-normal);
-  --cr-duration-stage: 420ms;
-  --cr-duration-panel: 280ms;
-
-  /* easings (primitive) */
-  --cr-easing-out: var(--easing-default);
+  /* durations and easings */
+  --cr-duration-snap: 120ms;
+  --cr-duration-base: 200ms;
+  --cr-duration-long: 300ms;
+  --cr-duration-extra: 420ms;
+  --cr-easing-out: ease-out;
   --cr-easing-settle: cubic-bezier(.32, .72, 0, 1);
-  --cr-easing-standard: var(--easing-in-out);
+  --cr-easing-standard: ease-in-out;
   --cr-easing-spring: cubic-bezier(.34, 1.4, .5, 1);
   --cr-easing-flow: cubic-bezier(.25, .46, .2, .99);
 
-  /* font-sizes (primitive) */
+  /* blur (Figma's background blur is about twice CSS blur()), hairlines, opacity */
+  --cr-blur-small: 8px;
+  --cr-blur-large: 32px;
+  --cr-border-width-hair: 0.5px;
+  --cr-border-width-thin: 1px;
+  --cr-border-width-medium: 2px;
+  --cr-opacity-disabled: 0.4;
+  --cr-opacity-placeholder: 0.7;
+
+  /* type */
+  --cr-font-family-body: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --cr-font-family-heading: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --cr-font-family-mono: ui-monospace, 'SF Mono', Menlo, monospace;
   --cr-font-size-3xs: 9px;
   --cr-font-size-2xs: 10px;
   --cr-font-size-xs: var(--font-size-body-small);
   --cr-font-size-sm: var(--font-size-heading-small);
   --cr-font-size-md: 13px;
-  --cr-font-size-lg: 17px;
-
-  /* font-weights (primitive) */
-  --cr-font-weight-bold: var(--font-weight-bold);
+  --cr-font-size-lg: 16px;
   --cr-font-weight-medium: var(--font-weight-medium);
   --cr-font-weight-normal: var(--font-weight-regular);
   --cr-font-weight-semibold: var(--font-weight-semibold);
-
-  /* fonts (primitive) */
-  --cr-font-family-body: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --cr-font-family-heading: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --cr-font-family-mono: ui-monospace, 'SF Mono', Menlo, monospace;
-
-  /* letter-spacings (primitive) */
-  --cr-letter-spacing-label: 0.055em;
-  --cr-letter-spacing-selection-label: 0.04em;
-
-  /* line-heights (primitive) */
   --cr-line-height-selection: 1.15;
+  --cr-letter-spacing-label: 0.055em;
 
-  /* radii (primitive) */
-  --cr-radius-stage: var(--radius-20);
-  --cr-radius-selection-track: 9px;
-  --cr-radius-room-tile: var(--radius-15);
-  --cr-radius-title-label: var(--radius-10);
-  --cr-radius-xs: 3px;
-  --cr-radius-sm: 5px;
-  --cr-radius-md: 7px;
-  --cr-radius-lg: var(--radius-25);
-  --cr-radius-xl: 13px;
-  --cr-radius-2xl: var(--radius-35);
-  --cr-radius-3xl: var(--radius-40);
-  --cr-radius-4xl: 22px;
-  --cr-radius-5xl: var(--radius-60);
-  --cr-radius-full: var(--radius-9999);
-
-  /* sizes (primitive) */
-  --cr-size-creator-selection-menu-min: 220px;
-  --cr-size-creator-selection-menu-max: 328px;
-  --cr-size-creator-typography-menu-width: 368px;
-  --cr-size-creator-top-bar: 52px;
-  --cr-size-creator-account-header: 260px;
-  --cr-size-creator-title: 280px;
-  --cr-size-creator-title-compact: 180px;
-  --cr-size-creator-title-glyph: 15px;
-  --cr-size-creator-title-chevron: 22px;
-  --cr-size-creator-hairline: 0.5px;
-  --cr-size-creator-stage-band: 46px;
-  --cr-size-creator-stage-band-narrow: 88px;
-  --cr-size-creator-band-row: 38px;
-  --cr-size-creator-device-name: 88px;
-  --cr-size-creator-device-popover: 258px;
-  --cr-size-creator-device-chevron: 9px;
-  --cr-size-creator-status-dot: 7px;
-  --cr-size-creator-status-badge-dot: 5px;
-  --cr-size-creator-record-min: 93px;
-  --cr-size-creator-record-label: 37px;
-  --cr-size-creator-camera-popover: 360px;
-  --cr-size-creator-tray: 116px;
-  --cr-size-creator-slide-thumbnail: 78px;
-  --cr-size-creator-room-tile: 76px;
-  --cr-size-creator-slide-lane: 84px;
-  --cr-size-creator-overlay-lane: var(--size-70);
-  --cr-size-creator-slide-popover: 324px;
-  --cr-size-creator-sidebar: 296px;
-  --cr-size-creator-sidebar-row: 30px;
-  --cr-size-creator-sidebar-control: var(--size-60);
-  --cr-size-creator-slide-counter: 46px;
-  --cr-size-creator-slides-info: 320px;
-  --cr-size-creator-layout-picker: 470px;
-  --cr-size-creator-layout-grid: 300px;
-  --cr-size-creator-video-library: 280px;
-  --cr-size-creator-video-details: 240px;
-  --cr-size-creator-video-timeline: 144px;
-  --cr-size-creator-share-dialog: 460px;
-  --cr-size-creator-share-suggestions: 232px;
-  --cr-size-sheet-width: 800px;
-  --cr-size-sheet-height: 642px;
-  --cr-size-sheet-max-width: calc(100vw - 48px);
-  --cr-size-sheet-max-height: calc(100vh - 48px);
-  --cr-size-background-browser-width: min(85vw, 800px);
-  --cr-size-background-browser-height: min(100vh, 640px);
-  --cr-size-background-browser-sidebar: 160px;
-  --cr-size-background-browser-row: 190px;
-  --cr-size-split-picker-sidebar: 208px;
-  --cr-size-split-picker-pane-header: var(--size-140);
-  --cr-size-split-picker-input-wrapper: 30px;
-  --cr-size-split-picker-details: 208px;
-  --cr-size-segment: 26px;
-  --cr-size-0-5: var(--size-05);
-  --cr-size-1: var(--size-10);
-  --cr-size-1-5: var(--size-15);
-  --cr-size-10: var(--size-100);
-  --cr-size-11: 44px;
-  --cr-size-12: var(--size-120);
-  --cr-size-14: var(--size-140);
-  --cr-size-16: var(--size-160);
-  --cr-size-2: var(--size-20);
-  --cr-size-2-5: 10px;
-  --cr-size-20: var(--size-200);
-  --cr-size-24: 96px;
-  --cr-size-28: 112px;
-  --cr-size-3: var(--size-30);
-  --cr-size-3-5: 14px;
-  --cr-size-32: 128px;
-  --cr-size-36: 144px;
-  --cr-size-4: var(--size-40);
-  --cr-size-4-5: 18px;
-  --cr-size-40: 160px;
-  --cr-size-44: 176px;
-  --cr-size-48: 192px;
-  --cr-size-5: var(--size-50);
-  --cr-size-52: 208px;
-  --cr-size-56: 224px;
-  --cr-size-6: var(--size-60);
-  --cr-size-60: 240px;
-  --cr-size-64: 256px;
-  --cr-size-7: var(--size-70);
-  --cr-size-8: var(--size-80);
-  --cr-size-9: 36px;
-
-  /* spacing (primitive) */
-  --cr-space-gutter: var(--space-40);
-  --cr-space-2-25: 9px;
-  --cr-space-1-75: 7px;
-  --cr-space-0-75: 3px;
-  --cr-space-1-25: 5px;
-  --cr-space-0-5: var(--space-05);
-  --cr-space-1: var(--space-10);
-  --cr-space-1-5: var(--space-15);
-  --cr-space-10: var(--space-100);
-  --cr-space-11: 44px;
-  --cr-space-12: 48px;
-  --cr-space-14: 56px;
-  --cr-space-16: 64px;
-  --cr-space-2: var(--space-20);
-  --cr-space-2-5: 10px;
-  --cr-space-20: 80px;
-  --cr-space-24: 96px;
-  --cr-space-28: 112px;
-  --cr-space-3: var(--space-30);
-  --cr-space-3-5: 14px;
-  --cr-space-32: 128px;
-  --cr-space-36: 144px;
-  --cr-space-4: var(--space-40);
-  --cr-space-4-5: 18px;
-  --cr-space-40: 160px;
-  --cr-space-44: 176px;
-  --cr-space-48: 192px;
-  --cr-space-5: 20px;
-  --cr-space-52: 208px;
-  --cr-space-56: 224px;
-  --cr-space-6: var(--space-60);
-  --cr-space-60: 240px;
-  --cr-space-64: 256px;
-  --cr-space-7: 28px;
-  --cr-space-8: var(--space-80);
-  --cr-space-9: 36px;
-
-  /* z-index (primitive) */
+  /* z-index */
   --cr-z-stage: 1;
   --cr-z-stage-band: 12;
   --cr-z-stage-controls: 13;
@@ -250,439 +108,151 @@
 [data-theme="light"] {
   color-scheme: light;
 
-  /* colors (semantic) */
-  --cr-color-background-primary: #ffffff;
-  --cr-color-background-tertiary: #ebebeb;
-  --cr-color-action-secondary: #1A7580;
-  --cr-color-action-destructive: #ff715c;
-  --cr-color-slide-badge: rgba(0, 0, 0, 0.8);
-  --cr-color-device-off: #F65F4C;
-  --cr-color-status-live: #34C759;
-  --cr-color-status-live-text: #2FA84F;
-  --cr-color-status-live-fill: color-mix(in srgb, var(--cr-color-status-live) 16%, transparent);
-  --cr-color-header-ground: color-mix(in srgb, var(--cr-color-mat-hud) 92%, transparent);
-  --cr-color-header-title-hover: #ebebeb;
-  --cr-color-header-title-border: #e0e0e0;
-  --cr-color-header-history-hover: #f5f5f5;
-  --cr-color-split-picker-content: color-mix(in srgb, var(--cr-color-bg-panel) 62%, transparent);
-  --cr-color-split-picker-footer: color-mix(in srgb, var(--cr-color-bg-panel) 40%, transparent);
-  --cr-color-bg: var(--cr-color-ground-light-window);
-  --cr-color-bg-panel: var(--cr-color-ground-light-surface);
-  --cr-color-bg-subtle: var(--cr-color-ground-light-recessed);
-  --cr-color-bg-muted: rgba(0, 0, 0, 0.05);
-  --cr-color-bg-emphasized: rgba(0, 0, 0, 0.10);
-  --cr-color-bg-inverted: var(--cr-color-ground-dark-window);
-  --cr-color-content-accent: #f9df74;
-  --cr-color-content-primary: var(--cr-color-ink-light-primary);
-  --cr-color-content-secondary: var(--cr-color-ink-light-secondary);
-  --cr-color-content-tertiary: var(--cr-color-ink-light-tertiary);
-  --cr-color-text-1: rgba(0, 0, 0, 0.92);
-  --cr-color-text-2: rgba(0, 0, 0, 0.80);
-  --cr-color-text-3: rgba(0, 0, 0, 0.64);
-  --cr-color-text-4: rgba(0, 0, 0, 0.50);
-  --cr-color-text-5: rgba(0, 0, 0, 0.38);
-  --cr-color-text-6: rgba(0, 0, 0, 0.26);
-  --cr-color-fg: var(--cr-color-text-1);
-  --cr-color-fg-muted: var(--cr-color-text-3);
-  --cr-color-fg-subtle: var(--cr-color-text-4);
-  --cr-color-fg-inverted: rgba(255, 255, 255, 0.96);
-  --cr-color-line: rgba(0, 0, 0, 0.10);
-  --cr-color-line-strong: rgba(0, 0, 0, 0.16);
-  --cr-color-line-strongest: rgba(0, 0, 0, 0.30);
-  --cr-color-border: var(--cr-color-line);
-  --cr-color-border-muted: var(--cr-color-line);
-  --cr-color-border-subtle: var(--cr-color-line);
-  --cr-color-border-emphasized: var(--cr-color-line-strong);
-  --cr-color-border-inverted: rgba(255, 255, 255, 0.10);
-  --cr-color-state-drop-indicator: var(--cr-color-accent-solid);
-  --cr-color-state-hover: rgba(0, 0, 0, 0.055);
-  --cr-color-state-active: rgba(0, 0, 0, 0.10);
-  --cr-color-state-active-strong: rgba(0, 0, 0, 0.15);
-  --cr-color-state-selected: rgba(0, 0, 0, 0.15);
-  --cr-color-dash: rgba(0, 0, 0, 0.28);
-  --cr-color-highlight-primary: #00000012;
-  --cr-color-highlight-secondary: #0000000A;
-  --cr-color-edge-out: rgba(0, 0, 0, 0.16);
-  --cr-color-edge-in: rgba(255, 255, 255, 0.75);
-  --cr-color-mat-menu: rgba(250, 250, 252, 0.86);
-  --cr-color-mat-menu-solid: rgba(250, 250, 252, 0.98);
-  --cr-color-mat-hud: rgba(247, 247, 250, 0.985);
-  --cr-color-mat-sheet: rgba(242, 242, 245, 0.99);
-  --cr-color-mat-sidebar: rgba(239, 239, 243, 0.985);
-  --cr-color-scrim: rgba(250, 250, 252, 0.86);
-  --cr-color-scrim-modal: rgba(0, 0, 0, 0.60);
-  --cr-color-overlay: #00000073;
-  --cr-color-surface-raised: var(--cr-color-mat-menu);
-  --cr-color-surface-inset: rgba(0, 0, 0, 0.05);
-  --cr-color-wire-1: rgba(0, 0, 0, 0.09);
-  --cr-color-wire-2: rgba(0, 0, 0, 0.20);
-  --cr-color-wire-3: rgba(0, 0, 0, 0.34);
-  --cr-color-wire-void: rgba(0, 0, 0, 0.045);
-  --cr-color-accent-solid: var(--cr-color-system-blue-light);
-  --cr-color-accent-hover: var(--cr-color-system-blue-light-hover);
-  --cr-color-accent-contrast: var(--cr-color-system-blue-on-light);
-  --cr-color-accent-fg: var(--cr-color-system-blue-light);
-  --cr-color-accent-subtle: color-mix(in srgb, var(--cr-color-system-blue-light) 12%, transparent);
-  --cr-color-accent-muted: color-mix(in srgb, var(--cr-color-system-blue-light) 22%, transparent);
-  --cr-color-accent-emphasized: var(--cr-color-system-blue-light-hover);
-  --cr-color-accent-focus-ring: var(--cr-color-system-blue-light);
-  --cr-color-danger-solid: var(--cr-color-system-red-light);
-  --cr-color-danger-hover: color-mix(in srgb, var(--cr-color-system-red-light) 88%, black);
-  --cr-color-danger-contrast: #FFFFFF;
-  --cr-color-danger-fg: var(--cr-color-system-red-light);
-  --cr-color-danger-subtle: color-mix(in srgb, var(--cr-color-system-red-light) 12%, transparent);
-  --cr-color-danger-muted: color-mix(in srgb, var(--cr-color-system-red-light) 22%, transparent);
-  --cr-color-danger-emphasized: color-mix(in srgb, var(--cr-color-system-red-light) 88%, black);
-  --cr-color-danger-focus-ring: var(--cr-color-system-red-light);
-  --cr-color-gray-solid: var(--cr-color-text-1);
-  --cr-color-gray-hover: var(--cr-color-text-2);
-  --cr-color-gray-contrast: var(--cr-color-bg-panel);
-  --cr-color-gray-fg: var(--cr-color-text-1);
-  --cr-color-gray-subtle: var(--cr-color-state-hover);
-  --cr-color-gray-muted: var(--cr-color-state-active);
-  --cr-color-gray-emphasized: var(--cr-color-state-active-strong);
-  --cr-color-gray-focus-ring: var(--cr-color-accent-solid);
-  --cr-color-focus-ring: var(--cr-color-accent-solid);
-  --cr-color-pill-fill: rgba(255, 255, 255, 0.12);
-  --cr-color-swatch-ring-dot: rgba(255, 255, 255, 0.24);
-  --cr-color-swatch-ring-tile: rgba(255, 255, 255, 0.16);
-  --cr-color-swatch-none-slash: rgb(255, 69, 58);
-  --cr-color-swatch-none-fill: rgba(255, 255, 255, 0.08);
-  --cr-color-chip-ground: #E6E6EC;
-  --cr-color-checker-a: #FFFFFF;
-  --cr-color-checker-b: #D4D4DA;
-  --cr-color-thumb-selected-fill: rgba(255, 255, 255, 0.18);
-  --cr-color-thumb-selected-ring: rgba(255, 255, 255, 0.3);
-  --cr-color-knob: #FFFFFF;
-  --cr-color-stage-frame: var(--cr-color-accent-solid);
-  --cr-color-stage-guide-hit: #E55242;
-  --cr-color-stage-guide: #FFFFFF;
-  --cr-color-stage-grid-fill: rgba(127, 127, 127, 0.65);
-  --cr-color-handle-fill: #FFFFFF;
-  --cr-color-on-badge: rgba(255, 255, 255, 0.96);
+  /* colors: background */
+  --cr-color-background-primary: #DCDCE0;
+  --cr-color-background-secondary: #F2F2F4;
+  --cr-color-background-tertiary: rgba(255, 255, 255, 0.80);
 
-  /* font-sizes (derived) */
-  --cr-font-size-sidebar: 12px;
+  /* colors: content */
+  --cr-color-content-primary: rgba(0, 0, 0, 0.92);
+  --cr-color-content-secondary: rgba(0, 0, 0, 0.80);
+  --cr-color-content-tertiary: rgba(0, 0, 0, 0.64);
 
-  /* gradients (semantic) */
-  --cr-gradient-window: linear-gradient(180deg, color-mix(in srgb, var(--cr-color-bg) 88%, var(--cr-color-content-primary)) 0%, var(--cr-color-bg) 34%, color-mix(in srgb, var(--cr-color-bg) 96%, var(--cr-color-content-primary)) 100%);
+  /* colors: lighting */
+  --cr-color-lighting-shade: rgba(0, 0, 0, 0.08);
+  --cr-color-lighting-highlight-primary: rgba(255, 255, 255, 0.92);
+  --cr-color-lighting-highlight-secondary: rgba(255, 255, 255, 0.64);
 
-  /* letter-spacings (derived) */
-  --cr-letter-spacing-sidebar: -0.036px;
+  /* colors: shadow */
+  --cr-color-shadow-small: rgba(0, 0, 0, 0.08);
+  --cr-color-shadow-medium: rgba(0, 0, 0, 0.16);
+  --cr-color-shadow-large: rgba(0, 0, 0, 0.24);
 
-  /* line-heights (derived) */
-  --cr-line-height-sidebar: 15px;
+  /* colors: accent */
+  --cr-color-accent-teal: #0069D9;
+  --cr-color-accent-destructive: #D6402F;
 
-  /* opacity (derived) */
-  --cr-opacity-disabled: 0.4;
-  --cr-opacity-dimmed: 0.45;
-  --cr-opacity-locked-grip: 0.3;
-  --cr-opacity-disabled-button: 0.45;
-  --cr-opacity-disabled-icon: 0.3;
-  --cr-opacity-disabled-split: 0.2;
-  --cr-opacity-status-dot: 0.55;
+  /* colors: modeless */
+  --cr-color-modeless-white: #FFFFFF;
+  --cr-color-modeless-white8: rgba(255, 255, 255, 0.08);
+  --cr-color-modeless-white24: rgba(255, 255, 255, 0.24);
+  --cr-color-modeless-black: #000000;
+  --cr-color-modeless-black24: rgba(0, 0, 0, 0.24);
+  --cr-color-modeless-overlay: rgba(0, 0, 0, 0.5);
+  --cr-color-modeless-destructive: #D6402F;
+  --cr-color-modeless-teal: #0069D9;
+  --cr-color-modeless-teal-on-dark: #3B9BFF;
 
-  /* radii (derived) */
-  --cr-radius-handle: 2px;
+  /* colors: pending (the design uses them, Figma does not define them yet) */
+  --cr-color-pending-live: #34C759;
+  --cr-color-pending-live-text: #2FA84F;
+  --cr-color-pending-highlight: #f9df74;
+  --cr-color-pending-wireframe-tile-top: #E3E3E3;
+  --cr-color-pending-wireframe-tile-bottom: #C1C1C1;
+  --cr-color-pending-wireframe-fill-top: #A5A5A5;
+  --cr-color-pending-wireframe-fill-bottom: #BDBDBD;
+  --cr-color-pending-wireframe-stroke-top: #4D4D4D;
+  --cr-color-pending-wireframe-stroke-bottom: #ABABAB;
+  --cr-color-pending-wireframe-line: #717171;
 
-  /* shadows (semantic) */
-  --cr-shadow-selection-swatch: inset 0 0 0 1px rgba(255,255,255,0.18);
-  --cr-shadow-selection-swatch-selected: inset 0 0 0 1px rgba(255,255,255,0.18), 0 0 0 2px rgba(255,255,255,0.60);
-  --cr-shadow-selection-bar: inset 0 0.5px 0 0 rgba(255,255,255,0.18), 0 0 0 0.5px rgba(0,0,0,0.34), 0 4px 10px rgba(0,0,0,0.22), 0 14px 36px rgba(0,0,0,0.34);
-  --cr-shadow-selection-menu: inset 0 0.5px 0 0 rgba(255,255,255,0.18), 0 0 0 0.5px rgba(0,0,0,0.34), 0 6px 16px rgba(0,0,0,0.22), 0 22px 56px rgba(0,0,0,0.34);
-  --cr-shadow-tray-console: 0 0 0 0.5px var(--cr-color-edge-out), 0 2px 5px color-mix(in srgb, var(--cr-color-content-primary) 12%, transparent);
-  --cr-shadow-band-pill: var(--cr-shadow-edge), var(--cr-shadow-up);
-  --cr-shadow-placeholder: inset 0 0 0 0.5px var(--cr-color-line);
-  --cr-shadow-caption: inset 0 0.5px 0 0 var(--cr-color-line);
-  --cr-shadow-sidebar: inset -1px 0 0 0 var(--cr-color-line);
-  --cr-shadow-input-wrapper: inset 0 0 0 0.5px var(--cr-color-line-strong), inset 0 1px 2px rgba(0, 0, 0, 0.06);
-  --cr-shadow-top-bar: 0 0.5px 0 0 var(--cr-color-line);
-  --cr-shadow-avatar: 0 0 0 0.5px var(--cr-color-edge-out);
-  --cr-shadow-avatar-hover: 0 0 0 0.5px rgba(0, 0, 0, 0.30);
-  --cr-shadow-segment-track: inset 0 0.5px 1px 0 rgba(0, 0, 0, 0.06);
-  --cr-shadow-segment-thumb: inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 1px 3px rgba(0, 0, 0, 0.12);
-  --cr-shadow-sm: 0 0 0 0.5px var(--cr-color-edge-out), 0 1px 2px rgba(0, 0, 0, 0.10);
-  --cr-shadow-md: 0 0 0 0.5px var(--cr-color-edge-out), 0 2px 5px rgba(0, 0, 0, 0.08), 0 8px 22px rgba(0, 0, 0, 0.12);
-  --cr-shadow-lg: 0 0 0 0.5px var(--cr-color-edge-out), 0 4px 10px rgba(0, 0, 0, 0.10), 0 18px 48px rgba(0, 0, 0, 0.20);
-  --cr-shadow-up: 0 0 0 0.5px var(--cr-color-edge-out), 0 -2px 6px rgba(0, 0, 0, 0.06), 0 -14px 40px rgba(0, 0, 0, 0.16);
-  --cr-shadow-edge: inset 0 0.5px 0 0 var(--cr-color-edge-in);
-  --cr-shadow-menu: inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 4px 10px rgba(0, 0, 0, 0.10), 0 18px 48px rgba(0, 0, 0, 0.20);
-  --cr-shadow-sheet: inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 8px 16px rgba(0, 0, 0, 0.10), 0 40px 100px rgba(0, 0, 0, 0.34);
-  --cr-shadow-tooltip: 0 8px 16px rgba(0, 0, 0, 0.16);
-  --cr-shadow-focus: 0 0 0 1px var(--cr-color-accent-solid), 0 0 0 4px color-mix(in srgb, var(--cr-color-accent-solid) 34%, transparent);
-  --cr-shadow-focus-inset: inset 0 0 0 2px var(--cr-color-accent-solid);
-  --cr-shadow-button-solid: inset 0 0.5px 0 0 rgba(255, 255, 255, 0.22), 0 1px 2px rgba(0, 0, 0, 0.16);
-  --cr-shadow-button-secondary: 0 0 0 0.5px var(--cr-color-edge-out), 0 1px 2px rgba(0, 0, 0, 0.10);
-  --cr-shadow-sidebar-card: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 40px 0 rgba(0, 0, 0, 0.35);
-  --cr-shadow-action-button: inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 1px 2px rgba(0, 0, 0, 0.2);
-  --cr-shadow-pill: inset 0 0.5px 0 0 rgba(255, 255, 255, 0.16), 0 1px 2px rgba(0, 0, 0, 0.2);
-  --cr-shadow-field-well: inset 0 0 0 0.5px var(--cr-color-line);
-  --cr-shadow-field-well-hover: inset 0 0 0 0.5px var(--cr-color-line-strong);
-  --cr-shadow-field-focus: inset 0 0 0 0.5px var(--cr-color-accent-solid), 0 0 0 3px color-mix(in srgb, var(--cr-color-accent-solid) 22%, transparent);
-  --cr-shadow-segment-track-sidebar: inset 0 0 0 0.5px var(--cr-color-line), inset 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --cr-shadow-swatch-selected-tile: 0 0 0 2px var(--cr-color-accent-solid);
-  --cr-shadow-swatch-selected-dot: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 2.5px var(--cr-color-accent-solid);
-  --cr-shadow-range-track: inset 0 1px 1.5px rgba(0, 0, 0, 0.3);
-  --cr-shadow-range-thumb: 0 0 0 0.5px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.38);
-  --cr-shadow-switch-track: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  --cr-shadow-switch-knob: 0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28);
-  --cr-shadow-thumb-ring: inset 0 0 0 0.5px var(--cr-color-line-strong);
-  --cr-shadow-handle: 0 1px 4px rgba(0, 0, 0, 0.18);
-  --cr-shadow-tile-action: 0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28);
-
-  /* sizes (derived) */
-  --cr-size-row: var(--cr-size-creator-sidebar-row);
-  --cr-size-control: var(--cr-size-creator-sidebar-control);
-  --cr-size-icon-row: var(--cr-size-5);
-  --cr-size-icon-action: var(--cr-size-4);
-  --cr-size-icon-header: var(--cr-size-4);
-  --cr-size-icon-inline: var(--cr-size-3-5);
-  --cr-size-icon-shape: 22px;
-  --cr-size-icon-chevron: var(--cr-size-3);
-  --cr-size-hit-header: 26px;
-  --cr-size-hit-inline: 22px;
-  --cr-size-pane-header: var(--cr-size-11);
-  --cr-size-thumb-row: var(--cr-size-9);
-  --cr-size-thumb-w: var(--cr-size-12);
-  --cr-size-thumb-h: var(--cr-size-7);
-  --cr-size-color-dot: var(--cr-size-5);
-  --cr-size-tint-dot: var(--cr-size-6);
-  --cr-size-switch-w: 30px;
-  --cr-size-switch-h: 18px;
-  --cr-size-switch-knob: 14px;
-  --cr-size-range-thumb: 15px;
-  --cr-size-range-track: 4px;
-  --cr-size-popup-range-w: 250px;
-  --cr-size-popup-color-w: var(--cr-size-60);
-  --cr-size-popup-grid-col: 56px;
-  --cr-size-popup-gutter: 4px;
-  --cr-size-popup-edge: 16px;
-  --cr-size-field-value-w: 54px;
-  --cr-size-field-wide-w: 112px;
-  --cr-size-handle: 10px;
-  --cr-size-frame-width: 2px;
-
-  /* transitions (derived) */
-  --cr-transition-control: background var(--cr-duration-fast) var(--cr-easing-settle), color var(--cr-duration-fast) var(--cr-easing-settle);
-  --cr-transition-swatch: box-shadow var(--cr-duration-fast) var(--cr-easing-spring), transform var(--cr-duration-fast) var(--cr-easing-spring);
+  /* shadows */
+  --cr-shadow-sm: 0 1px 2px 0 var(--cr-color-shadow-small);
+  --cr-shadow-md: 0 8px 16px 0 var(--cr-color-shadow-medium);
+  --cr-shadow-lg: 0 16px 32px 0 var(--cr-color-shadow-large);
+  --cr-shadow-up: 0 -8px 16px 0 var(--cr-color-shadow-medium);
+  --cr-shadow-raised: inset 0 0.5px 0 0 var(--cr-color-lighting-highlight-primary), 0 0 0 0.5px var(--cr-color-shadow-medium), 0 1px 2px 0 var(--cr-color-shadow-small);
+  --cr-shadow-raised-pressed: 0 0 0 0.5px var(--cr-color-shadow-medium);
+  --cr-shadow-filled: inset 0 0.5px 0 0 var(--cr-color-modeless-white24), 0 1px 2px 0 var(--cr-color-shadow-small);
+  --cr-shadow-card: inset 0 0 0 0.5px var(--cr-color-lighting-highlight-primary), 0 4px 16px 1px var(--cr-color-shadow-small);
+  --cr-shadow-menu: inset 0 0 0 0.5px var(--cr-color-lighting-highlight-secondary), var(--cr-shadow-lg);
+  --cr-shadow-inset: inset 0 0 0 0.5px var(--cr-color-lighting-shade);
+  --cr-shadow-rule-top: inset 0 0.5px 0 0 var(--cr-color-lighting-shade);
+  --cr-shadow-rule-bottom: 0 0.5px 0 0 var(--cr-color-lighting-shade);
+  --cr-shadow-rule-end: inset -1px 0 0 0 var(--cr-color-lighting-shade);
+  --cr-shadow-ring: 0 0 0 0.5px var(--cr-color-lighting-shade);
+  --cr-shadow-ring-hover: 0 0 0 0.5px color-mix(in srgb, var(--cr-color-content-primary) 32%, transparent);
+  --cr-shadow-knob: 0 0 0 0.5px var(--cr-color-shadow-medium), 0 1px 2px var(--cr-color-modeless-black24);
+  --cr-shadow-selection-ring: 0 0 0 2px var(--cr-color-modeless-teal-on-dark);
+  --cr-shadow-focus: 0 0 0 1px var(--cr-color-accent-teal), 0 0 0 4px color-mix(in srgb, var(--cr-color-accent-teal) 34%, transparent);
+  --cr-shadow-focus-inset: inset 0 0 0 2px var(--cr-color-accent-teal);
+  --cr-shadow-glass: inset 0 0.5px 0 0 var(--cr-color-modeless-white24), inset 0 0 0 0.5px var(--cr-color-modeless-black24), var(--cr-shadow-md);
+  --cr-shadow-glass-menu: inset 0 0.5px 0 0 var(--cr-color-modeless-white24), inset 0 0 0 0.5px var(--cr-color-modeless-black24), var(--cr-shadow-lg);
+  --cr-shadow-glass-field: inset 0 0 0 1px var(--cr-color-modeless-white8);
+  --cr-shadow-glass-focus: 0 0 0 1px var(--cr-color-modeless-teal-on-dark), 0 0 0 4px color-mix(in srgb, var(--cr-color-modeless-teal-on-dark) 34%, transparent);
 }
 
 [data-theme="dark"] {
   color-scheme: dark;
 
-  /* colors (semantic) */
-  --cr-color-background-primary: #0a0a0e;
-  --cr-color-background-tertiary: #212127;
-  --cr-color-action-secondary: #1A7580;
-  --cr-color-action-destructive: #ff7661;
-  --cr-color-slide-badge: rgba(0, 0, 0, 0.8);
-  --cr-color-device-off: #F65F4C;
-  --cr-color-status-live: #34C759;
-  --cr-color-status-live-text: #4CD470;
-  --cr-color-status-live-fill: color-mix(in srgb, var(--cr-color-status-live) 16%, transparent);
-  --cr-color-header-ground: color-mix(in srgb, var(--cr-color-mat-hud) 92%, transparent);
-  --cr-color-header-title-hover: #2f2f32;
-  --cr-color-header-title-border: #2f2f32;
-  --cr-color-header-history-hover: #212127;
-  --cr-color-split-picker-content: color-mix(in srgb, var(--cr-color-bg-panel) 62%, transparent);
-  --cr-color-split-picker-footer: color-mix(in srgb, var(--cr-color-bg-panel) 40%, transparent);
-  --cr-color-bg: var(--cr-color-ground-dark-window);
-  --cr-color-bg-panel: var(--cr-color-ground-dark-surface);
-  --cr-color-bg-subtle: var(--cr-color-ground-dark-recessed);
-  --cr-color-bg-muted: rgba(255, 255, 255, 0.06);
-  --cr-color-bg-emphasized: rgba(255, 255, 255, 0.13);
-  --cr-color-bg-inverted: var(--cr-color-ground-light-window);
-  --cr-color-content-accent: #f9df74;
-  --cr-color-content-primary: var(--cr-color-ink-dark-primary);
-  --cr-color-content-secondary: var(--cr-color-ink-dark-secondary);
-  --cr-color-content-tertiary: var(--cr-color-ink-dark-tertiary);
-  --cr-color-text-1: rgba(255, 255, 255, 0.96);
-  --cr-color-text-2: rgba(255, 255, 255, 0.84);
-  --cr-color-text-3: rgba(255, 255, 255, 0.68);
-  --cr-color-text-4: rgba(255, 255, 255, 0.54);
-  --cr-color-text-5: rgba(255, 255, 255, 0.40);
-  --cr-color-text-6: rgba(255, 255, 255, 0.28);
-  --cr-color-fg: var(--cr-color-text-1);
-  --cr-color-fg-muted: var(--cr-color-text-3);
-  --cr-color-fg-subtle: var(--cr-color-text-4);
-  --cr-color-fg-inverted: rgba(0, 0, 0, 0.92);
-  --cr-color-line: rgba(255, 255, 255, 0.10);
-  --cr-color-line-strong: rgba(255, 255, 255, 0.16);
-  --cr-color-line-strongest: rgba(255, 255, 255, 0.30);
-  --cr-color-border: var(--cr-color-line);
-  --cr-color-border-muted: var(--cr-color-line);
-  --cr-color-border-subtle: var(--cr-color-line);
-  --cr-color-border-emphasized: var(--cr-color-line-strong);
-  --cr-color-border-inverted: rgba(0, 0, 0, 0.10);
-  --cr-color-state-drop-indicator: var(--cr-color-accent-solid);
-  --cr-color-state-hover: rgba(255, 255, 255, 0.08);
-  --cr-color-state-active: rgba(255, 255, 255, 0.13);
-  --cr-color-state-active-strong: rgba(255, 255, 255, 0.18);
-  --cr-color-state-selected: rgba(0, 0, 0, 0.15);
-  --cr-color-dash: rgba(255, 255, 255, 0.30);
-  --cr-color-highlight-primary: #FFFFFF14;
-  --cr-color-highlight-secondary: #FFFFFF0A;
-  --cr-color-edge-out: rgba(0, 0, 0, 0.62);
-  --cr-color-edge-in: rgba(255, 255, 255, 0.10);
-  --cr-color-mat-menu: rgba(44, 44, 48, 0.88);
-  --cr-color-mat-menu-solid: rgba(44, 44, 48, 0.97);
-  --cr-color-mat-hud: rgba(38, 38, 42, 0.985);
-  --cr-color-mat-sheet: rgba(34, 34, 38, 0.99);
-  --cr-color-mat-sidebar: rgba(28, 28, 32, 0.985);
-  --cr-color-scrim: rgba(30, 30, 34, 0.88);
-  --cr-color-scrim-modal: rgba(0, 0, 0, 0.60);
-  --cr-color-overlay: rgba(0, 0, 0, 0.62);
-  --cr-color-surface-raised: var(--cr-color-mat-menu);
-  --cr-color-surface-inset: rgba(255, 255, 255, 0.06);
-  --cr-color-wire-1: rgba(255, 255, 255, 0.10);
-  --cr-color-wire-2: rgba(255, 255, 255, 0.22);
-  --cr-color-wire-3: rgba(255, 255, 255, 0.38);
-  --cr-color-wire-void: rgba(255, 255, 255, 0.05);
-  --cr-color-accent-solid: var(--cr-color-system-blue-dark);
-  --cr-color-accent-hover: var(--cr-color-system-blue-dark-hover);
-  --cr-color-accent-contrast: var(--cr-color-system-blue-on-dark);
-  --cr-color-accent-fg: var(--cr-color-system-blue-dark);
-  --cr-color-accent-subtle: color-mix(in srgb, var(--cr-color-system-blue-dark) 14%, transparent);
-  --cr-color-accent-muted: color-mix(in srgb, var(--cr-color-system-blue-dark) 26%, transparent);
-  --cr-color-accent-emphasized: var(--cr-color-system-blue-dark-hover);
-  --cr-color-accent-focus-ring: var(--cr-color-system-blue-dark);
-  --cr-color-danger-solid: var(--cr-color-system-red-dark);
-  --cr-color-danger-hover: color-mix(in srgb, var(--cr-color-system-red-dark) 88%, white);
-  --cr-color-danger-contrast: #FFFFFF;
-  --cr-color-danger-fg: var(--cr-color-system-red-dark);
-  --cr-color-danger-subtle: color-mix(in srgb, var(--cr-color-system-red-dark) 14%, transparent);
-  --cr-color-danger-muted: color-mix(in srgb, var(--cr-color-system-red-dark) 26%, transparent);
-  --cr-color-danger-emphasized: color-mix(in srgb, var(--cr-color-system-red-dark) 88%, white);
-  --cr-color-danger-focus-ring: var(--cr-color-system-red-dark);
-  --cr-color-gray-solid: var(--cr-color-text-1);
-  --cr-color-gray-hover: var(--cr-color-text-2);
-  --cr-color-gray-contrast: var(--cr-color-bg-panel);
-  --cr-color-gray-fg: var(--cr-color-text-1);
-  --cr-color-gray-subtle: var(--cr-color-state-hover);
-  --cr-color-gray-muted: var(--cr-color-state-active);
-  --cr-color-gray-emphasized: var(--cr-color-state-active-strong);
-  --cr-color-gray-focus-ring: var(--cr-color-accent-solid);
-  --cr-color-focus-ring: var(--cr-color-accent-solid);
-  --cr-color-pill-fill: rgba(255, 255, 255, 0.12);
-  --cr-color-swatch-ring-dot: rgba(255, 255, 255, 0.24);
-  --cr-color-swatch-ring-tile: rgba(255, 255, 255, 0.16);
-  --cr-color-swatch-none-slash: rgb(255, 69, 58);
-  --cr-color-swatch-none-fill: rgba(255, 255, 255, 0.08);
-  --cr-color-chip-ground: #E6E6EC;
-  --cr-color-checker-a: #FFFFFF;
-  --cr-color-checker-b: #D4D4DA;
-  --cr-color-thumb-selected-fill: rgba(255, 255, 255, 0.18);
-  --cr-color-thumb-selected-ring: rgba(255, 255, 255, 0.3);
-  --cr-color-knob: #FFFFFF;
-  --cr-color-stage-frame: var(--cr-color-accent-solid);
-  --cr-color-stage-guide-hit: #E55242;
-  --cr-color-stage-guide: #FFFFFF;
-  --cr-color-stage-grid-fill: rgba(127, 127, 127, 0.65);
-  --cr-color-handle-fill: #FFFFFF;
-  --cr-color-on-badge: rgba(255, 255, 255, 0.96);
+  /* colors: background */
+  --cr-color-background-primary: #0A0D0E;
+  --cr-color-background-secondary: #1E1E20;
+  --cr-color-background-tertiary: rgba(27, 35, 38, 0.80);
 
-  /* font-sizes (derived) */
-  --cr-font-size-sidebar: 12px;
+  /* colors: content */
+  --cr-color-content-primary: rgba(255, 255, 255, 0.92);
+  --cr-color-content-secondary: rgba(255, 255, 255, 0.80);
+  --cr-color-content-tertiary: rgba(255, 255, 255, 0.64);
 
-  /* gradients (semantic) */
-  --cr-gradient-window: linear-gradient(180deg, color-mix(in srgb, var(--cr-color-bg) 88%, var(--cr-color-content-primary)) 0%, var(--cr-color-bg) 34%, color-mix(in srgb, var(--cr-color-bg) 96%, var(--cr-color-content-primary)) 100%);
+  /* colors: lighting */
+  --cr-color-lighting-shade: rgba(255, 255, 255, 0.08);
+  --cr-color-lighting-highlight-primary: rgba(255, 255, 255, 0.08);
+  --cr-color-lighting-highlight-secondary: rgba(255, 255, 255, 0.08);
 
-  /* letter-spacings (derived) */
-  --cr-letter-spacing-sidebar: -0.036px;
+  /* colors: shadow */
+  --cr-color-shadow-small: rgba(0, 0, 0, 0.24);
+  --cr-color-shadow-medium: rgba(0, 0, 0, 0.48);
+  --cr-color-shadow-large: rgba(0, 0, 0, 0.72);
 
-  /* line-heights (derived) */
-  --cr-line-height-sidebar: 15px;
+  /* colors: accent */
+  --cr-color-accent-teal: #3B9BFF;
+  --cr-color-accent-destructive: #FF6D4C;
 
-  /* opacity (derived) */
-  --cr-opacity-disabled: 0.4;
-  --cr-opacity-dimmed: 0.45;
-  --cr-opacity-locked-grip: 0.3;
-  --cr-opacity-disabled-button: 0.45;
-  --cr-opacity-disabled-icon: 0.3;
-  --cr-opacity-disabled-split: 0.2;
-  --cr-opacity-status-dot: 0.55;
+  /* colors: modeless */
+  --cr-color-modeless-white: #FFFFFF;
+  --cr-color-modeless-white8: rgba(255, 255, 255, 0.08);
+  --cr-color-modeless-white24: rgba(255, 255, 255, 0.24);
+  --cr-color-modeless-black: #000000;
+  --cr-color-modeless-black24: rgba(0, 0, 0, 0.24);
+  --cr-color-modeless-overlay: rgba(0, 0, 0, 0.5);
+  --cr-color-modeless-destructive: #D6402F;
+  --cr-color-modeless-teal: #0069D9;
+  --cr-color-modeless-teal-on-dark: #3B9BFF;
 
-  /* radii (derived) */
-  --cr-radius-handle: 2px;
+  /* colors: pending (the design uses them, Figma does not define them yet) */
+  --cr-color-pending-live: #34C759;
+  --cr-color-pending-live-text: #4CD470;
+  --cr-color-pending-highlight: #f9df74;
+  --cr-color-pending-wireframe-tile-top: #1C1C1C;
+  --cr-color-pending-wireframe-tile-bottom: #3E3E3E;
+  --cr-color-pending-wireframe-fill-top: #5A5A5A;
+  --cr-color-pending-wireframe-fill-bottom: #424242;
+  --cr-color-pending-wireframe-stroke-top: #B2B2B2;
+  --cr-color-pending-wireframe-stroke-bottom: #545454;
+  --cr-color-pending-wireframe-line: #8E8E8E;
 
-  /* shadows (semantic) */
-  --cr-shadow-selection-swatch: inset 0 0 0 1px rgba(255,255,255,0.18);
-  --cr-shadow-selection-swatch-selected: inset 0 0 0 1px rgba(255,255,255,0.18), 0 0 0 2px rgba(255,255,255,0.60);
-  --cr-shadow-selection-bar: inset 0 0.5px 0 0 rgba(255,255,255,0.18), 0 0 0 0.5px rgba(0,0,0,0.34), 0 4px 10px rgba(0,0,0,0.22), 0 14px 36px rgba(0,0,0,0.34);
-  --cr-shadow-selection-menu: inset 0 0.5px 0 0 rgba(255,255,255,0.18), 0 0 0 0.5px rgba(0,0,0,0.34), 0 6px 16px rgba(0,0,0,0.22), 0 22px 56px rgba(0,0,0,0.34);
-  --cr-shadow-tray-console: 0 0 0 0.5px var(--cr-color-edge-out), 0 2px 5px color-mix(in srgb, var(--cr-color-content-primary) 12%, transparent);
-  --cr-shadow-band-pill: var(--cr-shadow-edge), var(--cr-shadow-up);
-  --cr-shadow-placeholder: inset 0 0 0 0.5px var(--cr-color-line);
-  --cr-shadow-caption: inset 0 0.5px 0 0 var(--cr-color-line);
-  --cr-shadow-sidebar: inset -1px 0 0 0 var(--cr-color-line);
-  --cr-shadow-input-wrapper: inset 0 0 0 0.5px var(--cr-color-line-strong), inset 0 1px 2px rgba(0, 0, 0, 0.06);
-  --cr-shadow-top-bar: 0 0.5px 0 0 var(--cr-color-line);
-  --cr-shadow-avatar: 0 0 0 0.5px var(--cr-color-edge-out);
-  --cr-shadow-avatar-hover: 0 0 0 0.5px rgba(0, 0, 0, 0.78);
-  --cr-shadow-segment-track: inset 0 0.5px 1px 0 rgba(0, 0, 0, 0.06);
-  --cr-shadow-segment-thumb: inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 1px 3px rgba(0, 0, 0, 0.12);
-  --cr-shadow-sm: 0 0 0 0.5px var(--cr-color-edge-out), 0 1px 3px rgba(0, 0, 0, 0.40);
-  --cr-shadow-md: 0 0 0 0.5px var(--cr-color-edge-out), 0 2px 6px rgba(0, 0, 0, 0.40), 0 10px 28px rgba(0, 0, 0, 0.48);
-  --cr-shadow-lg: 0 0 0 0.5px var(--cr-color-edge-out), 0 4px 12px rgba(0, 0, 0, 0.44), 0 22px 60px rgba(0, 0, 0, 0.60);
-  --cr-shadow-up: 0 0 0 0.5px var(--cr-color-edge-out), 0 -2px 8px rgba(0, 0, 0, 0.34), 0 -16px 46px rgba(0, 0, 0, 0.50);
-  --cr-shadow-edge: inset 0 0.5px 0 0 var(--cr-color-edge-in);
-  --cr-shadow-menu: inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 4px 12px rgba(0, 0, 0, 0.44), 0 22px 60px rgba(0, 0, 0, 0.60);
-  --cr-shadow-sheet: inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 0 0 0.5px var(--cr-color-edge-out), 0 8px 16px rgba(0, 0, 0, 0.10), 0 40px 100px rgba(0, 0, 0, 0.34);
-  --cr-shadow-tooltip: 0 8px 16px rgba(0, 0, 0, 0.55);
-  --cr-shadow-focus: 0 0 0 1px var(--cr-color-accent-solid), 0 0 0 4px color-mix(in srgb, var(--cr-color-accent-solid) 34%, transparent);
-  --cr-shadow-focus-inset: inset 0 0 0 2px var(--cr-color-accent-solid);
-  --cr-shadow-button-solid: inset 0 0.5px 0 0 rgba(255, 255, 255, 0.22), 0 1px 2px rgba(0, 0, 0, 0.16);
-  --cr-shadow-button-secondary: 0 0 0 0.5px var(--cr-color-edge-out), 0 1px 2px rgba(0, 0, 0, 0.10);
-  --cr-shadow-sidebar-card: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 40px 0 rgba(0, 0, 0, 0.35);
-  --cr-shadow-action-button: inset 0 0.5px 0 0 var(--cr-color-edge-in), 0 1px 2px rgba(0, 0, 0, 0.2);
-  --cr-shadow-pill: inset 0 0.5px 0 0 rgba(255, 255, 255, 0.16), 0 1px 2px rgba(0, 0, 0, 0.2);
-  --cr-shadow-field-well: inset 0 0 0 0.5px var(--cr-color-line);
-  --cr-shadow-field-well-hover: inset 0 0 0 0.5px var(--cr-color-line-strong);
-  --cr-shadow-field-focus: inset 0 0 0 0.5px var(--cr-color-accent-solid), 0 0 0 3px color-mix(in srgb, var(--cr-color-accent-solid) 22%, transparent);
-  --cr-shadow-segment-track-sidebar: inset 0 0 0 0.5px var(--cr-color-line), inset 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --cr-shadow-swatch-selected-tile: 0 0 0 2px var(--cr-color-accent-solid);
-  --cr-shadow-swatch-selected-dot: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 2.5px var(--cr-color-accent-solid);
-  --cr-shadow-range-track: inset 0 1px 1.5px rgba(0, 0, 0, 0.3);
-  --cr-shadow-range-thumb: 0 0 0 0.5px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.38);
-  --cr-shadow-switch-track: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  --cr-shadow-switch-knob: 0 0 0 0.5px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.28);
-  --cr-shadow-thumb-ring: inset 0 0 0 0.5px var(--cr-color-line-strong);
-  --cr-shadow-handle: 0 1px 4px rgba(0, 0, 0, 0.18);
-  --cr-shadow-tile-action: 0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.28);
-
-  /* sizes (derived) */
-  --cr-size-row: var(--cr-size-creator-sidebar-row);
-  --cr-size-control: var(--cr-size-creator-sidebar-control);
-  --cr-size-icon-row: var(--cr-size-5);
-  --cr-size-icon-action: var(--cr-size-4);
-  --cr-size-icon-header: var(--cr-size-4);
-  --cr-size-icon-inline: var(--cr-size-3-5);
-  --cr-size-icon-shape: 22px;
-  --cr-size-icon-chevron: var(--cr-size-3);
-  --cr-size-hit-header: 26px;
-  --cr-size-hit-inline: 22px;
-  --cr-size-pane-header: var(--cr-size-11);
-  --cr-size-thumb-row: var(--cr-size-9);
-  --cr-size-thumb-w: var(--cr-size-12);
-  --cr-size-thumb-h: var(--cr-size-7);
-  --cr-size-color-dot: var(--cr-size-5);
-  --cr-size-tint-dot: var(--cr-size-6);
-  --cr-size-switch-w: 30px;
-  --cr-size-switch-h: 18px;
-  --cr-size-switch-knob: 14px;
-  --cr-size-range-thumb: 15px;
-  --cr-size-range-track: 4px;
-  --cr-size-popup-range-w: 250px;
-  --cr-size-popup-color-w: var(--cr-size-60);
-  --cr-size-popup-grid-col: 56px;
-  --cr-size-popup-gutter: 4px;
-  --cr-size-popup-edge: 16px;
-  --cr-size-field-value-w: 54px;
-  --cr-size-field-wide-w: 112px;
-  --cr-size-handle: 10px;
-  --cr-size-frame-width: 2px;
-
-  /* transitions (derived) */
-  --cr-transition-control: background var(--cr-duration-fast) var(--cr-easing-settle), color var(--cr-duration-fast) var(--cr-easing-settle);
-  --cr-transition-swatch: box-shadow var(--cr-duration-fast) var(--cr-easing-spring), transform var(--cr-duration-fast) var(--cr-easing-spring);
+  /* shadows */
+  --cr-shadow-sm: 0 1px 2px 0 var(--cr-color-shadow-small);
+  --cr-shadow-md: 0 8px 16px 0 var(--cr-color-shadow-medium);
+  --cr-shadow-lg: 0 16px 32px 0 var(--cr-color-shadow-large);
+  --cr-shadow-up: 0 -8px 16px 0 var(--cr-color-shadow-medium);
+  --cr-shadow-raised: inset 0 0.5px 0 0 var(--cr-color-lighting-highlight-primary), 0 0 0 0.5px var(--cr-color-shadow-medium), 0 1px 2px 0 var(--cr-color-shadow-small);
+  --cr-shadow-raised-pressed: 0 0 0 0.5px var(--cr-color-shadow-medium);
+  --cr-shadow-filled: inset 0 0.5px 0 0 var(--cr-color-modeless-white24), 0 1px 2px 0 var(--cr-color-shadow-small);
+  --cr-shadow-card: inset 0 0 0 0.5px var(--cr-color-lighting-highlight-primary), 0 4px 16px 1px var(--cr-color-shadow-small);
+  --cr-shadow-menu: inset 0 0 0 0.5px var(--cr-color-lighting-highlight-secondary), var(--cr-shadow-lg);
+  --cr-shadow-inset: inset 0 0 0 0.5px var(--cr-color-lighting-shade);
+  --cr-shadow-rule-top: inset 0 0.5px 0 0 var(--cr-color-lighting-shade);
+  --cr-shadow-rule-bottom: 0 0.5px 0 0 var(--cr-color-lighting-shade);
+  --cr-shadow-rule-end: inset -1px 0 0 0 var(--cr-color-lighting-shade);
+  --cr-shadow-ring: 0 0 0 0.5px var(--cr-color-lighting-shade);
+  --cr-shadow-ring-hover: 0 0 0 0.5px color-mix(in srgb, var(--cr-color-content-primary) 32%, transparent);
+  --cr-shadow-knob: 0 0 0 0.5px var(--cr-color-shadow-medium), 0 1px 2px var(--cr-color-modeless-black24);
+  --cr-shadow-selection-ring: 0 0 0 2px var(--cr-color-modeless-teal-on-dark);
+  --cr-shadow-focus: 0 0 0 1px var(--cr-color-accent-teal), 0 0 0 4px color-mix(in srgb, var(--cr-color-accent-teal) 34%, transparent);
+  --cr-shadow-focus-inset: inset 0 0 0 2px var(--cr-color-accent-teal);
+  --cr-shadow-glass: inset 0 0.5px 0 0 var(--cr-color-modeless-white24), inset 0 0 0 0.5px var(--cr-color-modeless-black24), var(--cr-shadow-md);
+  --cr-shadow-glass-menu: inset 0 0.5px 0 0 var(--cr-color-modeless-white24), inset 0 0 0 0.5px var(--cr-color-modeless-black24), var(--cr-shadow-lg);
+  --cr-shadow-glass-field: inset 0 0 0 1px var(--cr-color-modeless-white8);
+  --cr-shadow-glass-focus: 0 0 0 1px var(--cr-color-modeless-teal-on-dark), 0 0 0 4px color-mix(in srgb, var(--cr-color-modeless-teal-on-dark) 34%, transparent);
 }
